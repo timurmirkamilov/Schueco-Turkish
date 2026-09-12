@@ -584,10 +584,21 @@
       if ('speechSynthesis' in window && window.speechSynthesis) {
         try {
           const voices = window.speechSynthesis.getVoices() || [];
-          turkishVoice = voices.find(v => {
+          const trVoices = voices.filter(v => {
             const lang = (v.lang || '').toLowerCase().replace('_', '-');
             return lang === 'tr' || lang.startsWith('tr-');
-          }) || null;
+          });
+
+          if (trVoices.length > 0) {
+            // Приоритетный выбор мужского турецкого голоса (Ahmet, Tolga, Cem, Male, Erkek)
+            const maleKeywords = ['ahmet', 'tolga', 'cem', 'male', 'erkek', 'man'];
+            turkishVoice = trVoices.find(v => {
+              const name = (v.name || '').toLowerCase();
+              return maleKeywords.some(kw => name.includes(kw));
+            }) || trVoices[0];
+          } else {
+            turkishVoice = null;
+          }
         } catch (e) {}
       }
     }
@@ -626,6 +637,14 @@
           const audio = new Audio();
           audio.referrerPolicy = 'no-referrer';
           audio.src = src;
+
+          // Мужской тембр: отключаем фиксацию тона и понижаем темп речи (0.88x)
+          // За счет этого частота звука сдвигается в глубокий мужской регистр
+          audio.preservesPitch = false;
+          audio.mozPreservesPitch = false;
+          audio.webkitPreservesPitch = false;
+          audio.playbackRate = 0.88;
+
           currentAudio = audio;
 
           audio.onended = () => {
@@ -693,7 +712,7 @@
           utterance.voice = turkishVoice;
           utterance.lang = 'tr-TR';
           utterance.rate = 0.88;
-          utterance.pitch = 1.0;
+          utterance.pitch = 0.82; // Мужской грудной регистр (0.8 - 0.85)
 
           let spoken = false;
           utterance.onstart = () => {
@@ -817,25 +836,37 @@
             </div>
 
             <!-- Быстрые действия внизу карточки -->
-            <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs gap-2">
+            <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs gap-1.5">
+              <button 
+                onclick="moveToBeginningOfQueue('${item.id}')" 
+                class="py-2 px-2.5 sm:px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1 active:scale-98 transition-transform"
+                title="Переместить в самый верх списка"
+              >
+                <svg class="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                </svg>
+                <span>В начало</span>
+              </button>
+
               <button 
                 onclick="moveToEndOfQueue('${item.id}')" 
-                class="flex-1 py-2 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1.5 active:scale-98 transition-transform"
+                class="py-2 px-2.5 sm:px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1 active:scale-98 transition-transform"
+                title="Переместить в самый конец списка"
               >
                 <svg class="w-3.5 h-3.5 text-tgHint" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
-                <span>В конец списка</span>
+                <span>В конец</span>
               </button>
 
               <button 
                 onclick="markAsLearnedAndNext('${item.id}')" 
-                class="flex-1 py-2 px-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold flex items-center justify-center space-x-1.5 active:scale-98 transition-transform shadow-xs"
+                class="flex-1 py-2 px-2.5 sm:px-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold flex items-center justify-center space-x-1 active:scale-98 transition-transform shadow-xs"
               >
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span>${isLearned ? 'Оставить выученным' : 'Запомнил!'}</span>
+                <span class="truncate">${isLearned ? 'Выучено' : 'Запомнил!'}</span>
               </button>
             </div>
 
@@ -958,10 +989,26 @@
       }
     }
 
-    // Перенос в конец очереди
+    // Перенос в начало очереди (в самый верх списка)
+    function moveToBeginningOfQueue(id) {
+      const index = phrases.findIndex(p => p.id === id);
+      if (index === 0) {
+        showToast('Фраза уже в самом верху', 'ℹ️');
+        return;
+      }
+      moveToTop(id);
+      showToast('Перенесено в начало списка', '⬆️');
+    }
+
+    // Перенос в конец очереди (в самый конец списка)
     function moveToEndOfQueue(id) {
+      const index = phrases.findIndex(p => p.id === id);
+      if (index === phrases.length - 1) {
+        showToast('Фраза уже в самом низу', 'ℹ️');
+        return;
+      }
       moveToBottom(id);
-      showToast('Перенесено в конец очереди', '⬇️');
+      showToast('Перенесено в конец списка', '⬇️');
     }
 
     // Перемещение карточки в самый верх
