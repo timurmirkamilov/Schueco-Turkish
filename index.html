@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="referrer" content="no-referrer">
   <title>Schüco Türkçesi | Цеховой турецкий</title>
 
   <!-- Telegram Web App SDK -->
@@ -582,8 +583,11 @@
     function initVoices() {
       if ('speechSynthesis' in window && window.speechSynthesis) {
         try {
-          const voices = window.speechSynthesis.getVoices();
-          turkishVoice = voices.find(v => v.lang === 'tr-TR' || v.lang.startsWith('tr')) || null;
+          const voices = window.speechSynthesis.getVoices() || [];
+          turkishVoice = voices.find(v => {
+            const lang = (v.lang || '').toLowerCase().replace('_', '-');
+            return lang === 'tr' || lang.startsWith('tr-');
+          }) || null;
         } catch (e) {}
       }
     }
@@ -597,43 +601,68 @@
       try {
         if (currentAudio) {
           currentAudio.pause();
+          currentAudio.currentTime = 0;
           currentAudio = null;
         }
 
-        const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob&q=${encodeURIComponent(text)}`;
-        const audio = new Audio(ttsUrl);
-        currentAudio = audio;
+        const cleanText = text.trim();
+        const encoded = encodeURIComponent(cleanText);
+        const providers = [
+          `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob&q=${encoded}`,
+          `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=tr&q=${encoded}`,
+          `https://dict.youdao.com/dictvoice?audio=${encoded}&le=tr`
+        ];
 
-        audio.onended = () => {
-          resetBtn();
-          currentAudio = null;
-        };
+        let index = 0;
+        function tryNextProvider() {
+          if (index >= providers.length) {
+            if (resetBtn) resetBtn();
+            currentAudio = null;
+            showToast('Не удалось загрузить озвучку', '⚠️');
+            return;
+          }
 
-        audio.onerror = (e) => {
-          console.warn('Audio fallback error:', e);
-          resetBtn();
-          currentAudio = null;
-          showToast('Не удалось загрузить озвучку', '⚠️');
-        };
+          const src = providers[index++];
+          const audio = new Audio();
+          audio.referrerPolicy = 'no-referrer';
+          audio.src = src;
+          currentAudio = audio;
 
-        const playPromise = audio.play();
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            triggerHaptic('light');
-          }).catch(err => {
-            console.warn('Playback blocked:', err);
-            resetBtn();
-          });
+          audio.onended = () => {
+            if (resetBtn) resetBtn();
+            currentAudio = null;
+          };
+
+          audio.onerror = () => {
+            audio.onerror = null;
+            audio.onended = null;
+            tryNextProvider();
+          };
+
+          const playPromise = audio.play();
+          if (playPromise !== undefined) {
+            playPromise.then(() => {
+              triggerHaptic('light');
+            }).catch(err => {
+              console.warn('Playback error, trying next provider:', err);
+              audio.onerror = null;
+              audio.onended = null;
+              tryNextProvider();
+            });
+          }
         }
+
+        tryNextProvider();
       } catch (err) {
         console.error('TTS error:', err);
-        resetBtn();
+        if (resetBtn) resetBtn();
+        showToast('Не удалось загрузить озвучку', '⚠️');
       }
     }
 
-    function speakTurkish(text, cardId) {
-      // Ищем кнопку по ID
-      const speakBtn = document.getElementById(`speak-btn-${cardId}`) || document.activeElement;
+    function speakTurkish(text, cardId, btnElement) {
+      // Ищем кнопку по переданному элементу, по ID или активному элементу
+      const speakBtn = btnElement || (cardId ? document.getElementById(`speak-btn-${cardId}`) : null) || document.activeElement;
       if (speakBtn && speakBtn.classList) {
         speakBtn.classList.add('speaking', 'text-sky-600', 'scale-110');
       }
@@ -644,18 +673,27 @@
         }
       }
 
-      // Если в браузере есть SpeechSynthesis и найден турецкий голос — пробуем его
-      if ('speechSynthesis' in window && window.speechSynthesis) {
+      // Останавливаем предыдущее аудио, если оно играет
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        currentAudio = null;
+      }
+
+      // Проверяем турецкий голос, если SpeechSynthesis доступен
+      if (!turkishVoice) {
+        initVoices();
+      }
+
+      // Если в браузере есть SpeechSynthesis и найден настоящий турецкий голос
+      if (turkishVoice && 'speechSynthesis' in window && window.speechSynthesis) {
         try {
           window.speechSynthesis.cancel();
           const utterance = new SpeechSynthesisUtterance(text);
+          utterance.voice = turkishVoice;
           utterance.lang = 'tr-TR';
           utterance.rate = 0.88;
           utterance.pitch = 1.0;
-
-          if (turkishVoice) {
-            utterance.voice = turkishVoice;
-          }
 
           let spoken = false;
           utterance.onstart = () => {
@@ -666,21 +704,21 @@
             resetBtn();
           };
 
-          utterance.onerror = () => {
-            // Если нативный TTS упал — фолбэк на онлайн аудио
+          utterance.onerror = (e) => {
+            console.warn('Native speech error, fallback to online:', e);
             playOnlineTts(text, resetBtn);
           };
 
           window.speechSynthesis.speak(utterance);
           triggerHaptic('light');
 
-          // Защита: если через 300мс нативный TTS не запустился (частый баг Telegram WebView)
+          // Страховка: если через 1.5 сек нативный движок завис и не начал воспроизведение
           setTimeout(() => {
-            if (!spoken && (!window.speechSynthesis.speaking || !turkishVoice)) {
+            if (!spoken && !window.speechSynthesis.speaking) {
               window.speechSynthesis.cancel();
               playOnlineTts(text, resetBtn);
             }
-          }, 300);
+          }, 1500);
 
           return;
         } catch (e) {
@@ -688,7 +726,7 @@
         }
       }
 
-      // Если SpeechSynthesis нет в WebView Telegram — сразу играем онлайн аудио
+      // Если турецкого системного голоса нет — сразу используем онлайн TTS с естественным турецким произношением
       playOnlineTts(text, resetBtn);
     }
 
@@ -768,7 +806,7 @@
               <!-- Кнопка озвучки (Динамик) -->
               <button 
                 id="speak-btn-${item.id}"
-                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}')" 
+                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', this)" 
                 title="Озвучить на турецком"
                 class="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-900/40 text-sky-600 dark:text-sky-300 flex items-center justify-center shrink-0 active:scale-90 transition-transform shadow-xs hover:bg-sky-100"
               >
@@ -849,7 +887,7 @@
               
               <!-- Звук -->
               <button 
-                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}')" 
+                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', this)" 
                 class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-sky-600 dark:text-sky-400"
                 title="Озвучить"
               >
