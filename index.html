@@ -576,29 +576,18 @@
       }, 2000);
     }
 
-    // ==================== ОЗВУЧКА (Гибридный TTS: SpeechSynthesis + Онлайн Аудио tr-TR) ====================
+    // ==================== ОЗВУЧКА (SpeechSynthesis + Надежный Audio Fallback) ====================
     let turkishVoice = null;
-    let currentAudio = null;
+    const globalAudio = new Audio();
 
     function initVoices() {
       if ('speechSynthesis' in window && window.speechSynthesis) {
         try {
           const voices = window.speechSynthesis.getVoices() || [];
-          const trVoices = voices.filter(v => {
-            const lang = (v.lang || '').toLowerCase().replace('_', '-');
-            return lang === 'tr' || lang.startsWith('tr-');
-          });
-
-          if (trVoices.length > 0) {
-            // Приоритетный выбор мужского турецкого голоса (Ahmet, Tolga, Cem, Male, Erkek)
-            const maleKeywords = ['ahmet', 'tolga', 'cem', 'male', 'erkek', 'man'];
-            turkishVoice = trVoices.find(v => {
-              const name = (v.name || '').toLowerCase();
-              return maleKeywords.some(kw => name.includes(kw));
-            }) || trVoices[0];
-          } else {
-            turkishVoice = null;
-          }
+          turkishVoice = voices.find(v => {
+            const l = (v.lang || '').toLowerCase().replace('_', '-');
+            return l === 'tr' || l.startsWith('tr-');
+          }) || null;
         } catch (e) {}
       }
     }
@@ -608,76 +597,71 @@
       initVoices();
     }
 
-    function playOnlineTts(text, resetBtn) {
+    // Разблокировка аудиоконтекста на смартфонах при первом тапе
+    function unlockAudio() {
+      if ('speechSynthesis' in window && window.speechSynthesis) {
+        try {
+          window.speechSynthesis.getVoices();
+        } catch (e) {}
+      }
       try {
-        if (currentAudio) {
-          currentAudio.pause();
-          currentAudio.currentTime = 0;
-          currentAudio = null;
-        }
+        globalAudio.load();
+      } catch (e) {}
+      document.removeEventListener('touchstart', unlockAudio);
+      document.removeEventListener('click', unlockAudio);
+    }
+    document.addEventListener('touchstart', unlockAudio, { passive: true, once: true });
+    document.addEventListener('click', unlockAudio, { passive: true, once: true });
 
-        const cleanText = text.replace(/[\/()\-]/g, ' ').replace(/\s+/g, ' ').trim();
-        const encoded = encodeURIComponent(cleanText);
+    function playAudioFallback(text, speed, resetBtn) {
+      try {
+        const clean = text.replace(/[\/()\-]/g, ' ').replace(/\s+/g, ' ').trim();
+        const encoded = encodeURIComponent(clean);
         const isSlow = (speed === 'slow');
-        const ttsspeedParam = isSlow ? '&ttsspeed=0.3' : '';
+        const ttsspeed = isSlow ? '&ttsspeed=0.3' : '';
 
-        const providers = [
-          `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob${ttsspeedParam}&q=${encoded}`,
-          `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=tr${ttsspeedParam}&q=${encoded}`,
+        const urls = [
+          `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob${ttsspeed}&q=${encoded}`,
           `https://dict.youdao.com/dictvoice?audio=${encoded}&le=tr`
         ];
 
-        let index = 0;
-        function tryNextProvider() {
-          if (index >= providers.length) {
-            if (resetBtn) resetBtn();
-            currentAudio = null;
-            showToast('Не удалось загрузить озвучку', '⚠️');
+        let i = 0;
+        function tryPlay() {
+          if (i >= urls.length) {
+            if (typeof resetBtn === 'function') resetBtn();
+            showToast('Включите звук / проверьте переключатель беззвучного режима', '🔊');
             return;
           }
 
-          const src = providers[index++];
-          const audio = new Audio();
-          audio.referrerPolicy = 'no-referrer';
-          audio.src = src;
+          const src = urls[i++];
+          globalAudio.pause();
+          globalAudio.currentTime = 0;
+          globalAudio.src = src;
+          globalAudio.playbackRate = isSlow ? 0.75 : 1.0;
 
-          // Скорость: обычная (1.0x) или замедленная (0.72x)
-          audio.preservesPitch = true;
-          audio.mozPreservesPitch = true;
-          audio.webkitPreservesPitch = true;
-          audio.playbackRate = isSlow ? 0.72 : 1.0;
-
-          currentAudio = audio;
-
-          audio.onended = () => {
-            if (resetBtn) resetBtn();
-            currentAudio = null;
+          globalAudio.onended = () => {
+            if (typeof resetBtn === 'function') resetBtn();
           };
 
-          audio.onerror = () => {
-            audio.onerror = null;
-            audio.onended = null;
-            tryNextProvider();
+          globalAudio.onerror = () => {
+            tryPlay();
           };
 
-          const playPromise = audio.play();
-          if (playPromise !== undefined) {
-            playPromise.then(() => {
+          const p = globalAudio.play();
+          if (p !== undefined) {
+            p.then(() => {
               triggerHaptic('light');
             }).catch(err => {
-              console.warn('Playback error, trying next provider:', err);
-              audio.onerror = null;
-              audio.onended = null;
-              tryNextProvider();
+              console.warn('Audio play error, trying fallback:', err);
+              tryPlay();
             });
           }
         }
 
-        tryNextProvider();
-      } catch (err) {
-        console.error('TTS error:', err);
-        if (resetBtn) resetBtn();
-        showToast('Не удалось загрузить озвучку', '⚠️');
+        tryPlay();
+      } catch (e) {
+        console.error('playAudioFallback error:', e);
+        if (typeof resetBtn === 'function') resetBtn();
       }
     }
 
@@ -695,61 +679,61 @@
         }
       }
 
-      // Останавливаем предыдущее аудио, если оно играет
-      if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-        currentAudio = null;
-      }
+      // Останавливаем предыдущее аудио
+      try {
+        globalAudio.pause();
+      } catch (e) {}
 
-      // Проверяем турецкий голос, если SpeechSynthesis доступен
-      if (!turkishVoice) {
-        initVoices();
-      }
-
-      // Если в браузере есть SpeechSynthesis и найден настоящий турецкий голос
-      if (turkishVoice && 'speechSynthesis' in window && window.speechSynthesis) {
+      // Пробуем нативный SpeechSynthesis
+      if ('speechSynthesis' in window && window.speechSynthesis) {
         try {
+          if (window.speechSynthesis.paused) {
+            window.speechSynthesis.resume();
+          }
           window.speechSynthesis.cancel();
-          const utterance = new SpeechSynthesisUtterance(text);
-          utterance.voice = turkishVoice;
-          utterance.lang = 'tr-TR';
-          utterance.rate = isSlow ? 0.7 : 1.0; // 1.0 - нормальная скорость, 0.7 - замедленная
-          utterance.pitch = 0.95;
 
-          let spoken = false;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'tr-TR';
+          if (turkishVoice) {
+            utterance.voice = turkishVoice;
+          }
+          utterance.rate = isSlow ? 0.72 : 1.0;
+          utterance.pitch = 1.0;
+
+          let didStart = false;
+
           utterance.onstart = () => {
-            spoken = true;
+            didStart = true;
           };
 
           utterance.onend = () => {
             resetBtn();
           };
 
-          utterance.onerror = (e) => {
-            console.warn('Native speech error, fallback to online:', e);
-            playOnlineTts(text, speed, resetBtn);
+          utterance.onerror = (err) => {
+            console.warn('SpeechSynthesis error, fallback to audio:', err);
+            playAudioFallback(text, speed, resetBtn);
           };
 
           window.speechSynthesis.speak(utterance);
           triggerHaptic('light');
 
-          // Страховка: если через 1.5 сек нативный движок завис и не начал воспроизведение
+          // Если через 500мс системный синтезатор так и не издал звук
           setTimeout(() => {
-            if (!spoken && !window.speechSynthesis.speaking) {
+            if (!didStart && !window.speechSynthesis.speaking) {
               window.speechSynthesis.cancel();
-              playOnlineTts(text, speed, resetBtn);
+              playAudioFallback(text, speed, resetBtn);
             }
-          }, 1500);
+          }, 500);
 
           return;
         } catch (e) {
-          console.warn('Native TTS exception, fallback to audio:', e);
+          console.warn('SpeechSynthesis exception:', e);
         }
       }
 
-      // Если турецкого системного голоса нет — сразу используем онлайн TTS
-      playOnlineTts(text, speed, resetBtn);
+      // Fallback на онлайн-аудио
+      playAudioFallback(text, speed, resetBtn);
     }
 
     // ==================== ФИЛЬТРАЦИЯ И ОТОБРАЖЕНИЕ ====================
