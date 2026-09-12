@@ -798,13 +798,13 @@
 
               <button 
                 onclick="toggleLearnedStatus('${item.id}')"
-                class="flex items-center space-x-1 text-xs px-2.5 py-1 rounded-full border transition-colors ${
+                class="flex items-center space-x-1 text-xs px-2.5 py-1 rounded-full border transition-all active:scale-95 ${
                   isLearned 
                     ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 font-semibold' 
                     : 'border-slate-300 text-tgHint hover:border-slate-400'
                 }"
               >
-                <span>${isLearned ? '✓ Выучено' : '○ В процессе'}</span>
+                <span>${isLearned ? '✓ Запомнил' : '○ В процессе'}</span>
               </button>
             </div>
 
@@ -835,38 +835,28 @@
               </button>
             </div>
 
-            <!-- Быстрые действия внизу карточки -->
-            <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs gap-1.5">
+            <!-- Быстрые действия внизу карточки (Перемещение очереди) -->
+            <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs gap-2">
               <button 
                 onclick="moveToBeginningOfQueue('${item.id}')" 
-                class="py-2 px-2.5 sm:px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1 active:scale-98 transition-transform"
+                class="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1.5 active:scale-98 transition-transform"
                 title="Переместить в самый верх списка"
               >
                 <svg class="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
                 </svg>
-                <span>В начало</span>
+                <span>В начало списка</span>
               </button>
 
               <button 
                 onclick="moveToEndOfQueue('${item.id}')" 
-                class="py-2 px-2.5 sm:px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1 active:scale-98 transition-transform"
+                class="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1.5 active:scale-98 transition-transform"
                 title="Переместить в самый конец списка"
               >
                 <svg class="w-3.5 h-3.5 text-tgHint" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
-                <span>В конец</span>
-              </button>
-
-              <button 
-                onclick="markAsLearnedAndNext('${item.id}')" 
-                class="flex-1 py-2 px-2.5 sm:px-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold flex items-center justify-center space-x-1 active:scale-98 transition-transform shadow-xs"
-              >
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span class="truncate">${isLearned ? 'Выучено' : 'Запомнил!'}</span>
+                <span>В конец списка</span>
               </button>
             </div>
 
