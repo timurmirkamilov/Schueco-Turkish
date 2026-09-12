@@ -10298,5 +10298,905 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
     "learned": false
+  },
+  {
+    "id": "phr_1",
+    "tr": "Ne yapmam gerekiyor?",
+    "phonetic": "Не йапмам герекийор?",
+    "ru": "Что мне нужно делать?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_2",
+    "tr": "Bunu nereye koyayım?",
+    "phonetic": "Буну нерейе койайым?",
+    "ru": "Куда мне это положить / поставить?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_3",
+    "tr": "Yardım edebilir misin?",
+    "phonetic": "Йардым эдебилир мисин?",
+    "ru": "Можешь помочь?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_4",
+    "tr": "Bir el atar mısın?",
+    "phonetic": "Бир эль атар мысын?",
+    "ru": "Помоги перенести (подсоби руками)?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_5",
+    "tr": "Malzeme bitti",
+    "phonetic": "Малземе битти",
+    "ru": "Материал закончился",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_6",
+    "tr": "Yeni parça lazım",
+    "phonetic": "Йени парча лазым",
+    "ru": "Нужна новая деталь / заготовка",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_7",
+    "tr": "Bu parça hatalı",
+    "phonetic": "Бу парча хаталы",
+    "ru": "Эта деталь дефектная / бракованная",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_8",
+    "tr": "Ölçüleri kontrol ettin mi?",
+    "phonetic": "Ольчюлери контрол эттин ми?",
+    "ru": "Ты проверил размеры?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_9",
+    "tr": "İş bitti mi?",
+    "phonetic": "И̇ш битти ми?",
+    "ru": "Работа закончена?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_10",
+    "tr": "Az kaldı, bitiriyorum",
+    "phonetic": "Аз калды, битирийорум",
+    "ru": "Немного осталось, заканчиваю",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_11",
+    "tr": "Şimdi ne yapıyoruz?",
+    "phonetic": "Шимди не йапыйоруз?",
+    "ru": "Что мы делаем сейчас?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_12",
+    "tr": "Bunu kim yaptı?",
+    "phonetic": "Буну ким йапты?",
+    "ru": "Кто это сделал?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_13",
+    "tr": "Usta bakar mısın?",
+    "phonetic": "Уста бакар мысын?",
+    "ru": "Мастер, посмотри пожалуйста!",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_14",
+    "tr": "Hangi alet lazım?",
+    "phonetic": "Ханги алет лазым?",
+    "ru": "Какой инструмент нужен?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_15",
+    "tr": "Bana şarjlı matkabı ver",
+    "phonetic": "Бана шаржлы маткабы вер",
+    "ru": "Передай мне шуруповерт",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_16",
+    "tr": "Dikkatli ol, çok sıcak",
+    "phonetic": "Диккатли ол, чок сыджак",
+    "ru": "Будь осторожен, очень горячо!",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_17",
+    "tr": "Dikkatli ol, keskin kenar",
+    "phonetic": "Диккатли ол, кескин кенар",
+    "ru": "Осторожно, острая кромка!",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_18",
+    "tr": "Makineyi durdur!",
+    "phonetic": "Макинейи дурдур!",
+    "ru": "Останови станок!",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_19",
+    "tr": "Hava hortumunu uzat",
+    "phonetic": "Хава хортумуну узат",
+    "ru": "Протяни пневматический шланг",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_20",
+    "tr": "Yarın mesai var mı?",
+    "phonetic": "Йарын месаи вар мы?",
+    "ru": "Завтра будут сверхурочные?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_21",
+    "tr": "Paydos vakti geldi",
+    "phonetic": "Пайдос вакти гельди",
+    "ru": "Время окончания смены (конец работы)!",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_22",
+    "tr": "Yemek molası kaçta?",
+    "phonetic": "Йемек моласы качта?",
+    "ru": "Во сколько обеденный перерыв?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_23",
+    "tr": "Sigara molasına çıkıyorum",
+    "phonetic": "Сигара моласына чыкыйорум",
+    "ru": "Я выхожу на перекур",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_24",
+    "tr": "Hemen geliyorum",
+    "phonetic": "Хемен гелийорум",
+    "ru": "Я сейчас вернусь (одна минута)",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_25",
+    "tr": "Bunu düzeltmem lazım",
+    "phonetic": "Буну дюзельтмем лазым",
+    "ru": "Мне нужно это исправить / переделать",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_26",
+    "tr": "Çizime göre uygun",
+    "phonetic": "Чизиме гёре уйгун",
+    "ru": "Сделано строго по чертежу",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_27",
+    "tr": "Usta onay verdi",
+    "phonetic": "Уста онай верди",
+    "ru": "Мастер одобрил / принял работу",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_28",
+    "tr": "Vinç geliyor, kenara çekilin",
+    "phonetic": "Винч гелийор, кенара чекилин",
+    "ru": "Кран идет, отойдите в сторону!",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_29",
+    "tr": "Camı dikkatli tut",
+    "phonetic": "Джамы диккатли тут",
+    "ru": "Держи стекло осторожно!",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_30",
+    "tr": "Bu profilin boyu kaç?",
+    "phonetic": "Бу профилин бойу кач?",
+    "ru": "Какая длина у этого профиля?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_31",
+    "tr": "Açıyı kaç derece kesiyoruz?",
+    "phonetic": "Ачыйы кач дередже кесийоруз?",
+    "ru": "Под каким углом режем?",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_32",
+    "tr": "Kırk beş derece kes",
+    "phonetic": "Кырк беш дередже кес",
+    "ru": "Режь под 45 градусов",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_33",
+    "tr": "Doksan derece gönye",
+    "phonetic": "Доксан дередже гёнйе",
+    "ru": "Прямой угол (90 градусов по угольнику)",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_34",
+    "tr": "Civataları iyi sık",
+    "phonetic": "Дживаталары ийи сык",
+    "ru": "Затяни болты как следует",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_35",
+    "tr": "Silikonu düzgün çek",
+    "phonetic": "Силикону дюзгюн чек",
+    "ru": "Наноси силикон ровным швом",
+    "category": "shop_phrases",
+    "categoryLabel": "Цеховые фразы",
+    "isSchueco": true,
+    "learned": false
+  },
+  {
+    "id": "phr_36",
+    "tr": "Nasılsınız? İyiyim, siz nasılsınız?",
+    "phonetic": "Насылсыныз? и̇йийим, сиз насылсыныз?",
+    "ru": "Как вы? Я хорошо, а вы как?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_37",
+    "tr": "Adınız ne? Benim adım Timur",
+    "phonetic": "Адыныз не? беним адым тимур",
+    "ru": "Как вас зовут? Меня зовут Тимур",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_38",
+    "tr": "Tanıştığımıza memnun oldum",
+    "phonetic": "Таныштыымыза мемнун олдум",
+    "ru": "Очень приятно познакомиться",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_39",
+    "tr": "Ben de çok memnun oldum",
+    "phonetic": "Бен де чок мемнун олдум",
+    "ru": "Мне тоже очень приятно",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_40",
+    "tr": "Türkçe az biliyorum",
+    "phonetic": "Тюркче аз билийорум",
+    "ru": "Я немного знаю турецкий язык",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_41",
+    "tr": "Biraz daha yavaş konuşur musunuz?",
+    "phonetic": "Бираз даха йаваш конушур мусунуз?",
+    "ru": "Не могли бы вы говорить помедленнее?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_42",
+    "tr": "Tekrar söyler misiniz?",
+    "phonetic": "Текрар сёйлер мисиниз?",
+    "ru": "Повторите еще раз, пожалуйста?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_43",
+    "tr": "Bunu anlamadım, açıklar mısınız?",
+    "phonetic": "Буну анламадым, ачыклар мысыныз?",
+    "ru": "Я этого не понял, поясните пожалуйста?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_44",
+    "tr": "Bunun Türkçe adı ne?",
+    "phonetic": "Бунун тюркче ады не?",
+    "ru": "Как это называется по-турецки?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_45",
+    "tr": "Ne demek istiyorsunuz?",
+    "phonetic": "Не демек истийорсунуз?",
+    "ru": "Что вы имеете в виду?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_46",
+    "tr": "Bakar mısınız?",
+    "phonetic": "Бакар мысыныз?",
+    "ru": "Будьте добры! / Подойдите, пожалуйста!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_47",
+    "tr": "Hesap lütfen",
+    "phonetic": "Хесап лютфен",
+    "ru": "Счет, пожалуйста",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_48",
+    "tr": "Kredi kartı geçiyor mu?",
+    "phonetic": "Креди карты гечийор му?",
+    "ru": "Принимается ли оплата картой?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_49",
+    "tr": "Nakit ödeyeceğim",
+    "phonetic": "Накит одейеджейим",
+    "ru": "Я заплачу наличными",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_50",
+    "tr": "Fiş alabilir miyim?",
+    "phonetic": "Фиш алабилир мийим?",
+    "ru": "Можно чек / квитанцию?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_51",
+    "tr": "Poşet ister misiniz? Yok, istemiyorum",
+    "phonetic": "Пошет истер мисиниз? йок, истемийорум",
+    "ru": "Пакет нужен? Нет, спасибо, не надо",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_52",
+    "tr": "Ne kadar tuttu?",
+    "phonetic": "Не кадар тутту?",
+    "ru": "Сколько вышло по сумме?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_53",
+    "tr": "İndirim yapabilir misiniz?",
+    "phonetic": "И̇ндирим йапабилир мисиниз?",
+    "ru": "Сделаете скидку?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_54",
+    "tr": "En son kaç olur?",
+    "phonetic": "Эн сон кач олур?",
+    "ru": "Какая окончательная цена?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_55",
+    "tr": "Su alabilir miyim?",
+    "phonetic": "Су алабилир мийим?",
+    "ru": "Можно стакан воды?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_56",
+    "tr": "İki çay alabilir miyiz?",
+    "phonetic": "И̇ки чай алабилир мийиз?",
+    "ru": "Можно нам два чая?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_57",
+    "tr": "Lavabo nerede acaba?",
+    "phonetic": "Лавабо нереде аджаба?",
+    "ru": "Подскажите, где находится туалет?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_58",
+    "tr": "Oraya nasıl gidebilirim?",
+    "phonetic": "Орайа насыл гидебилирим?",
+    "ru": "Как мне дойти / доехать туда?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_59",
+    "tr": "Otobüs durağı nerede?",
+    "phonetic": "Отобюс дураы нереде?",
+    "ru": "Где автобусная остановка?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_60",
+    "tr": "Metroya ne kadar uzaklıkta?",
+    "phonetic": "Метройа не кадар узаклыкта?",
+    "ru": "Как далеко до станции метро?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_61",
+    "tr": "Düz gidin, sağa dönün",
+    "phonetic": "Дюз гидин, саа дёнюн",
+    "ru": "Идите прямо, поверните направо",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_62",
+    "tr": "Işıklardan sola dönün",
+    "phonetic": "Ишыклардан сола дёнюн",
+    "ru": "На светофоре поверните налево",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_63",
+    "tr": "Yardıma ihtiyacım var",
+    "phonetic": "Йардыма ихтийаджым вар",
+    "ru": "Мне нужна помощь",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_64",
+    "tr": "Bana yardım edebilir misiniz?",
+    "phonetic": "Бана йардым эдебилир мисиниз?",
+    "ru": "Вы не могли бы мне помочь?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_65",
+    "tr": "Kendinize iyi bakın",
+    "phonetic": "Кендинизе ийи бакын",
+    "ru": "Берегите себя!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_66",
+    "tr": "Hayırlı işler, kolay gelsin",
+    "phonetic": "Хайырлы ишлер, колай гельсин",
+    "ru": "Удачной работы и легкого дня!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_67",
+    "tr": "Görüşmek üzere, hoşça kalın",
+    "phonetic": "Гёрюшмек узере, хошча калын",
+    "ru": "До скорой встречи, всего доброго!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_68",
+    "tr": "İyi akşamlar, yarın görüşürüz",
+    "phonetic": "И̇йи акшамлар, йарын гёрюшюрюз",
+    "ru": "Добрый вечер, увидимся завтра!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_69",
+    "tr": "İyi istirahatler",
+    "phonetic": "И̇йи истирахатлер",
+    "ru": "Хорошего отдыха!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_70",
+    "tr": "Eline koluna sağlık",
+    "phonetic": "Элине колуна салык",
+    "ru": "Огромное спасибо за отличную работу!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_71",
+    "tr": "Afiyet bal şeker olsun",
+    "phonetic": "Афийет бал шекер олсун",
+    "ru": "Приятного аппетита (на здоровье)!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_72",
+    "tr": "Çok teşekkür ederim, sağ olun",
+    "phonetic": "Чок тешеккюр эдерим, са олун",
+    "ru": "Большое спасибо, будьте здоровы!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_73",
+    "tr": "Bir şey değil, her zaman",
+    "phonetic": "Бир шей дейиль, хер заман",
+    "ru": "Не за что, всегда рад помочь!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_74",
+    "tr": "Kusura bakmayın, rahatsız ettim",
+    "phonetic": "Кусура бакмайын, рахатсыз эттим",
+    "ru": "Извините, что побеспокоил",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_75",
+    "tr": "Sorun yok, hiç önemli değil",
+    "phonetic": "Сорун йок, хич онемли дейиль",
+    "ru": "Все в порядке, абсолютно не важно!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_76",
+    "tr": "Merak etme, hallederiz",
+    "phonetic": "Мерак этме, халледериз",
+    "ru": "Не волнуйся, мы со всем разберемся!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_77",
+    "tr": "Bana uyar, sıkıntı yok",
+    "phonetic": "Бана уйар, сыкынты йок",
+    "ru": "Мне подходит, никаких проблем!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_78",
+    "tr": "Fark etmez, nasıl istersen",
+    "phonetic": "Фарк этмез, насыл истерсен",
+    "ru": "Без разницы, как захочешь",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_79",
+    "tr": "Haklısınız, katılıyorum",
+    "phonetic": "Хаклысыныз, катылыйорум",
+    "ru": "Вы совершенно правы, согласен",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_80",
+    "tr": "Kesinlikle öyle",
+    "phonetic": "Кесинликле ойле",
+    "ru": "Безусловно, так и есть",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_81",
+    "tr": "Tabii ki, memnuniyetle",
+    "phonetic": "Табии ки, мемнунийетле",
+    "ru": "Конечно, с большим удовольствием!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_82",
+    "tr": "Saat kaçta buluşuyoruz?",
+    "phonetic": "Саат качта булушуйоруз?",
+    "ru": "Во сколько часов мы встречаемся?",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_83",
+    "tr": "Trafik çok yoğundu, geç kaldım",
+    "phonetic": "Трафик чок йоунду, геч калдым",
+    "ru": "Были сильные пробки, я опоздал",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_84",
+    "tr": "Hemen yola çıkıyorum",
+    "phonetic": "Хемен йола чыкыйорум",
+    "ru": "Я уже выхожу / выезжаю в путь",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_85",
+    "tr": "Hayırlı cumalar",
+    "phonetic": "Хайырлы джумалар",
+    "ru": "Благословенной пятницы!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_86",
+    "tr": "Hayırlı bayramlar",
+    "phonetic": "Хайырлы байрамлар",
+    "ru": "С праздником!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_87",
+    "tr": "Geçmiş olsun, acil şifalar",
+    "phonetic": "Гечмиш олсун, аджиль шифалар",
+    "ru": "Выздоравливай скорее, скорейшего исцеления!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_88",
+    "tr": "Başınız sağ olsun",
+    "phonetic": "Башыныз са олсун",
+    "ru": "Мои соболезнования",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_89",
+    "tr": "Allah kolaylık versin",
+    "phonetic": "Аллах колайлык версин",
+    "ru": "Пусть Аллах облегчит труд!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
+  },
+  {
+    "id": "phr_90",
+    "tr": "Hayırlı olsun, güle güle kullanın",
+    "phonetic": "Хайырлы олсун, гюле гюле кулланын",
+    "ru": "Поздравляю, пользуйтесь на радость!",
+    "category": "daily_phrases",
+    "categoryLabel": "Разговорные фразы",
+    "isSchueco": false,
+    "learned": false
   }
 ];
