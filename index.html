@@ -575,57 +575,121 @@
       }, 2000);
     }
 
-    // ==================== ОЗВУЧКА (SpeechSynthesis tr-TR) ====================
+    // ==================== ОЗВУЧКА (Гибридный TTS: SpeechSynthesis + Онлайн Аудио tr-TR) ====================
     let turkishVoice = null;
+    let currentAudio = null;
 
     function initVoices() {
-      if (!('speechSynthesis' in window)) return;
-      const voices = window.speechSynthesis.getVoices();
-      turkishVoice = voices.find(v => v.lang === 'tr-TR' || v.lang.startsWith('tr')) || null;
+      if ('speechSynthesis' in window && window.speechSynthesis) {
+        try {
+          const voices = window.speechSynthesis.getVoices();
+          turkishVoice = voices.find(v => v.lang === 'tr-TR' || v.lang.startsWith('tr')) || null;
+        } catch (e) {}
+      }
     }
 
-    if ('speechSynthesis' in window) {
+    if ('speechSynthesis' in window && window.speechSynthesis) {
       window.speechSynthesis.onvoiceschanged = initVoices;
       initVoices();
     }
 
+    function playOnlineTts(text, resetBtn) {
+      try {
+        if (currentAudio) {
+          currentAudio.pause();
+          currentAudio = null;
+        }
+
+        const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob&q=${encodeURIComponent(text)}`;
+        const audio = new Audio(ttsUrl);
+        currentAudio = audio;
+
+        audio.onended = () => {
+          resetBtn();
+          currentAudio = null;
+        };
+
+        audio.onerror = (e) => {
+          console.warn('Audio fallback error:', e);
+          resetBtn();
+          currentAudio = null;
+          showToast('Не удалось загрузить озвучку', '⚠️');
+        };
+
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            triggerHaptic('light');
+          }).catch(err => {
+            console.warn('Playback blocked:', err);
+            resetBtn();
+          });
+        }
+      } catch (err) {
+        console.error('TTS error:', err);
+        resetBtn();
+      }
+    }
+
     function speakTurkish(text, cardId) {
-      if (!('speechSynthesis' in window)) {
-        showToast('Озвучка не поддерживается вашим браузером', '⚠️');
-        return;
-      }
-
-      window.speechSynthesis.cancel();
-
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'tr-TR';
-      utterance.rate = 0.88; // слегка замедленная четкая речь
-      utterance.pitch = 1.0;
-
-      if (turkishVoice) {
-        utterance.voice = turkishVoice;
-      }
-
-      const speakBtn = document.getElementById(`speak-btn-${cardId}`);
-      if (speakBtn) {
+      // Ищем кнопку по ID
+      const speakBtn = document.getElementById(`speak-btn-${cardId}`) || document.activeElement;
+      if (speakBtn && speakBtn.classList) {
         speakBtn.classList.add('speaking', 'text-sky-600', 'scale-110');
       }
 
-      utterance.onend = () => {
-        if (speakBtn) {
+      function resetBtn() {
+        if (speakBtn && speakBtn.classList) {
           speakBtn.classList.remove('speaking', 'text-sky-600', 'scale-110');
         }
-      };
+      }
 
-      utterance.onerror = (err) => {
-        console.warn('TTS ошибка:', err);
-        if (speakBtn) {
-          speakBtn.classList.remove('speaking', 'text-sky-600', 'scale-110');
+      // Если в браузере есть SpeechSynthesis и найден турецкий голос — пробуем его
+      if ('speechSynthesis' in window && window.speechSynthesis) {
+        try {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'tr-TR';
+          utterance.rate = 0.88;
+          utterance.pitch = 1.0;
+
+          if (turkishVoice) {
+            utterance.voice = turkishVoice;
+          }
+
+          let spoken = false;
+          utterance.onstart = () => {
+            spoken = true;
+          };
+
+          utterance.onend = () => {
+            resetBtn();
+          };
+
+          utterance.onerror = () => {
+            // Если нативный TTS упал — фолбэк на онлайн аудио
+            playOnlineTts(text, resetBtn);
+          };
+
+          window.speechSynthesis.speak(utterance);
+          triggerHaptic('light');
+
+          // Защита: если через 300мс нативный TTS не запустился (частый баг Telegram WebView)
+          setTimeout(() => {
+            if (!spoken && (!window.speechSynthesis.speaking || !turkishVoice)) {
+              window.speechSynthesis.cancel();
+              playOnlineTts(text, resetBtn);
+            }
+          }, 300);
+
+          return;
+        } catch (e) {
+          console.warn('Native TTS exception, fallback to audio:', e);
         }
-      };
+      }
 
-      window.speechSynthesis.speak(utterance);
-      triggerHaptic('light');
+      // Если SpeechSynthesis нет в WebView Telegram — сразу играем онлайн аудио
+      playOnlineTts(text, resetBtn);
     }
 
     // ==================== ФИЛЬТРАЦИЯ И ОТОБРАЖЕНИЕ ====================
