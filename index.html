@@ -616,11 +616,14 @@
           currentAudio = null;
         }
 
-        const cleanText = text.trim();
+        const cleanText = text.replace(/[\/()\-]/g, ' ').replace(/\s+/g, ' ').trim();
         const encoded = encodeURIComponent(cleanText);
+        const isSlow = (speed === 'slow');
+        const ttsspeedParam = isSlow ? '&ttsspeed=0.3' : '';
+
         const providers = [
-          `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob&q=${encoded}`,
-          `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=tr&q=${encoded}`,
+          `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob${ttsspeedParam}&q=${encoded}`,
+          `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=tr${ttsspeedParam}&q=${encoded}`,
           `https://dict.youdao.com/dictvoice?audio=${encoded}&le=tr`
         ];
 
@@ -638,12 +641,11 @@
           audio.referrerPolicy = 'no-referrer';
           audio.src = src;
 
-          // Мужской тембр: отключаем фиксацию тона и понижаем темп речи (0.88x)
-          // За счет этого частота звука сдвигается в глубокий мужской регистр
-          audio.preservesPitch = false;
-          audio.mozPreservesPitch = false;
-          audio.webkitPreservesPitch = false;
-          audio.playbackRate = 0.88;
+          // Скорость: обычная (1.0x) или замедленная (0.72x)
+          audio.preservesPitch = true;
+          audio.mozPreservesPitch = true;
+          audio.webkitPreservesPitch = true;
+          audio.playbackRate = isSlow ? 0.72 : 1.0;
 
           currentAudio = audio;
 
@@ -679,16 +681,17 @@
       }
     }
 
-    function speakTurkish(text, cardId, btnElement) {
-      // Ищем кнопку по переданному элементу, по ID или активному элементу
-      const speakBtn = btnElement || (cardId ? document.getElementById(`speak-btn-${cardId}`) : null) || document.activeElement;
+    function speakTurkish(text, cardId, speed = 'normal', btnElement = null) {
+      const isSlow = (speed === 'slow');
+      const speakBtn = btnElement || (cardId ? document.getElementById(`speak-${speed}-${cardId}`) : null) || document.activeElement;
+      
       if (speakBtn && speakBtn.classList) {
-        speakBtn.classList.add('speaking', 'text-sky-600', 'scale-110');
+        speakBtn.classList.add('speaking', isSlow ? 'text-amber-600' : 'text-sky-600', 'scale-110');
       }
 
       function resetBtn() {
         if (speakBtn && speakBtn.classList) {
-          speakBtn.classList.remove('speaking', 'text-sky-600', 'scale-110');
+          speakBtn.classList.remove('speaking', isSlow ? 'text-amber-600' : 'text-sky-600', 'scale-110');
         }
       }
 
@@ -711,8 +714,8 @@
           const utterance = new SpeechSynthesisUtterance(text);
           utterance.voice = turkishVoice;
           utterance.lang = 'tr-TR';
-          utterance.rate = 0.88;
-          utterance.pitch = 0.82; // Мужской грудной регистр (0.8 - 0.85)
+          utterance.rate = isSlow ? 0.7 : 1.0; // 1.0 - нормальная скорость, 0.7 - замедленная
+          utterance.pitch = 0.95;
 
           let spoken = false;
           utterance.onstart = () => {
@@ -725,7 +728,7 @@
 
           utterance.onerror = (e) => {
             console.warn('Native speech error, fallback to online:', e);
-            playOnlineTts(text, resetBtn);
+            playOnlineTts(text, speed, resetBtn);
           };
 
           window.speechSynthesis.speak(utterance);
@@ -735,7 +738,7 @@
           setTimeout(() => {
             if (!spoken && !window.speechSynthesis.speaking) {
               window.speechSynthesis.cancel();
-              playOnlineTts(text, resetBtn);
+              playOnlineTts(text, speed, resetBtn);
             }
           }, 1500);
 
@@ -745,8 +748,8 @@
         }
       }
 
-      // Если турецкого системного голоса нет — сразу используем онлайн TTS с естественным турецким произношением
-      playOnlineTts(text, resetBtn);
+      // Если турецкого системного голоса нет — сразу используем онлайн TTS
+      playOnlineTts(text, speed, resetBtn);
     }
 
     // ==================== ФИЛЬТРАЦИЯ И ОТОБРАЖЕНИЕ ====================
@@ -822,17 +825,30 @@
                 </div>
               </div>
 
-              <!-- Кнопка озвучки (Динамик) -->
-              <button 
-                id="speak-btn-${item.id}"
-                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', this)" 
-                title="Озвучить на турецком"
-                class="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-900/40 text-sky-600 dark:text-sky-300 flex items-center justify-center shrink-0 active:scale-90 transition-transform shadow-xs hover:bg-sky-100"
-              >
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-2.23l-5.5 4.5h-4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4l5.5 4.5c.67.55 1.5.07 1.5-.8v-19.4c0-.87-.83-1.35-1.5-.8zM14 8.86v6.28c1.3-.61 2-1.89 2-3.14s-.7-2.53-2-3.14z"/>
-                </svg>
-              </button>
+              <!-- Кнопки озвучки: Обычная (Динамик) и Медленная (Черепашка) -->
+              <div class="flex items-center gap-1.5 shrink-0">
+                <!-- Обычная скорость -->
+                <button 
+                  id="speak-normal-${item.id}"
+                  onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'normal', this)" 
+                  title="Обычная скорость речи"
+                  class="w-11 h-11 rounded-2xl bg-sky-50 dark:bg-sky-900/40 text-sky-600 dark:text-sky-300 flex items-center justify-center active:scale-90 transition-all shadow-xs hover:bg-sky-100"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-2.23l-5.5 4.5h-4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4l5.5 4.5c.67.55 1.5.07 1.5-.8v-19.4c0-.87-.83-1.35-1.5-.8zM14 8.86v6.28c1.3-.61 2-1.89 2-3.14s-.7-2.53-2-3.14z"/>
+                  </svg>
+                </button>
+
+                <!-- Медленная скорость (Черепашка) -->
+                <button 
+                  id="speak-slow-${item.id}"
+                  onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'slow', this)" 
+                  title="Медленная скорость речи (по слогам)"
+                  class="w-11 h-11 rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-300 flex items-center justify-center active:scale-90 transition-all shadow-xs hover:bg-amber-100 text-lg"
+                >
+                  🐢
+                </button>
+              </div>
             </div>
 
             <!-- Быстрые действия внизу карточки (Перемещение очереди) -->
@@ -906,15 +922,24 @@
             <!-- Правая часть: Управление позицией (В самый верх / В самый низ) и озвучка -->
             <div class="flex items-center space-x-1.5 shrink-0">
               
-              <!-- Звук -->
+              <!-- Звук обычный (Динамик) -->
               <button 
-                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', this)" 
-                class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-sky-600 dark:text-sky-400"
-                title="Озвучить"
+                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'normal', this)" 
+                class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-sky-600 dark:text-sky-400 active:scale-90 transition-transform"
+                title="Обычная скорость речи"
               >
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-2.23l-5.5 4.5h-4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4l5.5 4.5c.67.55 1.5.07 1.5-.8v-19.4c0-.87-.83-1.35-1.5-.8zM14 8.86v6.28c1.3-.61 2-1.89 2-3.14s-.7-2.53-2-3.14z"/>
                 </svg>
+              </button>
+
+              <!-- Звук медленный (Черепашка) -->
+              <button 
+                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'slow', this)" 
+                class="p-2 rounded-lg bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/50 dark:hover:bg-amber-900 text-xs active:scale-90 transition-transform"
+                title="Медленная скорость речи (Черепашка)"
+              >
+                🐢
               </button>
 
               <!-- В самый верх -->
