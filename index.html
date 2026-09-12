@@ -9,6 +9,9 @@
   <!-- Telegram Web App SDK -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
+  <!-- База данных: Профильный Schüco + Топ 1000 слов -->
+  <script src="words.js"></script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -134,16 +137,40 @@
       <!-- Категории (горизонтальный скролл) -->
       <div class="flex space-x-1.5 overflow-x-auto pb-1 no-scrollbar text-xs font-medium">
         <button data-category="all" class="cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-colors">
-          Все категории
+          🌟 Все слова (1000+)
         </button>
-        <button data-category="quality" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-tgHint whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="all_schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          🏗️ Все Schüco (Цех)
+        </button>
+        <button data-category="quality" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
           ⚠️ Контроль качества
         </button>
-        <button data-category="schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-tgHint whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
           ⚙️ Профили и фурнитура
         </button>
-        <button data-category="inspector" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-tgHint whitespace-nowrap hover:text-tgText transition-colors">
-          📋 Инспектор и акты
+        <button data-category="tools" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          🛠 Станки и инструмент
+        </button>
+        <button data-category="glass" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          🪟 Стеклопакеты
+        </button>
+        <button data-category="inspector" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          📋 С инспектором
+        </button>
+        <button data-category="safety" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          🦺 Охрана труда (İSG)
+        </button>
+        <button data-category="top_verbs" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          ⚡ Глаголы действий
+        </button>
+        <button data-category="top_nouns" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          📦 Производство и быт
+        </button>
+        <button data-category="top_daily" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          🔢 Базовые и счет
+        </button>
+        <button data-category="top_adj" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+          💬 Прилагательные и фразы
         </button>
       </div>
     </section>
@@ -218,302 +245,10 @@
       }
     }
 
-    // Исходная база данных Schüco (32 профессиональные фразы и термина)
-    const INITIAL_DICTIONARY = [
-      // 1. Контроль качества и дефекты
-      {
-        id: 'qc_1',
-        tr: 'Boşluk çok fazla',
-        phonetic: 'Бошлук чок фазла',
-        ru: 'Зазор слишком большой',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_2',
-        tr: 'Köşe uyuşmuyor',
-        phonetic: 'Кёше уюшмуйор',
-        ru: 'Угол не сходится / щель в углу',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_3',
-        tr: 'Fitili kontrol et',
-        phonetic: 'Фитили контроль эт',
-        ru: 'Проверь уплотнитель',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_4',
-        tr: 'Kusurlu / Hatalı',
-        phonetic: 'Кусурлу / Хаталы',
-        ru: 'Брак / Дефектный элемент',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_5',
-        tr: 'Gönyesinde değil',
-        phonetic: 'Гёнйесинде деиль',
-        ru: 'Не под прямым углом (диагонали ушли)',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_6',
-        tr: 'Çizik var',
-        phonetic: 'Чизик вар',
-        ru: 'Есть царапина на профиле',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_7',
-        tr: 'Boya hatası var',
-        phonetic: 'Боя хатасы вар',
-        ru: 'Дефект покраски / напыления',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_8',
-        tr: 'Conta ezilmiş',
-        phonetic: 'Джонта эзильмиш',
-        ru: 'Уплотнитель примят / зажат',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_9',
-        tr: 'Çapakları temizle',
-        phonetic: 'Чапаклары темизле',
-        ru: 'Зачисти заусенцы / грат после пилы',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_10',
-        tr: 'Vidalama gevşek',
-        phonetic: 'Видалама гевшек',
-        ru: 'Винт / саморез не затянут',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-      {
-        id: 'qc_11',
-        tr: 'Su sızdırmazlık testi',
-        phonetic: 'Су сыздырмазлык тести',
-        ru: 'Тест на водонепроницаемость',
-        category: 'quality',
-        categoryLabel: 'Контроль качества',
-        learned: false
-      },
-
-      // 2. Профили и фурнитура Schüco
-      {
-        id: 'prof_1',
-        tr: 'Isı bariyeri',
-        phonetic: 'Ысы барийери',
-        ru: 'Термомост (полиамидная термовставка)',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_2',
-        tr: 'Köşe takozu',
-        phonetic: 'Кёше такозу',
-        ru: 'Угловой соединитель (сухарь)',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_3',
-        tr: 'Tahliye kanalı',
-        phonetic: 'Тахлийе каналы',
-        ru: 'Дренажный канал / водоотвод',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_4',
-        tr: 'Cam çıtası',
-        phonetic: 'Джам чытасы',
-        ru: 'Штапик (прижимной профиль стеклопакета)',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_5',
-        tr: 'Cam çıtası tam oturmadı',
-        phonetic: 'Джам чытасы там отурмады',
-        ru: 'Штапик не защелкнулся до конца',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_6',
-        tr: 'Kanat profili',
-        phonetic: 'Канат профили',
-        ru: 'Профиль створки',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_7',
-        tr: 'Kasa profili',
-        phonetic: 'Каса профили',
-        ru: 'Профиль рамы',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_8',
-        tr: 'Orta kayıt',
-        phonetic: 'Орта кайит',
-        ru: 'Импост (средняя стойка/ригель рамы)',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_9',
-        tr: 'İspanyolet mekanizması',
-        phonetic: 'Испаньолет механизмы',
-        ru: 'Механизм запирания / эспаньолет',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_10',
-        tr: 'Gizli menteşe',
-        phonetic: 'Гизли ментеше',
-        ru: 'Скрытая петля (Schüco AvanTec)',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_11',
-        tr: 'Cephe profili',
-        phonetic: 'Джепхе профили',
-        ru: 'Фасадный профиль (стоечно-ригельный)',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_12',
-        tr: 'Baskı çıtası',
-        phonetic: 'Баскы чытасы',
-        ru: 'Прижимная планка фасада',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-      {
-        id: 'prof_13',
-        tr: 'Kapak profili',
-        phonetic: 'Капак профили',
-        ru: 'Декоративная крышка капота фасада',
-        category: 'schueco',
-        categoryLabel: 'Профили и фурнитура',
-        learned: false
-      },
-
-      // 3. Общение с инспектором
-      {
-        id: 'insp_1',
-        tr: 'Kontrole hazır',
-        phonetic: 'Контроле хазыр',
-        ru: 'Готово к инспекции / проверке',
-        category: 'inspector',
-        categoryLabel: 'Общение с инспектором',
-        learned: false
-      },
-      {
-        id: 'insp_2',
-        tr: 'Tutanağı imzalayın',
-        phonetic: 'Тутанаы имзалайн',
-        ru: 'Подпишите акт приёмки',
-        category: 'inspector',
-        categoryLabel: 'Общение с инспектором',
-        learned: false
-      },
-      {
-        id: 'insp_3',
-        tr: 'Bunu hemen düzelteceğiz',
-        phonetic: 'Буну хемен дюзельтеджиз',
-        ru: 'Мы сразу это исправим',
-        category: 'inspector',
-        categoryLabel: 'Общение с инспектором',
-        learned: false
-      },
-      {
-        id: 'insp_4',
-        tr: 'Tolerans dahilinde',
-        phonetic: 'Толеранс дахилинде',
-        ru: 'В пределах допустимого допуска',
-        category: 'inspector',
-        categoryLabel: 'Общение с инспектором',
-        learned: false
-      },
-      {
-        id: 'insp_5',
-        tr: 'Teknik çizime bakın',
-        phonetic: 'Текник чизиме бакын',
-        ru: 'Сверьтесь с рабочим чертежом',
-        category: 'inspector',
-        categoryLabel: 'Общение с инспектором',
-        learned: false
-      },
-      {
-        id: 'insp_6',
-        tr: 'Montaj talimatına uygun',
-        phonetic: 'Монтаж талиматына уйгун',
-        ru: 'Собрано строго по каталогу Schüco',
-        category: 'inspector',
-        categoryLabel: 'Общение с инспектором',
-        learned: false
-      },
-      {
-        id: 'insp_7',
-        tr: 'Ölçüleri tekrar aldık',
-        phonetic: 'Ольчюлери текрар алдык',
-        ru: 'Мы повторно перемерили габариты',
-        category: 'inspector',
-        categoryLabel: 'Общение с инспектором',
-        learned: false
-      },
-      {
-        id: 'insp_8',
-        tr: 'Onay verildi mi?',
-        phonetic: 'Онай верильди ми?',
-        ru: 'Получено ли согласование / допуск?',
-        category: 'inspector',
-        categoryLabel: 'Общение с инспектором',
-        learned: false
-      }
-    ];
+    // Исходная база данных (Schüco 80+ профильных терминов + Топ 1000 частых слов из words.js)
+    const INITIAL_DICTIONARY = (window.DICTIONARY_DATABASE && Array.isArray(window.DICTIONARY_DATABASE)) 
+      ? window.DICTIONARY_DATABASE 
+      : [];
 
     // Хранилище состояния в LocalStorage
     const STORAGE_KEY = 'schueco_turkish_app_state_v1';
@@ -522,22 +257,49 @@
     let activeTab = 'learn'; // 'learn' | 'manage'
     let selectedCategory = 'all';
     let searchQuery = '';
+    let displayLimit = 35;
 
-    // Загрузка данных
+    // Загрузка данных с интеграцией 1000+ слов
     function loadState() {
+      const baseData = (window.DICTIONARY_DATABASE && Array.isArray(window.DICTIONARY_DATABASE)) ? window.DICTIONARY_DATABASE : [];
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
           const parsed = JSON.parse(saved);
           if (Array.isArray(parsed) && parsed.length > 0) {
-            phrases = parsed;
+            const learnedMap = new Map();
+            parsed.forEach(p => { if (p && p.id) learnedMap.set(p.id, !!p.learned); });
+
+            const baseMap = new Map(baseData.map(item => [item.id, item]));
+            const result = [];
+            const addedIds = new Set();
+
+            parsed.forEach(p => {
+              if (baseMap.has(p.id)) {
+                const fresh = JSON.parse(JSON.stringify(baseMap.get(p.id)));
+                fresh.learned = !!p.learned;
+                result.push(fresh);
+                addedIds.add(p.id);
+              }
+            });
+
+            baseData.forEach(item => {
+              if (!addedIds.has(item.id)) {
+                const fresh = JSON.parse(JSON.stringify(item));
+                if (learnedMap.has(item.id)) fresh.learned = learnedMap.get(item.id);
+                result.push(fresh);
+              }
+            });
+
+            phrases = result;
+            updateLearnedCounter();
             return;
           }
         }
       } catch (e) {
         console.error('Ошибка чтения localStorage:', e);
       }
-      phrases = JSON.parse(JSON.stringify(INITIAL_DICTIONARY));
+      phrases = JSON.parse(JSON.stringify(baseData));
       saveState();
     }
 
@@ -736,13 +498,18 @@
       playAudioFallback(text, speed, resetBtn);
     }
 
-    // ==================== ФИЛЬТРАЦИЯ И ОТОБРАЖЕНИЕ ====================
+    // ==================== ФИЛЬТРАЦИЯ И ОТОБРАЖЕНИЕ 1000+ СЛОВ ====================
     function getFilteredPhrases() {
       return phrases.filter(item => {
         // Фильтр по категории
-        if (selectedCategory !== 'all' && item.category !== selectedCategory) {
+        if (selectedCategory === 'all') {
+          // Все 1000+ слов
+        } else if (selectedCategory === 'all_schueco') {
+          if (!item.isSchueco) return false;
+        } else if (item.category !== selectedCategory) {
           return false;
         }
+
         // Фильтр по поиску
         if (searchQuery.trim() !== '') {
           const q = searchQuery.toLowerCase().trim();
@@ -753,6 +520,12 @@
         }
         return true;
       });
+    }
+
+    function loadMoreItems() {
+      displayLimit += 35;
+      triggerHaptic('light');
+      renderCurrentView();
     }
 
     // Рендер Экрана 1: Цеховой словарь / Обучение
@@ -768,19 +541,22 @@
       }
       emptyState.classList.add('hidden');
 
-      container.innerHTML = filtered.map((item, index) => {
+      const displayed = filtered.slice(0, displayLimit);
+
+      const cardsHtml = displayed.map((item, index) => {
         const isLearned = item.learned;
+        const isSchueco = item.isSchueco;
         return `
           <div class="bg-tgSecBg rounded-2xl p-4 shadow-sm border ${isLearned ? 'border-emerald-500/40 bg-emerald-50/20' : 'border-slate-200 dark:border-slate-800'} transition-all duration-200 flex flex-col justify-between space-y-3">
             
             <!-- Верхняя строка карточки: Категория и статус -->
             <div class="flex items-center justify-between">
               <span class="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${
-                item.category === 'quality' ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' :
-                item.category === 'schueco' ? 'bg-blue-100 text-blue-800 dark:bg-blue-950/60 dark:text-blue-300' :
-                'bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300'
+                isSchueco 
+                  ? 'bg-sky-100 text-sky-800 dark:bg-sky-950/70 dark:text-sky-300 border border-sky-300/40' 
+                  : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
               }">
-                ${item.categoryLabel}
+                ${isSchueco ? '🏗️ ' : ''}${item.categoryLabel}
               </span>
 
               <button 
@@ -863,6 +639,23 @@
           </div>
         `;
       }).join('');
+
+      let moreBtn = '';
+      if (displayed.length < filtered.length) {
+        moreBtn = `
+          <div class="pt-2 pb-4 text-center">
+            <button 
+              onclick="loadMoreItems()" 
+              class="w-full py-3 px-4 rounded-xl bg-sky-600/10 hover:bg-sky-600/20 text-sky-700 dark:text-sky-300 font-semibold text-xs sm:text-sm transition-colors active:scale-98 flex items-center justify-center space-x-2 shadow-xs"
+            >
+              <span>Показать ещё 35 слов (показано ${displayed.length} из ${filtered.length})</span>
+              <span>⬇️</span>
+            </button>
+          </div>
+        `;
+      }
+
+      container.innerHTML = cardsHtml + moreBtn;
     }
 
     // Рендер Экрана 2: Управление списком и порядком
@@ -878,7 +671,10 @@
       }
       emptyState.classList.add('hidden');
 
-      container.innerHTML = filtered.map((item, index) => {
+      const displayed = filtered.slice(0, displayLimit);
+
+      const itemsHtml = displayed.map((item, index) => {
+        const isSchueco = item.isSchueco;
         return `
           <div class="bg-tgSecBg rounded-xl p-3 shadow-xs border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3">
             
@@ -898,7 +694,10 @@
               </button>
 
               <div class="min-w-0 flex-1">
-                <div class="text-sm font-bold text-tgText truncate">${item.tr}</div>
+                <div class="text-sm font-bold text-tgText truncate flex items-center gap-1.5">
+                  ${isSchueco ? '<span class="text-xs text-sky-600">🏗️</span>' : ''}
+                  <span>${item.tr}</span>
+                </div>
                 <div class="text-xs text-tgHint truncate">${item.ru}</div>
               </div>
             </div>
@@ -950,6 +749,23 @@
           </div>
         `;
       }).join('');
+
+      let moreBtn = '';
+      if (displayed.length < filtered.length) {
+        moreBtn = `
+          <div class="pt-2 pb-4 text-center">
+            <button 
+              onclick="loadMoreItems()" 
+              class="w-full py-3 px-4 rounded-xl bg-sky-600/10 hover:bg-sky-600/20 text-sky-700 dark:text-sky-300 font-semibold text-xs sm:text-sm transition-colors active:scale-98 flex items-center justify-center space-x-2 shadow-xs"
+            >
+              <span>Показать ещё 35 слов (показано ${displayed.length} из ${filtered.length})</span>
+              <span>⬇️</span>
+            </button>
+          </div>
+        `;
+      }
+
+      container.innerHTML = itemsHtml + moreBtn;
     }
 
     function renderCurrentView() {
@@ -1070,13 +886,14 @@
     document.querySelectorAll('.cat-pill').forEach(btn => {
       btn.addEventListener('click', () => {
         selectedCategory = btn.dataset.category;
+        displayLimit = 35; // Сброс пагинации к началу
         triggerHaptic('light');
 
         document.querySelectorAll('.cat-pill').forEach(b => {
           if (b.dataset.category === selectedCategory) {
             b.className = "cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-colors";
           } else {
-            b.className = "cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-tgHint whitespace-nowrap hover:text-tgText transition-colors";
+            b.className = "cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors";
           }
         });
 
@@ -1090,6 +907,7 @@
 
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value;
+      displayLimit = 35; // Сброс пагинации для поиска
       if (searchQuery.length > 0) {
         clearSearchBtn.classList.remove('hidden');
       } else {
@@ -1101,17 +919,30 @@
     clearSearchBtn.addEventListener('click', () => {
       searchInput.value = '';
       searchQuery = '';
+      displayLimit = 35;
       clearSearchBtn.classList.add('hidden');
       renderCurrentView();
     });
 
+    // Бесконечный скролл (Infinite Scroll для комфортного просмотра 1000+ слов)
+    window.addEventListener('scroll', () => {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 400) {
+        const filtered = getFilteredPhrases();
+        if (displayLimit < filtered.length) {
+          displayLimit += 35;
+          renderCurrentView();
+        }
+      }
+    }, { passive: true });
+
     // Сброс порядка к стандартному
     document.getElementById('resetOrderBtn').addEventListener('click', () => {
-      if (confirm('Сбросить порядок и фразы к заводским настройкам?')) {
-        phrases = JSON.parse(JSON.stringify(INITIAL_DICTIONARY));
-        saveState();
+      if (confirm('Сбросить прогресс и порядок к заводским настройкам (1030 слов)?')) {
+        localStorage.removeItem(STORAGE_KEY);
+        loadState();
+        displayLimit = 35;
         renderCurrentView();
-        showToast('Порядок сброшен к исходному', '🔄');
+        showToast('Словарь сброшен к исходному', '🔄');
       }
     });
 
