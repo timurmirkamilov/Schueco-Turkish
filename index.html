@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Schüco Türkçesi | Цеховой турецкий</title>
+
+  <!-- Telegram Web App SDK -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    // Конфигурация Tailwind для поддержки тем Telegram
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            tgBg: 'var(--tg-theme-bg-color, #f4f6f9)',
+            tgSecBg: 'var(--tg-theme-secondary-bg-color, #ffffff)',
+            tgText: 'var(--tg-theme-text-color, #1e293b)',
+            tgHint: 'var(--tg-theme-hint-color, #64748b)',
+            tgBtn: 'var(--tg-theme-button-color, #0284c7)',
+            tgBtnText: 'var(--tg-theme-button-text-color, #ffffff)',
+            schueco: '#005a9c',
+            schuecoDark: '#004273'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Плавная адаптация под мобильные интерфейсы */
+    * {
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+    input, textarea {
+      user-select: text;
+    }
+    body {
+      background-color: var(--tg-theme-bg-color, #f8fafc);
+      color: var(--tg-theme-text-color, #0f172a);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+    }
+    /* Кастомный скроллбар */
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(148, 163, 184, 0.4);
+      border-radius: 9999px;
+    }
+    /* Анимация пульсации звука */
+    @keyframes sound-wave {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+    }
+    .speaking {
+      animation: sound-wave 0.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen pb-6">
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ / ШАПКА -->
+  <header class="sticky top-0 z-30 bg-tgSecBg/95 backdrop-blur shadow-sm border-b border-slate-200/70 transition-colors">
+    <div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-2.5">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-700 to-blue-500 text-white flex items-center justify-center font-bold text-base shadow-sm">
+          Ş
+        </div>
+        <div>
+          <h1 class="text-base font-bold tracking-tight leading-tight">Schüco Türkçesi</h1>
+          <p class="text-[11px] text-tgHint leading-tight font-medium">Алюминиевые системы & Фасады</p>
+        </div>
+      </div>
+
+      <!-- Прогресс изучения -->
+      <div class="flex items-center space-x-2 bg-slate-100 dark:bg-slate-800/60 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700">
+        <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+        <span id="learnedCounter" class="text-xs font-semibold text-tgText">0/0</span>
+      </div>
+    </div>
+
+    <!-- ТАБЫ ПЕРЕКЛЮЧЕНИЯ ЭКРАНОВ -->
+    <div class="max-w-xl mx-auto px-4 pt-1 pb-2.5">
+      <div class="grid grid-cols-2 p-1 bg-slate-200/70 dark:bg-slate-800 rounded-xl gap-1">
+        <button id="tabLearnBtn" class="py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-200 bg-white text-tgText shadow-sm flex items-center justify-center space-x-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          <span>Цеховой словарь</span>
+        </button>
+        <button id="tabManageBtn" class="py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-200 text-tgHint hover:text-tgText flex items-center justify-center space-x-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+          </svg>
+          <span>Управление списком</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ОСНОВНОЙ КОНТЕНТ -->
+  <main class="flex-1 max-w-xl mx-auto w-full px-4 pt-3 space-y-3.5">
+
+    <!-- ФИЛЬТРЫ И ПОИСК -->
+    <section class="space-y-2.5">
+      <!-- Поиск -->
+      <div class="relative">
+        <input 
+          id="searchInput" 
+          type="text" 
+          placeholder="Поиск (по-русски или по-турецки)..." 
+          class="w-full bg-tgSecBg text-tgText border border-slate-300 dark:border-slate-700/80 rounded-xl px-3.5 py-2.5 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm placeholder:text-tgHint"
+        />
+        <svg class="w-4 h-4 text-tgHint absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <button id="clearSearchBtn" class="hidden absolute right-3 top-3 text-tgHint hover:text-tgText">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Категории (горизонтальный скролл) -->
+      <div class="flex space-x-1.5 overflow-x-auto pb-1 no-scrollbar text-xs font-medium">
+        <button data-category="all" class="cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-colors">
+          Все категории
+        </button>
+        <button data-category="quality" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-tgHint whitespace-nowrap hover:text-tgText transition-colors">
+          ⚠️ Контроль качества
+        </button>
+        <button data-category="schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-tgHint whitespace-nowrap hover:text-tgText transition-colors">
+          ⚙️ Профили и фурнитура
+        </button>
+        <button data-category="inspector" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-tgHint whitespace-nowrap hover:text-tgText transition-colors">
+          📋 Инспектор и акты
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================== ЭКРАН 1: ОБУЧЕНИЕ / ЦЕХОВОЙ СЛОВАРЬ ==================== -->
+    <div id="screenLearn" class="space-y-3">
+      <!-- Список карточек для обучения -->
+      <div id="cardsContainer" class="space-y-3">
+        <!-- Генерируется через JS -->
+      </div>
+    </div>
+
+    <!-- ==================== ЭКРАН 2: УПРАВЛЕНИЕ СПИСКОМ / ИЗУЧЕННЫЕ ==================== -->
+    <div id="screenManage" class="hidden space-y-3">
+      <div class="flex items-center justify-between bg-sky-50 dark:bg-sky-950/40 p-3 rounded-xl border border-sky-200 dark:border-sky-900 text-xs text-sky-800 dark:text-sky-300">
+        <div class="flex items-center space-x-2">
+          <span class="text-base">💡</span>
+          <span>Перемещайте фразы кнопками <b>«Вверх»</b> для повторения или <b>«Вниз»</b> для изученных.</span>
+        </div>
+        <button id="resetOrderBtn" class="ml-2 underline hover:text-sky-900 dark:hover:text-white shrink-0 font-medium">
+          Сброс порядка
+        </button>
+      </div>
+
+      <!-- Список управления позициями -->
+      <div id="manageListContainer" class="space-y-2.5">
+        <!-- Генерируется через JS -->
+      </div>
+    </div>
+
+    <!-- Сообщение, если ничего не найдено -->
+    <div id="emptyState" class="hidden text-center py-12 px-4 space-y-2">
+      <div class="text-3xl">🔍</div>
+      <p class="text-sm font-semibold text-tgText">Ничего не найдено</p>
+      <p class="text-xs text-tgHint">Попробуйте изменить поисковый запрос или фильтр категории</p>
+    </div>
+
+  </main>
+
+  <!-- УВЕДОМЛЕНИЕ (TOAST) -->
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 bg-slate-900/90 text-white text-xs px-4 py-2 rounded-full shadow-lg pointer-events-none transition-opacity duration-300 opacity-0 flex items-center space-x-1.5">
+    <span id="toastIcon">ℹ️</span>
+    <span id="toastText">Уведомление</span>
+  </div>
+
+  <!-- ЛОГИКА ПРИЛОЖЕНИЯ -->
+  <script>
+    /**
+     * Schüco Türkçesi - Telegram Mini App
+     * Полный словарь и логика работы
+     */
+
+    // Инициализация Telegram WebApp
+    const tg = window.Telegram?.WebApp;
+    if (tg) {
+      tg.ready();
+      tg.expand();
+      // Адаптация под тему Telegram
+      if (tg.colorScheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+      tg.onEvent('themeChanged', () => {
+        document.documentElement.classList.toggle('dark', tg.colorScheme === 'dark');
+      });
+    }
+
+    // Тактильная отдача Telegram (Haptic Feedback)
+    function triggerHaptic(type = 'light') {
+      if (tg?.HapticFeedback) {
+        if (type === 'success') tg.HapticFeedback.notificationOccurred('success');
+        else tg.HapticFeedback.impactOccurred(type);
+      }
+    }
+
+    // Исходная база данных Schüco (32 профессиональные фразы и термина)
+    const INITIAL_DICTIONARY = [
+      // 1. Контроль качества и дефекты
+      {
+        id: 'qc_1',
+        tr: 'Boşluk çok fazla',
+        phonetic: 'Бошлук чок фазла',
+        ru: 'Зазор слишком большой',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_2',
+        tr: 'Köşe uyuşmuyor',
+        phonetic: 'Кёше уюшмуйор',
+        ru: 'Угол не сходится / щель в углу',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_3',
+        tr: 'Fitili kontrol et',
+        phonetic: 'Фитили контроль эт',
+        ru: 'Проверь уплотнитель',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_4',
+        tr: 'Kusurlu / Hatalı',
+        phonetic: 'Кусурлу / Хаталы',
+        ru: 'Брак / Дефектный элемент',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_5',
+        tr: 'Gönyesinde değil',
+        phonetic: 'Гёнйесинде деиль',
+        ru: 'Не под прямым углом (диагонали ушли)',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_6',
+        tr: 'Çizik var',
+        phonetic: 'Чизик вар',
+        ru: 'Есть царапина на профиле',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_7',
+        tr: 'Boya hatası var',
+        phonetic: 'Боя хатасы вар',
+        ru: 'Дефект покраски / напыления',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_8',
+        tr: 'Conta ezilmiş',
+        phonetic: 'Джонта эзильмиш',
+        ru: 'Уплотнитель примят / зажат',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_9',
+        tr: 'Çapakları temizle',
+        phonetic: 'Чапаклары темизле',
+        ru: 'Зачисти заусенцы / грат после пилы',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_10',
+        tr: 'Vidalama gevşek',
+        phonetic: 'Видалама гевшек',
+        ru: 'Винт / саморез не затянут',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+      {
+        id: 'qc_11',
+        tr: 'Su sızdırmazlık testi',
+        phonetic: 'Су сыздырмазлык тести',
+        ru: 'Тест на водонепроницаемость',
+        category: 'quality',
+        categoryLabel: 'Контроль качества',
+        learned: false
+      },
+
+      // 2. Профили и фурнитура Schüco
+      {
+        id: 'prof_1',
+        tr: 'Isı bariyeri',
+        phonetic: 'Ысы барийери',
+        ru: 'Термомост (полиамидная термовставка)',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_2',
+        tr: 'Köşe takozu',
+        phonetic: 'Кёше такозу',
+        ru: 'Угловой соединитель (сухарь)',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_3',
+        tr: 'Tahliye kanalı',
+        phonetic: 'Тахлийе каналы',
+        ru: 'Дренажный канал / водоотвод',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_4',
+        tr: 'Cam çıtası',
+        phonetic: 'Джам чытасы',
+        ru: 'Штапик (прижимной профиль стеклопакета)',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_5',
+        tr: 'Cam çıtası tam oturmadı',
+        phonetic: 'Джам чытасы там отурмады',
+        ru: 'Штапик не защелкнулся до конца',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_6',
+        tr: 'Kanat profili',
+        phonetic: 'Канат профили',
+        ru: 'Профиль створки',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_7',
+        tr: 'Kasa profili',
+        phonetic: 'Каса профили',
+        ru: 'Профиль рамы',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_8',
+        tr: 'Orta kayıt',
+        phonetic: 'Орта кайит',
+        ru: 'Импост (средняя стойка/ригель рамы)',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_9',
+        tr: 'İspanyolet mekanizması',
+        phonetic: 'Испаньолет механизмы',
+        ru: 'Механизм запирания / эспаньолет',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_10',
+        tr: 'Gizli menteşe',
+        phonetic: 'Гизли ментеше',
+        ru: 'Скрытая петля (Schüco AvanTec)',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_11',
+        tr: 'Cephe profili',
+        phonetic: 'Джепхе профили',
+        ru: 'Фасадный профиль (стоечно-ригельный)',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_12',
+        tr: 'Baskı çıtası',
+        phonetic: 'Баскы чытасы',
+        ru: 'Прижимная планка фасада',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+      {
+        id: 'prof_13',
+        tr: 'Kapak profili',
+        phonetic: 'Капак профили',
+        ru: 'Декоративная крышка капота фасада',
+        category: 'schueco',
+        categoryLabel: 'Профили и фурнитура',
+        learned: false
+      },
+
+      // 3. Общение с инспектором
+      {
+        id: 'insp_1',
+        tr: 'Kontrole hazır',
+        phonetic: 'Контроле хазыр',
+        ru: 'Готово к инспекции / проверке',
+        category: 'inspector',
+        categoryLabel: 'Общение с инспектором',
+        learned: false
+      },
+      {
+        id: 'insp_2',
+        tr: 'Tutanağı imzalayın',
+        phonetic: 'Тутанаы имзалайн',
+        ru: 'Подпишите акт приёмки',
+        category: 'inspector',
+        categoryLabel: 'Общение с инспектором',
+        learned: false
+      },
+      {
+        id: 'insp_3',
+        tr: 'Bunu hemen düzelteceğiz',
+        phonetic: 'Буну хемен дюзельтеджиз',
+        ru: 'Мы сразу это исправим',
+        category: 'inspector',
+        categoryLabel: 'Общение с инспектором',
+        learned: false
+      },
+      {
+        id: 'insp_4',
+        tr: 'Tolerans dahilinde',
+        phonetic: 'Толеранс дахилинде',
+        ru: 'В пределах допустимого допуска',
+        category: 'inspector',
+        categoryLabel: 'Общение с инспектором',
+        learned: false
+      },
+      {
+        id: 'insp_5',
+        tr: 'Teknik çizime bakın',
+        phonetic: 'Текник чизиме бакын',
+        ru: 'Сверьтесь с рабочим чертежом',
+        category: 'inspector',
+        categoryLabel: 'Общение с инспектором',
+        learned: false
+      },
+      {
+        id: 'insp_6',
+        tr: 'Montaj talimatına uygun',
+        phonetic: 'Монтаж талиматына уйгун',
+        ru: 'Собрано строго по каталогу Schüco',
+        category: 'inspector',
+        categoryLabel: 'Общение с инспектором',
+        learned: false
+      },
+      {
+        id: 'insp_7',
+        tr: 'Ölçüleri tekrar aldık',
+        phonetic: 'Ольчюлери текрар алдык',
+        ru: 'Мы повторно перемерили габариты',
+        category: 'inspector',
+        categoryLabel: 'Общение с инспектором',
+        learned: false
+      },
+      {
+        id: 'insp_8',
+        tr: 'Onay verildi mi?',
+        phonetic: 'Онай верильди ми?',
+        ru: 'Получено ли согласование / допуск?',
+        category: 'inspector',
+        categoryLabel: 'Общение с инспектором',
+        learned: false
+      }
+    ];
+
+    // Хранилище состояния в LocalStorage
+    const STORAGE_KEY = 'schueco_turkish_app_state_v1';
+
+    let phrases = [];
+    let activeTab = 'learn'; // 'learn' | 'manage'
+    let selectedCategory = 'all';
+    let searchQuery = '';
+
+    // Загрузка данных
+    function loadState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            phrases = parsed;
+            return;
+          }
+        }
+      } catch (e) {
+        console.error('Ошибка чтения localStorage:', e);
+      }
+      phrases = JSON.parse(JSON.stringify(INITIAL_DICTIONARY));
+      saveState();
+    }
+
+    // Сохранение данных
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(phrases));
+        updateLearnedCounter();
+      } catch (e) {
+        console.error('Ошибка записи в localStorage:', e);
+      }
+    }
+
+    // Обновление счетчика изученных слов
+    function updateLearnedCounter() {
+      const learnedCount = phrases.filter(p => p.learned).length;
+      document.getElementById('learnedCounter').textContent = `${learnedCount}/${phrases.length}`;
+    }
+
+    // Уведомления Toast
+    let toastTimeout = null;
+    function showToast(text, icon = '✅') {
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toastText');
+      const toastIcon = document.getElementById('toastIcon');
+
+      toastText.textContent = text;
+      toastIcon.textContent = icon;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 2000);
+    }
+
+    // ==================== ОЗВУЧКА (SpeechSynthesis tr-TR) ====================
+    let turkishVoice = null;
+
+    function initVoices() {
+      if (!('speechSynthesis' in window)) return;
+      const voices = window.speechSynthesis.getVoices();
+      turkishVoice = voices.find(v => v.lang === 'tr-TR' || v.lang.startsWith('tr')) || null;
+    }
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = initVoices;
+      initVoices();
+    }
+
+    function speakTurkish(text, cardId) {
+      if (!('speechSynthesis' in window)) {
+        showToast('Озвучка не поддерживается вашим браузером', '⚠️');
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'tr-TR';
+      utterance.rate = 0.88; // слегка замедленная четкая речь
+      utterance.pitch = 1.0;
+
+      if (turkishVoice) {
+        utterance.voice = turkishVoice;
+      }
+
+      const speakBtn = document.getElementById(`speak-btn-${cardId}`);
+      if (speakBtn) {
+        speakBtn.classList.add('speaking', 'text-sky-600', 'scale-110');
+      }
+
+      utterance.onend = () => {
+        if (speakBtn) {
+          speakBtn.classList.remove('speaking', 'text-sky-600', 'scale-110');
+        }
+      };
+
+      utterance.onerror = (err) => {
+        console.warn('TTS ошибка:', err);
+        if (speakBtn) {
+          speakBtn.classList.remove('speaking', 'text-sky-600', 'scale-110');
+        }
+      };
+
+      window.speechSynthesis.speak(utterance);
+      triggerHaptic('light');
+    }
+
+    // ==================== ФИЛЬТРАЦИЯ И ОТОБРАЖЕНИЕ ====================
+    function getFilteredPhrases() {
+      return phrases.filter(item => {
+        // Фильтр по категории
+        if (selectedCategory !== 'all' && item.category !== selectedCategory) {
+          return false;
+        }
+        // Фильтр по поиску
+        if (searchQuery.trim() !== '') {
+          const q = searchQuery.toLowerCase().trim();
+          const matchTr = item.tr.toLowerCase().includes(q);
+          const matchRu = item.ru.toLowerCase().includes(q);
+          const matchPhonetic = item.phonetic ? item.phonetic.toLowerCase().includes(q) : false;
+          return matchTr || matchRu || matchPhonetic;
+        }
+        return true;
+      });
+    }
+
+    // Рендер Экрана 1: Цеховой словарь / Обучение
+    function renderLearnCards() {
+      const container = document.getElementById('cardsContainer');
+      const filtered = getFilteredPhrases();
+      const emptyState = document.getElementById('emptyState');
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+      emptyState.classList.add('hidden');
+
+      container.innerHTML = filtered.map((item, index) => {
+        const isLearned = item.learned;
+        return `
+          <div class="bg-tgSecBg rounded-2xl p-4 shadow-sm border ${isLearned ? 'border-emerald-500/40 bg-emerald-50/20' : 'border-slate-200 dark:border-slate-800'} transition-all duration-200 flex flex-col justify-between space-y-3">
+            
+            <!-- Верхняя строка карточки: Категория и статус -->
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${
+                item.category === 'quality' ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' :
+                item.category === 'schueco' ? 'bg-blue-100 text-blue-800 dark:bg-blue-950/60 dark:text-blue-300' :
+                'bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300'
+              }">
+                ${item.categoryLabel}
+              </span>
+
+              <button 
+                onclick="toggleLearnedStatus('${item.id}')"
+                class="flex items-center space-x-1 text-xs px-2.5 py-1 rounded-full border transition-colors ${
+                  isLearned 
+                    ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 font-semibold' 
+                    : 'border-slate-300 text-tgHint hover:border-slate-400'
+                }"
+              >
+                <span>${isLearned ? '✓ Выучено' : '○ В процессе'}</span>
+              </button>
+            </div>
+
+            <!-- Турецкая фраза и произношение -->
+            <div class="flex items-start justify-between gap-3">
+              <div class="space-y-1">
+                <div class="text-lg sm:text-xl font-bold text-tgText tracking-wide flex items-center gap-2">
+                  ${item.tr}
+                </div>
+                <div class="text-xs text-sky-600 dark:text-sky-400 font-medium">
+                  [ ${item.phonetic} ]
+                </div>
+                <div class="text-sm font-medium text-tgText/90 pt-1">
+                  ${item.ru}
+                </div>
+              </div>
+
+              <!-- Кнопка озвучки (Динамик) -->
+              <button 
+                id="speak-btn-${item.id}"
+                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}')" 
+                title="Озвучить на турецком"
+                class="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-900/40 text-sky-600 dark:text-sky-300 flex items-center justify-center shrink-0 active:scale-90 transition-transform shadow-xs hover:bg-sky-100"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-2.23l-5.5 4.5h-4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4l5.5 4.5c.67.55 1.5.07 1.5-.8v-19.4c0-.87-.83-1.35-1.5-.8zM14 8.86v6.28c1.3-.61 2-1.89 2-3.14s-.7-2.53-2-3.14z"/>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Быстрые действия внизу карточки -->
+            <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs gap-2">
+              <button 
+                onclick="moveToEndOfQueue('${item.id}')" 
+                class="flex-1 py-2 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1.5 active:scale-98 transition-transform"
+              >
+                <svg class="w-3.5 h-3.5 text-tgHint" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+                <span>В конец списка</span>
+              </button>
+
+              <button 
+                onclick="markAsLearnedAndNext('${item.id}')" 
+                class="flex-1 py-2 px-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold flex items-center justify-center space-x-1.5 active:scale-98 transition-transform shadow-xs"
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>${isLearned ? 'Оставить выученным' : 'Запомнил!'}</span>
+              </button>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Рендер Экрана 2: Управление списком и порядком
+    function renderManageList() {
+      const container = document.getElementById('manageListContainer');
+      const filtered = getFilteredPhrases();
+      const emptyState = document.getElementById('emptyState');
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+      emptyState.classList.add('hidden');
+
+      container.innerHTML = filtered.map((item, index) => {
+        return `
+          <div class="bg-tgSecBg rounded-xl p-3 shadow-xs border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3">
+            
+            <!-- Левая часть: Статус и текст -->
+            <div class="flex items-center space-x-3 min-w-0 flex-1">
+              <button 
+                onclick="toggleLearnedStatus('${item.id}')"
+                class="w-6 h-6 rounded-lg flex items-center justify-center shrink-0 border transition-colors ${
+                  item.learned 
+                    ? 'bg-emerald-500 border-emerald-500 text-white' 
+                    : 'border-slate-300 dark:border-slate-600 text-transparent'
+                }"
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </button>
+
+              <div class="min-w-0 flex-1">
+                <div class="text-sm font-bold text-tgText truncate">${item.tr}</div>
+                <div class="text-xs text-tgHint truncate">${item.ru}</div>
+              </div>
+            </div>
+
+            <!-- Правая часть: Управление позицией (В самый верх / В самый низ) и озвучка -->
+            <div class="flex items-center space-x-1.5 shrink-0">
+              
+              <!-- Звук -->
+              <button 
+                onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}')" 
+                class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-sky-600 dark:text-sky-400"
+                title="Озвучить"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-2.23l-5.5 4.5h-4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4l5.5 4.5c.67.55 1.5.07 1.5-.8v-19.4c0-.87-.83-1.35-1.5-.8zM14 8.86v6.28c1.3-.61 2-1.89 2-3.14s-.7-2.53-2-3.14z"/>
+                </svg>
+              </button>
+
+              <!-- В самый верх -->
+              <button 
+                onclick="moveToTop('${item.id}')" 
+                class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText text-xs font-semibold flex items-center space-x-1 active:scale-95 transition-transform"
+                title="В самый верх"
+              >
+                <span>⬆️</span>
+                <span class="hidden sm:inline">Вверх</span>
+              </button>
+
+              <!-- В самый низ -->
+              <button 
+                onclick="moveToBottom('${item.id}')" 
+                class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText text-xs font-semibold flex items-center space-x-1 active:scale-95 transition-transform"
+                title="В самый низ"
+              >
+                <span>⬇️</span>
+                <span class="hidden sm:inline">Вниз</span>
+              </button>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderCurrentView() {
+      if (activeTab === 'learn') {
+        renderLearnCards();
+      } else {
+        renderManageList();
+      }
+    }
+
+    // ==================== ДЕЙСТВИЯ СО СЛОВАМИ ====================
+
+    // Переключение статуса «Изучено»
+    function toggleLearnedStatus(id) {
+      const phrase = phrases.find(p => p.id === id);
+      if (phrase) {
+        phrase.learned = !phrase.learned;
+        saveState();
+        renderCurrentView();
+        triggerHaptic(phrase.learned ? 'success' : 'light');
+        showToast(phrase.learned ? 'Отмечено как изученное!' : 'Возвращено на повторение', phrase.learned ? '🎓' : '🔄');
+      }
+    }
+
+    // Кнопка «Запомнил!» (отмечает и смещает в конец списка)
+    function markAsLearnedAndNext(id) {
+      const index = phrases.findIndex(p => p.id === id);
+      if (index !== -1) {
+        phrases[index].learned = true;
+        const [item] = phrases.splice(index, 1);
+        phrases.push(item);
+        saveState();
+        renderCurrentView();
+        triggerHaptic('success');
+        showToast('Отлично! Слово отправлено в изученные', '🎉');
+      }
+    }
+
+    // Перенос в конец очереди
+    function moveToEndOfQueue(id) {
+      moveToBottom(id);
+      showToast('Перенесено в конец очереди', '⬇️');
+    }
+
+    // Перемещение карточки в самый верх
+    function moveToTop(id) {
+      const index = phrases.findIndex(p => p.id === id);
+      if (index > 0) {
+        const [item] = phrases.splice(index, 1);
+        phrases.unshift(item);
+        saveState();
+        renderCurrentView();
+        triggerHaptic('light');
+      }
+    }
+
+    // Перемещение карточки в самый низ
+    function moveToBottom(id) {
+      const index = phrases.findIndex(p => p.id === id);
+      if (index !== -1 && index < phrases.length - 1) {
+        const [item] = phrases.splice(index, 1);
+        phrases.push(item);
+        saveState();
+        renderCurrentView();
+        triggerHaptic('light');
+      }
+    }
+
+    // ==================== СОБЫТИЯ И НАВИГАЦИЯ ====================
+
+    // Переключение табов
+    const tabLearnBtn = document.getElementById('tabLearnBtn');
+    const tabManageBtn = document.getElementById('tabManageBtn');
+    const screenLearn = document.getElementById('screenLearn');
+    const screenManage = document.getElementById('screenManage');
+
+    function switchTab(tab) {
+      activeTab = tab;
+      triggerHaptic('light');
+
+      if (tab === 'learn') {
+        screenLearn.classList.remove('hidden');
+        screenManage.classList.add('hidden');
+        tabLearnBtn.className = "py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-200 bg-white dark:bg-slate-700 text-tgText shadow-sm flex items-center justify-center space-x-1.5";
+        tabManageBtn.className = "py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-200 text-tgHint hover:text-tgText flex items-center justify-center space-x-1.5";
+      } else {
+        screenLearn.classList.add('hidden');
+        screenManage.classList.remove('hidden');
+        tabManageBtn.className = "py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-200 bg-white dark:bg-slate-700 text-tgText shadow-sm flex items-center justify-center space-x-1.5";
+        tabLearnBtn.className = "py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-200 text-tgHint hover:text-tgText flex items-center justify-center space-x-1.5";
+      }
+      renderCurrentView();
+    }
+
+    tabLearnBtn.addEventListener('click', () => switchTab('learn'));
+    tabManageBtn.addEventListener('click', () => switchTab('manage'));
+
+    // Выбор категории
+    document.querySelectorAll('.cat-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedCategory = btn.dataset.category;
+        triggerHaptic('light');
+
+        document.querySelectorAll('.cat-pill').forEach(b => {
+          if (b.dataset.category === selectedCategory) {
+            b.className = "cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-colors";
+          } else {
+            b.className = "cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-tgHint whitespace-nowrap hover:text-tgText transition-colors";
+          }
+        });
+
+        renderCurrentView();
+      });
+    });
+
+    // Поиск
+    const searchInput = document.getElementById('searchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      if (searchQuery.length > 0) {
+        clearSearchBtn.classList.remove('hidden');
+      } else {
+        clearSearchBtn.classList.add('hidden');
+      }
+      renderCurrentView();
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearSearchBtn.classList.add('hidden');
+      renderCurrentView();
+    });
+
+    // Сброс порядка к стандартному
+    document.getElementById('resetOrderBtn').addEventListener('click', () => {
+      if (confirm('Сбросить порядок и фразы к заводским настройкам?')) {
+        phrases = JSON.parse(JSON.stringify(INITIAL_DICTIONARY));
+        saveState();
+        renderCurrentView();
+        showToast('Порядок сброшен к исходному', '🔄');
+      }
+    });
+
+    // Стартовая инициализация
+    loadState();
+    renderCurrentView();
+
+  </script>
+</body>
+</html>
