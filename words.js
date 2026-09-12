@@ -7,7 +7,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'shliq juda katta / oraliq ko'p"
   },
   {
     "id": "sch_2",
@@ -17,7 +18,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Burchak to'g'ri kelmayapti (mos emas)"
   },
   {
     "id": "sch_3",
@@ -27,7 +29,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Rezina qistirmasini (fitil) tekshir"
   },
   {
     "id": "sch_4",
@@ -37,7 +40,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Nuqsonli / Yaroqsiz / Brak"
   },
   {
     "id": "sch_5",
@@ -47,7 +51,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Burchagi to'g'ri emas (qiyshiq, goniyada emas)"
   },
   {
     "id": "sch_6",
@@ -57,7 +62,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Chizilgan joyi bor / tirnalgan"
   },
   {
     "id": "sch_7",
@@ -67,7 +73,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'yoqda nuqson bor"
   },
   {
     "id": "sch_8",
@@ -77,7 +84,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Rezina qistirma ezilgan / qisilgan"
   },
   {
     "id": "sch_9",
@@ -87,7 +95,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Qirindi va g'adir-budurlarni tozalang"
   },
   {
     "id": "sch_10",
@@ -97,7 +106,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Vint / samorez bo'sh (mahkam emas)"
   },
   {
     "id": "sch_11",
@@ -107,7 +117,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Suv o'tkazmaslik sinovi"
   },
   {
     "id": "sch_12",
@@ -117,7 +128,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Havo o'tkazuvchanligi"
   },
   {
     "id": "sch_13",
@@ -127,7 +139,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Sirt deformatsiyasi"
   },
   {
     "id": "sch_14",
@@ -137,7 +150,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "O'lcham to'g'ri kelmayapti"
   },
   {
     "id": "sch_15",
@@ -147,7 +161,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Diagonal farqi (qiyshayish)"
   },
   {
     "id": "sch_16",
@@ -157,7 +172,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Kanal to'silib qolgan"
   },
   {
     "id": "sch_17",
@@ -167,7 +183,8 @@ window.DICTIONARY_DATABASE = [
     "category": "quality",
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Silikon toshib chiqqan"
   },
   {
     "id": "sch_18",
@@ -177,7 +194,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "issiqlik to'sig'i"
   },
   {
     "id": "sch_19",
@@ -187,7 +205,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Burchak ulovchi (suhar / burchak fiksatori)"
   },
   {
     "id": "sch_20",
@@ -197,7 +216,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Suv chiqarish (drenaj) kanali"
   },
   {
     "id": "sch_21",
@@ -207,7 +227,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Oyna shtapigi (qisqich profil)"
   },
   {
     "id": "sch_22",
@@ -217,7 +238,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Shtapik oxirigacha tushmadi / qotmadi"
   },
   {
     "id": "sch_23",
@@ -227,7 +249,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Tabaqa profili (stvorka)"
   },
   {
     "id": "sch_24",
@@ -237,7 +260,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Rama profili (deraza qutisi)"
   },
   {
     "id": "sch_25",
@@ -247,7 +271,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "O'rta profil (impost)"
   },
   {
     "id": "sch_26",
@@ -257,7 +282,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "ispanyolet mexanizmi"
   },
   {
     "id": "sch_27",
@@ -267,7 +293,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Yashirin oshiq-moshuq (petlya AvanTec)"
   },
   {
     "id": "sch_28",
@@ -277,7 +304,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Fasad profili (oynavand fasad)"
   },
   {
     "id": "sch_29",
@@ -287,7 +315,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Bosuvchi qisqich lenta (prizhimnoy)"
   },
   {
     "id": "sch_30",
@@ -297,7 +326,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Dekorativ qopqoq (kapot profili)"
   },
   {
     "id": "sch_31",
@@ -307,7 +337,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Vertikal ustun profili"
   },
   {
     "id": "sch_32",
@@ -317,7 +348,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Gorizontal rigel profili"
   },
   {
     "id": "sch_33",
@@ -327,7 +359,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "EPDM rezina qistirma"
   },
   {
     "id": "sch_34",
@@ -337,7 +370,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Vulkanizatsiyalangan burchak qistirmasi"
   },
   {
     "id": "sch_35",
@@ -347,7 +381,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Qulf qarshiligi (javob plankasi)"
   },
   {
     "id": "sch_36",
@@ -357,7 +392,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Deraza tutqichi (ruchka)"
   },
   {
     "id": "sch_37",
@@ -367,7 +403,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Surilma tizim (Schüco ASE)"
   },
   {
     "id": "sch_38",
@@ -377,7 +414,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Surilma tabaqa roligi (g'ildirak)"
   },
   {
     "id": "sch_39",
@@ -387,7 +425,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Burchak presslash shtifti"
   },
   {
     "id": "sch_40",
@@ -397,7 +436,8 @@ window.DICTIONARY_DATABASE = [
     "category": "schueco",
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ikki komponentli yelim (burchaklar uchun)"
   },
   {
     "id": "sch_41",
@@ -407,7 +447,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ikki boshli arralash uskunasi"
   },
   {
     "id": "sch_42",
@@ -417,7 +458,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Burchak presslash uskunasi (krimper)"
   },
   {
     "id": "sch_43",
@@ -427,7 +469,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Nusxa ko'chirish frezeri (kopir freza)"
   },
   {
     "id": "sch_44",
@@ -437,7 +480,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Torsovka frezeri (impost uchun)"
   },
   {
     "id": "sch_45",
@@ -447,7 +491,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Shtapik kesish arrasi"
   },
   {
     "id": "sch_46",
@@ -457,7 +502,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Dinamometrik kalit"
   },
   {
     "id": "sch_47",
@@ -467,7 +513,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Olti qirrali kalitlar to'plami (alyan)"
   },
   {
     "id": "sch_48",
@@ -477,7 +524,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Akkumulyatorli shurupburagich (shurupovyort)"
   },
   {
     "id": "sch_49",
@@ -487,7 +535,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Shtangensirkul"
   },
   {
     "id": "sch_50",
@@ -497,7 +546,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ruletka"
   },
   {
     "id": "sch_51",
@@ -507,7 +557,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Pnevmatik puflagich to'pponcha"
   },
   {
     "id": "sch_52",
@@ -517,7 +568,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Plastik / rezina bolg'acha (kiyanka)"
   },
   {
     "id": "sch_53",
@@ -527,7 +579,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Parma (sverlo)"
   },
   {
     "id": "sch_54",
@@ -537,7 +590,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Rezba ochish (metchik bilan)"
   },
   {
     "id": "sch_55",
@@ -547,7 +601,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ikkita shisha / ikki oynali oynalar"
   },
   {
     "id": "sch_56",
@@ -557,7 +612,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Toblangan (qattiq) oyna"
   },
   {
     "id": "sch_57",
@@ -567,7 +623,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Laminatlangan oyna (tripleks)"
   },
   {
     "id": "sch_58",
@@ -577,7 +634,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Oyna osti tagligi (podkladka)"
   },
   {
     "id": "sch_59",
@@ -587,7 +645,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Vakuumli oyna ushlagich (so'rg'ich)"
   },
   {
     "id": "sch_60",
@@ -597,7 +656,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Strukturaviy germetik silikon"
   },
   {
     "id": "sch_61",
@@ -607,7 +667,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Neytral oyna silikoni"
   },
   {
     "id": "sch_62",
@@ -617,7 +678,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Butil lenta (bug' izolyatsiyasi)"
   },
   {
     "id": "sch_63",
@@ -627,7 +689,8 @@ window.DICTIONARY_DATABASE = [
     "category": "glass",
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Shtapiklarni o'rnatish"
   },
   {
     "id": "sch_64",
@@ -637,7 +700,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Tekshirishga / nazoratga tayyor"
   },
   {
     "id": "sch_65",
@@ -647,7 +711,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Dalolatnomani (aktni) imzolang"
   },
   {
     "id": "sch_66",
@@ -657,7 +722,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Buni darhol to'g'rilaymiz"
   },
   {
     "id": "sch_67",
@@ -667,7 +733,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ruxsat etilgan me'yorda (dopusk ichida)"
   },
   {
     "id": "sch_68",
@@ -677,7 +744,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Texnik chizmaga qarang"
   },
   {
     "id": "sch_69",
@@ -687,7 +755,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "O'rnatish yo'riqnomasiga muvofiq"
   },
   {
     "id": "sch_70",
@@ -697,7 +766,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "O'lchamlarni qayta o'lchab oldik"
   },
   {
     "id": "sch_71",
@@ -707,7 +777,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Tasdiq berildimi? / Qabul qilindimi?"
   },
   {
     "id": "sch_72",
@@ -717,7 +788,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Chizmaga o'zgartirish (reviziya) kiritildi"
   },
   {
     "id": "sch_73",
@@ -727,7 +799,8 @@ window.DICTIONARY_DATABASE = [
     "category": "inspector",
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Katalogdagi detal tuguniga qarang"
   },
   {
     "id": "sch_74",
@@ -737,7 +810,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Mehnatni muhofaza qilish qoidalari"
   },
   {
     "id": "sch_75",
@@ -747,7 +821,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Himoya ko'zoynagini taq"
   },
   {
     "id": "sch_76",
@@ -757,7 +832,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Kesilishdan himoyalovchi qo'lqop kiy"
   },
   {
     "id": "sch_77",
@@ -767,7 +843,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Kaskani kiy"
   },
   {
     "id": "sch_78",
@@ -777,7 +854,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Uchi po'lat maxsus poyabzal"
   },
   {
     "id": "sch_79",
@@ -787,7 +865,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Quloqchin taq (shovqinga qarshi)"
   },
   {
     "id": "sch_80",
@@ -797,7 +876,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Favqulodda to'xtatish tugmasi (E-Stop)"
   },
   {
     "id": "sch_81",
@@ -807,7 +887,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Diqqat: kran ishlayapti"
   },
   {
     "id": "sch_82",
@@ -817,7 +898,8 @@ window.DICTIONARY_DATABASE = [
     "category": "safety",
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "birinchi yordam to'plami"
   },
   {
     "id": "top_1",
@@ -827,7 +909,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men"
   },
   {
     "id": "top_2",
@@ -837,7 +920,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sen"
   },
   {
     "id": "top_3",
@@ -847,7 +931,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "U / O'sha"
   },
   {
     "id": "top_4",
@@ -857,7 +942,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Biz"
   },
   {
     "id": "top_5",
@@ -867,7 +953,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Siz"
   },
   {
     "id": "top_6",
@@ -877,7 +964,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ular"
   },
   {
     "id": "top_7",
@@ -887,7 +975,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu"
   },
   {
     "id": "top_8",
@@ -897,7 +986,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shu / Ana u"
   },
   {
     "id": "top_9",
@@ -907,7 +997,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nima"
   },
   {
     "id": "top_10",
@@ -917,7 +1008,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kim"
   },
   {
     "id": "top_11",
@@ -927,7 +1019,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qanday / Qanaqa"
   },
   {
     "id": "top_12",
@@ -937,7 +1030,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nega / Nimaga"
   },
   {
     "id": "top_13",
@@ -947,7 +1041,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nima uchun"
   },
   {
     "id": "top_14",
@@ -957,7 +1052,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qayerda"
   },
   {
     "id": "top_15",
@@ -967,7 +1063,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qayerga"
   },
   {
     "id": "top_16",
@@ -977,7 +1074,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qayerdan"
   },
   {
     "id": "top_17",
@@ -987,7 +1085,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qachon"
   },
   {
     "id": "top_18",
@@ -997,7 +1096,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qancha / Qanchalik"
   },
   {
     "id": "top_19",
@@ -1007,7 +1107,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qaysi"
   },
   {
     "id": "top_20",
@@ -1017,7 +1118,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nechta / Qancha"
   },
   {
     "id": "top_21",
@@ -1027,7 +1129,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ha"
   },
   {
     "id": "top_22",
@@ -1037,7 +1140,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yo'q"
   },
   {
     "id": "top_23",
@@ -1047,7 +1151,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yo'q / Mavjud emas"
   },
   {
     "id": "top_24",
@@ -1057,7 +1162,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bor / Mavjud"
   },
   {
     "id": "top_25",
@@ -1067,7 +1173,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mayli / Xo'p / Ruxsat"
   },
   {
     "id": "top_26",
@@ -1077,7 +1184,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Iltimos"
   },
   {
     "id": "top_27",
@@ -1087,7 +1195,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Rahmat / Tashakkur"
   },
   {
     "id": "top_28",
@@ -1097,7 +1206,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Arzimaydi"
   },
   {
     "id": "top_29",
@@ -1107,7 +1217,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kechirasiz / Uzr so'rayman"
   },
   {
     "id": "top_30",
@@ -1117,7 +1228,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kechirasiz (murojaatda)"
   },
   {
     "id": "top_31",
@@ -1127,7 +1239,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Salom / Assalomu alaykum"
   },
   {
     "id": "top_32",
@@ -1137,7 +1250,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xayrli tong"
   },
   {
     "id": "top_33",
@@ -1147,7 +1261,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kuningiz xayrli o'tsin"
   },
   {
     "id": "top_34",
@@ -1157,7 +1272,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hayrli kech"
   },
   {
     "id": "top_35",
@@ -1167,7 +1283,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hayrli tun"
   },
   {
     "id": "top_36",
@@ -1177,7 +1294,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'rishamiz"
   },
   {
     "id": "top_37",
@@ -1187,7 +1305,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xayr, sog' bo'ling"
   },
   {
     "id": "top_38",
@@ -1197,7 +1316,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xayr, yaxshi boring"
   },
   {
     "id": "top_39",
@@ -1207,7 +1327,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hormang / Ishingizga unum bersin"
   },
   {
     "id": "top_40",
@@ -1217,7 +1338,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'p / Juda"
   },
   {
     "id": "top_41",
@@ -1227,7 +1349,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kam / Oz"
   },
   {
     "id": "top_42",
@@ -1237,7 +1360,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Biroz / Sal"
   },
   {
     "id": "top_43",
@@ -1247,7 +1371,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yana / Ko'proq"
   },
   {
     "id": "top_44",
@@ -1257,7 +1382,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eng (eng yaxshi)"
   },
   {
     "id": "top_45",
@@ -1267,7 +1393,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Va"
   },
   {
     "id": "top_46",
@@ -1277,7 +1404,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yoki"
   },
   {
     "id": "top_47",
@@ -1287,7 +1415,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Lekin / Ammo"
   },
   {
     "id": "top_48",
@@ -1297,7 +1426,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Biroq / Ammo"
   },
   {
     "id": "top_49",
@@ -1307,7 +1437,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chunki"
   },
   {
     "id": "top_50",
@@ -1317,7 +1448,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "uchun"
   },
   {
     "id": "top_51",
@@ -1327,7 +1459,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bilan"
   },
   {
     "id": "top_52",
@@ -1337,7 +1470,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kabi / O'xshash"
   },
   {
     "id": "top_53",
@@ -1347,7 +1481,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qadar / Gacha / Teng"
   },
   {
     "id": "top_54",
@@ -1357,7 +1492,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Keyin / So'ng"
   },
   {
     "id": "top_55",
@@ -1367,7 +1503,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oldin / Avval"
   },
   {
     "id": "top_56",
@@ -1377,7 +1514,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hozir / Endi"
   },
   {
     "id": "top_57",
@@ -1387,7 +1525,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Darhol / Tezda"
   },
   {
     "id": "top_58",
@@ -1397,7 +1536,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu yerda"
   },
   {
     "id": "top_59",
@@ -1407,7 +1547,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "U yerda"
   },
   {
     "id": "top_60",
@@ -1417,7 +1558,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shu yerda / Ana u yerda"
   },
   {
     "id": "top_61",
@@ -1427,7 +1569,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bunday / Shunday"
   },
   {
     "id": "top_62",
@@ -1437,7 +1580,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shunaqa / Mana bunday"
   },
   {
     "id": "top_63",
@@ -1447,7 +1591,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shunday / O'shanday"
   },
   {
     "id": "top_64",
@@ -1457,7 +1602,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Har / Har bir"
   },
   {
     "id": "top_65",
@@ -1467,7 +1613,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hammasi / Barchasi"
   },
   {
     "id": "top_66",
@@ -1477,7 +1624,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hech / Hech qachon"
   },
   {
     "id": "top_67",
@@ -1487,7 +1635,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hech bir / Hech qanday"
   },
   {
     "id": "top_68",
@@ -1497,7 +1646,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Narsa / Buyum"
   },
   {
     "id": "top_69",
@@ -1507,7 +1657,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Biri / Kimdir"
   },
   {
     "id": "top_70",
@@ -1517,7 +1668,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Boshqa / O'zga"
   },
   {
     "id": "top_71",
@@ -1527,7 +1679,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bir xil / O'xshash"
   },
   {
     "id": "top_72",
@@ -1537,7 +1690,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'zi / O'zining"
   },
   {
     "id": "top_73",
@@ -1547,7 +1701,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hamma / Har kim"
   },
   {
     "id": "top_74",
@@ -1557,7 +1712,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hech kim"
   },
   {
     "id": "top_75",
@@ -1567,7 +1723,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Balki / Ehtimol"
   },
   {
     "id": "top_76",
@@ -1577,7 +1734,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Albatta / Tabiiy"
   },
   {
     "id": "top_77",
@@ -1587,7 +1745,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'zi / Shundoq ham"
   },
   {
     "id": "top_78",
@@ -1597,7 +1756,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Endi / Bundan buyon"
   },
   {
     "id": "top_79",
@@ -1607,7 +1767,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hatto / Ham"
   },
   {
     "id": "top_80",
@@ -1617,7 +1778,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yana / Qayta"
   },
   {
     "id": "top_81",
@@ -1627,7 +1789,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qayta / Yana bir bor"
   },
   {
     "id": "top_82",
@@ -1637,7 +1800,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'lmoq"
   },
   {
     "id": "top_83",
@@ -1647,7 +1811,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qilmoq / Bajarmoq"
   },
   {
     "id": "top_84",
@@ -1657,7 +1822,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Etmoq / Qilmoq"
   },
   {
     "id": "top_85",
@@ -1667,7 +1833,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ketmoq / Bormoq"
   },
   {
     "id": "top_86",
@@ -1677,7 +1844,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kelmoq"
   },
   {
     "id": "top_87",
@@ -1687,7 +1855,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'rmoq"
   },
   {
     "id": "top_88",
@@ -1697,7 +1866,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qaramoq"
   },
   {
     "id": "top_89",
@@ -1707,7 +1877,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Olmoq"
   },
   {
     "id": "top_90",
@@ -1717,7 +1888,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bermoq"
   },
   {
     "id": "top_91",
@@ -1727,7 +1899,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bilmoq"
   },
   {
     "id": "top_92",
@@ -1737,7 +1910,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xohlamoq"
   },
   {
     "id": "top_93",
@@ -1747,7 +1921,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Demoq / Aytmoq"
   },
   {
     "id": "top_94",
@@ -1757,7 +1932,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aytmoq / Gapirmoq"
   },
   {
     "id": "top_95",
@@ -1767,7 +1943,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Gaplashmoq / So'zlashmoq"
   },
   {
     "id": "top_96",
@@ -1777,7 +1954,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tushunmoq"
   },
   {
     "id": "top_97",
@@ -1787,7 +1965,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tushuntirmoq / Aytib bermoq"
   },
   {
     "id": "top_98",
@@ -1797,7 +1976,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ishlamoq / Harakat qilmoq"
   },
   {
     "id": "top_99",
@@ -1807,7 +1987,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Boshlamoq / Boshlanmoq"
   },
   {
     "id": "top_100",
@@ -1817,7 +1998,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bitirmoq / Tugatmoq"
   },
   {
     "id": "top_101",
@@ -1827,7 +2009,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bitmoq / Tugamoq"
   },
   {
     "id": "top_102",
@@ -1837,7 +2020,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qolmoq"
   },
   {
     "id": "top_103",
@@ -1847,7 +2031,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Turmoq / To'xtamoq"
   },
   {
     "id": "top_104",
@@ -1857,7 +2042,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'xtatmoq"
   },
   {
     "id": "top_105",
@@ -1867,7 +2053,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kutmoq"
   },
   {
     "id": "top_106",
@@ -1877,7 +2064,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Keltirmoq / Olib kelmoq"
   },
   {
     "id": "top_107",
@@ -1887,7 +2075,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Olib ketmoq"
   },
   {
     "id": "top_108",
@@ -1897,7 +2086,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tashimoq / Ko'chirmoq"
   },
   {
     "id": "top_109",
@@ -1907,7 +2097,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qo'ymoq"
   },
   {
     "id": "top_110",
@@ -1917,7 +2108,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qoldirmoq / Qo'yib yubormoq"
   },
   {
     "id": "top_111",
@@ -1927,7 +2119,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ushlamoq"
   },
   {
     "id": "top_112",
@@ -1937,7 +2130,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ochmoq / Yoqmoq (uskunani)"
   },
   {
     "id": "top_113",
@@ -1947,7 +2141,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yopmoq / O'chirmoq (uskunani)"
   },
   {
     "id": "top_114",
@@ -1957,7 +2152,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kesmoq"
   },
   {
     "id": "top_115",
@@ -1967,7 +2163,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Teshmoq"
   },
   {
     "id": "top_116",
@@ -1977,7 +2174,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Burab qotirmoq"
   },
   {
     "id": "top_117",
@@ -1987,7 +2185,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qismoq / Qotirmoq"
   },
   {
     "id": "top_118",
@@ -1997,7 +2196,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'shatmoq"
   },
   {
     "id": "top_119",
@@ -2007,7 +2207,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'lchamoq"
   },
   {
     "id": "top_120",
@@ -2017,7 +2218,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tekshirmoq / Nazorat qilmoq"
   },
   {
     "id": "top_121",
@@ -2027,7 +2229,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tozalamoq"
   },
   {
     "id": "top_122",
@@ -2037,7 +2240,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Artmoq / O'chirmoq"
   },
   {
     "id": "top_123",
@@ -2047,7 +2251,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Taqmoq / O'rnatmoq"
   },
   {
     "id": "top_124",
@@ -2057,7 +2262,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chiqarmoq / Yechmoq"
   },
   {
     "id": "top_125",
@@ -2067,7 +2273,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'zgartirmoq / Almashtirmoq"
   },
   {
     "id": "top_126",
@@ -2077,7 +2284,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tuzatmoq / Ta'mirlamoq"
   },
   {
     "id": "top_127",
@@ -2087,7 +2295,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ta'mirlash"
   },
   {
     "id": "top_128",
@@ -2097,7 +2306,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Moslamoq / Sozlamoq"
   },
   {
     "id": "top_129",
@@ -2107,7 +2317,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tayyorlamoq"
   },
   {
     "id": "top_130",
@@ -2117,7 +2328,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yig'moq / To'plamoq"
   },
   {
     "id": "top_131",
@@ -2127,7 +2339,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Montaj qilmoq / O'rnatmoq"
   },
   {
     "id": "top_132",
@@ -2137,7 +2350,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yopishtirmoq"
   },
   {
     "id": "top_133",
@@ -2147,7 +2361,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bosmoq / Presslamoq"
   },
   {
     "id": "top_134",
@@ -2157,7 +2372,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tortmoq"
   },
   {
     "id": "top_135",
@@ -2167,7 +2383,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Durang"
   },
   {
     "id": "top_136",
@@ -2177,7 +2394,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'tarmoq"
   },
   {
     "id": "top_137",
@@ -2187,7 +2405,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "yuklab oling"
   },
   {
     "id": "top_138",
@@ -2197,7 +2416,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yiqilmoq / Tushib ketmoq"
   },
   {
     "id": "top_139",
@@ -2207,7 +2427,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tushirib yubormoq"
   },
   {
     "id": "top_140",
@@ -2217,7 +2438,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sindirmoq"
   },
   {
     "id": "top_141",
@@ -2227,7 +2449,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Buzmoq"
   },
   {
     "id": "top_142",
@@ -2237,7 +2460,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Buzilmoq"
   },
   {
     "id": "top_143",
@@ -2247,7 +2471,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chizmoq / Tirnamoq"
   },
   {
     "id": "top_144",
@@ -2257,7 +2482,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bukmoq / Egmoq"
   },
   {
     "id": "top_145",
@@ -2267,7 +2493,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "tekislang"
   },
   {
     "id": "top_146",
@@ -2277,7 +2504,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'ldirmoq"
   },
   {
     "id": "top_147",
@@ -2287,7 +2515,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'shatmoq (yukni)"
   },
   {
     "id": "top_148",
@@ -2297,7 +2526,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yordam bermoq"
   },
   {
     "id": "top_149",
@@ -2307,7 +2537,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "So'ramoq"
   },
   {
     "id": "top_150",
@@ -2317,7 +2548,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "javob bering"
   },
   {
     "id": "top_151",
@@ -2327,7 +2559,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'rganmoq"
   },
   {
     "id": "top_152",
@@ -2337,7 +2570,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'rgatmoq"
   },
   {
     "id": "top_153",
@@ -2347,7 +2581,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'rsatmoq"
   },
   {
     "id": "top_154",
@@ -2357,7 +2592,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Topmoq"
   },
   {
     "id": "top_155",
@@ -2367,7 +2603,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yo'qotmoq"
   },
   {
     "id": "top_156",
@@ -2377,7 +2614,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qidirmoq / Qo'ng'iroq qilmoq"
   },
   {
     "id": "top_157",
@@ -2387,7 +2625,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chaqirmoq"
   },
   {
     "id": "top_158",
@@ -2397,7 +2636,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "eshitildi"
   },
   {
     "id": "top_159",
@@ -2407,7 +2647,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eshitmoq"
   },
   {
     "id": "top_160",
@@ -2417,7 +2658,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tinglamoq"
   },
   {
     "id": "top_161",
@@ -2427,7 +2669,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'qimoq"
   },
   {
     "id": "top_162",
@@ -2437,7 +2680,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yozmoq"
   },
   {
     "id": "top_163",
@@ -2447,7 +2691,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Imzo"
   },
   {
     "id": "top_164",
@@ -2457,7 +2702,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ishonmoq"
   },
   {
     "id": "top_165",
@@ -2467,7 +2713,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'ylamoq"
   },
   {
     "id": "top_166",
@@ -2477,7 +2724,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eslamoq"
   },
   {
     "id": "top_167",
@@ -2487,7 +2735,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Unitmoq"
   },
   {
     "id": "top_168",
@@ -2497,7 +2746,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sevmoq / Yoqtirmoq"
   },
   {
     "id": "top_169",
@@ -2507,7 +2757,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qo'rqmoq"
   },
   {
     "id": "top_170",
@@ -2517,7 +2768,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Charchamoq"
   },
   {
     "id": "top_171",
@@ -2527,7 +2779,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dam olmoq"
   },
   {
     "id": "top_172",
@@ -2537,7 +2790,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yemoq / Ovqat"
   },
   {
     "id": "top_173",
@@ -2547,7 +2801,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ichish uchun"
   },
   {
     "id": "top_174",
@@ -2557,7 +2812,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uxlamoq"
   },
   {
     "id": "top_175",
@@ -2567,7 +2823,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uyg'onmoq"
   },
   {
     "id": "top_176",
@@ -2577,7 +2834,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Turmoq / O'rnidan turmoq"
   },
   {
     "id": "top_177",
@@ -2587,7 +2845,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'tirmoq"
   },
   {
     "id": "top_178",
@@ -2597,7 +2856,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yurmoq"
   },
   {
     "id": "top_179",
@@ -2607,7 +2867,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yugurmoq"
   },
   {
     "id": "top_180",
@@ -2617,7 +2878,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kirmoq"
   },
   {
     "id": "top_181",
@@ -2627,7 +2889,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chiqmoq"
   },
   {
     "id": "top_182",
@@ -2637,7 +2900,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qaytmoq / Burilmoq"
   },
   {
     "id": "top_183",
@@ -2647,7 +2911,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aylantirish"
   },
   {
     "id": "top_184",
@@ -2657,7 +2922,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'tish uchun"
   },
   {
     "id": "top_185",
@@ -2667,7 +2933,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "erishish uchun"
   },
   {
     "id": "top_186",
@@ -2677,7 +2944,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yoyish uchun"
   },
   {
     "id": "top_187",
@@ -2687,7 +2955,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ishlatmoq / Foydalanmoq"
   },
   {
     "id": "top_188",
@@ -2697,7 +2966,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "kerak"
   },
   {
     "id": "top_189",
@@ -2707,7 +2977,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "etarli bo'lish"
   },
   {
     "id": "top_190",
@@ -2717,7 +2988,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'lamoq"
   },
   {
     "id": "top_191",
@@ -2727,7 +2999,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yutmoq / Ishlab topmoq"
   },
   {
     "id": "top_192",
@@ -2737,7 +3010,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sotmoq"
   },
   {
     "id": "top_193",
@@ -2747,7 +3021,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sotib olmoq"
   },
   {
     "id": "top_194",
@@ -2757,7 +3032,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "E'tibor berish uchun"
   },
   {
     "id": "top_195",
@@ -2767,7 +3043,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xato"
   },
   {
     "id": "top_196",
@@ -2777,7 +3054,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Diqqat qilmoq / Ehtiyot bo'lmoq"
   },
   {
     "id": "top_197",
@@ -2787,7 +3065,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shoshiling"
   },
   {
     "id": "top_198",
@@ -2797,7 +3076,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Taslim bo'lish"
   },
   {
     "id": "top_199",
@@ -2807,7 +3087,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qo'shilish uchun"
   },
   {
     "id": "top_200",
@@ -2817,7 +3098,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Himoya qilish uchun"
   },
   {
     "id": "top_201",
@@ -2827,7 +3109,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Saqlash uchun"
   },
   {
     "id": "top_202",
@@ -2837,7 +3120,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yo'q"
   },
   {
     "id": "top_203",
@@ -2847,7 +3131,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bir"
   },
   {
     "id": "top_204",
@@ -2857,7 +3142,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ikki"
   },
   {
     "id": "top_205",
@@ -2867,7 +3153,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uchish"
   },
   {
     "id": "top_206",
@@ -2877,7 +3164,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'rt"
   },
   {
     "id": "top_207",
@@ -2887,7 +3175,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Besh"
   },
   {
     "id": "top_208",
@@ -2897,7 +3186,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Olti"
   },
   {
     "id": "top_209",
@@ -2907,7 +3197,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yetti"
   },
   {
     "id": "top_210",
@@ -2917,7 +3208,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sakkiz"
   },
   {
     "id": "top_211",
@@ -2927,7 +3219,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'qqiz"
   },
   {
     "id": "top_212",
@@ -2937,7 +3230,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Old"
   },
   {
     "id": "top_213",
@@ -2947,7 +3241,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yigirma"
   },
   {
     "id": "top_214",
@@ -2957,7 +3252,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'ttiz"
   },
   {
     "id": "top_215",
@@ -2967,7 +3263,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qirq"
   },
   {
     "id": "top_216",
@@ -2977,7 +3274,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ellik"
   },
   {
     "id": "top_217",
@@ -2987,7 +3285,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oltmish"
   },
   {
     "id": "top_218",
@@ -2997,7 +3296,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yetmish"
   },
   {
     "id": "top_219",
@@ -3007,7 +3307,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sakson"
   },
   {
     "id": "top_220",
@@ -3017,7 +3318,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To‘qson"
   },
   {
     "id": "top_221",
@@ -3027,7 +3329,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yuz"
   },
   {
     "id": "top_222",
@@ -3037,7 +3340,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ming"
   },
   {
     "id": "top_223",
@@ -3047,7 +3351,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Birinchidan"
   },
   {
     "id": "top_224",
@@ -3057,7 +3362,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ikkinchidan"
   },
   {
     "id": "top_225",
@@ -3067,7 +3373,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uchinchi"
   },
   {
     "id": "top_226",
@@ -3077,7 +3384,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oxirgi"
   },
   {
     "id": "top_227",
@@ -3087,7 +3395,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yarim"
   },
   {
     "id": "top_228",
@@ -3097,7 +3406,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chorak"
   },
   {
     "id": "top_229",
@@ -3107,7 +3417,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Vaqt"
   },
   {
     "id": "top_230",
@@ -3117,7 +3428,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Soat"
   },
   {
     "id": "top_231",
@@ -3127,7 +3439,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Daqiqa"
   },
   {
     "id": "top_232",
@@ -3137,7 +3450,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ikkinchidan"
   },
   {
     "id": "top_233",
@@ -3147,7 +3461,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kun"
   },
   {
     "id": "top_234",
@@ -3157,7 +3472,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hafta"
   },
   {
     "id": "top_235",
@@ -3167,7 +3483,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oy"
   },
   {
     "id": "top_236",
@@ -3177,7 +3494,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yil"
   },
   {
     "id": "top_237",
@@ -3187,7 +3505,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yil"
   },
   {
     "id": "top_238",
@@ -3197,7 +3516,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bugun"
   },
   {
     "id": "top_239",
@@ -3207,7 +3527,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kecha"
   },
   {
     "id": "top_240",
@@ -3217,7 +3538,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ertaga"
   },
   {
     "id": "top_241",
@@ -3227,7 +3549,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ertalab / Tong"
   },
   {
     "id": "top_242",
@@ -3237,7 +3560,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tush"
   },
   {
     "id": "top_243",
@@ -3247,7 +3571,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kechqurun / Oqshom"
   },
   {
     "id": "top_244",
@@ -3257,7 +3582,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tun / Kechasi"
   },
   {
     "id": "top_245",
@@ -3267,7 +3593,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "dushanba"
   },
   {
     "id": "top_246",
@@ -3277,7 +3604,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "seshanba"
   },
   {
     "id": "top_247",
@@ -3287,7 +3615,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "chorshanba"
   },
   {
     "id": "top_248",
@@ -3297,7 +3626,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Payshanba"
   },
   {
     "id": "top_249",
@@ -3307,7 +3637,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Juma"
   },
   {
     "id": "top_250",
@@ -3317,7 +3648,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "shanba"
   },
   {
     "id": "top_251",
@@ -3327,7 +3659,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "yakshanba"
   },
   {
     "id": "top_252",
@@ -3337,7 +3670,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dam olish kunlari"
   },
   {
     "id": "top_253",
@@ -3347,7 +3681,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hafta o'rtasi"
   },
   {
     "id": "top_254",
@@ -3357,7 +3692,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Erta"
   },
   {
     "id": "top_255",
@@ -3367,7 +3703,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kech"
   },
   {
     "id": "top_256",
@@ -3377,7 +3714,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Navbatchilik / Smena"
   },
   {
     "id": "top_257",
@@ -3387,7 +3725,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ish vaqti / Qo'shimcha ish"
   },
   {
     "id": "top_258",
@@ -3397,7 +3736,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tanaffus"
   },
   {
     "id": "top_259",
@@ -3407,7 +3747,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bayram"
   },
   {
     "id": "top_260",
@@ -3417,7 +3758,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ruxsat"
   },
   {
     "id": "top_261",
@@ -3427,7 +3769,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Katta"
   },
   {
     "id": "top_262",
@@ -3437,7 +3780,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kichik"
   },
   {
     "id": "top_263",
@@ -3447,7 +3791,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yaxshi"
   },
   {
     "id": "top_264",
@@ -3457,7 +3802,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yomon"
   },
   {
     "id": "top_265",
@@ -3467,7 +3813,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yangi"
   },
   {
     "id": "top_266",
@@ -3477,7 +3824,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eski"
   },
   {
     "id": "top_267",
@@ -3487,7 +3835,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yoshlar"
   },
   {
     "id": "top_268",
@@ -3497,7 +3846,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eski"
   },
   {
     "id": "top_269",
@@ -3507,7 +3857,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uzun"
   },
   {
     "id": "top_270",
@@ -3517,7 +3868,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qisqa"
   },
   {
     "id": "top_271",
@@ -3527,7 +3879,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Keng"
   },
   {
     "id": "top_272",
@@ -3537,7 +3890,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tor"
   },
   {
     "id": "top_273",
@@ -3547,7 +3901,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qalin"
   },
   {
     "id": "top_274",
@@ -3557,7 +3912,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yupqa"
   },
   {
     "id": "top_275",
@@ -3567,7 +3923,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Og'ir"
   },
   {
     "id": "top_276",
@@ -3577,7 +3934,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yengil"
   },
   {
     "id": "top_277",
@@ -3587,7 +3945,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qiyin"
   },
   {
     "id": "top_278",
@@ -3597,7 +3956,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oson"
   },
   {
     "id": "top_279",
@@ -3607,7 +3967,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'g'ri"
   },
   {
     "id": "top_280",
@@ -3617,7 +3978,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Noto'g'ri"
   },
   {
     "id": "top_281",
@@ -3627,7 +3989,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tez / Tezkor"
   },
   {
     "id": "top_282",
@@ -3637,7 +4000,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sekin"
   },
   {
     "id": "top_283",
@@ -3647,7 +4011,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Issiq"
   },
   {
     "id": "top_284",
@@ -3657,7 +4022,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sovuq"
   },
   {
     "id": "top_285",
@@ -3667,7 +4033,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Toza"
   },
   {
     "id": "top_286",
@@ -3677,7 +4044,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kir / Iflos"
   },
   {
     "id": "top_287",
@@ -3687,7 +4055,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ochiq"
   },
   {
     "id": "top_288",
@@ -3697,7 +4066,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yopiq"
   },
   {
     "id": "top_289",
@@ -3707,7 +4077,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'la"
   },
   {
     "id": "top_290",
@@ -3717,7 +4088,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'sh"
   },
   {
     "id": "top_291",
@@ -3727,7 +4099,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tekis / To'g'ri"
   },
   {
     "id": "top_292",
@@ -3737,7 +4110,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Egri / Qiyshiq"
   },
   {
     "id": "top_293",
@@ -3747,7 +4121,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qattiq"
   },
   {
     "id": "top_294",
@@ -3757,7 +4132,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yumshoq"
   },
   {
     "id": "top_295",
@@ -3767,7 +4143,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qimmat"
   },
   {
     "id": "top_296",
@@ -3777,7 +4154,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Arzon"
   },
   {
     "id": "top_297",
@@ -3787,7 +4165,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mustahkam / Mahkam"
   },
   {
     "id": "top_298",
@@ -3797,7 +4176,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Siniq"
   },
   {
     "id": "top_299",
@@ -3807,7 +4187,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Buzuq"
   },
   {
     "id": "top_300",
@@ -3817,7 +4198,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tayyor"
   },
   {
     "id": "top_301",
@@ -3827,7 +4209,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "nam"
   },
   {
     "id": "top_302",
@@ -3837,7 +4220,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Quruq"
   },
   {
     "id": "top_303",
@@ -3847,7 +4231,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yaltiroq"
   },
   {
     "id": "top_304",
@@ -3857,7 +4242,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mat"
   },
   {
     "id": "top_305",
@@ -3867,7 +4253,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chiroyli"
   },
   {
     "id": "top_306",
@@ -3877,7 +4264,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xunuk"
   },
   {
     "id": "top_307",
@@ -3887,7 +4275,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Muhim"
   },
   {
     "id": "top_308",
@@ -3897,7 +4286,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ahamiyatsiz"
   },
   {
     "id": "top_309",
@@ -3907,7 +4297,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Foydali"
   },
   {
     "id": "top_310",
@@ -3917,7 +4308,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Zararli"
   },
   {
     "id": "top_311",
@@ -3927,7 +4319,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xavfli"
   },
   {
     "id": "top_312",
@@ -3937,7 +4330,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xavfsiz / Ishonchli"
   },
   {
     "id": "top_313",
@@ -3947,7 +4341,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qulay"
   },
   {
     "id": "top_314",
@@ -3957,7 +4352,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bepul"
   },
   {
     "id": "top_315",
@@ -3967,7 +4363,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Taqiqlangan"
   },
   {
     "id": "top_316",
@@ -3977,7 +4374,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mumkin / Iloji bor"
   },
   {
     "id": "top_317",
@@ -3987,7 +4385,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mumkin emas"
   },
   {
     "id": "top_318",
@@ -3997,7 +4396,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kerakli"
   },
   {
     "id": "top_319",
@@ -4007,7 +4407,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Turli"
   },
   {
     "id": "top_320",
@@ -4017,7 +4418,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'xshash"
   },
   {
     "id": "top_321",
@@ -4027,7 +4429,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Maxsus"
   },
   {
     "id": "top_322",
@@ -4037,7 +4440,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "General"
   },
   {
     "id": "top_323",
@@ -4047,7 +4451,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'liq / Aniq"
   },
   {
     "id": "top_324",
@@ -4057,7 +4462,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kamchilik / Yetishmaydigan"
   },
   {
     "id": "top_325",
@@ -4067,7 +4473,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ortiqcha / Ko'p"
   },
   {
     "id": "top_326",
@@ -4077,7 +4484,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yetarli"
   },
   {
     "id": "top_327",
@@ -4087,7 +4495,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Etarli emas"
   },
   {
     "id": "top_328",
@@ -4097,7 +4506,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qattiq"
   },
   {
     "id": "top_329",
@@ -4107,7 +4517,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'sh"
   },
   {
     "id": "top_330",
@@ -4117,7 +4528,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yaqin"
   },
   {
     "id": "top_331",
@@ -4127,7 +4539,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uzoq"
   },
   {
     "id": "top_332",
@@ -4137,7 +4550,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chuqur"
   },
   {
     "id": "top_333",
@@ -4147,7 +4561,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sayoz"
   },
   {
     "id": "top_334",
@@ -4157,7 +4572,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Baland"
   },
   {
     "id": "top_335",
@@ -4167,7 +4583,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Past"
   },
   {
     "id": "top_336",
@@ -4177,7 +4594,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'tkir"
   },
   {
     "id": "top_337",
@@ -4187,7 +4605,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'r"
   },
   {
     "id": "top_338",
@@ -4197,7 +4616,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Net"
   },
   {
     "id": "top_339",
@@ -4207,7 +4627,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yalpi"
   },
   {
     "id": "top_340",
@@ -4217,7 +4638,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ish"
   },
   {
     "id": "top_341",
@@ -4227,7 +4649,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xodim"
   },
   {
     "id": "top_342",
@@ -4237,7 +4660,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Usta"
   },
   {
     "id": "top_343",
@@ -4247,7 +4671,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Muhandis"
   },
   {
     "id": "top_344",
@@ -4257,7 +4682,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mudir / Rahbar"
   },
   {
     "id": "top_345",
@@ -4267,7 +4693,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Fabrika / Zavod"
   },
   {
     "id": "top_346",
@@ -4277,7 +4704,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sex / Ustaxona"
   },
   {
     "id": "top_347",
@@ -4287,7 +4715,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qurilish maydoni / Obyekt"
   },
   {
     "id": "top_348",
@@ -4297,7 +4726,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'lim"
   },
   {
     "id": "top_349",
@@ -4307,7 +4737,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chiziq"
   },
   {
     "id": "top_350",
@@ -4317,7 +4748,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ombor"
   },
   {
     "id": "top_351",
@@ -4327,7 +4759,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yuk tashish"
   },
   {
     "id": "top_352",
@@ -4337,7 +4770,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ishlab chiqarish"
   },
   {
     "id": "top_353",
@@ -4347,7 +4781,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'rnatish / Yig'ish"
   },
   {
     "id": "top_354",
@@ -4357,7 +4792,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "demontaj qilish"
   },
   {
     "id": "top_355",
@@ -4367,7 +4803,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qadoqlash"
   },
   {
     "id": "top_356",
@@ -4377,7 +4814,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sifat"
   },
   {
     "id": "top_357",
@@ -4387,7 +4825,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nazorat / Tekshiruv"
   },
   {
     "id": "top_358",
@@ -4397,7 +4836,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xato / Nuqson"
   },
   {
     "id": "top_359",
@@ -4407,7 +4847,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nuqson"
   },
   {
     "id": "top_360",
@@ -4417,7 +4858,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Isrof"
   },
   {
     "id": "top_361",
@@ -4427,7 +4869,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chiqindi"
   },
   {
     "id": "top_362",
@@ -4437,7 +4880,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uskuna / Stanok / Mashina"
   },
   {
     "id": "top_363",
@@ -4447,7 +4891,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Asbob / Qurol"
   },
   {
     "id": "top_364",
@@ -4457,7 +4902,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qurilma"
   },
   {
     "id": "top_365",
@@ -4467,7 +4913,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Stanok / Dastgoh"
   },
   {
     "id": "top_366",
@@ -4477,7 +4924,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Stol"
   },
   {
     "id": "top_367",
@@ -4487,7 +4935,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Profil"
   },
   {
     "id": "top_368",
@@ -4497,7 +4946,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Alyuminiy"
   },
   {
     "id": "top_369",
@@ -4507,7 +4957,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Po'lat"
   },
   {
     "id": "top_370",
@@ -4517,7 +4968,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Temir"
   },
   {
     "id": "top_371",
@@ -4527,7 +4979,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Metall"
   },
   {
     "id": "top_372",
@@ -4537,7 +4990,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Plastmassa"
   },
   {
     "id": "top_373",
@@ -4547,7 +5001,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shisha / Oyna"
   },
   {
     "id": "top_374",
@@ -4557,7 +5012,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oyna"
   },
   {
     "id": "top_375",
@@ -4567,7 +5023,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kauchuk"
   },
   {
     "id": "top_376",
@@ -4577,7 +5034,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Silikon"
   },
   {
     "id": "top_377",
@@ -4587,7 +5045,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yelim"
   },
   {
     "id": "top_378",
@@ -4597,7 +5056,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'yoq"
   },
   {
     "id": "top_379",
@@ -4607,7 +5067,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Vint / Samorez"
   },
   {
     "id": "top_380",
@@ -4617,7 +5078,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bolt"
   },
   {
     "id": "top_381",
@@ -4627,7 +5089,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Gayka"
   },
   {
     "id": "top_382",
@@ -4637,7 +5100,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shayba"
   },
   {
     "id": "top_383",
@@ -4647,7 +5111,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Perchin"
   },
   {
     "id": "top_384",
@@ -4657,7 +5122,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dovel"
   },
   {
     "id": "top_385",
@@ -4667,7 +5133,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tirnoq"
   },
   {
     "id": "top_386",
@@ -4677,7 +5144,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bahor"
   },
   {
     "id": "top_387",
@@ -4687,7 +5155,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Pin"
   },
   {
     "id": "top_388",
@@ -4697,7 +5166,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qistirma (prokladka)"
   },
   {
     "id": "top_389",
@@ -4707,7 +5177,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Rezina qistirma"
   },
   {
     "id": "top_390",
@@ -4717,7 +5188,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tutqich (ruchka)"
   },
   {
     "id": "top_391",
@@ -4727,7 +5199,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qulf"
   },
   {
     "id": "top_392",
@@ -4737,7 +5210,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kalit"
   },
   {
     "id": "top_393",
@@ -4747,7 +5221,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oshiq-moshuq (petlya)"
   },
   {
     "id": "top_394",
@@ -4757,7 +5232,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Slayd"
   },
   {
     "id": "top_395",
@@ -4767,7 +5243,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Quti / Rama"
   },
   {
     "id": "top_396",
@@ -4777,7 +5254,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tabaqa (oyna/eshik)"
   },
   {
     "id": "top_397",
@@ -4787,7 +5265,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Impost / O'rta to'sin"
   },
   {
     "id": "top_398",
@@ -4797,7 +5276,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shtapik"
   },
   {
     "id": "top_399",
@@ -4807,7 +5287,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eshik"
   },
   {
     "id": "top_400",
@@ -4817,7 +5298,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "deraza tokchasi"
   },
   {
     "id": "top_401",
@@ -4827,7 +5309,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "tutqich"
   },
   {
     "id": "top_402",
@@ -4837,7 +5320,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Panjara"
   },
   {
     "id": "top_403",
@@ -4847,7 +5331,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Fasad"
   },
   {
     "id": "top_404",
@@ -4857,7 +5342,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Devor"
   },
   {
     "id": "top_405",
@@ -4867,7 +5353,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shift"
   },
   {
     "id": "top_406",
@@ -4877,7 +5364,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Pol / Zamin"
   },
   {
     "id": "top_407",
@@ -4887,7 +5375,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tom"
   },
   {
     "id": "top_408",
@@ -4897,7 +5386,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bino"
   },
   {
     "id": "top_409",
@@ -4907,7 +5397,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qavat"
   },
   {
     "id": "top_410",
@@ -4917,7 +5408,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xona"
   },
   {
     "id": "top_411",
@@ -4927,7 +5419,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eshik"
   },
   {
     "id": "top_412",
@@ -4937,7 +5430,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Deraza"
   },
   {
     "id": "top_413",
@@ -4947,7 +5441,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Balkon"
   },
   {
     "id": "top_414",
@@ -4957,7 +5452,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Zina / Narvon"
   },
   {
     "id": "top_415",
@@ -4967,7 +5463,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dok"
   },
   {
     "id": "top_416",
@@ -4977,7 +5474,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kran"
   },
   {
     "id": "top_417",
@@ -4987,7 +5485,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yuklagich (forklift)"
   },
   {
     "id": "top_418",
@@ -4997,7 +5496,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Poddon / Palet"
   },
   {
     "id": "top_419",
@@ -5007,7 +5507,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Posilka"
   },
   {
     "id": "top_420",
@@ -5017,7 +5518,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'krak"
   },
   {
     "id": "top_421",
@@ -5027,7 +5529,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sumka"
   },
   {
     "id": "top_422",
@@ -5037,7 +5540,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tashish sumkasi"
   },
   {
     "id": "top_423",
@@ -5047,7 +5551,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Lenta"
   },
   {
     "id": "top_424",
@@ -5057,7 +5562,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kabel"
   },
   {
     "id": "top_425",
@@ -5067,7 +5573,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shlang"
   },
   {
     "id": "top_426",
@@ -5077,7 +5584,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Quvur"
   },
   {
     "id": "top_427",
@@ -5087,7 +5595,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "valf"
   },
   {
     "id": "top_428",
@@ -5097,7 +5606,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nasos"
   },
   {
     "id": "top_429",
@@ -5107,7 +5617,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kompressor"
   },
   {
     "id": "top_430",
@@ -5117,7 +5628,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bosim"
   },
   {
     "id": "top_431",
@@ -5127,7 +5639,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Havo"
   },
   {
     "id": "top_432",
@@ -5137,7 +5650,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Gaz"
   },
   {
     "id": "top_433",
@@ -5147,7 +5661,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Elektr"
   },
   {
     "id": "top_434",
@@ -5157,7 +5672,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sug'urta"
   },
   {
     "id": "top_435",
@@ -5167,7 +5683,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Розетка"
   },
   {
     "id": "top_436",
@@ -5177,7 +5694,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kvitansiya"
   },
   {
     "id": "top_437",
@@ -5187,7 +5705,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tugma"
   },
   {
     "id": "top_438",
@@ -5197,7 +5716,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'chirish to'xtatuvchisi"
   },
   {
     "id": "top_439",
@@ -5207,7 +5727,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sensor"
   },
   {
     "id": "top_440",
@@ -5217,7 +5738,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dvigatel / Motor"
   },
   {
     "id": "top_441",
@@ -5227,7 +5749,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Moy / Yog'"
   },
   {
     "id": "top_442",
@@ -5237,7 +5760,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yog '"
   },
   {
     "id": "top_443",
@@ -5247,7 +5771,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Benzin"
   },
   {
     "id": "top_444",
@@ -5257,7 +5782,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "dizel yoqilg'isi"
   },
   {
     "id": "top_445",
@@ -5267,7 +5793,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yupqaroq"
   },
   {
     "id": "top_446",
@@ -5277,7 +5804,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chang"
   },
   {
     "id": "top_447",
@@ -5287,7 +5815,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qirindi / Payraha"
   },
   {
     "id": "top_448",
@@ -5297,7 +5826,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Axlat"
   },
   {
     "id": "top_449",
@@ -5307,7 +5837,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kova"
   },
   {
     "id": "top_450",
@@ -5317,7 +5848,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mop"
   },
   {
     "id": "top_451",
@@ -5327,7 +5859,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mato"
   },
   {
     "id": "top_452",
@@ -5337,7 +5870,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qo'lqop"
   },
   {
     "id": "top_453",
@@ -5347,7 +5881,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'zoynak"
   },
   {
     "id": "top_454",
@@ -5357,7 +5892,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kaska"
   },
   {
     "id": "top_455",
@@ -5367,7 +5903,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Jilet"
   },
   {
     "id": "top_456",
@@ -5377,7 +5914,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kombinezonlar"
   },
   {
     "id": "top_457",
@@ -5387,7 +5925,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Poyabzal"
   },
   {
     "id": "top_458",
@@ -5397,7 +5936,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Niqob"
   },
   {
     "id": "top_459",
@@ -5407,7 +5947,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Quloqchin"
   },
   {
     "id": "top_460",
@@ -5417,7 +5958,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kamar"
   },
   {
     "id": "top_461",
@@ -5427,7 +5969,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Arqon"
   },
   {
     "id": "top_462",
@@ -5437,7 +5980,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Zanjir"
   },
   {
     "id": "top_463",
@@ -5447,7 +5991,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kanca"
   },
   {
     "id": "top_464",
@@ -5457,7 +6002,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sling"
   },
   {
     "id": "top_465",
@@ -5467,7 +6013,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'lcham"
   },
   {
     "id": "top_466",
@@ -5477,7 +6024,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hajmi"
   },
   {
     "id": "top_467",
@@ -5487,7 +6035,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uzunlik"
   },
   {
     "id": "top_468",
@@ -5497,7 +6046,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kenglik"
   },
   {
     "id": "top_469",
@@ -5507,7 +6057,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Balandlik"
   },
   {
     "id": "top_470",
@@ -5517,7 +6068,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chuqurlik"
   },
   {
     "id": "top_471",
@@ -5527,7 +6079,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qalinlik"
   },
   {
     "id": "top_472",
@@ -5537,7 +6090,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Diametri"
   },
   {
     "id": "top_473",
@@ -5547,7 +6101,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Radius"
   },
   {
     "id": "top_474",
@@ -5557,7 +6112,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Burchak"
   },
   {
     "id": "top_475",
@@ -5567,7 +6123,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Daraja"
   },
   {
     "id": "top_476",
@@ -5577,7 +6134,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Millimetr"
   },
   {
     "id": "top_477",
@@ -5587,7 +6145,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Santimetr"
   },
   {
     "id": "top_478",
@@ -5597,7 +6156,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Metr"
   },
   {
     "id": "top_479",
@@ -5607,7 +6167,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kilogramm"
   },
   {
     "id": "top_480",
@@ -5617,7 +6178,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Gram"
   },
   {
     "id": "top_481",
@@ -5627,7 +6189,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tonna"
   },
   {
     "id": "top_482",
@@ -5637,7 +6200,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Litr"
   },
   {
     "id": "top_483",
@@ -5647,7 +6211,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kvadrat metr"
   },
   {
     "id": "top_484",
@@ -5657,7 +6222,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Parcha"
   },
   {
     "id": "top_485",
@@ -5667,7 +6233,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Birlik"
   },
   {
     "id": "top_486",
@@ -5677,7 +6244,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Er-xotin"
   },
   {
     "id": "top_487",
@@ -5687,7 +6255,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oʻrnatish"
   },
   {
     "id": "top_488",
@@ -5697,7 +6266,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Paket"
   },
   {
     "id": "top_489",
@@ -5707,7 +6277,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Quti"
   },
   {
     "id": "top_490",
@@ -5717,7 +6288,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Roll"
   },
   {
     "id": "top_491",
@@ -5727,7 +6299,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chizma"
   },
   {
     "id": "top_492",
@@ -5737,7 +6310,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Reja"
   },
   {
     "id": "top_493",
@@ -5747,7 +6321,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Loyiha"
   },
   {
     "id": "top_494",
@@ -5757,7 +6332,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tugun / Tafsilot"
   },
   {
     "id": "top_495",
@@ -5767,7 +6343,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kesim / Qirqim"
   },
   {
     "id": "top_496",
@@ -5777,7 +6354,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tashqi ko'rinish"
   },
   {
     "id": "top_497",
@@ -5787,7 +6365,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Masshtab"
   },
   {
     "id": "top_498",
@@ -5797,7 +6376,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Jinslar"
   },
   {
     "id": "top_499",
@@ -5807,7 +6387,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aks"
   },
   {
     "id": "top_500",
@@ -5817,7 +6398,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Roʻyxat"
   },
   {
     "id": "top_501",
@@ -5827,7 +6409,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hisobot"
   },
   {
     "id": "top_502",
@@ -5837,7 +6420,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dalolatnoma (akt)"
   },
   {
     "id": "top_503",
@@ -5847,7 +6431,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shakl"
   },
   {
     "id": "top_504",
@@ -5857,7 +6442,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sertifikat"
   },
   {
     "id": "top_505",
@@ -5867,7 +6453,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yo'l varaqasi"
   },
   {
     "id": "top_506",
@@ -5877,7 +6464,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hisob-faktura"
   },
   {
     "id": "top_507",
@@ -5887,7 +6475,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Buyurtma"
   },
   {
     "id": "top_508",
@@ -5897,7 +6486,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Taklif"
   },
   {
     "id": "top_509",
@@ -5907,7 +6497,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shartnoma"
   },
   {
     "id": "top_510",
@@ -5917,7 +6508,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Imzo"
   },
   {
     "id": "top_511",
@@ -5927,7 +6519,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kosa"
   },
   {
     "id": "top_512",
@@ -5937,7 +6530,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tasdiq"
   },
   {
     "id": "top_513",
@@ -5947,7 +6541,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Rad etish"
   },
   {
     "id": "top_514",
@@ -5957,7 +6552,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qayta ko'rib chiqish"
   },
   {
     "id": "top_515",
@@ -5967,7 +6563,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shaxs"
   },
   {
     "id": "top_516",
@@ -5977,7 +6574,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shaxs"
   },
   {
     "id": "top_517",
@@ -5987,7 +6585,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Erkak"
   },
   {
     "id": "top_518",
@@ -5997,7 +6596,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ayol"
   },
   {
     "id": "top_519",
@@ -6007,7 +6607,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bola"
   },
   {
     "id": "top_520",
@@ -6017,7 +6618,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Do'st / O'rtoq"
   },
   {
     "id": "top_521",
@@ -6027,7 +6629,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Do'stim"
   },
   {
     "id": "top_522",
@@ -6037,7 +6640,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oila"
   },
   {
     "id": "top_523",
@@ -6047,7 +6651,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uy"
   },
   {
     "id": "top_524",
@@ -6057,7 +6662,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Manzil"
   },
   {
     "id": "top_525",
@@ -6067,7 +6673,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shahar"
   },
   {
     "id": "top_526",
@@ -6077,7 +6684,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mamlakat"
   },
   {
     "id": "top_527",
@@ -6087,7 +6695,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yo'l"
   },
   {
     "id": "top_528",
@@ -6097,7 +6706,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'cha"
   },
   {
     "id": "top_529",
@@ -6107,7 +6717,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'cha"
   },
   {
     "id": "top_530",
@@ -6117,7 +6728,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mashina"
   },
   {
     "id": "top_531",
@@ -6127,7 +6739,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Avtobus"
   },
   {
     "id": "top_532",
@@ -6137,7 +6750,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xizmat"
   },
   {
     "id": "top_533",
@@ -6147,7 +6761,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Toʻldirilgan"
   },
   {
     "id": "top_534",
@@ -6157,7 +6772,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Taksi"
   },
   {
     "id": "top_535",
@@ -6167,7 +6783,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Metro"
   },
   {
     "id": "top_536",
@@ -6177,7 +6794,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Samolyot"
   },
   {
     "id": "top_537",
@@ -6187,7 +6805,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aeroport"
   },
   {
     "id": "top_538",
@@ -6197,7 +6816,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chipta"
   },
   {
     "id": "top_539",
@@ -6207,7 +6827,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Pasport"
   },
   {
     "id": "top_540",
@@ -6217,7 +6838,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Turar joy"
   },
   {
     "id": "top_541",
@@ -6227,7 +6849,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Identifikatsiya"
   },
   {
     "id": "top_542",
@@ -6237,7 +6860,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Pul"
   },
   {
     "id": "top_543",
@@ -6247,7 +6871,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Lira"
   },
   {
     "id": "top_544",
@@ -6257,7 +6882,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dollar"
   },
   {
     "id": "top_545",
@@ -6267,7 +6893,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "evro"
   },
   {
     "id": "top_546",
@@ -6277,7 +6904,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bank"
   },
   {
     "id": "top_547",
@@ -6287,7 +6915,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Karta"
   },
   {
     "id": "top_548",
@@ -6297,7 +6926,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Naqd pul"
   },
   {
     "id": "top_549",
@@ -6307,7 +6937,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Maosh / Oylik"
   },
   {
     "id": "top_550",
@@ -6317,7 +6948,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oldindan"
   },
   {
     "id": "top_551",
@@ -6327,7 +6959,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Narx"
   },
   {
     "id": "top_552",
@@ -6337,7 +6970,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bill"
   },
   {
     "id": "top_553",
@@ -6347,7 +6981,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Telefon"
   },
   {
     "id": "top_554",
@@ -6357,7 +6992,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Raqam"
   },
   {
     "id": "top_555",
@@ -6367,7 +7003,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xabar"
   },
   {
     "id": "top_556",
@@ -6377,7 +7014,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Internet"
   },
   {
     "id": "top_557",
@@ -6387,7 +7025,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kompyuter"
   },
   {
     "id": "top_558",
@@ -6397,7 +7036,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Non"
   },
   {
     "id": "top_559",
@@ -6407,7 +7047,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Suv"
   },
   {
     "id": "top_560",
@@ -6417,7 +7058,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Choy"
   },
   {
     "id": "top_561",
@@ -6427,7 +7069,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kofe"
   },
   {
     "id": "top_562",
@@ -6437,7 +7080,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shakar"
   },
   {
     "id": "top_563",
@@ -6447,7 +7091,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "tuz"
   },
   {
     "id": "top_564",
@@ -6457,7 +7102,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Go'sht"
   },
   {
     "id": "top_565",
@@ -6467,7 +7113,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tovuq"
   },
   {
     "id": "top_566",
@@ -6477,7 +7124,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Baliq"
   },
   {
     "id": "top_567",
@@ -6487,7 +7135,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Pishloq"
   },
   {
     "id": "top_568",
@@ -6497,7 +7146,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tuxum"
   },
   {
     "id": "top_569",
@@ -6507,7 +7157,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Meva"
   },
   {
     "id": "top_570",
@@ -6517,7 +7168,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sabzavot"
   },
   {
     "id": "top_571",
@@ -6527,7 +7179,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sigaret"
   },
   {
     "id": "top_572",
@@ -6537,7 +7190,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Engilroq"
   },
   {
     "id": "top_573",
@@ -6547,7 +7201,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hojatxona"
   },
   {
     "id": "top_574",
@@ -6557,7 +7212,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Lavabo"
   },
   {
     "id": "top_575",
@@ -6567,7 +7223,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sovun"
   },
   {
     "id": "top_576",
@@ -6577,7 +7234,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sochiq"
   },
   {
     "id": "top_577",
@@ -6587,7 +7245,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shifoxona"
   },
   {
     "id": "top_578",
@@ -6597,7 +7256,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shifokor / Doxtir"
   },
   {
     "id": "top_579",
@@ -6607,7 +7267,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dorixona"
   },
   {
     "id": "top_580",
@@ -6617,7 +7278,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dori"
   },
   {
     "id": "top_581",
@@ -6627,7 +7289,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Og'riq"
   },
   {
     "id": "top_582",
@@ -6637,7 +7300,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yara / Jarohat"
   },
   {
     "id": "top_583",
@@ -6647,7 +7311,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kiyinish"
   },
   {
     "id": "top_584",
@@ -6657,7 +7322,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "qullob"
   },
   {
     "id": "top_585",
@@ -6667,7 +7333,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shoshilinch / Tez yordam"
   },
   {
     "id": "top_586",
@@ -6677,7 +7344,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Politsiya"
   },
   {
     "id": "top_587",
@@ -6687,7 +7355,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yong'inga qarshi"
   },
   {
     "id": "top_588",
@@ -6697,7 +7366,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tez yordam mashinasi"
   },
   {
     "id": "top_589",
@@ -6707,7 +7377,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Juda yaxshi"
   },
   {
     "id": "top_590",
@@ -6717,7 +7388,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yomon yo'q"
   },
   {
     "id": "top_591",
@@ -6727,7 +7399,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Modadan keyin"
   },
   {
     "id": "top_592",
@@ -6737,7 +7410,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Juda qoyil"
   },
   {
     "id": "top_593",
@@ -6747,7 +7421,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sekin-asta"
   },
   {
     "id": "top_594",
@@ -6757,7 +7432,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tez"
   },
   {
     "id": "top_595",
@@ -6767,7 +7443,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hozir"
   },
   {
     "id": "top_596",
@@ -6777,7 +7454,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bir daqiqa"
   },
   {
     "id": "top_597",
@@ -6787,7 +7465,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "bir soniya kuting"
   },
   {
     "id": "top_598",
@@ -6797,7 +7476,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu muhim emas"
   },
   {
     "id": "top_599",
@@ -6807,7 +7487,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Muammo yo'q / Hammasi joyida"
   },
   {
     "id": "top_600",
@@ -6817,7 +7498,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hammasi joyida"
   },
   {
     "id": "top_601",
@@ -6827,7 +7509,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tezroq tuzalib keting / O'tib ketsin"
   },
   {
     "id": "top_602",
@@ -6837,7 +7520,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Muborak bo'lsin / Qutlug' bo'lsin"
   },
   {
     "id": "top_603",
@@ -6847,7 +7531,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Umid qilamanki"
   },
   {
     "id": "top_604",
@@ -6857,7 +7542,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Masallah"
   },
   {
     "id": "top_605",
@@ -6867,7 +7553,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "sog 'bo'ling"
   },
   {
     "id": "top_606",
@@ -6877,7 +7564,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "ko'raylikchi"
   },
   {
     "id": "top_607",
@@ -6887,7 +7575,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "qani ketdik"
   },
   {
     "id": "top_608",
@@ -6897,7 +7586,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "bu yerga kel"
   },
   {
     "id": "top_609",
@@ -6907,7 +7597,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "u erga boring"
   },
   {
     "id": "top_610",
@@ -6917,7 +7608,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "uni tinch qo'ying"
   },
   {
     "id": "top_611",
@@ -6927,7 +7619,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "teging"
   },
   {
     "id": "top_612",
@@ -6937,7 +7630,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ehtiyot bo'ling"
   },
   {
     "id": "top_613",
@@ -6947,7 +7641,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shoshmang"
   },
   {
     "id": "top_614",
@@ -6957,7 +7652,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tinchlaning"
   },
   {
     "id": "top_615",
@@ -6967,7 +7663,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qo'rqmang"
   },
   {
     "id": "top_616",
@@ -6977,7 +7674,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Davom eting"
   },
   {
     "id": "top_617",
@@ -6987,7 +7685,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "bir daqiqa kuting"
   },
   {
     "id": "top_618",
@@ -6997,7 +7696,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tugallandi"
   },
   {
     "id": "top_619",
@@ -7007,7 +7707,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "sodir bo'ldi"
   },
   {
     "id": "top_620",
@@ -7017,7 +7718,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu sodir bo'lmadi"
   },
   {
     "id": "top_621",
@@ -7027,7 +7729,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "tushundim"
   },
   {
     "id": "top_622",
@@ -7037,7 +7740,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men tushunmayapman"
   },
   {
     "id": "top_623",
@@ -7047,7 +7751,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "bilaman"
   },
   {
     "id": "top_624",
@@ -7057,7 +7762,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bilmadim"
   },
   {
     "id": "top_625",
@@ -7067,7 +7773,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men xohlardimki"
   },
   {
     "id": "top_626",
@@ -7077,7 +7784,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men xohlamayman"
   },
   {
     "id": "top_627",
@@ -7087,7 +7795,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Majburiy"
   },
   {
     "id": "top_628",
@@ -7097,7 +7806,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hech qanday ehtiyoj yo'q"
   },
   {
     "id": "top_629",
@@ -7107,7 +7817,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "ehtiyoj bor"
   },
   {
     "id": "top_630",
@@ -7117,7 +7828,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu to'g'ri"
   },
   {
     "id": "top_631",
@@ -7127,7 +7839,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu noto'g'ri"
   },
   {
     "id": "top_632",
@@ -7137,7 +7850,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Siz haqsiz"
   },
   {
     "id": "top_633",
@@ -7147,7 +7861,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Farqi yo'q / Baribir"
   },
   {
     "id": "top_634",
@@ -7157,7 +7872,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nima bo'ldi?"
   },
   {
     "id": "top_635",
@@ -7167,7 +7883,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nima gaplar?"
   },
   {
     "id": "top_636",
@@ -7177,7 +7894,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ishlar yaxshimi?"
   },
   {
     "id": "top_637",
@@ -7187,7 +7905,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hammasi yaxshi"
   },
   {
     "id": "top_638",
@@ -7197,7 +7916,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'rishguncha"
   },
   {
     "id": "top_639",
@@ -7207,7 +7927,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные и наречия",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aniq"
   },
   {
     "id": "top_640",
@@ -7217,7 +7938,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Og'irligi"
   },
   {
     "id": "top_641",
@@ -7227,7 +7949,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aql"
   },
   {
     "id": "top_642",
@@ -7237,7 +7960,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hudud"
   },
   {
     "id": "top_643",
@@ -7247,7 +7971,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Maqsad"
   },
   {
     "id": "top_644",
@@ -7257,7 +7982,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Lahza"
   },
   {
     "id": "top_645",
@@ -7267,7 +7993,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Avtomobil"
   },
   {
     "id": "top_646",
@@ -7277,7 +8004,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Orqaga"
   },
   {
     "id": "top_647",
@@ -7287,7 +8015,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Old"
   },
   {
     "id": "top_648",
@@ -7297,7 +8026,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yuqori"
   },
   {
     "id": "top_649",
@@ -7307,7 +8037,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Pastroq"
   },
   {
     "id": "top_650",
@@ -7317,7 +8048,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ichish"
   },
   {
     "id": "top_651",
@@ -7327,7 +8059,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tashqi"
   },
   {
     "id": "top_652",
@@ -7337,7 +8070,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'g'ri"
   },
   {
     "id": "top_653",
@@ -7347,7 +8081,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chapga"
   },
   {
     "id": "top_654",
@@ -7357,7 +8092,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'rta"
   },
   {
     "id": "top_655",
@@ -7367,7 +8103,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chet"
   },
   {
     "id": "top_656",
@@ -7377,7 +8114,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Burchak"
   },
   {
     "id": "top_657",
@@ -7387,7 +8125,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ketish uchun"
   },
   {
     "id": "top_658",
@@ -7397,7 +8136,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ulanish uchun"
   },
   {
     "id": "top_659",
@@ -7407,7 +8147,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ulanish"
   },
   {
     "id": "top_660",
@@ -7417,7 +8158,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oddiy"
   },
   {
     "id": "top_661",
@@ -7427,7 +8169,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Zulm"
   },
   {
     "id": "top_662",
@@ -7437,7 +8180,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Muvaffaqiyat"
   },
   {
     "id": "top_663",
@@ -7447,7 +8191,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Muvaffaqiyatli"
   },
   {
     "id": "top_664",
@@ -7457,7 +8202,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hudud"
   },
   {
     "id": "top_665",
@@ -7467,7 +8213,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uchrashuv uchun"
   },
   {
     "id": "top_666",
@@ -7477,7 +8224,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Javob bering"
   },
   {
     "id": "top_667",
@@ -7487,7 +8235,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Jiddiy"
   },
   {
     "id": "top_668",
@@ -7497,7 +8246,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Harakat"
   },
   {
     "id": "top_669",
@@ -7507,7 +8257,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Saralash"
   },
   {
     "id": "top_670",
@@ -7517,7 +8268,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Atrof-muhit"
   },
   {
     "id": "top_671",
@@ -7527,7 +8279,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yechim"
   },
   {
     "id": "top_672",
@@ -7537,7 +8290,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qiymat"
   },
   {
     "id": "top_673",
@@ -7547,7 +8301,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qimmatli"
   },
   {
     "id": "top_674",
@@ -7557,7 +8312,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qo'llab-quvvatlash"
   },
   {
     "id": "top_675",
@@ -7567,7 +8323,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ehtiyotkorlik bilan"
   },
   {
     "id": "top_676",
@@ -7577,7 +8334,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ehtiyotsiz"
   },
   {
     "id": "top_677",
@@ -7587,7 +8345,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qarshilik"
   },
   {
     "id": "top_678",
@@ -7597,7 +8356,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tabiat"
   },
   {
     "id": "top_679",
@@ -7607,7 +8367,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tabiiy"
   },
   {
     "id": "top_680",
@@ -7617,7 +8378,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Vaziyat"
   },
   {
     "id": "top_681",
@@ -7627,7 +8389,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Buyurtma"
   },
   {
     "id": "top_682",
@@ -7637,7 +8400,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tashkil etilgan"
   },
   {
     "id": "top_683",
@@ -7647,7 +8411,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'zgartirish uchun"
   },
   {
     "id": "top_684",
@@ -7657,7 +8422,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'siq"
   },
   {
     "id": "top_685",
@@ -7667,7 +8433,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'sqinlik qilmoq"
   },
   {
     "id": "top_686",
@@ -7677,7 +8444,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Moslashuvchan"
   },
   {
     "id": "top_687",
@@ -7687,7 +8455,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Effekt"
   },
   {
     "id": "top_688",
@@ -7697,7 +8466,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Fikr"
   },
   {
     "id": "top_689",
@@ -7707,7 +8477,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Rivojlanish uchun"
   },
   {
     "id": "top_690",
@@ -7717,7 +8488,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kerak"
   },
   {
     "id": "top_691",
@@ -7727,7 +8499,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Vazifa"
   },
   {
     "id": "top_692",
@@ -7737,7 +8510,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kuzatish"
   },
   {
     "id": "top_693",
@@ -7747,7 +8521,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kuch"
   },
   {
     "id": "top_694",
@@ -7757,7 +8532,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kuchli"
   },
   {
     "id": "top_695",
@@ -7767,7 +8543,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Zaif"
   },
   {
     "id": "top_696",
@@ -7777,7 +8554,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ishonch"
   },
   {
     "id": "top_697",
@@ -7787,7 +8565,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yangiliklar"
   },
   {
     "id": "top_698",
@@ -7797,7 +8576,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Harakat"
   },
   {
     "id": "top_699",
@@ -7807,7 +8587,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Maqsad"
   },
   {
     "id": "top_700",
@@ -7817,7 +8598,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tezlik"
   },
   {
     "id": "top_701",
@@ -7827,7 +8609,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xizmat"
   },
   {
     "id": "top_702",
@@ -7837,7 +8620,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Taraqqiyot"
   },
   {
     "id": "top_703",
@@ -7847,7 +8631,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aloqa"
   },
   {
     "id": "top_704",
@@ -7857,7 +8642,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Prinsip"
   },
   {
     "id": "top_705",
@@ -7867,7 +8653,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Jarayon"
   },
   {
     "id": "top_706",
@@ -7877,7 +8664,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Biznes"
   },
   {
     "id": "top_707",
@@ -7887,7 +8675,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "sifat nazorati"
   },
   {
     "id": "top_708",
@@ -7897,7 +8686,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Imkoniyat"
   },
   {
     "id": "top_709",
@@ -7907,7 +8697,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yo'qotish"
   },
   {
     "id": "top_710",
@@ -7917,7 +8708,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Manba"
   },
   {
     "id": "top_711",
@@ -7927,7 +8719,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aniq"
   },
   {
     "id": "top_712",
@@ -7937,7 +8730,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные и наречия",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Albatta"
   },
   {
     "id": "top_713",
@@ -7947,7 +8741,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qiymat"
   },
   {
     "id": "top_714",
@@ -7957,7 +8752,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mavzu"
   },
   {
     "id": "top_715",
@@ -7967,7 +8763,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Vaziyat"
   },
   {
     "id": "top_716",
@@ -7977,7 +8774,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qoida"
   },
   {
     "id": "top_717",
@@ -7987,7 +8785,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Maqola"
   },
   {
     "id": "top_718",
@@ -7997,7 +8796,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Material"
   },
   {
     "id": "top_719",
@@ -8007,7 +8807,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Masofa"
   },
   {
     "id": "top_720",
@@ -8017,7 +8818,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "usuli"
   },
   {
     "id": "top_721",
@@ -8027,7 +8829,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Miqdori"
   },
   {
     "id": "top_722",
@@ -8037,7 +8840,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Malaka"
   },
   {
     "id": "top_723",
@@ -8047,7 +8851,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nuqta"
   },
   {
     "id": "top_724",
@@ -8057,7 +8862,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "imkoniyat"
   },
   {
     "id": "top_725",
@@ -8067,7 +8873,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tadbir"
   },
   {
     "id": "top_726",
@@ -8077,7 +8884,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Atrof-muhit"
   },
   {
     "id": "top_727",
@@ -8087,7 +8895,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Parcha"
   },
   {
     "id": "top_728",
@@ -8097,7 +8906,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Muammo"
   },
   {
     "id": "top_729",
@@ -8107,7 +8917,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dastur"
   },
   {
     "id": "top_730",
@@ -8117,7 +8928,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xavf"
   },
   {
     "id": "top_731",
@@ -8127,7 +8939,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sabab"
   },
   {
     "id": "top_732",
@@ -8137,7 +8950,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ovoz berish"
   },
   {
     "id": "top_733",
@@ -8147,7 +8961,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Daraja"
   },
   {
     "id": "top_734",
@@ -8157,7 +8972,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Buyurtma"
   },
   {
     "id": "top_735",
@@ -8167,7 +8983,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tizim"
   },
   {
     "id": "top_736",
@@ -8177,7 +8994,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xulosa"
   },
   {
     "id": "top_737",
@@ -8187,7 +9005,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Standart"
   },
   {
     "id": "top_738",
@@ -8197,7 +9016,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Davomiyligi"
   },
   {
     "id": "top_739",
@@ -8207,7 +9027,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Davr"
   },
   {
     "id": "top_740",
@@ -8217,7 +9038,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Vaziyat"
   },
   {
     "id": "top_741",
@@ -8227,7 +9049,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'rsatmalar"
   },
   {
     "id": "top_742",
@@ -8237,7 +9060,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bajarildi"
   },
   {
     "id": "top_743",
@@ -8247,7 +9071,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dizayn"
   },
   {
     "id": "top_744",
@@ -8257,7 +9082,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Transport"
   },
   {
     "id": "top_745",
@@ -8267,7 +9093,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Texnik"
   },
   {
     "id": "top_746",
@@ -8277,7 +9104,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Texnologiya"
   },
   {
     "id": "top_747",
@@ -8287,7 +9115,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Asos"
   },
   {
     "id": "top_748",
@@ -8297,7 +9126,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Reaktsiya"
   },
   {
     "id": "top_749",
@@ -8307,7 +9137,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Afzallik"
   },
   {
     "id": "top_750",
@@ -8317,7 +9148,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Transport"
   },
   {
     "id": "top_751",
@@ -8327,7 +9159,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "usta"
   },
   {
     "id": "top_752",
@@ -8337,7 +9170,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "ILOVA"
   },
   {
     "id": "top_753",
@@ -8347,7 +9181,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mos"
   },
   {
     "id": "top_754",
@@ -8357,7 +9192,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nomaqbul"
   },
   {
     "id": "top_755",
@@ -8367,7 +9203,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mutaxassis"
   },
   {
     "id": "top_756",
@@ -8377,7 +9214,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mahsulot"
   },
   {
     "id": "top_757",
@@ -8387,7 +9225,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Avtomobil"
   },
   {
     "id": "top_758",
@@ -8397,7 +9236,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Существительные",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hokimiyat"
   },
   {
     "id": "top_759",
@@ -8407,7 +9247,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Usul"
   },
   {
     "id": "top_760",
@@ -8417,7 +9258,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yuklash"
   },
   {
     "id": "top_761",
@@ -8427,7 +9269,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "o'rnatish"
   },
   {
     "id": "ext_844",
@@ -8437,7 +9280,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oq"
   },
   {
     "id": "ext_845",
@@ -8447,7 +9291,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qora"
   },
   {
     "id": "ext_846",
@@ -8457,7 +9302,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kulrang"
   },
   {
     "id": "ext_847",
@@ -8467,7 +9313,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qizil"
   },
   {
     "id": "ext_848",
@@ -8477,7 +9324,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ko'k"
   },
   {
     "id": "ext_849",
@@ -8487,7 +9335,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sariq"
   },
   {
     "id": "ext_850",
@@ -8497,7 +9346,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yashil"
   },
   {
     "id": "ext_851",
@@ -8507,7 +9357,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Jigarrang"
   },
   {
     "id": "ext_852",
@@ -8517,7 +9368,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Apelsin"
   },
   {
     "id": "ext_853",
@@ -8527,7 +9379,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Binafsha"
   },
   {
     "id": "ext_854",
@@ -8537,7 +9390,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kumush"
   },
   {
     "id": "ext_855",
@@ -8547,7 +9401,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oltin"
   },
   {
     "id": "ext_856",
@@ -8557,7 +9412,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shaffof"
   },
   {
     "id": "ext_857",
@@ -8567,7 +9423,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shaffof"
   },
   {
     "id": "ext_858",
@@ -8577,7 +9434,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Rangsiz"
   },
   {
     "id": "ext_859",
@@ -8587,7 +9445,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "anodlash"
   },
   {
     "id": "ext_860",
@@ -8597,7 +9456,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "chang qoplamasi"
   },
   {
     "id": "ext_861",
@@ -8607,7 +9467,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "ral kodi"
   },
   {
     "id": "ext_862",
@@ -8617,7 +9478,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'yoq qalinligi"
   },
   {
     "id": "ext_863",
@@ -8627,7 +9489,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kvartira"
   },
   {
     "id": "ext_864",
@@ -8637,7 +9500,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kvadrat"
   },
   {
     "id": "ext_865",
@@ -8647,7 +9511,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uchburchak"
   },
   {
     "id": "ext_866",
@@ -8657,7 +9522,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'rtburchak"
   },
   {
     "id": "ext_867",
@@ -8667,7 +9533,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xoch"
   },
   {
     "id": "ext_868",
@@ -8677,7 +9544,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Vertikal"
   },
   {
     "id": "ext_869",
@@ -8687,7 +9555,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Gorizontal"
   },
   {
     "id": "ext_870",
@@ -8697,7 +9566,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Parallel"
   },
   {
     "id": "ext_871",
@@ -8707,7 +9577,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tik"
   },
   {
     "id": "ext_872",
@@ -8717,7 +9588,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eksa"
   },
   {
     "id": "ext_873",
@@ -8727,7 +9599,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Markaz"
   },
   {
     "id": "ext_874",
@@ -8737,7 +9610,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ovoz balandligi"
   },
   {
     "id": "ext_875",
@@ -8747,7 +9621,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Intensivlik"
   },
   {
     "id": "ext_876",
@@ -8757,7 +9632,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qarshilik"
   },
   {
     "id": "ext_877",
@@ -8767,7 +9643,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "statik hisob"
   },
   {
     "id": "ext_878",
@@ -8777,7 +9654,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "shamol yuki"
   },
   {
     "id": "ext_879",
@@ -8787,7 +9665,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "qor yuki"
   },
   {
     "id": "ext_880",
@@ -8797,7 +9676,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Zilzila"
   },
   {
     "id": "ext_881",
@@ -8807,7 +9687,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kengayish"
   },
   {
     "id": "ext_882",
@@ -8817,7 +9698,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Termal"
   },
   {
     "id": "ext_883",
@@ -8827,7 +9709,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Izolyatsiya"
   },
   {
     "id": "ext_884",
@@ -8837,7 +9720,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Izolyatsiya"
   },
   {
     "id": "ext_885",
@@ -8847,7 +9731,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "ovoz yalıtımı"
   },
   {
     "id": "ext_886",
@@ -8857,7 +9742,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Akustik"
   },
   {
     "id": "ext_887",
@@ -8867,7 +9753,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Korroziya"
   },
   {
     "id": "ext_888",
@@ -8877,7 +9764,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Zanglamaydigan"
   },
   {
     "id": "ext_889",
@@ -8887,7 +9775,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "galvanizlangan"
   },
   {
     "id": "ext_890",
@@ -8897,7 +9786,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "rozetka to'plami"
   },
   {
     "id": "ext_891",
@@ -8907,7 +9797,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "kaliti"
   },
   {
     "id": "ext_892",
@@ -8917,7 +9808,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "ochiq og'iz kaliti"
   },
   {
     "id": "ext_893",
@@ -8927,7 +9819,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "yulduzcha kalit"
   },
   {
     "id": "ext_894",
@@ -8937,7 +9830,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "tekis tornavida"
   },
   {
     "id": "ext_895",
@@ -8947,7 +9841,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Phillips tornavida"
   },
   {
     "id": "ext_896",
@@ -8957,7 +9852,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "pense"
   },
   {
     "id": "ext_897",
@@ -8967,7 +9863,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "yon chiviq"
   },
   {
     "id": "ext_898",
@@ -8977,7 +9874,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ulash"
   },
   {
     "id": "ext_899",
@@ -8987,7 +9885,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "yordamchi pichoq"
   },
   {
     "id": "ext_900",
@@ -8997,7 +9896,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Qaychi"
   },
   {
     "id": "ext_901",
@@ -9007,7 +9907,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Egey"
   },
   {
     "id": "ext_902",
@@ -9017,7 +9918,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Emeri"
   },
   {
     "id": "ext_903",
@@ -9027,7 +9929,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Qisqich"
   },
   {
     "id": "ext_904",
@@ -9037,7 +9940,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Qiynoq"
   },
   {
     "id": "ext_905",
@@ -9047,7 +9951,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "ruh darajasi"
   },
   {
     "id": "ext_906",
@@ -9057,7 +9962,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "lazer o'lchagich"
   },
   {
     "id": "ext_907",
@@ -9067,7 +9973,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Gönyeburun"
   },
   {
     "id": "ext_908",
@@ -9077,7 +9984,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Bolg'a"
   },
   {
     "id": "ext_909",
@@ -9087,7 +9995,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Balyoz"
   },
   {
     "id": "ext_910",
@@ -9097,7 +10006,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Chisel"
   },
   {
     "id": "ext_911",
@@ -9107,7 +10017,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Lehim"
   },
   {
     "id": "ext_912",
@@ -9117,7 +10028,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "payvandlash mashinasi"
   },
   {
     "id": "ext_913",
@@ -9127,7 +10039,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Spiral / burchakli maydalagich"
   },
   {
     "id": "ext_914",
@@ -9137,7 +10050,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "jigsa"
   },
   {
     "id": "ext_915",
@@ -9147,7 +10061,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "router biti"
   },
   {
     "id": "ext_916",
@@ -9157,7 +10072,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "olma ko'rdim"
   },
   {
     "id": "ext_917",
@@ -9167,7 +10083,8 @@ window.DICTIONARY_DATABASE = [
     "category": "tools",
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "sovutish suvi"
   },
   {
     "id": "ext_918",
@@ -9177,7 +10094,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ochlikni his eting"
   },
   {
     "id": "ext_919",
@@ -9187,7 +10105,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chanqoqlik"
   },
   {
     "id": "ext_920",
@@ -9197,7 +10116,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Dush qabul qilish uchun"
   },
   {
     "id": "ext_921",
@@ -9207,7 +10127,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "soqol olish"
   },
   {
     "id": "ext_922",
@@ -9217,7 +10138,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kiyinish uchun"
   },
   {
     "id": "ext_923",
@@ -9227,7 +10149,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "yechinmoq"
   },
   {
     "id": "ext_924",
@@ -9237,7 +10160,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yuvish"
   },
   {
     "id": "ext_925",
@@ -9247,7 +10171,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "quritmoq"
   },
   {
     "id": "ext_926",
@@ -9257,7 +10182,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "dazmollash"
   },
   {
     "id": "ext_927",
@@ -9267,7 +10193,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Глаголы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ovqat pishirish uchun"
   },
   {
     "id": "ext_928",
@@ -9277,7 +10204,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ijara"
   },
   {
     "id": "ext_929",
@@ -9287,7 +10215,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uy egasi"
   },
   {
     "id": "ext_930",
@@ -9297,7 +10226,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ijarachi"
   },
   {
     "id": "ext_931",
@@ -9307,7 +10237,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_verbs",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "hisobni to'lash"
   },
   {
     "id": "ext_932",
@@ -9317,7 +10248,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "elektr to'lovi"
   },
   {
     "id": "ext_933",
@@ -9327,7 +10259,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "suv hisobi"
   },
   {
     "id": "ext_934",
@@ -9337,7 +10270,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "tabiiy gaz"
   },
   {
     "id": "ext_935",
@@ -9347,7 +10281,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'lovlar"
   },
   {
     "id": "ext_936",
@@ -9357,7 +10292,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bozor"
   },
   {
     "id": "ext_937",
@@ -9367,7 +10303,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Umumiy do'kon"
   },
   {
     "id": "ext_938",
@@ -9377,7 +10314,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sabzavotchi"
   },
   {
     "id": "ext_939",
@@ -9387,7 +10325,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qassob"
   },
   {
     "id": "ext_940",
@@ -9397,7 +10336,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Pech"
   },
   {
     "id": "ext_941",
@@ -9407,7 +10347,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sartarosh"
   },
   {
     "id": "ext_942",
@@ -9417,7 +10358,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Restoran"
   },
   {
     "id": "ext_943",
@@ -9427,7 +10369,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sho'rva"
   },
   {
     "id": "ext_944",
@@ -9437,7 +10380,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Guruch"
   },
   {
     "id": "ext_945",
@@ -9447,7 +10391,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Aylanadigan"
   },
   {
     "id": "ext_946",
@@ -9457,7 +10402,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Go'shtli go'sht"
   },
   {
     "id": "ext_947",
@@ -9467,7 +10413,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Salat"
   },
   {
     "id": "ext_948",
@@ -9477,7 +10424,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ayran"
   },
   {
     "id": "ext_949",
@@ -9487,7 +10435,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shirin"
   },
   {
     "id": "ext_950",
@@ -9497,7 +10446,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Burchak"
   },
   {
     "id": "ext_951",
@@ -9507,7 +10457,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Minus"
   },
   {
     "id": "ext_952",
@@ -9517,7 +10468,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tuzli"
   },
   {
     "id": "ext_953",
@@ -9527,7 +10479,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yangi"
   },
   {
     "id": "ext_954",
@@ -9537,7 +10490,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Eskirgan"
   },
   {
     "id": "ext_955",
@@ -9547,7 +10501,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "issiq suv"
   },
   {
     "id": "ext_956",
@@ -9557,7 +10512,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "sovuq suv"
   },
   {
     "id": "ext_957",
@@ -9567,7 +10523,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "choy tanaffusi"
   },
   {
     "id": "ext_958",
@@ -9577,7 +10534,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tushlik"
   },
   {
     "id": "ext_959",
@@ -9587,7 +10545,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kechki ovqat"
   },
   {
     "id": "ext_960",
@@ -9597,7 +10556,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nonushta"
   },
   {
     "id": "ext_961",
@@ -9607,7 +10567,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yoqimli ishtaha"
   },
   {
     "id": "ext_962",
@@ -9617,7 +10578,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qo'lingiz dard ko'rmasin / Rahmat"
   },
   {
     "id": "ext_963",
@@ -9627,7 +10589,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Salomat bo'ling"
   },
   {
     "id": "ext_964",
@@ -9637,7 +10600,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Siz ham ko'rasiz"
   },
   {
     "id": "ext_965",
@@ -9647,7 +10611,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bundan bahra oling"
   },
   {
     "id": "ext_966",
@@ -9657,7 +10622,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'zingizni ehtiyot qiling"
   },
   {
     "id": "ext_967",
@@ -9667,7 +10633,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yaxshi sayohat qiling"
   },
   {
     "id": "ext_968",
@@ -9677,7 +10644,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tabriklaymiz"
   },
   {
     "id": "ext_969",
@@ -9687,7 +10655,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tug'ilgan kun muborak bo'lsin"
   },
   {
     "id": "ext_970",
@@ -9697,7 +10666,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "bayramlar muborak"
   },
   {
     "id": "fin_971",
@@ -9707,7 +10677,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'ng tomonga buriling"
   },
   {
     "id": "fin_972",
@@ -9717,7 +10688,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "chapga buriling"
   },
   {
     "id": "fin_973",
@@ -9727,7 +10699,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'griga boring"
   },
   {
     "id": "fin_974",
@@ -9737,7 +10710,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "svetofor"
   },
   {
     "id": "fin_975",
@@ -9747,7 +10721,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Birlashma"
   },
   {
     "id": "fin_976",
@@ -9757,7 +10732,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yoqilg'i quyish shoxobchasi"
   },
   {
     "id": "fin_977",
@@ -9767,7 +10743,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Avtoturargoh"
   },
   {
     "id": "fin_978",
@@ -9777,7 +10754,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shina"
   },
   {
     "id": "fin_979",
@@ -9787,7 +10765,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tormoz"
   },
   {
     "id": "fin_980",
@@ -9797,7 +10776,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Debriyaj"
   },
   {
     "id": "fin_981",
@@ -9807,7 +10787,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Jihoz"
   },
   {
     "id": "fin_982",
@@ -9817,7 +10798,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bagaj"
   },
   {
     "id": "fin_983",
@@ -9827,7 +10809,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Havfsizlik kamari"
   },
   {
     "id": "fin_984",
@@ -9837,7 +10820,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ob-havo"
   },
   {
     "id": "fin_985",
@@ -9847,7 +10831,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Quyoshli"
   },
   {
     "id": "fin_986",
@@ -9857,7 +10842,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bulutli"
   },
   {
     "id": "fin_987",
@@ -9867,7 +10853,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yomg'irli"
   },
   {
     "id": "fin_988",
@@ -9877,7 +10864,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qorli"
   },
   {
     "id": "fin_989",
@@ -9887,7 +10875,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shamolli"
   },
   {
     "id": "fin_990",
@@ -9897,7 +10886,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bo'ron"
   },
   {
     "id": "fin_991",
@@ -9907,7 +10897,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tumanli"
   },
   {
     "id": "fin_992",
@@ -9917,7 +10908,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Muz"
   },
   {
     "id": "fin_993",
@@ -9927,7 +10919,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ayoz"
   },
   {
     "id": "fin_994",
@@ -9937,7 +10930,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Soya"
   },
   {
     "id": "fin_995",
@@ -9947,7 +10941,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shamol"
   },
   {
     "id": "fin_996",
@@ -9957,7 +10952,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yomg'ir"
   },
   {
     "id": "fin_997",
@@ -9967,7 +10963,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Foyda"
   },
   {
     "id": "fin_998",
@@ -9977,7 +10974,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Quyosh"
   },
   {
     "id": "fin_999",
@@ -9987,7 +10985,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "havo harorati"
   },
   {
     "id": "fin_1000",
@@ -9997,7 +10996,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Baxtli"
   },
   {
     "id": "fin_1001",
@@ -10007,7 +11007,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Achinarli"
   },
   {
     "id": "fin_1002",
@@ -10017,7 +11018,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "G'azablangan"
   },
   {
     "id": "fin_1003",
@@ -10027,7 +11029,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "hayajonlangan"
   },
   {
     "id": "fin_1004",
@@ -10037,7 +11040,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Charchagan"
   },
   {
     "id": "fin_1005",
@@ -10047,7 +11051,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kasal"
   },
   {
     "id": "fin_1006",
@@ -10057,7 +11062,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sog'lom"
   },
   {
     "id": "fin_1007",
@@ -10067,7 +11073,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men yaxshiman"
   },
   {
     "id": "fin_1008",
@@ -10077,7 +11084,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_adj",
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men yomonman"
   },
   {
     "id": "fin_1009",
@@ -10087,7 +11095,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tez orada"
   },
   {
     "id": "fin_1010",
@@ -10097,7 +11106,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hozir"
   },
   {
     "id": "fin_1011",
@@ -10107,7 +11117,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_daily",
     "categoryLabel": "Числа и время",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'z vaqtida"
   },
   {
     "id": "fin_1012",
@@ -10117,7 +11128,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uchrashuv"
   },
   {
     "id": "fin_1013",
@@ -10127,7 +11139,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uchrashuv"
   },
   {
     "id": "fin_1014",
@@ -10137,7 +11150,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Uchrashuv"
   },
   {
     "id": "fin_1015",
@@ -10147,7 +11161,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mijoz"
   },
   {
     "id": "fin_1016",
@@ -10157,7 +11172,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yetkazib beruvchi"
   },
   {
     "id": "fin_1017",
@@ -10167,7 +11183,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qattiq"
   },
   {
     "id": "fin_1018",
@@ -10177,7 +11194,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hamkor"
   },
   {
     "id": "fin_1019",
@@ -10187,7 +11205,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Mas'uliyatli"
   },
   {
     "id": "fin_1020",
@@ -10197,7 +11216,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ofitser"
   },
   {
     "id": "fin_1021",
@@ -10207,7 +11227,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Rasmiy"
   },
   {
     "id": "fin_1022",
@@ -10217,7 +11238,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nazorat"
   },
   {
     "id": "fin_1023",
@@ -10227,7 +11249,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Shikoyat"
   },
   {
     "id": "fin_1024",
@@ -10237,7 +11260,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qoniqish"
   },
   {
     "id": "fin_1025",
@@ -10247,7 +11271,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kafolat"
   },
   {
     "id": "fin_1026",
@@ -10257,7 +11282,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Jarayonni boshqarish"
   },
   {
     "id": "fin_1027",
@@ -10267,7 +11293,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "shtrix-kod"
   },
   {
     "id": "fin_1028",
@@ -10277,7 +11304,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chipta"
   },
   {
     "id": "fin_1029",
@@ -10287,7 +11315,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "yuk tashish maydoni"
   },
   {
     "id": "fin_1030",
@@ -10297,7 +11326,8 @@ window.DICTIONARY_DATABASE = [
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "yig'ish joyi"
   },
   {
     "id": "phr_1",
@@ -10307,7 +11337,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Nima qilishim kerak?"
   },
   {
     "id": "phr_2",
@@ -10317,7 +11348,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Buni qayerga qo'yay?"
   },
   {
     "id": "phr_3",
@@ -10327,7 +11359,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Yordam bera olasanmi?"
   },
   {
     "id": "phr_4",
@@ -10337,7 +11370,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Qo'lingni ber / ko'tarishga yordamlashvor?"
   },
   {
     "id": "phr_5",
@@ -10347,7 +11381,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Material tugadi"
   },
   {
     "id": "phr_6",
@@ -10357,7 +11392,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Yangi detal kerak"
   },
   {
     "id": "phr_7",
@@ -10367,7 +11403,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Bu detal nuqsonli / yaroqsiz"
   },
   {
     "id": "phr_8",
@@ -10377,7 +11414,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "O'lchamlarni tekshirdingmi?"
   },
   {
     "id": "phr_9",
@@ -10387,7 +11425,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ish tugadimi?"
   },
   {
     "id": "phr_10",
@@ -10397,7 +11436,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Oz qoldi, tugatyapman"
   },
   {
     "id": "phr_11",
@@ -10407,7 +11447,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Hozir nima qilamiz?"
   },
   {
     "id": "phr_12",
@@ -10417,7 +11458,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Buni kim qildi?"
   },
   {
     "id": "phr_13",
@@ -10427,7 +11469,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Usta, qarab yuborasizmi?"
   },
   {
     "id": "phr_14",
@@ -10437,7 +11480,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Qaysi asbob kerak?"
   },
   {
     "id": "phr_15",
@@ -10447,7 +11491,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Menga shurupburagichni ber"
   },
   {
     "id": "phr_16",
@@ -10457,7 +11502,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ehtiyot bo'l, juda issiq!"
   },
   {
     "id": "phr_17",
@@ -10467,7 +11513,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ehtiyot bo'l, qirrasi o'tkir!"
   },
   {
     "id": "phr_18",
@@ -10477,7 +11524,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Stanokni to'xtat!"
   },
   {
     "id": "phr_19",
@@ -10487,7 +11535,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Pnevmatik shlangni uzat"
   },
   {
     "id": "phr_20",
@@ -10497,7 +11546,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ertaga smenadan tashqari ish bormi?"
   },
   {
     "id": "phr_21",
@@ -10507,7 +11557,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Ish vaqti tugadi / tarqalish vaqti bo'ldi"
   },
   {
     "id": "phr_22",
@@ -10517,7 +11568,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Tushlik tanaffusi soat nechada?"
   },
   {
     "id": "phr_23",
@@ -10527,7 +11579,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Chekish tanaffusiga chiqyapman"
   },
   {
     "id": "phr_24",
@@ -10537,7 +11590,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Hozir kelaman"
   },
   {
     "id": "phr_25",
@@ -10547,7 +11601,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Buni to'g'rilashim kerak"
   },
   {
     "id": "phr_26",
@@ -10557,7 +11612,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Chizmaga muvofiq qilingan"
   },
   {
     "id": "phr_27",
@@ -10567,7 +11623,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Usta tasdiqladi / qabul qildi"
   },
   {
     "id": "phr_28",
@@ -10577,7 +11634,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Kran kelyapti, chetga chiqinglar!"
   },
   {
     "id": "phr_29",
@@ -10587,7 +11645,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Oynani ehtiyotkorlik bilan ushla"
   },
   {
     "id": "phr_30",
@@ -10597,7 +11656,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Bu profilning uzunligi qancha?"
   },
   {
     "id": "phr_31",
@@ -10607,7 +11667,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Burchakni necha gradusda kesamiz?"
   },
   {
     "id": "phr_32",
@@ -10617,7 +11678,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Qirq besh gradusda kes"
   },
   {
     "id": "phr_33",
@@ -10627,7 +11689,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "To'qson gradus to'g'ri burchak (goniya)"
   },
   {
     "id": "phr_34",
@@ -10637,7 +11700,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Boltlarni yaxshilab qotir"
   },
   {
     "id": "phr_35",
@@ -10647,7 +11711,8 @@ window.DICTIONARY_DATABASE = [
     "category": "shop_phrases",
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
-    "learned": false
+    "learned": false,
+    "uz": "Silikonni tekis qilib tort"
   },
   {
     "id": "phr_36",
@@ -10657,7 +11722,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qalaysiz? Men yaxshiman, yaxshimisiz?"
   },
   {
     "id": "phr_37",
@@ -10667,7 +11733,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ismingiz nima? Mening ismim Timur"
   },
   {
     "id": "phr_38",
@@ -10677,7 +11744,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tanishganimdan xursandman"
   },
   {
     "id": "phr_39",
@@ -10687,7 +11755,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men ham tanishganimdan xursandman"
   },
   {
     "id": "phr_40",
@@ -10697,7 +11766,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men turkchani ozgina bilaman"
   },
   {
     "id": "phr_41",
@@ -10707,7 +11777,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Biroz sekinroq gapira olasizmi?"
   },
   {
     "id": "phr_42",
@@ -10717,7 +11788,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yana ayta olasizmi?"
   },
   {
     "id": "phr_43",
@@ -10727,7 +11799,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men buni tushunmayapman, tushuntira olasizmi?"
   },
   {
     "id": "phr_44",
@@ -10737,7 +11810,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Buning turkcha nomi nima?"
   },
   {
     "id": "phr_45",
@@ -10747,7 +11821,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Nimani nazarda tutdingiz?"
   },
   {
     "id": "phr_46",
@@ -10757,7 +11832,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Siz qaraysizmi?"
   },
   {
     "id": "phr_47",
@@ -10767,7 +11843,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hisobni keltiring, iltimos"
   },
   {
     "id": "phr_48",
@@ -10777,7 +11854,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Siz kredit kartalar qabul qilasizmi?"
   },
   {
     "id": "phr_49",
@@ -10787,7 +11865,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men pul bilan to'layman"
   },
   {
     "id": "phr_50",
@@ -10797,7 +11876,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kvitansiya olsam bo'ladimi?"
   },
   {
     "id": "phr_51",
@@ -10807,7 +11887,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Sizga sumka kerakmi? Yo'q, men xohlamayman"
   },
   {
     "id": "phr_52",
@@ -10817,7 +11898,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu qanchaga tushdi?"
   },
   {
     "id": "phr_53",
@@ -10827,7 +11909,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chegirma bera olasizmi?"
   },
   {
     "id": "phr_54",
@@ -10837,7 +11920,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Oxirgi marta nima bo'ladi?"
   },
   {
     "id": "phr_55",
@@ -10847,7 +11931,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Suv olsam bo'ladimi?"
   },
   {
     "id": "phr_56",
@@ -10857,7 +11942,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Ikkita choy ichsak bo'ladimi?"
   },
   {
     "id": "phr_57",
@@ -10867,7 +11953,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hojatxona qayerda ekan?"
   },
   {
     "id": "phr_58",
@@ -10877,7 +11964,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Qanday qilib u erga borishim mumkin?"
   },
   {
     "id": "phr_59",
@@ -10887,7 +11975,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Avtobus bekati qayerda?"
   },
   {
     "id": "phr_60",
@@ -10897,7 +11986,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Metrodan qanchalik uzoqda?"
   },
   {
     "id": "phr_61",
@@ -10907,7 +11997,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "To'g'ri boring, o'ngga buriling"
   },
   {
     "id": "phr_62",
@@ -10917,7 +12008,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Chiroqlardan chapga buriling"
   },
   {
     "id": "phr_63",
@@ -10927,7 +12019,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "menga yordam kerak"
   },
   {
     "id": "phr_64",
@@ -10937,7 +12030,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Menga yordam bera olasizmi?"
   },
   {
     "id": "phr_65",
@@ -10947,7 +12041,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "O'zingizni ehtiyot qiling"
   },
   {
     "id": "phr_66",
@@ -10957,7 +12052,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Omad, omad"
   },
   {
     "id": "phr_67",
@@ -10967,7 +12063,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tez orada ko'rishguncha, xayr"
   },
   {
     "id": "phr_68",
@@ -10977,7 +12074,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xayrli kech, ertaga ko'rishguncha"
   },
   {
     "id": "phr_69",
@@ -10987,7 +12085,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yaxshi dam oling"
   },
   {
     "id": "phr_70",
@@ -10997,7 +12096,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "rahmat"
   },
   {
     "id": "phr_71",
@@ -11007,7 +12107,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Yaxshi ishtaha asal va shakar"
   },
   {
     "id": "phr_72",
@@ -11017,7 +12118,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Katta rahmat, rahmat"
   },
   {
     "id": "phr_73",
@@ -11027,7 +12129,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xush kelibsiz, har doim"
   },
   {
     "id": "phr_74",
@@ -11037,7 +12140,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Kechirasiz, sizni bezovta qildim"
   },
   {
     "id": "phr_75",
@@ -11047,7 +12151,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Hechqisi yo‘q, buning hech qanday ahamiyati yo‘q"
   },
   {
     "id": "phr_76",
@@ -11057,7 +12162,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Xavotir olma, hal qilamiz"
   },
   {
     "id": "phr_77",
@@ -11067,7 +12173,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu menga mos keladi, muammo yo'q"
   },
   {
     "id": "phr_78",
@@ -11077,7 +12184,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu muhim emas, nima xohlasangiz"
   },
   {
     "id": "phr_79",
@@ -11087,7 +12195,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Siz haqsiz, men roziman"
   },
   {
     "id": "phr_80",
@@ -11097,7 +12206,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Bu, albatta"
   },
   {
     "id": "phr_81",
@@ -11107,7 +12217,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Albatta, mamnuniyat bilan"
   },
   {
     "id": "phr_82",
@@ -11117,7 +12228,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Biz soat nechada uchrashamiz?"
   },
   {
     "id": "phr_83",
@@ -11127,7 +12239,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Trafik juda og'ir edi, men kechikdim"
   },
   {
     "id": "phr_84",
@@ -11137,7 +12250,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Men darhol ketaman"
   },
   {
     "id": "phr_85",
@@ -11147,7 +12261,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "juma muborak"
   },
   {
     "id": "phr_86",
@@ -11157,7 +12272,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "bayramlar muborak"
   },
   {
     "id": "phr_87",
@@ -11167,7 +12283,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Tezroq tuzalib keting, tezroq tuzalib keting"
   },
   {
     "id": "phr_88",
@@ -11177,7 +12294,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "hamdardlik bildiraman"
   },
   {
     "id": "phr_89",
@@ -11187,7 +12305,8 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "sog 'bo'ling"
   },
   {
     "id": "phr_90",
@@ -11197,6 +12316,7 @@ window.DICTIONARY_DATABASE = [
     "category": "daily_phrases",
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
-    "learned": false
+    "learned": false,
+    "uz": "Omad tilaymiz, undan zavqlaning"
   }
 ];

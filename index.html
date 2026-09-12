@@ -521,8 +521,9 @@
           const q = searchQuery.toLowerCase().trim();
           const matchTr = item.tr.toLowerCase().includes(q);
           const matchRu = item.ru.toLowerCase().includes(q);
+          const matchUz = item.uz ? item.uz.toLowerCase().includes(q) : false;
           const matchPhonetic = item.phonetic ? item.phonetic.toLowerCase().includes(q) : false;
-          return matchTr || matchRu || matchPhonetic;
+          return matchTr || matchRu || matchUz || matchPhonetic;
         }
         return true;
       });
@@ -589,6 +590,12 @@
                 <div class="text-sm font-medium text-tgText/90 pt-1">
                   ${item.ru}
                 </div>
+                ${item.uz ? `
+                <div class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 pt-0.5 flex items-center gap-1.5">
+                  <span class="text-xs">🇺🇿</span>
+                  <span>${item.uz}</span>
+                </div>
+                ` : ''}
               </div>
 
               <!-- Кнопки озвучки: Обычная (Динамик) и Медленная (Черепашка) -->
@@ -704,7 +711,10 @@
                   ${isSchueco ? '<span class="text-xs text-sky-600">🏗️</span>' : ''}
                   <span>${item.tr}</span>
                 </div>
-                <div class="text-xs text-tgHint truncate">${item.ru}</div>
+                <div class="text-xs text-tgHint truncate">
+                  <span>${item.ru}</span>
+                  ${item.uz ? `<span class="text-emerald-600 dark:text-emerald-400 font-medium ml-1.5">• 🇺🇿 ${item.uz}</span>` : ''}
+                </div>
               </div>
             </div>
 
