@@ -15,6 +15,11 @@
   <!-- База данных: Правила и грамматика турецкого языка -->
   <script src="grammar.js"></script>
 
+  <!-- Шрифты Inter и Outfit для современного премиального вида -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -24,15 +29,24 @@
       darkMode: 'class',
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            heading: ['Outfit', 'Inter', 'sans-serif']
+          },
           colors: {
             tgBg: 'var(--tg-theme-bg-color, #f4f6f9)',
             tgSecBg: 'var(--tg-theme-secondary-bg-color, #ffffff)',
-            tgText: 'var(--tg-theme-text-color, #1e293b)',
+            tgText: 'var(--tg-theme-text-color, #0f172a)',
             tgHint: 'var(--tg-theme-hint-color, #64748b)',
             tgBtn: 'var(--tg-theme-button-color, #0284c7)',
             tgBtnText: 'var(--tg-theme-button-text-color, #ffffff)',
             schueco: '#005a9c',
             schuecoDark: '#004273'
+          },
+          boxShadow: {
+            'card': '0 2px 12px -2px rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.03)',
+            'card-hover': '0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04)',
+            'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)'
           }
         }
       }
@@ -51,8 +65,9 @@
     body {
       background-color: var(--tg-theme-bg-color, #f8fafc);
       color: var(--tg-theme-text-color, #0f172a);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       min-height: 100vh;
+      letter-spacing: -0.01em;
     }
     /* Кастомный скроллбар */
     ::-webkit-scrollbar {
@@ -60,16 +75,23 @@
       height: 4px;
     }
     ::-webkit-scrollbar-thumb {
-      background: rgba(148, 163, 184, 0.4);
+      background: rgba(148, 163, 184, 0.35);
       border-radius: 9999px;
     }
     /* Анимация пульсации звука */
     @keyframes sound-wave {
       0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.18); }
+      50% { transform: scale(1.15); }
     }
     .speaking {
-      animation: sound-wave 0.5s ease-in-out infinite;
+      animation: sound-wave 0.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
   </style>
 </head>
@@ -77,41 +99,54 @@
 
   <!-- ВЕРХНЯЯ ПАНЕЛЬ / ШАПКА -->
   <header class="sticky top-0 z-30 bg-tgSecBg/95 backdrop-blur shadow-sm border-b border-slate-200/70 transition-colors">
-    <div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center space-x-2.5">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-700 to-blue-500 text-white flex items-center justify-center font-bold text-base shadow-sm">
-          Ş
+    <div class="max-w-xl mx-auto px-4 py-3">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-sky-600 via-blue-600 to-indigo-700 text-white flex items-center justify-center font-extrabold text-lg shadow-md shadow-sky-500/20 ring-2 ring-white/20">
+            Ş
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h1 class="text-base font-extrabold font-heading tracking-tight leading-tight text-tgText">Schüco Türkçesi</h1>
+              <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-600 dark:text-sky-400">PRO</span>
+            </div>
+            <p class="text-[11px] text-tgHint leading-tight font-medium">Алюминиевые системы & Фасады</p>
+          </div>
         </div>
-        <div>
-          <h1 class="text-base font-bold tracking-tight leading-tight">Schüco Türkçesi</h1>
-          <p class="text-[11px] text-tgHint leading-tight font-medium">Алюминиевые системы & Фасады</p>
+
+        <!-- Прогресс изучения с процентом -->
+        <div class="flex flex-col items-end">
+          <div class="flex items-center space-x-2 bg-slate-100 dark:bg-slate-800/80 px-3 py-1.5 rounded-full border border-slate-200/80 dark:border-slate-700/80 shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="learnedCounter" class="text-xs font-bold text-tgText font-mono">0/0</span>
+          </div>
+          <span id="learnedPercent" class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold mt-0.5">0% освоено</span>
         </div>
       </div>
 
-      <!-- Прогресс изучения -->
-      <div class="flex items-center space-x-2 bg-slate-100 dark:bg-slate-800/60 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700">
-        <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-        <span id="learnedCounter" class="text-xs font-semibold text-tgText">0/0</span>
+      <!-- Тонкая полоска прогресса под шапкой -->
+      <div class="w-full bg-slate-200/70 dark:bg-slate-800/70 h-1.5 rounded-full mt-2.5 overflow-hidden">
+        <div id="learnedProgressBar" class="bg-gradient-to-r from-sky-500 via-blue-600 to-emerald-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
       </div>
     </div>
 
     <!-- ТАБЫ ПЕРЕКЛЮЧЕНИЯ ЭКРАНОВ -->
-    <div class="max-w-xl mx-auto px-4 pt-1 pb-2.5">
-      <div class="grid grid-cols-3 p-1 bg-slate-200/80 dark:bg-slate-800/80 rounded-xl gap-1">
-        <button id="tabLearnBtn" class="py-2 text-[11px] sm:text-xs font-bold rounded-lg transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1">
-          <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="max-w-xl mx-auto px-4 pt-1 pb-2">
+      <div class="grid grid-cols-3 p-1 bg-slate-200/70 dark:bg-slate-800/70 backdrop-blur rounded-2xl gap-1 border border-slate-300/40 dark:border-slate-700/40">
+        <button id="tabLearnBtn" class="py-2 text-[11px] sm:text-xs font-bold rounded-xl transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1.5">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
           </svg>
           <span class="truncate">Словарь</span>
         </button>
-        <button id="tabGrammarBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-lg transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1">
-          <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="tabGrammarBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
           </svg>
           <span class="truncate">Правила</span>
         </button>
-        <button id="tabManageBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-lg transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1">
-          <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="tabManageBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
           </svg>
           <span class="truncate">Список</span>
@@ -127,64 +162,69 @@
     <section id="filterSection" class="space-y-2.5">
       <!-- Поиск -->
       <div class="relative">
+        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+          <svg class="w-4 h-4 text-sky-500/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
         <input 
           id="searchInput" 
           type="text" 
-          placeholder="Поиск (по-русски или по-турецки)..." 
-          class="w-full bg-tgSecBg text-tgText border border-slate-300 dark:border-slate-700/80 rounded-xl px-3.5 py-2.5 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 shadow-sm placeholder:text-tgHint"
+          placeholder="Поиск слова или фразы (TR / RU / UZ)..." 
+          class="w-full bg-tgSecBg text-tgText border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 pl-10 pr-20 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sky-500/50 shadow-xs placeholder:text-tgHint transition-all"
         />
-        <svg class="w-4 h-4 text-tgHint absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-        </svg>
-        <button id="clearSearchBtn" class="hidden absolute right-3 top-3 text-tgHint hover:text-tgText">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
+        <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center space-x-1.5">
+          <span id="searchMatchesBadge" class="hidden text-[10px] font-bold px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300"></span>
+          <button id="clearSearchBtn" class="hidden p-1 rounded-full text-tgHint hover:text-tgText hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Категории (горизонтальный скролл) -->
       <div class="flex space-x-1.5 overflow-x-auto pb-1 no-scrollbar text-xs font-medium">
-        <button data-category="all" class="cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-colors">
+        <button data-category="all" class="cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-all font-semibold">
           🌟 Все слова (1000+)
         </button>
-        <button data-category="all_schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="all_schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           🏗️ Все Schüco (Цех)
         </button>
-        <button data-category="quality" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="quality" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           ⚠️ Контроль качества
         </button>
-        <button data-category="schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           ⚙️ Профили и фурнитура
         </button>
-        <button data-category="tools" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="tools" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           🛠 Станки и инструмент
         </button>
-        <button data-category="glass" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="glass" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           🪟 Стеклопакеты
         </button>
-        <button data-category="inspector" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="inspector" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           📋 С инспектором
         </button>
-        <button data-category="safety" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="safety" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           🦺 Охрана труда (İSG)
         </button>
-        <button data-category="shop_phrases" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="shop_phrases" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           💬 Цеховые диалоги
         </button>
-        <button data-category="daily_phrases" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="daily_phrases" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           🗣️ Разговорные фразы
         </button>
-        <button data-category="top_verbs" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="top_verbs" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           ⚡ Глаголы действий
         </button>
-        <button data-category="top_nouns" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="top_nouns" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           📦 Производство и быт
         </button>
-        <button data-category="top_daily" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="top_daily" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           🔢 Базовые и счет
         </button>
-        <button data-category="top_adj" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors">
+        <button data-category="top_adj" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
           💬 Прилагательные
         </button>
       </div>
@@ -344,10 +384,19 @@
       }
     }
 
-    // Обновление счетчика изученных слов
+    // Обновление счетчика и прогресс-бара изученных слов
     function updateLearnedCounter() {
+      const total = phrases.length || 1;
       const learnedCount = phrases.filter(p => p.learned).length;
-      document.getElementById('learnedCounter').textContent = `${learnedCount}/${phrases.length}`;
+      const pct = Math.round((learnedCount / total) * 100);
+
+      const counterEl = document.getElementById('learnedCounter');
+      const percentEl = document.getElementById('learnedPercent');
+      const barEl = document.getElementById('learnedProgressBar');
+
+      if (counterEl) counterEl.textContent = `${learnedCount}/${total}`;
+      if (percentEl) percentEl.textContent = `${pct}% освоено`;
+      if (barEl) barEl.style.width = `${pct}%`;
     }
 
     // Уведомления Toast
@@ -531,7 +580,7 @@
 
     // ==================== ФИЛЬТРАЦИЯ И ОТОБРАЖЕНИЕ 1000+ СЛОВ ====================
     function getFilteredPhrases() {
-      return phrases.filter(item => {
+      const res = phrases.filter(item => {
         // Фильтр по категории
         if (selectedCategory === 'all') {
           // Все 1000+ слов
@@ -552,6 +601,18 @@
         }
         return true;
       });
+
+      const badge = document.getElementById('searchMatchesBadge');
+      if (badge) {
+        if (searchQuery.trim() !== '') {
+          badge.textContent = `${res.length}`;
+          badge.classList.remove('hidden');
+        } else {
+          badge.classList.add('hidden');
+        }
+      }
+
+      return res;
     }
 
     function loadMoreItems() {
@@ -579,58 +640,74 @@
         const isLearned = item.learned;
         const isSchueco = item.isSchueco;
         return `
-          <div class="bg-tgSecBg rounded-2xl p-4 shadow-sm border ${isLearned ? 'border-emerald-500/40 bg-emerald-50/20' : 'border-slate-200 dark:border-slate-800'} transition-all duration-200 flex flex-col justify-between space-y-3">
+          <div class="bg-tgSecBg rounded-3xl p-4 sm:p-5 shadow-card hover:shadow-card-hover border ${
+            isLearned 
+              ? 'border-emerald-500/40 bg-gradient-to-b from-emerald-50/25 to-tgSecBg dark:from-emerald-950/20' 
+              : 'border-slate-200/90 dark:border-slate-800/90'
+          } transition-all duration-300 flex flex-col justify-between space-y-3.5 relative overflow-hidden group">
             
+            ${isLearned ? `
+            <div class="absolute top-0 right-0 w-16 h-16 pointer-events-none overflow-hidden">
+              <div class="bg-emerald-500 text-white text-[9px] font-extrabold py-0.5 text-center transform rotate-45 translate-x-4 translate-y-2 shadow-xs">
+                ✓
+              </div>
+            </div>
+            ` : ''}
+
             <!-- Верхняя строка карточки: Категория и статус -->
-            <div class="flex items-center justify-between">
-              <span class="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[11px] font-bold tracking-wide px-3 py-1 rounded-full ${
                 isSchueco 
-                  ? 'bg-sky-100 text-sky-800 dark:bg-sky-950/70 dark:text-sky-300 border border-sky-300/40' 
-                  : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+                  ? 'bg-sky-50 text-sky-700 dark:bg-sky-950/60 dark:text-sky-300 border border-sky-200 dark:border-sky-800/60' 
+                  : 'bg-slate-100/80 text-slate-600 dark:bg-slate-800/80 dark:text-slate-300 border border-slate-200/50 dark:border-slate-700/50'
               }">
                 ${isSchueco ? '🏗️ ' : ''}${item.categoryLabel}
               </span>
 
               <button 
                 onclick="toggleLearnedStatus('${item.id}')"
-                class="flex items-center space-x-1 text-xs px-2.5 py-1 rounded-full border transition-all active:scale-95 ${
+                class="flex items-center space-x-1.5 text-xs px-3 py-1 rounded-full border transition-all active:scale-95 ${
                   isLearned 
-                    ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300 font-semibold' 
-                    : 'border-slate-300 text-tgHint hover:border-slate-400'
+                    ? 'border-emerald-500/80 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 font-bold shadow-xs' 
+                    : 'border-slate-300/80 text-tgHint hover:border-slate-400 dark:border-slate-700 font-medium'
                 }"
               >
-                <span>${isLearned ? '✓ Запомнил' : '○ В процессе'}</span>
+                <span>${isLearned ? '✓ Изучено' : '○ В процессе'}</span>
               </button>
             </div>
 
             <!-- Турецкая фраза и произношение -->
             <div class="flex items-start justify-between gap-3">
-              <div class="space-y-1">
-                <div class="text-lg sm:text-xl font-bold text-tgText tracking-wide flex items-center gap-2">
+              <div class="space-y-1.5 min-w-0 flex-1">
+                <div class="text-xl sm:text-2xl font-extrabold font-heading text-tgText tracking-tight leading-snug">
                   ${item.tr}
                 </div>
-                <div class="text-xs text-sky-600 dark:text-sky-400 font-medium">
+                <div class="text-xs font-semibold text-sky-600 dark:text-sky-400 font-mono tracking-wide">
                   [ ${item.phonetic} ]
                 </div>
-                <div class="text-sm font-medium text-tgText/90 pt-1">
-                  ${item.ru}
+                
+                <!-- Переводы (RU + UZ) -->
+                <div class="pt-1.5 space-y-1">
+                  <div class="text-sm sm:text-base font-semibold text-tgText/95 leading-relaxed">
+                    ${item.ru}
+                  </div>
+                  ${item.uz ? `
+                  <div class="text-xs font-medium text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 bg-emerald-50/70 dark:bg-emerald-950/40 px-2.5 py-1 rounded-xl w-fit border border-emerald-200/40 dark:border-emerald-900/40">
+                    <span class="text-xs">🇺🇿</span>
+                    <span class="font-semibold">${item.uz}</span>
+                  </div>
+                  ` : ''}
                 </div>
-                ${item.uz ? `
-                <div class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 pt-0.5 flex items-center gap-1.5">
-                  <span class="text-xs">🇺🇿</span>
-                  <span>${item.uz}</span>
-                </div>
-                ` : ''}
               </div>
 
               <!-- Кнопки озвучки: Обычная (Динамик) и Медленная (Черепашка) -->
-              <div class="flex items-center gap-1.5 shrink-0">
+              <div class="flex items-center gap-2 shrink-0 pt-0.5">
                 <!-- Обычная скорость -->
                 <button 
                   id="speak-normal-${item.id}"
                   onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'normal', this)" 
                   title="Обычная скорость речи"
-                  class="w-11 h-11 rounded-2xl bg-sky-50 dark:bg-sky-900/40 text-sky-600 dark:text-sky-300 flex items-center justify-center active:scale-90 transition-all shadow-xs hover:bg-sky-100"
+                  class="w-11 h-11 rounded-2xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/60 dark:hover:bg-sky-900/60 text-sky-600 dark:text-sky-300 flex items-center justify-center active:scale-90 transition-all shadow-xs border border-sky-100 dark:border-sky-900/40"
                 >
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-2.23l-5.5 4.5h-4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4l5.5 4.5c.67.55 1.5.07 1.5-.8v-19.4c0-.87-.83-1.35-1.5-.8zM14 8.86v6.28c1.3-.61 2-1.89 2-3.14s-.7-2.53-2-3.14z"/>
@@ -642,7 +719,7 @@
                   id="speak-slow-${item.id}"
                   onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'slow', this)" 
                   title="Медленная скорость речи (по слогам)"
-                  class="w-11 h-11 rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-300 flex items-center justify-center active:scale-90 transition-all shadow-xs hover:bg-amber-100 text-lg"
+                  class="w-11 h-11 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-600 dark:text-amber-300 flex items-center justify-center active:scale-90 transition-all shadow-xs text-lg border border-amber-100 dark:border-amber-900/40"
                 >
                   🐢
                 </button>
@@ -650,27 +727,27 @@
             </div>
 
             <!-- Быстрые действия внизу карточки (Перемещение очереди) -->
-            <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs gap-2">
+            <div class="pt-2.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs gap-2">
               <button 
                 onclick="moveToBeginningOfQueue('${item.id}')" 
-                class="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1.5 active:scale-98 transition-transform"
+                class="flex-1 py-2 px-3 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-tgText font-semibold flex items-center justify-center space-x-1.5 active:scale-98 transition-all"
                 title="Переместить в самый верх списка"
               >
                 <svg class="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
                 </svg>
-                <span>В начало списка</span>
+                <span>В начало</span>
               </button>
 
               <button 
                 onclick="moveToEndOfQueue('${item.id}')" 
-                class="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText font-medium flex items-center justify-center space-x-1.5 active:scale-98 transition-transform"
+                class="flex-1 py-2 px-3 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-tgHint hover:text-tgText font-semibold flex items-center justify-center space-x-1.5 active:scale-98 transition-all"
                 title="Переместить в самый конец списка"
               >
-                <svg class="w-3.5 h-3.5 text-tgHint" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
-                <span>В конец списка</span>
+                <span>В конец</span>
               </button>
             </div>
 
@@ -714,42 +791,44 @@
       const itemsHtml = displayed.map((item, index) => {
         const isSchueco = item.isSchueco;
         return `
-          <div class="bg-tgSecBg rounded-xl p-3 shadow-xs border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3">
+          <div class="bg-tgSecBg rounded-2xl p-3 sm:p-3.5 shadow-card hover:shadow-card-hover border ${
+            item.learned ? 'border-emerald-500/30 bg-emerald-50/10' : 'border-slate-200/80 dark:border-slate-800/80'
+          } flex items-center justify-between gap-3 transition-all duration-200">
             
-            <!-- Левая часть: Статус и текст -->
+            <!-- Левая часть: Чекбокс и текст -->
             <div class="flex items-center space-x-3 min-w-0 flex-1">
               <button 
                 onclick="toggleLearnedStatus('${item.id}')"
-                class="w-6 h-6 rounded-lg flex items-center justify-center shrink-0 border transition-colors ${
+                class="w-7 h-7 rounded-xl flex items-center justify-center shrink-0 border transition-all active:scale-90 ${
                   item.learned 
-                    ? 'bg-emerald-500 border-emerald-500 text-white' 
-                    : 'border-slate-300 dark:border-slate-600 text-transparent'
+                    ? 'bg-emerald-500 border-emerald-500 text-white shadow-xs' 
+                    : 'border-slate-300 dark:border-slate-700 hover:border-slate-400 text-transparent'
                 }"
               >
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
                 </svg>
               </button>
 
               <div class="min-w-0 flex-1">
-                <div class="text-sm font-bold text-tgText truncate flex items-center gap-1.5">
-                  ${isSchueco ? '<span class="text-xs text-sky-600">🏗️</span>' : ''}
+                <div class="text-sm font-bold text-tgText truncate flex items-center gap-1.5 font-heading">
+                  ${isSchueco ? '<span class="text-xs text-sky-600 dark:text-sky-400">🏗️</span>' : ''}
                   <span>${item.tr}</span>
                 </div>
-                <div class="text-xs text-tgHint truncate">
-                  <span>${item.ru}</span>
-                  ${item.uz ? `<span class="text-emerald-600 dark:text-emerald-400 font-medium ml-1.5">• 🇺🇿 ${item.uz}</span>` : ''}
+                <div class="text-xs text-tgHint truncate pt-0.5">
+                  <span class="text-tgText/80 font-medium">${item.ru}</span>
+                  ${item.uz ? `<span class="text-emerald-600 dark:text-emerald-400 font-semibold ml-1.5">• 🇺🇿 ${item.uz}</span>` : ''}
                 </div>
               </div>
             </div>
 
-            <!-- Правая часть: Управление позицией (В самый верх / В самый низ) и озвучка -->
+            <!-- Правая часть: Озвучка и быстрые перемещения -->
             <div class="flex items-center space-x-1.5 shrink-0">
               
               <!-- Звук обычный (Динамик) -->
               <button 
                 onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'normal', this)" 
-                class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-sky-600 dark:text-sky-400 active:scale-90 transition-transform"
+                class="w-8 h-8 rounded-xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/50 dark:hover:bg-sky-900/50 text-sky-600 dark:text-sky-300 flex items-center justify-center active:scale-90 transition-all border border-sky-100/50 dark:border-sky-900/40 shadow-xs"
                 title="Обычная скорость речи"
               >
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -760,7 +839,7 @@
               <!-- Звук медленный (Черепашка) -->
               <button 
                 onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'slow', this)" 
-                class="p-2 rounded-lg bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/50 dark:hover:bg-amber-900 text-xs active:scale-90 transition-transform"
+                class="w-8 h-8 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/50 dark:hover:bg-amber-900/50 text-xs flex items-center justify-center active:scale-90 transition-all border border-amber-100/50 dark:border-amber-900/40 shadow-xs"
                 title="Медленная скорость речи (Черепашка)"
               >
                 🐢
@@ -769,21 +848,19 @@
               <!-- В самый верх -->
               <button 
                 onclick="moveToTop('${item.id}')" 
-                class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText text-xs font-semibold flex items-center space-x-1 active:scale-95 transition-transform"
+                class="p-1.5 px-2 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-tgText text-xs font-bold flex items-center space-x-1 active:scale-95 transition-all shadow-xs border border-slate-200/50 dark:border-slate-700/50"
                 title="В самый верх"
               >
                 <span>⬆️</span>
-                <span class="hidden sm:inline">Вверх</span>
               </button>
 
               <!-- В самый низ -->
               <button 
                 onclick="moveToBottom('${item.id}')" 
-                class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-tgText text-xs font-semibold flex items-center space-x-1 active:scale-95 transition-transform"
+                class="p-1.5 px-2 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-tgText text-xs font-bold flex items-center space-x-1 active:scale-95 transition-all shadow-xs border border-slate-200/50 dark:border-slate-700/50"
                 title="В самый низ"
               >
                 <span>⬇️</span>
-                <span class="hidden sm:inline">Вниз</span>
               </button>
             </div>
 
@@ -809,7 +886,7 @@
       container.innerHTML = itemsHtml + moreBtn;
     }
 
-    // Рендер Экрана 3: Правила и грамматика турецкого языка
+    // Рендер Экрана 3: Правила и грамматика турецкого языка (Аккордеон)
     function renderGrammarList() {
       const container = document.getElementById('grammarListContainer');
       const emptyState = document.getElementById('emptyState');
@@ -819,26 +896,35 @@
       const rules = (window.GRAMMAR_RULES && Array.isArray(window.GRAMMAR_RULES)) ? window.GRAMMAR_RULES : [];
       
       const html = rules.map((rule, idx) => {
+        const isOpen = (idx === 0) ? 'open' : ''; // Первое правило открыто по умолчанию
         return `
-          <div class="bg-tgSecBg rounded-2xl p-4 shadow-sm border border-slate-200 dark:border-slate-800 transition-all">
-            <div class="flex items-start justify-between gap-2 mb-2">
-              <div>
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 dark:bg-sky-950/70 dark:text-sky-300 border border-sky-300/40">
-                  ${rule.badge || 'Правило'}
-                </span>
-                <h3 class="text-base font-bold text-tgText mt-1.5 leading-snug">
+          <details ${isOpen} class="bg-tgSecBg rounded-3xl shadow-card hover:shadow-card-hover border border-slate-200/90 dark:border-slate-800/90 transition-all duration-300 overflow-hidden group">
+            <summary class="p-4 sm:p-5 flex items-start justify-between gap-3 cursor-pointer list-none select-none">
+              <div class="space-y-1 min-w-0 flex-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 dark:bg-sky-950/60 dark:text-sky-300 border border-sky-200/60 dark:border-sky-800/60">
+                    ${rule.badge || 'Правило'}
+                  </span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold font-heading text-tgText leading-snug pt-0.5">
                   ${rule.title}
                 </h3>
-                <p class="text-xs text-tgHint mt-0.5">
+                <p class="text-xs text-tgHint leading-relaxed">
                   ${rule.subtitle}
                 </p>
               </div>
-            </div>
 
-            <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80">
+              <div class="w-8 h-8 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-tgHint group-open:rotate-180 transition-transform duration-200 shrink-0 mt-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </summary>
+
+            <div class="px-4 pb-5 sm:px-5 border-t border-slate-100 dark:border-slate-800/80 pt-3 text-tgText">
               ${rule.html}
             </div>
-          </div>
+          </details>
         `;
       }).join('');
 
@@ -940,8 +1026,8 @@
     const screenManage = document.getElementById('screenManage');
     const filterSection = document.getElementById('filterSection');
 
-    const TAB_ACTIVE = "py-2 text-[11px] sm:text-xs font-bold rounded-lg transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1";
-    const TAB_INACTIVE = "py-2 text-[11px] sm:text-xs font-medium rounded-lg transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1";
+    const TAB_ACTIVE = "py-2 text-[11px] sm:text-xs font-bold rounded-xl transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1.5";
+    const TAB_INACTIVE = "py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5";
 
     function switchTab(tab) {
       activeTab = tab;
@@ -986,9 +1072,9 @@
 
         document.querySelectorAll('.cat-pill').forEach(b => {
           if (b.dataset.category === selectedCategory) {
-            b.className = "cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-colors";
+            b.className = "cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-all font-semibold";
           } else {
-            b.className = "cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-colors";
+            b.className = "cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all";
           }
         });
 
