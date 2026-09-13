@@ -386,11 +386,18 @@
 
       <!-- Активный режим тренажера -->
       <div id="quizActive" class="hidden space-y-4">
-        <!-- Кнопка назад -->
-        <button onclick="exitQuiz()" class="text-sky-600 dark:text-sky-400 font-semibold text-sm flex items-center gap-1 bg-white dark:bg-slate-800 px-3 py-1.5 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-          Завершить тренировку
-        </button>
+        <div class="flex justify-between items-center w-full">
+          <!-- Кнопка назад -->
+          <button onclick="exitQuiz()" class="text-sky-600 dark:text-sky-400 font-semibold text-sm flex items-center gap-1 bg-white dark:bg-slate-800 px-3 py-1.5 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            Завершить тренировку
+          </button>
+          
+          <!-- Звук вкл/выкл -->
+          <button id="quizSoundToggle" onclick="toggleQuizSound()" class="text-slate-600 dark:text-slate-300 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 flex items-center gap-1.5 shadow-sm text-[13px] font-semibold transition-colors active:scale-95">
+            🔊 Звук
+          </button>
+        </div>
         
         <!-- Контейнер карточки -->
         <div id="quizCardContainer" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-card min-h-[300px] flex flex-col justify-center items-center text-center relative w-full overflow-hidden">
@@ -1425,6 +1432,14 @@
     let quizMode = null;
     let quizQueue = [];
     let currentQuizItem = null;
+    let isQuizSoundEnabled = true;
+
+    function toggleQuizSound() {
+       isQuizSoundEnabled = !isQuizSoundEnabled;
+       const btn = document.getElementById('quizSoundToggle');
+       if (btn) btn.innerHTML = isQuizSoundEnabled ? '🔊 Звук' : '🔇 Без звука';
+       triggerHaptic('light');
+    }
 
     const tabQuizBtn = document.getElementById('tabQuizBtn');
     const screenQuiz = document.getElementById('screenQuiz');
@@ -1610,7 +1625,13 @@
           btnElement.classList.remove('bg-slate-50', 'dark:bg-slate-800/80', 'border-slate-200', 'dark:border-slate-700');
           btnElement.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-800', 'dark:bg-emerald-900/50');
           triggerHaptic('success');
-          setTimeout(() => processAnswer(2), 700);
+          
+          if (isQuizSoundEnabled && quizMode === 'multiple') {
+             speakTurkish(currentQuizItem.tr.replace(/'/g, "\\'"), null, 'normal', btnElement);
+             setTimeout(() => processAnswer(2), 1500);
+          } else {
+             setTimeout(() => processAnswer(2), 700);
+          }
        } else {
           btnElement.classList.remove('bg-slate-50', 'dark:bg-slate-800/80', 'border-slate-200', 'dark:border-slate-700');
           btnElement.classList.add('bg-red-100', 'border-red-500', 'text-red-800', 'dark:bg-red-900/50');
