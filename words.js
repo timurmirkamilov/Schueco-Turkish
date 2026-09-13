@@ -1801,7 +1801,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bo'lmoq"
+    "uz": "Bo'lmoq",
+    "exampleTr": "Hazır olunca haber ver.",
+    "exampleRu": "Как будет готово, дай знать."
   },
   {
     "id": "top_83",
@@ -1812,7 +1814,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qilmoq / Bajarmoq"
+    "uz": "Qilmoq / Bajarmoq",
+    "exampleTr": "Bu montajı kim yaptı?",
+    "exampleRu": "Кто делал этот монтаж?"
   },
   {
     "id": "top_84",
@@ -1823,7 +1827,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Etmoq / Qilmoq"
+    "uz": "Etmoq / Qilmoq",
+    "exampleTr": "Ölçüleri dikkatli kontrol et.",
+    "exampleRu": "Внимательно проверь замеры."
   },
   {
     "id": "top_85",
@@ -1834,7 +1840,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ketmoq / Bormoq"
+    "uz": "Ketmoq / Bormoq",
+    "exampleTr": "Şimdi depoya gidiyorum.",
+    "exampleRu": "Сейчас я иду на склад."
   },
   {
     "id": "top_86",
@@ -1845,7 +1853,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kelmoq"
+    "uz": "Kelmoq",
+    "exampleTr": "Usta birazdan buraya gelecek.",
+    "exampleRu": "Мастер скоро придёт сюда."
   },
   {
     "id": "top_87",
@@ -1856,7 +1866,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'rmoq"
+    "uz": "Ko'rmoq",
+    "exampleTr": "Burada bir çatlak görüyorum.",
+    "exampleRu": "Я вижу здесь трещину."
   },
   {
     "id": "top_88",
@@ -1867,7 +1879,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qaramoq"
+    "uz": "Qaramoq",
+    "exampleTr": "Şu çizime bir bak.",
+    "exampleRu": "Взгляни на этот чертёж."
   },
   {
     "id": "top_89",
@@ -1878,7 +1892,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Olmoq"
+    "uz": "Olmoq",
+    "exampleTr": "Yeni matkap ucunu kutudan al.",
+    "exampleRu": "Возьми новое сверло из коробки."
   },
   {
     "id": "top_90",
@@ -1889,7 +1905,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bermoq"
+    "uz": "Bermoq",
+    "exampleTr": "Bana alyan anahtarı ver.",
+    "exampleRu": "Дай мне шестигранный ключ."
   },
   {
     "id": "top_91",
@@ -1900,7 +1918,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bilmoq"
+    "uz": "Bilmoq",
+    "exampleTr": "Bu profilin kodunu biliyor musun?",
+    "exampleRu": "Ты знаешь артикул этого профиля?"
   },
   {
     "id": "top_92",
@@ -1911,7 +1931,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xohlamoq"
+    "uz": "Xohlamoq",
+    "exampleTr": "Yeni bir eldiven istiyorum.",
+    "exampleRu": "Я хочу новые перчатки."
   },
   {
     "id": "top_93",
@@ -1922,7 +1944,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Demoq / Aytmoq"
+    "uz": "Demoq / Aytmoq",
+    "exampleTr": "Usta ne demek istedi?",
+    "exampleRu": "Что мастер хотел сказать?"
   },
   {
     "id": "top_94",
@@ -1933,7 +1957,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Aytmoq / Gapirmoq"
+    "uz": "Aytmoq / Gapirmoq",
+    "exampleTr": "Hata varsa hemen söyle.",
+    "exampleRu": "Если есть дефект, сразу скажи."
   },
   {
     "id": "top_95",
@@ -1944,7 +1970,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Gaplashmoq / So'zlashmoq"
+    "uz": "Gaplashmoq / So'zlashmoq",
+    "exampleTr": "Şef ile konuştun mu?",
+    "exampleRu": "Ты поговорил с бригадиром?"
   },
   {
     "id": "top_96",
@@ -1955,7 +1983,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tushunmoq"
+    "uz": "Tushunmoq",
+    "exampleTr": "Bu ölçüyü tam anladım.",
+    "exampleRu": "Я точно понял этот размер."
   },
   {
     "id": "top_97",
@@ -1966,7 +1996,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tushuntirmoq / Aytib bermoq"
+    "uz": "Tushuntirmoq / Aytib bermoq",
+    "exampleTr": "Nasıl takılacağını bana anlat.",
+    "exampleRu": "Объясни мне, как это устанавливается."
   },
   {
     "id": "top_98",
@@ -1977,7 +2009,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ishlamoq / Harakat qilmoq"
+    "uz": "Ishlamoq / Harakat qilmoq",
+    "exampleTr": "Bugün ikinci hatta çalışıyoruz.",
+    "exampleRu": "Сегодня мы работаем на второй линии."
   },
   {
     "id": "top_99",
@@ -1988,7 +2022,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Boshlamoq / Boshlanmoq"
+    "uz": "Boshlamoq / Boshlanmoq",
+    "exampleTr": "Kesime saat sekizde başladık.",
+    "exampleRu": "Мы начали резку в восемь часов."
   },
   {
     "id": "top_100",
@@ -1999,7 +2035,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bitirmoq / Tugatmoq"
+    "uz": "Bitirmoq / Tugatmoq",
+    "exampleTr": "Bu kasayı akşama kadar bitir.",
+    "exampleRu": "Закончи эту раму до вечера."
   },
   {
     "id": "top_101",
@@ -2010,7 +2048,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bitmoq / Tugamoq"
+    "uz": "Bitmoq / Tugamoq",
+    "exampleTr": "Silikon kartuşu bitti.",
+    "exampleRu": "Картридж с силиконом закончился."
   },
   {
     "id": "top_102",
@@ -2021,7 +2061,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qolmoq"
+    "uz": "Qolmoq",
+    "exampleTr": "Burada iki adet profil kaldı.",
+    "exampleRu": "Здесь осталось два профиля."
   },
   {
     "id": "top_103",
@@ -2032,7 +2074,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Turmoq / To'xtamoq"
+    "uz": "Turmoq / To'xtamoq",
+    "exampleTr": "Vincin altında durma!",
+    "exampleRu": "Не стой под краном!"
   },
   {
     "id": "top_104",
@@ -2043,7 +2087,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'xtatmoq"
+    "uz": "To'xtatmoq",
+    "exampleTr": "Tehlike anında testereyi durdur.",
+    "exampleRu": "В случае опасности останови пилу."
   },
   {
     "id": "top_105",
@@ -2054,7 +2100,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kutmoq"
+    "uz": "Kutmoq",
+    "exampleTr": "Beni burada beş dakika bekle.",
+    "exampleRu": "Подожди меня здесь пять минут."
   },
   {
     "id": "top_106",
@@ -2065,7 +2113,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Keltirmoq / Olib kelmoq"
+    "uz": "Keltirmoq / Olib kelmoq",
+    "exampleTr": "Depodan fitil rulosunu getir.",
+    "exampleRu": "Принеси со склада бухту уплотнителя."
   },
   {
     "id": "top_107",
@@ -2076,7 +2126,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Olib ketmoq"
+    "uz": "Olib ketmoq",
+    "exampleTr": "Bu parçayı montaj masasına götür.",
+    "exampleRu": "Отнеси эту деталь на сборочный стол."
   },
   {
     "id": "top_108",
@@ -2087,7 +2139,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tashimoq / Ko'chirmoq"
+    "uz": "Tashimoq / Ko'chirmoq",
+    "exampleTr": "Camı iki kişiyle taşıyın.",
+    "exampleRu": "Переносите стеклопакет вдвоём."
   },
   {
     "id": "top_109",
@@ -2098,7 +2152,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qo'ymoq"
+    "uz": "Qo'ymoq",
+    "exampleTr": "Köşe takozunu yerine koy.",
+    "exampleRu": "Положи угловой сухарь на место."
   },
   {
     "id": "top_110",
@@ -2109,7 +2165,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qoldirmoq / Qo'yib yubormoq"
+    "uz": "Qoldirmoq / Qo'yib yubormoq",
+    "exampleTr": "Aletleri masanın üstünde bırakma.",
+    "exampleRu": "Не оставляй инструмент на столе."
   },
   {
     "id": "top_111",
@@ -2120,7 +2178,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ushlamoq"
+    "uz": "Ushlamoq",
+    "exampleTr": "Profili sıkıca tut.",
+    "exampleRu": "Крепко держи профиль."
   },
   {
     "id": "top_112",
@@ -2131,7 +2191,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ochmoq / Yoqmoq (uskunani)"
+    "uz": "Ochmoq / Yoqmoq (uskunani)",
+    "exampleTr": "Kompresörün vanasını aç.",
+    "exampleRu": "Открой вентиль компрессора."
   },
   {
     "id": "top_113",
@@ -2142,7 +2204,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yopmoq / O'chirmoq (uskunani)"
+    "uz": "Yopmoq / O'chirmoq (uskunani)",
+    "exampleTr": "İş bitince makineyi kapat.",
+    "exampleRu": "По окончании работы выключи станок."
   },
   {
     "id": "top_114",
@@ -2153,7 +2217,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kesmoq"
+    "uz": "Kesmoq",
+    "exampleTr": "Profili tam 45 derecede kes.",
+    "exampleRu": "Отрежь профиль ровно под 45 градусов."
   },
   {
     "id": "top_115",
@@ -2164,7 +2230,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Teshmoq"
+    "uz": "Teshmoq",
+    "exampleTr": "Kilit yuvasını şablona göre del.",
+    "exampleRu": "Просверли отверстие под замок по шаблону."
   },
   {
     "id": "top_116",
@@ -2175,7 +2243,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Burab qotirmoq"
+    "uz": "Burab qotirmoq",
+    "exampleTr": "Köşe birleşiminde vidalama yap.",
+    "exampleRu": "Выполни закручивание винтов на угловом стыке."
   },
   {
     "id": "top_117",
@@ -2186,7 +2256,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qismoq / Qotirmoq"
+    "uz": "Qismoq / Qotirmoq",
+    "exampleTr": "Cıvatayı tork anahtarıyla sık.",
+    "exampleRu": "Затяни болт динамометрическим ключом."
   },
   {
     "id": "top_118",
@@ -2197,7 +2269,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bo'shatmoq"
+    "uz": "Bo'shatmoq",
+    "exampleTr": "Ayar vidasını biraz gevşet.",
+    "exampleRu": "Немного ослабь регулировочный винт."
   },
   {
     "id": "top_119",
@@ -2208,7 +2282,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'lchamoq"
+    "uz": "O'lchamoq",
+    "exampleTr": "Kanat genişliğini metreyle ölç.",
+    "exampleRu": "Замерь ширину створки рулеткой."
   },
   {
     "id": "top_120",
@@ -2219,7 +2295,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tekshirmoq / Nazorat qilmoq"
+    "uz": "Tekshirmoq / Nazorat qilmoq",
+    "exampleTr": "Gönyeyi ve çaprazı kontrol et.",
+    "exampleRu": "Проверь угол и диагональ."
   },
   {
     "id": "top_121",
@@ -2230,7 +2308,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tozalamoq"
+    "uz": "Tozalamoq",
+    "exampleTr": "Profil kanalını talaştan temizle.",
+    "exampleRu": "Очисти паз профиля от стружки."
   },
   {
     "id": "top_122",
@@ -2241,7 +2321,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Artmoq / O'chirmoq"
+    "uz": "Artmoq / O'chirmoq",
+    "exampleTr": "Cam yüzeyini temiz bezle sil.",
+    "exampleRu": "Протри поверхность стекла чистой тряпкой."
   },
   {
     "id": "top_123",
@@ -2252,7 +2334,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Taqmoq / O'rnatmoq"
+    "uz": "Taqmoq / O'rnatmoq",
+    "exampleTr": "Emniyet gözlüğünü mutlaka tak.",
+    "exampleRu": "Обязательно надень защитные очки."
   },
   {
     "id": "top_124",
@@ -2263,7 +2347,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chiqarmoq / Yechmoq"
+    "uz": "Chiqarmoq / Yechmoq",
+    "exampleTr": "Eski contayı kanaldan çıkar.",
+    "exampleRu": "Вытащи старый уплотнитель из паза."
   },
   {
     "id": "top_125",
@@ -2274,7 +2360,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'zgartirmoq / Almashtirmoq"
+    "uz": "O'zgartirmoq / Almashtirmoq",
+    "exampleTr": "Körleşen testere bıçağını değiştir.",
+    "exampleRu": "Замени затупившийся диск пилы."
   },
   {
     "id": "top_126",
@@ -2285,7 +2373,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tuzatmoq / Ta'mirlamoq"
+    "uz": "Tuzatmoq / Ta'mirlamoq",
+    "exampleTr": "Arızalı frezeyi tamir et.",
+    "exampleRu": "Отремонтируй неисправный фрезер."
   },
   {
     "id": "top_127",
@@ -2296,7 +2386,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ta'mirlash"
+    "uz": "Ta'mirlash",
+    "exampleTr": "Hasarlı yüzeyi boya kalemiyle onar.",
+    "exampleRu": "Подкрась и восстанови поврежденную поверхность."
   },
   {
     "id": "top_128",
@@ -2307,7 +2399,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Moslamoq / Sozlamoq"
+    "uz": "Moslamoq / Sozlamoq",
+    "exampleTr": "Menteşenin baskısını ayarla.",
+    "exampleRu": "Отрегулируй прижим петли."
   },
   {
     "id": "top_129",
@@ -2318,7 +2412,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tayyorlamoq"
+    "uz": "Tayyorlamoq",
+    "exampleTr": "Yarınki sipariş için profilleri hazırla.",
+    "exampleRu": "Подготовь профили для завтрашнего заказа."
   },
   {
     "id": "top_130",
@@ -2329,7 +2425,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yig'moq / To'plamoq"
+    "uz": "Yig'moq / To'plamoq",
+    "exampleTr": "Yerdeki vidaları kutuya topla.",
+    "exampleRu": "Собери винты с пола в коробку."
   },
   {
     "id": "top_131",
@@ -2340,7 +2438,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Montaj qilmoq / O'rnatmoq"
+    "uz": "Montaj qilmoq / O'rnatmoq",
+    "exampleTr": "Cephe kasetinde montaj yap.",
+    "exampleRu": "Выполни сборку фасадной кассеты."
   },
   {
     "id": "top_132",
@@ -2351,7 +2451,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yopishtirmoq"
+    "uz": "Yopishtirmoq",
+    "exampleTr": "Buhar bandını profil kenarına yapıştır.",
+    "exampleRu": "Приклей пароизоляционную ленту к краю профиля."
   },
   {
     "id": "top_133",
@@ -2362,7 +2464,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bosmoq / Presslamoq"
+    "uz": "Bosmoq / Presslamoq",
+    "exampleTr": "Pedala yavaşça bas.",
+    "exampleRu": "Плавно нажми на педаль."
   },
   {
     "id": "top_134",
@@ -2373,7 +2477,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tortmoq"
+    "uz": "Tortmoq",
+    "exampleTr": "Kabloyu çok sert çekme.",
+    "exampleRu": "Не тяни кабель слишком сильно."
   },
   {
     "id": "top_135",
@@ -2384,7 +2490,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Durang"
+    "uz": "Durang",
+    "exampleTr": "Tekerlekli arabayı ileriye it.",
+    "exampleRu": "Толкни тележку вперёд."
   },
   {
     "id": "top_136",
@@ -2395,7 +2503,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'tarmoq"
+    "uz": "Ko'tarmoq",
+    "exampleTr": "Ağır kasayı vantuzla kaldır.",
+    "exampleRu": "Подними тяжелую раму присоской."
   },
   {
     "id": "top_137",
@@ -2406,7 +2516,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "yuklab oling"
+    "uz": "yuklab oling",
+    "exampleTr": "Camı yavaşça sehpaya indir.",
+    "exampleRu": "Аккуратно опусти стекло на пирамиду."
   },
   {
     "id": "top_138",
@@ -2417,7 +2529,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yiqilmoq / Tushib ketmoq"
+    "uz": "Yiqilmoq / Tushib ketmoq",
+    "exampleTr": "Profil sehpadan düşebilir, dikkat et.",
+    "exampleRu": "Профиль может упасть со стенда, осторожно."
   },
   {
     "id": "top_139",
@@ -2428,7 +2542,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tushirib yubormoq"
+    "uz": "Tushirib yubormoq",
+    "exampleTr": "Kumpası yere düşürme.",
+    "exampleRu": "Не урони штангенциркуль на пол."
   },
   {
     "id": "top_140",
@@ -2439,7 +2555,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sindirmoq"
+    "uz": "Sindirmoq",
+    "exampleTr": "Cam çıtasını bükerken kırma.",
+    "exampleRu": "Не сломай штапик, когда защелкиваешь."
   },
   {
     "id": "top_141",
@@ -2450,7 +2568,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Buzmoq"
+    "uz": "Buzmoq",
+    "exampleTr": "Ayar vidalarını gereksiz kurcalayıp bozma.",
+    "exampleRu": "Не испорти регулировочные винты."
   },
   {
     "id": "top_142",
@@ -2461,7 +2581,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Buzilmoq"
+    "uz": "Buzilmoq",
+    "exampleTr": "Pnömatik tabanca aniden bozuldu.",
+    "exampleRu": "Пневматический пистолет внезапно сломался."
   },
   {
     "id": "top_143",
@@ -2472,7 +2594,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chizmoq / Tirnamoq"
+    "uz": "Chizmoq / Tirnamoq",
+    "exampleTr": "Eloksallı yüzeyi tornavidayla çizme.",
+    "exampleRu": "Не поцарапай анодированный профиль отверткой."
   },
   {
     "id": "top_144",
@@ -2483,7 +2607,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bukmoq / Egmoq"
+    "uz": "Bukmoq / Egmoq",
+    "exampleTr": "Alüminyum teli hafifçe eğ.",
+    "exampleRu": "Слегка согни алюминиевую проволоку."
   },
   {
     "id": "top_145",
@@ -2494,7 +2620,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "tekislang"
+    "uz": "tekislang",
+    "exampleTr": "Eğilen profil ucunu çekiçle doğrult.",
+    "exampleRu": "Выпрями погнутый край профиля киянкой."
   },
   {
     "id": "top_146",
@@ -2505,7 +2633,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'ldirmoq"
+    "uz": "To'ldirmoq",
+    "exampleTr": "Köşe birleşimini iki komponentli yapıştırıcıyla doldur.",
+    "exampleRu": "Заполни угловое соединение двухкомпонентным клеем."
   },
   {
     "id": "top_147",
@@ -2516,7 +2646,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bo'shatmoq (yukni)"
+    "uz": "Bo'shatmoq (yukni)",
+    "exampleTr": "Talaş haznesini mesai bitiminde boşalt.",
+    "exampleRu": "Опорожни бункер со стружкой в конце смены."
   },
   {
     "id": "top_148",
@@ -2527,7 +2659,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yordam bermoq"
+    "uz": "Yordam bermoq",
+    "exampleTr": "Büyük pencereyi taşırken bana yardım et.",
+    "exampleRu": "Помоги мне перенести большое окно."
   },
   {
     "id": "top_149",
@@ -2538,7 +2672,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "So'ramoq"
+    "uz": "So'ramoq",
+    "exampleTr": "Anlamadığın detayı ustabaşına sor.",
+    "exampleRu": "Спроси бригадира о непонятной детали."
   },
   {
     "id": "top_150",
@@ -2549,7 +2685,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "javob bering"
+    "uz": "javob bering",
+    "exampleTr": "Mühendisin sorusuna hemen cevap ver.",
+    "exampleRu": "Сразу ответь на вопрос инженера."
   },
   {
     "id": "top_151",
@@ -2560,7 +2698,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'rganmoq"
+    "uz": "O'rganmoq",
+    "exampleTr": "CNC tezgâhının yeni programını öğren.",
+    "exampleRu": "Изучи новую программу для станка ЧПУ."
   },
   {
     "id": "top_152",
@@ -2571,7 +2711,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'rgatmoq"
+    "uz": "O'rgatmoq",
+    "exampleTr": "Yeni çırağa fitil takmayı öğret.",
+    "exampleRu": "Научи нового ученика накатывать уплотнитель."
   },
   {
     "id": "top_153",
@@ -2582,7 +2724,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'rsatmoq"
+    "uz": "Ko'rsatmoq",
+    "exampleTr": "Çizimdeki montaj yönünü bana göster.",
+    "exampleRu": "Покажи мне на чертеже направление монтажа."
   },
   {
     "id": "top_154",
@@ -2593,7 +2737,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Topmoq"
+    "uz": "Topmoq",
+    "exampleTr": "Kaybolan lokma ucunu kutuda bul.",
+    "exampleRu": "Найди потерянную насадку в коробке."
   },
   {
     "id": "top_155",
@@ -2604,7 +2750,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yo'qotmoq"
+    "uz": "Yo'qotmoq",
+    "exampleTr": "Küçük vidaları yerdeyken kaybetme.",
+    "exampleRu": "Не растеряй мелкие винты на полу."
   },
   {
     "id": "top_156",
@@ -2615,7 +2763,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qidirmoq / Qo'ng'iroq qilmoq"
+    "uz": "Qidirmoq / Qo'ng'iroq qilmoq",
+    "exampleTr": "Depodaki yedek parçayı ara.",
+    "exampleRu": "Поищи запчасть на складе."
   },
   {
     "id": "top_157",
@@ -2626,7 +2776,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chaqirmoq"
+    "uz": "Chaqirmoq",
+    "exampleTr": "Bakım için elektrikçiyi çağır.",
+    "exampleRu": "Вызови электрика для техобслуживания."
   },
   {
     "id": "top_158",
@@ -2637,7 +2789,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "eshitildi"
+    "uz": "eshitildi",
+    "exampleTr": "Zil sesini herkes duydu.",
+    "exampleRu": "Все услышали звонок на перерыв."
   },
   {
     "id": "top_159",
@@ -2648,7 +2802,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Eshitmoq"
+    "uz": "Eshitmoq",
+    "exampleTr": "Kompresörden garip bir ses duyuyorum.",
+    "exampleRu": "Я слышу странный звук из компрессора."
   },
   {
     "id": "top_160",
@@ -2659,7 +2815,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tinglamoq"
+    "uz": "Tinglamoq",
+    "exampleTr": "İş güvenliği talimatını dikkatle dinle.",
+    "exampleRu": "Внимательно слушай инструктаж по технике безопасности."
   },
   {
     "id": "top_161",
@@ -2670,7 +2828,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'qimoq"
+    "uz": "O'qimoq",
+    "exampleTr": "İmalat fişindeki ölçüleri doğru oku.",
+    "exampleRu": "Правильно читай размеры в технологической карте."
   },
   {
     "id": "top_162",
@@ -2681,7 +2841,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yozmoq"
+    "uz": "Yozmoq",
+    "exampleTr": "Koli üzerine profil numarasını yaz.",
+    "exampleRu": "Напиши номер профиля на коробке."
   },
   {
     "id": "top_163",
@@ -2692,7 +2854,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Imzo"
+    "uz": "Imzo",
+    "exampleTr": "Kalite kontrol formunu kaşeleyip imzala.",
+    "exampleRu": "Поставь штамп и подпиши лист контроля качества."
   },
   {
     "id": "top_164",
@@ -2703,7 +2867,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ishonmoq"
+    "uz": "Ishonmoq",
+    "exampleTr": "Bu yöntemin daha hızlı olduğuna inanıyorum.",
+    "exampleRu": "Я верю, что этот способ быстрее."
   },
   {
     "id": "top_165",
@@ -2714,7 +2880,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'ylamoq"
+    "uz": "O'ylamoq",
+    "exampleTr": "Profil firesini azaltmak için düşün.",
+    "exampleRu": "Подумай, как сократить обрезки профиля."
   },
   {
     "id": "top_166",
@@ -2725,7 +2893,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Eslamoq"
+    "uz": "Eslamoq",
+    "exampleTr": "Gözlük takmayı her zaman hatırla.",
+    "exampleRu": "Всегда помни надевать защитные очки."
   },
   {
     "id": "top_167",
@@ -2736,7 +2906,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Unitmoq"
+    "uz": "Unitmoq",
+    "exampleTr": "Hava valfini kapatmayı unutma.",
+    "exampleRu": "Не забудь перекрыть воздушный клапан."
   },
   {
     "id": "top_168",
@@ -2747,7 +2919,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sevmoq / Yoqtirmoq"
+    "uz": "Sevmoq / Yoqtirmoq",
+    "exampleTr": "Bu marka alüminyum profil ile çalışmayı seviyorum.",
+    "exampleRu": "Мне нравится работать с этой маркой профиля."
   },
   {
     "id": "top_169",
@@ -2758,7 +2932,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qo'rqmoq"
+    "uz": "Qo'rqmoq",
+    "exampleTr": "Ağır parçayı tek başına taşımaktan korkma, yardım iste.",
+    "exampleRu": "Не бойся просить помощи с тяжелой деталью."
   },
   {
     "id": "top_170",
@@ -2769,7 +2945,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Charchamoq"
+    "uz": "Charchamoq",
+    "exampleTr": "Bütün gün kesim yapmaktan yoruldum.",
+    "exampleRu": "Я устал от целого дня резки."
   },
   {
     "id": "top_171",
@@ -2780,7 +2958,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Dam olmoq"
+    "uz": "Dam olmoq",
+    "exampleTr": "Öğle molasında biraz dinlen.",
+    "exampleRu": "Немного отдохни во время обеденного перерыва."
   },
   {
     "id": "top_172",
@@ -2791,7 +2971,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yemoq / Ovqat"
+    "uz": "Yemoq / Ovqat",
+    "exampleTr": "Öğle yemeğini saat on ikide ye.",
+    "exampleRu": "Пообедай в двенадцать часов."
   },
   {
     "id": "top_173",
@@ -2802,7 +2984,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ichish uchun"
+    "uz": "Ichish uchun",
+    "exampleTr": "Sıcak havada bol su iç.",
+    "exampleRu": "Пей больше воды в жару."
   },
   {
     "id": "top_174",
@@ -2813,7 +2997,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uxlamoq"
+    "uz": "Uxlamoq",
+    "exampleTr": "Gece vardiyasından sonra iyi uyu.",
+    "exampleRu": "Хорошо выспись после ночной смены."
   },
   {
     "id": "top_175",
@@ -2824,7 +3010,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uyg'onmoq"
+    "uz": "Uyg'onmoq",
+    "exampleTr": "Sabah erkenden zinde uyan.",
+    "exampleRu": "Проснись утром бодрым и пораньше."
   },
   {
     "id": "top_176",
@@ -2835,7 +3023,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Turmoq / O'rnidan turmoq"
+    "uz": "Turmoq / O'rnidan turmoq",
+    "exampleTr": "Mola bitti, tezgâh başına kalk.",
+    "exampleRu": "Перерыв окончен, вставай к станку."
   },
   {
     "id": "top_177",
@@ -2846,7 +3036,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'tirmoq"
+    "uz": "O'tirmoq",
+    "exampleTr": "Montaj masasının yanındaki sandalyeye otur.",
+    "exampleRu": "Сядь на стул возле сборочного стола."
   },
   {
     "id": "top_178",
@@ -2857,7 +3049,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yurmoq"
+    "uz": "Yurmoq",
+    "exampleTr": "Atölye içinde dikkatli yürü.",
+    "exampleRu": "Аккуратно и спокойно шагай по цеху."
   },
   {
     "id": "top_179",
@@ -2868,7 +3062,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yugurmoq"
+    "uz": "Yugurmoq",
+    "exampleTr": "Fabrika içinde koşma, tehlikeli.",
+    "exampleRu": "Не бегай по фабрике, это опасно."
   },
   {
     "id": "top_180",
@@ -2879,7 +3075,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kirmoq"
+    "uz": "Kirmoq",
+    "exampleTr": "Baret takmadan atölyeye girme.",
+    "exampleRu": "Не входи в цех без каски."
   },
   {
     "id": "top_181",
@@ -2890,7 +3088,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chiqmoq"
+    "uz": "Chiqmoq",
+    "exampleTr": "İşin bitince dışarıya çık.",
+    "exampleRu": "Когда закончишь работу, выходи наружу."
   },
   {
     "id": "top_182",
@@ -2901,7 +3101,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qaytmoq / Burilmoq"
+    "uz": "Qaytmoq / Burilmoq",
+    "exampleTr": "Vidanın yönünü tersine dön.",
+    "exampleRu": "Поверни винт в обратную сторону."
   },
   {
     "id": "top_183",
@@ -2912,7 +3114,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Aylantirish"
+    "uz": "Aylantirish",
+    "exampleTr": "Ayar kolunu saat yönünde döndür.",
+    "exampleRu": "Вращай ручку регулировки по часовой стрелке."
   },
   {
     "id": "top_184",
@@ -2923,7 +3127,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'tish uchun"
+    "uz": "O'tish uchun",
+    "exampleTr": "Sarı güvenlik çizgisini geçme.",
+    "exampleRu": "Не переходи жёлтую линию безопасности."
   },
   {
     "id": "top_185",
@@ -2934,7 +3140,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "erishish uchun"
+    "uz": "erishish uchun",
+    "exampleTr": "Malzemeler şantiyeye zamanında ulaştı.",
+    "exampleRu": "Материалы вовремя добрались до стройплощадки."
   },
   {
     "id": "top_186",
@@ -2945,7 +3153,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yoyish uchun"
+    "uz": "Yoyish uchun",
+    "exampleTr": "Bu kasanın montajı bir saat sürer.",
+    "exampleRu": "Сборка этой рамы продлится один час."
   },
   {
     "id": "top_187",
@@ -2956,7 +3166,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ishlatmoq / Foydalanmoq"
+    "uz": "Ishlatmoq / Foydalanmoq",
+    "exampleTr": "Doğru tork ayarını kullan.",
+    "exampleRu": "Используй правильную настройку крутящего момента."
   },
   {
     "id": "top_188",
@@ -2967,7 +3179,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "kerak"
+    "uz": "kerak",
+    "exampleTr": "Bu iş için özel conta gerekmektedir.",
+    "exampleRu": "Для этой работы требуется специальный уплотнитель."
   },
   {
     "id": "top_189",
@@ -2978,7 +3192,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "etarli bo'lish"
+    "uz": "etarli bo'lish",
+    "exampleTr": "Bu profil parçası kasaya yeter.",
+    "exampleRu": "Этого отрезка профиля хватит на раму."
   },
   {
     "id": "top_190",
@@ -2989,7 +3205,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'lamoq"
+    "uz": "To'lamoq",
+    "exampleTr": "Haftalık mesai ücretini zamanında öde.",
+    "exampleRu": "Выплати сверхурочные вовремя."
   },
   {
     "id": "top_191",
@@ -3000,7 +3218,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yutmoq / Ishlab topmoq"
+    "uz": "Yutmoq / Ishlab topmoq",
+    "exampleTr": "Bu ay kaliteli imalatla prim kazandık.",
+    "exampleRu": "В этом месяце за качественное производство мы заработали премию."
   },
   {
     "id": "top_192",
@@ -3011,7 +3231,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sotmoq"
+    "uz": "Sotmoq",
+    "exampleTr": "Fabrika hurda alüminyum talaşını satıyor.",
+    "exampleRu": "Завод продаёт алюминиевую стружку на переработку."
   },
   {
     "id": "top_193",
@@ -3022,7 +3244,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sotib olmoq"
+    "uz": "Sotib olmoq",
+    "exampleTr": "Şirket yeni çift kafa kesim makinesi satın aldı.",
+    "exampleRu": "Компания купила новую двухголовочную пилу."
   },
   {
     "id": "top_194",
@@ -3033,7 +3257,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "E'tibor berish uchun"
+    "uz": "E'tibor berish uchun",
+    "exampleTr": "Profildeki boya kusurunu erkenden fark ettim.",
+    "exampleRu": "Я вовремя заметил дефект покраски на профиле."
   },
   {
     "id": "top_195",
@@ -3044,7 +3270,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xato"
+    "uz": "Xato",
+    "exampleTr": "Ölçüyü iki kere alırsan hata yapmazsın.",
+    "exampleRu": "Если замеришь дважды, не сделаешь ошибку."
   },
   {
     "id": "top_196",
@@ -3055,7 +3283,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Diqqat qilmoq / Ehtiyot bo'lmoq"
+    "uz": "Diqqat qilmoq / Ehtiyot bo'lmoq",
+    "exampleTr": "Testere çalışırken parmaklarına dikkat et.",
+    "exampleRu": "Будь внимателен к пальцам при работе пилы."
   },
   {
     "id": "top_197",
@@ -3066,7 +3296,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shoshiling"
+    "uz": "Shoshiling",
+    "exampleTr": "Hızlı ol ama acele edip hata yapma.",
+    "exampleRu": "Делай быстро, но не спеши в ущерб качеству."
   },
   {
     "id": "top_198",
@@ -3077,7 +3309,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Taslim bo'lish"
+    "uz": "Taslim bo'lish",
+    "exampleTr": "Eski hatalı yöntemden vazgeç.",
+    "exampleRu": "Откажись от старого ошибочного метода."
   },
   {
     "id": "top_199",
@@ -3088,7 +3322,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qo'shilish uchun"
+    "uz": "Qo'shilish uchun",
+    "exampleTr": "Sabah yapılan iş güvenliği toplantısına katıl.",
+    "exampleRu": "Поучаствуй в утренней планерке по технике безопасности."
   },
   {
     "id": "top_200",
@@ -3099,7 +3335,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Himoya qilish uchun"
+    "uz": "Himoya qilish uchun",
+    "exampleTr": "Eloksallı profili koruyucu bantla koru.",
+    "exampleRu": "Защити анодированный профиль защитной пленкой."
   },
   {
     "id": "top_201",
@@ -3110,7 +3348,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Saqlash uchun"
+    "uz": "Saqlash uchun",
+    "exampleTr": "Yanlış kesilen profili çıta olarak kurtarabiliriz.",
+    "exampleRu": "Неправильно отрезанный профиль можно спасти под штапик."
   },
   {
     "id": "top_202",
@@ -8126,7 +8366,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ketish uchun"
+    "uz": "Ketish uchun",
+    "exampleTr": "Mesai bitince fabrikadan ayrıl.",
+    "exampleRu": "По окончании смены уходи с завода."
   },
   {
     "id": "top_658",
@@ -8137,7 +8379,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ulanish uchun"
+    "uz": "Ulanish uchun",
+    "exampleTr": "Profil paketini çemberleme şeridiyle sıkıca bağla.",
+    "exampleRu": "Крепко свяжи пачку профилей упаковочной лентой."
   },
   {
     "id": "top_659",
@@ -8214,7 +8458,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uchrashuv uchun"
+    "uz": "Uchrashuv uchun",
+    "exampleTr": "Şantiye şefiyle saat üçte buluş.",
+    "exampleRu": "Встреться с начальником стройки в три часа."
   },
   {
     "id": "top_666",
@@ -8412,7 +8658,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'zgartirish uchun"
+    "uz": "O'zgartirish uchun",
+    "exampleTr": "Çarpık duran kanadın gönyesini düzelt.",
+    "exampleRu": "Исправь диагональ перекошенной створки."
   },
   {
     "id": "top_684",
@@ -8434,7 +8682,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'sqinlik qilmoq"
+    "uz": "To'sqinlik qilmoq",
+    "exampleTr": "Su tahliye deliklerini tıkayıp su sızmasını engelle.",
+    "exampleRu": "Предотврати протечку, очистив водоотводные отверстия."
   },
   {
     "id": "top_686",
@@ -8478,7 +8728,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Rivojlanish uchun"
+    "uz": "Rivojlanish uchun",
+    "exampleTr": "Alüminyum cephe teknolojisi hızla gelişiyor.",
+    "exampleRu": "Технология алюминиевых фасадов быстро развивается."
   },
   {
     "id": "top_690",
@@ -9061,7 +9313,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bajarildi"
+    "uz": "Bajarildi",
+    "exampleTr": "Tüm kilit montajlarını eksiksiz tamamla.",
+    "exampleRu": "Полностью заверши монтаж всех замков."
   },
   {
     "id": "top_743",
@@ -9270,7 +9524,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "o'rnatish"
+    "uz": "o'rnatish",
+    "exampleTr": "Hazır pencereleri kamyona dikkatlice yükle.",
+    "exampleRu": "Аккуратно погрузи готовые окна в грузовик."
   },
   {
     "id": "ext_844",
@@ -10095,7 +10351,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ochlikni his eting"
+    "uz": "Ochlikni his eting",
+    "exampleTr": "Yoğun çalışmaktan çok acıktım.",
+    "exampleRu": "От интенсивной работы я сильно проголодался."
   },
   {
     "id": "ext_919",
@@ -10106,7 +10364,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chanqoqlik"
+    "uz": "Chanqoqlik",
+    "exampleTr": "Sıcakta kesim yapınca çok susadım.",
+    "exampleRu": "Работая у пилы на жаре, я очень захотел пить."
   },
   {
     "id": "ext_920",
@@ -10117,7 +10377,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Dush qabul qilish uchun"
+    "uz": "Dush qabul qilish uchun",
+    "exampleTr": "İşten çıkınca soyunma odasında duş al.",
+    "exampleRu": "После работы прими душ в раздевалке."
   },
   {
     "id": "ext_921",
@@ -10128,7 +10390,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "soqol olish"
+    "uz": "soqol olish",
+    "exampleTr": "Yarınki denetim için sabah tıraş ol.",
+    "exampleRu": "Для завтрашней проверки побрейся утром."
   },
   {
     "id": "ext_922",
@@ -10139,7 +10403,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kiyinish uchun"
+    "uz": "Kiyinish uchun",
+    "exampleTr": "Temiz iş tulumunu giyin.",
+    "exampleRu": "Оденься в чистый рабочий комбинезон."
   },
   {
     "id": "ext_923",
@@ -10150,7 +10416,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "yechinmoq"
+    "uz": "yechinmoq",
+    "exampleTr": "Vardiya bitince iş kıyafetlerini soyun.",
+    "exampleRu": "Сними рабочую спецодежду после смены."
   },
   {
     "id": "ext_924",
@@ -10161,7 +10429,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yuvish"
+    "uz": "Yuvish",
+    "exampleTr": "Montajdan önce ellerini sabunla yıka.",
+    "exampleRu": "Перед монтажом вымой руки с мылом."
   },
   {
     "id": "ext_925",
@@ -10172,7 +10442,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "quritmoq"
+    "uz": "quritmoq",
+    "exampleTr": "Yıkanan camı mikrofiber bezle kurula.",
+    "exampleRu": "Насухо вытри вымытое стекло микрофиброй."
   },
   {
     "id": "ext_926",
@@ -10183,7 +10455,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "dazmollash"
+    "uz": "dazmollash",
+    "exampleTr": "İş gömleğini pazar günü ütüle.",
+    "exampleRu": "Погладь рабочую рубашку в воскресенье."
   },
   {
     "id": "ext_927",
@@ -10194,7 +10468,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Глаголы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ovqat pishirish uchun"
+    "uz": "Ovqat pishirish uchun",
+    "exampleTr": "Yemekhanede aşçı sıcak çorba pişiriyor.",
+    "exampleRu": "В столовой повар варит горячий суп."
   },
   {
     "id": "ext_928",
@@ -10238,7 +10514,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "hisobni to'lash"
+    "uz": "hisobni to'lash",
+    "exampleTr": "Ay başında elektrik faturasını öde.",
+    "exampleRu": "В начале месяца оплати счёт за электричество."
   },
   {
     "id": "ext_932",
