@@ -95,6 +95,34 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+  
+    /* Blur for hidden translations */
+    .blur-translation {
+      filter: blur(5px);
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+    .blur-translation.revealed {
+      filter: blur(0px);
+      opacity: 1;
+    }
+    
+    /* SRS Badge */
+    .srs-badge {
+      font-size: 10px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 9999px;
+    }
+    .srs-0 { background: #f1f5f9; color: #64748b; }
+    .srs-1 { background: #fee2e2; color: #ef4444; }
+    .srs-2 { background: #fef3c7; color: #f59e0b; }
+    .srs-3 { background: #dcfce7; color: #22c55e; }
+    .srs-4 { background: #dbeafe; color: #3b82f6; }
+    .srs-5 { background: #a7f3d0; color: #059669; }
+
   </style>
 </head>
 <body class="flex flex-col min-h-screen pb-6">
@@ -116,14 +144,16 @@
           </div>
         </div>
 
+        
         <!-- Прогресс изучения с процентом -->
         <div class="flex flex-col items-end">
-          <div class="flex items-center space-x-2 bg-slate-100 dark:bg-slate-800/80 px-3 py-1.5 rounded-full border border-slate-200/80 dark:border-slate-700/80 shadow-xs">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span id="learnedCounter" class="text-xs font-bold text-tgText font-mono">0/0</span>
+          <div class="flex items-center space-x-2 bg-slate-100 dark:bg-slate-800/80 px-3 py-1.5 rounded-full border border-slate-200/80 dark:border-slate-700/80 shadow-xs cursor-pointer" onclick="switchTab('quiz')">
+            <span class="text-sm">🔥</span>
+            <span id="streakCounter" class="text-xs font-bold text-tgText font-mono">0 дней</span>
           </div>
-          <span id="learnedPercent" class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold mt-0.5">0% освоено</span>
+          <span id="learnedPercent" class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold mt-0.5 text-right">0/15 на сегодня</span>
         </div>
+
       </div>
 
       <!-- Тонкая полоска прогресса под шапкой -->
@@ -134,7 +164,8 @@
 
     <!-- ТАБЫ ПЕРЕКЛЮЧЕНИЯ ЭКРАНОВ -->
     <div class="max-w-xl mx-auto px-4 pt-1 pb-2">
-      <div class="grid grid-cols-3 p-1 bg-slate-200/70 dark:bg-slate-800/70 backdrop-blur rounded-2xl gap-1 border border-slate-300/40 dark:border-slate-700/40">
+      
+      <div class="grid grid-cols-4 p-1 bg-slate-200/70 dark:bg-slate-800/70 backdrop-blur rounded-2xl gap-1 border border-slate-300/40 dark:border-slate-700/40">
         <button id="tabLearnBtn" class="py-2 text-[11px] sm:text-xs font-bold rounded-xl transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1.5">
           <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
@@ -153,7 +184,12 @@
           </svg>
           <span class="truncate">Список</span>
         </button>
+        <button id="tabQuizBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span class="truncate">Тренажер</span>
+        </button>
       </div>
+
     </div>
   </header>
 
@@ -183,6 +219,22 @@
             </svg>
           </button>
         </div>
+      </div>
+
+      
+      <!-- Режим зубрежки -->
+      <div class="flex items-center justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 shadow-xs">
+        <div class="flex items-center space-x-2">
+          <span class="text-lg">🧠</span>
+          <div class="space-y-0.5">
+            <div class="text-xs font-bold text-slate-800 dark:text-slate-200">Режим зубрежки</div>
+            <div class="text-[10px] text-slate-500 dark:text-slate-400">Скрывает переводы для проверки памяти</div>
+          </div>
+        </div>
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input type="checkbox" id="blurToggle" class="sr-only peer">
+          <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-slate-600 peer-checked:bg-sky-500"></div>
+        </label>
       </div>
 
       <!-- Разделы и категории словаря (Аккордеон вместо горизонтального скролла) -->
@@ -294,6 +346,58 @@
       <div id="grammarListContainer" class="space-y-3">
         <!-- Генерируется через JS -->
       </div>
+    </div>
+
+    
+    <!-- ==================== ЭКРАН 4: ТРЕНАЖЕР ==================== -->
+    <div id="screenQuiz" class="hidden space-y-4">
+      
+      <!-- Меню выбора режима -->
+      <div id="quizMenu" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <button onclick="startQuiz('flashcards')" class="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+          <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🗂️</div>
+          <div>
+            <div class="font-bold text-lg">Флэш-карточки</div>
+            <div class="text-xs text-indigo-100 opacity-90">Интервальное повторение</div>
+          </div>
+        </button>
+        <button onclick="startQuiz('multiple')" class="bg-gradient-to-br from-sky-500 to-blue-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+          <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">❓</div>
+          <div>
+            <div class="font-bold text-lg">Викторина</div>
+            <div class="text-xs text-sky-100 opacity-90">Выбор из 4 вариантов</div>
+          </div>
+        </button>
+        <button onclick="startQuiz('listening')" class="bg-gradient-to-br from-emerald-500 to-teal-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+          <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🎧</div>
+          <div>
+            <div class="font-bold text-lg">На слух</div>
+            <div class="text-xs text-emerald-100 opacity-90">Проверка аудирования</div>
+          </div>
+        </button>
+        <button onclick="startQuiz('sentence')" class="bg-gradient-to-br from-amber-500 to-orange-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+          <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🧩</div>
+          <div>
+            <div class="font-bold text-lg">Сборка фраз</div>
+            <div class="text-xs text-amber-100 opacity-90">Конструктор предложений</div>
+          </div>
+        </button>
+      </div>
+
+      <!-- Активный режим тренажера -->
+      <div id="quizActive" class="hidden space-y-4">
+        <!-- Кнопка назад -->
+        <button onclick="exitQuiz()" class="text-sky-600 dark:text-sky-400 font-semibold text-sm flex items-center gap-1 bg-white dark:bg-slate-800 px-3 py-1.5 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          Завершить тренировку
+        </button>
+        
+        <!-- Контейнер карточки -->
+        <div id="quizCardContainer" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-card min-h-[300px] flex flex-col justify-center items-center text-center relative w-full overflow-hidden">
+           <!-- Динамический контент -->
+        </div>
+      </div>
+      
     </div>
 
     <!-- Сообщение, если ничего не найдено -->
@@ -419,16 +523,83 @@
     }
 
     // Обновление счетчика и прогресс-бара изученных слов
-    function updateLearnedCounter() {
-      const total = phrases.length || 1;
-      const learnedCount = phrases.filter(p => p.learned).length;
-      const pct = Math.round((learnedCount / total) * 100);
+    
+    // ==================== SRS (Интервальное повторение) И ГЕЙМИФИКАЦИЯ ====================
+    let appStats = {
+      streak: 0,
+      lastActiveDate: null,
+      reviewedToday: 0,
+      dailyGoal: 15
+    };
 
-      const counterEl = document.getElementById('learnedCounter');
+    let isBlurMode = false;
+    
+    // Инициализация тумблера
+    document.getElementById('blurToggle')?.addEventListener('change', (e) => {
+      isBlurMode = e.target.checked;
+      renderCurrentView();
+    });
+
+    function getTodayStr() {
+      const d = new Date();
+      return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+    }
+
+    function checkStreak() {
+      const today = getTodayStr();
+      if (appStats.lastActiveDate !== today) {
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const yesterdayStr = `${yesterday.getFullYear()}-${yesterday.getMonth() + 1}-${yesterday.getDate()}`;
+        
+        if (appStats.lastActiveDate === yesterdayStr) {
+          // Продолжает стрик (не обнуляем)
+        } else if (appStats.lastActiveDate) {
+          appStats.streak = 0;
+          appStats.reviewedToday = 0;
+        } else {
+           appStats.reviewedToday = 0;
+        }
+      }
+    }
+
+    function addReviewProgress() {
+      const today = getTodayStr();
+      if (appStats.lastActiveDate !== today) {
+        if (appStats.reviewedToday === 0) {
+           appStats.streak += 1;
+        }
+        appStats.lastActiveDate = today;
+        appStats.reviewedToday = 0;
+      }
+      appStats.reviewedToday += 1;
+      saveState();
+    }
+    
+    function updateLearnedCounter() {
+      checkStreak();
+      const streakEl = document.getElementById('streakCounter');
       const percentEl = document.getElementById('learnedPercent');
       const barEl = document.getElementById('learnedProgressBar');
 
-      if (counterEl) counterEl.textContent = `${learnedCount}/${total}`;
+      if (streakEl) streakEl.textContent = `${appStats.streak} дней`;
+      if (percentEl) percentEl.textContent = `${appStats.reviewedToday}/${appStats.dailyGoal} на сегодня`;
+      
+      if (barEl) {
+        let pct = Math.min(100, Math.round((appStats.reviewedToday / appStats.dailyGoal) * 100));
+        barEl.style.width = `${pct}%`;
+      }
+    }
+
+    function getSRSLabel(level) {
+      if (!level || level === 0) return {text: "Новое", class: "srs-0"};
+      if (level === 1) return {text: "Учу", class: "srs-1"};
+      if (level === 2) return {text: "Знаком", class: "srs-2"};
+      if (level === 3) return {text: "Знаю", class: "srs-3"};
+      if (level === 4) return {text: "Хорошо", class: "srs-4"};
+      return {text: "Отлично", class: "srs-5"};
+    }
+/${total}`;
       if (percentEl) percentEl.textContent = `${pct}% освоено`;
       if (barEl) barEl.style.width = `${pct}%`;
     }
@@ -688,6 +859,7 @@
             </div>
             ` : ''}
 
+            
             <!-- Верхняя строка карточки: Категория и статус -->
             <div class="flex items-center justify-between gap-2">
               <span class="text-[11px] font-bold tracking-wide px-3 py-1 rounded-full ${
@@ -698,58 +870,23 @@
                 ${isSchueco ? '🏗️ ' : ''}${item.categoryLabel}
               </span>
 
-              <button 
-                onclick="toggleLearnedStatus('${item.id}')"
-                class="flex items-center space-x-1.5 text-xs px-3 py-1 rounded-full border transition-all active:scale-95 ${
-                  isLearned 
-                    ? 'border-emerald-500/80 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 font-bold shadow-xs' 
-                    : 'border-slate-300/80 text-tgHint hover:border-slate-400 dark:border-slate-700 font-medium'
-                }"
-              >
-                <span>${isLearned ? '✓ Изучено' : '○ В процессе'}</span>
-              </button>
+              <div class="flex gap-1.5 items-center">
+                <span class="srs-badge ${getSRSLabel(item.level).class} border flex items-center px-2 py-0.5 whitespace-nowrap">
+                   ${getSRSLabel(item.level).text}
+                </span>
+                <button 
+                  onclick="toggleLearnedStatus('${item.id}')"
+                  class="flex items-center space-x-1.5 text-xs px-2.5 py-1 rounded-full border transition-all active:scale-95 ${
+                    isLearned 
+                      ? 'border-emerald-500/80 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 font-bold shadow-xs' 
+                      : 'border-slate-300/80 text-tgHint hover:border-slate-400 dark:border-slate-700 font-medium'
+                  }"
+                >
+                  <span>✓</span>
+                </button>
+              </div>
             </div>
 
-            <!-- Турецкая фраза и произношение -->
-            <div class="flex items-start justify-between gap-3">
-              <div class="space-y-2 min-w-0 flex-1">
-                <!-- Турецкий термин -->
-                <div class="text-xl sm:text-2xl font-bold font-heading text-slate-900 dark:text-white tracking-normal leading-snug">
-                  ${item.tr}
-                </div>
-
-                <!-- Фонетическая транскрипция (четкая и лаконичная) -->
-                <div class="inline-flex items-center gap-1.5 bg-sky-50 dark:bg-sky-950/50 px-2.5 py-1 rounded-lg border border-sky-200/70 dark:border-sky-800/60">
-                  <span class="text-[11px] text-sky-700 dark:text-sky-300 font-bold font-mono tracking-wide">
-                    [ ${item.phonetic} ]
-                  </span>
-                </div>
-                
-                <!-- Переводы (RU + UZ) -->
-                <div class="pt-1 space-y-1.5">
-                  <!-- Русский перевод -->
-                  <div class="text-[15px] sm:text-base font-semibold text-slate-800 dark:text-slate-100 leading-relaxed">
-                    ${item.ru}
-                  </div>
-
-                  <!-- Узбекский перевод (чистый текст) -->
-                  ${item.uz ? `
-                  <div class="text-xs sm:text-[13px] font-medium text-emerald-800 dark:text-emerald-300 bg-emerald-50/90 dark:bg-emerald-950/60 px-2.5 py-1 rounded-xl w-fit border border-emerald-200 dark:border-emerald-800/60">
-                    <span class="font-semibold">${item.uz}</span>
-                  </div>
-                  ` : ''}
-
-                  <!-- Пример употребления (для глаголов) с кнопкой быстрой озвучки -->
-                  ${(item.exampleTr && item.exampleRu) ? `
-                  <div class="mt-2.5 pt-2 border-t border-slate-200/70 dark:border-slate-800/70 flex items-start justify-between gap-2.5 bg-slate-100/80 dark:bg-slate-800/80 p-3 rounded-2xl border border-slate-200/80 dark:border-slate-700/80">
-                    <div class="space-y-1 min-w-0 flex-1 text-xs">
-                      <div class="text-sm font-bold text-slate-900 dark:text-white leading-snug">
-                        ${item.exampleTr}
-                      </div>
-                      <div class="text-xs font-medium text-slate-700 dark:text-slate-200 leading-snug">
-                        ${item.exampleRu}
-                      </div>
-                    </div>
                     <button 
                       onclick="speakTurkish('${item.exampleTr.replace(/'/g, "\\'")}', 'ex-${item.id}', 'normal', this)" 
                       title="Озвучить пример"
@@ -1250,6 +1387,288 @@
     loadState();
     switchTab('learn');
 
-  </script>
+  
+    // ==================== ЛОГИКА ТРЕНАЖЕРА (QUIZ / SRS) ====================
+    let quizMode = null;
+    let quizQueue = [];
+    let currentQuizItem = null;
+
+    const tabQuizBtn = document.getElementById('tabQuizBtn');
+    const screenQuiz = document.getElementById('screenQuiz');
+    tabQuizBtn.addEventListener('click', () => switchTab('quiz'));
+
+    // Подключение к switchTab
+    const originalSwitchTab = switchTab;
+    switchTab = function(tab) {
+       screenQuiz.classList.add('hidden');
+       tabQuizBtn.className = TAB_INACTIVE;
+       
+       if (tab === 'quiz') {
+          activeTab = 'quiz';
+          triggerHaptic('light');
+          screenLearn.classList.add('hidden');
+          screenGrammar.classList.add('hidden');
+          screenManage.classList.add('hidden');
+          filterSection.classList.add('hidden');
+          
+          screenQuiz.classList.remove('hidden');
+          tabQuizBtn.className = TAB_ACTIVE;
+          
+          document.getElementById('quizMenu').classList.remove('hidden');
+          document.getElementById('quizActive').classList.add('hidden');
+       } else {
+          originalSwitchTab(tab);
+       }
+    };
+
+    function startQuiz(mode) {
+       quizMode = mode;
+       triggerHaptic('light');
+       
+       const now = Date.now();
+       let due = phrases.filter(p => !p.nextReview || p.nextReview <= now);
+       
+       if (mode === 'sentence') {
+          due = phrases.filter(p => p.exampleTr && p.exampleRu);
+       }
+       
+       due = due.sort(() => Math.random() - 0.5);
+       quizQueue = due.slice(0, 15);
+       
+       if (quizQueue.length === 0) {
+           let all = mode === 'sentence' ? phrases.filter(p => p.exampleTr) : phrases;
+           quizQueue = all.sort(() => Math.random() - 0.5).slice(0, 15);
+       }
+       
+       document.getElementById('quizMenu').classList.add('hidden');
+       document.getElementById('quizActive').classList.remove('hidden');
+       
+       nextQuizItem();
+    }
+
+    function exitQuiz() {
+       triggerHaptic('light');
+       document.getElementById('quizMenu').classList.remove('hidden');
+       document.getElementById('quizActive').classList.add('hidden');
+       renderCurrentView(); 
+    }
+
+    function nextQuizItem() {
+       if (quizQueue.length === 0) {
+          document.getElementById('quizCardContainer').innerHTML = `
+             <div class="text-5xl mb-4">🎉</div>
+             <h2 class="text-xl font-bold text-slate-800 dark:text-white">Отличная работа!</h2>
+             <p class="text-sm text-slate-500 mt-2 mb-6">Вы завершили эту тренировку.</p>
+             <button onclick="exitQuiz()" class="bg-sky-600 text-white px-8 py-3 rounded-full font-bold shadow-md active:scale-95 transition-transform w-full max-w-[200px]">Завершить</button>
+          `;
+          return;
+       }
+       currentQuizItem = quizQueue.pop();
+       renderQuizCard();
+    }
+
+    function processAnswer(quality) {
+       let item = currentQuizItem;
+       if (quality === 0) {
+          item.level = 0;
+          item.nextReview = Date.now() + 60 * 60 * 1000;
+       } else {
+          item.level = Math.min(5, (item.level || 0) + 1);
+          let days = 1;
+          if (item.level === 2) days = 3;
+          if (item.level === 3) days = 7;
+          if (item.level === 4) days = 14;
+          if (item.level === 5) days = 30;
+          item.nextReview = Date.now() + days * 24 * 60 * 60 * 1000;
+       }
+       
+       item.learned = item.level >= 4;
+       
+       addReviewProgress(); 
+       triggerHaptic('light');
+       nextQuizItem();
+    }
+
+    function renderQuizCard() {
+       const container = document.getElementById('quizCardContainer');
+       const item = currentQuizItem;
+       
+       if (quizMode === 'flashcards') {
+          container.innerHTML = `
+             <div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Флэш-карточка</div>
+             <div class="text-3xl font-bold font-heading text-slate-900 dark:text-white mb-2 text-center break-words w-full px-2">${item.tr}</div>
+             <button class="w-12 h-12 mt-4 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-sky-600 dark:text-sky-400 active:scale-90 transition-transform shadow-sm mx-auto border border-sky-200 dark:border-sky-800" onclick="speakTurkish('${item.tr.replace(/'/g, "\'")}', null, 'normal', this)">
+               🔊
+             </button>
+             
+             <div id="flashcardAnswer" class="hidden w-full flex flex-col items-center mt-8 space-y-6">
+                <div class="w-full border-t border-slate-100 dark:border-slate-800 pt-6">
+                   <div class="text-xl font-semibold text-slate-800 dark:text-slate-100 text-center px-2 leading-tight">${item.ru}</div>
+                   ${item.uz ? `<div class="text-sm text-emerald-600 dark:text-emerald-400 mt-3 font-medium text-center px-4">${item.uz}</div>` : ''}
+                </div>
+                
+                <div class="grid grid-cols-4 gap-2 w-full mt-4">
+                   <button onclick="processAnswer(0)" class="py-3 rounded-xl bg-red-50 text-red-600 dark:bg-red-950/40 border border-red-200 dark:border-red-900/40 text-[11px] sm:text-xs font-bold active:scale-95 shadow-sm">Забыл</button>
+                   <button onclick="processAnswer(1)" class="py-3 rounded-xl bg-orange-50 text-orange-600 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-900/40 text-[11px] sm:text-xs font-bold active:scale-95 shadow-sm">Сложно</button>
+                   <button onclick="processAnswer(2)" class="py-3 rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/40 text-[11px] sm:text-xs font-bold active:scale-95 shadow-sm">Помню</button>
+                   <button onclick="processAnswer(3)" class="py-3 rounded-xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/40 text-[11px] sm:text-xs font-bold active:scale-95 shadow-sm">Легко</button>
+                </div>
+             </div>
+             
+             <button id="showAnswerBtn" class="mt-12 w-full max-w-[200px] py-3.5 bg-slate-800 dark:bg-slate-700 text-white rounded-full font-bold shadow-md active:scale-95 transition-transform" onclick="document.getElementById('flashcardAnswer').classList.remove('hidden'); this.classList.add('hidden'); triggerHaptic('light');">
+                Показать ответ
+             </button>
+          `;
+       } 
+       else if (quizMode === 'multiple' || quizMode === 'listening') {
+          let wrongs = [];
+          while(wrongs.length < 3) {
+             let r = phrases[Math.floor(Math.random() * phrases.length)];
+             if (r.id !== item.id && !wrongs.includes(r)) wrongs.push(r);
+          }
+          let options = [item, ...wrongs].sort(() => Math.random() - 0.5);
+          
+          let questionHtml = '';
+          if (quizMode === 'listening') {
+             questionHtml = `
+               <div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Аудирование</div>
+               <button class="w-16 h-16 mb-8 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-3xl text-sky-600 active:scale-90 transition-transform shadow-md border border-sky-200 dark:border-sky-800 animate-pulse mx-auto" onclick="speakTurkish('${item.tr.replace(/'/g, "\'")}', null, 'normal', this)">
+                 🔊
+               </button>
+               <script>setTimeout(()=>document.querySelector('#quizCardContainer button').click(), 300);</script>
+             `;
+          } else {
+             questionHtml = `
+               <div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Викторина</div>
+               <div class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center break-words px-2 leading-tight">${item.ru}</div>
+             `;
+          }
+          
+          let btns = options.map(opt => `
+             <button onclick="checkMultipleChoice('${opt.id}', this)" class="w-full p-4 text-left rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 font-semibold active:scale-[0.98] transition-all shadow-sm">
+                ${quizMode === 'listening' ? opt.ru : opt.tr}
+             </button>
+          `).join('');
+          
+          container.innerHTML = `
+             ${questionHtml}
+             <div class="w-full space-y-2.5 mt-2">
+                ${btns}
+             </div>
+          `;
+       }
+       else if (quizMode === 'sentence') {
+          let words = item.exampleTr.replace(/[.,!?]/g, '').split(' ').filter(w => w.length > 0);
+          let shuffled = [...words].sort(() => Math.random() - 0.5);
+          
+          window.currentSentenceTarget = words;
+          window.currentSentenceAttempt = [];
+          
+          renderSentenceBuilder(shuffled);
+       }
+    }
+    
+    function checkMultipleChoice(id, btnElement) {
+       if (id === currentQuizItem.id) {
+          btnElement.classList.remove('bg-slate-50', 'dark:bg-slate-800/80', 'border-slate-200', 'dark:border-slate-700');
+          btnElement.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-800', 'dark:bg-emerald-900/50');
+          triggerHaptic('success');
+          setTimeout(() => processAnswer(2), 700);
+       } else {
+          btnElement.classList.remove('bg-slate-50', 'dark:bg-slate-800/80', 'border-slate-200', 'dark:border-slate-700');
+          btnElement.classList.add('bg-red-100', 'border-red-500', 'text-red-800', 'dark:bg-red-900/50');
+          triggerHaptic('light');
+       }
+    }
+    
+    function renderSentenceBuilder(poolWords) {
+       const container = document.getElementById('quizCardContainer');
+       
+       let selectedHtml = window.currentSentenceAttempt.map((w, i) => `
+          <button onclick="sentenceRemoveWord(${i})" class="px-3 py-2 bg-sky-100 dark:bg-sky-900/60 text-sky-800 dark:text-sky-100 rounded-xl font-bold active:scale-95 border border-sky-300 dark:border-sky-700 shadow-sm transition-transform">${w}</button>
+       `).join('');
+       
+       let poolHtml = poolWords.map((w, i) => `
+          <button onclick="sentenceAddWord('${w}')" class="px-3 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-xl font-bold active:scale-95 border border-slate-300 dark:border-slate-600 shadow-sm transition-transform">${w}</button>
+       `).join('');
+       
+       container.innerHTML = `
+          <div class="text-[10px] uppercase font-bold text-slate-400 mb-4 tracking-wider">Соберите фразу</div>
+          <div class="text-sm sm:text-base font-semibold text-slate-700 dark:text-slate-200 mb-6 text-center leading-tight px-2">${currentQuizItem.exampleRu}</div>
+          
+          <div class="w-full min-h-[90px] bg-slate-50 dark:bg-slate-950/50 rounded-2xl p-4 flex flex-wrap gap-2 border-2 border-dashed border-slate-300 dark:border-slate-700 mb-6 content-start items-start">
+             ${selectedHtml || '<span class="text-slate-400 dark:text-slate-500 text-xs sm:text-sm mt-2 w-full text-center font-medium">Нажимайте на слова ниже, чтобы собрать перевод</span>'}
+          </div>
+          
+          <div class="w-full flex flex-wrap gap-2.5 justify-center mt-2">
+             ${poolHtml}
+          </div>
+          
+          <button onclick="sentenceCheck()" class="mt-8 w-full max-w-[250px] py-3.5 bg-sky-600 text-white rounded-full font-bold shadow-md active:scale-95 transition-transform mx-auto block">
+             Проверить
+          </button>
+       `;
+    }
+    
+    window.sentenceAddWord = function(w) {
+       let poolNodes = document.querySelectorAll('#quizCardContainer .justify-center > button');
+       let poolList = Array.from(poolNodes).map(n => n.textContent.trim());
+       let idx = poolList.indexOf(w);
+       if (idx !== -1) {
+          poolList.splice(idx, 1);
+          window.currentSentenceAttempt.push(w);
+          triggerHaptic('light');
+          renderSentenceBuilder(poolList);
+       }
+    };
+    
+    window.sentenceRemoveWord = function(idx) {
+       let w = window.currentSentenceAttempt.splice(idx, 1)[0];
+       let poolNodes = document.querySelectorAll('#quizCardContainer .justify-center > button');
+       let poolList = Array.from(poolNodes).map(n => n.textContent.trim());
+       poolList.push(w);
+       triggerHaptic('light');
+       renderSentenceBuilder(poolList);
+    };
+    
+    window.sentenceCheck = function() {
+       let attemptStr = window.currentSentenceAttempt.join(' ').toLowerCase();
+       let targetStr = window.currentSentenceTarget.join(' ').toLowerCase();
+       
+       if (attemptStr === targetStr) {
+          triggerHaptic('success');
+          showToast('Идеально!', '🎉');
+          setTimeout(() => processAnswer(3), 1000);
+       } else {
+          triggerHaptic('light');
+          showToast('Неправильно, попробуйте еще раз', '❌');
+          window.currentSentenceAttempt = [];
+          renderSentenceBuilder([...window.currentSentenceTarget].sort(() => Math.random() - 0.5));
+       }
+    }
+
+    // Добавим обработку клика по уровню в toggleLearnedStatus
+    const originalToggle = toggleLearnedStatus;
+    toggleLearnedStatus = function(id) {
+       const phrase = phrases.find(p => p.id === id);
+       if (phrase) {
+          if (!phrase.learned) {
+             phrase.learned = true;
+             phrase.level = 5;
+             phrase.nextReview = Date.now() + 30 * 24 * 60 * 60 * 1000;
+             showToast('Идеально выучено!', '🎓');
+          } else {
+             phrase.learned = false;
+             phrase.level = 0;
+             phrase.nextReview = Date.now() + 60 * 60 * 1000;
+             showToast('Сброшено на повторение', '🔄');
+          }
+          saveState();
+          renderCurrentView();
+          triggerHaptic(phrase.learned ? 'success' : 'light');
+       }
+    };
+
+</script>
 </body>
 </html>
