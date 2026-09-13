@@ -735,30 +735,28 @@
                     ${item.ru}
                   </div>
 
-                  <!-- Узбекский перевод без флага -->
+                  <!-- Узбекский перевод (чистый текст) -->
                   ${item.uz ? `
-                  <div class="text-xs sm:text-[13px] font-medium text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5 bg-emerald-50/90 dark:bg-emerald-950/60 px-2.5 py-1 rounded-xl w-fit border border-emerald-200 dark:border-emerald-800/60">
-                    <span class="text-[10px] font-bold uppercase text-emerald-600 dark:text-emerald-400 tracking-wider">UZ:</span>
+                  <div class="text-xs sm:text-[13px] font-medium text-emerald-800 dark:text-emerald-300 bg-emerald-50/90 dark:bg-emerald-950/60 px-2.5 py-1 rounded-xl w-fit border border-emerald-200 dark:border-emerald-800/60">
                     <span class="font-semibold">${item.uz}</span>
                   </div>
                   ` : ''}
 
-                  <!-- Пример употребления (для глаголов) с кнопкой быстрой озвучки примера -->
+                  <!-- Пример употребления (для глаголов) с кнопкой быстрой озвучки -->
                   ${(item.exampleTr && item.exampleRu) ? `
-                  <div class="mt-2.5 pt-2 border-t border-slate-200/60 dark:border-slate-800/60 flex items-start justify-between gap-2 bg-slate-50 dark:bg-slate-850/60 p-2.5 rounded-2xl border border-slate-200/50 dark:border-slate-800/50">
-                    <div class="space-y-0.5 min-w-0 flex-1 text-xs">
-                      <div class="text-[11px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider">Пример:</div>
-                      <div class="font-bold text-slate-900 dark:text-white leading-snug">
+                  <div class="mt-2.5 pt-2 border-t border-slate-200/70 dark:border-slate-800/70 flex items-start justify-between gap-2.5 bg-slate-100/80 dark:bg-slate-800/80 p-3 rounded-2xl border border-slate-200/80 dark:border-slate-700/80">
+                    <div class="space-y-1 min-w-0 flex-1 text-xs">
+                      <div class="text-sm font-bold text-slate-900 dark:text-white leading-snug">
                         ${item.exampleTr}
                       </div>
-                      <div class="text-[11px] text-slate-600 dark:text-slate-300 leading-snug">
+                      <div class="text-xs font-medium text-slate-700 dark:text-slate-200 leading-snug">
                         ${item.exampleRu}
                       </div>
                     </div>
                     <button 
                       onclick="speakTurkish('${item.exampleTr.replace(/'/g, "\\'")}', 'ex-${item.id}', 'normal', this)" 
                       title="Озвучить пример"
-                      class="w-8 h-8 rounded-xl bg-white dark:bg-slate-800 text-sky-600 dark:text-sky-400 border border-slate-200 dark:border-slate-700 flex items-center justify-center shrink-0 active:scale-90 transition-all shadow-xs mt-0.5"
+                      class="w-8 h-8 rounded-xl bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-300 border border-slate-200 dark:border-slate-600 flex items-center justify-center shrink-0 active:scale-90 transition-all shadow-xs mt-0.5"
                     >
                       <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-2.23l-5.5 4.5h-4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4l5.5 4.5c.67.55 1.5.07 1.5-.8v-19.4c0-.87-.83-1.35-1.5-.8zM14 8.86v6.28c1.3-.61 2-1.89 2-3.14s-.7-2.53-2-3.14z"/>
@@ -886,7 +884,7 @@
                 </div>
                 <div class="text-xs text-slate-600 dark:text-slate-300 truncate pt-0.5">
                   <span class="font-medium">${item.ru}</span>
-                  ${item.uz ? `<span class="text-emerald-700 dark:text-emerald-400 font-semibold ml-1.5">• UZ: ${item.uz}</span>` : ''}
+                  ${item.uz ? `<span class="text-emerald-700 dark:text-emerald-400 font-semibold ml-1.5">• ${item.uz}</span>` : ''}
                 </div>
               </div>
             </div>
