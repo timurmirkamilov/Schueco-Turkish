@@ -1831,7 +1831,7 @@
              container.innerHTML = `
                 <div class="text-[10px] uppercase font-bold text-slate-400 mb-4 tracking-wider">Соберите фразу</div>
                 <div class="text-sm sm:text-base font-semibold text-slate-700 dark:text-slate-200 mb-6 text-center leading-tight px-2">${currentQuizItem.exampleRu}</div>
-                <div class="text-xl font-bold text-emerald-600 dark:text-emerald-400 mb-8 text-center px-4 leading-relaxed border-2 border-emerald-500/50 bg-emerald-50 dark:bg-emerald-950/30 p-4 rounded-2xl">
+                <div id="revealedSentence" class="text-xl font-bold text-emerald-600 dark:text-emerald-400 mb-8 text-center px-4 leading-relaxed border-2 border-emerald-500/50 bg-emerald-50 dark:bg-emerald-950/30 p-4 rounded-2xl transition-transform duration-300">
                    ${currentQuizItem.exampleTr}
                 </div>
                 <button onclick="processAnswer(0)" class="w-full max-w-[250px] py-3.5 bg-slate-800 dark:bg-slate-700 text-white rounded-full font-bold shadow-md active:scale-95 transition-transform mx-auto block">
@@ -1840,7 +1840,7 @@
              `;
              
              if (isQuizSoundEnabled) {
-                speakTurkish(currentQuizItem.exampleTr.replace(/'/g, "\\'"), null, 'normal', null);
+                speakTurkish(currentQuizItem.exampleTr.replace(/'/g, "\\'"), null, 'normal', document.getElementById('revealedSentence'));
              }
           } else {
              showToast(`Неправильно. Осталось попыток: ${3 - window.sentenceFailCount}`, '❌');
