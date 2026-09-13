@@ -1540,11 +1540,9 @@
                    ${item.uz ? `<div class="text-sm text-emerald-600 dark:text-emerald-400 mt-3 font-medium text-center px-4">${item.uz}</div>` : ''}
                 </div>
                 
-                <div class="grid grid-cols-4 gap-2 w-full mt-4">
-                   <button onclick="processAnswer(0)" class="py-3 rounded-xl bg-red-50 text-red-600 dark:bg-red-950/40 border border-red-200 dark:border-red-900/40 text-[11px] sm:text-xs font-bold active:scale-95 shadow-sm">Забыл</button>
-                   <button onclick="processAnswer(1)" class="py-3 rounded-xl bg-orange-50 text-orange-600 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-900/40 text-[11px] sm:text-xs font-bold active:scale-95 shadow-sm">Сложно</button>
-                   <button onclick="processAnswer(2)" class="py-3 rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/40 text-[11px] sm:text-xs font-bold active:scale-95 shadow-sm">Помню</button>
-                   <button onclick="processAnswer(3)" class="py-3 rounded-xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/40 text-[11px] sm:text-xs font-bold active:scale-95 shadow-sm">Легко</button>
+                <div class="grid grid-cols-2 gap-3 w-full mt-4">
+                   <button onclick="processAnswer(0)" class="py-3.5 rounded-2xl bg-red-50 text-red-600 dark:bg-red-950/40 border border-red-200 dark:border-red-900/40 text-[13px] sm:text-sm font-bold active:scale-95 shadow-sm">Не помню</button>
+                   <button onclick="processAnswer(1)" class="py-3.5 rounded-2xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/40 text-[13px] sm:text-sm font-bold active:scale-95 shadow-sm">Помню</button>
                 </div>
              </div>
              
