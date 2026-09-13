@@ -1811,7 +1811,13 @@
        if (attemptStr === targetStr) {
           triggerHaptic('success');
           showToast('Идеально!', '🎉');
-          setTimeout(() => processAnswer(3), 1000);
+          
+          if (isQuizSoundEnabled) {
+             speakTurkish(currentQuizItem.exampleTr.replace(/'/g, "\\'"), null, 'normal', null);
+             setTimeout(() => processAnswer(3), 2500);
+          } else {
+             setTimeout(() => processAnswer(3), 1000);
+          }
        } else {
           window.sentenceFailCount = (window.sentenceFailCount || 0) + 1;
           triggerHaptic('light');
@@ -1829,6 +1835,10 @@
                    Продолжить
                 </button>
              `;
+             
+             if (isQuizSoundEnabled) {
+                speakTurkish(currentQuizItem.exampleTr.replace(/'/g, "\\'"), null, 'normal', null);
+             }
           } else {
              showToast(`Неправильно. Осталось попыток: ${3 - window.sentenceFailCount}`, '❌');
              window.currentSentenceAttempt = [];
