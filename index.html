@@ -1527,7 +1527,6 @@
 
     // Готов к инициализации
     loadState();
-    switchTab('quiz');
 
   
     // ==================== ЛОГИКА ТРЕНАЖЕРА (QUIZ / SRS) ====================
@@ -1576,6 +1575,9 @@
           originalSwitchTab(tab);
        }
     };
+    
+    // Теперь безопасно переключаемся на вкладку Тренажера
+    switchTab('quiz');
 
     function startQuiz(mode) {
        quizMode = mode;
