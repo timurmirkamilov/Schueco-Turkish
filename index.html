@@ -1535,7 +1535,7 @@
                <button class="w-16 h-16 mb-8 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-3xl text-sky-600 active:scale-90 transition-transform shadow-md border border-sky-200 dark:border-sky-800 animate-pulse mx-auto" onclick="speakTurkish('${item.tr.replace(/'/g, "\'")}', null, 'normal', this)">
                  🔊
                </button>
-               <script>setTimeout(()=>document.querySelector('#quizCardContainer button').click(), 300);</script>
+               
              `;
           } else {
              questionHtml = `
@@ -1550,12 +1550,21 @@
              </button>
           `).join('');
           
+
           container.innerHTML = `
              ${questionHtml}
              <div class="w-full space-y-2.5 mt-2">
                 ${btns}
              </div>
           `;
+          
+          if (quizMode === 'listening') {
+             setTimeout(() => {
+                const btn = document.querySelector('#quizCardContainer button');
+                if (btn) btn.click();
+             }, 300);
+          }
+
        }
        else if (quizMode === 'sentence') {
           let words = item.exampleTr.replace(/[.,!?]/g, '').split(' ').filter(w => w.length > 0);
