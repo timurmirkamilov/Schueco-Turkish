@@ -354,34 +354,51 @@
       
       <!-- Меню выбора режима -->
       <div id="quizMenu" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <button onclick="startQuiz('flashcards')" class="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
-          <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🗂️</div>
-          <div>
-            <div class="font-bold text-lg">Флэш-карточки</div>
-            <div class="text-xs text-indigo-100 opacity-90">Интервальное повторение</div>
-          </div>
-        </button>
-        <button onclick="startQuiz('multiple')" class="bg-gradient-to-br from-sky-500 to-blue-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
-          <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">❓</div>
-          <div>
-            <div class="font-bold text-lg">Викторина</div>
-            <div class="text-xs text-sky-100 opacity-90">Выбор из 4 вариантов</div>
-          </div>
-        </button>
-        <button onclick="startQuiz('listening')" class="bg-gradient-to-br from-emerald-500 to-teal-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
-          <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🎧</div>
-          <div>
-            <div class="font-bold text-lg">На слух</div>
-            <div class="text-xs text-emerald-100 opacity-90">Проверка аудирования</div>
-          </div>
-        </button>
-        <button onclick="startQuiz('sentence')" class="bg-gradient-to-br from-amber-500 to-orange-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
-          <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🧩</div>
-          <div>
-            <div class="font-bold text-lg">Сборка фраз</div>
-            <div class="text-xs text-amber-100 opacity-90">Конструктор предложений</div>
-          </div>
-        </button>
+        
+        <div class="relative">
+          <button onclick="startQuiz('flashcards')" class="w-full bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+            <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🗂️</div>
+            <div>
+              <div class="font-bold text-lg">Флэш-карточки</div>
+              <div class="text-xs text-indigo-100 opacity-90">Интервальное повторение</div>
+            </div>
+          </button>
+          <button onclick="resetQuizProgress('flashcards', 'Флэш-карточки')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
+        </div>
+
+        <div class="relative">
+          <button onclick="startQuiz('multiple')" class="w-full bg-gradient-to-br from-sky-500 to-blue-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+            <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">❓</div>
+            <div>
+              <div class="font-bold text-lg">Викторина</div>
+              <div class="text-xs text-sky-100 opacity-90">Выбор из 4 вариантов</div>
+            </div>
+          </button>
+          <button onclick="resetQuizProgress('multiple', 'Викторина')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
+        </div>
+
+        <div class="relative">
+          <button onclick="startQuiz('listening')" class="w-full bg-gradient-to-br from-emerald-500 to-teal-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+            <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🎧</div>
+            <div>
+              <div class="font-bold text-lg">На слух</div>
+              <div class="text-xs text-emerald-100 opacity-90">Проверка аудирования</div>
+            </div>
+          </button>
+          <button onclick="resetQuizProgress('listening', 'На слух')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
+        </div>
+
+        <div class="relative">
+          <button onclick="startQuiz('sentence')" class="w-full bg-gradient-to-br from-amber-500 to-orange-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+            <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🧩</div>
+            <div>
+              <div class="font-bold text-lg">Сборка фраз</div>
+              <div class="text-xs text-amber-100 opacity-90">Конструктор предложений</div>
+            </div>
+          </button>
+          <button onclick="resetQuizProgress('sentence', 'Сборка фраз')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
+        </div>
+
       </div>
 
       <!-- Активный режим тренажера -->
@@ -594,6 +611,34 @@
         let pct = Math.min(100, Math.round((appStats.reviewedToday / appStats.dailyGoal) * 100));
         barEl.style.width = `${pct}%`;
       }
+    }
+
+
+    function getAverageLevel(item) {
+       if (!item.srs) return 0;
+       let total = 0;
+       let count = 0;
+       for (let key in item.srs) {
+          if (key === 'sentence' && !item.exampleTr) continue; // Skip sentence if not applicable
+          total += item.srs[key].level || 0;
+          count++;
+       }
+       return count > 0 ? Math.round(total / count) : 0;
+    }
+
+    function resetQuizProgress(mode, modeName) {
+       if (confirm(`Вы уверены, что хотите сбросить прогресс для тренажера "${modeName}"? Это обнулит уровни всех слов в этом режиме.`)) {
+          phrases.forEach(p => {
+             if (p.srs && p.srs[mode]) {
+                p.srs[mode].level = 0;
+                p.srs[mode].nextReview = 0;
+             }
+             // Recalculate learned status based on average
+             p.learned = getAverageLevel(p) >= 4;
+          });
+          saveState();
+          showToast(`Прогресс "${modeName}" сброшен`, '🔄');
+       }
     }
 
     function getSRSLabel(level) {
@@ -871,8 +916,8 @@
               </span>
 
               <div class="flex gap-1.5 items-center">
-                <span class="srs-badge ${getSRSLabel(item.level).class} border flex items-center px-2 py-0.5 whitespace-nowrap">
-                   ${getSRSLabel(item.level).text}
+                <span class="srs-badge ${getSRSLabel(getAverageLevel(item)).class} border flex items-center px-2 py-0.5 whitespace-nowrap">
+                   ${getSRSLabel(getAverageLevel(item)).text}
                 </span>
                 <button 
                   onclick="toggleLearnedStatus('${item.id}')"
@@ -1478,10 +1523,10 @@
        triggerHaptic('light');
        
        const now = Date.now();
-       let due = phrases.filter(p => !p.nextReview || p.nextReview <= now);
+       let due = phrases.filter(p => p.srs && p.srs[mode] && (!p.srs[mode].nextReview || p.srs[mode].nextReview <= now));
        
        if (mode === 'sentence') {
-          due = phrases.filter(p => p.exampleTr && p.exampleRu);
+          due = due.filter(p => p.exampleTr && p.exampleRu);
        }
        
        due = due.sort(() => Math.random() - 0.5);
@@ -1521,20 +1566,22 @@
 
     function processAnswer(quality) {
        let item = currentQuizItem;
+       let srsObj = item.srs[quizMode];
+       
        if (quality === 0) {
-          item.level = 0;
-          item.nextReview = Date.now() + 60 * 60 * 1000;
+          srsObj.level = 0;
+          srsObj.nextReview = Date.now() + 60 * 60 * 1000;
        } else {
-          item.level = Math.min(5, (item.level || 0) + 1);
+          srsObj.level = Math.min(5, (srsObj.level || 0) + 1);
           let days = 1;
-          if (item.level === 2) days = 3;
-          if (item.level === 3) days = 7;
-          if (item.level === 4) days = 14;
-          if (item.level === 5) days = 30;
-          item.nextReview = Date.now() + days * 24 * 60 * 60 * 1000;
+          if (srsObj.level === 2) days = 3;
+          if (srsObj.level === 3) days = 7;
+          if (srsObj.level === 4) days = 14;
+          if (srsObj.level === 5) days = 30;
+          srsObj.nextReview = Date.now() + days * 24 * 60 * 60 * 1000;
        }
        
-       item.learned = item.level >= 4;
+       item.learned = getAverageLevel(item) >= 4;
        
        addReviewProgress(); 
        triggerHaptic('light');
@@ -1738,16 +1785,20 @@
     const originalToggle = toggleLearnedStatus;
     toggleLearnedStatus = function(id) {
        const phrase = phrases.find(p => p.id === id);
-       if (phrase) {
+       if (phrase && phrase.srs) {
           if (!phrase.learned) {
              phrase.learned = true;
-             phrase.level = 5;
-             phrase.nextReview = Date.now() + 30 * 24 * 60 * 60 * 1000;
-             showToast('Идеально выучено!', '🎓');
+             for (let key in phrase.srs) {
+                 phrase.srs[key].level = 5;
+                 phrase.srs[key].nextReview = Date.now() + 30 * 24 * 60 * 60 * 1000;
+             }
+             showToast('Идеально выучено во всех тренажерах!', '🎓');
           } else {
              phrase.learned = false;
-             phrase.level = 0;
-             phrase.nextReview = Date.now() + 60 * 60 * 1000;
+             for (let key in phrase.srs) {
+                 phrase.srs[key].level = 0;
+                 phrase.srs[key].nextReview = Date.now() + 60 * 60 * 1000;
+             }
              showToast('Сброшено на повторение', '🔄');
           }
           saveState();
