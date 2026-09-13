@@ -595,7 +595,8 @@
       }
     }
 
-    // ==================== SRS (Интервальное повторение) И ГЕЙМИФИКАЦИЯ ====================
+    // ==================== SRS (Интервальное повторение) и Статистика ====================
+    let isQuizSoundEnabled = true;
     let appStats = {
       streak: 0,
       lastActiveDate: null,
@@ -1530,7 +1531,6 @@
     let quizMode = null;
     let quizQueue = [];
     let currentQuizItem = null;
-    let isQuizSoundEnabled = true;
 
     function toggleQuizSound() {
        isQuizSoundEnabled = !isQuizSoundEnabled;
