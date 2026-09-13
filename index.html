@@ -12,6 +12,9 @@
   <!-- База данных: Профильный Schüco + Топ 1000 слов -->
   <script src="words.js"></script>
 
+  <!-- База данных: Правила и грамматика турецкого языка -->
+  <script src="grammar.js"></script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -94,18 +97,24 @@
 
     <!-- ТАБЫ ПЕРЕКЛЮЧЕНИЯ ЭКРАНОВ -->
     <div class="max-w-xl mx-auto px-4 pt-1 pb-2.5">
-      <div class="grid grid-cols-2 p-1 bg-slate-200/80 dark:bg-slate-800/80 rounded-xl gap-1">
-        <button id="tabLearnBtn" class="py-2 text-xs sm:text-sm font-bold rounded-lg transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1.5">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="grid grid-cols-3 p-1 bg-slate-200/80 dark:bg-slate-800/80 rounded-xl gap-1">
+        <button id="tabLearnBtn" class="py-2 text-[11px] sm:text-xs font-bold rounded-lg transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1">
+          <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
           </svg>
-          <span>Цеховой словарь</span>
+          <span class="truncate">Словарь</span>
         </button>
-        <button id="tabManageBtn" class="py-2 text-xs sm:text-sm font-medium rounded-lg transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="tabGrammarBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-lg transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1">
+          <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+          <span class="truncate">Правила</span>
+        </button>
+        <button id="tabManageBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-lg transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1">
+          <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
           </svg>
-          <span>Управление списком</span>
+          <span class="truncate">Список</span>
         </button>
       </div>
     </div>
@@ -115,7 +124,7 @@
   <main class="flex-1 max-w-xl mx-auto w-full px-4 pt-3 space-y-3.5">
 
     <!-- ФИЛЬТРЫ И ПОИСК -->
-    <section class="space-y-2.5">
+    <section id="filterSection" class="space-y-2.5">
       <!-- Поиск -->
       <div class="relative">
         <input 
@@ -203,6 +212,22 @@
 
       <!-- Список управления позициями -->
       <div id="manageListContainer" class="space-y-2.5">
+        <!-- Генерируется через JS -->
+      </div>
+    </div>
+
+    <!-- ==================== ЭКРАН 3: ПРАВИЛА ТУРЕЦКОГО ЯЗЫКА ==================== -->
+    <div id="screenGrammar" class="hidden space-y-3">
+      <div class="p-3 rounded-xl bg-gradient-to-r from-sky-50 to-indigo-50 dark:from-sky-950/40 dark:to-indigo-950/40 border border-sky-200/80 dark:border-sky-900/60 flex items-start space-x-2.5 text-xs text-sky-900 dark:text-sky-200">
+        <span class="text-xl shrink-0">💡</span>
+        <div class="space-y-0.5 leading-relaxed">
+          <div class="font-bold text-sm">Грамматика турецкого языка для цеха и жизни</div>
+          <div class="text-tgHint">Быстрые правила с мостиками к узбекскому языку (O'zbek tili), чтобы легко понимать логику языка и конструкций Schüco.</div>
+        </div>
+      </div>
+
+      <!-- Список интерактивных карточек правил -->
+      <div id="grammarListContainer" class="space-y-3">
         <!-- Генерируется через JS -->
       </div>
     </div>
@@ -784,9 +809,47 @@
       container.innerHTML = itemsHtml + moreBtn;
     }
 
+    // Рендер Экрана 3: Правила и грамматика турецкого языка
+    function renderGrammarList() {
+      const container = document.getElementById('grammarListContainer');
+      const emptyState = document.getElementById('emptyState');
+      if (!container) return;
+      emptyState.classList.add('hidden');
+
+      const rules = (window.GRAMMAR_RULES && Array.isArray(window.GRAMMAR_RULES)) ? window.GRAMMAR_RULES : [];
+      
+      const html = rules.map((rule, idx) => {
+        return `
+          <div class="bg-tgSecBg rounded-2xl p-4 shadow-sm border border-slate-200 dark:border-slate-800 transition-all">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 dark:bg-sky-950/70 dark:text-sky-300 border border-sky-300/40">
+                  ${rule.badge || 'Правило'}
+                </span>
+                <h3 class="text-base font-bold text-tgText mt-1.5 leading-snug">
+                  ${rule.title}
+                </h3>
+                <p class="text-xs text-tgHint mt-0.5">
+                  ${rule.subtitle}
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80">
+              ${rule.html}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      container.innerHTML = html;
+    }
+
     function renderCurrentView() {
       if (activeTab === 'learn') {
         renderLearnCards();
+      } else if (activeTab === 'grammar') {
+        renderGrammarList();
       } else {
         renderManageList();
       }
@@ -870,32 +933,48 @@
 
     // Переключение табов
     const tabLearnBtn = document.getElementById('tabLearnBtn');
+    const tabGrammarBtn = document.getElementById('tabGrammarBtn');
     const tabManageBtn = document.getElementById('tabManageBtn');
     const screenLearn = document.getElementById('screenLearn');
+    const screenGrammar = document.getElementById('screenGrammar');
     const screenManage = document.getElementById('screenManage');
+    const filterSection = document.getElementById('filterSection');
 
-    const TAB_ACTIVE = "py-2 text-xs sm:text-sm font-bold rounded-lg transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1.5";
-    const TAB_INACTIVE = "py-2 text-xs sm:text-sm font-medium rounded-lg transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5";
+    const TAB_ACTIVE = "py-2 text-[11px] sm:text-xs font-bold rounded-lg transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1";
+    const TAB_INACTIVE = "py-2 text-[11px] sm:text-xs font-medium rounded-lg transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1";
 
     function switchTab(tab) {
       activeTab = tab;
       triggerHaptic('light');
 
+      // Скрываем все экраны
+      screenLearn.classList.add('hidden');
+      screenGrammar.classList.add('hidden');
+      screenManage.classList.add('hidden');
+
+      // Сбрасываем стили кнопок
+      tabLearnBtn.className = TAB_INACTIVE;
+      tabGrammarBtn.className = TAB_INACTIVE;
+      tabManageBtn.className = TAB_INACTIVE;
+
       if (tab === 'learn') {
         screenLearn.classList.remove('hidden');
-        screenManage.classList.add('hidden');
         tabLearnBtn.className = TAB_ACTIVE;
-        tabManageBtn.className = TAB_INACTIVE;
+        if (filterSection) filterSection.classList.remove('hidden');
+      } else if (tab === 'grammar') {
+        screenGrammar.classList.remove('hidden');
+        tabGrammarBtn.className = TAB_ACTIVE;
+        if (filterSection) filterSection.classList.add('hidden'); // На вкладке правил скрываем поисковый фильтр слов
       } else {
-        screenLearn.classList.add('hidden');
         screenManage.classList.remove('hidden');
         tabManageBtn.className = TAB_ACTIVE;
-        tabLearnBtn.className = TAB_INACTIVE;
+        if (filterSection) filterSection.classList.remove('hidden');
       }
       renderCurrentView();
     }
 
     tabLearnBtn.addEventListener('click', () => switchTab('learn'));
+    tabGrammarBtn.addEventListener('click', () => switchTab('grammar'));
     tabManageBtn.addEventListener('click', () => switchTab('manage'));
 
     // Выбор категории
