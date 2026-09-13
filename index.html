@@ -1474,7 +1474,13 @@
 
     // Стартовая инициализация
     loadState();
-    switchTab('learn');
+    
+      switchTab('learn');
+      
+      // Update UI for saved sound preference
+      const btn = document.getElementById('quizSoundToggle');
+      if (btn) btn.innerHTML = isQuizSoundEnabled ? '🔊 Звук' : '🔇 Без звука';
+
 
   
     // ==================== ЛОГИКА ТРЕНАЖЕРА (QUIZ / SRS) ====================
@@ -1485,6 +1491,9 @@
 
     function toggleQuizSound() {
        isQuizSoundEnabled = !isQuizSoundEnabled;
+       appStats.isQuizSoundEnabled = isQuizSoundEnabled;
+       saveState();
+       
        const btn = document.getElementById('quizSoundToggle');
        if (btn) btn.innerHTML = isQuizSoundEnabled ? '🔊 Звук' : '🔇 Без звука';
        triggerHaptic('light');
