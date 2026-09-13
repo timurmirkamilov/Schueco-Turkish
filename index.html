@@ -1474,13 +1474,7 @@
 
     // Стартовая инициализация
     loadState();
-    
-      switchTab('learn');
-      
-      // Update UI for saved sound preference
-      const btn = document.getElementById('quizSoundToggle');
-      if (btn) btn.innerHTML = isQuizSoundEnabled ? '🔊 Звук' : '🔇 Без звука';
-
+    switchTab('learn');
 
   
     // ==================== ЛОГИКА ТРЕНАЖЕРА (QUIZ / SRS) ====================
@@ -1815,6 +1809,10 @@
           triggerHaptic(phrase.learned ? 'success' : 'light');
        }
     };
+    
+    // Update UI for saved sound preference on load
+    const soundBtn = document.getElementById('quizSoundToggle');
+    if (soundBtn) soundBtn.innerHTML = isQuizSoundEnabled ? '🔊 Звук' : '🔇 Без звука';
 
 </script>
 </body>
