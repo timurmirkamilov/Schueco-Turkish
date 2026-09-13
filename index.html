@@ -1712,6 +1712,7 @@
        renderCurrentView(); 
     }
 
+    
     function nextQuizItem() {
        if (quizQueue.length === 0) {
            const now = Date.now();
@@ -1742,9 +1743,6 @@
            currentQuizItem = quizQueue.pop();
            renderQuizCard();
        }
-    }
-       currentQuizItem = quizQueue.pop();
-       renderQuizCard();
     }
 
     function processAnswer(quality) {
