@@ -493,53 +493,102 @@
     let displayLimit = 35;
 
     // Загрузка данных с интеграцией 1000+ слов
+    
     function loadState() {
       const baseData = (window.DICTIONARY_DATABASE && Array.isArray(window.DICTIONARY_DATABASE)) ? window.DICTIONARY_DATABASE : [];
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
           const parsed = JSON.parse(saved);
-          if (Array.isArray(parsed) && parsed.length > 0) {
-            const learnedMap = new Map();
-            parsed.forEach(p => { if (p && p.id) learnedMap.set(p.id, !!p.learned); });
-
-            const baseMap = new Map(baseData.map(item => [item.id, item]));
-            const result = [];
-            const addedIds = new Set();
-
-            parsed.forEach(p => {
-              if (baseMap.has(p.id)) {
-                const fresh = JSON.parse(JSON.stringify(baseMap.get(p.id)));
-                fresh.learned = !!p.learned;
-                result.push(fresh);
-                addedIds.add(p.id);
-              }
-            });
-
-            baseData.forEach(item => {
-              if (!addedIds.has(item.id)) {
-                const fresh = JSON.parse(JSON.stringify(item));
-                if (learnedMap.has(item.id)) fresh.learned = learnedMap.get(item.id);
-                result.push(fresh);
-              }
-            });
-
-            phrases = result;
-            updateLearnedCounter();
-            return;
+          
+          let savedPhrases = [];
+          if (Array.isArray(parsed)) {
+             savedPhrases = parsed; // Legacy single array
+          } else if (parsed.phrases) {
+             savedPhrases = parsed.phrases;
+             if (parsed.stats) {
+                appStats = parsed.stats;
+                if (appStats.isQuizSoundEnabled !== undefined) {
+                   isQuizSoundEnabled = appStats.isQuizSoundEnabled;
+                }
+             }
           }
+
+          const stateMap = new Map();
+          savedPhrases.forEach(p => { 
+              if (p && p.id) {
+                 // Migrate old single level to independent tracks
+                 let legacyLevel = p.level || 0;
+                 let legacyNextReview = p.nextReview || 0;
+                 if (p.learned && legacyLevel === 0) {
+                    legacyLevel = 5;
+                    legacyNextReview = Date.now() + 30 * 24 * 60 * 60 * 1000;
+                 }
+                 
+                 if (!p.srs) {
+                    p.srs = {
+                       flashcards: { level: legacyLevel, nextReview: legacyNextReview },
+                       multiple: { level: legacyLevel, nextReview: legacyNextReview },
+                       listening: { level: legacyLevel, nextReview: legacyNextReview },
+                       sentence: { level: legacyLevel, nextReview: legacyNextReview }
+                    };
+                 }
+                 
+                 stateMap.set(p.id, p); 
+              }
+          });
+
+          const result = [];
+          baseData.forEach(item => {
+            const fresh = JSON.parse(JSON.stringify(item));
+            if (stateMap.has(item.id)) {
+               const savedItem = stateMap.get(item.id);
+               fresh.srs = savedItem.srs;
+               fresh.learned = savedItem.learned || false; 
+            } else {
+               fresh.srs = {
+                  flashcards: { level: 0, nextReview: 0 },
+                  multiple: { level: 0, nextReview: 0 },
+                  listening: { level: 0, nextReview: 0 },
+                  sentence: { level: 0, nextReview: 0 }
+               };
+               fresh.learned = false;
+            }
+            result.push(fresh);
+          });
+
+          phrases = result;
+          updateLearnedCounter();
+          return;
         }
       } catch (e) {
         console.error('Ошибка чтения localStorage:', e);
       }
-      phrases = JSON.parse(JSON.stringify(baseData));
+      
+      phrases = JSON.parse(JSON.stringify(baseData)).map(p => ({
+        ...p, 
+        srs: {
+            flashcards: { level: 0, nextReview: 0 },
+            multiple: { level: 0, nextReview: 0 },
+            listening: { level: 0, nextReview: 0 },
+            sentence: { level: 0, nextReview: 0 }
+        }, 
+        learned: false
+      }));
       saveState();
     }
 
-    // Сохранение данных
     function saveState() {
       try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(phrases));
+        const toSave = {
+          stats: appStats,
+          phrases: phrases.map(p => ({
+             id: p.id, 
+             srs: p.srs,
+             learned: p.learned
+          }))
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
         updateLearnedCounter();
       } catch (e) {
         console.error('Ошибка записи в localStorage:', e);
