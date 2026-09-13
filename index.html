@@ -810,7 +810,10 @@
 
     function speakTurkish(text, cardId, speed = 'normal', btnElement = null) {
       const isSlow = (speed === 'slow');
-      const speakBtn = btnElement || (cardId ? document.getElementById(`speak-${speed}-${cardId}`) : null) || document.activeElement;
+      let speakBtn = btnElement || (cardId ? document.getElementById(`speak-${speed}-${cardId}`) : null);
+      if (!speakBtn && document.activeElement && document.activeElement.tagName === 'BUTTON') {
+         speakBtn = document.activeElement;
+      }
       
       if (speakBtn && speakBtn.classList) {
         speakBtn.classList.add('speaking', isSlow ? 'text-amber-600' : 'text-sky-600', 'scale-110');
