@@ -354,6 +354,17 @@
       
       <!-- Меню выбора режима -->
       <div id="quizMenu" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div class="relative">
+          <button onclick="startQuiz('pairs')" class="w-full bg-gradient-to-br from-pink-500 to-rose-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+            <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🧩</div>
+            <div>
+              <div class="font-bold text-lg">Найди пару</div>
+              <div class="text-xs text-pink-100 opacity-90">На скорость</div>
+            </div>
+          </button>
+          <button onclick="resetQuizProgress('pairs', 'Найди пару')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
+        </div>
+
         
         <div class="relative">
           <button onclick="startQuiz('flashcards')" class="w-full bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
@@ -530,7 +541,8 @@
                        flashcards: { level: legacyLevel, nextReview: legacyNextReview },
                        multiple: { level: legacyLevel, nextReview: legacyNextReview },
                        listening: { level: legacyLevel, nextReview: legacyNextReview },
-                       sentence: { level: legacyLevel, nextReview: legacyNextReview }
+                       sentence: { level: legacyLevel, nextReview: legacyNextReview },
+                       pairs: { level: legacyLevel, nextReview: legacyNextReview }
                     };
                  }
                  
@@ -550,7 +562,9 @@
                   flashcards: { level: 0, nextReview: 0 },
                   multiple: { level: 0, nextReview: 0 },
                   listening: { level: 0, nextReview: 0 },
-                  sentence: { level: 0, nextReview: 0 }
+                  sentence: { level: 0, nextReview: 0 },
+            pairs: { level: 0, nextReview: 0 },
+                  pairs: { level: 0, nextReview: 0 }
                };
                fresh.learned = false;
             }
@@ -571,7 +585,9 @@
             flashcards: { level: 0, nextReview: 0 },
             multiple: { level: 0, nextReview: 0 },
             listening: { level: 0, nextReview: 0 },
-            sentence: { level: 0, nextReview: 0 }
+            sentence: { level: 0, nextReview: 0 },
+            pairs: { level: 0, nextReview: 0 },
+                  pairs: { level: 0, nextReview: 0 }
         }, 
         learned: false
       }));
@@ -1579,6 +1595,91 @@
     // Теперь безопасно переключаемся на вкладку Тренажера
     switchTab('quiz');
 
+    window.handlePairClick = function(id, type, idx) {
+       if (window.pairsMatched.has(id)) return;
+       
+       const btn = document.getElementById(`pair-btn-${idx}`);
+       
+       if (window.pairsSelected) {
+           if (window.pairsSelected.idx === idx) {
+               btn.classList.remove('border-sky-500', 'bg-sky-50', 'dark:bg-sky-900/30');
+               btn.classList.add('border-slate-200', 'dark:border-slate-700', 'bg-white', 'dark:bg-slate-800');
+               window.pairsSelected = null;
+               return;
+           }
+           
+           const prevBtn = document.getElementById(`pair-btn-${window.pairsSelected.idx}`);
+           
+           if (window.pairsSelected.id === id && window.pairsSelected.type !== type) {
+               // MATCH
+               triggerHaptic('success');
+               window.pairsMatched.add(id);
+               
+               [btn, prevBtn].forEach(b => {
+                   b.classList.remove('border-sky-500', 'bg-sky-50', 'dark:bg-sky-900/30', 'border-slate-200', 'dark:border-slate-700', 'bg-white', 'dark:bg-slate-800');
+                   b.classList.add('border-emerald-500', 'bg-emerald-100', 'text-emerald-800', 'dark:bg-emerald-900/50', 'dark:text-emerald-300', 'opacity-50', 'pointer-events-none', 'scale-[0.98]');
+               });
+               
+               if (isQuizSoundEnabled) {
+                   const trTile = window.pairsTiles.find(t => t.id === id && t.type === 'tr');
+                   speakTurkish(trTile.text.replace(/'/g, "\\'"), null, 'normal', null);
+               }
+               
+               // SRS logic
+               let item = window.pairsTiles.find(t => t.id === id).item;
+               if (item.srs && item.srs['pairs']) {
+                   let srsObj = item.srs['pairs'];
+                   srsObj.level = Math.min(5, (srsObj.level || 0) + 1);
+                   let days = [1, 3, 7, 14, 30][srsObj.level - 1] || 1;
+                   srsObj.nextReview = Date.now() + days * 24 * 60 * 60 * 1000;
+               }
+               item.learned = getAverageLevel(item) >= 4;
+               addReviewProgress();
+               
+               window.pairsSelected = null;
+               
+               if (window.pairsMatched.size === window.currentPairsSet.length) {
+                   setTimeout(() => {
+                       nextQuizItem();
+                   }, 800);
+               }
+           } else {
+               // MISMATCH
+               triggerHaptic('error');
+               [btn, prevBtn].forEach(b => {
+                   b.classList.remove('border-sky-500', 'bg-sky-50', 'dark:bg-sky-900/30', 'border-slate-200', 'dark:border-slate-700');
+                   b.classList.add('border-red-500', 'bg-red-50', 'dark:bg-red-900/30');
+               });
+               
+               // Penalize
+               [id, window.pairsSelected.id].forEach(wrongId => {
+                   let item = window.pairsTiles.find(t => t.id === wrongId).item;
+                   if (item.srs && item.srs['pairs']) {
+                       let srsObj = item.srs['pairs'];
+                       srsObj.level = 0;
+                       srsObj.nextReview = Date.now() + 60 * 60 * 1000;
+                   }
+                   item.learned = getAverageLevel(item) >= 4;
+               });
+               saveState();
+               
+               setTimeout(() => {
+                   [btn, prevBtn].forEach(b => {
+                       b.classList.remove('border-red-500', 'bg-red-50', 'dark:bg-red-900/30');
+                       b.classList.add('border-slate-200', 'dark:border-slate-700', 'bg-white', 'dark:bg-slate-800');
+                   });
+               }, 600);
+               
+               window.pairsSelected = null;
+           }
+       } else {
+           window.pairsSelected = { id, type, idx };
+           btn.classList.remove('border-slate-200', 'dark:border-slate-700', 'bg-white', 'dark:bg-slate-800');
+           btn.classList.add('border-sky-500', 'bg-sky-50', 'dark:bg-sky-900/30');
+           triggerHaptic('light');
+       }
+    };
+
     function startQuiz(mode) {
        quizMode = mode;
        triggerHaptic('light');
@@ -1613,14 +1714,35 @@
 
     function nextQuizItem() {
        if (quizQueue.length === 0) {
-          document.getElementById('quizCardContainer').innerHTML = `
-             <div class="text-5xl mb-4">🎉</div>
-             <h2 class="text-xl font-bold text-slate-800 dark:text-white">Отличная работа!</h2>
-             <p class="text-sm text-slate-500 mt-2 mb-6">Вы завершили эту тренировку.</p>
-             <button onclick="exitQuiz()" class="bg-sky-600 text-white px-8 py-3 rounded-full font-bold shadow-md active:scale-95 transition-transform w-full max-w-[200px]">Завершить</button>
-          `;
-          return;
+           const now = Date.now();
+           let due = phrases.filter(p => p.srs && p.srs[quizMode] && (!p.srs[quizMode].nextReview || p.srs[quizMode].nextReview <= now));
+           
+           if (quizMode === 'sentence') {
+              due = due.filter(p => p.exampleTr && p.exampleRu);
+           }
+           
+           due = due.sort(() => Math.random() - 0.5);
+           quizQueue = due.slice(0, 15);
+           
+           if (quizQueue.length === 0) {
+               let all = quizMode === 'sentence' ? phrases.filter(p => p.exampleTr) : phrases;
+               quizQueue = all.sort(() => Math.random() - 0.5).slice(0, 15);
+           }
        }
+       
+       if (quizMode === 'pairs') {
+           window.currentPairsSet = [];
+           while (window.currentPairsSet.length < 4 && quizQueue.length > 0) {
+               window.currentPairsSet.push(quizQueue.pop());
+           }
+           window.pairsMatched = new Set();
+           window.pairsSelected = null;
+           renderQuizCard();
+       } else {
+           currentQuizItem = quizQueue.pop();
+           renderQuizCard();
+       }
+    }
        currentQuizItem = quizQueue.pop();
        renderQuizCard();
     }
@@ -1653,6 +1775,34 @@
        const container = document.getElementById('quizCardContainer');
        const item = currentQuizItem;
        
+       if (quizMode === 'pairs') {
+           let items = window.currentPairsSet;
+           let tiles = [];
+           items.forEach(item => {
+               tiles.push({ id: item.id, type: 'tr', text: item.tr, item: item });
+               tiles.push({ id: item.id, type: 'ru', text: item.ru, item: item });
+           });
+           tiles = tiles.sort(() => Math.random() - 0.5);
+           
+           let html = `<div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Найдите пары</div>`;
+           html += `<div class="grid grid-cols-2 gap-3 w-full" id="pairsGrid">`;
+           tiles.forEach((tile, idx) => {
+               html += `
+                   <button 
+                       id="pair-btn-${idx}"
+                       onclick="handlePairClick('${tile.id}', '${tile.type}', ${idx})" 
+                       class="pair-tile py-4 px-2 rounded-2xl bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-[13px] sm:text-sm font-semibold text-slate-800 dark:text-slate-100 active:scale-95 transition-all shadow-sm flex items-center justify-center text-center break-words leading-tight min-h-[80px]"
+                   >
+                       ${tile.text}
+                   </button>
+               `;
+           });
+           html += `</div>`;
+           container.innerHTML = html;
+           
+           window.pairsTiles = tiles;
+           return;
+       }
        if (quizMode === 'flashcards') {
           container.innerHTML = `
              <div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Флэш-карточка</div>
