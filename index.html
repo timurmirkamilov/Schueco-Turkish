@@ -99,8 +99,8 @@
 </head>
 <body class="flex flex-col min-h-screen pb-6">
 
-  <!-- ВЕРХНЯЯ ПАНЕЛЬ / ШАПКА -->
-  <header id="mainHeader" class="sticky top-0 z-30 bg-tgSecBg/95 backdrop-blur shadow-sm border-b border-slate-200/70 transition-transform duration-300 ease-in-out">
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ / ШАПКА (скроллится вместе со страницей) -->
+  <header id="mainHeader" class="bg-tgSecBg shadow-sm border-b border-slate-200/70">
     <div class="max-w-xl mx-auto px-4 py-3">
       <div class="flex items-center justify-between">
         <div class="flex items-center space-x-3">
@@ -1180,9 +1180,7 @@
       renderCurrentView();
     });
 
-    // ==================== СКРОЛЛ: СКРЫТИЕ ХЕДЕРА И КНОПКА «НАВЕРХ» ====================
-    let lastScrollY = window.scrollY;
-    const appHeader = document.getElementById('mainHeader');
+    // ==================== СКРОЛЛ: ПЛАВАЮЩАЯ КНОПКА «НАВЕРХ» И БЕСКОНЕЧНАЯ ПОДГРУЗКА ====================
     const scrollTopBtn = document.getElementById('scrollTopBtn');
 
     function scrollToTopPage() {
@@ -1191,28 +1189,13 @@
         top: 0,
         behavior: 'smooth'
       });
-      // Сразу показываем хедер
-      if (appHeader) {
-        appHeader.classList.remove('-translate-y-full');
-      }
     }
 
-    // Слушатель скролла: скрытие хедера, показ кнопки наверх и бесконечная подгрузка
+    // Слушатель скролла: показ кнопки «Наверх» и бесконечная подгрузка
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
 
-      // 1. Скрытие/показ хедера (Скрывать при скролле вниз после 70px, показывать при скролле вверх)
-      if (appHeader) {
-        if (currentScrollY > lastScrollY && currentScrollY > 70) {
-          // Скроллим вниз — скрываем хедер
-          appHeader.classList.add('-translate-y-full');
-        } else if (currentScrollY < lastScrollY) {
-          // Скроллим вверх — возвращаем хедер
-          appHeader.classList.remove('-translate-y-full');
-        }
-      }
-
-      // 2. Плавающая кнопка перемотки в начало
+      // 1. Плавающая кнопка перемотки в начало (появляется после прокрутки вниз)
       if (scrollTopBtn) {
         if (currentScrollY > 260) {
           scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
@@ -1223,9 +1206,7 @@
         }
       }
 
-      lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
-
-      // 3. Бесконечный скролл (Infinite Scroll для комфортного просмотра 1000+ слов)
+      // 2. Бесконечный скролл (Infinite Scroll для комфортного просмотра 1000+ слов)
       if ((window.innerHeight + currentScrollY) >= document.body.offsetHeight - 400) {
         const filtered = getFilteredPhrases();
         if (displayLimit < filtered.length) {
