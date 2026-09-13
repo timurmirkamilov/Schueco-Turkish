@@ -1569,6 +1569,13 @@
                 Показать ответ
              </button>
           `;
+          
+          if (isQuizSoundEnabled) {
+             setTimeout(() => {
+                const btn = document.querySelector('#quizCardContainer button');
+                if (btn) btn.click();
+             }, 300);
+          }
        } 
        else if (quizMode === 'multiple' || quizMode === 'listening') {
           let wrongs = [];
