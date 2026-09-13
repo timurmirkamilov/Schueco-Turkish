@@ -1775,12 +1775,14 @@
        
        if (quizMode === 'pairs') {
            let items = window.currentPairsSet;
+           let trTiles = items.map(item => ({ id: item.id, type: 'tr', text: item.tr, item: item })).sort(() => Math.random() - 0.5);
+           let ruTiles = items.map(item => ({ id: item.id, type: 'ru', text: item.ru, item: item })).sort(() => Math.random() - 0.5);
+           
            let tiles = [];
-           items.forEach(item => {
-               tiles.push({ id: item.id, type: 'tr', text: item.tr, item: item });
-               tiles.push({ id: item.id, type: 'ru', text: item.ru, item: item });
-           });
-           tiles = tiles.sort(() => Math.random() - 0.5);
+           for (let i = 0; i < Math.max(trTiles.length, ruTiles.length); i++) {
+               if (trTiles[i]) tiles.push(trTiles[i]);
+               if (ruTiles[i]) tiles.push(ruTiles[i]);
+           }
            
            let html = `<div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Найдите пары</div>`;
            html += `<div class="grid grid-cols-2 gap-3 w-full" id="pairsGrid">`;
