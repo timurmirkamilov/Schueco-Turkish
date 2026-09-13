@@ -183,51 +183,73 @@
         </div>
       </div>
 
-      <!-- Категории (горизонтальный скролл) -->
-      <div class="flex space-x-1.5 overflow-x-auto pb-1 no-scrollbar text-xs font-medium">
-        <button data-category="all" class="cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-all font-semibold">
-          🌟 Все слова (1000+)
-        </button>
-        <button data-category="all_schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          🏗️ Все Schüco (Цех)
-        </button>
-        <button data-category="quality" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          ⚠️ Контроль качества
-        </button>
-        <button data-category="schueco" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          ⚙️ Профили и фурнитура
-        </button>
-        <button data-category="tools" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          🛠 Станки и инструмент
-        </button>
-        <button data-category="glass" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          🪟 Стеклопакеты
-        </button>
-        <button data-category="inspector" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          📋 С инспектором
-        </button>
-        <button data-category="safety" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          🦺 Охрана труда (İSG)
-        </button>
-        <button data-category="shop_phrases" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          💬 Цеховые диалоги
-        </button>
-        <button data-category="daily_phrases" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          🗣️ Разговорные фразы
-        </button>
-        <button data-category="top_verbs" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          ⚡ Глаголы действий
-        </button>
-        <button data-category="top_nouns" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          📦 Производство и быт
-        </button>
-        <button data-category="top_daily" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          🔢 Базовые и счет
-        </button>
-        <button data-category="top_adj" class="cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all">
-          💬 Прилагательные
-        </button>
-      </div>
+      <!-- Разделы и категории словаря (Аккордеон вместо горизонтального скролла) -->
+      <details id="categoriesAccordion" class="bg-tgSecBg rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs transition-all overflow-hidden group">
+        <summary class="px-4 py-2.5 flex items-center justify-between cursor-pointer list-none select-none hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+          <div class="flex items-center space-x-2 min-w-0 flex-1">
+            <span class="text-xs font-semibold text-tgHint uppercase tracking-wider">Раздел:</span>
+            <span id="selectedCategoryBadge" class="text-xs font-bold text-sky-600 dark:text-sky-400 truncate flex items-center gap-1">
+              🌟 Все слова (1000+)
+            </span>
+          </div>
+          <div class="flex items-center space-x-1.5 text-tgHint text-xs shrink-0 pl-2">
+            <span class="text-[11px] font-medium group-open:hidden">Выбрать</span>
+            <span class="text-[11px] font-medium hidden group-open:inline">Свернуть</span>
+            <svg class="w-4 h-4 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </summary>
+
+        <div class="p-3 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-900/30">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5 text-xs">
+            <button data-category="all" class="cat-pill px-3 py-2 rounded-xl text-left bg-sky-600 text-white font-semibold shadow-xs transition-all flex items-center justify-between">
+              <span class="truncate">🌟 Все слова (1000+)</span>
+              <span class="text-[10px] opacity-80 shrink-0 ml-1">1120</span>
+            </button>
+            <button data-category="all_schueco" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">🏗️ Все Schüco (Цех)</span>
+              <span class="text-[10px] text-tgHint shrink-0 ml-1">82</span>
+            </button>
+            <button data-category="quality" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">⚠️ Контроль качества</span>
+            </button>
+            <button data-category="schueco" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">⚙️ Профили и фурнитура</span>
+            </button>
+            <button data-category="tools" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">🛠 Станки и инструмент</span>
+            </button>
+            <button data-category="glass" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">🪟 Стеклопакеты</span>
+            </button>
+            <button data-category="inspector" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">📋 С инспектором</span>
+            </button>
+            <button data-category="safety" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">🦺 Охрана труда (İSG)</span>
+            </button>
+            <button data-category="shop_phrases" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">💬 Цеховые диалоги</span>
+            </button>
+            <button data-category="daily_phrases" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">🗣️ Разговорные фразы</span>
+            </button>
+            <button data-category="top_verbs" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">⚡ Глаголы действий</span>
+            </button>
+            <button data-category="top_nouns" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">📦 Производство и быт</span>
+            </button>
+            <button data-category="top_daily" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">🔢 Базовые и счет</span>
+            </button>
+            <button data-category="top_adj" class="cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between">
+              <span class="truncate">💬 Прилагательные</span>
+            </button>
+          </div>
+        </div>
+      </details>
     </section>
 
     <!-- ==================== ЭКРАН 1: ОБУЧЕНИЕ / ЦЕХОВОЙ СЛОВАРЬ ==================== -->
@@ -652,64 +674,77 @@
       const cardsHtml = displayed.map((item, index) => {
         const isLearned = item.learned;
         const isSchueco = item.isSchueco;
-        // Первые 3 карточки открыты по умолчанию, остальные свернуты для удобного и компактного скролла
-        const isOpen = (index < 3 && searchQuery.trim() === '') || searchQuery.trim() !== '' ? 'open' : '';
         return `
-          <details ${isOpen} class="word-accordion bg-tgSecBg rounded-3xl shadow-card hover:shadow-card-hover border ${
+          <div class="bg-tgSecBg rounded-3xl p-4 sm:p-5 shadow-card hover:shadow-card-hover border ${
             isLearned 
               ? 'border-emerald-500/40 bg-gradient-to-b from-emerald-50/25 to-tgSecBg dark:from-emerald-950/20' 
               : 'border-slate-200/90 dark:border-slate-800/90'
-          } transition-all duration-200 relative overflow-hidden group">
+          } transition-all duration-300 flex flex-col justify-between space-y-3.5 relative overflow-hidden group">
             
             ${isLearned ? `
-            <div class="absolute top-0 right-0 w-14 h-14 pointer-events-none overflow-hidden z-10">
-              <div class="bg-emerald-500 text-white text-[8px] font-extrabold py-0.5 text-center transform rotate-45 translate-x-4 translate-y-2 shadow-xs">
+            <div class="absolute top-0 right-0 w-16 h-16 pointer-events-none overflow-hidden">
+              <div class="bg-emerald-500 text-white text-[9px] font-extrabold py-0.5 text-center transform rotate-45 translate-x-4 translate-y-2 shadow-xs">
                 ✓
               </div>
             </div>
             ` : ''}
 
-            <!-- Шапка аккордеона: Видна всегда (Турецкое слово + Русский перевод + Кнопки быстрой озвучки) -->
-            <summary class="p-3.5 sm:p-4 cursor-pointer list-none select-none flex items-start justify-between gap-2.5">
-              <div class="min-w-0 flex-1 space-y-1">
-                <!-- Категория и статус -->
-                <div class="flex items-center gap-2 flex-wrap">
-                  <span class="text-[10px] font-bold tracking-wide px-2.5 py-0.5 rounded-full ${
-                    isSchueco 
-                      ? 'bg-sky-50 text-sky-700 dark:bg-sky-950/60 dark:text-sky-300 border border-sky-200 dark:border-sky-800/60' 
-                      : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 border border-slate-200/50 dark:border-slate-700/50'
-                  }">
-                    ${isSchueco ? '🏗️ ' : ''}${item.categoryLabel}
-                  </span>
+            <!-- Верхняя строка карточки: Категория и статус -->
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[11px] font-bold tracking-wide px-3 py-1 rounded-full ${
+                isSchueco 
+                  ? 'bg-sky-50 text-sky-700 dark:bg-sky-950/60 dark:text-sky-300 border border-sky-200 dark:border-sky-800/60' 
+                  : 'bg-slate-100/80 text-slate-600 dark:bg-slate-800/80 dark:text-slate-300 border border-slate-200/50 dark:border-slate-700/50'
+              }">
+                ${isSchueco ? '🏗️ ' : ''}${item.categoryLabel}
+              </span>
 
-                  ${isLearned ? `
-                  <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-200/60">
-                    Изучено
-                  </span>
-                  ` : ''}
+              <button 
+                onclick="toggleLearnedStatus('${item.id}')"
+                class="flex items-center space-x-1.5 text-xs px-3 py-1 rounded-full border transition-all active:scale-95 ${
+                  isLearned 
+                    ? 'border-emerald-500/80 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 font-bold shadow-xs' 
+                    : 'border-slate-300/80 text-tgHint hover:border-slate-400 dark:border-slate-700 font-medium'
+                }"
+              >
+                <span>${isLearned ? '✓ Изучено' : '○ В процессе'}</span>
+              </button>
+            </div>
+
+            <!-- Турецкая фраза и произношение -->
+            <div class="flex items-start justify-between gap-3">
+              <div class="space-y-1.5 min-w-0 flex-1">
+                <div class="text-xl sm:text-2xl font-extrabold font-heading text-tgText tracking-tight leading-snug">
+                  ${item.tr}
                 </div>
-
-                <!-- Основная пара: Турецкий + Русский -->
-                <div class="pt-0.5">
-                  <div class="text-base sm:text-lg font-extrabold font-heading text-tgText tracking-tight leading-snug">
-                    ${item.tr}
-                  </div>
-                  <div class="text-xs sm:text-sm font-semibold text-tgText/85 leading-snug">
+                <div class="text-xs font-semibold text-sky-600 dark:text-sky-400 font-mono tracking-wide">
+                  [ ${item.phonetic} ]
+                </div>
+                
+                <!-- Переводы (RU + UZ) -->
+                <div class="pt-1.5 space-y-1">
+                  <div class="text-sm sm:text-base font-semibold text-tgText/95 leading-relaxed">
                     ${item.ru}
                   </div>
+                  ${item.uz ? `
+                  <div class="text-xs font-medium text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 bg-emerald-50/70 dark:bg-emerald-950/40 px-2.5 py-1 rounded-xl w-fit border border-emerald-200/40 dark:border-emerald-900/40">
+                    <span class="text-xs">🇺🇿</span>
+                    <span class="font-semibold">${item.uz}</span>
+                  </div>
+                  ` : ''}
                 </div>
               </div>
 
-              <!-- Правый блок: Озвучка + Индикатор аккордеона -->
-              <div class="flex items-center gap-1.5 shrink-0 pt-0.5">
+              <!-- Кнопки озвучки: Обычная (Динамик) и Медленная (Черепашка) -->
+              <div class="flex items-center gap-2 shrink-0 pt-0.5">
                 <!-- Обычная скорость -->
                 <button 
                   id="speak-normal-${item.id}"
-                  onclick="event.stopPropagation(); speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'normal', this)" 
-                  title="Обычная скорость"
-                  class="w-9 h-9 rounded-xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/60 dark:hover:bg-sky-900/60 text-sky-600 dark:text-sky-300 flex items-center justify-center active:scale-90 transition-all shadow-xs border border-sky-100 dark:border-sky-900/40"
+                  onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'normal', this)" 
+                  title="Обычная скорость речи"
+                  class="w-11 h-11 rounded-2xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/60 dark:hover:bg-sky-900/60 text-sky-600 dark:text-sky-300 flex items-center justify-center active:scale-90 transition-all shadow-xs border border-sky-100 dark:border-sky-900/40"
                 >
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-2.23l-5.5 4.5h-4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h4l5.5 4.5c.67.55 1.5.07 1.5-.8v-19.4c0-.87-.83-1.35-1.5-.8zM14 8.86v6.28c1.3-.61 2-1.89 2-3.14s-.7-2.53-2-3.14z"/>
                   </svg>
                 </button>
@@ -717,87 +752,41 @@
                 <!-- Медленная скорость (Черепашка) -->
                 <button 
                   id="speak-slow-${item.id}"
-                  onclick="event.stopPropagation(); speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'slow', this)" 
-                  title="Медленная скорость"
-                  class="w-9 h-9 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-600 dark:text-amber-300 flex items-center justify-center active:scale-90 transition-all shadow-xs text-sm border border-amber-100 dark:border-amber-900/40"
+                  onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', '${item.id}', 'slow', this)" 
+                  title="Медленная скорость речи (по слогам)"
+                  class="w-11 h-11 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-600 dark:text-amber-300 flex items-center justify-center active:scale-90 transition-all shadow-xs text-lg border border-amber-100 dark:border-amber-900/40"
                 >
                   🐢
                 </button>
-
-                <!-- Стрелочка раскрытия аккордеона -->
-                <div class="w-7 h-7 rounded-lg flex items-center justify-center text-tgHint group-open:rotate-180 transition-transform duration-200">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </div>
               </div>
-            </summary>
-
-            <!-- Раскрывающаяся часть аккордеона: Транскрипция, Узбекский перевод и Управление -->
-            <div class="px-3.5 pb-3.5 sm:px-4 sm:pb-4 border-t border-slate-100 dark:border-slate-800/80 pt-3 space-y-3">
-              
-              <!-- Транскрипция и Узбекский перевод -->
-              <div class="space-y-2">
-                <div class="flex items-center gap-2">
-                  <span class="text-[11px] text-tgHint font-medium">Произношение:</span>
-                  <span class="text-xs font-bold text-sky-600 dark:text-sky-400 font-mono tracking-wide bg-sky-50/70 dark:bg-sky-950/40 px-2 py-0.5 rounded-lg border border-sky-200/40 dark:border-sky-900/40">
-                    [ ${item.phonetic} ]
-                  </span>
-                </div>
-
-                ${item.uz ? `
-                <div class="flex items-center gap-2">
-                  <span class="text-[11px] text-tgHint font-medium">O'zbek tili:</span>
-                  <div class="text-xs font-semibold text-emerald-700 dark:text-emerald-300 flex items-center gap-1.5 bg-emerald-50 dark:bg-emerald-950/50 px-2.5 py-1 rounded-xl border border-emerald-200/50 dark:border-emerald-900/40">
-                    <span>🇺🇿</span>
-                    <span>${item.uz}</span>
-                  </div>
-                </div>
-                ` : ''}
-              </div>
-
-              <!-- Кнопки управления статусом и очередью внутри раскрытой карточки -->
-              <div class="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap items-center gap-2">
-                <!-- Кнопка Изучено / В процессе -->
-                <button 
-                  onclick="toggleLearnedStatus('${item.id}')"
-                  class="flex-1 min-w-[130px] py-2 px-3 rounded-xl border text-xs font-semibold transition-all active:scale-95 flex items-center justify-center space-x-1.5 ${
-                    isLearned 
-                      ? 'border-emerald-500/80 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 shadow-xs' 
-                      : 'border-slate-300 dark:border-slate-700 text-tgText hover:bg-slate-100 dark:hover:bg-slate-800'
-                  }"
-                >
-                  <span>${isLearned ? '✓ Изучено' : '○ Отметить изученным'}</span>
-                </button>
-
-                <!-- В начало очереди -->
-                <button 
-                  onclick="moveToBeginningOfQueue('${item.id}')" 
-                  class="py-2 px-3 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-tgText font-semibold text-xs flex items-center justify-center space-x-1 active:scale-95 transition-all"
-                  title="Переместить в самый верх"
-                >
-                  <svg class="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-                  </svg>
-                  <span>В начало</span>
-                </button>
-
-                <!-- В конец очереди -->
-                <button 
-                  onclick="moveToEndOfQueue('${item.id}')" 
-                  class="py-2 px-3 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-tgHint hover:text-tgText font-semibold text-xs flex items-center justify-center space-x-1 active:scale-95 transition-all"
-                  title="Переместить в самый конец"
-                >
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-                  <span>В конец</span>
-                </button>
-              </div>
-
             </div>
 
-          </details>
+            <!-- Быстрые действия внизу карточки (Перемещение очереди) -->
+            <div class="pt-2.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs gap-2">
+              <button 
+                onclick="moveToBeginningOfQueue('${item.id}')" 
+                class="flex-1 py-2 px-3 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-tgText font-semibold flex items-center justify-center space-x-1.5 active:scale-98 transition-all"
+                title="Переместить в самый верх списка"
+              >
+                <svg class="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                </svg>
+                <span>В начало</span>
+              </button>
+
+              <button 
+                onclick="moveToEndOfQueue('${item.id}')" 
+                class="flex-1 py-2 px-3 rounded-xl bg-slate-100/80 hover:bg-slate-200/80 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-tgHint hover:text-tgText font-semibold flex items-center justify-center space-x-1.5 active:scale-98 transition-all"
+                title="Переместить в самый конец списка"
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+                <span>В конец</span>
+              </button>
+            </div>
+
+          </div>
         `;
       }).join('');
 
@@ -1109,20 +1098,50 @@
     tabGrammarBtn.addEventListener('click', () => switchTab('grammar'));
     tabManageBtn.addEventListener('click', () => switchTab('manage'));
 
-    // Выбор категории
+    // Выбор категории (Аккордеон разделов)
+    const categoriesAccordion = document.getElementById('categoriesAccordion');
+    const selectedCategoryBadge = document.getElementById('selectedCategoryBadge');
+
+    const CATEGORY_NAMES = {
+      'all': '🌟 Все слова (1000+)',
+      'all_schueco': '🏗️ Все Schüco (Цех)',
+      'quality': '⚠️ Контроль качества',
+      'schueco': '⚙️ Профили и фурнитура',
+      'tools': '🛠 Станки и инструмент',
+      'glass': '🪟 Стеклопакеты',
+      'inspector': '📋 С инспектором',
+      'safety': '🦺 Охрана труда (İSG)',
+      'shop_phrases': '💬 Цеховые диалоги',
+      'daily_phrases': '🗣️ Разговорные фразы',
+      'top_verbs': '⚡ Глаголы действий',
+      'top_nouns': '📦 Производство и быт',
+      'top_daily': '🔢 Базовые и счет',
+      'top_adj': '💬 Прилагательные'
+    };
+
     document.querySelectorAll('.cat-pill').forEach(btn => {
       btn.addEventListener('click', () => {
         selectedCategory = btn.dataset.category;
         displayLimit = 35; // Сброс пагинации к началу
         triggerHaptic('light');
 
+        if (selectedCategoryBadge) {
+          selectedCategoryBadge.textContent = CATEGORY_NAMES[selectedCategory] || selectedCategory;
+        }
+
         document.querySelectorAll('.cat-pill').forEach(b => {
-          if (b.dataset.category === selectedCategory) {
-            b.className = "cat-pill px-3 py-1.5 rounded-full bg-sky-600 text-white whitespace-nowrap shadow-xs transition-all font-semibold";
+          const isSelected = (b.dataset.category === selectedCategory);
+          if (isSelected) {
+            b.className = "cat-pill px-3 py-2 rounded-xl text-left bg-sky-600 text-white font-semibold shadow-xs transition-all flex items-center justify-between";
           } else {
-            b.className = "cat-pill px-3 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 whitespace-nowrap hover:text-tgText transition-all";
+            b.className = "cat-pill px-3 py-2 rounded-xl text-left bg-tgSecBg hover:bg-slate-200/70 dark:hover:bg-slate-800 text-tgText border border-slate-200/80 dark:border-slate-700/80 transition-all flex items-center justify-between";
           }
         });
+
+        // Сворачиваем аккордеон разделов после выбора для удобства просмотра слов
+        if (categoriesAccordion) {
+          categoriesAccordion.removeAttribute('open');
+        }
 
         renderCurrentView();
       });
