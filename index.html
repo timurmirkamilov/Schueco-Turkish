@@ -223,7 +223,7 @@
 
       
       <!-- Режим зубрежки -->
-      <div class="flex items-center justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 shadow-xs">
+      <div id="blurToggleContainer" class="flex items-center justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 shadow-xs">
         <div class="flex items-center space-x-2">
           <span class="text-lg">🧠</span>
           <div class="space-y-0.5">
@@ -1283,15 +1283,19 @@
       tabLearnBtn.className = TAB_INACTIVE;
       tabGrammarBtn.className = TAB_INACTIVE;
       tabManageBtn.className = TAB_INACTIVE;
+      
+      const blurToggleContainer = document.getElementById('blurToggleContainer');
+      if (blurToggleContainer) blurToggleContainer.classList.add('hidden');
 
       if (tab === 'learn') {
         screenLearn.classList.remove('hidden');
         tabLearnBtn.className = TAB_ACTIVE;
         if (filterSection) filterSection.classList.remove('hidden');
+        if (blurToggleContainer) blurToggleContainer.classList.remove('hidden');
       } else if (tab === 'grammar') {
         screenGrammar.classList.remove('hidden');
         tabGrammarBtn.className = TAB_ACTIVE;
-        if (filterSection) filterSection.classList.add('hidden'); // На вкладке правил скрываем поисковый фильтр слов
+        if (filterSection) filterSection.classList.add('hidden'); // В грамматике скрываем секцию фильтров слов
       } else {
         screenManage.classList.remove('hidden');
         tabManageBtn.className = TAB_ACTIVE;
