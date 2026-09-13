@@ -345,12 +345,9 @@
       });
     }
 
-    // Тактильная отдача Telegram (Haptic Feedback)
+    // Тактильная отдача Telegram (отключена по запросу)
     function triggerHaptic(type = 'light') {
-      if (tg?.HapticFeedback) {
-        if (type === 'success') tg.HapticFeedback.notificationOccurred('success');
-        else tg.HapticFeedback.impactOccurred(type);
-      }
+      // Отключено
     }
 
     // Исходная база данных (Schüco 80+ профильных терминов + Топ 1000 частых слов из words.js)
