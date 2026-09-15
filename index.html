@@ -1826,6 +1826,18 @@
            
            const prevBtn = document.getElementById(`pair-btn-${window.pairsSelected.idx}`);
            
+           if (window.pairsSelected.type === type) {
+               prevBtn.classList.remove('border-sky-500', 'bg-sky-50', 'dark:bg-sky-900/30');
+               prevBtn.classList.add('border-slate-200', 'dark:border-slate-700', 'bg-white', 'dark:bg-slate-800');
+               
+               btn.classList.remove('border-slate-200', 'dark:border-slate-700', 'bg-white', 'dark:bg-slate-800');
+               btn.classList.add('border-sky-500', 'bg-sky-50', 'dark:bg-sky-900/30');
+               
+               window.pairsSelected = { id, type, idx };
+               triggerHaptic('light');
+               return;
+           }
+           
            if (window.pairsSelected.id === id && window.pairsSelected.type !== type) {
                // MATCH
                triggerHaptic('success');
@@ -1949,7 +1961,12 @@
        
        if (quizMode === 'pairs') {
            window.currentPairsSet = [];
-           while (window.currentPairsSet.length < 4 && quizQueue.length > 0) {
+           while (window.currentPairsSet.length < 4) {
+               if (quizQueue.length === 0) {
+                   // Refill quizQueue with random words if empty, so we always have 4 cards
+                   let all = phrases.filter(p => !window.currentPairsSet.some(c => c.id === p.id));
+                   quizQueue = all.sort(() => Math.random() - 0.5).slice(0, 15);
+               }
                window.currentPairsSet.push(quizQueue.pop());
            }
            window.pairsMatched = new Set();
