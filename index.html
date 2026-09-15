@@ -10,6 +10,9 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
   <!-- База данных: Профильный Schüco + Топ 1000 слов -->
+  
+  <!-- Данные: Диалоги -->
+  <script src="dialogs.js"></script>
   <script src="words.js"></script>
 
   <!-- База данных: Правила и грамматика турецкого языка -->
@@ -2273,100 +2276,7 @@
     }
 
 
-    const DIALOGS = [
-      {
-         title: "Разговор с мастером",
-         subtitle: "Обсуждение задачи и сроков",
-         icon: "👨‍🔧",
-         messages: [
-           { role: "other", tr: "Kolay gelsin. Profil montajı ne zaman biter?", ru: "Бог в помощь. Когда закончится монтаж профиля?" },
-           { role: "me", tr: "Sağ olun. Öğleden sonra bitirmeyi planlıyorum.", ru: "Спасибо. Планирую закончить после обеда." },
-           { role: "other", tr: "Tamam, acele etme ama dikkatli ol. Ölçüleri kontrol ettin mi?", ru: "Хорошо, не торопись, но будь внимателен. Размеры проверил?" },
-           { role: "me", tr: "Evet usta, her şey projeye uygun.", ru: "Да, мастер, всё по проекту." }
-         ]
-      },
-      {
-         title: "На складе",
-         subtitle: "Поиск нужного профиля",
-         icon: "📦",
-         messages: [
-           { role: "me", tr: "Merhaba, bana Schüco AWS 75.SI pencere profili lazım.", ru: "Здравствуйте, мне нужен оконный профиль Schüco AWS 75.SI." },
-           { role: "other", tr: "Merhaba. Kaç metre lazım?", ru: "Здравствуйте. Сколько метров нужно?" },
-           { role: "me", tr: "İki boy (yaklaşık 12 metre) yeterli olacak.", ru: "Двух хлыстов (около 12 метров) будет достаточно." },
-           { role: "other", tr: "Tamam, depo 3'te sol tarafta bulabilirsin.", ru: "Хорошо, можешь найти на складе 3 с левой стороны." }
-         ]
-      },
-      {
-         title: "В столовой (Перерыв)",
-         subtitle: "Бытовой разговор с коллегой",
-         icon: "☕",
-         messages: [
-           { role: "other", tr: "Çay molası! Çay içer misin?", ru: "Перерыв на чай! Будешь пить чай?" },
-           { role: "me", tr: "Evet, lütfen. Şekersiz olsun.", ru: "Да, пожалуйста. Без сахара." },
-           { role: "other", tr: "Bugün işler çok yoğun, değil mi?", ru: "Сегодня работы очень много, не так ли?" },
-           { role: "me", tr: "Evet, siparişler birikti. Ama hallederiz.", ru: "Да, заказы накопились. Но мы справимся." }
-         ]
-      }
-,
-
-      {
-         title: "Проверка качества (КК)",
-         subtitle: "Осмотр готовой конструкции",
-         icon: "🔍",
-         messages: [
-           { role: "other", tr: "Bu çerçevenin kaynakları nasıl oldu? Kontrol ettin mi?", ru: "Как получились сварные швы этой рамы? Ты проверил?" },
-           { role: "me", tr: "Evet, köşeleri temizledim ve gönyesini ölçtüm. Sorun yok.", ru: "Да, я зачистил углы и измерил диагонали (угольник). Проблем нет." },
-           { role: "other", tr: "Peki ya fitiller? Tam oturmuş mu?", ru: "А как насчет уплотнителей? Они плотно сели?" },
-           { role: "me", tr: "Fitilleri taktım, hiçbir boşluk kalmadı.", ru: "Я установил уплотнители, никаких зазоров не осталось." }
-         ]
-      },
-      {
-         title: "Проблема с оборудованием",
-         subtitle: "Станок не работает",
-         icon: "⚙️",
-         messages: [
-           { role: "me", tr: "Usta, kesim motorunda bir gariplik var. Ses yapıyor.", ru: "Мастер, с мотором резки что-то не так. Он шумит." },
-           { role: "other", tr: "Nasıl bir ses? Sürtünme sesi mi?", ru: "Какой звук? Звук трения?" },
-           { role: "me", tr: "Evet, sanki bıçak zorlanıyor gibi. Makineyi durdurdum.", ru: "Да, как будто диск (нож) идет с трудом. Я остановил станок." },
-           { role: "other", tr: "İyi yapmışsın. Fişini çek, teknik servise haber vereyim.", ru: "Хорошо сделал. Вытащи из розетки, я сообщу в сервисную службу." }
-         ]
-      },
-      {
-         title: "Запрос отгула",
-         subtitle: "Разговор с бригадиром",
-         icon: "🗓️",
-         messages: [
-           { role: "me", tr: "Şefim, müsaitseniz bir şey sorabilir miyim?", ru: "Шеф, если вы свободны, могу я кое-что спросить?" },
-           { role: "other", tr: "Tabii, dinliyorum. Sorun nedir?", ru: "Конечно, слушаю. В чем дело?" },
-           { role: "me", tr: "Yarın öğleden sonra hastaneye gitmem gerekiyor. İzin alabilir miyim?", ru: "Завтра после обеда мне нужно пойти в больницу. Могу я взять отгул?" },
-           { role: "other", tr: "Tamam, ama sabahki sevkiyatı bitirmen lazım. Sonra çıkabilirsin.", ru: "Хорошо, но тебе нужно закончить утреннюю отгрузку. Потом можешь идти." },
-           { role: "me", tr: "Çok teşekkür ederim. Sabah erkenden bitiririm.", ru: "Большое спасибо. Я закончу всё рано утром." }
-         ]
-      },
-      {
-         title: "Разгрузка материалов",
-         subtitle: "Приехал грузовик с профилем",
-         icon: "🚚",
-         messages: [
-           { role: "other", tr: "Kamyon geldi! Forklifti getirin, profilleri indirelim.", ru: "Грузовик приехал! Несите вилочный погрузчик, будем спускать профили." },
-           { role: "me", tr: "Forklift şu an meşgul, palet taşıyor. Beş dakika sürer.", ru: "Погрузчик сейчас занят, перевозит поддоны. Займет пять минут." },
-           { role: "other", tr: "Tamam, o zaman önce el arabasıyla aksesuarları taşıyalım.", ru: "Ладно, тогда давай сначала перенесем фурнитуру (аксессуары) на тележке." },
-           { role: "me", tr: "Anlaşıldı, hemen başlıyorum.", ru: "Понял, немедленно начинаю." }
-         ]
-      },
-      {
-         title: "Техника безопасности",
-         subtitle: "Рабочий инструктаж",
-         icon: "🦺",
-         messages: [
-           { role: "other", tr: "Eldivensiz ve gözlüksüz kesim yapmıyoruz, değil mi?", ru: "Мы ведь не режем без перчаток и очков, верно?" },
-           { role: "me", tr: "Haklısınız usta, gözlüğüm masada kalmış. Hemen alıyorum.", ru: "Вы правы, мастер, мои очки остались на столе. Сейчас же возьму." },
-           { role: "other", tr: "İş güvenliği her şeyden önemli. Aceleye gerek yok.", ru: "Безопасность труда важнее всего. Спешить не нужно." },
-           { role: "me", tr: "Kesinlikle haklısınız. Bir daha unutmam.", ru: "Вы абсолютно правы. Больше не забуду." }
-         ]
-      }
-    ];
-
+    const DIALOGS = window.SCHUECO_DIALOGS || [];
     let currentDialogIndex = null;
     let dialogPlaybackTimeout = null;
     let isDialogPlaying = false;
