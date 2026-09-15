@@ -217,7 +217,7 @@
     <!-- ФИЛЬТРЫ И ПОИСК -->
     <section id="filterSection" class="space-y-2.5">
       <!-- Поиск -->
-      <div class="flex gap-2">
+      <div id="searchContainer" class="flex gap-2">
         <div class="relative flex-1">
           <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
             <svg class="w-4 h-4 text-sky-500/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1589,19 +1589,23 @@
       const blurToggleContainer = document.getElementById('blurToggleContainer');
       if (blurToggleContainer) blurToggleContainer.classList.add('hidden');
 
+const searchContainer = document.getElementById('searchContainer');
+      
       if (tab === 'learn') {
         screenLearn.classList.remove('hidden');
         tabLearnBtn.className = TAB_ACTIVE;
         if (filterSection) filterSection.classList.remove('hidden');
         if (blurToggleContainer) blurToggleContainer.classList.remove('hidden');
+        if (searchContainer) searchContainer.classList.remove('hidden');
       } else if (tab === 'grammar') {
         screenGrammar.classList.remove('hidden');
         tabGrammarBtn.className = TAB_ACTIVE;
-        if (filterSection) filterSection.classList.add('hidden'); // В грамматике скрываем секцию фильтров слов
+        if (filterSection) filterSection.classList.add('hidden'); // прячем фильтры
       } else if (tab === 'manage') {
         screenManage.classList.remove('hidden');
         tabManageBtn.className = TAB_ACTIVE;
         if (filterSection) filterSection.classList.remove('hidden');
+        if (searchContainer) searchContainer.classList.remove('hidden');
       }
       
       renderCurrentView();
@@ -1787,6 +1791,8 @@
           
           const blurToggleContainer = document.getElementById('blurToggleContainer');
           if (blurToggleContainer) blurToggleContainer.classList.add('hidden');
+          const searchContainer = document.getElementById('searchContainer');
+          if (searchContainer) searchContainer.classList.add('hidden');
           screenLearn.classList.add('hidden');
       screenGrammar.classList.add('hidden');
       screenManage.classList.add('hidden');
