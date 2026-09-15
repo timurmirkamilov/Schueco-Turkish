@@ -351,7 +351,22 @@
     <!-- ==================== ЭКРАН 4: ТРЕНАЖЕР ==================== -->
     <div id="screenQuiz" class="hidden space-y-4">
       
-      <!-- Меню выбора режима -->
+      <!-- Visual Statistics Dashboard -->
+      <div id="visualStatsDashboard" class="bg-white dark:bg-slate-800 rounded-3xl p-5 shadow-sm border border-slate-100 dark:border-slate-700 mb-2">
+         <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
+            📊 Мой словарный запас
+         </h2>
+         
+         <div class="w-full h-3 bg-slate-100 dark:bg-slate-700 rounded-full mb-3 flex overflow-hidden" id="statsProgressBar">
+            <!-- Populated by JS -->
+         </div>
+         
+         <div class="grid grid-cols-3 gap-2 text-center" id="statsDetails">
+            <!-- Populated by JS -->
+         </div>
+      </div>
+      
+      <!-- Грид выбора режима -->
       <div id="quizMenu" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div class="relative">
           <button onclick="startQuiz('pairs')" class="w-full bg-gradient-to-br from-pink-500 to-rose-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
@@ -696,8 +711,57 @@
         let pct = Math.min(100, Math.round((appStats.reviewedToday / appStats.dailyGoal) * 100));
         barEl.style.width = `${pct}%`;
       }
+      if (typeof updateVisualStats === 'function') updateVisualStats();
     }
 
+
+    function updateVisualStats() {
+       const dashboard = document.getElementById('visualStatsDashboard');
+       if (!dashboard) return;
+       
+       let learnedCount = 0; 
+       let learningCount = 0;
+       let newCount = 0; 
+       
+       phrases.forEach(p => {
+          let avg = getAverageLevel(p);
+          if (avg >= 4) {
+             learnedCount++;
+          } else if (avg >= 1) {
+             learningCount++;
+          } else {
+             newCount++;
+          }
+       });
+       
+       const total = phrases.length || 1;
+       const pLearned = Math.round((learnedCount / total) * 100) || 0;
+       const pLearning = Math.round((learningCount / total) * 100) || 0;
+       const pNew = 100 - pLearned - pLearning;
+       
+       const barHtml = `
+          <div style="width: ${pLearned}%" class="bg-emerald-500 transition-all duration-500"></div>
+          <div style="width: ${pLearning}%" class="bg-amber-400 transition-all duration-500"></div>
+          <div style="width: ${pNew}%" class="bg-slate-200 dark:bg-slate-700 transition-all duration-500"></div>
+       `;
+       document.getElementById('statsProgressBar').innerHTML = barHtml;
+       
+       const detailsHtml = `
+          <div class="flex flex-col">
+             <span class="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400">Выучено</span>
+             <span class="text-lg font-black text-slate-800 dark:text-slate-100">${learnedCount}</span>
+          </div>
+          <div class="flex flex-col border-l border-r border-slate-100 dark:border-slate-700">
+             <span class="text-[10px] uppercase font-bold text-amber-500 dark:text-amber-400">Учу</span>
+             <span class="text-lg font-black text-slate-800 dark:text-slate-100">${learningCount}</span>
+          </div>
+          <div class="flex flex-col">
+             <span class="text-[10px] uppercase font-bold text-slate-400">Новые</span>
+             <span class="text-lg font-black text-slate-800 dark:text-slate-100">${newCount}</span>
+          </div>
+       `;
+       document.getElementById('statsDetails').innerHTML = detailsHtml;
+    }
 
     function getAverageLevel(item) {
        if (!item.srs) return 0;
