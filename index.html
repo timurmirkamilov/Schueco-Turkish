@@ -641,29 +641,38 @@
         const yesterdayStr = `${yesterday.getFullYear()}-${yesterday.getMonth() + 1}-${yesterday.getDate()}`;
         
         if (appStats.lastActiveDate === yesterdayStr) {
-          // Продолжает стрик (не обнуляем)
+          // Keep streak intact, will increment upon first review today
         } else if (appStats.lastActiveDate) {
+          // Streak broken
           appStats.streak = 0;
-          appStats.reviewedToday = 0;
-        } else {
-           appStats.reviewedToday = 0;
         }
+        
+        // New day, reset reviews counter. We intentionally leave lastActiveDate as is, 
+        // so addReviewProgress can detect it's the first review of the day and increment the streak.
+        appStats.reviewedToday = 0;
       }
     }
 
     function addReviewProgress() {
+      checkStreak(); // Ensure checks are made
       const today = getTodayStr();
+      
+      // If lastActiveDate is not today, it means this is the very first review of the day!
       if (appStats.lastActiveDate !== today) {
-        if (appStats.reviewedToday === 0) {
-           appStats.streak += 1;
-        }
-        appStats.lastActiveDate = today;
-        appStats.reviewedToday = 0;
+         appStats.streak = (appStats.streak || 0) + 1;
+         appStats.lastActiveDate = today;
+         appStats.reviewedToday = 0;
       }
+      
       appStats.reviewedToday += 1;
       saveState();
+      
+      // Force UI update
+      if (typeof updateLearnedCounter === 'function') {
+         updateLearnedCounter();
+      }
     }
-    
+
     function updateLearnedCounter() {
       checkStreak();
       const streakEl = document.getElementById('streakCounter');
