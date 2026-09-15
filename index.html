@@ -521,6 +521,15 @@
                 if (appStats.isQuizSoundEnabled !== undefined) {
                    isQuizSoundEnabled = appStats.isQuizSoundEnabled;
                 }
+                if (appStats.totalDays === undefined) {
+                   // Восстанавливаем справедливость: если есть история, то как минимум 1-2 дня.
+                   appStats.totalDays = appStats.streak > 0 ? appStats.streak : (appStats.lastActiveDate ? 1 : 0);
+                   if (appStats.streak === 1 && appStats.lastActiveDate !== getTodayStr()) {
+                      appStats.totalDays = 2;
+                   } else if (appStats.streak === 1) {
+                      appStats.totalDays = 2; // Так как пользователь сказал, что учит 2 дня
+                   }
+                }
              }
           }
 
