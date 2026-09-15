@@ -737,18 +737,23 @@
 
     // ==================== ОЗВУЧКА (SpeechSynthesis + Надежный Audio Fallback) ====================
     let turkishVoice = null;
+    let russianVoice = null;
     const globalAudio = new Audio();
 
     function initVoices() {
-      if ('speechSynthesis' in window && window.speechSynthesis) {
-        try {
-          const voices = window.speechSynthesis.getVoices() || [];
-          turkishVoice = voices.find(v => {
-            const l = (v.lang || '').toLowerCase().replace('_', '-');
-            return l === 'tr' || l.startsWith('tr-');
-          }) || null;
-        } catch (e) {}
-      }
+      if (typeof speechSynthesis === 'undefined') return;
+      const voices = speechSynthesis.getVoices();
+      
+      voices.forEach(v => {
+        if (v.lang.startsWith('tr') && v.name.toLowerCase().includes('yeld')) {
+          turkishVoice = v;
+        } else if (v.lang.startsWith('tr') && !turkishVoice) {
+          turkishVoice = v;
+        }
+        if (v.lang.startsWith('ru') && !russianVoice) {
+          russianVoice = v;
+        }
+      });
     }
 
     if ('speechSynthesis' in window && window.speechSynthesis) {
@@ -772,7 +777,8 @@
     document.addEventListener('touchstart', unlockAudio, { passive: true, once: true });
     document.addEventListener('click', unlockAudio, { passive: true, once: true });
 
-    function playAudioFallback(text, speed, resetBtn) {
+    
+    function playAudioFallbackLang(text, lang, speed, resetBtn) {
       try {
         const clean = text.replace(/[\/()\-]/g, ' ').replace(/\s+/g, ' ').trim();
         const encoded = encodeURIComponent(clean);
@@ -780,15 +786,14 @@
         const ttsspeed = isSlow ? '&ttsspeed=0.3' : '';
 
         const urls = [
-          `https://translate.google.com/translate_tts?ie=UTF-8&tl=tr&client=tw-ob${ttsspeed}&q=${encoded}`,
-          `https://dict.youdao.com/dictvoice?audio=${encoded}&le=tr`
+          `https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&client=tw-ob${ttsspeed}&q=${encoded}`,
+          `https://dict.youdao.com/dictvoice?audio=${encoded}&le=${lang}`
         ];
 
         let i = 0;
         function tryPlay() {
           if (i >= urls.length) {
             if (typeof resetBtn === 'function') resetBtn();
-            showToast('Включите звук / проверьте переключатель беззвучного режима', '🔊');
             return;
           }
 
@@ -811,7 +816,6 @@
             p.then(() => {
               triggerHaptic('light');
             }).catch(err => {
-              console.warn('Audio play error, trying fallback:', err);
               tryPlay();
             });
           }
@@ -819,12 +823,15 @@
 
         tryPlay();
       } catch (e) {
-        console.error('playAudioFallback error:', e);
         if (typeof resetBtn === 'function') resetBtn();
       }
     }
+    
+    function playAudioFallback(text, speed, resetBtn) {
+       playAudioFallbackLang(text, 'tr', speed, resetBtn);
+    }
 
-    function speakTurkish(text, cardId, speed = 'normal', btnElement = null) {
+    function speakLang(text, lang, cardId, speed = 'normal', btnElement = null, onEnd = null) {
       const isSlow = (speed === 'slow');
       let speakBtn = btnElement || (cardId ? document.getElementById(`speak-${speed}-${cardId}`) : null);
       if (!speakBtn && document.activeElement && document.activeElement.tagName === 'BUTTON') {
@@ -839,14 +846,13 @@
         if (speakBtn && speakBtn.classList) {
           speakBtn.classList.remove('speaking', isSlow ? 'text-amber-600' : 'text-sky-600', 'scale-[1.02]');
         }
+        if (onEnd) onEnd();
       }
 
-      // Останавливаем предыдущее аудио
       try {
         globalAudio.pause();
       } catch (e) {}
 
-      // Пробуем нативный SpeechSynthesis
       if ('speechSynthesis' in window && window.speechSynthesis) {
         try {
           if (window.speechSynthesis.paused) {
@@ -855,10 +861,14 @@
           window.speechSynthesis.cancel();
 
           const utterance = new SpeechSynthesisUtterance(text);
-          utterance.lang = 'tr-TR';
-          if (turkishVoice) {
+          utterance.lang = lang === 'ru' ? 'ru-RU' : 'tr-TR';
+          
+          if (lang === 'ru' && russianVoice) {
+            utterance.voice = russianVoice;
+          } else if (lang === 'tr' && turkishVoice) {
             utterance.voice = turkishVoice;
           }
+          
           utterance.rate = isSlow ? 0.72 : 1.0;
           utterance.pitch = 1.0;
 
@@ -873,18 +883,16 @@
           };
 
           utterance.onerror = (err) => {
-            console.warn('SpeechSynthesis error, fallback to audio:', err);
-            playAudioFallback(text, speed, resetBtn);
+            playAudioFallbackLang(text, lang, speed, resetBtn);
           };
 
           window.speechSynthesis.speak(utterance);
           triggerHaptic('light');
 
-          // Если через 500мс системный синтезатор так и не издал звук
           setTimeout(() => {
             if (!didStart && !window.speechSynthesis.speaking) {
               window.speechSynthesis.cancel();
-              playAudioFallback(text, speed, resetBtn);
+              playAudioFallbackLang(text, lang, speed, resetBtn);
             }
           }, 500);
 
@@ -893,10 +901,13 @@
           console.warn('SpeechSynthesis exception:', e);
         }
       }
-
-      // Fallback на онлайн-аудио
-      playAudioFallback(text, speed, resetBtn);
+      playAudioFallbackLang(text, lang, speed, resetBtn);
     }
+
+    function speakTurkish(text, cardId, speed = 'normal', btnElement = null) {
+       speakLang(text, 'tr', cardId, speed, btnElement, null);
+    }
+
 
     // ==================== ФИЛЬТРАЦИЯ И ОТОБРАЖЕНИЕ 1000+ СЛОВ ====================
     function getFilteredPhrases() {
@@ -1550,6 +1561,27 @@
     let quizQueue = [];
     let currentQuizItem = null;
 
+    let isAutoplayActive = false;
+    let autoplayTimeout = null;
+    let autoplayQueue = [];
+
+    function toggleAutoplay() {
+       isAutoplayActive = !isAutoplayActive;
+       triggerHaptic('light');
+       renderQuizCard();
+    }
+    
+    function skipQuizItemAutoplay() {
+       if (autoplayQueue.length === 0) {
+           let all = phrases.filter(p => !p.learned);
+           if (all.length === 0) all = phrases; // Fallback
+           autoplayQueue = all.sort(() => Math.random() - 0.5);
+       }
+       currentQuizItem = autoplayQueue.pop();
+       renderQuizCard();
+    }
+
+
     function toggleQuizSound() {
        isQuizSoundEnabled = !isQuizSoundEnabled;
        appStats.isQuizSoundEnabled = isQuizSoundEnabled;
@@ -1746,6 +1778,7 @@
     }
 
     function processAnswer(quality) {
+       if (isAutoplayActive) { isAutoplayActive = false; clearTimeout(autoplayTimeout); if ('speechSynthesis' in window) window.speechSynthesis.cancel(); }
        let item = currentQuizItem;
        let srsObj = item.srs[quizMode];
        
@@ -1804,29 +1837,51 @@
            return;
        }
        if (quizMode === 'flashcards') {
-          container.innerHTML = `
-             <div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Флэш-карточка</div>
+           let isPlayBtn = `<button onclick="toggleAutoplay()" class="w-full mt-4 py-3 rounded-2xl ${isAutoplayActive ? 'bg-amber-100 text-amber-700 border-amber-300' : 'bg-sky-100 text-sky-700 border-sky-300'} border-2 font-bold active:scale-95 transition-all shadow-sm flex items-center justify-center gap-2">
+             <span>${isAutoplayActive ? '⏸️ Пауза' : '▶️ Автовоспроизведение'}</span>
+           </button>`;
+
+           container.innerHTML = `
+             <div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Флеш-карточки</div>
              <div class="text-3xl font-bold font-heading text-slate-900 dark:text-white mb-2 text-center break-words w-full px-2">${item.tr}</div>
-             <button class="w-12 h-12 mt-4 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-sky-600 dark:text-sky-400 active:scale-90 transition-transform shadow-sm mx-auto border border-sky-200 dark:border-sky-800" onclick="speakTurkish('${item.tr.replace(/'/g, "\'")}', null, 'normal', this)">
-               🔊
+             <button class="w-12 h-12 mt-4 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-sky-600 dark:text-sky-400 active:scale-90 transition-transform shadow-sm mx-auto border border-sky-200 dark:border-sky-800" onclick="speakTurkish('${item.tr.replace(/'/g, "\\'")}', null, 'normal', this)">
+               📢
              </button>
              
-             <div id="flashcardAnswer" class="hidden w-full flex flex-col items-center mt-8 space-y-6">
+             <div id="flashcardAnswer" class="${isAutoplayActive ? '' : 'hidden'} w-full flex flex-col items-center mt-8 space-y-6">
                 <div class="w-full border-t border-slate-100 dark:border-slate-800 pt-6">
                    <div class="text-xl font-semibold text-slate-800 dark:text-slate-100 text-center px-2 leading-tight">${item.ru}</div>
                    ${item.uz ? `<div class="text-sm text-emerald-600 dark:text-emerald-400 mt-3 font-medium text-center px-4">${item.uz}</div>` : ''}
                 </div>
                 
                 <div class="grid grid-cols-2 gap-3 w-full mt-4">
-                   <button onclick="processAnswer(0)" class="py-3.5 rounded-2xl bg-red-50 text-red-600 dark:bg-red-950/40 border border-red-200 dark:border-red-900/40 text-[13px] sm:text-sm font-bold active:scale-95 shadow-sm">Не помню</button>
-                   <button onclick="processAnswer(1)" class="py-3.5 rounded-2xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/40 text-[13px] sm:text-sm font-bold active:scale-95 shadow-sm">Помню</button>
+                   <button onclick="processAnswer(0)" class="py-3.5 rounded-2xl bg-red-50 text-red-600 dark:bg-red-950/40 border border-red-200 dark:border-red-900/40 text-[13px] sm:text-sm font-bold active:scale-95 shadow-sm">✕ Не помню</button>
+                   <button onclick="processAnswer(1)" class="py-3.5 rounded-2xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/40 text-[13px] sm:text-sm font-bold active:scale-95 shadow-sm">✓ Помню</button>
                 </div>
              </div>
              
-             <button id="showAnswerBtn" class="mt-12 w-full max-w-[200px] py-3.5 bg-slate-800 dark:bg-slate-700 text-white rounded-full font-bold shadow-md active:scale-95 transition-transform" onclick="document.getElementById('flashcardAnswer').classList.remove('hidden'); this.classList.add('hidden'); triggerHaptic('light');">
+             ${isAutoplayActive ? '' : `<button id="showAnswerBtn" class="mt-12 w-full max-w-[200px] py-3.5 bg-slate-800 dark:bg-slate-700 text-white rounded-full font-bold shadow-md active:scale-95 transition-transform" onclick="document.getElementById('flashcardAnswer').classList.remove('hidden'); this.classList.add('hidden'); triggerHaptic('light');">
                 Показать ответ
-             </button>
+             </button>`}
+             ${isPlayBtn}
           `;
+          
+          if (isAutoplayActive) {
+               clearTimeout(autoplayTimeout);
+               if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+               
+               autoplayTimeout = setTimeout(() => {
+                   speakLang(item.tr, 'tr', null, 'normal', null, () => {
+                       autoplayTimeout = setTimeout(() => {
+                           speakLang(item.ru, 'ru', null, 'normal', null, () => {
+                               autoplayTimeout = setTimeout(() => {
+                                   skipQuizItemAutoplay();
+                               }, 2000); 
+                           });
+                       }, 1000); 
+                   });
+               }, 500);
+          }
           
           if (isQuizSoundEnabled) {
              setTimeout(() => {
