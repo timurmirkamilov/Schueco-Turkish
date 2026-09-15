@@ -1784,6 +1784,9 @@
        if (tab === 'quiz') {
           activeTab = 'quiz';
           triggerHaptic('light');
+          
+          const blurToggleContainer = document.getElementById('blurToggleContainer');
+          if (blurToggleContainer) blurToggleContainer.classList.add('hidden');
           screenLearn.classList.add('hidden');
       screenGrammar.classList.add('hidden');
       screenManage.classList.add('hidden');
