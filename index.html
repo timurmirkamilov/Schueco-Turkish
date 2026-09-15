@@ -2307,6 +2307,64 @@
            { role: "me", tr: "Evet, siparişler birikti. Ama hallederiz.", ru: "Да, заказы накопились. Но мы справимся." }
          ]
       }
+,
+
+      {
+         title: "Проверка качества (КК)",
+         subtitle: "Осмотр готовой конструкции",
+         icon: "🔍",
+         messages: [
+           { role: "other", tr: "Bu çerçevenin kaynakları nasıl oldu? Kontrol ettin mi?", ru: "Как получились сварные швы этой рамы? Ты проверил?" },
+           { role: "me", tr: "Evet, köşeleri temizledim ve gönyesini ölçtüm. Sorun yok.", ru: "Да, я зачистил углы и измерил диагонали (угольник). Проблем нет." },
+           { role: "other", tr: "Peki ya fitiller? Tam oturmuş mu?", ru: "А как насчет уплотнителей? Они плотно сели?" },
+           { role: "me", tr: "Fitilleri taktım, hiçbir boşluk kalmadı.", ru: "Я установил уплотнители, никаких зазоров не осталось." }
+         ]
+      },
+      {
+         title: "Проблема с оборудованием",
+         subtitle: "Станок не работает",
+         icon: "⚙️",
+         messages: [
+           { role: "me", tr: "Usta, kesim motorunda bir gariplik var. Ses yapıyor.", ru: "Мастер, с мотором резки что-то не так. Он шумит." },
+           { role: "other", tr: "Nasıl bir ses? Sürtünme sesi mi?", ru: "Какой звук? Звук трения?" },
+           { role: "me", tr: "Evet, sanki bıçak zorlanıyor gibi. Makineyi durdurdum.", ru: "Да, как будто диск (нож) идет с трудом. Я остановил станок." },
+           { role: "other", tr: "İyi yapmışsın. Fişini çek, teknik servise haber vereyim.", ru: "Хорошо сделал. Вытащи из розетки, я сообщу в сервисную службу." }
+         ]
+      },
+      {
+         title: "Запрос отгула",
+         subtitle: "Разговор с бригадиром",
+         icon: "🗓️",
+         messages: [
+           { role: "me", tr: "Şefim, müsaitseniz bir şey sorabilir miyim?", ru: "Шеф, если вы свободны, могу я кое-что спросить?" },
+           { role: "other", tr: "Tabii, dinliyorum. Sorun nedir?", ru: "Конечно, слушаю. В чем дело?" },
+           { role: "me", tr: "Yarın öğleden sonra hastaneye gitmem gerekiyor. İzin alabilir miyim?", ru: "Завтра после обеда мне нужно пойти в больницу. Могу я взять отгул?" },
+           { role: "other", tr: "Tamam, ama sabahki sevkiyatı bitirmen lazım. Sonra çıkabilirsin.", ru: "Хорошо, но тебе нужно закончить утреннюю отгрузку. Потом можешь идти." },
+           { role: "me", tr: "Çok teşekkür ederim. Sabah erkenden bitiririm.", ru: "Большое спасибо. Я закончу всё рано утром." }
+         ]
+      },
+      {
+         title: "Разгрузка материалов",
+         subtitle: "Приехал грузовик с профилем",
+         icon: "🚚",
+         messages: [
+           { role: "other", tr: "Kamyon geldi! Forklifti getirin, profilleri indirelim.", ru: "Грузовик приехал! Несите вилочный погрузчик, будем спускать профили." },
+           { role: "me", tr: "Forklift şu an meşgul, palet taşıyor. Beş dakika sürer.", ru: "Погрузчик сейчас занят, перевозит поддоны. Займет пять минут." },
+           { role: "other", tr: "Tamam, o zaman önce el arabasıyla aksesuarları taşıyalım.", ru: "Ладно, тогда давай сначала перенесем фурнитуру (аксессуары) на тележке." },
+           { role: "me", tr: "Anlaşıldı, hemen başlıyorum.", ru: "Понял, немедленно начинаю." }
+         ]
+      },
+      {
+         title: "Техника безопасности",
+         subtitle: "Рабочий инструктаж",
+         icon: "🦺",
+         messages: [
+           { role: "other", tr: "Eldivensiz ve gözlüksüz kesim yapmıyoruz, değil mi?", ru: "Мы ведь не режем без перчаток и очков, верно?" },
+           { role: "me", tr: "Haklısınız usta, gözlüğüm masada kalmış. Hemen alıyorum.", ru: "Вы правы, мастер, мои очки остались на столе. Сейчас же возьму." },
+           { role: "other", tr: "İş güvenliği her şeyden önemli. Aceleye gerek yok.", ru: "Безопасность труда важнее всего. Спешить не нужно." },
+           { role: "me", tr: "Kesinlikle haklısınız. Bir daha unutmam.", ru: "Вы абсолютно правы. Больше не забуду." }
+         ]
+      }
     ];
 
     let currentDialogIndex = null;
@@ -2356,7 +2414,7 @@
              <div class="flex ${isMe ? 'justify-end' : 'justify-start'} w-full animate-fade-in" style="animation-delay: ${i * 0.1}s">
                 <div class="max-w-[85%] ${isMe ? 'bg-sky-500 text-white rounded-l-2xl rounded-tr-2xl' : 'bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-100 rounded-r-2xl rounded-tl-2xl'} p-3.5 shadow-sm relative group cursor-pointer" onclick="playDialogMessage(${i})" id="dialog-msg-${i}">
                    <div class="font-medium text-sm leading-snug">${m.tr}</div>
-                   <div class="${isMe ? 'text-sky-100' : 'text-slate-500 dark:text-slate-400'} text-[11px] mt-1.5 leading-tight opacity-90">${m.ru}</div>
+                   <div class="${isMe ? 'text-sky-100' : 'text-slate-500 dark:text-slate-400'} text-xs sm:text-[13px] mt-1 leading-tight opacity-90">${m.ru}</div>
                    <div class="absolute ${isMe ? '-left-8' : '-right-8'} top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity text-[10px]">
                       🔊
                    </div>
