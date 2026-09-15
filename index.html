@@ -198,26 +198,32 @@
     <!-- ФИЛЬТРЫ И ПОИСК -->
     <section id="filterSection" class="space-y-2.5">
       <!-- Поиск -->
-      <div class="relative">
-        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-          <svg class="w-4 h-4 text-sky-500/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
-        </div>
-        <input 
-          id="searchInput" 
-          type="text" 
-          placeholder="Поиск слова или фразы (TR / RU / UZ)..." 
-          class="w-full bg-tgSecBg text-tgText border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 pl-10 pr-20 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sky-500/50 shadow-xs placeholder:text-tgHint transition-all"
-        />
-        <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center space-x-1.5">
-          <span id="searchMatchesBadge" class="hidden text-[10px] font-bold px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300"></span>
-          <button id="clearSearchBtn" class="hidden p-1 rounded-full text-tgHint hover:text-tgText hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      <div class="flex gap-2">
+        <div class="relative flex-1">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+            <svg class="w-4 h-4 text-sky-500/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
-          </button>
+          </div>
+          <input 
+            id="searchInput" 
+            type="text" 
+            placeholder="Поиск слов и фраз (TR / RU / UZ)..." 
+            class="w-full bg-tgSecBg text-tgText border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 pl-10 pr-20 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sky-500/50 shadow-xs placeholder:text-tgHint transition-all"
+          />
+          <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center space-x-1.5">
+            <span id="searchMatchesBadge" class="hidden text-[10px] font-bold px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300"></span>
+            <button id="clearSearchBtn" class="hidden p-1 rounded-full text-tgHint hover:text-tgText hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
         </div>
+        
+        <button onclick="openCustomWordModal()" class="bg-sky-600 hover:bg-sky-700 text-white px-4 rounded-2xl shadow-sm font-bold text-xl active:scale-95 transition-all flex items-center justify-center shrink-0" title="Добавить свое слово">
+          +
+        </button>
       </div>
 
       
@@ -594,6 +600,12 @@
             }
             result.push(fresh);
           });
+          
+          stateMap.forEach((savedItem, id) => {
+             if (savedItem.isCustom) {
+                 result.push(savedItem);
+             }
+          });
 
           phrases = result;
           updateLearnedCounter();
@@ -622,11 +634,14 @@
       try {
         const toSave = {
           stats: appStats,
-          phrases: phrases.map(p => ({
-             id: p.id, 
-             srs: p.srs,
-             learned: p.learned
-          }))
+          phrases: phrases.map(p => {
+             if (p.isCustom) return p;
+             return {
+               id: p.id, 
+               srs: p.srs,
+               learned: p.learned
+             };
+          })
         };
         localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
         updateLearnedCounter();
@@ -2171,6 +2186,77 @@
     const soundBtn = document.getElementById('quizSoundToggle');
     if (soundBtn) soundBtn.innerHTML = isQuizSoundEnabled ? '🔊 Звук' : '🔇 Без звука';
 
+
+    function openCustomWordModal() {
+       document.getElementById('customWordModal').classList.remove('hidden');
+       document.getElementById('cwTr').focus();
+    }
+    
+    function closeCustomWordModal() {
+       document.getElementById('customWordModal').classList.add('hidden');
+    }
+    
+    function saveCustomWord() {
+       const tr = document.getElementById('cwTr').value.trim();
+       const ru = document.getElementById('cwRu').value.trim();
+       
+       if (!tr || !ru) {
+          alert('Пожалуйста, заполните оба поля!');
+          return;
+       }
+       
+       const newWord = {
+          id: 'custom_' + Date.now(),
+          tr: tr,
+          ru: ru,
+          category: 'all',
+          isCustom: true,
+          srs: {
+            flashcards: { level: 0, nextReview: 0 },
+            multiple: { level: 0, nextReview: 0 },
+            listening: { level: 0, nextReview: 0 },
+            sentence: { level: 0, nextReview: 0 },
+            pairs: { level: 0, nextReview: 0 }
+          },
+          learned: false
+       };
+       
+       phrases.unshift(newWord); // Add to beginning of array
+       saveState();
+       closeCustomWordModal();
+       
+       document.getElementById('cwTr').value = '';
+       document.getElementById('cwRu').value = '';
+       
+       renderCurrentView(); // Force re-render of the list
+       if (typeof updateVisualStats === 'function') updateVisualStats();
+       showToast('Слово добавлено!', '✅');
+    }
+
 </script>
+
+  <!-- Custom Word Modal -->
+  <div id="customWordModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 w-full max-w-sm shadow-xl border border-slate-100 dark:border-slate-700 animate-scale-up">
+      <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-4">Добавить свое слово</h3>
+      
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-500 mb-1">Турецкое слово</label>
+          <input id="cwTr" type="text" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="Например: Kaynak">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-500 mb-1">Русский перевод</label>
+          <input id="cwRu" type="text" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="Например: Сварка">
+        </div>
+      </div>
+      
+      <div class="flex gap-3 mt-6">
+        <button onclick="closeCustomWordModal()" class="flex-1 py-3 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-bold rounded-xl active:scale-95 transition-transform">Отмена</button>
+        <button onclick="saveCustomWord()" class="flex-1 py-3 bg-sky-600 text-white font-bold rounded-xl shadow-md active:scale-95 transition-transform">Сохранить</button>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
