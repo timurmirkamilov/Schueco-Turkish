@@ -2554,7 +2554,10 @@
        resText.textContent = `Вы сказали: "${transcript}"`;
        resText.classList.remove('animate-pulse');
        
-       if (expected === spoken || spoken.includes(expected) || expected.includes(spoken) || levenshtein(expected, spoken) <= 3) {
+       const maxErrors = Math.max(2, Math.floor(expected.length * 0.3));
+       const isCorrect = levenshtein(expected, spoken) <= maxErrors;
+       
+       if (isCorrect) {
            resText.className = "min-h-[2rem] text-center font-bold text-lg mb-4 text-emerald-500 w-full px-4 break-words";
            if (typeof triggerHaptic === 'function') triggerHaptic('success');
            setTimeout(() => processAnswer(1), 1500);
