@@ -1753,10 +1753,6 @@
     // Подключение к switchTab
     const originalSwitchTab = switchTab;
     switchTab = function(tab) {
-       if (tab !== 'quiz' && globalAudioStream) {
-           globalAudioStream.getTracks().forEach(t => t.stop());
-           globalAudioStream = null;
-       }
        screenQuiz.classList.add('hidden');
        tabQuizBtn.className = TAB_INACTIVE;
        
@@ -1874,12 +1870,6 @@
     function startQuiz(mode) {
        quizMode = mode;
        triggerHaptic('light');
-       
-       if (mode === 'speaking' && !globalAudioStream && navigator.mediaDevices) {
-           navigator.mediaDevices.getUserMedia({ audio: true })
-               .then(stream => { globalAudioStream = stream; })
-               .catch(err => console.warn("Mic permission deferred to Speech API:", err));
-       }
        
        const now = Date.now();
        let due = phrases.filter(p => p.srs && p.srs[mode] && (!p.srs[mode].nextReview || p.srs[mode].nextReview <= now));
