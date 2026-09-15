@@ -649,6 +649,8 @@
           
           stateMap.forEach((savedItem, id) => {
              if (savedItem.isCustom) {
+                 if (!savedItem.srs) savedItem.srs = {};
+                 if (!savedItem.srs.speaking) savedItem.srs.speaking = { level: 0, nextReview: 0 };
                  result.push(savedItem);
              }
           });
@@ -2441,7 +2443,7 @@
        let html = `
          <div class="w-full bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 min-h-[300px] flex flex-col items-center justify-center relative">
             <div class="absolute top-4 right-4 text-xs font-bold bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 px-3 py-1 rounded-full">
-               Уровень ${phrase.srs.speaking.level}
+               Уровень ${phrase.srs && phrase.srs.speaking ? phrase.srs.speaking.level : 0}
             </div>
             
             <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2 uppercase tracking-wide text-center">Прочитайте вслух:</p>
