@@ -1990,7 +1990,7 @@
            return;
        }
        if (quizMode === 'speaking') {
-         renderSpeakingCard(phrase);
+         renderSpeakingCard(item);
          return;
       }
       if (quizMode === 'flashcards') {
@@ -2531,33 +2531,28 @@
     }
 
     function handleSpeakingResult(transcript) {
-       const phrase = quizQueue[0];
-       const expected = normalizeText(phrase.tr);
+       const item = currentQuizItem;
+       if (!item) return;
+       const expected = normalizeText(item.tr);
        const spoken = normalizeText(transcript);
        
        const resText = document.getElementById('speechResultText');
        resText.textContent = `Вы сказали: "${transcript}"`;
        resText.classList.remove('animate-pulse');
        
-       // Calculate basic similarity or exact match
        if (expected === spoken || spoken.includes(expected) || expected.includes(spoken) || levenshtein(expected, spoken) <= 3) {
-           // Correct
            resText.className = "min-h-[2rem] text-center font-bold text-lg mb-4 text-emerald-500 w-full px-4 break-words";
-           triggerHaptic('success');
-           addReviewProgress(phrase, true);
-           setTimeout(() => nextQuizItem(), 1500);
+           if (typeof triggerHaptic === 'function') triggerHaptic('success');
+           setTimeout(() => processAnswer(1), 1500);
        } else {
-           // Incorrect
            resText.className = "min-h-[2rem] text-center font-medium text-lg mb-4 text-rose-500 w-full px-4 break-words";
-           triggerHaptic('error');
-           addReviewProgress(phrase, false);
-           // Let them try again or manually skip
+           if (typeof triggerHaptic === 'function') triggerHaptic('error');
            setTimeout(() => {
-               if (resText.textContent.includes(transcript)) { // If hasn't started talking again
-                   resText.textContent = "Попробуйте еще раз";
-                   resText.className = "min-h-[2rem] text-center font-medium text-lg mb-4 text-slate-400 italic w-full px-4 break-words";
+               if (resText.textContent.includes(transcript)) {
+                   resText.innerHTML = `Не совпало. Попробуйте еще раз.<br><button onclick="processAnswer(0)" class="mt-4 px-6 py-2 bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-full text-sm font-bold active:scale-95 transition-transform">Пропустить</button>`;
+                   resText.className = "min-h-[2rem] text-center font-medium text-sm mb-4 text-slate-400 w-full px-4 break-words";
                }
-           }, 3000);
+           }, 2000);
        }
     }
     
