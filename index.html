@@ -315,6 +315,22 @@
 
     <!-- ==================== ЭКРАН 2: УПРАВЛЕНИЕ СПИСКОМ / ИЗУЧЕННЫЕ ==================== -->
     <div id="screenManage" class="hidden space-y-3">
+      <!-- Visual Statistics Dashboard -->
+      <div id="visualStatsDashboard" class="bg-white dark:bg-slate-800 rounded-3xl p-5 shadow-sm border border-slate-100 dark:border-slate-700 mb-2">
+         <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
+            📊 Мой словарный запас
+         </h2>
+         
+         <div class="w-full h-3 bg-slate-100 dark:bg-slate-700 rounded-full mb-3 flex overflow-hidden" id="statsProgressBar">
+            <!-- Populated by JS -->
+         </div>
+         
+         <div class="grid grid-cols-3 gap-2 text-center" id="statsDetails">
+            <!-- Populated by JS -->
+         </div>
+      </div>
+
+
       <div class="flex items-center justify-between bg-sky-50 dark:bg-sky-950/40 p-3 rounded-xl border border-sky-200 dark:border-sky-900 text-xs text-sky-800 dark:text-sky-300">
         <div class="flex items-center space-x-2">
           <span class="text-base">💡</span>
@@ -350,21 +366,6 @@
     
     <!-- ==================== ЭКРАН 4: ТРЕНАЖЕР ==================== -->
     <div id="screenQuiz" class="hidden space-y-4">
-      
-      <!-- Visual Statistics Dashboard -->
-      <div id="visualStatsDashboard" class="bg-white dark:bg-slate-800 rounded-3xl p-5 shadow-sm border border-slate-100 dark:border-slate-700 mb-2">
-         <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
-            📊 Мой словарный запас
-         </h2>
-         
-         <div class="w-full h-3 bg-slate-100 dark:bg-slate-700 rounded-full mb-3 flex overflow-hidden" id="statsProgressBar">
-            <!-- Populated by JS -->
-         </div>
-         
-         <div class="grid grid-cols-3 gap-2 text-center" id="statsDetails">
-            <!-- Populated by JS -->
-         </div>
-      </div>
       
       <!-- Грид выбора режима -->
       <div id="quizMenu" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
