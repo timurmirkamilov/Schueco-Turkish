@@ -385,6 +385,17 @@
       <!-- Грид выбора режима -->
       <div id="quizMenu" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div class="relative">
+          <button onclick="startQuiz('speaking')" class="w-full bg-gradient-to-br from-orange-500 to-red-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+            <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🎤</div>
+            <div>
+              <div class="font-bold text-lg">Произношение</div>
+              <div class="text-xs text-orange-100 opacity-90">Проверка микрофоном</div>
+            </div>
+          </button>
+          <button onclick="resetQuizProgress('speaking', 'Произношение')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
+        </div>
+
+        <div class="relative">
           <button onclick="startQuiz('pairs')" class="w-full bg-gradient-to-br from-pink-500 to-rose-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
             <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🧩</div>
             <div>
@@ -620,6 +631,7 @@
             if (stateMap.has(item.id)) {
                const savedItem = stateMap.get(item.id);
                fresh.srs = savedItem.srs;
+               if (!fresh.srs.speaking) fresh.srs.speaking = { level: 0, nextReview: 0 };
                fresh.learned = savedItem.learned || false; 
             } else {
                fresh.srs = {
@@ -628,7 +640,7 @@
                   listening: { level: 0, nextReview: 0 },
                   sentence: { level: 0, nextReview: 0 },
             pairs: { level: 0, nextReview: 0 },
-                  pairs: { level: 0, nextReview: 0 }
+            speaking: { level: 0, nextReview: 0 }
                };
                fresh.learned = false;
             }
@@ -657,7 +669,7 @@
             listening: { level: 0, nextReview: 0 },
             sentence: { level: 0, nextReview: 0 },
             pairs: { level: 0, nextReview: 0 },
-                  pairs: { level: 0, nextReview: 0 }
+            speaking: { level: 0, nextReview: 0 }
         }, 
         learned: false
       }));
@@ -1977,7 +1989,11 @@
            window.pairsTiles = tiles;
            return;
        }
-       if (quizMode === 'flashcards') {
+       if (quizMode === 'speaking') {
+         renderSpeakingCard(phrase);
+         return;
+      }
+      if (quizMode === 'flashcards') {
            let isPlayBtn = `<button onclick="toggleAutoplay()" class="w-full mt-4 py-3 rounded-2xl ${isAutoplayActive ? 'bg-amber-100 text-amber-700 border-amber-300' : 'bg-sky-100 text-sky-700 border-sky-300'} border-2 font-bold active:scale-95 transition-all shadow-sm flex items-center justify-center gap-2">
              <span>${isAutoplayActive ? '⏸️ Пауза' : '▶️ Автовоспроизведение'}</span>
            </button>`;
@@ -2258,7 +2274,8 @@
             multiple: { level: 0, nextReview: 0 },
             listening: { level: 0, nextReview: 0 },
             sentence: { level: 0, nextReview: 0 },
-            pairs: { level: 0, nextReview: 0 }
+            pairs: { level: 0, nextReview: 0 },
+            speaking: { level: 0, nextReview: 0 }
           },
           learned: false
        };
@@ -2401,6 +2418,167 @@
           }, 600); // 0.6s pause between speakers
        });
     }
+
+
+    // ==================== SPEAKING QUIZ LOGIC ====================
+    let speakingRecognition = null;
+    let isRecording = false;
+
+    function initSpeechRecognition() {
+       const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+       if (!SpeechRecognition) return null;
+       
+       const rec = new SpeechRecognition();
+       rec.lang = 'tr-TR';
+       rec.interimResults = false;
+       rec.maxAlternatives = 1;
+       return rec;
+    }
+
+    function renderSpeakingCard(phrase) {
+       const cardInner = document.getElementById('quizCardInner');
+       
+       let html = `
+         <div class="w-full bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 min-h-[300px] flex flex-col items-center justify-center relative">
+            <div class="absolute top-4 right-4 text-xs font-bold bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 px-3 py-1 rounded-full">
+               Уровень ${phrase.srs.speaking.level}
+            </div>
+            
+            <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2 uppercase tracking-wide text-center">Прочитайте вслух:</p>
+            <h2 class="text-3xl font-black text-slate-800 dark:text-white text-center leading-tight mb-2">${phrase.tr}</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400 text-center mb-10">${phrase.ru}</p>
+            
+            <div id="speechResultText" class="min-h-[2rem] text-center font-medium text-lg mb-4 text-slate-400 italic w-full px-4 break-words"></div>
+
+            <button id="micBtn" class="w-20 h-20 bg-sky-500 text-white rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-all hover:bg-sky-600 mb-4" onmousedown="startRecording()" onmouseup="stopRecording()" ontouchstart="startRecording(event)" ontouchend="stopRecording(event)">
+               <svg class="w-8 h-8 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+            </button>
+            <p class="text-[11px] text-slate-400 text-center">Нажмите и удерживайте, чтобы говорить</p>
+         </div>
+       `;
+       cardInner.innerHTML = html;
+       
+       if (!speakingRecognition) {
+          speakingRecognition = initSpeechRecognition();
+       }
+       if (!speakingRecognition) {
+          document.getElementById('speechResultText').textContent = "Ваш браузер не поддерживает распознавание речи. Попробуйте Google Chrome.";
+          document.getElementById('speechResultText').classList.add('text-rose-500');
+          document.getElementById('micBtn').classList.add('opacity-50', 'pointer-events-none');
+       }
+    }
+
+    function startRecording(e) {
+       if (e) e.preventDefault(); // prevent touch events firing mouse events
+       if (!speakingRecognition || isRecording) return;
+       
+       const micBtn = document.getElementById('micBtn');
+       const resText = document.getElementById('speechResultText');
+       
+       isRecording = true;
+       micBtn.classList.add('bg-rose-500', 'animate-pulse');
+       resText.textContent = "Слушаю...";
+       resText.className = "min-h-[2rem] text-center font-medium text-lg mb-4 text-sky-500 animate-pulse w-full px-4 break-words";
+       
+       try {
+           speakingRecognition.start();
+       } catch (err) {
+           console.error("Speech API error:", err);
+           isRecording = false;
+       }
+       
+       speakingRecognition.onresult = (event) => {
+           if (!isRecording) return; // if already stopped
+           const transcript = event.results[0][0].transcript;
+           handleSpeakingResult(transcript);
+       };
+       
+       speakingRecognition.onerror = (event) => {
+           console.error("Speech error", event.error);
+           if (event.error === 'not-allowed') {
+               resText.textContent = "Нужно разрешение на микрофон!";
+               resText.className = "min-h-[2rem] text-center font-medium text-lg mb-4 text-rose-500 w-full px-4 break-words";
+           } else {
+               resText.textContent = "Не расслышал, попробуйте еще раз.";
+               resText.className = "min-h-[2rem] text-center font-medium text-lg mb-4 text-slate-400 italic w-full px-4 break-words";
+           }
+           stopRecordingUI();
+       };
+       
+       speakingRecognition.onend = () => {
+           stopRecordingUI();
+       };
+    }
+
+    function stopRecording(e) {
+       if (e) e.preventDefault();
+       if (!isRecording || !speakingRecognition) return;
+       speakingRecognition.stop();
+       stopRecordingUI();
+    }
+    
+    function stopRecordingUI() {
+       isRecording = false;
+       const micBtn = document.getElementById('micBtn');
+       if (micBtn) {
+           micBtn.classList.remove('bg-rose-500', 'animate-pulse');
+           micBtn.classList.add('bg-sky-500');
+       }
+    }
+
+    function normalizeText(text) {
+       return text.toLocaleLowerCase('tr').replace(/[.,?!;:()'"]/g, '').trim();
+    }
+
+    function handleSpeakingResult(transcript) {
+       const phrase = quizQueue[0];
+       const expected = normalizeText(phrase.tr);
+       const spoken = normalizeText(transcript);
+       
+       const resText = document.getElementById('speechResultText');
+       resText.textContent = `Вы сказали: "${transcript}"`;
+       resText.classList.remove('animate-pulse');
+       
+       // Calculate basic similarity or exact match
+       if (expected === spoken || spoken.includes(expected) || expected.includes(spoken) || levenshtein(expected, spoken) <= 3) {
+           // Correct
+           resText.className = "min-h-[2rem] text-center font-bold text-lg mb-4 text-emerald-500 w-full px-4 break-words";
+           triggerHaptic('success');
+           addReviewProgress(phrase, true);
+           setTimeout(() => nextQuizItem(), 1500);
+       } else {
+           // Incorrect
+           resText.className = "min-h-[2rem] text-center font-medium text-lg mb-4 text-rose-500 w-full px-4 break-words";
+           triggerHaptic('error');
+           addReviewProgress(phrase, false);
+           // Let them try again or manually skip
+           setTimeout(() => {
+               if (resText.textContent.includes(transcript)) { // If hasn't started talking again
+                   resText.textContent = "Попробуйте еще раз";
+                   resText.className = "min-h-[2rem] text-center font-medium text-lg mb-4 text-slate-400 italic w-full px-4 break-words";
+               }
+           }, 3000);
+       }
+    }
+    
+    function levenshtein(a, b) {
+        if(a.length === 0) return b.length;
+        if(b.length === 0) return a.length;
+        var matrix = [];
+        for(var i = 0; i <= b.length; i++) matrix[i] = [i];
+        for(var j = 0; j <= a.length; j++) matrix[0][j] = j;
+        for(var i = 1; i <= b.length; i++){
+            for(var j = 1; j <= a.length; j++){
+                if(b.charAt(i-1) == a.charAt(j-1)){
+                    matrix[i][j] = matrix[i-1][j-1];
+                } else {
+                    matrix[i][j] = Math.min(matrix[i-1][j-1] + 1, Math.min(matrix[i][j-1] + 1, matrix[i-1][j] + 1));
+                }
+            }
+        }
+        return matrix[b.length][a.length];
+    }
+    // ==================== END SPEAKING LOGIC ====================
 
 </script>
 
