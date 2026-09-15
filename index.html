@@ -2438,11 +2438,10 @@
     }
 
     function renderSpeakingCard(phrase) {
-       const cardInner = document.getElementById('quizCardInner');
+       const container = document.getElementById('quizCardContainer');
        
        let html = `
-         <div class="w-full bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 min-h-[300px] flex flex-col items-center justify-center relative">
-            <div class="absolute top-4 right-4 text-xs font-bold bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 px-3 py-1 rounded-full">
+            <div class="absolute top-4 right-4 text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 px-3 py-1 rounded-full">
                Уровень ${phrase.srs && phrase.srs.speaking ? phrase.srs.speaking.level : 0}
             </div>
             
@@ -2452,13 +2451,13 @@
             
             <div id="speechResultText" class="min-h-[2rem] text-center font-medium text-lg mb-4 text-slate-400 italic w-full px-4 break-words"></div>
 
-            <button id="micBtn" class="w-20 h-20 bg-sky-500 text-white rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-all hover:bg-sky-600 mb-4" onmousedown="startRecording()" onmouseup="stopRecording()" ontouchstart="startRecording(event)" ontouchend="stopRecording(event)">
+            <button id="micBtn" class="w-20 h-20 bg-sky-500 text-white rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-all hover:bg-sky-600 mb-4" onmousedown="startRecording(event)" onmouseup="stopRecording(event)" ontouchstart="startRecording(event)" ontouchend="stopRecording(event)">
                <svg class="w-8 h-8 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
             </button>
             <p class="text-[11px] text-slate-400 text-center">Нажмите и удерживайте, чтобы говорить</p>
-         </div>
        `;
-       cardInner.innerHTML = html;
+       container.innerHTML = html;
+
        
        if (!speakingRecognition) {
           speakingRecognition = initSpeechRecognition();
