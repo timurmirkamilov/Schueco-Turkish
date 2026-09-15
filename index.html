@@ -13,6 +13,7 @@
   
   <!-- Данные: Диалоги -->
   <script src="dialogs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
   <script src="words.js"></script>
 
   <!-- База данных: Правила и грамматика турецкого языка -->
@@ -167,7 +168,7 @@
     <!-- ТАБЫ ПЕРЕКЛЮЧЕНИЯ ЭКРАНОВ -->
     <div class="max-w-xl mx-auto px-4 pt-1 pb-2">
       
-      <div class="grid grid-cols-5 p-1 bg-slate-200/70 dark:bg-slate-800/70 backdrop-blur rounded-2xl gap-1 border border-slate-300/40 dark:border-slate-700/40">
+      <div class="grid grid-cols-4 p-1 bg-slate-200/70 dark:bg-slate-800/70 backdrop-blur rounded-2xl gap-1 border border-slate-300/40 dark:border-slate-700/40">
         <button id="tabQuizBtn" class="py-2 text-[11px] sm:text-xs font-bold rounded-xl transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1.5">
           <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           <span class="truncate">Тренажер</span>
@@ -190,12 +191,7 @@
           </svg>
           <span class="truncate">Список</span>
         </button>
-        <button id="tabDialogsBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
-          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
-          </svg>
-          <span class="truncate">Диалоги</span>
-        </button>
+        
       </div>
 
     </div>
@@ -384,7 +380,7 @@
       
       <!-- Грид выбора режима -->
       <div id="quizMenu" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <div class="relative">
+        <div class="relative" data-mode="speaking">
           <button onclick="startQuiz('speaking')" class="w-full bg-gradient-to-br from-orange-500 to-red-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
             <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🎤</div>
             <div>
@@ -395,7 +391,7 @@
           <button onclick="resetQuizProgress('speaking', 'Произношение')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
         </div>
 
-        <div class="relative">
+        <div class="relative" data-mode="pairs">
           <button onclick="startQuiz('pairs')" class="w-full bg-gradient-to-br from-pink-500 to-rose-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
             <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🧩</div>
             <div>
@@ -407,7 +403,7 @@
         </div>
 
         
-        <div class="relative">
+        <div class="relative" data-mode="flashcards">
           <button onclick="startQuiz('flashcards')" class="w-full bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
             <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🗂️</div>
             <div>
@@ -418,7 +414,7 @@
           <button onclick="resetQuizProgress('flashcards', 'Флэш-карточки')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
         </div>
 
-        <div class="relative">
+        <div class="relative" data-mode="multiple">
           <button onclick="startQuiz('multiple')" class="w-full bg-gradient-to-br from-sky-500 to-blue-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
             <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">❓</div>
             <div>
@@ -429,7 +425,7 @@
           <button onclick="resetQuizProgress('multiple', 'Викторина')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
         </div>
 
-        <div class="relative">
+        <div class="relative" data-mode="listening">
           <button onclick="startQuiz('listening')" class="w-full bg-gradient-to-br from-emerald-500 to-teal-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
             <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🎧</div>
             <div>
@@ -440,7 +436,7 @@
           <button onclick="resetQuizProgress('listening', 'На слух')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
         </div>
 
-        <div class="relative">
+        <div class="relative" data-mode="sentence">
           <button onclick="startQuiz('sentence')" class="w-full bg-gradient-to-br from-amber-500 to-orange-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
             <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">🧩</div>
             <div>
@@ -449,6 +445,17 @@
             </div>
           </button>
           <button onclick="resetQuizProgress('sentence', 'Сборка фраз')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity" title="Сбросить прогресс">🔄</button>
+        </div>
+
+
+        <div class="relative" data-mode="dialogs">
+          <button onclick="openDialogsFromQuiz()" class="w-full bg-gradient-to-br from-fuchsia-500 to-pink-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+            <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">💬</div>
+            <div>
+              <div class="font-bold text-lg">Диалоги</div>
+              <div class="text-xs text-fuchsia-100 opacity-90">Рабочие ситуации</div>
+            </div>
+          </button>
         </div>
 
       </div>
@@ -485,8 +492,16 @@
 
   
     <!-- ==================== ЭКРАН 5: ДИАЛОГИ ==================== -->
+
     <div id="screenDialogs" class="hidden space-y-4">
+      <div class="flex items-center gap-2 mb-2">
+         <button onclick="switchTab('quiz')" class="flex items-center gap-1 text-slate-500 font-bold active:scale-95 transition-transform bg-white dark:bg-slate-800 px-3 py-2 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            Назад к тренажерам
+         </button>
+      </div>
       <div id="dialogsList" class="space-y-3">
+
          <!-- Populated by JS -->
       </div>
       <div id="singleDialogView" class="hidden flex flex-col h-[75vh]">
@@ -1534,7 +1549,7 @@
     const tabLearnBtn = document.getElementById('tabLearnBtn');
     const tabGrammarBtn = document.getElementById('tabGrammarBtn');
     const tabManageBtn = document.getElementById('tabManageBtn');
-    const tabDialogsBtn = document.getElementById('tabDialogsBtn');
+    
     const screenManage = document.getElementById('screenManage');
     const screenDialogs = document.getElementById('screenDialogs');
     const filterSection = document.getElementById('filterSection');
@@ -1555,7 +1570,7 @@
       tabLearnBtn.className = TAB_INACTIVE;
       tabGrammarBtn.className = TAB_INACTIVE;
       tabManageBtn.className = TAB_INACTIVE;
-      tabDialogsBtn.className = TAB_INACTIVE;
+      
       
       const blurToggleContainer = document.getElementById('blurToggleContainer');
       if (blurToggleContainer) blurToggleContainer.classList.add('hidden');
@@ -1573,19 +1588,14 @@
         screenManage.classList.remove('hidden');
         tabManageBtn.className = TAB_ACTIVE;
         if (filterSection) filterSection.classList.remove('hidden');
-      } else if (tab === 'dialogs') {
-        screenDialogs.classList.remove('hidden');
-        tabDialogsBtn.className = TAB_ACTIVE;
-        if (filterSection) filterSection.classList.add('hidden');
-        renderDialogsList();
-      }
+      
       renderCurrentView();
     }
 
     tabLearnBtn.addEventListener('click', () => switchTab('learn'));
     tabGrammarBtn.addEventListener('click', () => switchTab('grammar'));
     tabManageBtn.addEventListener('click', () => switchTab('manage'));
-    tabDialogsBtn.addEventListener('click', () => switchTab('dialogs'));
+    
 
     // Выбор категории (Аккордеон разделов)
     const categoriesAccordion = document.getElementById('categoriesAccordion');
@@ -1767,13 +1777,14 @@
       tabLearnBtn.className = TAB_INACTIVE;
       tabGrammarBtn.className = TAB_INACTIVE;
       tabManageBtn.className = TAB_INACTIVE;
-      tabDialogsBtn.className = TAB_INACTIVE;
+      
           
           screenQuiz.classList.remove('hidden');
           tabQuizBtn.className = TAB_ACTIVE;
           
           document.getElementById('quizMenu').classList.remove('hidden');
           document.getElementById('quizActive').classList.add('hidden');
+          document.getElementById('screenDialogs').classList.add('hidden');
        } else {
           originalSwitchTab(tab);
        }
@@ -2581,6 +2592,58 @@
         return matrix[b.length][a.length];
     }
     // ==================== END SPEAKING LOGIC ====================
+
+
+    function openDialogsFromQuiz() {
+        document.getElementById('screenQuiz').classList.add('hidden');
+        document.getElementById('screenDialogs').classList.remove('hidden');
+        renderDialogsList();
+        triggerHaptic('light');
+    }
+    
+    // Sortable JS Initialization
+    document.addEventListener("DOMContentLoaded", () => {
+        const quizMenu = document.getElementById('quizMenu');
+        if (quizMenu && typeof Sortable !== 'undefined') {
+            // Restore order from localStorage
+            const savedOrder = localStorage.getItem('schueco_quiz_order');
+            if (savedOrder) {
+                const orderArr = JSON.parse(savedOrder);
+                const itemsMap = {};
+                Array.from(quizMenu.children).forEach(child => {
+                    const mode = child.getAttribute('data-mode');
+                    if (mode) itemsMap[mode] = child;
+                });
+                
+                // Reorder DOM
+                orderArr.forEach(mode => {
+                    if (itemsMap[mode]) {
+                        quizMenu.appendChild(itemsMap[mode]);
+                        delete itemsMap[mode];
+                    }
+                });
+                // Append remaining items (if any new ones were added)
+                Object.values(itemsMap).forEach(child => quizMenu.appendChild(child));
+            }
+            
+            // Initialize drag and drop
+            new Sortable(quizMenu, {
+                animation: 200,
+                delay: 300, // 300ms long press to drag
+                delayOnTouchOnly: true, // only require long press on mobile
+                touchStartThreshold: 5,
+                ghostClass: 'opacity-50',
+                onEnd: function() {
+                    triggerHaptic('light');
+                    // Save new order
+                    const newOrder = Array.from(quizMenu.children)
+                        .map(child => child.getAttribute('data-mode'))
+                        .filter(Boolean);
+                    localStorage.setItem('schueco_quiz_order', JSON.stringify(newOrder));
+                }
+            });
+        }
+    });
 
 </script>
 
