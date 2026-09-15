@@ -164,7 +164,7 @@
     <!-- ТАБЫ ПЕРЕКЛЮЧЕНИЯ ЭКРАНОВ -->
     <div class="max-w-xl mx-auto px-4 pt-1 pb-2">
       
-      <div class="grid grid-cols-4 p-1 bg-slate-200/70 dark:bg-slate-800/70 backdrop-blur rounded-2xl gap-1 border border-slate-300/40 dark:border-slate-700/40">
+      <div class="grid grid-cols-5 p-1 bg-slate-200/70 dark:bg-slate-800/70 backdrop-blur rounded-2xl gap-1 border border-slate-300/40 dark:border-slate-700/40">
         <button id="tabQuizBtn" class="py-2 text-[11px] sm:text-xs font-bold rounded-xl transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1.5">
           <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           <span class="truncate">Тренажер</span>
@@ -186,6 +186,12 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
           </svg>
           <span class="truncate">Список</span>
+        </button>
+        <button id="tabDialogsBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+          </svg>
+          <span class="truncate">Диалоги</span>
         </button>
       </div>
 
@@ -221,7 +227,7 @@
           </div>
         </div>
         
-        <button onclick="openCustomWordModal()" class="bg-sky-600 hover:bg-sky-700 text-white px-4 rounded-2xl shadow-sm font-bold text-2xl active:scale-95 transition-all flex items-center justify-center shrink-0" title="Добавить свое слово">
+        <button onclick="openCustomWordModal()" class="bg-sky-600 hover:bg-sky-700 text-white w-[46px] sm:w-[48px] rounded-2xl shadow-sm font-bold text-2xl active:scale-95 transition-all flex items-center justify-center shrink-0" title="Добавить свое слово">
           <span class="mb-1">+</span>
         </button>
       </div>
@@ -461,6 +467,31 @@
       <div class="text-3xl">🔍</div>
       <p class="text-sm font-semibold text-tgText">Ничего не найдено</p>
       <p class="text-xs text-tgHint">Попробуйте изменить поисковый запрос или фильтр категории</p>
+    </div>
+
+  
+    <!-- ==================== ЭКРАН 5: ДИАЛОГИ ==================== -->
+    <div id="screenDialogs" class="hidden space-y-4">
+      <div id="dialogsList" class="space-y-3">
+         <!-- Populated by JS -->
+      </div>
+      <div id="singleDialogView" class="hidden flex flex-col h-[75vh]">
+         <div class="flex items-center gap-3 mb-4 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+            <button onclick="closeSingleDialog()" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 flex items-center justify-center active:scale-90 transition-transform">
+               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <div class="flex-1">
+               <h3 id="singleDialogTitle" class="font-bold text-slate-800 dark:text-white leading-tight">...</h3>
+               <p id="singleDialogSubtitle" class="text-xs text-slate-500 dark:text-slate-400">...</p>
+            </div>
+            <button id="playAllDialogBtn" class="bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400 px-4 py-2 rounded-xl font-bold text-sm active:scale-95 transition-transform flex items-center gap-1">
+               ▶️ Всё
+            </button>
+         </div>
+         <div id="dialogBubbles" class="flex-1 overflow-y-auto space-y-4 p-2 hide-scrollbar pb-20">
+            <!-- Bubbles -->
+         </div>
+      </div>
     </div>
 
   </main>
@@ -1486,9 +1517,9 @@
     const tabLearnBtn = document.getElementById('tabLearnBtn');
     const tabGrammarBtn = document.getElementById('tabGrammarBtn');
     const tabManageBtn = document.getElementById('tabManageBtn');
-    const screenLearn = document.getElementById('screenLearn');
-    const screenGrammar = document.getElementById('screenGrammar');
+    const tabDialogsBtn = document.getElementById('tabDialogsBtn');
     const screenManage = document.getElementById('screenManage');
+    const screenDialogs = document.getElementById('screenDialogs');
     const filterSection = document.getElementById('filterSection');
 
     const TAB_ACTIVE = "py-2 text-[11px] sm:text-xs font-bold rounded-xl transition-all duration-200 bg-sky-600 text-white shadow-sm flex items-center justify-center space-x-1.5";
@@ -1502,11 +1533,12 @@
       screenLearn.classList.add('hidden');
       screenGrammar.classList.add('hidden');
       screenManage.classList.add('hidden');
+      screenDialogs.classList.add('hidden');
 
-      // Сбрасываем стили кнопок
       tabLearnBtn.className = TAB_INACTIVE;
       tabGrammarBtn.className = TAB_INACTIVE;
       tabManageBtn.className = TAB_INACTIVE;
+      tabDialogsBtn.className = TAB_INACTIVE;
       
       const blurToggleContainer = document.getElementById('blurToggleContainer');
       if (blurToggleContainer) blurToggleContainer.classList.add('hidden');
@@ -1520,10 +1552,15 @@
         screenGrammar.classList.remove('hidden');
         tabGrammarBtn.className = TAB_ACTIVE;
         if (filterSection) filterSection.classList.add('hidden'); // В грамматике скрываем секцию фильтров слов
-      } else {
+      } else if (tab === 'manage') {
         screenManage.classList.remove('hidden');
         tabManageBtn.className = TAB_ACTIVE;
         if (filterSection) filterSection.classList.remove('hidden');
+      } else if (tab === 'dialogs') {
+        screenDialogs.classList.remove('hidden');
+        tabDialogsBtn.className = TAB_ACTIVE;
+        if (filterSection) filterSection.classList.add('hidden');
+        renderDialogsList();
       }
       renderCurrentView();
     }
@@ -1531,6 +1568,7 @@
     tabLearnBtn.addEventListener('click', () => switchTab('learn'));
     tabGrammarBtn.addEventListener('click', () => switchTab('grammar'));
     tabManageBtn.addEventListener('click', () => switchTab('manage'));
+    tabDialogsBtn.addEventListener('click', () => switchTab('dialogs'));
 
     // Выбор категории (Аккордеон разделов)
     const categoriesAccordion = document.getElementById('categoriesAccordion');
@@ -1705,13 +1743,14 @@
           activeTab = 'quiz';
           triggerHaptic('light');
           screenLearn.classList.add('hidden');
-          screenGrammar.classList.add('hidden');
-          screenManage.classList.add('hidden');
-          filterSection.classList.add('hidden');
-          
-          tabLearnBtn.className = TAB_INACTIVE;
-          tabGrammarBtn.className = TAB_INACTIVE;
-          tabManageBtn.className = TAB_INACTIVE;
+      screenGrammar.classList.add('hidden');
+      screenManage.classList.add('hidden');
+      screenDialogs.classList.add('hidden');
+
+      tabLearnBtn.className = TAB_INACTIVE;
+      tabGrammarBtn.className = TAB_INACTIVE;
+      tabManageBtn.className = TAB_INACTIVE;
+      tabDialogsBtn.className = TAB_INACTIVE;
           
           screenQuiz.classList.remove('hidden');
           tabQuizBtn.className = TAB_ACTIVE;
@@ -2231,6 +2270,168 @@
        renderCurrentView(); // Force re-render of the list
        if (typeof updateVisualStats === 'function') updateVisualStats();
        showToast('Слово добавлено!', '✅');
+    }
+
+
+    const DIALOGS = [
+      {
+         title: "Разговор с мастером",
+         subtitle: "Обсуждение задачи и сроков",
+         icon: "👨‍🔧",
+         messages: [
+           { role: "other", tr: "Kolay gelsin. Profil montajı ne zaman biter?", ru: "Бог в помощь. Когда закончится монтаж профиля?" },
+           { role: "me", tr: "Sağ olun. Öğleden sonra bitirmeyi planlıyorum.", ru: "Спасибо. Планирую закончить после обеда." },
+           { role: "other", tr: "Tamam, acele etme ama dikkatli ol. Ölçüleri kontrol ettin mi?", ru: "Хорошо, не торопись, но будь внимателен. Размеры проверил?" },
+           { role: "me", tr: "Evet usta, her şey projeye uygun.", ru: "Да, мастер, всё по проекту." }
+         ]
+      },
+      {
+         title: "На складе",
+         subtitle: "Поиск нужного профиля",
+         icon: "📦",
+         messages: [
+           { role: "me", tr: "Merhaba, bana Schüco AWS 75.SI pencere profili lazım.", ru: "Здравствуйте, мне нужен оконный профиль Schüco AWS 75.SI." },
+           { role: "other", tr: "Merhaba. Kaç metre lazım?", ru: "Здравствуйте. Сколько метров нужно?" },
+           { role: "me", tr: "İki boy (yaklaşık 12 metre) yeterli olacak.", ru: "Двух хлыстов (около 12 метров) будет достаточно." },
+           { role: "other", tr: "Tamam, depo 3'te sol tarafta bulabilirsin.", ru: "Хорошо, можешь найти на складе 3 с левой стороны." }
+         ]
+      },
+      {
+         title: "В столовой (Перерыв)",
+         subtitle: "Бытовой разговор с коллегой",
+         icon: "☕",
+         messages: [
+           { role: "other", tr: "Çay molası! Çay içer misin?", ru: "Перерыв на чай! Будешь пить чай?" },
+           { role: "me", tr: "Evet, lütfen. Şekersiz olsun.", ru: "Да, пожалуйста. Без сахара." },
+           { role: "other", tr: "Bugün işler çok yoğun, değil mi?", ru: "Сегодня работы очень много, не так ли?" },
+           { role: "me", tr: "Evet, siparişler birikti. Ama hallederiz.", ru: "Да, заказы накопились. Но мы справимся." }
+         ]
+      }
+    ];
+
+    let currentDialogIndex = null;
+    let dialogPlaybackTimeout = null;
+    let isDialogPlaying = false;
+
+    function renderDialogsList() {
+       const list = document.getElementById('dialogsList');
+       document.getElementById('singleDialogView').classList.add('hidden');
+       list.classList.remove('hidden');
+       
+       let html = '';
+       DIALOGS.forEach((d, i) => {
+          html += `
+             <button onclick="openDialog(${i})" class="w-full bg-white dark:bg-slate-800 p-4 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-4 active:scale-95 transition-transform text-left">
+                <div class="text-3xl bg-slate-100 dark:bg-slate-700 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0">
+                   ${d.icon}
+                </div>
+                <div class="flex-1">
+                   <h4 class="font-bold text-slate-800 dark:text-white text-lg">${d.title}</h4>
+                   <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">${d.subtitle}</p>
+                </div>
+                <div class="text-slate-300 dark:text-slate-600">
+                   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </div>
+             </button>
+          `;
+       });
+       list.innerHTML = html;
+    }
+
+    function openDialog(idx) {
+       currentDialogIndex = idx;
+       const d = DIALOGS[idx];
+       
+       document.getElementById('dialogsList').classList.add('hidden');
+       document.getElementById('singleDialogView').classList.remove('hidden');
+       
+       document.getElementById('singleDialogTitle').textContent = d.title;
+       document.getElementById('singleDialogSubtitle').textContent = d.subtitle;
+       
+       const bubbles = document.getElementById('dialogBubbles');
+       let html = '';
+       d.messages.forEach((m, i) => {
+          const isMe = m.role === 'me';
+          html += `
+             <div class="flex ${isMe ? 'justify-end' : 'justify-start'} w-full animate-fade-in" style="animation-delay: ${i * 0.1}s">
+                <div class="max-w-[85%] ${isMe ? 'bg-sky-500 text-white rounded-l-2xl rounded-tr-2xl' : 'bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-100 rounded-r-2xl rounded-tl-2xl'} p-3.5 shadow-sm relative group cursor-pointer" onclick="playDialogMessage(${i})" id="dialog-msg-${i}">
+                   <div class="font-medium text-sm leading-snug">${m.tr}</div>
+                   <div class="${isMe ? 'text-sky-100' : 'text-slate-500 dark:text-slate-400'} text-[11px] mt-1.5 leading-tight opacity-90">${m.ru}</div>
+                   <div class="absolute ${isMe ? '-left-8' : '-right-8'} top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-slate-200 dark:bg-slate-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity text-[10px]">
+                      🔊
+                   </div>
+                </div>
+             </div>
+          `;
+       });
+       bubbles.innerHTML = html;
+       
+       const playBtn = document.getElementById('playAllDialogBtn');
+       playBtn.innerHTML = '▶️ Всё';
+       playBtn.onclick = () => toggleDialogPlayback();
+       isDialogPlaying = false;
+       clearTimeout(dialogPlaybackTimeout);
+       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    }
+
+    function closeSingleDialog() {
+       clearTimeout(dialogPlaybackTimeout);
+       isDialogPlaying = false;
+       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+       document.getElementById('singleDialogView').classList.add('hidden');
+       document.getElementById('dialogsList').classList.remove('hidden');
+    }
+
+    function playDialogMessage(msgIdx, onComplete) {
+       const d = DIALOGS[currentDialogIndex];
+       if (!d || !d.messages[msgIdx]) return;
+       
+       const m = d.messages[msgIdx];
+       const el = document.getElementById(`dialog-msg-${msgIdx}`);
+       
+       if (el) el.classList.add('ring-2', 'ring-offset-2', 'ring-sky-400', 'dark:ring-offset-slate-800');
+       
+       speakLang(m.tr, 'tr', null, 'normal', null, () => {
+          if (el) el.classList.remove('ring-2', 'ring-offset-2', 'ring-sky-400', 'dark:ring-offset-slate-800');
+          if (onComplete) onComplete();
+       });
+    }
+
+    function toggleDialogPlayback() {
+       const playBtn = document.getElementById('playAllDialogBtn');
+       
+       if (isDialogPlaying) {
+          isDialogPlaying = false;
+          clearTimeout(dialogPlaybackTimeout);
+          if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+          playBtn.innerHTML = '▶️ Всё';
+       } else {
+          isDialogPlaying = true;
+          playBtn.innerHTML = '⏸️ Пауза';
+          playDialogSequence(0);
+       }
+    }
+
+    function playDialogSequence(msgIdx) {
+       if (!isDialogPlaying) return;
+       
+       const d = DIALOGS[currentDialogIndex];
+       if (!d || msgIdx >= d.messages.length) {
+          isDialogPlaying = false;
+          document.getElementById('playAllDialogBtn').innerHTML = '▶️ Всё';
+          return;
+       }
+       
+       // Scroll into view gently
+       const el = document.getElementById(`dialog-msg-${msgIdx}`);
+       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+       
+       playDialogMessage(msgIdx, () => {
+          if (!isDialogPlaying) return;
+          dialogPlaybackTimeout = setTimeout(() => {
+             playDialogSequence(msgIdx + 1);
+          }, 600); // 0.6s pause between speakers
+       });
     }
 
 </script>
