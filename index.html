@@ -2082,14 +2082,18 @@ const searchContainer = document.getElementById('searchContainer');
                if ('speechSynthesis' in window) window.speechSynthesis.cancel();
                
                autoplayTimeout = setTimeout(() => {
-                   speakLang(item.tr, 'tr', null, 'normal', null, () => {
+                   speakLang(item.ru, 'ru', null, 'normal', null, () => {
                        autoplayTimeout = setTimeout(() => {
-                           speakLang(item.ru, 'ru', null, 'normal', null, () => {
+                           speakLang(item.tr, 'tr', null, 'normal', null, () => {
                                autoplayTimeout = setTimeout(() => {
-                                   skipQuizItemAutoplay();
-                               }, 2000); 
+                                   speakLang(item.tr, 'tr', null, 'normal', null, () => {
+                                       autoplayTimeout = setTimeout(() => {
+                                           skipQuizItemAutoplay();
+                                       }, 1500); 
+                                   });
+                               }, 800);
                            });
-                       }, 1000); 
+                       }, 800); 
                    });
                }, 500);
           }
