@@ -205,6 +205,10 @@
           </svg>
           <span class="truncate">Список</span>
         </button>
+        <button id="tabProgressBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
+          <span class="text-base leading-none">🏆</span>
+          <span class="truncate">Прогресс</span>
+        </button>
         
       </div>
 
@@ -727,9 +731,11 @@
         if (tg && tg.CloudStorage) {
             let cloudPayload = {
                 streak: appStats.streak,
+                longestStreak: appStats.longestStreak,
                 totalDays: appStats.totalDays,
                 lastActiveDate: appStats.lastActiveDate,
-                reviewedToday: appStats.reviewedToday
+                reviewedToday: appStats.reviewedToday,
+                achievements: appStats.achievements
             };
             tg.CloudStorage.setItem('schueco_app_stats', JSON.stringify(cloudPayload));
         }
@@ -742,11 +748,169 @@
     let isQuizSoundEnabled = true;
     let appStats = {
       streak: 0,
+      longestStreak: 0,
       totalDays: 0,
       lastActiveDate: null,
       reviewedToday: 0,
-      dailyGoal: 15
+      dailyGoal: 15,
+      achievements: {}
     };
+
+    
+    const RANKS = [
+       { title: 'Турист', min: 0, max: 49, icon: '🌱', color: 'from-green-400 to-emerald-500' },
+       { title: 'Студент', min: 50, max: 149, icon: '🎒', color: 'from-blue-400 to-sky-500' },
+       { title: 'Собеседник', min: 150, max: 299, icon: '🗣️', color: 'from-indigo-400 to-violet-500' },
+       { title: 'Специалист', min: 300, max: 499, icon: '💼', color: 'from-fuchsia-400 to-pink-500' },
+       { title: 'Мастер', min: 500, max: 799, icon: '🎓', color: 'from-orange-400 to-red-500' },
+       { title: 'Легенда Schüco', min: 800, max: 99999, icon: '👑', color: 'from-amber-300 to-yellow-500' }
+    ];
+
+    const ACHIEVEMENTS = [
+       { id: 'streak_3', title: 'Искра', desc: 'Заниматься 3 дня подряд', icon: '🔥', goal: 3, type: 'streak' },
+       { id: 'streak_7', title: 'Привычка', desc: 'Заниматься 7 дней подряд', icon: '📅', goal: 7, type: 'streak' },
+       { id: 'streak_30', title: 'Железная воля', desc: 'Заниматься 30 дней подряд', icon: '⚔️', goal: 30, type: 'streak' },
+       { id: 'words_10', title: 'Первые шаги', desc: 'Выучить 10 слов', icon: '👟', goal: 10, type: 'words' },
+       { id: 'words_100', title: 'Словарный запас', desc: 'Выучить 100 слов', icon: '🧠', goal: 100, type: 'words' },
+       { id: 'words_500', title: 'Маэстро', desc: 'Выучить 500 слов', icon: '🎓', goal: 500, type: 'words' },
+       { id: 'custom_1', title: 'Творец', desc: 'Добавить 1 свое слово', icon: '➕', goal: 1, type: 'custom' },
+       { id: 'custom_10', title: 'Свой словарь', desc: 'Добавить 10 своих слов', icon: '📚', goal: 10, type: 'custom' },
+    ];
+
+    function checkAchievements() {
+        if (!appStats.achievements) appStats.achievements = {};
+        
+        let learned = phrases.filter(p => p.learned).length;
+        let customCount = phrases.filter(p => p.isCustom).length;
+        let streak = appStats.streak || 0;
+        let longest = appStats.longestStreak || streak;
+        
+        let unlockedAny = false;
+        
+        ACHIEVEMENTS.forEach(ach => {
+            if (!appStats.achievements[ach.id]) {
+                let current = 0;
+                if (ach.type === 'streak') current = longest;
+                if (ach.type === 'words') current = learned;
+                if (ach.type === 'custom') current = customCount;
+                
+                if (current >= ach.goal) {
+                    appStats.achievements[ach.id] = new Date().toISOString();
+                    unlockedAny = true;
+                    // Optional: Show celebration toast
+                    setTimeout(() => showToast(`Открыто достижение: ${ach.icon} ${ach.title}!`, '🎉'), 500);
+                }
+            }
+        });
+        
+        if (unlockedAny) {
+            saveState(); // Will trigger re-render if we are on progress screen
+            if (activeTab === 'progress') renderProgressScreen();
+        }
+    }
+
+    function renderProgressScreen() {
+        let learnedCount = phrases.filter(p => p.learned).length;
+        let learningCount = phrases.filter(p => p.srs && Math.max(
+             p.srs.flashcards?.level || 0,
+             p.srs.multiple?.level || 0,
+             p.srs.listening?.level || 0,
+             p.srs.sentence?.level || 0,
+             p.srs.pairs?.level || 0,
+             p.srs.speaking?.level || 0
+          ) > 0 && !p.learned).length;
+        let customCount = phrases.filter(p => p.isCustom).length;
+        
+        // Find Rank
+        let currentRank = RANKS[0];
+        let nextRank = RANKS[1];
+        for (let i = 0; i < RANKS.length; i++) {
+            if (learnedCount >= RANKS[i].min) {
+                currentRank = RANKS[i];
+                nextRank = RANKS[i+1] || RANKS[i];
+            }
+        }
+        
+        // Update Rank Card
+        const rankContainer = document.getElementById('rankContainer');
+        rankContainer.className = `bg-gradient-to-br ${currentRank.color} rounded-3xl p-6 shadow-md text-white relative overflow-hidden transition-all duration-500`;
+        document.getElementById('rankBgIcon').textContent = currentRank.icon;
+        document.getElementById('rankIcon').textContent = currentRank.icon;
+        document.getElementById('rankTitle').textContent = currentRank.title;
+        
+        let progressPct = 100;
+        if (nextRank !== currentRank) {
+            let range = nextRank.min - currentRank.min;
+            let current = learnedCount - currentRank.min;
+            progressPct = Math.min(100, Math.max(0, (current / range) * 100));
+            document.getElementById('rankWordsCurrent').textContent = `${learnedCount} слов`;
+            document.getElementById('rankWordsNext').textContent = `${nextRank.min} слов`;
+            document.getElementById('rankNextHint').textContent = `До следующего звания: ${nextRank.min - learnedCount} слов`;
+        } else {
+            document.getElementById('rankWordsCurrent').textContent = `${learnedCount} слов`;
+            document.getElementById('rankWordsNext').textContent = `МАКСИМУМ`;
+            document.getElementById('rankNextHint').textContent = `Вы достигли высшего звания!`;
+        }
+        setTimeout(() => {
+            document.getElementById('rankProgressBar').style.width = `${progressPct}%`;
+        }, 100);
+        
+        // Update Stats
+        document.getElementById('statLearned').textContent = learnedCount;
+        document.getElementById('statLearning').textContent = learningCount;
+        document.getElementById('statLongestStreak').textContent = Math.max(appStats.streak || 0, appStats.longestStreak || 0);
+        document.getElementById('statCustomWords').textContent = customCount;
+        
+        // Render Achievements
+        const grid = document.getElementById('achievementsGrid');
+        let html = '';
+        
+        let longest = Math.max(appStats.streak || 0, appStats.longestStreak || 0);
+        if (!appStats.achievements) appStats.achievements = {};
+        
+        ACHIEVEMENTS.forEach(ach => {
+            let isUnlocked = !!appStats.achievements[ach.id];
+            
+            let current = 0;
+            if (ach.type === 'streak') current = longest;
+            if (ach.type === 'words') current = learnedCount;
+            if (ach.type === 'custom') current = customCount;
+            
+            let progress = Math.min(100, (current / ach.goal) * 100);
+            
+            if (isUnlocked) {
+                html += `
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border-2 border-emerald-400 flex items-center gap-4 transition-transform hover:scale-[1.02]">
+                   <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-emerald-100 to-green-200 dark:from-emerald-900/50 dark:to-green-800/50 flex items-center justify-center text-3xl shadow-sm">
+                      ${ach.icon}
+                   </div>
+                   <div class="flex-1">
+                      <div class="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+                         ${ach.title}
+                         <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                      </div>
+                      <div class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">${ach.desc}</div>
+                   </div>
+                </div>`;
+            } else {
+                html += `
+                <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 border border-slate-200 dark:border-slate-700 flex items-center gap-4 opacity-75 grayscale hover:grayscale-0 transition-all">
+                   <div class="w-14 h-14 shrink-0 rounded-2xl bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-3xl">
+                      🔒
+                   </div>
+                   <div class="flex-1">
+                      <div class="font-bold text-slate-500 dark:text-slate-400">${ach.title}</div>
+                      <div class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">${ach.desc}</div>
+                      <div class="mt-2 h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                         <div class="h-full bg-slate-400 dark:bg-slate-500 rounded-full" style="width: ${progress}%"></div>
+                      </div>
+                   </div>
+                </div>`;
+            }
+        });
+        
+        grid.innerHTML = html;
+    }
 
     let isBlurMode = 'none'; // 'none', 'translation', 'original'
     
@@ -788,6 +952,7 @@
       // If lastActiveDate is not today, it means this is the very first review of the day!
       if (appStats.lastActiveDate !== today) {
          appStats.streak = (appStats.streak || 0) + 1;
+         appStats.longestStreak = Math.max(appStats.longestStreak || 0, appStats.streak);
          appStats.totalDays = (appStats.totalDays || 0) + 1;
          appStats.lastActiveDate = today;
          appStats.reviewedToday = 0;
@@ -804,6 +969,7 @@
 
     function updateLearnedCounter() {
       checkStreak();
+      checkAchievements();
       const streakEl = document.getElementById('streakCounter');
       const percentEl = document.getElementById('learnedPercent');
       const barEl = document.getElementById('learnedProgressBar');
@@ -1591,10 +1757,12 @@
       screenGrammar.classList.add('hidden');
       screenManage.classList.add('hidden');
       screenDialogs.classList.add('hidden');
+      if (screenProgress) screenProgress.classList.add('hidden');
 
       tabLearnBtn.className = TAB_INACTIVE;
       tabGrammarBtn.className = TAB_INACTIVE;
       tabManageBtn.className = TAB_INACTIVE;
+      if (tabProgressBtn) tabProgressBtn.className = TAB_INACTIVE;
       
       
       const blurToggleContainer = document.getElementById('blurToggleContainer');
@@ -1617,14 +1785,24 @@ const searchContainer = document.getElementById('searchContainer');
         tabManageBtn.className = TAB_ACTIVE;
         if (filterSection) filterSection.classList.remove('hidden');
         if (searchContainer) searchContainer.classList.remove('hidden');
+      } else if (tab === 'progress') {
+        if (screenProgress) screenProgress.classList.remove('hidden');
+        if (tabProgressBtn) tabProgressBtn.className = TAB_ACTIVE;
+        if (filterSection) filterSection.classList.add('hidden');
+        checkAchievements();
+        renderProgressScreen();
       }
       
       renderCurrentView();
     }
 
+    const tabProgressBtn = document.getElementById('tabProgressBtn');
+    const screenProgress = document.getElementById('screenProgress');
+    
     tabLearnBtn.addEventListener('click', () => switchTab('learn'));
     tabGrammarBtn.addEventListener('click', () => switchTab('grammar'));
     tabManageBtn.addEventListener('click', () => switchTab('manage'));
+    tabProgressBtn.addEventListener('click', () => switchTab('progress'));
     
 
     // Выбор категории (Аккордеон разделов)
@@ -1753,8 +1931,10 @@ const searchContainer = document.getElementById('searchContainer');
               
               if ((cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
                   appStats.streak = cloudStats.streak;
+                  appStats.longestStreak = Math.max(appStats.longestStreak || 0, cloudStats.longestStreak || 0, cloudStats.streak || 0);
                   appStats.totalDays = cloudStats.totalDays;
                   appStats.lastActiveDate = cloudStats.lastActiveDate;
+                  if (cloudStats.achievements) appStats.achievements = cloudStats.achievements;
                   
                   if (cloudStats.lastActiveDate === getTodayStr()) {
                       appStats.reviewedToday = Math.max(appStats.reviewedToday || 0, cloudStats.reviewedToday || 0);
@@ -1797,8 +1977,10 @@ const searchContainer = document.getElementById('searchContainer');
               
               if ((cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
                   appStats.streak = cloudStats.streak;
+                  appStats.longestStreak = Math.max(appStats.longestStreak || 0, cloudStats.longestStreak || 0, cloudStats.streak || 0);
                   appStats.totalDays = cloudStats.totalDays;
                   appStats.lastActiveDate = cloudStats.lastActiveDate;
+                  if (cloudStats.achievements) appStats.achievements = cloudStats.achievements;
                   
                   if (cloudStats.lastActiveDate === getTodayStr()) {
                       appStats.reviewedToday = Math.max(appStats.reviewedToday || 0, cloudStats.reviewedToday || 0);
@@ -1880,10 +2062,12 @@ const searchContainer = document.getElementById('searchContainer');
       screenGrammar.classList.add('hidden');
       screenManage.classList.add('hidden');
       screenDialogs.classList.add('hidden');
+      if (screenProgress) screenProgress.classList.add('hidden');
 
       tabLearnBtn.className = TAB_INACTIVE;
       tabGrammarBtn.className = TAB_INACTIVE;
       tabManageBtn.className = TAB_INACTIVE;
+      if (tabProgressBtn) tabProgressBtn.className = TAB_INACTIVE;
       
           
           screenQuiz.classList.remove('hidden');
