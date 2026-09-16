@@ -727,18 +727,8 @@
         localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
         updateLearnedCounter();
         
-        const tg = window.Telegram?.WebApp;
-        if (tg && tg.CloudStorage) {
-            let cloudPayload = {
-                streak: appStats.streak,
-                longestStreak: appStats.longestStreak,
-                totalDays: appStats.totalDays,
-                lastActiveDate: appStats.lastActiveDate,
-                reviewedToday: appStats.reviewedToday,
-                achievements: appStats.achievements
-            };
-            tg.CloudStorage.setItem('schueco_app_stats', JSON.stringify(cloudPayload));
-        }
+        // Chunk and save full state to cloud
+        saveToCloud('schueco_full', JSON.stringify(toSave));
       } catch (e) {
         console.error('Ошибка записи в localStorage:', e);
       }
@@ -1919,39 +1909,90 @@ const searchContainer = document.getElementById('searchContainer');
         localStorage.removeItem(STORAGE_KEY);
         loadState();
 
-    function syncCloudStats() {
-      const tg = window.Telegram?.WebApp;
-      if (tg && tg.CloudStorage) {
-        tg.CloudStorage.getItem('schueco_app_stats', (err, value) => {
-          if (!err && value) {
-            try {
-              let cloudStats = JSON.parse(value);
-              let localLastActive = new Date(appStats.lastActiveDate || '2000-01-01');
-              let cloudLastActive = new Date(cloudStats.lastActiveDate || '2000-01-01');
-              
-              if ((cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
-                  appStats.streak = cloudStats.streak;
-                  appStats.longestStreak = Math.max(appStats.longestStreak || 0, cloudStats.longestStreak || 0, cloudStats.streak || 0);
-                  appStats.totalDays = cloudStats.totalDays;
-                  appStats.lastActiveDate = cloudStats.lastActiveDate;
-                  if (cloudStats.achievements) appStats.achievements = cloudStats.achievements;
-                  
-                  if (cloudStats.lastActiveDate === getTodayStr()) {
-                      appStats.reviewedToday = Math.max(appStats.reviewedToday || 0, cloudStats.reviewedToday || 0);
-                  }
-                  
-                  // Silent save (don't trigger loop)
-                  const toSave = {
-                    stats: appStats,
-                    phrases: phrases.map(p => p.isCustom ? p : { id: p.id, srs: p.srs, learned: p.learned })
-                  };
-                  localStorage.setItem('schueco_state_v2', JSON.stringify(toSave));
-                  updateLearnedCounter();
-              }
-            } catch(e) { console.error('Cloud parse error', e); }
-          }
+    // ==================== CLOUD SYNC UTILS ====================
+    function saveToCloud(keyPrefix, dataString) {
+        const tg = window.Telegram?.WebApp;
+        if (!tg || !tg.CloudStorage) return;
+
+        const CHUNK_SIZE = 4000;
+        let chunks = [];
+        for (let i = 0; i < dataString.length; i += CHUNK_SIZE) {
+            chunks.push(dataString.substring(i, i + CHUNK_SIZE));
+        }
+
+        tg.CloudStorage.setItem(keyPrefix + '_meta', chunks.length.toString(), (err) => {
+            if (!err) {
+                let keys = {};
+                chunks.forEach((chunk, idx) => {
+                    keys[keyPrefix + '_' + idx] = chunk;
+                });
+                
+                // Using recursive setItem or just loop, since setItem accepts single key/value. Wait! Telegram API has setItem(key, value)
+                // We will loop and set them
+                chunks.forEach((chunk, idx) => {
+                    tg.CloudStorage.setItem(keyPrefix + '_' + idx, chunk);
+                });
+                
+                // Also clean up old chunks if new size is smaller (optional but good practice)
+                // For simplicity, we assume it mostly grows.
+            }
         });
-      }
+    }
+
+    function loadFromCloud(keyPrefix, callback) {
+        const tg = window.Telegram?.WebApp;
+        if (!tg || !tg.CloudStorage) return callback(null);
+
+        tg.CloudStorage.getItem(keyPrefix + '_meta', (err, metaValue) => {
+            if (err || !metaValue) return callback(null);
+            
+            let totalChunks = parseInt(metaValue);
+            if (isNaN(totalChunks) || totalChunks === 0) return callback(null);
+            
+            let keysToFetch = [];
+            for (let i = 0; i < totalChunks; i++) {
+                keysToFetch.push(keyPrefix + '_' + i);
+            }
+            
+            tg.CloudStorage.getItems(keysToFetch, (err, values) => {
+                if (err || !values) return callback(null);
+                
+                let fullString = '';
+                for (let i = 0; i < totalChunks; i++) {
+                    if (values[keyPrefix + '_' + i]) {
+                        fullString += values[keyPrefix + '_' + i];
+                    }
+                }
+                callback(fullString);
+            });
+        });
+    }
+
+    function syncCloudStats() {
+        // Now sync the ENTIRE state using chunking
+        loadFromCloud('schueco_full', (cloudString) => {
+            if (!cloudString) return;
+            try {
+                let cloudData = JSON.parse(cloudString);
+                let cloudStats = cloudData.stats;
+                if (!cloudStats) return;
+                
+                let localLastActive = new Date(appStats.lastActiveDate || '2000-01-01');
+                let cloudLastActive = new Date(cloudStats.lastActiveDate || '2000-01-01');
+                
+                // If cloud is newer OR has more learned words OR has higher streak, use cloud data
+                let cloudLearned = cloudData.phrases ? cloudData.phrases.filter(p => p.learned).length : 0;
+                let localLearned = phrases.filter(p => p.learned).length;
+                
+                if (cloudLearned > localLearned || (cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
+                    // OVERWRITE local storage with cloud payload
+                    localStorage.setItem('schueco_state_v2', cloudString);
+                    // Reload everything from scratch to apply UI
+                    loadState(); 
+                    showToast('Прогресс синхронизирован с облаком', '☁️');
+                }
+            } catch(e) { console.error('Cloud parse error', e); }
+        });
     }
     
     syncCloudStats();
@@ -1965,39 +2006,90 @@ const searchContainer = document.getElementById('searchContainer');
     // Готов к инициализации
     loadState();
 
-    function syncCloudStats() {
-      const tg = window.Telegram?.WebApp;
-      if (tg && tg.CloudStorage) {
-        tg.CloudStorage.getItem('schueco_app_stats', (err, value) => {
-          if (!err && value) {
-            try {
-              let cloudStats = JSON.parse(value);
-              let localLastActive = new Date(appStats.lastActiveDate || '2000-01-01');
-              let cloudLastActive = new Date(cloudStats.lastActiveDate || '2000-01-01');
-              
-              if ((cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
-                  appStats.streak = cloudStats.streak;
-                  appStats.longestStreak = Math.max(appStats.longestStreak || 0, cloudStats.longestStreak || 0, cloudStats.streak || 0);
-                  appStats.totalDays = cloudStats.totalDays;
-                  appStats.lastActiveDate = cloudStats.lastActiveDate;
-                  if (cloudStats.achievements) appStats.achievements = cloudStats.achievements;
-                  
-                  if (cloudStats.lastActiveDate === getTodayStr()) {
-                      appStats.reviewedToday = Math.max(appStats.reviewedToday || 0, cloudStats.reviewedToday || 0);
-                  }
-                  
-                  // Silent save (don't trigger loop)
-                  const toSave = {
-                    stats: appStats,
-                    phrases: phrases.map(p => p.isCustom ? p : { id: p.id, srs: p.srs, learned: p.learned })
-                  };
-                  localStorage.setItem('schueco_state_v2', JSON.stringify(toSave));
-                  updateLearnedCounter();
-              }
-            } catch(e) { console.error('Cloud parse error', e); }
-          }
+    // ==================== CLOUD SYNC UTILS ====================
+    function saveToCloud(keyPrefix, dataString) {
+        const tg = window.Telegram?.WebApp;
+        if (!tg || !tg.CloudStorage) return;
+
+        const CHUNK_SIZE = 4000;
+        let chunks = [];
+        for (let i = 0; i < dataString.length; i += CHUNK_SIZE) {
+            chunks.push(dataString.substring(i, i + CHUNK_SIZE));
+        }
+
+        tg.CloudStorage.setItem(keyPrefix + '_meta', chunks.length.toString(), (err) => {
+            if (!err) {
+                let keys = {};
+                chunks.forEach((chunk, idx) => {
+                    keys[keyPrefix + '_' + idx] = chunk;
+                });
+                
+                // Using recursive setItem or just loop, since setItem accepts single key/value. Wait! Telegram API has setItem(key, value)
+                // We will loop and set them
+                chunks.forEach((chunk, idx) => {
+                    tg.CloudStorage.setItem(keyPrefix + '_' + idx, chunk);
+                });
+                
+                // Also clean up old chunks if new size is smaller (optional but good practice)
+                // For simplicity, we assume it mostly grows.
+            }
         });
-      }
+    }
+
+    function loadFromCloud(keyPrefix, callback) {
+        const tg = window.Telegram?.WebApp;
+        if (!tg || !tg.CloudStorage) return callback(null);
+
+        tg.CloudStorage.getItem(keyPrefix + '_meta', (err, metaValue) => {
+            if (err || !metaValue) return callback(null);
+            
+            let totalChunks = parseInt(metaValue);
+            if (isNaN(totalChunks) || totalChunks === 0) return callback(null);
+            
+            let keysToFetch = [];
+            for (let i = 0; i < totalChunks; i++) {
+                keysToFetch.push(keyPrefix + '_' + i);
+            }
+            
+            tg.CloudStorage.getItems(keysToFetch, (err, values) => {
+                if (err || !values) return callback(null);
+                
+                let fullString = '';
+                for (let i = 0; i < totalChunks; i++) {
+                    if (values[keyPrefix + '_' + i]) {
+                        fullString += values[keyPrefix + '_' + i];
+                    }
+                }
+                callback(fullString);
+            });
+        });
+    }
+
+    function syncCloudStats() {
+        // Now sync the ENTIRE state using chunking
+        loadFromCloud('schueco_full', (cloudString) => {
+            if (!cloudString) return;
+            try {
+                let cloudData = JSON.parse(cloudString);
+                let cloudStats = cloudData.stats;
+                if (!cloudStats) return;
+                
+                let localLastActive = new Date(appStats.lastActiveDate || '2000-01-01');
+                let cloudLastActive = new Date(cloudStats.lastActiveDate || '2000-01-01');
+                
+                // If cloud is newer OR has more learned words OR has higher streak, use cloud data
+                let cloudLearned = cloudData.phrases ? cloudData.phrases.filter(p => p.learned).length : 0;
+                let localLearned = phrases.filter(p => p.learned).length;
+                
+                if (cloudLearned > localLearned || (cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
+                    // OVERWRITE local storage with cloud payload
+                    localStorage.setItem('schueco_state_v2', cloudString);
+                    // Reload everything from scratch to apply UI
+                    loadState(); 
+                    showToast('Прогресс синхронизирован с облаком', '☁️');
+                }
+            } catch(e) { console.error('Cloud parse error', e); }
+        });
     }
     
     syncCloudStats();
