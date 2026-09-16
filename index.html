@@ -970,14 +970,13 @@
             if (btnList) btnList.className = "flex-1 py-1.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-all";
             screenLearn.classList.remove('hidden');
             screenManage.classList.add('hidden');
-            renderDictionary();
         } else {
             if (btnList) btnList.className = "flex-1 py-1.5 text-sm font-bold bg-white dark:bg-slate-700 shadow-sm rounded-lg text-slate-800 dark:text-white transition-all";
             if (btnCards) btnCards.className = "flex-1 py-1.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-all";
             screenManage.classList.remove('hidden');
             screenLearn.classList.add('hidden');
-            renderManageList();
         }
+        renderCurrentView();
     }
 
     let isBlurMode = 'none'; // 'none', 'translation', 'original'
@@ -1720,11 +1719,10 @@
 
     function renderCurrentView() {
       if (activeTab === 'learn') {
-        renderLearnCards();
+        if (dictMode === 'cards') renderLearnCards();
+        else renderManageList();
       } else if (activeTab === 'grammar') {
         renderGrammarList();
-      } else {
-        renderManageList();
       }
     }
 
