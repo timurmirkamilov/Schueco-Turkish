@@ -722,6 +722,17 @@
         };
         localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
         updateLearnedCounter();
+        
+        const tg = window.Telegram?.WebApp;
+        if (tg && tg.CloudStorage) {
+            let cloudPayload = {
+                streak: appStats.streak,
+                totalDays: appStats.totalDays,
+                lastActiveDate: appStats.lastActiveDate,
+                reviewedToday: appStats.reviewedToday
+            };
+            tg.CloudStorage.setItem('schueco_app_stats', JSON.stringify(cloudPayload));
+        }
       } catch (e) {
         console.error('Ошибка записи в localStorage:', e);
       }
@@ -1729,6 +1740,42 @@ const searchContainer = document.getElementById('searchContainer');
       if (confirm('Сбросить прогресс и порядок к заводским настройкам (1030 слов)?')) {
         localStorage.removeItem(STORAGE_KEY);
         loadState();
+
+    function syncCloudStats() {
+      const tg = window.Telegram?.WebApp;
+      if (tg && tg.CloudStorage) {
+        tg.CloudStorage.getItem('schueco_app_stats', (err, value) => {
+          if (!err && value) {
+            try {
+              let cloudStats = JSON.parse(value);
+              let localLastActive = new Date(appStats.lastActiveDate || '2000-01-01');
+              let cloudLastActive = new Date(cloudStats.lastActiveDate || '2000-01-01');
+              
+              if ((cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
+                  appStats.streak = cloudStats.streak;
+                  appStats.totalDays = cloudStats.totalDays;
+                  appStats.lastActiveDate = cloudStats.lastActiveDate;
+                  
+                  if (cloudStats.lastActiveDate === getTodayStr()) {
+                      appStats.reviewedToday = Math.max(appStats.reviewedToday || 0, cloudStats.reviewedToday || 0);
+                  }
+                  
+                  // Silent save (don't trigger loop)
+                  const toSave = {
+                    stats: appStats,
+                    phrases: phrases.map(p => p.isCustom ? p : { id: p.id, srs: p.srs, learned: p.learned })
+                  };
+                  localStorage.setItem('schueco_state_v2', JSON.stringify(toSave));
+                  updateLearnedCounter();
+              }
+            } catch(e) { console.error('Cloud parse error', e); }
+          }
+        });
+      }
+    }
+    
+    syncCloudStats();
+
         displayLimit = 35;
         renderCurrentView();
         showToast('Словарь сброшен к исходному', '🔄');
@@ -1737,6 +1784,42 @@ const searchContainer = document.getElementById('searchContainer');
 
     // Готов к инициализации
     loadState();
+
+    function syncCloudStats() {
+      const tg = window.Telegram?.WebApp;
+      if (tg && tg.CloudStorage) {
+        tg.CloudStorage.getItem('schueco_app_stats', (err, value) => {
+          if (!err && value) {
+            try {
+              let cloudStats = JSON.parse(value);
+              let localLastActive = new Date(appStats.lastActiveDate || '2000-01-01');
+              let cloudLastActive = new Date(cloudStats.lastActiveDate || '2000-01-01');
+              
+              if ((cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
+                  appStats.streak = cloudStats.streak;
+                  appStats.totalDays = cloudStats.totalDays;
+                  appStats.lastActiveDate = cloudStats.lastActiveDate;
+                  
+                  if (cloudStats.lastActiveDate === getTodayStr()) {
+                      appStats.reviewedToday = Math.max(appStats.reviewedToday || 0, cloudStats.reviewedToday || 0);
+                  }
+                  
+                  // Silent save (don't trigger loop)
+                  const toSave = {
+                    stats: appStats,
+                    phrases: phrases.map(p => p.isCustom ? p : { id: p.id, srs: p.srs, learned: p.learned })
+                  };
+                  localStorage.setItem('schueco_state_v2', JSON.stringify(toSave));
+                  updateLearnedCounter();
+              }
+            } catch(e) { console.error('Cloud parse error', e); }
+          }
+        });
+      }
+    }
+    
+    syncCloudStats();
+
 
   
     // ==================== ЛОГИКА ТРЕНАЖЕРА (QUIZ / SRS) ====================
