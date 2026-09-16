@@ -329,6 +329,13 @@
       </details>
     </section>
 
+    <!-- DICT MODE TOGGLE -->
+    <div id="dictModesContainer" class="hidden flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl mb-4 shadow-sm border border-slate-200 dark:border-slate-700">
+       <button onclick="setDictMode('cards')" id="dictModeCards" class="flex-1 py-1.5 text-sm font-bold bg-white dark:bg-slate-700 shadow-sm rounded-lg text-slate-800 dark:text-white transition-all">🎴 Карточки</button>
+       <button onclick="setDictMode('list')" id="dictModeList" class="flex-1 py-1.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-all">📄 Список</button>
+    </div>
+
+
     <!-- ==================== ЭКРАН 1: ОБУЧЕНИЕ / ЦЕХОВОЙ СЛОВАРЬ ==================== -->
     <div id="screenLearn" class="space-y-3">
       <!-- Список карточек для обучения -->
@@ -532,6 +539,59 @@
          </div>
          <div id="dialogBubbles" class="flex-1 overflow-y-auto space-y-4 p-2 hide-scrollbar pb-20">
             <!-- Bubbles -->
+         </div>
+      </div>
+    </div>
+
+  
+    <!-- ==================== ЭКРАН ПРОГРЕССА ==================== -->
+    <div id="screenProgress" class="hidden space-y-6 pb-6">
+      <div id="rankContainer" class="bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl p-6 shadow-md text-white relative overflow-hidden">
+         <div class="absolute -right-4 -bottom-4 text-[100px] opacity-20 pointer-events-none" id="rankBgIcon">🌱</div>
+         <div class="relative z-10">
+            <div class="text-sm font-medium opacity-90 uppercase tracking-widest mb-1">Ваше звание</div>
+            <div class="text-3xl font-black mb-4 flex items-center gap-2">
+               <span id="rankIcon">🌱</span>
+               <span id="rankTitle">Турист</span>
+            </div>
+            
+            <div class="space-y-2">
+               <div class="flex justify-between text-xs font-semibold opacity-90">
+                  <span id="rankWordsCurrent">0 слов</span>
+                  <span id="rankWordsNext">50 слов</span>
+               </div>
+               <div class="h-3 w-full bg-black/20 rounded-full overflow-hidden">
+                  <div id="rankProgressBar" class="h-full bg-white rounded-full transition-all duration-1000" style="width: 0%"></div>
+               </div>
+               <div class="text-xs opacity-75 font-medium" id="rankNextHint">До следующего звания: 50 слов</div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-3">
+         <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-slate-100 dark:border-slate-700">
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Выучено</div>
+            <div class="text-2xl font-black text-emerald-500" id="statLearned">0</div>
+         </div>
+         <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-slate-100 dark:border-slate-700">
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">В процессе</div>
+            <div class="text-2xl font-black text-sky-500" id="statLearning">0</div>
+         </div>
+         <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-slate-100 dark:border-slate-700">
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Рекорд дней</div>
+            <div class="text-2xl font-black text-orange-500 flex items-center gap-1"><span id="statLongestStreak">0</span> 🔥</div>
+         </div>
+         <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-slate-100 dark:border-slate-700">
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Своих слов</div>
+            <div class="text-2xl font-black text-fuchsia-500 flex items-center gap-1"><span id="statCustomWords">0</span> ➕</div>
+         </div>
+      </div>
+      
+      <div>
+         <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 mb-3 ml-1 flex items-center gap-2">
+            Зал славы 🎖️
+         </h3>
+         <div id="achievementsGrid" class="grid grid-cols-1 gap-3">
          </div>
       </div>
     </div>
