@@ -199,12 +199,7 @@
           </svg>
           <span class="truncate">Правила</span>
         </button>
-        <button id="tabManageBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
-          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
-          </svg>
-          <span class="truncate">Список</span>
-        </button>
+        
         <button id="tabProgressBtn" class="py-2 text-[11px] sm:text-xs font-medium rounded-xl transition-all duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center space-x-1.5">
           <span class="text-base leading-none">🏆</span>
           <span class="truncate">Прогресс</span>
@@ -900,6 +895,29 @@
         });
         
         grid.innerHTML = html;
+    }
+
+    
+    let dictMode = 'cards';
+    
+    function setDictMode(mode) {
+        dictMode = mode;
+        const btnCards = document.getElementById('dictModeCards');
+        const btnList = document.getElementById('dictModeList');
+        
+        if (mode === 'cards') {
+            if (btnCards) btnCards.className = "flex-1 py-1.5 text-sm font-bold bg-white dark:bg-slate-700 shadow-sm rounded-lg text-slate-800 dark:text-white transition-all";
+            if (btnList) btnList.className = "flex-1 py-1.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-all";
+            screenLearn.classList.remove('hidden');
+            screenManage.classList.add('hidden');
+            renderDictionary();
+        } else {
+            if (btnList) btnList.className = "flex-1 py-1.5 text-sm font-bold bg-white dark:bg-slate-700 shadow-sm rounded-lg text-slate-800 dark:text-white transition-all";
+            if (btnCards) btnCards.className = "flex-1 py-1.5 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-all";
+            screenManage.classList.remove('hidden');
+            screenLearn.classList.add('hidden');
+            renderManageList();
+        }
     }
 
     let isBlurMode = 'none'; // 'none', 'translation', 'original'
@@ -1729,8 +1747,7 @@
     // Переключение табов
     const tabLearnBtn = document.getElementById('tabLearnBtn');
     const tabGrammarBtn = document.getElementById('tabGrammarBtn');
-    const tabManageBtn = document.getElementById('tabManageBtn');
-    
+        
     const screenManage = document.getElementById('screenManage');
     const screenDialogs = document.getElementById('screenDialogs');
     const filterSection = document.getElementById('filterSection');
@@ -1748,11 +1765,12 @@
       screenManage.classList.add('hidden');
       screenDialogs.classList.add('hidden');
       if (screenProgress) screenProgress.classList.add('hidden');
+      const dmContainer = document.getElementById('dictModesContainer');
+      if (dmContainer) dmContainer.classList.add('hidden');
 
       tabLearnBtn.className = TAB_INACTIVE;
       tabGrammarBtn.className = TAB_INACTIVE;
-      tabManageBtn.className = TAB_INACTIVE;
-      if (tabProgressBtn) tabProgressBtn.className = TAB_INACTIVE;
+            if (tabProgressBtn) tabProgressBtn.className = TAB_INACTIVE;
       
       
       const blurToggleContainer = document.getElementById('blurToggleContainer');
@@ -1760,21 +1778,18 @@
 
 const searchContainer = document.getElementById('searchContainer');
       
-      if (tab === 'learn') {
-        screenLearn.classList.remove('hidden');
+if (tab === 'learn') {
         tabLearnBtn.className = TAB_ACTIVE;
         if (filterSection) filterSection.classList.remove('hidden');
         if (blurToggleContainer) blurToggleContainer.classList.remove('hidden');
         if (searchContainer) searchContainer.classList.remove('hidden');
+        const dmContainer = document.getElementById('dictModesContainer');
+        if (dmContainer) dmContainer.classList.remove('hidden');
+        setDictMode(dictMode); // Handle screenLearn / screenManage
       } else if (tab === 'grammar') {
         screenGrammar.classList.remove('hidden');
         tabGrammarBtn.className = TAB_ACTIVE;
-        if (filterSection) filterSection.classList.add('hidden'); // прячем фильтры
-      } else if (tab === 'manage') {
-        screenManage.classList.remove('hidden');
-        tabManageBtn.className = TAB_ACTIVE;
-        if (filterSection) filterSection.classList.remove('hidden');
-        if (searchContainer) searchContainer.classList.remove('hidden');
+        if (filterSection) filterSection.classList.add('hidden');
       } else if (tab === 'progress') {
         if (screenProgress) screenProgress.classList.remove('hidden');
         if (tabProgressBtn) tabProgressBtn.className = TAB_ACTIVE;
@@ -1791,8 +1806,7 @@ const searchContainer = document.getElementById('searchContainer');
     
     tabLearnBtn.addEventListener('click', () => switchTab('learn'));
     tabGrammarBtn.addEventListener('click', () => switchTab('grammar'));
-    tabManageBtn.addEventListener('click', () => switchTab('manage'));
-    tabProgressBtn.addEventListener('click', () => switchTab('progress'));
+        tabProgressBtn.addEventListener('click', () => switchTab('progress'));
     
 
     // Выбор категории (Аккордеон разделов)
@@ -2155,11 +2169,12 @@ const searchContainer = document.getElementById('searchContainer');
       screenManage.classList.add('hidden');
       screenDialogs.classList.add('hidden');
       if (screenProgress) screenProgress.classList.add('hidden');
+      const dmContainer = document.getElementById('dictModesContainer');
+      if (dmContainer) dmContainer.classList.add('hidden');
 
       tabLearnBtn.className = TAB_INACTIVE;
       tabGrammarBtn.className = TAB_INACTIVE;
-      tabManageBtn.className = TAB_INACTIVE;
-      if (tabProgressBtn) tabProgressBtn.className = TAB_INACTIVE;
+            if (tabProgressBtn) tabProgressBtn.className = TAB_INACTIVE;
       
           
           screenQuiz.classList.remove('hidden');
