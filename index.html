@@ -2171,6 +2171,7 @@ if (tab === 'learn') {
     // ==================== ЛОГИКА ТРЕНАЖЕРА (QUIZ / SRS) ====================
     let quizMode = null;
     let quizQueue = [];
+    let quizHistory = [];
     let currentQuizItem = null;
 
     let isAutoplayActive = false;
@@ -2205,6 +2206,39 @@ if (tab === 'learn') {
        renderQuizCard();
     }
     
+    
+    function skipToNextCard() {
+        if (isAutoplayActive) {
+            clearTimeout(autoplayTimeout);
+            if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+        }
+        if (currentQuizItem) {
+            quizHistory.push(currentQuizItem);
+            if (quizHistory.length > 50) quizHistory.shift(); // keep last 50
+        }
+        
+        if (isAutoplayActive) {
+            skipQuizItemAutoplay();
+        } else {
+            nextQuizItem();
+        }
+    }
+
+    function goBackToPreviousCard() {
+        if (quizHistory.length === 0) return;
+        if (isAutoplayActive) {
+            clearTimeout(autoplayTimeout);
+            if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+        }
+        
+        if (isAutoplayActive && currentQuizItem) {
+            autoplayQueue.push(currentQuizItem);
+        }
+        
+        currentQuizItem = quizHistory.pop();
+        renderQuizCard();
+    }
+
     function skipQuizItemAutoplay() {
        if (autoplayQueue.length === 0) {
            let all = phrases.filter(p => !p.learned);
@@ -2463,6 +2497,7 @@ if (tab === 'learn') {
        
        addReviewProgress(); 
        triggerHaptic('light');
+       if (currentQuizItem) quizHistory.push(currentQuizItem);
        nextQuizItem();
     }
 
