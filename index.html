@@ -2180,6 +2180,28 @@ if (tab === 'learn') {
     function toggleAutoplay() {
        isAutoplayActive = !isAutoplayActive;
        triggerHaptic('light');
+       
+       if (isAutoplayActive) {
+           try { mediaSessionAudio.play(); } catch(e){}
+           if ('mediaSession' in navigator) {
+               navigator.mediaSession.metadata = new MediaMetadata({
+                   title: 'Автовоспроизведение',
+                   artist: 'Schüco Türkçe',
+                   album: 'Тренажер'
+               });
+               navigator.mediaSession.setActionHandler('pause', () => {
+                   if (isAutoplayActive) toggleAutoplay();
+               });
+               navigator.mediaSession.setActionHandler('play', () => {
+                   if (!isAutoplayActive) toggleAutoplay();
+               });
+           }
+       } else {
+           try { mediaSessionAudio.pause(); } catch(e){}
+           clearTimeout(autoplayTimeout);
+           if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+       }
+       
        renderQuizCard();
     }
     
