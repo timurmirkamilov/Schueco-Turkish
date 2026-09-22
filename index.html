@@ -2439,7 +2439,10 @@ if (tab === 'learn') {
     }
 
     function processAnswer(quality) {
-       if (isAutoplayActive) { isAutoplayActive = false; clearTimeout(autoplayTimeout); if ('speechSynthesis' in window) window.speechSynthesis.cancel(); }
+       if (isAutoplayActive) { 
+           clearTimeout(autoplayTimeout); 
+           if ('speechSynthesis' in window) window.speechSynthesis.cancel(); 
+       }
        let item = currentQuizItem;
        let srsObj = item.srs[quizMode];
        
