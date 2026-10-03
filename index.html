@@ -2663,17 +2663,6 @@ if (tab === 'learn') {
            container.innerHTML = `
              <div class="flex items-center justify-between w-full mb-6">
                 <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Флеш-карточки</span>
-                <button 
-                  onclick="toggleFlashcardLearned('${item.id}')" 
-                  class="px-2.5 py-1 rounded-full text-xs font-bold transition-all active:scale-95 flex items-center gap-1.5 shadow-xs ${
-                    item.learned 
-                      ? 'border border-emerald-500/80 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300' 
-                      : 'border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
-                  }"
-                  title="Переключить статус (выучено / в процессе)"
-                >
-                  <span>${item.learned ? '🎓 Выучено' : '⏳ В процессе'}</span>
-                </button>
              </div>
 
              <div class="text-3xl font-bold font-heading text-slate-900 dark:text-white mb-2 text-center break-words w-full px-2">${item.tr}</div>
@@ -2682,7 +2671,7 @@ if (tab === 'learn') {
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                  </button>
                  
-                 <button class="w-16 h-16 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-sky-600 dark:text-sky-400 active:scale-90 transition-transform shadow-sm mx-auto border border-sky-200 dark:border-sky-800" onclick="speakTurkish('${item.tr.replace(/\'/g, "\\'")}', null, 'normal', this)">
+                 <button id="flashcardSpeakerBtn" class="w-16 h-16 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-sky-600 dark:text-sky-400 active:scale-90 transition-transform shadow-sm mx-auto border border-sky-200 dark:border-sky-800" onclick="speakTurkish('${item.tr.replace(/\'/g, "\\'")}', null, 'normal', this)">
                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                  </button>
                  
@@ -2743,11 +2732,11 @@ if (tab === 'learn') {
           }
           
           if (isQuizSoundEnabled && !isAutoplayActive) {
-             setTimeout(() => {
-                const btn = document.querySelector('#quizCardContainer button');
-                if (btn) btn.click();
-             }, 300);
-          }
+              setTimeout(() => {
+                 const btn = document.getElementById('flashcardSpeakerBtn');
+                 if (btn) btn.click();
+              }, 300);
+           }
        } 
        else if (quizMode === 'multiple' || quizMode === 'listening') {
           let wrongs = [];
