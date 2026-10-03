@@ -662,7 +662,7 @@
     function loadState() {
       const baseData = (window.DICTIONARY_DATABASE && Array.isArray(window.DICTIONARY_DATABASE)) ? window.DICTIONARY_DATABASE : [];
       try {
-        const saved = localStorage.getItem(STORAGE_KEY);
+        const saved = localStorage.getItem(STORAGE_KEY) || localStorage.getItem('schueco_state_v2');
         if (saved) {
           const parsed = JSON.parse(saved);
           
@@ -714,33 +714,39 @@
           });
 
           const result = [];
-          baseData.forEach(item => {
-            const fresh = JSON.parse(JSON.stringify(item));
-            if (stateMap.has(item.id)) {
-               const savedItem = stateMap.get(item.id);
-               fresh.srs = savedItem.srs;
-               if (!fresh.srs.speaking) fresh.srs.speaking = { level: 0, nextReview: 0 };
-               fresh.learned = savedItem.learned || false; 
-            } else {
-               fresh.srs = {
-                  flashcards: { level: 0, nextReview: 0 },
-                  multiple: { level: 0, nextReview: 0 },
-                  listening: { level: 0, nextReview: 0 },
-                  sentence: { level: 0, nextReview: 0 },
-            pairs: { level: 0, nextReview: 0 },
-            speaking: { level: 0, nextReview: 0 }
-               };
-               fresh.learned = false;
+          const baseMap = new Map(baseData.map(item => [item.id, item]));
+
+          // Сначала восстанавливаем порядок сохраненных слов пользователя (В начало / В конец)
+          savedPhrases.forEach(sp => {
+            if (!sp || !sp.id) return;
+            if (baseMap.has(sp.id)) {
+              const baseItem = baseMap.get(sp.id);
+              const fresh = JSON.parse(JSON.stringify(baseItem));
+              fresh.srs = sp.srs;
+              if (!fresh.srs.speaking) fresh.srs.speaking = { level: 0, nextReview: 0 };
+              fresh.learned = sp.learned || false;
+              result.push(fresh);
+              baseMap.delete(sp.id);
+            } else if (sp.isCustom) {
+              if (!sp.srs) sp.srs = {};
+              if (!sp.srs.speaking) sp.srs.speaking = { level: 0, nextReview: 0 };
+              result.push(sp);
             }
-            result.push(fresh);
           });
-          
-          stateMap.forEach((savedItem, id) => {
-             if (savedItem.isCustom) {
-                 if (!savedItem.srs) savedItem.srs = {};
-                 if (!savedItem.srs.speaking) savedItem.srs.speaking = { level: 0, nextReview: 0 };
-                 result.push(savedItem);
-             }
+
+          // Добавляем остальные слова из базы
+          baseMap.forEach(item => {
+            const fresh = JSON.parse(JSON.stringify(item));
+            fresh.srs = {
+              flashcards: { level: 0, nextReview: 0 },
+              multiple: { level: 0, nextReview: 0 },
+              listening: { level: 0, nextReview: 0 },
+              sentence: { level: 0, nextReview: 0 },
+              pairs: { level: 0, nextReview: 0 },
+              speaking: { level: 0, nextReview: 0 }
+            };
+            fresh.learned = false;
+            result.push(fresh);
           });
 
           phrases = result;
@@ -779,7 +785,9 @@
              };
           })
         };
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
+        const json = JSON.stringify(toSave);
+        localStorage.setItem(STORAGE_KEY, json);
+        localStorage.setItem('schueco_state_v2', json);
         updateLearnedCounter();
         
         // Chunk and save full state to cloud
@@ -1119,9 +1127,7 @@
                 p.srs[mode].level = 0;
                 p.srs[mode].nextReview = 0;
              }
-             // Recalculate learned status based on average
-             p.learned = getAverageLevel(p) >= 4;
-          });
+                       });
           saveState();
           showToast(`Прогресс "${modeName}" сброшен`, '🔄');
        }
@@ -1155,25 +1161,88 @@
       }, 2000);
     }
 
-    // ==================== ОЗВУЧКА (SpeechSynthesis + Надежный Audio Fallback) ====================
+    // ==================== ОЗВУЧКА (SpeechSynthesis + Надежный Audio Fallback + WebAudio Keep-Alive) ====================
     let turkishVoice = null;
     let russianVoice = null;
     const globalAudio = new Audio();
+    globalAudio.referrerPolicy = 'no-referrer';
+
+    // Фоновое аудио-удержание для iOS/Android (чтобы ОС не выгружала таймеры и звук при выключенном экране)
+    const bgAudioKeepAlive = new Audio('data:audio/wav;base64,UklGRkQDAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YSADAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA==');
+    bgAudioKeepAlive.loop = true;
+    bgAudioKeepAlive.volume = 0.01;
+
+    let webAudioKeepAliveCtx = null;
+    let webAudioKeepAliveNode = null;
+
+    function startWebAudioKeepAlive() {
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!webAudioKeepAliveCtx && AudioContext) {
+          webAudioKeepAliveCtx = new AudioContext();
+        }
+        if (webAudioKeepAliveCtx) {
+          if (webAudioKeepAliveCtx.state === 'suspended') {
+            webAudioKeepAliveCtx.resume();
+          }
+          if (!webAudioKeepAliveNode) {
+            const buffer = webAudioKeepAliveCtx.createBuffer(1, webAudioKeepAliveCtx.sampleRate, webAudioKeepAliveCtx.sampleRate);
+            const source = webAudioKeepAliveCtx.createBufferSource();
+            source.buffer = buffer;
+            source.loop = true;
+            source.connect(webAudioKeepAliveCtx.destination);
+            source.start();
+            webAudioKeepAliveNode = source;
+          }
+        }
+      } catch (e) {
+        console.warn('WebAudio keep-alive:', e);
+      }
+    }
+
+    function stopWebAudioKeepAlive() {
+      try {
+        if (webAudioKeepAliveNode) {
+          webAudioKeepAliveNode.stop();
+          webAudioKeepAliveNode = null;
+        }
+        if (webAudioKeepAliveCtx && webAudioKeepAliveCtx.state === 'running') {
+          webAudioKeepAliveCtx.suspend();
+        }
+      } catch (e) {}
+    }
 
     function initVoices() {
       if (typeof speechSynthesis === 'undefined') return;
       const voices = speechSynthesis.getVoices();
       
-      voices.forEach(v => {
-        if (v.lang.startsWith('tr') && v.name.toLowerCase().includes('yeld')) {
+      // Мужские голоса (Ahmet, Tolga, Cem, Emre, Baris, Kerem, male)
+      const trMaleNames = ['ahmet', 'tolga', 'cem', 'emre', 'baris', 'kerem', 'erkek', 'male'];
+      const ruMaleNames = ['pavel', 'dmitry', 'aleksandr', 'boris', 'yuri', 'maxim', 'male'];
+
+      turkishVoice = null;
+      for (let v of voices) {
+        let name = v.name.toLowerCase();
+        if (v.lang.startsWith('tr') && trMaleNames.some(m => name.includes(m))) {
           turkishVoice = v;
-        } else if (v.lang.startsWith('tr') && !turkishVoice) {
-          turkishVoice = v;
+          break;
         }
-        if (v.lang.startsWith('ru') && !russianVoice) {
+      }
+      if (!turkishVoice) {
+        turkishVoice = voices.find(v => v.lang.startsWith('tr')) || null;
+      }
+
+      russianVoice = null;
+      for (let v of voices) {
+        let name = v.name.toLowerCase();
+        if (v.lang.startsWith('ru') && ruMaleNames.some(m => name.includes(m))) {
           russianVoice = v;
+          break;
         }
-      });
+      }
+      if (!russianVoice) {
+        russianVoice = voices.find(v => v.lang.startsWith('ru')) || null;
+      }
     }
 
     if ('speechSynthesis' in window && window.speechSynthesis) {
@@ -1190,6 +1259,8 @@
       }
       try {
         globalAudio.load();
+        bgAudioKeepAlive.load();
+        startWebAudioKeepAlive();
       } catch (e) {}
       document.removeEventListener('touchstart', unlockAudio);
       document.removeEventListener('click', unlockAudio);
@@ -1213,6 +1284,9 @@
         let i = 0;
         function tryPlay() {
           if (i >= urls.length) {
+            if (isAutoplayActive) {
+              try { bgAudioKeepAlive.play(); } catch(e){}
+            }
             if (typeof resetBtn === 'function') resetBtn();
             return;
           }
@@ -1224,10 +1298,19 @@
           globalAudio.playbackRate = isSlow ? 0.75 : 1.0;
 
           globalAudio.onended = () => {
+            if (isAutoplayActive) {
+              try { bgAudioKeepAlive.play(); } catch(e){}
+              if (webAudioKeepAliveCtx && webAudioKeepAliveCtx.state === 'suspended') {
+                try { webAudioKeepAliveCtx.resume(); } catch(e){}
+              }
+            }
             if (typeof resetBtn === 'function') resetBtn();
           };
 
           globalAudio.onerror = () => {
+            if (isAutoplayActive) {
+              try { bgAudioKeepAlive.play(); } catch(e){}
+            }
             tryPlay();
           };
 
@@ -1273,6 +1356,13 @@
         globalAudio.pause();
       } catch (e) {}
 
+      // Если включено автовоспроизведение или приложение скрыто/экран выключен —
+      // ВСЕГДА используем HTML Audio, так как SpeechSynthesis намертво глушится ОС в фоне!
+      if (isAutoplayActive || document.visibilityState === 'hidden') {
+        playAudioFallbackLang(text, lang, speed, resetBtn);
+        return;
+      }
+
       if ('speechSynthesis' in window && window.speechSynthesis) {
         try {
           if (window.speechSynthesis.paused) {
@@ -1290,7 +1380,7 @@
           }
           
           utterance.rate = isSlow ? 0.72 : 1.0;
-          utterance.pitch = 1.0;
+          utterance.pitch = 0.88; // Мужской / более низкий естественный тон
 
           let didStart = false;
 
@@ -1979,96 +2069,8 @@ if (tab === 'learn') {
     document.getElementById('resetOrderBtn').addEventListener('click', () => {
       if (confirm('Сбросить прогресс и порядок к заводским настройкам (1030 слов)?')) {
         localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem('schueco_state_v2');
         loadState();
-
-    // ==================== CLOUD SYNC UTILS ====================
-    function saveToCloud(keyPrefix, dataString) {
-        const tg = window.Telegram?.WebApp;
-        if (!tg || !tg.CloudStorage) return;
-
-        const CHUNK_SIZE = 4000;
-        let chunks = [];
-        for (let i = 0; i < dataString.length; i += CHUNK_SIZE) {
-            chunks.push(dataString.substring(i, i + CHUNK_SIZE));
-        }
-
-        tg.CloudStorage.setItem(keyPrefix + '_meta', chunks.length.toString(), (err) => {
-            if (!err) {
-                let keys = {};
-                chunks.forEach((chunk, idx) => {
-                    keys[keyPrefix + '_' + idx] = chunk;
-                });
-                
-                // Using recursive setItem or just loop, since setItem accepts single key/value. Wait! Telegram API has setItem(key, value)
-                // We will loop and set them
-                chunks.forEach((chunk, idx) => {
-                    tg.CloudStorage.setItem(keyPrefix + '_' + idx, chunk);
-                });
-                
-                // Also clean up old chunks if new size is smaller (optional but good practice)
-                // For simplicity, we assume it mostly grows.
-            }
-        });
-    }
-
-    function loadFromCloud(keyPrefix, callback) {
-        const tg = window.Telegram?.WebApp;
-        if (!tg || !tg.CloudStorage) return callback(null);
-
-        tg.CloudStorage.getItem(keyPrefix + '_meta', (err, metaValue) => {
-            if (err || !metaValue) return callback(null);
-            
-            let totalChunks = parseInt(metaValue);
-            if (isNaN(totalChunks) || totalChunks === 0) return callback(null);
-            
-            let keysToFetch = [];
-            for (let i = 0; i < totalChunks; i++) {
-                keysToFetch.push(keyPrefix + '_' + i);
-            }
-            
-            tg.CloudStorage.getItems(keysToFetch, (err, values) => {
-                if (err || !values) return callback(null);
-                
-                let fullString = '';
-                for (let i = 0; i < totalChunks; i++) {
-                    if (values[keyPrefix + '_' + i]) {
-                        fullString += values[keyPrefix + '_' + i];
-                    }
-                }
-                callback(fullString);
-            });
-        });
-    }
-
-    function syncCloudStats() {
-        // Now sync the ENTIRE state using chunking
-        loadFromCloud('schueco_full', (cloudString) => {
-            if (!cloudString) return;
-            try {
-                let cloudData = JSON.parse(cloudString);
-                let cloudStats = cloudData.stats;
-                if (!cloudStats) return;
-                
-                let localLastActive = new Date(appStats.lastActiveDate || '2000-01-01');
-                let cloudLastActive = new Date(cloudStats.lastActiveDate || '2000-01-01');
-                
-                // If cloud is newer OR has more learned words OR has higher streak, use cloud data
-                let cloudLearned = cloudData.phrases ? cloudData.phrases.filter(p => p.learned).length : 0;
-                let localLearned = phrases.filter(p => p.learned).length;
-                
-                if (cloudLearned > localLearned || (cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
-                    // OVERWRITE local storage with cloud payload
-                    localStorage.setItem('schueco_state_v2', cloudString);
-                    // Reload everything from scratch to apply UI
-                    loadState(); 
-                    showToast('Прогресс синхронизирован с облаком', '☁️');
-                }
-            } catch(e) { console.error('Cloud parse error', e); }
-        });
-    }
-    
-    syncCloudStats();
-
         displayLimit = 35;
         renderCurrentView();
         showToast('Словарь сброшен к исходному', '🔄');
@@ -2146,18 +2148,44 @@ if (tab === 'learn') {
                 let cloudStats = cloudData.stats;
                 if (!cloudStats) return;
                 
-                let localLastActive = new Date(appStats.lastActiveDate || '2000-01-01');
-                let cloudLastActive = new Date(cloudStats.lastActiveDate || '2000-01-01');
+                let changed = false;
+                if (cloudData.phrases && Array.isArray(cloudData.phrases)) {
+                    const cloudMap = new Map(cloudData.phrases.map(p => [p.id, p]));
+                    phrases.forEach(p => {
+                        const cp = cloudMap.get(p.id);
+                        if (cp) {
+                            if (cp.learned && !p.learned) {
+                                p.learned = true;
+                                changed = true;
+                            }
+                            if (cp.srs && p.srs) {
+                                for (let k in cp.srs) {
+                                    if (p.srs[k] && cp.srs[k] && (cp.srs[k].level || 0) > (p.srs[k].level || 0)) {
+                                        p.srs[k] = cp.srs[k];
+                                        changed = true;
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
                 
-                // If cloud is newer OR has more learned words OR has higher streak, use cloud data
-                let cloudLearned = cloudData.phrases ? cloudData.phrases.filter(p => p.learned).length : 0;
-                let localLearned = phrases.filter(p => p.learned).length;
+                if (cloudStats.totalDays && cloudStats.totalDays > (appStats.totalDays || 0)) {
+                    appStats.totalDays = cloudStats.totalDays;
+                    changed = true;
+                }
+                if (cloudStats.streak && cloudStats.streak > (appStats.streak || 0)) {
+                    appStats.streak = cloudStats.streak;
+                    changed = true;
+                }
+                if (cloudStats.longestStreak && cloudStats.longestStreak > (appStats.longestStreak || 0)) {
+                    appStats.longestStreak = cloudStats.longestStreak;
+                    changed = true;
+                }
                 
-                if (cloudLearned > localLearned || (cloudStats.totalDays || 0) > (appStats.totalDays || 0) || cloudLastActive > localLastActive) {
-                    // OVERWRITE local storage with cloud payload
-                    localStorage.setItem('schueco_state_v2', cloudString);
-                    // Reload everything from scratch to apply UI
-                    loadState(); 
+                if (changed) {
+                    saveState();
+                    renderCurrentView();
                     showToast('Прогресс синхронизирован с облаком', '☁️');
                 }
             } catch(e) { console.error('Cloud parse error', e); }
@@ -2183,33 +2211,47 @@ if (tab === 'learn') {
        triggerHaptic('light');
        
        if (isAutoplayActive) {
-           try { mediaSessionAudio.play(); } catch(e){}
+           startWebAudioKeepAlive();
+           try { bgAudioKeepAlive.play(); } catch(e){}
            if ('mediaSession' in navigator) {
-               navigator.mediaSession.metadata = new MediaMetadata({
-                   title: 'Автовоспроизведение',
-                   artist: 'Schüco Türkçe',
-                   album: 'Тренажер'
-               });
+               navigator.mediaSession.playbackState = 'playing';
                navigator.mediaSession.setActionHandler('pause', () => {
                    if (isAutoplayActive) toggleAutoplay();
                });
                navigator.mediaSession.setActionHandler('play', () => {
                    if (!isAutoplayActive) toggleAutoplay();
                });
+               navigator.mediaSession.setActionHandler('nexttrack', () => {
+                   skipToNextCard();
+               });
+               navigator.mediaSession.setActionHandler('previoustrack', () => {
+                   goBackToPreviousCard();
+               });
+           }
+           
+           // Если текущая карточка уже выучена, сразу переходим к невыученной
+           if (!currentQuizItem || currentQuizItem.learned) {
+               skipQuizItemAutoplay();
+           } else {
+               renderQuizCard();
            }
        } else {
-           try { mediaSessionAudio.pause(); } catch(e){}
+           stopWebAudioKeepAlive();
+           try { bgAudioKeepAlive.pause(); } catch(e){}
+           try { globalAudio.pause(); } catch(e){}
            clearTimeout(autoplayTimeout);
            if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+           if ('mediaSession' in navigator) {
+               navigator.mediaSession.playbackState = 'paused';
+           }
+           renderQuizCard();
        }
-       
-       renderQuizCard();
     }
-    
     
     function skipToNextCard() {
         if (isAutoplayActive) {
             clearTimeout(autoplayTimeout);
+            try { globalAudio.pause(); } catch(e){}
             if ('speechSynthesis' in window) window.speechSynthesis.cancel();
         }
         if (currentQuizItem) {
@@ -2228,6 +2270,7 @@ if (tab === 'learn') {
         if (quizHistory.length === 0) return;
         if (isAutoplayActive) {
             clearTimeout(autoplayTimeout);
+            try { globalAudio.pause(); } catch(e){}
             if ('speechSynthesis' in window) window.speechSynthesis.cancel();
         }
         
@@ -2240,10 +2283,20 @@ if (tab === 'learn') {
     }
 
     function skipQuizItemAutoplay() {
+       clearTimeout(autoplayTimeout);
+       try { globalAudio.pause(); } catch(e){}
+       
+       let unlearned = phrases.filter(p => !p.learned);
+       if (unlearned.length === 0) {
+           showToast('Все карточки выучены! 🎉', '🎓');
+           unlearned = phrases;
+       }
+       
+       // Фильтруем очередь автовоспроизведения от выученных
+       autoplayQueue = autoplayQueue.filter(p => !p.learned);
+       
        if (autoplayQueue.length === 0) {
-           let all = phrases.filter(p => !p.learned);
-           if (all.length === 0) all = phrases; // Fallback
-           autoplayQueue = all.sort(() => Math.random() - 0.5);
+           autoplayQueue = [...unlearned].sort(() => Math.random() - 0.5);
        }
        currentQuizItem = autoplayQueue.pop();
        renderQuizCard();
@@ -2305,6 +2358,42 @@ if (tab === 'learn') {
     // Теперь безопасно переключаемся на вкладку Тренажера
     switchTab('quiz');
 
+    
+     window.toggleFlashcardLearned = function(id) {
+        const item = phrases.find(p => p.id === id);
+        if (!item) return;
+        if (!item.learned) {
+            item.learned = true;
+            if (!item.srs) item.srs = {};
+            for (let k of ['flashcards', 'multiple', 'listening', 'sentence', 'pairs', 'speaking']) {
+                if (!item.srs[k]) item.srs[k] = { level: 0, nextReview: 0 };
+                item.srs[k].level = 5;
+                item.srs[k].nextReview = Date.now() + 30 * 24 * 60 * 60 * 1000;
+            }
+            quizQueue = quizQueue.filter(p => p.id !== id);
+            autoplayQueue = autoplayQueue.filter(p => p.id !== id);
+            showToast('Отмечено как выученное!', '🎓');
+            saveState();
+            triggerHaptic('success');
+            if (isAutoplayActive) {
+                skipQuizItemAutoplay();
+            } else {
+                nextQuizItem();
+            }
+        } else {
+            item.learned = false;
+            if (!item.srs) item.srs = {};
+            for (let k in item.srs) {
+                item.srs[k].level = 0;
+                item.srs[k].nextReview = Date.now() + 60 * 60 * 1000;
+            }
+            showToast('Возвращено на повторение', '🔄');
+            saveState();
+            triggerHaptic('light');
+            renderQuizCard();
+        }
+     };
+
     window.handlePairClick = function(id, type, idx) {
        if (window.pairsMatched.has(id)) return;
        
@@ -2355,8 +2444,8 @@ if (tab === 'learn') {
                    let days = [1, 3, 7, 14, 30][srsObj.level - 1] || 1;
                    srsObj.nextReview = Date.now() + days * 24 * 60 * 60 * 1000;
                }
-               item.learned = getAverageLevel(item) >= 4;
-               addReviewProgress();
+               if (srsObj && srsObj.level >= 4) { item.learned = true; }
+                addReviewProgress();
                
                window.pairsSelected = null;
                
@@ -2381,9 +2470,8 @@ if (tab === 'learn') {
                        srsObj.level = 0;
                        srsObj.nextReview = Date.now() + 60 * 60 * 1000;
                    }
-                   item.learned = getAverageLevel(item) >= 4;
-               });
-               saveState();
+                   });
+                saveState();
                
                setTimeout(() => {
                    [btn, prevBtn].forEach(b => {
@@ -2407,7 +2495,14 @@ if (tab === 'learn') {
        triggerHaptic('light');
        
        const now = Date.now();
-       let due = phrases.filter(p => p.srs && p.srs[mode] && (!p.srs[mode].nextReview || p.srs[mode].nextReview <= now));
+       // Отбираем только невыученные слова
+       let pool = phrases.filter(p => !p.learned);
+       if (pool.length === 0) {
+           showToast('Все карточки выучены! Повторяем всё.', '🎉');
+           pool = phrases;
+       }
+       
+       let due = pool.filter(p => p.srs && p.srs[mode] && (!p.srs[mode].nextReview || p.srs[mode].nextReview <= now));
        
        if (mode === 'sentence') {
           due = due.filter(p => p.exampleTr && p.exampleRu);
@@ -2417,7 +2512,7 @@ if (tab === 'learn') {
        quizQueue = due.slice(0, 15);
        
        if (quizQueue.length === 0) {
-           let all = mode === 'sentence' ? phrases.filter(p => p.exampleTr) : phrases;
+           let all = mode === 'sentence' ? pool.filter(p => p.exampleTr) : pool;
            quizQueue = all.sort(() => Math.random() - 0.5).slice(0, 15);
        }
        
@@ -2428,17 +2523,22 @@ if (tab === 'learn') {
     }
 
     function exitQuiz() {
+       if (isAutoplayActive) {
+           toggleAutoplay();
+       }
        triggerHaptic('light');
        document.getElementById('quizMenu').classList.remove('hidden');
        document.getElementById('quizActive').classList.add('hidden');
        renderCurrentView(); 
     }
 
-    
     function nextQuizItem() {
        if (quizQueue.length === 0) {
            const now = Date.now();
-           let due = phrases.filter(p => p.srs && p.srs[quizMode] && (!p.srs[quizMode].nextReview || p.srs[quizMode].nextReview <= now));
+           let pool = phrases.filter(p => !p.learned);
+           if (pool.length === 0) pool = phrases;
+           
+           let due = pool.filter(p => p.srs && p.srs[quizMode] && (!p.srs[quizMode].nextReview || p.srs[quizMode].nextReview <= now));
            
            if (quizMode === 'sentence') {
               due = due.filter(p => p.exampleTr && p.exampleRu);
@@ -2448,18 +2548,18 @@ if (tab === 'learn') {
            quizQueue = due.slice(0, 15);
            
            if (quizQueue.length === 0) {
-               let all = quizMode === 'sentence' ? phrases.filter(p => p.exampleTr) : phrases;
+               let all = quizMode === 'sentence' ? pool.filter(p => p.exampleTr) : pool;
                quizQueue = all.sort(() => Math.random() - 0.5).slice(0, 15);
            }
        }
        
        if (quizMode === 'pairs') {
            window.currentPairsSet = [];
+           let pool = phrases.filter(p => !p.learned);
+           if (pool.length < 4) pool = phrases;
            while (window.currentPairsSet.length < 4) {
                if (quizQueue.length === 0) {
-                   // Refill quizQueue with random words if empty, so we always have 4 cards
-                   let all = phrases.filter(p => !window.currentPairsSet.some(c => c.id === p.id));
-                   quizQueue = all.sort(() => Math.random() - 0.5).slice(0, 15);
+                   quizQueue = pool.filter(p => !window.currentPairsSet.some(c => c.id === p.id)).sort(() => Math.random() - 0.5).slice(0, 15);
                }
                window.currentPairsSet.push(quizQueue.pop());
            }
@@ -2475,14 +2575,27 @@ if (tab === 'learn') {
     function processAnswer(quality) {
        if (isAutoplayActive) { 
            clearTimeout(autoplayTimeout); 
+           try { globalAudio.pause(); } catch(e){}
            if ('speechSynthesis' in window) window.speechSynthesis.cancel(); 
        }
        let item = currentQuizItem;
+       if (!item) return;
+       if (!item.srs) item.srs = {};
+       if (!item.srs[quizMode]) item.srs[quizMode] = { level: 0, nextReview: 0 };
        let srsObj = item.srs[quizMode];
        
        if (quality === 0) {
           srsObj.level = 0;
           srsObj.nextReview = Date.now() + 60 * 60 * 1000;
+          item.learned = false; // Только если явно не помнит — сбрасываем
+       } else if (quality === 5) {
+          // Пользователь нажал "Выучено"
+          for (let k in item.srs) {
+              item.srs[k].level = 5;
+              item.srs[k].nextReview = Date.now() + 30 * 24 * 60 * 60 * 1000;
+          }
+          item.learned = true;
+          showToast('Отмечено как выученное!', '🎓');
        } else {
           srsObj.level = Math.min(5, (srsObj.level || 0) + 1);
           let days = 1;
@@ -2491,10 +2604,13 @@ if (tab === 'learn') {
           if (srsObj.level === 4) days = 14;
           if (srsObj.level === 5) days = 30;
           srsObj.nextReview = Date.now() + days * 24 * 60 * 60 * 1000;
+          
+          if (srsObj.level >= 4) {
+             item.learned = true;
+          }
        }
        
-       item.learned = getAverageLevel(item) >= 4;
-       
+       saveState();
        addReviewProgress(); 
        triggerHaptic('light');
        if (currentQuizItem) quizHistory.push(currentQuizItem);
@@ -2545,14 +2661,28 @@ if (tab === 'learn') {
            </button>`;
 
            container.innerHTML = `
-             <div class="text-[10px] uppercase font-bold text-slate-400 mb-6 tracking-wider">Флеш-карточки</div>
+             <div class="flex items-center justify-between w-full mb-6">
+                <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Флеш-карточки</span>
+                <button 
+                  onclick="toggleFlashcardLearned('${item.id}')" 
+                  class="px-2.5 py-1 rounded-full text-xs font-bold transition-all active:scale-95 flex items-center gap-1.5 shadow-xs ${
+                    item.learned 
+                      ? 'border border-emerald-500/80 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300' 
+                      : 'border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
+                  }"
+                  title="Переключить статус (выучено / в процессе)"
+                >
+                  <span>${item.learned ? '🎓 Выучено' : '⏳ В процессе'}</span>
+                </button>
+             </div>
+
              <div class="text-3xl font-bold font-heading text-slate-900 dark:text-white mb-2 text-center break-words w-full px-2">${item.tr}</div>
              <div class="flex justify-between items-center w-full px-6 mt-6">
                  <button onclick="goBackToPreviousCard()" class="p-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 active:scale-90 transition-transform ${quizHistory.length === 0 ? 'opacity-30 pointer-events-none' : ''}">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                  </button>
                  
-                 <button class="w-16 h-16 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-sky-600 dark:text-sky-400 active:scale-90 transition-transform shadow-sm mx-auto border border-sky-200 dark:border-sky-800" onclick="speakTurkish('${item.tr.replace(/\'/g, "\'")}', null, 'normal', this)">
+                 <button class="w-16 h-16 rounded-full bg-sky-50 dark:bg-sky-900/40 flex items-center justify-center text-sky-600 dark:text-sky-400 active:scale-90 transition-transform shadow-sm mx-auto border border-sky-200 dark:border-sky-800" onclick="speakTurkish('${item.tr.replace(/\'/g, "\\'")}', null, 'normal', this)">
                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                  </button>
                  
@@ -2567,9 +2697,10 @@ if (tab === 'learn') {
                    ${item.uz ? `<div class="text-sm text-emerald-600 dark:text-emerald-400 mt-3 font-medium text-center px-4">${item.uz}</div>` : ''}
                 </div>
                 
-                <div class="grid grid-cols-2 gap-3 w-full mt-4">
-                   <button onclick="processAnswer(0)" class="py-3.5 rounded-2xl bg-red-50 text-red-600 dark:bg-red-950/40 border border-red-200 dark:border-red-900/40 text-[13px] sm:text-sm font-bold active:scale-95 shadow-sm">✕ Не помню</button>
-                   <button onclick="processAnswer(1)" class="py-3.5 rounded-2xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/40 text-[13px] sm:text-sm font-bold active:scale-95 shadow-sm">✓ Помню</button>
+                <div class="grid grid-cols-3 gap-2 w-full mt-4">
+                   <button onclick="processAnswer(0)" class="py-3.5 rounded-2xl bg-red-50 text-red-600 dark:bg-red-950/40 border border-red-200 dark:border-red-900/40 text-xs sm:text-sm font-bold active:scale-95 shadow-sm">✕ Не помню</button>
+                   <button onclick="processAnswer(1)" class="py-3.5 rounded-2xl bg-sky-50 text-sky-600 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-900/40 text-xs sm:text-sm font-bold active:scale-95 shadow-sm">✓ Помню</button>
+                   <button onclick="processAnswer(5)" class="py-3.5 rounded-2xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/40 text-xs sm:text-sm font-bold active:scale-95 shadow-sm">🎓 Выучено</button>
                 </div>
              </div>
              
@@ -2577,9 +2708,20 @@ if (tab === 'learn') {
                 Показать ответ
              </button>`}
              ${isPlayBtn}
-          `;
-          
-          if (isAutoplayActive) {
+           `;
+
+           if ('mediaSession' in navigator && item) {
+               navigator.mediaSession.metadata = new MediaMetadata({
+                   title: item.tr || '',
+                   artist: item.ru + (item.uz ? ` • ${item.uz}` : ''),
+                   album: 'Schueco Turkish Flashcards'
+               });
+               if (isAutoplayActive) {
+                   navigator.mediaSession.playbackState = 'playing';
+               }
+           }
+           
+           if (isAutoplayActive) {
                clearTimeout(autoplayTimeout);
                if ('speechSynthesis' in window) window.speechSynthesis.cancel();
                
