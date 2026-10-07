@@ -1261,6 +1261,9 @@
         globalAudio.load();
         bgAudioKeepAlive.load();
         startWebAudioKeepAlive();
+        if (!isAutoplayActive) {
+            stopWebAudioKeepAlive();
+        }
       } catch (e) {}
       document.removeEventListener('touchstart', unlockAudio);
       document.removeEventListener('click', unlockAudio);
