@@ -4181,6 +4181,85 @@ if (tab === 'learn') {
        }
     };
 
+    // ==================== ОЗВУЧКА ПРИМЕРОВ ФРАЗ (SHADOWING) В АВТОПЛЕЕРЕ ФЛЕШ-КАРТОЧЕК ====================
+    window.isShadowingMode = true; // По умолчанию озвучиваем и живой пример фразы, если он есть
+
+    const _origRenderQuizCard = renderQuizCard;
+    renderQuizCard = function() {
+       _origRenderQuizCard();
+       if (quizMode !== 'flashcards' || !currentQuizItem) return;
+
+       const item = currentQuizItem;
+       const answerDiv = document.getElementById('flashcardAnswer');
+
+       // 1. Встраиваем кликабельный блок с живым примером фразы в блок ответа карточки
+       if (answerDiv && item.exampleTr && !document.getElementById('flashcardExampleBox')) {
+          const exBox = document.createElement('div');
+          exBox.id = 'flashcardExampleBox';
+          exBox.className = 'w-full p-3 rounded-2xl bg-violet-50/90 dark:bg-violet-950/40 border border-violet-200 dark:border-violet-800/70 cursor-pointer active:scale-[0.99] transition-transform text-left';
+          exBox.onclick = function() {
+             speakTurkish(item.exampleTr.replace(/'/g, "\\'"), null, 'normal', this);
+          };
+          exBox.innerHTML = `
+             <div class="flex items-center justify-between gap-2">
+                <span class="text-xs sm:text-sm font-bold text-violet-900 dark:text-violet-200 leading-snug">🗣️ ${item.exampleTr}</span>
+                <span class="text-xs shrink-0 text-violet-600 dark:text-violet-400 font-bold">🔊 Фраза</span>
+             </div>
+             ${item.exampleRu ? `<div class="text-[11px] sm:text-xs text-slate-600 dark:text-slate-400 mt-1">${item.exampleRu}</div>` : ''}
+          `;
+          answerDiv.insertBefore(exBox, answerDiv.lastElementChild);
+       }
+
+       // 2. Встраиваем тумблер «🗣️ +Фраза (Shadowing)» рядом с кнопкой Автоплеера
+       const container = document.getElementById('quizCardContainer');
+       if (container && !document.getElementById('shadowingToggleBtn')) {
+          const toggleRow = document.createElement('div');
+          toggleRow.className = 'w-full mt-2 flex justify-center';
+          toggleRow.innerHTML = `
+             <button id="shadowingToggleBtn" onclick="window.isShadowingMode = !window.isShadowingMode; renderQuizCard();" class="px-3.5 py-2 rounded-xl ${window.isShadowingMode ? 'bg-violet-100 text-violet-700 border-violet-300 dark:bg-violet-950/50 dark:text-violet-300 dark:border-violet-700' : 'bg-slate-100 text-slate-500 border-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:border-slate-700'} border font-bold text-xs active:scale-95 transition-all flex items-center gap-1.5">
+                <span>🗣️ Озвучка живых фраз в автоплеере (Shadowing): <b>${window.isShadowingMode ? 'ВКЛ' : 'ВЫКЛ'}</b></span>
+             </button>
+          `;
+          container.appendChild(toggleRow);
+       }
+
+       // 3. Если включен Автоплеер и режим Shadowing, расширяем цепочку озвучки:
+       // RU (слово) -> TR (слово) -> TR (слово) -> RU (фраза) -> TR (фраза) + пауза 2.2с для повторения вслух
+       if (isAutoplayActive && window.isShadowingMode && item.exampleTr) {
+          clearTimeout(autoplayTimeout);
+          if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+
+          autoplayTimeout = setTimeout(() => {
+             speakLang(item.ru, 'ru', null, 'normal', null, () => {
+                autoplayTimeout = setTimeout(() => {
+                   speakLang(item.tr, 'tr', null, 'normal', null, () => {
+                      autoplayTimeout = setTimeout(() => {
+                         speakLang(item.tr, 'tr', null, 'normal', null, () => {
+                            autoplayTimeout = setTimeout(() => {
+                               const playTrExample = () => {
+                                  speakLang(item.exampleTr, 'tr', null, 'normal', null, () => {
+                                     autoplayTimeout = setTimeout(() => {
+                                        skipQuizItemAutoplay();
+                                     }, 2200); // Пауза для повторения фразы вслух
+                                  });
+                               };
+                               if (item.exampleRu) {
+                                  speakLang(item.exampleRu, 'ru', null, 'normal', null, () => {
+                                     autoplayTimeout = setTimeout(playTrExample, 600);
+                                  });
+                               } else {
+                                  playTrExample();
+                               }
+                            }, 800);
+                         });
+                      }, 700);
+                   });
+                }, 700);
+             });
+          }, 500);
+       }
+    };
+
     function openDialogsFromQuiz() {
         document.getElementById('screenQuiz').classList.add('hidden');
         document.getElementById('screenDialogs').classList.remove('hidden');
