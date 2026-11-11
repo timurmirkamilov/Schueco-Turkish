@@ -4004,6 +4004,183 @@ if (tab === 'learn') {
        _origStartQuiz(mode);
     };
 
+    // ==================== ИНТЕРАКТИВНЫЙ РЕЖИМ «РОЛЬ» В ДИАЛОГАХ ====================
+    let isDialogRoleplay = false;
+    let roleplayStep = 0;
+
+    // Встраиваем кнопку «🎭 Роль» рядом с кнопкой «▶️ Всё» при загрузке
+    (function injectRoleplayButton() {
+       const playBtn = document.getElementById('playAllDialogBtn');
+       if (playBtn && !document.getElementById('roleplayDialogBtn')) {
+          const rpBtn = document.createElement('button');
+          rpBtn.id = 'roleplayDialogBtn';
+          rpBtn.onclick = () => toggleDialogRoleplay();
+          rpBtn.className = 'bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300 px-3 py-2 rounded-xl font-bold text-xs sm:text-sm active:scale-95 transition-transform flex items-center gap-1 shrink-0';
+          rpBtn.innerHTML = '🎭 Роль';
+          playBtn.parentNode.insertBefore(rpBtn, playBtn);
+       }
+    })();
+
+    const _origRenderDialogsList = renderDialogsList;
+    renderDialogsList = function() {
+       _origRenderDialogsList();
+       const list = document.getElementById('dialogsList');
+       if (!list) return;
+       const banner = document.createElement('div');
+       banner.className = 'p-3.5 rounded-2xl bg-gradient-to-r from-violet-50 to-fuchsia-50 dark:from-violet-950/40 dark:to-fuchsia-950/40 border border-violet-200/80 dark:border-violet-800/60 flex items-center gap-3 mb-2';
+       banner.innerHTML = `
+          <div class="text-2xl">🎭</div>
+          <div class="text-xs text-slate-700 dark:text-slate-200 leading-snug">
+             <b>Интерактивный тренажер:</b> Внутри любого диалога нажмите <b>«🎭 Роль»</b> — телефон озвучит реплику собеседника, а вы выберете или произнесете свой ответ!
+          </div>
+       `;
+       list.insertBefore(banner, list.firstChild);
+    };
+
+    const _origOpenDialog = openDialog;
+    openDialog = function(idx) {
+       isDialogRoleplay = false;
+       const rpBtn = document.getElementById('roleplayDialogBtn');
+       if (rpBtn) {
+          rpBtn.innerHTML = '🎭 Роль';
+          rpBtn.className = 'bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300 px-3 py-2 rounded-xl font-bold text-xs sm:text-sm active:scale-95 transition-transform flex items-center gap-1 shrink-0';
+       }
+       _origOpenDialog(idx);
+    };
+
+    function toggleDialogRoleplay() {
+       clearTimeout(dialogPlaybackTimeout);
+       isDialogPlaying = false;
+       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+       const playBtn = document.getElementById('playAllDialogBtn');
+       if (playBtn) playBtn.innerHTML = '▶️ Всё';
+
+       isDialogRoleplay = !isDialogRoleplay;
+       const rpBtn = document.getElementById('roleplayDialogBtn');
+       if (!isDialogRoleplay) {
+          openDialog(currentDialogIndex);
+          return;
+       }
+
+       if (rpBtn) {
+          rpBtn.innerHTML = '✕ Выход';
+          rpBtn.className = 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300 px-3 py-2 rounded-xl font-bold text-xs sm:text-sm active:scale-95 transition-transform flex items-center gap-1 shrink-0';
+       }
+       roleplayStep = 0;
+       document.getElementById('dialogBubbles').innerHTML = '';
+       advanceDialogRoleplay();
+    }
+
+    function advanceDialogRoleplay() {
+       const d = DIALOGS[currentDialogIndex];
+       const bubbles = document.getElementById('dialogBubbles');
+       if (!d) return;
+
+       const oldPrompt = document.getElementById('roleplayPromptBox');
+       if (oldPrompt) oldPrompt.remove();
+
+       if (roleplayStep >= d.messages.length) {
+          addReviewProgress();
+          const doneDiv = document.createElement('div');
+          doneDiv.className = 'bg-emerald-50 dark:bg-emerald-950/40 border-2 border-emerald-400 rounded-2xl p-4 text-center space-y-3 mt-4';
+          doneDiv.innerHTML = `
+             <div class="text-2xl">🎉</div>
+             <div class="font-bold text-emerald-800 dark:text-emerald-200 text-sm">Диалог успешно отработан! (+1 к дневной цели)</div>
+             <div class="flex gap-2 justify-center">
+                <button onclick="isDialogRoleplay=false; toggleDialogRoleplay()" class="px-4 py-2 bg-violet-600 text-white rounded-xl font-bold text-xs active:scale-95">🔄 Пройти ещё раз</button>
+                <button onclick="openDialog(${currentDialogIndex})" class="px-4 py-2 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-xl font-bold text-xs active:scale-95">К тексту диалога</button>
+             </div>
+          `;
+          bubbles.appendChild(doneDiv);
+          doneDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+          return;
+       }
+
+       const m = d.messages[roleplayStep];
+       if (m.role === 'other') {
+          const row = document.createElement('div');
+          row.className = 'flex justify-start w-full animate-fade-in';
+          row.innerHTML = `
+             <div class="max-w-[85%] bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-100 rounded-r-2xl rounded-tl-2xl p-3.5 shadow-sm cursor-pointer" onclick="playDialogMessage(${roleplayStep})" id="dialog-msg-${roleplayStep}">
+                <div class="font-medium text-sm leading-snug">${m.tr}</div>
+                <div class="text-slate-500 dark:text-slate-400 text-xs mt-1 leading-tight">${m.ru}</div>
+             </div>
+          `;
+          bubbles.appendChild(row);
+          row.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+          playDialogMessage(roleplayStep, () => {
+             if (!isDialogRoleplay) return;
+             roleplayStep++;
+             setTimeout(() => advanceDialogRoleplay(), 450);
+          });
+       } else {
+          // Очередь пользователя ('me'): 1 правильный вариант + 2 дистрактора
+          const allMeLines = [];
+          DIALOGS.forEach(dlg => {
+             dlg.messages.forEach(msg => {
+                if (msg.role === 'me' && msg.tr !== m.tr) allMeLines.push(msg.tr);
+             });
+          });
+          const shuffledWrong = allMeLines.sort(() => Math.random() - 0.5).slice(0, 2);
+          const options = [m.tr, ...shuffledWrong].sort(() => Math.random() - 0.5);
+
+          const promptBox = document.createElement('div');
+          promptBox.id = 'roleplayPromptBox';
+          promptBox.className = 'bg-violet-50/90 dark:bg-violet-950/40 border-2 border-violet-300 dark:border-violet-700 rounded-2xl p-3.5 space-y-2.5 mt-2 animate-fade-in';
+          promptBox.innerHTML = `
+             <div class="text-[11px] font-extrabold uppercase text-violet-700 dark:text-violet-300 tracking-wide">🎤 Ваша очередь ответить:</div>
+             <div class="text-xs sm:text-sm font-bold text-slate-800 dark:text-white bg-white/80 dark:bg-slate-800/80 p-2.5 rounded-xl border border-violet-200 dark:border-violet-800">
+                «${m.ru}»
+             </div>
+             <div class="space-y-2 pt-1">
+                ${options.map((opt, oIdx) => `
+                   <button onclick="checkRoleplayOption(${oIdx}, this)" data-tr="${opt.replace(/"/g, '&quot;')}" class="w-full text-left p-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 active:scale-[0.99] transition-all shadow-xs">
+                      ${opt}
+                   </button>
+                `).join('')}
+             </div>
+          `;
+          bubbles.appendChild(promptBox);
+          promptBox.scrollIntoView({ behavior: 'smooth', block: 'end' });
+       }
+    }
+
+    window.checkRoleplayOption = function(oIdx, btnEl) {
+       const d = DIALOGS[currentDialogIndex];
+       if (!d || !d.messages[roleplayStep]) return;
+       const m = d.messages[roleplayStep];
+       const chosen = btnEl.getAttribute('data-tr');
+
+       if (chosen === m.tr) {
+          triggerHaptic('success');
+          const bubbles = document.getElementById('dialogBubbles');
+          const oldPrompt = document.getElementById('roleplayPromptBox');
+          if (oldPrompt) oldPrompt.remove();
+
+          const row = document.createElement('div');
+          row.className = 'flex justify-end w-full animate-fade-in';
+          row.innerHTML = `
+             <div class="max-w-[85%] bg-sky-500 text-white rounded-l-2xl rounded-tr-2xl p-3.5 shadow-sm cursor-pointer" onclick="playDialogMessage(${roleplayStep})" id="dialog-msg-${roleplayStep}">
+                <div class="font-medium text-sm leading-snug">${m.tr}</div>
+                <div class="text-sky-100 text-xs mt-1 leading-tight opacity-90">${m.ru}</div>
+             </div>
+          `;
+          bubbles.appendChild(row);
+          row.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+          playDialogMessage(roleplayStep, () => {
+             if (!isDialogRoleplay) return;
+             roleplayStep++;
+             setTimeout(() => advanceDialogRoleplay(), 450);
+          });
+       } else {
+          triggerHaptic('error');
+          btnEl.classList.add('bg-rose-100', 'border-rose-500', 'text-rose-800', 'dark:bg-rose-900/40');
+          showToast('Не та реплика, попробуйте другой вариант', '❌');
+       }
+    };
+
     function openDialogsFromQuiz() {
         document.getElementById('screenQuiz').classList.add('hidden');
         document.getElementById('screenDialogs').classList.remove('hidden');

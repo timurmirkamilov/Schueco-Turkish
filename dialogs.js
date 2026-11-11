@@ -1,5 +1,140 @@
 window.SCHUECO_DIALOGS = [
   {
+    "title": "Манипулятор (Hiyap) на стройплощадке",
+    "subtitle": "Разгрузка паллет и подъем на этаж",
+    "icon": "🏗️",
+    "messages": [
+      {
+        "role": "other",
+        "tr": "Usta, hiyap şantiyeye geldi. Paletleri nereye indirelim?",
+        "ru": "Мастер, кран-манипулятор приехал на стройплощадку. Куда будем разгружать паллеты?"
+      },
+      {
+        "role": "me",
+        "tr": "Cam kasalarını ikinci kata kaldırın, dikme profilleri aşağıda kalsın.",
+        "ru": "Ящики со стеклом поднимите на второй этаж, а вертикальные стойки пусть останутся внизу."
+      },
+      {
+        "role": "other",
+        "tr": "Tamam. Dikkat edin, rüzgar var. Sapanları sağlam bağladınız mı?",
+        "ru": "Хорошо. Будьте осторожны, дует ветер. Стропы надежно закрепили?"
+      },
+      {
+        "role": "me",
+        "tr": "Evet, kontrol ettim. Yavaş yavaş kaldırabiliriz.",
+        "ru": "Да, я проверил. Можем потихоньку поднимать."
+      }
+    ]
+  },
+  {
+    "title": "Дефицит по позициям (Eksik / Poz)",
+    "subtitle": "Срочный дозаказ деталей и уплотнителей",
+    "icon": "📋",
+    "messages": [
+      {
+        "role": "other",
+        "tr": "Bu paleti açtık ama poz 14 için üç tane dikme ve fitil eksik.",
+        "ru": "Мы открыли эту паллету, но для позиции 14 не хватает трех стоек и уплотнителя."
+      },
+      {
+        "role": "me",
+        "tr": "Listeye baktın mı? Belki diğer palette kalmıştır.",
+        "ru": "Ты смотрел по списку? Может быть, они остались в другой паллете."
+      },
+      {
+        "role": "other",
+        "tr": "Her yere baktık usta, maalesef depodan göndermemişler.",
+        "ru": "Мы везде посмотрели, мастер, к сожалению, со склада их не отправили."
+      },
+      {
+        "role": "me",
+        "tr": "Anlaşıldı, şimdi eksik parçalar için acil sipariş geçiyorum.",
+        "ru": "Понял, сейчас же оформляю срочный заказ на недостающие детали."
+      }
+    ]
+  },
+  {
+    "title": "Приемка с заказчиком (İş veren)",
+    "subtitle": "Проверка водостока, стропил и нахлеста",
+    "icon": "👷‍♂️",
+    "messages": [
+      {
+        "role": "other",
+        "tr": "İş veren bugün şantiyeye geliyor. Çatı makasları ve çörten hazır mı?",
+        "ru": "Заказчик сегодня приезжает на объект. Стропила крыши и водосборная воронка готовы?"
+      },
+      {
+        "role": "me",
+        "tr": "Makasları dün sabitledik, çörtenin silikonunu da sabah çektik.",
+        "ru": "Стропила мы закрепили вчера, а силикон на водостоке нанесли утром."
+      },
+      {
+        "role": "other",
+        "tr": "Güzel. Kanat biniş paylarını ve contaları da kontrol ettiniz mi?",
+        "ru": "Отлично. А величину нахлеста створок и уплотнители вы тоже проверили?"
+      },
+      {
+        "role": "me",
+        "tr": "Evet, bütün biniş ölçüleri projeye uygun, sızdırmazlık testi yaptık.",
+        "ru": "Да, все размеры нахлеста соответствуют проекту, мы провели тест на герметичность."
+      }
+    ]
+  },
+  {
+    "title": "Фрезеровка пазов (Kertme) в цеху",
+    "subtitle": "Уточнение чертежа перед выборкой в профиле",
+    "icon": "📐",
+    "messages": [
+      {
+        "role": "other",
+        "tr": "Usta, poz 8'deki düşey profillerde kertme var mı?",
+        "ru": "Мастер, на вертикальных профилях из позиции 8 есть вырез (выборка)?"
+      },
+      {
+        "role": "me",
+        "tr": "Evet, üst tarafta kırk milimetre kertme yapılacak. Çizime dikkatli bak.",
+        "ru": "Да, сверху нужно сделать вырез 40 миллиметров. Внимательно смотри в чертеж."
+      },
+      {
+        "role": "other",
+        "tr": "Tamam, gördüm. Kertme makinesini şimdi ayarlıyorum.",
+        "ru": "Хорошо, увидел. Сейчас настраиваю торцефрезерный станок."
+      },
+      {
+        "role": "me",
+        "tr": "Sakın yönünü karıştırma, önce bir numune kes ve bana göster.",
+        "ru": "Ни в коем случае не перепутай сторону, сначала вырежи один образец и покажи мне."
+      }
+    ]
+  },
+  {
+    "title": "Срочный звонок с объекта (WhatsApp / Телефон)",
+    "subtitle": "Быстрая координация между цехом и стройкой",
+    "icon": "📲",
+    "messages": [
+      {
+        "role": "other",
+        "tr": "Alo usta, şantiyede montaj durdu. Köşe takozları bitti!",
+        "ru": "Алло, мастер, на стройке встал монтаж. Закончились угловые сухари!"
+      },
+      {
+        "role": "me",
+        "tr": "Kaç adet lazım? Şimdi şoförle gönderebilirim.",
+        "ru": "Сколько штук нужно? Я могу прямо сейчас отправить с водителем."
+      },
+      {
+        "role": "other",
+        "tr": "En az elli adet lazım, yanında iki kutu da nötr silikon gönderir misin?",
+        "ru": "Нужно минимум 50 штук, и отправишь заодно две коробки нейтрального силикона?"
+      },
+      {
+        "role": "me",
+        "tr": "Tamamdır, merak etme. Yarım saat içinde araç yola çıkıyor.",
+        "ru": "Принято, не переживай. Через полчаса машина выезжает."
+      }
+    ]
+  },
+  {
     "title": "Разговор с мастером",
     "subtitle": "Обсуждение задачи и сроков",
     "icon": "👨‍🔧",
