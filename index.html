@@ -468,6 +468,16 @@
         </div>
 
 
+        <div class="relative" data-mode="patterns">
+          <button onclick="startQuiz('patterns')" class="w-full bg-gradient-to-br from-violet-600 to-indigo-700 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
+            <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">⚡</div>
+            <div>
+              <div class="font-bold text-lg">Речевой автомат</div>
+              <div class="text-xs text-violet-100 opacity-90">Матрица глаголов и шаблоны</div>
+            </div>
+          </button>
+        </div>
+
         <div class="relative" data-mode="dialogs">
           <button onclick="openDialogsFromQuiz()" class="w-full bg-gradient-to-br from-fuchsia-500 to-pink-600 text-white p-4 rounded-3xl shadow-md text-left active:scale-95 transition-transform flex items-center gap-4">
             <div class="text-3xl bg-white/20 p-2.5 rounded-2xl">💬</div>
@@ -3274,6 +3284,725 @@ if (tab === 'learn') {
     }
     // ==================== END SPEAKING LOGIC ====================
 
+
+    // ==================== РЕЧЕВОЙ АВТОМАТ (МАТРИЦА ГЛАГОЛОВ И ШАБЛОНЫ) ====================
+    const PATTERN_DRILLS = [
+      // Блок 1: Повелительное наклонение и запрет (Сделай / Не делай)
+      {
+        tag: "Команды в цеху • Повелительное",
+        hint: "Корень глагола = «Сделай!». Добавь -ma/-me = «Не делай!»",
+        uzHint: "O'zbekcha: Kes / Kesma",
+        ru: "Режь профиль! / Не режь профиль!",
+        tr: "Profili kes! / Profili kesme!",
+        chunks: ["Profili", "kes", "kesme", "kesiyor", "kestik"],
+        target: ["Profili", "kes", "Profili", "kesme"]
+      },
+      {
+        tag: "Команды в цеху • Повелительное",
+        hint: "Корень = приказ, + -ma/-me = запрет",
+        uzHint: "O'zbekcha: Taq / Taqma",
+        ru: "Установи уплотнитель! / Не устанавливай уплотнитель!",
+        tr: "Fitili tak! / Fitili takma!",
+        chunks: ["Fitili", "tak", "takma", "taktı", "takıyoruz"],
+        target: ["Fitili", "tak", "Fitili", "takma"]
+      },
+      {
+        tag: "Команды в цеху • Вежливая просьба",
+        hint: "-ın/-in/-un/-ün в конце глагола — обращение на «Вы» или к бригаде",
+        uzHint: "O'zbekcha: Tekshiring",
+        ru: "Проверьте вырез (паз) и нахлест",
+        tr: "Kertme ve binişi kontrol edin",
+        chunks: ["Kertme", "ve", "binişi", "kontrol", "edin", "etme", "ediyor"],
+        target: ["Kertme", "ve", "binişi", "kontrol", "edin"]
+      },
+      // Блок 2: Настоящее время (-iyor / -miyor)
+      {
+        tag: "Процесс сейчас • Настоящее время",
+        hint: "-iyor = происходит сейчас, -miyor = НЕ происходит / не подходит",
+        uzHint: "O'zbekcha: To'g'ri kelmayapti",
+        ru: "Этот размер не подходит, угол не сходится",
+        tr: "Bu ölçü uymuyor, köşe uyuşmuyor",
+        chunks: ["Bu", "ölçü", "uymuyor", "köşe", "uyuşmuyor", "uydu", "uyacak"],
+        target: ["Bu", "ölçü", "uymuyor", "köşe", "uyuşmuyor"]
+      },
+      {
+        tag: "Процесс сейчас • Мы делаем (-iyoruz)",
+        hint: "-iyoruz / -ıyoruz = мы делаем прямо сейчас",
+        uzHint: "O'zbekcha: Buyurtma beryapmiz",
+        ru: "Мы сейчас оформляем заказ на недостающие детали",
+        tr: "Şimdi eksik parçalar için sipariş geçiyoruz",
+        chunks: ["Şimdi", "eksik", "parçalar", "için", "sipariş", "geçiyoruz", "geçtik", "geçmedi"],
+        target: ["Şimdi", "eksik", "parçalar", "için", "sipariş", "geçiyoruz"]
+      },
+      {
+        tag: "Процесс сейчас • Вопрос (-iyor mu?)",
+        hint: "Частица mu/mı после глагола делает фразу вопросом",
+        uzHint: "O'zbekcha: Kran kelyaptimi?",
+        ru: "Манипулятор (кран-борт) сегодня приезжает на стройплощадку?",
+        tr: "Hiyap bugün şantiyeye geliyor mu?",
+        chunks: ["Hiyap", "bugün", "şantiyeye", "geliyor", "mu", "geldi", "gelmez"],
+        target: ["Hiyap", "bugün", "şantiyeye", "geliyor", "mu"]
+      },
+      // Блок 3: Прошедшее время — результат (-dı/-di / -madı/-medi)
+      {
+        tag: "Готовый результат • Прошедшее (-dı/-di)",
+        hint: "-dık/-dik/-tık/-tik = мы сделали; -madık/-medik = мы ещё НЕ сделали",
+        uzHint: "O'zbekcha: O'rnatdik / O'rnatmadik",
+        ru: "Мы установили вертикальные стойки, но водосток не поставили",
+        tr: "Dikmeleri taktık ama çörteni takmadık",
+        chunks: ["Dikmeleri", "taktık", "ama", "çörteni", "takmadık", "takıyoruz", "takacak"],
+        target: ["Dikmeleri", "taktık", "ama", "çörteni", "takmadık"]
+      },
+      {
+        tag: "Готовый результат • Прошедшее (-dı mı?)",
+        hint: "Verdi mi? = Дал ли? / Одобрил ли?",
+        uzHint: "O'zbekcha: Buyurtmachi tasdiq berdimi?",
+        ru: "Заказчик дал согласование по этой позиции?",
+        tr: "İş veren bu poz için onay verdi mi?",
+        chunks: ["İş", "veren", "bu", "poz", "için", "onay", "verdi", "mi", "veriyor"],
+        target: ["İş", "veren", "bu", "poz", "için", "onay", "verdi", "mi"]
+      },
+      // Блок 4: Будущее и планы (-acak / -ecek)
+      {
+        tag: "Планы и сроки • Будущее (-acak/-ecek)",
+        hint: "-acak / -ecek = сделает / будет готово",
+        uzHint: "O'zbekcha: Qachon tayyor bo'ladi?",
+        ru: "Когда эта позиция будет готова?",
+        tr: "Bu poz ne zaman hazır olacak?",
+        chunks: ["Bu", "poz", "ne", "zaman", "hazır", "olacak", "oldu", "oluyor"],
+        target: ["Bu", "poz", "ne", "zaman", "hazır", "olacak"]
+      },
+      {
+        tag: "Планы и сроки • Мы сделаем (-acağız/-eceğiz)",
+        hint: "Göndereceğiz = мы отправим",
+        uzHint: "O'zbekcha: Ertaga yuboramiz",
+        ru: "Мы отправим стропила (фермы) на объект завтра утром",
+        tr: "Makasları yarın sabah şantiyeye göndereceğiz",
+        chunks: ["Makasları", "yarın", "sabah", "şantiyeye", "göndereceğiz", "gönderdik", "gönder"],
+        target: ["Makasları", "yarın", "sabah", "şantiyeye", "göndereceğiz"]
+      },
+      // Блок 5: Долженствование и необходимость (lazım / gerek / -malı)
+      {
+        tag: "Необходимость • Нужно сделать (-mak lazım)",
+        hint: "Инфинитив (-mak/-mek) + lazım = нужно что-то сделать",
+        uzHint: "O'zbekcha: Qayta o'lchash kerak",
+        ru: "Нужно срочно перемерить вырез в профиле",
+        tr: "Acil kertme ölçüsünü tekrar almak lazım",
+        chunks: ["Acil", "kertme", "ölçüsünü", "tekrar", "almak", "lazım", "aldık", "alıyor"],
+        target: ["Acil", "kertme", "ölçüsünü", "tekrar", "almak", "lazım"]
+      },
+      {
+        tag: "Необходимость • Должно быть (-malı/-meli)",
+        hint: "Olmalı = должно быть (по стандарту / чертежу)",
+        uzHint: "O'zbekcha: Bo'lishi kerak",
+        ru: "Нахлест и уплотнитель должны быть строго по чертежу",
+        tr: "Biniş ve conta projeye uygun olmalı",
+        chunks: ["Biniş", "ve", "conta", "projeye", "uygun", "olmalı", "oldu", "olmaz"],
+        target: ["Biniş", "ve", "conta", "projeye", "uygun", "olmalı"]
+      },
+      // Блок 6: Наличие и нехватка (var / yok / eksik / bitti)
+      {
+        tag: "Склад и снабжение • Есть / Нет / Дефицит",
+        hint: "Var = есть, Yok = нет, Eksik = не хватает, Bitti = закончилось",
+        uzHint: "O'zbekcha: Rezina tugadi, uchta detal kam",
+        ru: "Уплотнитель закончился, в паллете не хватает трех деталей",
+        tr: "Fitil bitti, palette üç parça eksik",
+        chunks: ["Fitil", "bitti", "palette", "üç", "parça", "eksik", "var", "fazla"],
+        target: ["Fitil", "bitti", "palette", "üç", "parça", "eksik"]
+      },
+      // Блок 7: Условие и время (Если -sa/-se • Когда -ınca/-ince)
+      {
+        tag: "Условие • Если (-sa/-se / yoksa)",
+        hint: "Varsa = если есть; Yoksa = если нет / иначе",
+        uzHint: "O'zbekcha: Muammo bo'lsa ayt",
+        ru: "Если есть проблема с водостоком, сразу скажи",
+        tr: "Çörtende sorun varsa hemen söyle",
+        chunks: ["Çörtende", "sorun", "varsa", "hemen", "söyle", "yoksa", "söyledi"],
+        target: ["Çörtende", "sorun", "varsa", "hemen", "söyle"]
+      },
+      {
+        tag: "Время • Как только (-ınca/-ince)",
+        hint: "-ınca/-ince = когда / как только действие завершится",
+        uzHint: "O'zbekcha: Mashina kelganda xabar ber",
+        ru: "Как только приедет манипулятор, дай мне знать",
+        tr: "Hiyap gelince bana haber ver",
+        chunks: ["Hiyap", "gelince", "bana", "haber", "ver", "gelirse", "geldi"],
+        target: ["Hiyap", "gelince", "bana", "haber", "ver"]
+      },
+      // Блок 8: Причина и цель (Чтобы -mak için • Потому что çünkü)
+      {
+        tag: "Разговорные связки • Выиграть время в диалоге",
+        hint: "Живая фраза мастера, чтобы ответить естественно без паузы",
+        uzHint: "O'zbekcha: Hozir ko'raman va xabar beraman",
+        ru: "Сейчас гляну чертеж и сразу дам вам знать",
+        tr: "Hemen çizime bakıyorum ve size haber veriyorum",
+        chunks: ["Hemen", "çizime", "bakıyorum", "ve", "size", "haber", "veriyorum", "baktım"],
+        target: ["Hemen", "çizime", "bakıyorum", "ve", "size", "haber", "veriyorum"]
+      },
+      // ==================== РАСШИРЕННАЯ БАЗА ШАБЛОНОВ (ЕЩЁ 60+ ЖИВЫХ КОНСТРУКЦИЙ) ====================
+      // --- Команды, монтаж и цех (Повелительное и запреты) ---
+      {
+        tag: "Команды в цеху • Повелительное",
+        hint: "Sık = затяни, Sıkma = не перетягивай / не затягивай",
+        uzHint: "O'zbekcha: Boltlarni yaxshilab qotir, juda qattiq qotirma",
+        ru: "Затяни болты хорошо, но слишком сильно не перетягивай",
+        tr: "Civataları iyi sık ama çok fazla sıkma",
+        chunks: ["Civataları", "iyi", "sık", "ama", "çok", "fazla", "sıkma", "sıktık"],
+        target: ["Civataları", "iyi", "sık", "ama", "çok", "fazla", "sıkma"]
+      },
+      {
+        tag: "Команды в цеху • Повелительное",
+        hint: "Temizle = зачисти / очисти; Sil = протри",
+        uzHint: "O'zbekcha: Qirindilarni tozala va profilni art",
+        ru: "Зачисти заусенцы и протри профиль",
+        tr: "Çapakları temizle ve profili sil",
+        chunks: ["Çapakları", "temizle", "ve", "profili", "sil", "silme", "temizledik"],
+        target: ["Çapakları", "temizle", "ve", "profili", "sil"]
+      },
+      {
+        tag: "Команды в цеху • Повелительное",
+        hint: "Çek = тяни / наноси (шов силикона); Taşırma = не допускай вытекания",
+        uzHint: "O'zbekcha: Silikonni tekis tort, toshirma",
+        ru: "Наноси силикон ровно, не допускай излишков",
+        tr: "Silikonu düzgün çek, dışarı taşırma",
+        chunks: ["Silikonu", "düzgün", "çek", "dışarı", "taşırma", "çekti", "taşmış"],
+        target: ["Silikonu", "düzgün", "çek", "dışarı", "taşırma"]
+      },
+      {
+        tag: "Команды в цеху • Запрет (-mayın/-meyin)",
+        hint: "-mayın / -meyin = «Не делайте!» (обращение к бригаде)",
+        uzHint: "O'zbekcha: Tasdiqsiz bu pozitsiyani kesmanglar",
+        ru: "Без согласования эту позицию не режьте!",
+        tr: "Onay olmadan bu pozu kesmeyin",
+        chunks: ["Onay", "olmadan", "bu", "pozu", "kesmeyin", "kesin", "kestik"],
+        target: ["Onay", "olmadan", "bu", "pozu", "kesmeyin"]
+      },
+      {
+        tag: "Команды в цеху • Призыв (-alım/-elim)",
+        hint: "-alım / -elim = «Давай(те) сделаем!»",
+        uzHint: "O'zbekcha: Keling, diagonal o'lchamini yana bir bor tekshiraylik",
+        ru: "Давай ещё раз проверим диагональ (размер крест-накрест)",
+        tr: "Çapraz ölçüyü bir daha kontrol edelim",
+        chunks: ["Çapraz", "ölçüyü", "bir", "daha", "kontrol", "edelim", "ettik", "etme"],
+        target: ["Çapraz", "ölçüyü", "bir", "daha", "kontrol", "edelim"]
+      },
+      {
+        tag: "Команды в цеху • Призыв (-alım/-elim)",
+        hint: "Başlayalım = давай начнём; Bitirelim = давай закончим",
+        uzHint: "O'zbekcha: Bugun bu vitrinani tugataylik",
+        ru: "Давайте сегодня полностью закончим этот витраж (фасад)",
+        tr: "Bugün bu cepheyi tamamen bitirelim",
+        chunks: ["Bugün", "bu", "cepheyi", "tamamen", "bitirelim", "bitirdik", "bitmiyor"],
+        target: ["Bugün", "bu", "cepheyi", "tamamen", "bitirelim"]
+      },
+      {
+        tag: "Команды в цеху • Пусть сделает (-sın/-sin)",
+        hint: "-sın / -sin = «Пусть он сделает» (передача поручения)",
+        uzHint: "O'zbekcha: Usta kelsin va bu tugunni ko'rsin",
+        ru: "Пусть мастер придёт и посмотрит этот узел",
+        tr: "Usta gelsin ve bu detaya baksın",
+        chunks: ["Usta", "gelsin", "ve", "bu", "detaya", "baksın", "geldi", "bakıyor"],
+        target: ["Usta", "gelsin", "ve", "bu", "detaya", "baksın"]
+      },
+      {
+        tag: "Команды в цеху • Пусть сделают (-sınlar/-sinler)",
+        hint: "-sınlar / -sinler = «Пусть они сделают»",
+        uzHint: "O'zbekcha: Yigitlar oynalarni ehtiyotkorlik bilan tushirsin",
+        ru: "Пусть ребята осторожно разгрузят стеклопакеты",
+        tr: "Arkadaşlar camları dikkatli indirsinler",
+        chunks: ["Arkadaşlar", "camları", "dikkatli", "indirsinler", "indirdik", "indiriyor"],
+        target: ["Arkadaşlar", "camları", "dikkatli", "indirsinler"]
+      },
+
+      // --- Возможность и физическая способность (-abilir / -amaz) ---
+      {
+        tag: "Возможность • Могу / Можем (-abilir/-ebilir)",
+        hint: "-abiliriz = мы можем сделать; -abilir misin? = можешь ли ты?",
+        uzHint: "O'zbekcha: Bu profilni hozir frezerlay olasanmi?",
+        ru: "Ты можешь прямо сейчас сделать вырез (паз) в этом профиле?",
+        tr: "Bu profilde şimdi kertme yapabilir misin?",
+        chunks: ["Bu", "profilde", "şimdi", "kertme", "yapabilir", "misin", "yaptın", "yapamaz"],
+        target: ["Bu", "profilde", "şimdi", "kertme", "yapabilir", "misin"]
+      },
+      {
+        tag: "Невозможность • Не могу / Нельзя (-amaz/-emez)",
+        hint: "-amayız / -emeyiz = мы НЕ можем это сделать",
+        uzHint: "O'zbekcha: Kran bo'lmasa og'ir oynani ko'tara olmaymiz",
+        ru: "Без манипулятора мы не сможем поднять этот тяжелый стеклопакет",
+        tr: "Hiyap olmadan bu ağır camı kaldıramayız",
+        chunks: ["Hiyap", "olmadan", "bu", "ağır", "camı", "kaldıramayız", "kaldırdık", "kaldırabilir"],
+        target: ["Hiyap", "olmadan", "bu", "ağır", "camı", "kaldıramayız"]
+      },
+      {
+        tag: "Невозможность • Не входит / Не садится (-mıyor / -amaz)",
+        hint: "Oturmuyor = не садится на место; Girmiyor = не входит в паз",
+        uzHint: "O'zbekcha: Shisha shtapiki joyiga o'tirmayapti",
+        ru: "Штапик не садится на место, потому что резинка слишком толстая",
+        tr: "Cam çıtası yerine oturmuyor çünkü fitil çok kalın",
+        chunks: ["Cam", "çıtası", "yerine", "oturmuyor", "çünkü", "fitil", "çok", "kalın", "oturdu"],
+        target: ["Cam", "çıtası", "yerine", "oturmuyor", "çünkü", "fitil", "çok", "kalın"]
+      },
+      {
+        tag: "Возможность • Вежливая просьба (-abilir misiniz?)",
+        hint: "Bakabilir misiniz? = Не могли бы вы посмотреть?",
+        uzHint: "O'zbekcha: Bir daqiqaga shu yerga qaray olasizmi?",
+        ru: "Мастер, можете подойти и посмотреть сюда на минутку?",
+        tr: "Usta bir dakika buraya bakabilir misin?",
+        chunks: ["Usta", "bir", "dakika", "buraya", "bakabilir", "misin", "baktın", "bakma"],
+        target: ["Usta", "bir", "dakika", "buraya", "bakabilir", "misin"]
+      },
+
+      // --- Падежи: Куда (-a/-e), Где (-da/-de), Откуда (-dan/-den), Чем (ile) ---
+      {
+        tag: "Направление и место • Где (-da/-de) и Куда (-a/-e)",
+        hint: "Şantiyede = НА стройке (где?); Şantiyeye = НА стройку (куда?)",
+        uzHint: "O'zbekcha: Hozir sexdamiz, keyin obyektga boramiz",
+        ru: "Сейчас мы в цеху, после обеда поедем на стройплощадку",
+        tr: "Şimdi atölyedeyiz, öğleden sonra şantiyeye gideceğiz",
+        chunks: ["Şimdi", "atölyedeyiz", "öğleden", "sonra", "şantiyeye", "gideceğiz", "şantiyede", "gittik"],
+        target: ["Şimdi", "atölyedeyiz", "öğleden", "sonra", "şantiyeye", "gideceğiz"]
+      },
+      {
+        tag: "Исходная точка • Откуда / Из-за чего (-dan/-den)",
+        hint: "Depodan = со склада; Fabrikadan = с завода",
+        uzHint: "O'zbekcha: Ombordan yangi rezina va burchak olib kel",
+        ru: "Принеси со склада новый уплотнитель и угловые сухари",
+        tr: "Depodan yeni conta ve köşe takozu getir",
+        chunks: ["Depodan", "yeni", "conta", "ve", "köşe", "takozu", "getir", "depoda", "götür"],
+        target: ["Depodan", "yeni", "conta", "ve", "köşe", "takozu", "getir"]
+      },
+      {
+        tag: "Инструмент • Чем / С помощью чего (ile / -la/-le)",
+        hint: "Слово + ile (или -la/-le) = «с помощью чего-то»",
+        uzHint: "O'zbekcha: Burchakni tork kaliti bilan qotir",
+        ru: "Затяни этот узел динамометрическим ключом",
+        tr: "Bu bağlantıyı tork anahtarı ile sık",
+        chunks: ["Bu", "bağlantıyı", "tork", "anahtarı", "ile", "sık", "sıktı", "sıkma"],
+        target: ["Bu", "bağlantıyı", "tork", "anahtarı", "ile", "sık"]
+      },
+
+      // --- Послелоги и время: До (-madan önce), После (-dıktan sonra), Во время (-ken) ---
+      {
+        tag: "Последовательность • Прежде чем (-madan/-meden önce)",
+        hint: "Глагол + -madan/-meden önce = «До того как сделать / Прежде чем»",
+        uzHint: "O'zbekcha: Oynani qo'yishdan oldin takozlarni tekshir",
+        ru: "Перед установкой стеклопакета проверь подкладки (рихтовочные пластины)",
+        tr: "Camı takmadan önce cam takozlarını kontrol et",
+        chunks: ["Camı", "takmadan", "önce", "cam", "takozlarını", "kontrol", "et", "taktıktan", "sonra"],
+        target: ["Camı", "takmadan", "önce", "cam", "takozlarını", "kontrol", "et"]
+      },
+      {
+        tag: "Последовательность • После того как (-dıktan/-dikten sonra)",
+        hint: "Глагол + -dıktan/-dikten sonra = «После того как сделали»",
+        uzHint: "O'zbekcha: Kesim tugagandan keyin profillarni tozala",
+        ru: "После завершения резки продуй профили воздушным пистолетом",
+        tr: "Kesim bittikten sonra profilleri hava tabancası ile temizle",
+        chunks: ["Kesim", "bittikten", "sonra", "profilleri", "hava", "tabancası", "ile", "temizle", "bitmeden"],
+        target: ["Kesim", "bittikten", "sonra", "profilleri", "hava", "tabancası", "ile", "temizle"]
+      },
+      {
+        tag: "Одновременность • Во время работы (-ken / -rken)",
+        hint: "Çalışırken = во время работы; Keserken = когда режешь",
+        uzHint: "O'zbekcha: Stanokda ishlayotganda himoya ko'zoynagini taq",
+        ru: "Работая на станке, обязательно надевай защитные очки",
+        tr: "Makinede çalışırken mutlaka koruyucu gözlük tak",
+        chunks: ["Makinede", "çalışırken", "mutlaka", "koruyucu", "gözlük", "tak", "çalıştık", "takma"],
+        target: ["Makinede", "çalışırken", "mutlaka", "koruyucu", "gözlük", "tak"]
+      },
+      {
+        tag: "Одновременность • При монтаже (-rken)",
+        hint: "Montaj yaparken = во время монтажа / собирая",
+        uzHint: "O'zbekcha: Vertikal ustunni o'rnatayotganda urovenni tekshir",
+        ru: "При установке вертикальной стойки смотри на уровень",
+        tr: "Dikmeyi montaj yaparken teraziyi kontrol et",
+        chunks: ["Dikmeyi", "montaj", "yaparken", "teraziyi", "kontrol", "et", "yaptık", "yapmadan"],
+        target: ["Dikmeyi", "montaj", "yaparken", "teraziyi", "kontrol", "et"]
+      },
+
+      // --- Цель и причина (-mak için / yüzünden / sayesinde) ---
+      {
+        tag: "Цель действия • Чтобы (-mak/-mek için)",
+        hint: "Инфинитив (-mak/-mek) + için = «для того чтобы...»",
+        uzHint: "O'zbekcha: Suv oqmasligi uchun burchaklarga germetik surt",
+        ru: "Чтобы проверить герметичность, давай проведём тест водой",
+        tr: "Sızdırmazlığı kontrol etmek için su testi yapalım",
+        chunks: ["Sızdırmazlığı", "kontrol", "etmek", "için", "su", "testi", "yapalım", "ettik"],
+        target: ["Sızdırmazlığı", "kontrol", "etmek", "için", "su", "testi", "yapalım"]
+      },
+      {
+        tag: "Причина брака • Из-за чего-то (... yüzünden / ... nedeniyle)",
+        hint: "Hata yüzünden = из-за ошибки; Eksik yüzünden = из-за нехватки",
+        uzHint: "O'zbekcha: Detal yetishmasligi sababli montaj to'xtadi",
+        ru: "Из-за нехватки деталей монтаж на объекте остановился",
+        tr: "Eksik parça yüzünden şantiyede montaj durdu",
+        chunks: ["Eksik", "parça", "yüzünden", "şantiyede", "montaj", "durdu", "duruyor", "için"],
+        target: ["Eksik", "parça", "yüzünden", "şantiyede", "montaj", "durdu"]
+      },
+
+      // --- Вопросы мастера и снабжения (Kaç, Hangi, Neden, Kim, Ne kadar) ---
+      {
+        tag: "Вопросы в цеху • Сколько штук? (Kaç tane / Kaç adet)",
+        hint: "Kaç tane / Kaç adet = сколько штук?",
+        uzHint: "O'zbekcha: Bu pozitsiyadan nechta tayyor bo'ldi?",
+        ru: "Сколько штук по этой позиции уже готово?",
+        tr: "Bu pozdan kaç adet hazır oldu?",
+        chunks: ["Bu", "pozdan", "kaç", "adet", "hazır", "oldu", "olacak", "hangi"],
+        target: ["Bu", "pozdan", "kaç", "adet", "hazır", "oldu"]
+      },
+      {
+        tag: "Вопросы в цеху • Какой именно? (Hangi ...)",
+        hint: "Hangi profil = какой профиль; Hangi kat = какой этаж",
+        uzHint: "O'zbekcha: Bu makaslar qaysi qavatga ketadi?",
+        ru: "На какой этаж пойдут эти стропила (фермы)?",
+        tr: "Bu makaslar hangi kata gidecek?",
+        chunks: ["Bu", "makaslar", "hangi", "kata", "gidecek", "gitti", "kaç", "nerede"],
+        target: ["Bu", "makaslar", "hangi", "kata", "gidecek"]
+      },
+      {
+        tag: "Вопросы в цеху • Почему не сделали? (Neden / Niye)",
+        hint: "Neden + глагол с -madı/-medi = «Почему не сделали?»",
+        uzHint: "O'zbekcha: Nega bu tarnov (çörten) hali o'rnatilmadi?",
+        ru: "Почему эта водосборная воронка (водосток) ещё не установлена?",
+        tr: "Bu çörten neden daha takılmadı?",
+        chunks: ["Bu", "çörten", "neden", "daha", "takılmadı", "takıldı", "taktık", "kim"],
+        target: ["Bu", "çörten", "neden", "daha", "takılmadı"]
+      },
+      {
+        tag: "Вопросы в цеху • Сколько миллиметров? (Kaç milimetre)",
+        hint: "Kaç milimetre = сколько мм; Boşluk = зазор",
+        uzHint: "O'zbekcha: Bu yerda biniş (naxlyost) necha millimetr?",
+        ru: "Сколько миллиметров нахлест в этом узле?",
+        tr: "Bu detayda biniş payı kaç milimetre?",
+        chunks: ["Bu", "detayda", "biniş", "payı", "kaç", "milimetre", "derece", "tane"],
+        target: ["Bu", "detayda", "biniş", "payı", "kaç", "milimetre"]
+      },
+      {
+        tag: "Вопросы в цеху • Кто собирал? (Kim yaptı)",
+        hint: "Kim kesti = кто резал; Kim topladı = кто собирал",
+        uzHint: "O'zbekcha: Bu romni kim yig'di?",
+        ru: "Кто собирал эту створку и кто проверял размеры?",
+        tr: "Bu kanadı kim topladı ve ölçüyü kim kontrol etti?",
+        chunks: ["Bu", "kanadı", "kim", "topladı", "ve", "ölçüyü", "kim", "kontrol", "etti", "topluyor"],
+        target: ["Bu", "kanadı", "kim", "topladı", "ve", "ölçüyü", "kim", "kontrol", "etti"]
+      },
+
+      // --- Страдательный залог (Сделано / Заказано / Проверено: -ıldı / -ندی) ---
+      {
+        tag: "Статус заказа • Сделано (-ıldı / -ildi / -ndı)",
+        hint: "Sipariş geçildi = заказ оформлен; Kesildi = нарезано",
+        uzHint: "O'zbekcha: Barcha profillar kesildi va qadoqlandi",
+        ru: "Все профили нарезаны и упакованы для отправки",
+        tr: "Bütün profiller kesildi ve sevkiyat için paketlendi",
+        chunks: ["Bütün", "profilleri", "profiller", "kesildi", "ve", "sevkiyat", "için", "paketlendi", "kestik"],
+        target: ["Bütün", "profiller", "kesildi", "ve", "sevkiyat", "için", "paketlendi"]
+      },
+      {
+        tag: "Статус работы • Переделано / Исправлено (- düzeltildi)",
+        hint: "Düzeltildi = исправлено; Değiştirildi = заменено",
+        uzHint: "O'zbekcha: Ezilgan rezina almashtirildi, muammo yo'q",
+        ru: "Примятый уплотнитель заменён, больше проблем нет",
+        tr: "Ezilmiş conta değiştirildi, artık sorun yok",
+        chunks: ["Ezilmiş", "conta", "değiştirildi", "artık", "sorun", "yok", "değiştirdik", "var"],
+        target: ["Ezilmiş", "conta", "değiştirildi", "artık", "sorun", "yok"]
+      },
+
+      // --- Сравнение и точность (Daha / Çok / Az / Tam) ---
+      {
+        tag: "Регулировка и подгонка • Чуть выше / ниже (Biraz daha ...)",
+        hint: "Biraz daha = ещё чуть-чуть; Yukarı = вверх, Aşağı = вниз",
+        uzHint: "O'zbekcha: Qanotni biroz yuqoriga ko'tar va o'ngga sur",
+        ru: "Подними створку чуть-чуть вверх и сдвинь вправо",
+        tr: "Kanadı biraz daha yukarı kaldır ve sağa çek",
+        chunks: ["Kanadı", "biraz", "daha", "yukarı", "kaldır", "ve", "sağa", "çek", "aşağı", "kaldırdı"],
+        target: ["Kanadı", "biraz", "daha", "yukarı", "kaldır", "ve", "sağa", "çek"]
+      },
+      {
+        tag: "Контроль размеров • Слишком много / В самый раз (Çok / Tam)",
+        hint: "Çok fazla = слишком много; Tam gönyesinde = точно под 90°",
+        uzHint: "O'zbekcha: Hozir o'lcham aniq va burchagi to'g'ri",
+        ru: "Теперь размер точный, и рама стоит ровно по угольнику (в диагоналях)",
+        tr: "Şimdi ölçü tam oldu ve kasa gönyesinde",
+        chunks: ["Şimdi", "ölçü", "tam", "oldu", "ve", "kasa", "gönyesinde", "değil", "olacak"],
+        target: ["Şimdi", "ölçü", "tam", "oldu", "ve", "kasa", "gönyesinde"]
+      },
+
+      // --- Общение с заказчиком (İş veren), технадзором и логистикой ---
+      {
+        tag: "Сдача объекта • Заказчик и технадзор (İş veren)",
+        hint: "memnun kaldı = остался доволен; kabul etti = принял работу",
+        uzHint: "O'zbekcha: Buyurtmachi fasadni ko'rdi va ishni qabul qildi",
+        ru: "Заказчик осмотрел фасад и принял работу без замечаний",
+        tr: "İş veren cepheyi gördü ve işi sorunsuz kabul etti",
+        chunks: ["İş", "veren", "cepheyi", "gördü", "ve", "işi", "sorunsuz", "kabul", "etti", "etmedi"],
+        target: ["İş", "veren", "cepheyi", "gördü", "ve", "işi", "sorunsuz", "kabul", "etti"]
+      },
+      {
+        tag: "Логистика и кран • Погрузка и разгрузка (Hiyap / Kamyon)",
+        hint: "Yüklemek = грузить; İndirmek = разгружать / спускать",
+        uzHint: "O'zbekcha: Paletlarni kranga ehtiyot bo'lib yuklang",
+        ru: "Погрузите паллеты на кран-манипулятор осторожно, не поцарапайте профиль",
+        tr: "Paletleri hiyapa dikkatli yükleyin, profili çizmeyin",
+        chunks: ["Paletleri", "hiyapa", "dikkatli", "yükleyin", "profili", "çizmeyin", "yükledik", "çizdi"],
+        target: ["Paletleri", "hiyapa", "dikkatli", "yükleyin", "profili", "çizmeyin"]
+      },
+      {
+        tag: "Срочность и приоритет • Сначала это, потом то (Önce ... sonra ...)",
+        hint: "Önce = сначала; Ondan sonra = после этого / затем",
+        uzHint: "O'zbekcha: Avval uchinchi qavatning dikmalarini yig'amiz",
+        ru: "Сначала собираем стойки третьего этажа, потом переходим к крыше",
+        tr: "Önce üçüncü katın dikmelerini topluyoruz, sonra çatıya geçiyoruz",
+        chunks: ["Önce", "üçüncü", "katın", "dikmelerini", "topluyoruz", "sonra", "çatıya", "geçiyoruz", "topladık"],
+        target: ["Önce", "üçüncü", "katın", "dikmelerini", "topluyoruz", "sonra", "çatıya", "geçiyoruz"]
+      },
+
+      // --- Разговорные рефлексы на каждый день (Чтобы звучать как носитель) ---
+      {
+        tag: "Живой разговор • Согласие и подтверждение",
+        hint: "Tamamdır = добро / принято; Merak etme = не переживай",
+        uzHint: "O'zbekcha: Bo'ldi, xavotir olma, bugun hal qilamiz",
+        ru: "Принято, не переживай, мы сегодня решим этот вопрос",
+        tr: "Tamamdır, merak etme, bugün bu işi hallederiz",
+        chunks: ["Tamamdır", "merak", "etme", "bugün", "bu", "işi", "hallederiz", "et", "hallettik"],
+        target: ["Tamamdır", "merak", "etme", "bugün", "bu", "işi", "hallederiz"]
+      },
+      {
+        tag: "Живой разговор • Когда не расслышал или просишь повторить",
+        hint: "Bir daha söyler misin? = Повторишь ещё раз?; Anlamadım = я не понял",
+        uzHint: "O'zbekcha: Shovqin ko'p, pozitsiya raqamini qayta aytasanmi?",
+        ru: "Здесь очень шумно, повторишь номер позиции ещё раз?",
+        tr: "Burada çok ses var, poz numarasını bir daha söyler misin?",
+        chunks: ["Burada", "çok", "ses", "var", "poz", "numarasını", "bir", "daha", "söyler", "misin", "söyledin"],
+        target: ["Burada", "çok", "ses", "var", "poz", "numarasını", "bir", "daha", "söyler", "misin"]
+      },
+      {
+        tag: "Живой разговор • Когда нужна помощь на месте",
+        hint: "Yardım eder misin? = Поможешь?; Tut = держи",
+        uzHint: "O'zbekcha: Ikki daqiqaga yordam ber, narigi uchini ushla",
+        ru: "Поможешь на две минуты? Подержи тот край профиля",
+        tr: "İki dakika yardım eder misin, profilin diğer ucunu tut",
+        chunks: ["İki", "dakika", "yardım", "eder", "misin", "profilin", "diğer", "ucunu", "tut", "bırak"],
+        target: ["İki", "dakika", "yardım", "eder", "misin", "profilin", "diğer", "ucunu", "tut"]
+      },
+      {
+        tag: "Живой разговор • Обещание перезвонить / проверить",
+        hint: "Sorup döneceğim = спрошу и вернусь с ответом",
+        uzHint: "O'zbekcha: Ombor mudiridan so'rayman va besh daqiqada aytaman",
+        ru: "Я сейчас спрошу у завсклада про дефицит и через 5 минут скажу",
+        tr: "Şimdi depocuya eksikleri soracağım ve beş dakika sonra söyleyeceğim",
+        chunks: ["Şimdi", "depocuya", "eksikleri", "soracağım", "ve", "beş", "dakika", "sonra", "söyleyeceğim", "sordum"],
+        target: ["Şimdi", "depocuya", "eksikleri", "soracağım", "ve", "beş", "dakika", "sonra", "söyleyeceğim"]
+      },
+      {
+        tag: "Живой разговор • Предупреждение об ошибке",
+        hint: "Sakın + глагол с -ma/-me = «Ни в коем случае не...!»",
+        uzHint: "O'zbekcha: Ehtiyot bo'l, kertma joyini adashtirma!",
+        ru: "Будь внимателен, ни в коем случае не перепутай сторону выреза (паза)!",
+        tr: "Dikkat et, sakın kertme yönünü karıştırma!",
+        chunks: ["Dikkat", "et", "sakın", "kertme", "yönünü", "karıştırma", "karıştırdı", "karıştır"],
+        target: ["Dikkat", "et", "sakın", "kertme", "yönünü", "karıştırma"]
+      },
+      {
+        tag: "Живой разговор • Итог смены",
+        hint: "Elinize sağlık = спасибо за труд (буквально: здоровья вашим рукам)",
+        uzHint: "O'zbekcha: Qo'lingiz dard ko'rmasin, bugun ko'p ish qildik",
+        ru: "Спасибо всем за работу, сегодня мы собрали много сложных узлов",
+        tr: "Herkesin eline sağlık, bugün çok zor detaylar topladık",
+        chunks: ["Herkesin", "eline", "sağlık", "bugün", "çok", "zor", "detaylar", "topladık", "topluyoruz"],
+        target: ["Herkesin", "eline", "sağlık", "bugün", "çok", "zor", "detaylar", "topladık"]
+      }
+    ];
+
+    // Динамический генератор дополнительных шаблонов из базы слов с примерами,
+    // чтобы тренажер содержал 200+ разнообразных живых фраз!
+    function getExpandedPatternDrills() {
+       const allDrills = [...PATTERN_DRILLS];
+       const verbDistractors = ["yapma", "yaptık", "yapıyoruz", "oldu", "olmaz", "değil", "var", "yok", "lazım"];
+       const schuecoWithExamples = phrases.filter(p => p.exampleTr && p.exampleRu && p.exampleTr.split(' ').length >= 3 && p.exampleTr.split(' ').length <= 8);
+
+       schuecoWithExamples.forEach(item => {
+          const cleanWords = item.exampleTr.replace(/[.,!?"]/g, '').trim().split(/\s+/);
+          if (cleanWords.length < 3) return;
+          // Пропускаем, если такая фраза уже есть в ручном списке
+          if (allDrills.some(d => d.tr.toLowerCase() === item.exampleTr.toLowerCase())) return;
+
+          // Подбираем 2 умных дистрактора (ловушки) к последнему слову (обычно сказуемому)
+          const lastWord = cleanWords[cleanWords.length - 1];
+          const traps = [];
+          if (lastWord.endsWith('dı') || lastWord.endsWith('di') || lastWord.endsWith('du') || lastWord.endsWith('dü') || lastWord.endsWith('tı') || lastWord.endsWith('ti')) {
+             traps.push(lastWord.slice(0, -2) + 'ıyor', lastWord.slice(0, -2) + 'madı');
+          } else if (lastWord.includes('iyor') || lastWord.includes('ıyor') || lastWord.includes('uyor') || lastWord.includes('üyor')) {
+             traps.push(lastWord.replace(/ı?yor.*/, 'tı'), 'değil');
+          } else {
+             const rnd1 = verbDistractors[Math.floor(Math.random() * verbDistractors.length)];
+             const rnd2 = verbDistractors[(Math.floor(Math.random() * verbDistractors.length) + 3) % verbDistractors.length];
+             if (!cleanWords.includes(rnd1)) traps.push(rnd1);
+             if (!cleanWords.includes(rnd2) && rnd2 !== rnd1) traps.push(rnd2);
+          }
+
+          allDrills.push({
+             tag: `Практика со словом «${item.tr}»`,
+             hint: `${item.tr} — ${item.ru} (глагол ставим в самый конец фразы)`,
+             uzHint: item.uz ? `O'zbekcha ma'nosi: ${item.uz}` : "Турецкий порядок слов: Подлежащее → Детали → Глагол",
+             ru: item.exampleRu,
+             tr: item.exampleTr,
+             chunks: [...cleanWords, ...traps],
+             target: cleanWords
+          });
+       });
+       return allDrills;
+    }
+
+    let patternQueue = [];
+    let currentPattern = null;
+    let patternAttempt = [];
+    let patternPool = [];
+    let patternModeFilter = 'core'; // 'core' (39 золотых матриц) | 'all' (все 200+ фраз)
+
+    function setPatternModeFilter(mode) {
+       patternModeFilter = mode;
+       patternQueue = [];
+       nextPatternItem();
+    }
+
+    function initPatternTrainer() {
+       const source = patternModeFilter === 'all' ? getExpandedPatternDrills() : PATTERN_DRILLS;
+       patternQueue = [...source].sort(() => Math.random() - 0.5);
+       nextPatternItem();
+    }
+
+    function nextPatternItem() {
+       const source = patternModeFilter === 'all' ? getExpandedPatternDrills() : PATTERN_DRILLS;
+       if (patternQueue.length === 0) {
+          patternQueue = [...source].sort(() => Math.random() - 0.5);
+          showToast(`Новый круг (${source.length} шаблонов)!`, '🔥');
+       }
+       currentPattern = patternQueue.pop();
+       patternAttempt = [];
+       patternPool = [...currentPattern.chunks].sort(() => Math.random() - 0.5);
+       renderPatternCard();
+    }
+
+    function renderPatternCard() {
+       const container = document.getElementById('quizCardContainer');
+       if (!currentPattern) return;
+
+       let selectedHtml = patternAttempt.map((w, i) => `
+          <button onclick="patternRemoveChunk(${i})" class="px-3.5 py-2 bg-violet-100 dark:bg-violet-900/60 text-violet-900 dark:text-violet-100 rounded-xl font-bold text-sm active:scale-95 border border-violet-300 dark:border-violet-700 shadow-sm transition-transform">${w}</button>
+       `).join('');
+
+       let poolHtml = patternPool.map((w, i) => `
+          <button onclick="patternAddChunk(${i})" class="px-3.5 py-2.5 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 rounded-xl font-bold text-sm active:scale-95 border border-slate-300 dark:border-slate-600 shadow-sm transition-transform hover:border-violet-400">${w}</button>
+       `).join('');
+
+       const totalCount = (patternModeFilter === 'all' ? getExpandedPatternDrills() : PATTERN_DRILLS).length;
+       container.innerHTML = `
+          <div class="w-full flex items-center justify-between gap-1.5 mb-2.5">
+             <div class="flex bg-slate-100 dark:bg-slate-800 p-0.5 rounded-xl border border-slate-200 dark:border-slate-700 text-[11px] font-bold">
+                <button onclick="setPatternModeFilter('core')" class="px-2.5 py-1 rounded-lg transition-all ${patternModeFilter === 'core' ? 'bg-violet-600 text-white shadow-xs' : 'text-slate-500 dark:text-slate-400'}">🔥 ${PATTERN_DRILLS.length} матриц</button>
+                <button onclick="setPatternModeFilter('all')" class="px-2.5 py-1 rounded-lg transition-all ${patternModeFilter === 'all' ? 'bg-violet-600 text-white shadow-xs' : 'text-slate-500 dark:text-slate-400'}">🚀 Мега-база (${getExpandedPatternDrills().length})</button>
+             </div>
+             <button onclick="speakTurkish('${currentPattern.tr.replace(/'/g, "\\'")}', null, 'normal', this)" class="text-xs font-bold text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-900/40 px-2.5 py-1 rounded-lg border border-sky-200 dark:border-sky-800 active:scale-95">🔊 Озвучить</button>
+          </div>
+          <div class="w-full flex items-center justify-between mb-3">
+             <span class="text-[11px] uppercase font-extrabold px-2.5 py-1 rounded-lg bg-violet-100 dark:bg-violet-950/70 text-violet-700 dark:text-violet-300 tracking-wide">⚡ ${currentPattern.tag}</span>
+             <span class="text-[11px] font-bold text-slate-400">Осталось: ${patternQueue.length + 1}/${totalCount}</span>
+          </div>
+
+          <div class="w-full bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/60 rounded-2xl p-3 mb-4 text-left">
+             <div class="text-xs font-bold text-amber-900 dark:text-amber-200">💡 Формула: ${currentPattern.hint}</div>
+             <div class="text-[11px] text-emerald-700 dark:text-emerald-400 font-medium mt-0.5">${currentPattern.uzHint}</div>
+          </div>
+
+          <div class="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white mb-4 text-center leading-snug px-1">
+             «${currentPattern.ru}»
+          </div>
+
+          <div id="patternAnswerBox" class="w-full min-h-[76px] bg-slate-50 dark:bg-slate-950/50 rounded-2xl p-3.5 flex flex-wrap gap-2 border-2 border-dashed border-violet-300 dark:border-violet-800 mb-5 content-start items-center justify-center transition-colors">
+             ${selectedHtml || '<span class="text-slate-400 dark:text-slate-500 text-xs font-medium">Собирайте турецкую фразу из блоков ниже (включая правильное окончание глагола)</span>'}
+          </div>
+
+          <div class="w-full flex flex-wrap gap-2 justify-center mb-6">
+             ${poolHtml}
+          </div>
+
+          <div class="flex gap-2.5 w-full">
+             <button onclick="patternShowSolution()" class="flex-1 py-3 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-2xl font-bold text-xs sm:text-sm active:scale-95 transition-transform">
+                👀 Подсказка
+             </button>
+             <button onclick="patternCheck()" class="flex-[2] py-3 bg-violet-600 hover:bg-violet-700 text-white rounded-2xl font-bold text-sm shadow-md active:scale-95 transition-transform">
+                Проверить
+             </button>
+          </div>
+       `;
+    }
+
+    window.patternAddChunk = function(idx) {
+       const word = patternPool.splice(idx, 1)[0];
+       patternAttempt.push(word);
+       triggerHaptic('light');
+       renderPatternCard();
+       if (patternAttempt.length === currentPattern.target.length) {
+          patternCheck();
+       }
+    };
+
+    window.patternRemoveChunk = function(idx) {
+       const word = patternAttempt.splice(idx, 1)[0];
+       patternPool.push(word);
+       triggerHaptic('light');
+       renderPatternCard();
+    };
+
+    window.patternShowSolution = function() {
+       patternAttempt = [...currentPattern.target];
+       patternPool = [];
+       renderPatternCard();
+       if (isQuizSoundEnabled) {
+          speakTurkish(currentPattern.tr.replace(/'/g, "\\'"), null, 'normal', null);
+       }
+    };
+
+    window.patternCheck = function() {
+       const attemptNorm = patternAttempt.join(' ').toLocaleLowerCase('tr').trim();
+       const targetNorm = currentPattern.target.join(' ').toLocaleLowerCase('tr').trim();
+       const box = document.getElementById('patternAnswerBox');
+
+       if (attemptNorm === targetNorm) {
+          triggerHaptic('success');
+          if (box) {
+             box.classList.remove('border-dashed', 'border-violet-300');
+             box.classList.add('border-emerald-500', 'bg-emerald-50', 'dark:bg-emerald-950/40');
+          }
+          showToast('Отлично! Шаблон закреплен ⚡', '🎉');
+          addReviewProgress();
+          if (isQuizSoundEnabled) {
+             speakTurkish(currentPattern.tr.replace(/'/g, "\\'"), null, 'normal', null);
+             setTimeout(() => nextPatternItem(), 2200);
+          } else {
+             setTimeout(() => nextPatternItem(), 900);
+          }
+       } else {
+          triggerHaptic('error');
+          if (box) {
+             box.classList.add('border-rose-500', 'bg-rose-50', 'dark:bg-rose-950/30');
+          }
+          showToast('Проверьте порядок слов или время глагола', '❌');
+       }
+    };
+
+    // Override startQuiz & nextQuizItem to support 'patterns' mode cleanly
+    const _origStartQuiz = startQuiz;
+    startQuiz = function(mode) {
+       if (mode === 'patterns') {
+          quizMode = 'patterns';
+          triggerHaptic('light');
+          document.getElementById('quizMenu').classList.add('hidden');
+          document.getElementById('quizActive').classList.remove('hidden');
+          initPatternTrainer();
+          return;
+       }
+       _origStartQuiz(mode);
+    };
 
     function openDialogsFromQuiz() {
         document.getElementById('screenQuiz').classList.add('hidden');
