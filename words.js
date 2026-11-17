@@ -1191,7 +1191,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men"
+    "uz": "Men",
+    "exampleTr": "Ben bugün kesim tezgahında çalışıyorum.",
+    "exampleRu": "Я сегодня работаю за отрезным станком."
   },
   {
     "id": "top_2",
@@ -1202,7 +1204,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sen"
+    "uz": "Sen",
+    "exampleTr": "Sen ölçüyü doğru aldın mı?",
+    "exampleRu": "Ты правильно снял размер?"
   },
   {
     "id": "top_3",
@@ -1213,7 +1217,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "U / O'sha"
+    "uz": "U / O'sha",
+    "exampleTr": "O bizimle ikinci katta montaj yapıyor.",
+    "exampleRu": "Он вместе с нами ведёт монтаж на втором этаже."
   },
   {
     "id": "top_4",
@@ -1224,7 +1230,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Biz"
+    "uz": "Biz",
+    "exampleTr": "Biz öğleden sonra cepheye cam takacağız.",
+    "exampleRu": "После обеда мы будем устанавливать стёкла на фасад."
   },
   {
     "id": "top_5",
@@ -1235,7 +1243,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Siz"
+    "uz": "Siz",
+    "exampleTr": "Siz projeyi kontrol edip bize gönderin.",
+    "exampleRu": "Вы проверьте проект и отправьте его нам."
   },
   {
     "id": "top_6",
@@ -1246,7 +1256,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ular"
+    "uz": "Ular",
+    "exampleTr": "Onlar dışarıdaki kamyondan profilleri indiriyorlar.",
+    "exampleRu": "Они разгружают профили из грузовика на улице."
   },
   {
     "id": "top_7",
@@ -1257,7 +1269,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu"
+    "uz": "Bu",
+    "exampleTr": "Bu kutudaki vidalar pencere kolu için.",
+    "exampleRu": "Винты в этой коробке — для оконной ручки."
   },
   {
     "id": "top_8",
@@ -1268,7 +1282,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shu / Ana u"
+    "uz": "Shu / Ana u",
+    "exampleTr": "Şu uzun profili bana uzatır mısın?",
+    "exampleRu": "Подашь мне вон тот длинный профиль?"
   },
   {
     "id": "top_9",
@@ -1279,7 +1295,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nima"
+    "uz": "Nima",
+    "exampleTr": "Elindeki kağıtta ne yazıyor, okur musun?",
+    "exampleRu": "Что написано на бумаге у тебя в руках, прочитаешь?"
   },
   {
     "id": "top_10",
@@ -1290,7 +1308,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kim"
+    "uz": "Kim",
+    "exampleTr": "Kapının kilidini kim değiştirdi, biliyor musun?",
+    "exampleRu": "Ты знаешь, кто поменял замок на двери?"
   },
   {
     "id": "top_11",
@@ -1301,7 +1321,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qanday / Qanaqa"
+    "uz": "Qanday / Qanaqa",
+    "exampleTr": "Bu makineyi nasıl çalıştırıyoruz, gösterebilir misin?",
+    "exampleRu": "Можешь показать, как мы запускаем этот станок?"
   },
   {
     "id": "top_12",
@@ -1312,7 +1334,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nega / Nimaga"
+    "uz": "Nega / Nimaga",
+    "exampleTr": "Kamyon bugün neden bu kadar geç geldi?",
+    "exampleRu": "Почему грузовик сегодня приехал так поздно?"
   },
   {
     "id": "top_13",
@@ -1323,7 +1347,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nima uchun"
+    "uz": "Nima uchun",
+    "exampleTr": "Pencere kanadını niçin tekrar söktünüz?",
+    "exampleRu": "Зачем вы снова сняли оконную створку?"
   },
   {
     "id": "top_14",
@@ -1334,7 +1360,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qayerda"
+    "uz": "Qayerda",
+    "exampleTr": "Dün kullandığımız silikon tabancası nerede duruyor?",
+    "exampleRu": "Где лежит пистолет для силикона, которым мы пользовались вчера?"
   },
   {
     "id": "top_15",
@@ -1345,7 +1373,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qayerga"
+    "uz": "Qayerga",
+    "exampleTr": "Hazır olan çerçeveleri nereye koymamız gerekiyor?",
+    "exampleRu": "Куда нам нужно поставить готовые рамы?"
   },
   {
     "id": "top_16",
@@ -1356,7 +1386,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qayerdan"
+    "uz": "Qayerdan",
+    "exampleTr": "Yeni alüminyum sevkiyatı nereden geliyor?",
+    "exampleRu": "Откуда едет новая поставка алюминия?"
   },
   {
     "id": "top_17",
@@ -1367,7 +1399,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qachon"
+    "uz": "Qachon",
+    "exampleTr": "Üçüncü kattaki işimiz ne zaman bitecek?",
+    "exampleRu": "Когда закончится наша работа на третьем этаже?"
   },
   {
     "id": "top_18",
@@ -1378,7 +1412,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qancha / Qanchalik"
+    "uz": "Qancha / Qanchalik",
+    "exampleTr": "Bu cephenin montajı ne kadar sürer?",
+    "exampleRu": "Сколько времени займёт монтаж этого фасада?"
   },
   {
     "id": "top_19",
@@ -1389,7 +1425,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qaysi"
+    "uz": "Qaysi",
+    "exampleTr": "Önce hangi odanın pencerelerini takmaya başlıyoruz?",
+    "exampleRu": "С окон какой комнаты мы начинаем установку в первую очередь?"
   },
   {
     "id": "top_20",
@@ -1400,7 +1438,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nechta / Qancha"
+    "uz": "Nechta / Qancha",
+    "exampleTr": "Bugün kaç tane pencere çerçevesi yapacağız?",
+    "exampleRu": "Сколько оконных рам мы сделаем сегодня?"
   },
   {
     "id": "top_21",
@@ -1411,7 +1451,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ha"
+    "uz": "Ha",
+    "exampleTr": "Evet, bütün ölçüleri deftere yazdım.",
+    "exampleRu": "Да, я записал все размеры в тетрадь."
   },
   {
     "id": "top_22",
@@ -1422,7 +1464,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yo'q"
+    "uz": "Yo'q",
+    "exampleTr": "Hayır, o paketler henüz arabadan indirilmedi.",
+    "exampleRu": "Нет, те упаковки ещё не выгрузили из машины."
   },
   {
     "id": "top_23",
@@ -1433,7 +1477,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yo'q / Mavjud emas"
+    "uz": "Yo'q / Mavjud emas",
+    "exampleTr": "Depoda siyah renkli conta hiç yok.",
+    "exampleRu": "На складе совсем нет чёрного уплотнителя."
   },
   {
     "id": "top_24",
@@ -1444,7 +1490,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bor / Mavjud"
+    "uz": "Bor / Mavjud",
+    "exampleTr": "Masadaki çekmecede yedek anahtar var.",
+    "exampleRu": "В ящике стола есть запасной ключ."
   },
   {
     "id": "top_25",
@@ -1455,7 +1503,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mayli / Xo'p / Ruxsat"
+    "uz": "Mayli / Xo'p / Ruxsat",
+    "exampleTr": "Tamam, iş bitince atölyeyi beraber temizleriz.",
+    "exampleRu": "Хорошо, как закончим работу, вместе уберём в цеху."
   },
   {
     "id": "top_26",
@@ -1466,7 +1516,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Iltimos"
+    "uz": "Iltimos",
+    "exampleTr": "Malzemeleri düşürmeden yavaşça indirin lütfen.",
+    "exampleRu": "Пожалуйста, опускайте материалы медленно, чтобы не уронить."
   },
   {
     "id": "top_27",
@@ -1477,7 +1529,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Rahmat / Tashakkur"
+    "uz": "Rahmat / Tashakkur",
+    "exampleTr": "Yardımın için çok teşekkür ederim, işim kolaylaştı.",
+    "exampleRu": "Большое спасибо за помощь, моя работа стала намного проще."
   },
   {
     "id": "top_28",
@@ -1488,7 +1542,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Arzimaydi"
+    "uz": "Arzimaydi",
+    "exampleTr": "Rica ederim, ne zaman lazım olursa yine sorabilirsin.",
+    "exampleRu": "Не за что, можешь спрашивать снова, когда понадобится."
   },
   {
     "id": "top_29",
@@ -1499,7 +1555,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kechirasiz / Uzr so'rayman"
+    "uz": "Kechirasiz / Uzr so'rayman",
+    "exampleTr": "Özür dilerim, yanlış kutuyu getirmişim, hemen değiştiriyorum.",
+    "exampleRu": "Прошу прощения, я принёс не ту коробку, сейчас же поменяю."
   },
   {
     "id": "top_30",
@@ -1510,7 +1568,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kechirasiz (murojaatda)"
+    "uz": "Kechirasiz (murojaatda)",
+    "exampleTr": "Affedersiniz, müdür beyin odası hangi katta?",
+    "exampleRu": "Извините, на каком этаже находится кабинет директора?"
   },
   {
     "id": "top_31",
@@ -1521,7 +1581,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Salom / Assalomu alaykum"
+    "uz": "Salom / Assalomu alaykum",
+    "exampleTr": "Merhaba arkadaşlar, bugünkü iş dağılımına bakalım mı?",
+    "exampleRu": "Привет, ребята, посмотрим сегодняшнее распределение работы?"
   },
   {
     "id": "top_32",
@@ -1532,7 +1594,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xayrli tong"
+    "uz": "Xayrli tong",
+    "exampleTr": "Günaydın, çay hazır, işe başlamadan içelim mi?",
+    "exampleRu": "Доброе утро, чай готов, попьём перед началом работы?"
   },
   {
     "id": "top_33",
@@ -1543,7 +1607,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kuningiz xayrli o'tsin"
+    "uz": "Kuningiz xayrli o'tsin",
+    "exampleTr": "İyi günler, sipariş ettiğimiz camları teslim almaya geldik.",
+    "exampleRu": "Добрый день, мы приехали забрать заказанные стёкла."
   },
   {
     "id": "top_34",
@@ -1554,7 +1620,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hayrli kech"
+    "uz": "Hayrli kech",
+    "exampleTr": "İyi akşamlar, ben artık çıkıyorum, kapıyı kilitledim.",
+    "exampleRu": "Добрый вечер, я уже ухожу, дверь закрыл на замок."
   },
   {
     "id": "top_35",
@@ -1565,7 +1633,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hayrli tun"
+    "uz": "Hayrli tun",
+    "exampleTr": "İyi geceler, eve gidince güzelce dinlen, yarın iş çok.",
+    "exampleRu": "Спокойной ночи, как придёшь домой — хорошо отдохни, завтра много работы."
   },
   {
     "id": "top_36",
@@ -1576,7 +1646,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'rishamiz"
+    "uz": "Ko'rishamiz",
+    "exampleTr": "Pazartesi saat sekizde tekrar burada görüşürüz.",
+    "exampleRu": "Увидимся здесь снова в понедельник в восемь часов."
   },
   {
     "id": "top_37",
@@ -1587,7 +1659,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xayr, sog' bo'ling"
+    "uz": "Xayr, sog' bo'ling",
+    "exampleTr": "Ben servise yetişeceğim, hepiniz hoşça kalın.",
+    "exampleRu": "Мне нужно успеть на служебный автобус, всем до свидания."
   },
   {
     "id": "top_38",
@@ -1598,7 +1672,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xayr, yaxshi boring"
+    "uz": "Xayr, yaxshi boring",
+    "exampleTr": "Güle güle, yarın sabah atölyede buluşuruz.",
+    "exampleRu": "Всего доброго, завтра утром встретимся в цеху."
   },
   {
     "id": "top_39",
@@ -1609,7 +1685,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hormang / Ishingizga unum bersin"
+    "uz": "Hormang / Ishingizga unum bersin",
+    "exampleTr": "Kolay gelsin çocuklar, bugün epey hızlı çalışıyorsunuz.",
+    "exampleRu": "Бог в помощь, ребята, сегодня вы работаете очень быстро."
   },
   {
     "id": "top_40",
@@ -1620,7 +1698,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'p / Juda"
+    "uz": "Ko'p / Juda",
+    "exampleTr": "Dışarısı bugün çok soğuk, kalın montunu giy.",
+    "exampleRu": "На улице сегодня очень холодно, надень тёплую куртку."
   },
   {
     "id": "top_41",
@@ -1631,7 +1711,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kam / Oz"
+    "uz": "Kam / Oz",
+    "exampleTr": "Vaktimiz az kaldı, hemen aletleri toplayalım.",
+    "exampleRu": "У нас осталось мало времени, давайте скорее собирать инструменты."
   },
   {
     "id": "top_42",
@@ -1642,7 +1724,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Biroz / Sal"
+    "uz": "Biroz / Sal",
+    "exampleTr": "Yorulduysan biraz otur, sonra devam ederiz.",
+    "exampleRu": "Если устал, посиди немного, потом продолжим."
   },
   {
     "id": "top_43",
@@ -1653,7 +1737,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yana / Ko'proq"
+    "uz": "Yana / Ko'proq",
+    "exampleTr": "Bu parçayı daha dikkatli kesmek gerekiyor.",
+    "exampleRu": "Эту деталь нужно отрезать ещё аккуратнее."
   },
   {
     "id": "top_44",
@@ -1664,7 +1750,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Eng (eng yaxshi)"
+    "uz": "Eng (eng yaxshi)",
+    "exampleTr": "Bu projenin en zor kısmı çatı camlarıdır.",
+    "exampleRu": "Самая сложная часть этого проекта — стёкла для крыши."
   },
   {
     "id": "top_45",
@@ -1675,7 +1763,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Va"
+    "uz": "Va",
+    "exampleTr": "Çekiç ve tornavidayı takım çantasına koydum.",
+    "exampleRu": "Я положил молоток и отвёртку в сумку с инструментами."
   },
   {
     "id": "top_46",
@@ -1686,7 +1776,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yoki"
+    "uz": "Yoki",
+    "exampleTr": "Kapıyı yarın sabah veya öğleden sonra takarız.",
+    "exampleRu": "Дверь мы установим завтра утром или после обеда."
   },
   {
     "id": "top_47",
@@ -1697,7 +1789,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Lekin / Ammo"
+    "uz": "Lekin / Ammo",
+    "exampleTr": "Makine çalışıyor ama garip bir ses çıkarıyor.",
+    "exampleRu": "Станок работает, но издаёт странный звук."
   },
   {
     "id": "top_48",
@@ -1708,7 +1802,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Biroq / Ammo"
+    "uz": "Biroq / Ammo",
+    "exampleTr": "Hava güneşli görünüyor fakat rüzgar sert esiyor.",
+    "exampleRu": "Погода кажется солнечной, однако дует сильный ветер."
   },
   {
     "id": "top_49",
@@ -1719,7 +1815,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chunki"
+    "uz": "Chunki",
+    "exampleTr": "İşi erkenden bitirdik çünkü herkes çok yardım etti.",
+    "exampleRu": "Мы закончили работу пораньше, потому что все очень помогли."
   },
   {
     "id": "top_50",
@@ -1730,7 +1828,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "uchun"
+    "uz": "uchun",
+    "exampleTr": "Güvenliğimiz için baret takmak zorundayız.",
+    "exampleRu": "Для нашей безопасности мы обязаны надевать каску."
   },
   {
     "id": "top_51",
@@ -1741,7 +1841,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bilan"
+    "uz": "Bilan",
+    "exampleTr": "Usta ile birlikte tüm çizimleri gözden geçirdik.",
+    "exampleRu": "Мы вместе с мастером просмотрели все чертежи."
   },
   {
     "id": "top_52",
@@ -1752,7 +1854,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kabi / O'xshash"
+    "uz": "Kabi / O'xshash",
+    "exampleTr": "Dünkü gibi aynı sırada çalışmaya devam edelim.",
+    "exampleRu": "Давайте продолжим работать в том же порядке, как вчера."
   },
   {
     "id": "top_53",
@@ -1763,7 +1867,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qadar / Gacha / Teng"
+    "uz": "Qadar / Gacha / Teng",
+    "exampleTr": "Akşam saat beşe kadar bütün kapıları bitirmeliyiz.",
+    "exampleRu": "До пяти часов вечера мы должны закончить все двери."
   },
   {
     "id": "top_54",
@@ -1774,7 +1880,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Keyin / So'ng"
+    "uz": "Keyin / So'ng",
+    "exampleTr": "Yemekten sonra bahçedeki kasaları içeri alacağız.",
+    "exampleRu": "После обеда мы занесём ящики из двора внутрь."
   },
   {
     "id": "top_55",
@@ -1785,7 +1893,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oldin / Avval"
+    "uz": "Oldin / Avval",
+    "exampleTr": "Kesime başlamadan önce bıçağı mutlaka kontrol et.",
+    "exampleRu": "Перед тем как начать резку, обязательно проверь диск."
   },
   {
     "id": "top_56",
@@ -1796,7 +1906,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hozir / Endi"
+    "uz": "Hozir / Endi",
+    "exampleTr": "Şimdi sıradaki camı vinçle yukarı kaldırıyoruz.",
+    "exampleRu": "Сейчас мы поднимаем следующее стекло наверх краном."
   },
   {
     "id": "top_57",
@@ -1807,7 +1919,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Darhol / Tezda"
+    "uz": "Darhol / Tezda",
+    "exampleTr": "Telefon çalıyor, şef arıyor olabilir, hemen aç.",
+    "exampleRu": "Телефон звонит, возможно звонит начальник, сразу ответь."
   },
   {
     "id": "top_58",
@@ -1818,7 +1932,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu yerda"
+    "uz": "Bu yerda",
+    "exampleTr": "Sigara içmek burada yasak, bahçeye çıkmalısın.",
+    "exampleRu": "Курить здесь запрещено, тебе нужно выйти во двор."
   },
   {
     "id": "top_59",
@@ -1829,7 +1945,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "U yerda"
+    "uz": "U yerda",
+    "exampleTr": "Merdiveni duvarın kenarına bıraktım, orada duruyor.",
+    "exampleRu": "Я оставил лестницу у стены, она стоит там."
   },
   {
     "id": "top_60",
@@ -1840,7 +1958,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shu yerda / Ana u yerda"
+    "uz": "Shu yerda / Ana u yerda",
+    "exampleTr": "Temiz bezler şurada, dolabın alt rafında.",
+    "exampleRu": "Чистые тряпки вон там, на нижней полке шкафа."
   },
   {
     "id": "top_61",
@@ -1851,7 +1971,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bunday / Shunday"
+    "uz": "Bunday / Shunday",
+    "exampleTr": "Parçaları böyle dizersen hiç yer kaplamaz.",
+    "exampleRu": "Если разложишь детали вот так, они совсем не займут места."
   },
   {
     "id": "top_62",
@@ -1862,7 +1984,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shunaqa / Mana bunday"
+    "uz": "Shunaqa / Mana bunday",
+    "exampleTr": "Kolu şöyle çevirince pencere tamamen açılıyor.",
+    "exampleRu": "Если повернуть ручку вот так, окно открывается полностью."
   },
   {
     "id": "top_63",
@@ -1873,7 +1997,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shunday / O'shanday"
+    "uz": "Shunday / O'shanday",
+    "exampleTr": "Müşteri öyle istediği için camları koyu seçtik.",
+    "exampleRu": "Поскольку клиент так захотел, мы выбрали тёмные стёкла."
   },
   {
     "id": "top_64",
@@ -1884,7 +2010,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Har / Har bir"
+    "uz": "Har / Har bir",
+    "exampleTr": "Her sabah saat yedide iş başı yapıyoruz.",
+    "exampleRu": "Каждое утро в семь часов мы приступаем к работе."
   },
   {
     "id": "top_65",
@@ -1895,7 +2023,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hammasi / Barchasi"
+    "uz": "Hammasi / Barchasi",
+    "exampleTr": "Siparişlerin hepsi yarın sabah teslim edilecek.",
+    "exampleRu": "Все заказы будут доставлены завтра утром."
   },
   {
     "id": "top_66",
@@ -1906,7 +2036,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hech / Hech qachon"
+    "uz": "Hech / Hech qachon",
+    "exampleTr": "Ben bu modeli daha önce hiç görmedim.",
+    "exampleRu": "Я раньше никогда не видел эту модель."
   },
   {
     "id": "top_67",
@@ -1917,7 +2049,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hech bir / Hech qanday"
+    "uz": "Hech bir / Hech qanday",
+    "exampleTr": "Kontrol ettik, çerçevede hiçbir hata çıkmadı.",
+    "exampleRu": "Мы проверили, в раме не обнаружилось никакой ошибки."
   },
   {
     "id": "top_68",
@@ -1928,7 +2062,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Narsa / Buyum"
+    "uz": "Narsa / Buyum",
+    "exampleTr": "Sana söylemek istediğim önemli bir şey var.",
+    "exampleRu": "Есть одна важная вещь, которую я хочу тебе сказать."
   },
   {
     "id": "top_69",
@@ -1939,7 +2075,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Biri / Kimdir"
+    "uz": "Biri / Kimdir",
+    "exampleTr": "Dışarıdan biri seni soruyor, kapıya bakar mısın?",
+    "exampleRu": "Кто-то с улицы спрашивает тебя, посмотришь у двери?"
   },
   {
     "id": "top_70",
@@ -1950,7 +2088,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Boshqa / O'zga"
+    "uz": "Boshqa / O'zga",
+    "exampleTr": "Bu matkap ucu körelmiş, başka bir tane takalım.",
+    "exampleRu": "Это сверло затупилось, давай поставим другое."
   },
   {
     "id": "top_71",
@@ -1961,7 +2101,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bir xil / O'xshash"
+    "uz": "Bir xil / O'xshash",
+    "exampleTr": "İki pencerenin de yüksekliği tamamen aynı olmalı.",
+    "exampleRu": "Высота обоих окон должна быть абсолютно одинаковой."
   },
   {
     "id": "top_72",
@@ -1972,7 +2114,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'zi / O'zining"
+    "uz": "O'zi / O'zining",
+    "exampleTr": "Herkes iş bitince kendi aletlerini temizlesin.",
+    "exampleRu": "Пусть каждый после работы почистит свои инструменты."
   },
   {
     "id": "top_73",
@@ -1983,7 +2127,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hamma / Har kim"
+    "uz": "Hamma / Har kim",
+    "exampleTr": "Öğle yemeği için herkes yemekhanede toplandı.",
+    "exampleRu": "Все собрались в столовой на обед."
   },
   {
     "id": "top_74",
@@ -1994,7 +2140,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hech kim"
+    "uz": "Hech kim",
+    "exampleTr": "Bugün izin günü olduğu için atölyede kimse kalmadı.",
+    "exampleRu": "Так как сегодня выходной, в цеху никого не осталось."
   },
   {
     "id": "top_75",
@@ -2005,7 +2153,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Balki / Ehtimol"
+    "uz": "Balki / Ehtimol",
+    "exampleTr": "Belki hafta sonu yağmur yağar, önlem alalım.",
+    "exampleRu": "Возможно, на выходных пойдёт дождь, давайте примем меры."
   },
   {
     "id": "top_76",
@@ -2016,7 +2166,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Albatta / Tabiiy"
+    "uz": "Albatta / Tabiiy",
+    "exampleTr": "Tabii, istersen bu ağır kasayı birlikte taşıyalım.",
+    "exampleRu": "Конечно, если хочешь, давай перенесём этот тяжёлый ящик вдвоём."
   },
   {
     "id": "top_77",
@@ -2027,7 +2179,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'zi / Shundoq ham"
+    "uz": "O'zi / Shundoq ham",
+    "exampleTr": "Acele etmene gerek yok, kamyon zaten yolda.",
+    "exampleRu": "Тебе не нужно спешить, грузовик и так уже в пути."
   },
   {
     "id": "top_78",
@@ -2038,7 +2192,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Endi / Bundan buyon"
+    "uz": "Endi / Bundan buyon",
+    "exampleTr": "Hava karardı, artık dışarıda çalışamayız.",
+    "exampleRu": "Стемнело, мы больше не можем работать на улице."
   },
   {
     "id": "top_79",
@@ -2049,7 +2205,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hatto / Ham"
+    "uz": "Hatto / Ham",
+    "exampleTr": "O kadar yoruldum ki yemek yemeyi bile unuttum.",
+    "exampleRu": "Я так устал, что даже забыл поесть."
   },
   {
     "id": "top_80",
@@ -2060,7 +2218,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yana / Qayta"
+    "uz": "Yana / Qayta",
+    "exampleTr": "Elektrikler kesilince jeneratörü yine çalıştırdık.",
+    "exampleRu": "Когда отключили электричество, мы снова запустили генератор."
   },
   {
     "id": "top_81",
@@ -2071,7 +2231,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Частые слова: Базовые",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qayta / Yana bir bor"
+    "uz": "Qayta / Yana bir bor",
+    "exampleTr": "Ölçüden emin değilsen metreyle tekrar ölç.",
+    "exampleRu": "Если не уверен в размере, перемерь ещё раз рулеткой."
   },
   {
     "id": "top_82",
@@ -3642,7 +3804,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yo'q"
+    "uz": "Yo'q",
+    "exampleTr": "Bu gece hava sıcaklığı sıfır dereceye kadar düşecek.",
+    "exampleRu": "Сегодня ночью температура воздуха опустится до нуля градусов."
   },
   {
     "id": "top_203",
@@ -3653,7 +3817,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bir"
+    "uz": "Bir",
+    "exampleTr": "Bu kapı için bir metre fitil daha gerekiyor.",
+    "exampleRu": "Для этой двери нужен ещё один метр уплотнителя."
   },
   {
     "id": "top_204",
@@ -3664,7 +3830,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ikki"
+    "uz": "Ikki",
+    "exampleTr": "İki kişi şu büyük camı dikkatlice tutsun.",
+    "exampleRu": "Пусть два человека осторожно придержат вон то большое стекло."
   },
   {
     "id": "top_205",
@@ -3675,7 +3843,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uchish"
+    "uz": "Uchish",
+    "exampleTr": "Üç tane pencere kolunu kutudan çıkarıp masaya koy.",
+    "exampleRu": "Достань три оконные ручки из коробки и положи на стол."
   },
   {
     "id": "top_206",
@@ -3686,7 +3856,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'rt"
+    "uz": "To'rt",
+    "exampleTr": "Dört metrelik boy profilleri rafa yerleştirdik.",
+    "exampleRu": "Мы разложили на полке четырёхметровые хлысты профиля."
   },
   {
     "id": "top_207",
@@ -3697,7 +3869,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Besh"
+    "uz": "Besh",
+    "exampleTr": "Beş dakika sonra mola zili çalacak.",
+    "exampleRu": "Через пять минут прозвенит звонок на перерыв."
   },
   {
     "id": "top_208",
@@ -3708,7 +3882,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Olti"
+    "uz": "Olti",
+    "exampleTr": "Standart profil boyu tam altı metredir.",
+    "exampleRu": "Стандартная длина профиля — ровно шесть метров."
   },
   {
     "id": "top_209",
@@ -3719,7 +3895,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yetti"
+    "uz": "Yetti",
+    "exampleTr": "Yedi katlı binanın dış cephe işini aldık.",
+    "exampleRu": "Мы взяли фасадную работу на семиэтажном здании."
   },
   {
     "id": "top_210",
@@ -3730,7 +3908,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sakkiz"
+    "uz": "Sakkiz",
+    "exampleTr": "Günde sekiz saat çalışıp akşam eve gidiyoruz.",
+    "exampleRu": "Мы работаем по восемь часов в день и вечером едем домой."
   },
   {
     "id": "top_211",
@@ -3741,7 +3921,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'qqiz"
+    "uz": "To'qqiz",
+    "exampleTr": "Dokuz numaralı anahtarı çekmeceden bulabilir misin?",
+    "exampleRu": "Сможешь найти ключ номер девять в ящике?"
   },
   {
     "id": "top_212",
@@ -3752,7 +3934,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Old"
+    "uz": "Old",
+    "exampleTr": "On milimetre kalınlığında cam kullanmamız istendi.",
+    "exampleRu": "Нас попросили использовать стекло толщиной десять миллиметров."
   },
   {
     "id": "top_213",
@@ -3763,7 +3947,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yigirma"
+    "uz": "Yigirma",
+    "exampleTr": "Paletin üzerinde yirmi kutu vida bekliyor.",
+    "exampleRu": "На паллете ждут двадцать коробок с винтами."
   },
   {
     "id": "top_214",
@@ -3774,7 +3960,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'ttiz"
+    "uz": "O'ttiz",
+    "exampleTr": "Alüminyum çıtayı otuz santimetre ölçüp kes.",
+    "exampleRu": "Отмерь и отрежь алюминиевый штапик на тридцать сантиметров."
   },
   {
     "id": "top_215",
@@ -3785,7 +3973,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qirq"
+    "uz": "Qirq",
+    "exampleTr": "Bu binada yaklaşık kırk tane pencere var.",
+    "exampleRu": "В этом здании около сорока окон."
   },
   {
     "id": "top_216",
@@ -3796,7 +3986,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ellik"
+    "uz": "Ellik",
+    "exampleTr": "İki profil arasında elli milimetre boşluk bırakmalısın.",
+    "exampleRu": "Между двумя профилями нужно оставить зазор пятьдесят миллиметров."
   },
   {
     "id": "top_217",
@@ -3807,7 +3999,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oltmish"
+    "uz": "Oltmish",
+    "exampleTr": "Altmış santimlik bir parça atölyede işimizi görür.",
+    "exampleRu": "Кусок длиной шестьдесят сантиметров нам подойдёт в цеху."
   },
   {
     "id": "top_218",
@@ -3818,7 +4012,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yetmish"
+    "uz": "Yetmish",
+    "exampleTr": "Bugün yetmiş adet kanat profilini kesip hazırladık.",
+    "exampleRu": "Сегодня мы нарезали и подготовили семьдесят штук створочного профиля."
   },
   {
     "id": "top_219",
@@ -3829,7 +4025,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sakson"
+    "uz": "Sakson",
+    "exampleTr": "Seksen santim enindeki kapı kasası hazırlandı.",
+    "exampleRu": "Дверная коробка шириной восемьдесят сантиметров готова."
   },
   {
     "id": "top_220",
@@ -3840,7 +4038,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "To‘qson"
+    "uz": "To‘qson",
+    "exampleTr": "Köşeleri doksan derecelik gönye ile kontrol ettik.",
+    "exampleRu": "Мы проверили углы угольником в девяносто градусов."
   },
   {
     "id": "top_221",
@@ -3851,7 +4051,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yuz"
+    "uz": "Yuz",
+    "exampleTr": "Her paketin içinde yüz tane plastik takoz bulunuyor.",
+    "exampleRu": "В каждой упаковке находится сто пластиковых подкладок."
   },
   {
     "id": "top_222",
@@ -3862,7 +4064,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ming"
+    "uz": "Ming",
+    "exampleTr": "Şantiye için bin tane uzun vida sipariş verdik.",
+    "exampleRu": "Мы заказали тысячу длинных саморезов для стройки."
   },
   {
     "id": "top_223",
@@ -3873,7 +4077,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Birinchidan"
+    "uz": "Birinchidan",
+    "exampleTr": "Birinci kattaki balkon kapılarını bugün takıyoruz.",
+    "exampleRu": "Балконные двери на первом этаже мы устанавливаем сегодня."
   },
   {
     "id": "top_224",
@@ -3884,7 +4090,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ikkinchidan"
+    "uz": "Ikkinchidan",
+    "exampleTr": "İkinci vardiyada çalışan ekip birazdan gelecek.",
+    "exampleRu": "Бригада, работающая во вторую смену, скоро придёт."
   },
   {
     "id": "top_225",
@@ -3895,7 +4103,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uchinchi"
+    "uz": "Uchinchi",
+    "exampleTr": "Üçüncü sıradaki paleti forklift ile içeri taşıyın.",
+    "exampleRu": "Перевезите погрузчиком внутрь паллету из третьего ряда."
   },
   {
     "id": "top_226",
@@ -3906,7 +4116,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oxirgi"
+    "uz": "Oxirgi",
+    "exampleTr": "Sonuncu camı da yerine oturtunca işimiz bitiyor.",
+    "exampleRu": "Как только поставим на место последнее стекло, наша работа закончится."
   },
   {
     "id": "top_227",
@@ -3917,7 +4129,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yarim"
+    "uz": "Yarim",
+    "exampleTr": "Öğlen yarım saat yemek molası veriyoruz.",
+    "exampleRu": "В полдень мы делаем получасовой перерыв на обед."
   },
   {
     "id": "top_228",
@@ -3928,7 +4142,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chorak"
+    "uz": "Chorak",
+    "exampleTr": "Saat üçe çeyrek kala malzemeleri toplamaya başlarız.",
+    "exampleRu": "Без четверти три мы начнём собирать материалы."
   },
   {
     "id": "top_229",
@@ -3939,7 +4155,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Vaqt"
+    "uz": "Vaqt",
+    "exampleTr": "Bu ara işler yoğun olduğu için hiç boş zaman yok.",
+    "exampleRu": "В последнее время работы много, поэтому совсем нет свободного времени."
   },
   {
     "id": "top_230",
@@ -3950,7 +4168,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Soat"
+    "uz": "Soat",
+    "exampleTr": "Sabah saat sekizde bütün ustalar sahada olmalı.",
+    "exampleRu": "Утром в восемь часов все мастера должны быть на объекте."
   },
   {
     "id": "top_231",
@@ -3961,7 +4181,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Daqiqa"
+    "uz": "Daqiqa",
+    "exampleTr": "Öğle molasının bitmesine sadece on dakika kaldı.",
+    "exampleRu": "До конца обеденного перерыва осталось всего десять минут."
   },
   {
     "id": "top_232",
@@ -3972,7 +4194,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ikkinchidan"
+    "uz": "Ikkinchidan",
+    "exampleTr": "Sadece on saniye tut, vidayı sıkıp bırakıyorum.",
+    "exampleRu": "Подержи всего десять секунд, я закручу винт и отпущу."
   },
   {
     "id": "top_233",
@@ -3983,7 +4207,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kun"
+    "uz": "Kun",
+    "exampleTr": "Bu iş için iki gün daha sahada kalmamız lazım.",
+    "exampleRu": "Для этой работы нам нужно остаться на объекте ещё на два дня."
   },
   {
     "id": "top_234",
@@ -3994,7 +4220,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hafta"
+    "uz": "Hafta",
+    "exampleTr": "Gelecek hafta yeni bir şantiyeye başlıyoruz.",
+    "exampleRu": "На следующей неделе мы начинаем новый объект."
   },
   {
     "id": "top_235",
@@ -4005,7 +4233,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oy"
+    "uz": "Oy",
+    "exampleTr": "Her ay maaşlarımızı ayın beşinde alıyoruz.",
+    "exampleRu": "Каждый месяц мы получаем зарплату пятого числа."
   },
   {
     "id": "top_236",
@@ -4016,7 +4246,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yil"
+    "uz": "Yil",
+    "exampleTr": "Bu fabrikada üç yıl boyunca kesim bölümünde çalıştım.",
+    "exampleRu": "На этом заводе я три года проработал в отделе резки."
   },
   {
     "id": "top_237",
@@ -4027,7 +4259,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yil"
+    "uz": "Yil",
+    "exampleTr": "Geçen sene yaptığımız bina hala çok sağlam duruyor.",
+    "exampleRu": "Здание, которое мы делали в прошлом году, до сих пор стоит очень надёжно."
   },
   {
     "id": "top_238",
@@ -4038,7 +4272,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bugun"
+    "uz": "Bugun",
+    "exampleTr": "Bugün hava çok güzel, dışarıda çalışmak keyifli.",
+    "exampleRu": "Сегодня погода отличная, приятно работать на улице."
   },
   {
     "id": "top_239",
@@ -4049,7 +4285,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kecha"
+    "uz": "Kecha",
+    "exampleTr": "Dün akşam bütün aletleri temizleyip dolaba kilitledim.",
+    "exampleRu": "Вчера вечером я почистил все инструменты и закрыл их в шкафу."
   },
   {
     "id": "top_240",
@@ -4060,7 +4298,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ertaga"
+    "uz": "Ertaga",
+    "exampleTr": "Yarın öğleden sonra malzeme kamyonu gelecek.",
+    "exampleRu": "Завтра после обеда приедет грузовик с материалами."
   },
   {
     "id": "top_241",
@@ -4071,7 +4311,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ertalab / Tong"
+    "uz": "Ertalab / Tong",
+    "exampleTr": "Sabah erken kalkıp servise yetişmem gerekiyor.",
+    "exampleRu": "Утром мне нужно рано встать и успеть на служебный автобус."
   },
   {
     "id": "top_242",
@@ -4082,7 +4324,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tush"
+    "uz": "Tush",
+    "exampleTr": "Öğle sıcağında ağır işleri biraz yavaşlatıyoruz.",
+    "exampleRu": "В полуденную жару мы немного сбавляем темп на тяжёлых работах."
   },
   {
     "id": "top_243",
@@ -4093,7 +4337,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kechqurun / Oqshom"
+    "uz": "Kechqurun / Oqshom",
+    "exampleTr": "Akşam eve dönünce sıcak bir duş alacağım.",
+    "exampleRu": "Вечером, как вернусь домой, приму горячий душ."
   },
   {
     "id": "top_244",
@@ -4104,7 +4350,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tun / Kechasi"
+    "uz": "Tun / Kechasi",
+    "exampleTr": "Gece bekçisi atölyenin kapılarını her saat kontrol ediyor.",
+    "exampleRu": "Ночной сторож каждый час проверяет двери цеха."
   },
   {
     "id": "top_245",
@@ -4115,7 +4363,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "dushanba"
+    "uz": "dushanba",
+    "exampleTr": "Pazartesi günü yeni haftanın planını yapacağız.",
+    "exampleRu": "В понедельник мы составим план на новую неделю."
   },
   {
     "id": "top_246",
@@ -4126,7 +4376,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "seshanba"
+    "uz": "seshanba",
+    "exampleTr": "Salı sabahı camları takmak için iskele kurulacak.",
+    "exampleRu": "Во вторник утром установят строительные леса для монтажа стёкол."
   },
   {
     "id": "top_247",
@@ -4137,7 +4389,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "chorshanba"
+    "uz": "chorshanba",
+    "exampleTr": "Çarşamba günü mühendis gelip işleri kontrol edecek.",
+    "exampleRu": "В среду приедет инженер и проверит работу."
   },
   {
     "id": "top_248",
@@ -4148,7 +4402,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Payshanba"
+    "uz": "Payshanba",
+    "exampleTr": "Perşembe akşamına kadar bu katı teslim etmeliyiz.",
+    "exampleRu": "До вечера четверга мы должны сдать этот этаж."
   },
   {
     "id": "top_249",
@@ -4159,7 +4415,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Juma"
+    "uz": "Juma",
+    "exampleTr": "Cuma günü işten sonra arkadaşlarla çay içeceğiz.",
+    "exampleRu": "В пятницу после работы мы попьём чай с ребятами."
   },
   {
     "id": "top_250",
@@ -4170,7 +4428,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "shanba"
+    "uz": "shanba",
+    "exampleTr": "Cumartesi öğlene kadar yarım gün çalışıyoruz.",
+    "exampleRu": "В субботу мы работаем полдня до обеда."
   },
   {
     "id": "top_251",
@@ -4181,7 +4441,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "yakshanba"
+    "uz": "yakshanba",
+    "exampleTr": "Pazar günleri iş yok, evde ailemle vakit geçiriyorum.",
+    "exampleRu": "По воскресеньям работы нет, я провожу время дома с семьёй."
   },
   {
     "id": "top_252",
@@ -4192,7 +4454,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Dam olish kunlari"
+    "uz": "Dam olish kunlari",
+    "exampleTr": "Hafta sonu dinlenip pazartesi dinç başlayalım.",
+    "exampleRu": "Давайте отдохнём на выходных и в понедельник начнём бодрыми."
   },
   {
     "id": "top_253",
@@ -4203,7 +4467,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hafta o'rtasi"
+    "uz": "Hafta o'rtasi",
+    "exampleTr": "Hafta içi her gün fabrika tam kapasite çalışıyor.",
+    "exampleRu": "В будние дни завод каждый день работает на полную мощность."
   },
   {
     "id": "top_254",
@@ -4214,7 +4480,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Erta"
+    "uz": "Erta",
+    "exampleTr": "Trafiğe kalmamak için evden erken çıktım.",
+    "exampleRu": "Чтобы не попасть в пробку, я вышел из дома рано."
   },
   {
     "id": "top_255",
@@ -4225,7 +4493,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kech"
+    "uz": "Kech",
+    "exampleTr": "Çok geç oldu, makineleri kapatıp artık gidelim.",
+    "exampleRu": "Стало уже слишком поздно, давайте выключим станки и пойдём."
   },
   {
     "id": "top_256",
@@ -4236,7 +4506,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Navbatchilik / Smena"
+    "uz": "Navbatchilik / Smena",
+    "exampleTr": "Bizim vardiya akşam saat altıda sona eriyor.",
+    "exampleRu": "Наша смена заканчивается в шесть часов вечера."
   },
   {
     "id": "top_257",
@@ -4247,7 +4519,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ish vaqti / Qo'shimcha ish"
+    "uz": "Ish vaqti / Qo'shimcha ish",
+    "exampleTr": "Acil sipariş yetişsin diye bugün iki saat mesai yapacağız.",
+    "exampleRu": "Чтобы успеть со срочным заказом, мы сегодня останемся на два часа сверхурочно."
   },
   {
     "id": "top_258",
@@ -4258,7 +4532,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tanaffus"
+    "uz": "Tanaffus",
+    "exampleTr": "Çay içmek için on beş dakikalık kısa bir mola verelim.",
+    "exampleRu": "Давайте сделаем короткий пятнадцатиминутный перерыв, чтобы попить чай."
   },
   {
     "id": "top_259",
@@ -4269,7 +4545,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bayram"
+    "uz": "Bayram",
+    "exampleTr": "Bayramda dört gün resmi tatil olacakmış.",
+    "exampleRu": "Говорят, на праздник будет четыре дня официальных выходных."
   },
   {
     "id": "top_260",
@@ -4280,7 +4558,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ruxsat"
+    "uz": "Ruxsat",
+    "exampleTr": "Hastaneye gitmek için şeften yarım gün izin aldım.",
+    "exampleRu": "Я взял у начальника отгул на полдня, чтобы съездить в больницу."
   },
   {
     "id": "top_261",
@@ -4291,7 +4571,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Katta"
+    "uz": "Katta",
+    "exampleTr": "Büyük cam panelleri taşımak için dört kişi gerekiyor.",
+    "exampleRu": "Для переноски больших стеклянных панелей нужно четыре человека."
   },
   {
     "id": "top_262",
@@ -4302,7 +4584,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kichik"
+    "uz": "Kichik",
+    "exampleTr": "Küçük parçaları kaybetmemek için kutunun içine koy.",
+    "exampleRu": "Чтобы не потерять мелкие детали, клади их в коробку."
   },
   {
     "id": "top_263",
@@ -4313,7 +4597,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yaxshi"
+    "uz": "Yaxshi",
+    "exampleTr": "İyi bir usta işini her zaman temiz yapar.",
+    "exampleRu": "Хороший мастер всегда делает свою работу аккуратно."
   },
   {
     "id": "top_264",
@@ -4324,7 +4610,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yomon"
+    "uz": "Yomon",
+    "exampleTr": "Kötü hava yüzünden dış cephe montajı ertelendi.",
+    "exampleRu": "Из-за плохой погоды монтаж наружного фасада перенесли."
   },
   {
     "id": "top_265",
@@ -4335,7 +4623,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yangi"
+    "uz": "Yangi",
+    "exampleTr": "Yeni kesim makinesi eskisinden çok daha sessiz çalışıyor.",
+    "exampleRu": "Новый отрезной станок работает намного тише старого."
   },
   {
     "id": "top_266",
@@ -4346,7 +4636,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Eski"
+    "uz": "Eski",
+    "exampleTr": "Eski pencereyi sökerken duvarı kırmamaya dikkat edelim.",
+    "exampleRu": "При демонтаже старого окна постараемся не повредить стену."
   },
   {
     "id": "top_267",
@@ -4357,7 +4649,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yoshlar"
+    "uz": "Yoshlar",
+    "exampleTr": "Genç çıraklar yeni aletleri çok çabuk öğreniyor.",
+    "exampleRu": "Молодые подмастерья очень быстро осваивают новые инструменты."
   },
   {
     "id": "top_268",
@@ -4368,7 +4662,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Eski"
+    "uz": "Eski",
+    "exampleTr": "Yaşlı amca kapıda bekliyor, çay ikram edelim mi?",
+    "exampleRu": "Пожилой мужчина ждёт у двери, предложим ему чай?"
   },
   {
     "id": "top_269",
@@ -4379,7 +4675,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uzun"
+    "uz": "Uzun",
+    "exampleTr": "Uzun profilleri rafa taşırken kenarlara çarpmayın.",
+    "exampleRu": "Когда несёте длинные профили на стеллаж, не задевайте края."
   },
   {
     "id": "top_270",
@@ -4390,7 +4688,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qisqa"
+    "uz": "Qisqa",
+    "exampleTr": "Bu parça iki santim kısa kesilmiş, yenisini yapalım.",
+    "exampleRu": "Эта деталь отрезана на два сантиметра короче, давай сделаем новую."
   },
   {
     "id": "top_271",
@@ -4401,7 +4701,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Keng"
+    "uz": "Keng",
+    "exampleTr": "Geniş koridor sayesinde büyük kasalar rahat geçiyor.",
+    "exampleRu": "Благодаря широкому коридору большие ящики проходят свободно."
   },
   {
     "id": "top_272",
@@ -4412,7 +4714,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tor"
+    "uz": "Tor",
+    "exampleTr": "Dar aralıktan merdiveni geçirmek biraz zor oldu.",
+    "exampleRu": "Пронести лестницу через узкий проход оказалось немного сложно."
   },
   {
     "id": "top_273",
@@ -4423,7 +4727,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qalin"
+    "uz": "Qalin",
+    "exampleTr": "Ağır kapılar için daha kalın alüminyum profil seçiyoruz.",
+    "exampleRu": "Для тяжёлых дверей мы выбираем более толстый алюминиевый профиль."
   },
   {
     "id": "top_274",
@@ -4434,7 +4740,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yupqa"
+    "uz": "Yupqa",
+    "exampleTr": "İnce çıtaları kırmadan yavaşça yerine takmalısın.",
+    "exampleRu": "Тонкие штапики нужно осторожно вставлять на место, не сломав их."
   },
   {
     "id": "top_275",
@@ -4445,7 +4753,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Og'ir"
+    "uz": "Og'ir",
+    "exampleTr": "Bu üçlü cam çok ağır, tek başına kaldırma.",
+    "exampleRu": "Этот тройной стеклопакет очень тяжёлый, не поднимай его в одиночку."
   },
   {
     "id": "top_276",
@@ -4456,7 +4766,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yengil"
+    "uz": "Yengil",
+    "exampleTr": "Alüminyum malzeme demire göre oldukça hafif oluyor.",
+    "exampleRu": "Алюминиевый материал по сравнению с железом получается довольно лёгким."
   },
   {
     "id": "top_277",
@@ -4467,7 +4779,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qiyin"
+    "uz": "Qiyin",
+    "exampleTr": "Yüksek katta rüzgarlı havada çalışmak gerçekten zor.",
+    "exampleRu": "Работать на высоком этаже в ветреную погоду действительно трудно."
   },
   {
     "id": "top_278",
@@ -4478,7 +4792,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oson"
+    "uz": "Oson",
+    "exampleTr": "Doğru aleti kullanınca montaj işlemi çok kolay oluyor.",
+    "exampleRu": "Когда используешь правильный инструмент, процесс монтажа становится очень простым."
   },
   {
     "id": "top_279",
@@ -4489,7 +4805,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'g'ri"
+    "uz": "To'g'ri",
+    "exampleTr": "Çizime baktım, kesim açısı tamamen doğru görünüyor.",
+    "exampleRu": "Я посмотрел на чертёж — угол реза выглядит абсолютно правильным."
   },
   {
     "id": "top_280",
@@ -4500,7 +4818,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Noto'g'ri"
+    "uz": "Noto'g'ri",
+    "exampleTr": "Yanlış delik açmamak için kalemle önce işaretle.",
+    "exampleRu": "Чтобы не просверлить неправильное отверстие, сначала отметь карандашом."
   },
   {
     "id": "top_281",
@@ -4511,7 +4831,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tez / Tezkor"
+    "uz": "Tez / Tezkor",
+    "exampleTr": "Otomatik vidalama ile işimiz çok hızlı ilerliyor.",
+    "exampleRu": "С автоматическим шуруповёртом наша работа продвигается очень быстро."
   },
   {
     "id": "top_282",
@@ -4522,7 +4844,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sekin"
+    "uz": "Sekin",
+    "exampleTr": "Camı indirirken lütfen yavaş hareket edin.",
+    "exampleRu": "Опуская стекло, пожалуйста, двигайтесь медленно."
   },
   {
     "id": "top_283",
@@ -4533,7 +4857,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Issiq"
+    "uz": "Issiq",
+    "exampleTr": "Öğlen güneşi altında metal profiller çok sıcak oluyor.",
+    "exampleRu": "Под полуденным солнцем металлические профили становятся очень горячими."
   },
   {
     "id": "top_284",
@@ -4544,7 +4870,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sovuq"
+    "uz": "Sovuq",
+    "exampleTr": "Soğuk havada plastik contalar sertleşiyor, biraz ısıtalım.",
+    "exampleRu": "На холоде пластиковые уплотнители дубеют, давай немного их согреем."
   },
   {
     "id": "top_285",
@@ -4555,7 +4883,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Toza"
+    "uz": "Toza",
+    "exampleTr": "Silikon çekmeden önce yüzeyi temiz bir bezle sil.",
+    "exampleRu": "Перед нанесением силикона протри поверхность чистой тряпкой."
   },
   {
     "id": "top_286",
@@ -4566,7 +4896,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kir / Iflos"
+    "uz": "Kir / Iflos",
+    "exampleTr": "Kirli ellerle beyaz çerçeveye dokunmayalım, leke kalır.",
+    "exampleRu": "Давайте не трогать белую раму грязными руками, останутся пятна."
   },
   {
     "id": "top_287",
@@ -4577,7 +4909,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ochiq"
+    "uz": "Ochiq",
+    "exampleTr": "Atölyenin büyük kapısını havalandırma için açık bıraktık.",
+    "exampleRu": "Мы оставили большие ворота цеха открытыми для проветривания."
   },
   {
     "id": "top_288",
@@ -4588,7 +4922,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yopiq"
+    "uz": "Yopiq",
+    "exampleTr": "Şalter kapalı durumda, kabloya güvenle bakabilirsin.",
+    "exampleRu": "Рубильник выключен, можешь спокойно осмотреть кабель."
   },
   {
     "id": "top_289",
@@ -4599,7 +4935,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'la"
+    "uz": "To'la",
+    "exampleTr": "Çöp kutusu ağzına kadar alüminyum talaşıyla dolu.",
+    "exampleRu": "Мусорный бак до краёв полон алюминиевой стружки."
   },
   {
     "id": "top_290",
@@ -4610,7 +4948,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bo'sh"
+    "uz": "Bo'sh",
+    "exampleTr": "Boş paletleri arka bahçedeki duvarın dibine dizdik.",
+    "exampleRu": "Пустые паллеты мы сложили у стены на заднем дворе."
   },
   {
     "id": "top_291",
@@ -4621,7 +4961,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tekis / To'g'ri"
+    "uz": "Tekis / To'g'ri",
+    "exampleTr": "Profilin duvara düz oturması için su terazisi kullandık.",
+    "exampleRu": "Мы использовали уровень, чтобы профиль ровно лёг к стене."
   },
   {
     "id": "top_292",
@@ -4632,7 +4974,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Egri / Qiyshiq"
+    "uz": "Egri / Qiyshiq",
+    "exampleTr": "Bu duvar biraz eğri olduğu için köşede boşluk kaldı.",
+    "exampleRu": "Из-за того что эта стена немного кривая, в углу остался зазор."
   },
   {
     "id": "top_293",
@@ -4643,7 +4987,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qattiq"
+    "uz": "Qattiq",
+    "exampleTr": "Bu alüminyum alaşımı çok sert, bıçak zor kesiyor.",
+    "exampleRu": "Этот алюминиевый сплав очень твёрдый, диск режет его с трудом."
   },
   {
     "id": "top_294",
@@ -4654,7 +5000,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yumshoq"
+    "uz": "Yumshoq",
+    "exampleTr": "Yumuşak kauçuk fitil soğukta bile kolayca yerine girer.",
+    "exampleRu": "Мягкий резиновый уплотнитель легко встаёт на место даже на холоде."
   },
   {
     "id": "top_295",
@@ -4665,7 +5013,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qimmat"
+    "uz": "Qimmat",
+    "exampleTr": "Özel ithal aksesuarlar yerli parçalara göre daha pahalı.",
+    "exampleRu": "Специальная импортная фурнитура дороже по сравнению с местными деталями."
   },
   {
     "id": "top_296",
@@ -4676,7 +5026,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Arzon"
+    "uz": "Arzon",
+    "exampleTr": "Ucuz silikon kullanırsak bir yıl sonra su sızdırır.",
+    "exampleRu": "Если использовать дешёвый силикон, через год он начнёт пропускать воду."
   },
   {
     "id": "top_297",
@@ -4687,7 +5039,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mustahkam / Mahkam"
+    "uz": "Mustahkam / Mahkam",
+    "exampleTr": "Bütün köşe bağlantılarını çelik pimlerle sağlam yaptık.",
+    "exampleRu": "Мы сделали все угловые соединения надёжными с помощью стальных штифтов."
   },
   {
     "id": "top_298",
@@ -4698,7 +5052,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Siniq"
+    "uz": "Siniq",
+    "exampleTr": "Kırık pencere kolunu söküp yerine yenisini taktım.",
+    "exampleRu": "Я снял сломанную оконную ручку и поставил вместо неё новую."
   },
   {
     "id": "top_299",
@@ -4709,7 +5065,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Buzuq"
+    "uz": "Buzuq",
+    "exampleTr": "Matkabın bataryası bozuk olduğu için hiç şarj tutmuyor.",
+    "exampleRu": "Поскольку аккумулятор дрели неисправен, он совсем не держит заряд."
   },
   {
     "id": "top_300",
@@ -4720,7 +5078,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tayyor"
+    "uz": "Tayyor",
+    "exampleTr": "Sevkiyata hazır olan pencereleri etiketleyip kenara ayırdık.",
+    "exampleRu": "Готовые к отгрузке окна мы промаркировали и отложили в сторону."
   },
   {
     "id": "top_301",
@@ -4731,7 +5091,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "nam"
+    "uz": "nam",
+    "exampleTr": "Islak zeminde kaymamak için iş botlarını sıkı bağla.",
+    "exampleRu": "Чтобы не поскользнуться на мокром полу, крепко зашнуруй рабочие ботинки."
   },
   {
     "id": "top_302",
@@ -4742,7 +5104,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Quruq"
+    "uz": "Quruq",
+    "exampleTr": "Yapıştırıcıyı sadece kuru ve temiz metale sürmelisin.",
+    "exampleRu": "Клей нужно наносить только на сухой и чистый металл."
   },
   {
     "id": "top_303",
@@ -4753,7 +5117,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yaltiroq"
+    "uz": "Yaltiroq",
+    "exampleTr": "Müşteri mutfak pencereleri için parlak beyaz boya seçti.",
+    "exampleRu": "Клиент выбрал глянцевую белую краску для кухонных окон."
   },
   {
     "id": "top_304",
@@ -4764,7 +5130,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mat"
+    "uz": "Mat",
+    "exampleTr": "Bu projedeki bütün cephe profilleri mat siyah boyalı.",
+    "exampleRu": "Все фасадные профили в этом проекте окрашены в матовый чёрный цвет."
   },
   {
     "id": "top_305",
@@ -4775,7 +5143,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chiroyli"
+    "uz": "Chiroyli",
+    "exampleTr": "Yeni taktığımız cam korkuluk balkonda çok güzel durdu.",
+    "exampleRu": "Новое стеклянное ограждение, которое мы поставили, очень красиво смотрится на балконе."
   },
   {
     "id": "top_306",
@@ -4786,7 +5156,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xunuk"
+    "uz": "Xunuk",
+    "exampleTr": "Taşan silikonu temizlemezsek köşe birleşimi çirkin görünür.",
+    "exampleRu": "Если не убрать выступивший силикон, угловой стык будет выглядеть некрасиво."
   },
   {
     "id": "top_307",
@@ -4797,7 +5169,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Muhim"
+    "uz": "Muhim",
+    "exampleTr": "Yarın sabah çok önemli bir teslimatımız var, geç kalmayalım.",
+    "exampleRu": "Завтра утром у нас очень важная доставка, давайте не опаздывать."
   },
   {
     "id": "top_308",
@@ -4808,7 +5182,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ahamiyatsiz"
+    "uz": "Ahamiyatsiz",
+    "exampleTr": "Arka taraftaki küçük çizik önemsiz, boyayla kolayca kapanır.",
+    "exampleRu": "Небольшая царапина с обратной стороны незначительна, она легко закрасится."
   },
   {
     "id": "top_309",
@@ -4819,7 +5195,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Foydali"
+    "uz": "Foydali",
+    "exampleTr": "Yeni ustabaşının öğrettiği yöntem işimizde çok faydalı oldu.",
+    "exampleRu": "Способ, которому научил новый бригадир, оказался очень полезным в нашей работе."
   },
   {
     "id": "top_310",
@@ -4830,7 +5208,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Zararli"
+    "uz": "Zararli",
+    "exampleTr": "Boya kokusu sağlığa zararlı olduğu için maske takmalısın.",
+    "exampleRu": "Поскольку запах краски вреден для здоровья, тебе нужно надеть маску."
   },
   {
     "id": "top_311",
@@ -4841,7 +5221,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xavfli"
+    "uz": "Xavfli",
+    "exampleTr": "Emniyet kemeri olmadan iskelede durmak çok tehlikeli.",
+    "exampleRu": "Стоять на строительных лесах без страховочного пояса очень опасно."
   },
   {
     "id": "top_312",
@@ -4852,7 +5234,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xavfsiz / Ishonchli"
+    "uz": "Xavfsiz / Ishonchli",
+    "exampleTr": "Korkuluğu sıkıca sabitledik, artık geçiş tamamen güvenli.",
+    "exampleRu": "Мы крепко закрепили перила, теперь проход полностью безопасен."
   },
   {
     "id": "top_313",
@@ -4863,7 +5247,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qulay"
+    "uz": "Qulay",
+    "exampleTr": "Geniş iş ayakkabısı ile bütün gün ayakta durmak daha rahat.",
+    "exampleRu": "В свободной рабочей обуви гораздо удобнее стоять на ногах весь день."
   },
   {
     "id": "top_314",
@@ -4874,7 +5260,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bepul"
+    "uz": "Bepul",
+    "exampleTr": "Pencere kanadı serbest hareket etmeli, bir yere sürtmemeli.",
+    "exampleRu": "Оконная створка должна двигаться свободно, ни обо что не тереться."
   },
   {
     "id": "top_315",
@@ -4885,7 +5273,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Taqiqlangan"
+    "uz": "Taqiqlangan",
+    "exampleTr": "Kesim alanına koruyucu gözlük olmadan girmek yasak.",
+    "exampleRu": "Заходить в зону резки без защитных очков запрещено."
   },
   {
     "id": "top_316",
@@ -4896,7 +5286,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mumkin / Iloji bor"
+    "uz": "Mumkin / Iloji bor",
+    "exampleTr": "Malzeme erken gelirse işi bugün bitirmek mümkün.",
+    "exampleRu": "Если материал приедет пораньше, закончить работу сегодня возможно."
   },
   {
     "id": "top_317",
@@ -4907,7 +5299,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mumkin emas"
+    "uz": "Mumkin emas",
+    "exampleTr": "Çizim olmadan bu kadar karışık cepheyi kurmak imkansız.",
+    "exampleRu": "Без чертежа собрать такой сложный фасад невозможно."
   },
   {
     "id": "top_318",
@@ -4918,7 +5312,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kerakli"
+    "uz": "Kerakli",
+    "exampleTr": "Montaj için gerekli tüm vidaları çantaya yerleştirdik.",
+    "exampleRu": "Мы уложили в сумку все необходимые для монтажа винты."
   },
   {
     "id": "top_319",
@@ -4929,7 +5325,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Turli"
+    "uz": "Turli",
+    "exampleTr": "Her katın pencere ölçüleri birbirinden biraz farklı çıktı.",
+    "exampleRu": "Размеры окон на каждом этаже оказались немного разными."
   },
   {
     "id": "top_320",
@@ -4940,7 +5338,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'xshash"
+    "uz": "O'xshash",
+    "exampleTr": "Geçen ay yaptığımız balkona çok benzer bir proje geldi.",
+    "exampleRu": "Пришёл проект, очень похожий на балкон, который мы делали в прошлом месяце."
   },
   {
     "id": "top_321",
@@ -4951,7 +5351,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Maxsus"
+    "uz": "Maxsus",
+    "exampleTr": "Bu vidaları sökmek için özel bir anahtar gerekiyor.",
+    "exampleRu": "Чтобы открутить эти винты, требуется специальный ключ."
   },
   {
     "id": "top_322",
@@ -4962,7 +5364,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "General"
+    "uz": "General",
+    "exampleTr": "Akşam şefle genel durum hakkında kısa bir toplantı yapacağız.",
+    "exampleRu": "Вечером мы проведём с начальником короткое совещание об общей обстановке."
   },
   {
     "id": "top_323",
@@ -4973,7 +5377,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'liq / Aniq"
+    "uz": "To'liq / Aniq",
+    "exampleTr": "Kesim ölçüsü tam iki yüz elli santim olmalı.",
+    "exampleRu": "Размер отреза должен быть ровно двести пятьдесят сантиметров."
   },
   {
     "id": "top_324",
@@ -4997,7 +5403,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ortiqcha / Ko'p"
+    "uz": "Ortiqcha / Ko'p",
+    "exampleTr": "Artan fazla parçaları kesim masasının altına koyalım.",
+    "exampleRu": "Оставшиеся лишние куски давайте сложим под стол для резки."
   },
   {
     "id": "top_326",
@@ -5008,7 +5416,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yetarli"
+    "uz": "Yetarli",
+    "exampleTr": "Depodaki malzeme bu haftaki işler için yeterli olacak.",
+    "exampleRu": "Материала на складе будет достаточно для работы на этой неделе."
   },
   {
     "id": "top_327",
@@ -5019,7 +5429,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Etarli emas"
+    "uz": "Etarli emas",
+    "exampleTr": "Bu odadaki ışık çalışmak için biraz yetersiz.",
+    "exampleRu": "Света в этой комнате немного недостаточно для работы."
   },
   {
     "id": "top_328",
@@ -5030,7 +5442,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qattiq"
+    "uz": "Qattiq",
+    "exampleTr": "Kapı kolundaki vidalar çok sıkı, zor dönüyor.",
+    "exampleRu": "Винты на дверной ручке очень тугие, плохо крутятся."
   },
   {
     "id": "top_329",
@@ -5041,7 +5455,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bo'sh"
+    "uz": "Bo'sh",
+    "exampleTr": "Gevşek kalan somunu anahtarla tekrar sıktım.",
+    "exampleRu": "Я снова затянул ключом гайку, которая оставалась слабой."
   },
   {
     "id": "top_330",
@@ -5052,7 +5468,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yaqin"
+    "uz": "Yaqin",
+    "exampleTr": "Yeni atölyemiz metro istasyonuna çok yakın.",
+    "exampleRu": "Наш новый цех находится очень близко к станции метро."
   },
   {
     "id": "top_331",
@@ -5063,7 +5481,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uzoq"
+    "uz": "Uzoq",
+    "exampleTr": "Evim iş yerine biraz uzak ama servis geliyor.",
+    "exampleRu": "Мой дом далековато от работы, но ходит служебный автобус."
   },
   {
     "id": "top_332",
@@ -5074,7 +5494,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chuqur"
+    "uz": "Chuqur",
+    "exampleTr": "Duvara derin bir delik açmak için uzun uç tak.",
+    "exampleRu": "Чтобы сделать глубокое отверстие в стене, поставь длинное сверло."
   },
   {
     "id": "top_333",
@@ -5085,7 +5507,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sayoz"
+    "uz": "Sayoz",
+    "exampleTr": "Bu kanal çok sığ olmuş, conta içine oturmuyor.",
+    "exampleRu": "Этот паз получился слишком мелким, уплотнитель в него не садится."
   },
   {
     "id": "top_334",
@@ -5096,7 +5520,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Baland"
+    "uz": "Baland",
+    "exampleTr": "Yüksek katlarda rüzgar daha sert esiyor.",
+    "exampleRu": "На высоких этажах ветер дует сильнее."
   },
   {
     "id": "top_335",
@@ -5107,7 +5533,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Past"
+    "uz": "Past",
+    "exampleTr": "Tavan alçak olduğu için merdiveni dikkatli kurun.",
+    "exampleRu": "Поскольку потолок низкий, ставьте лестницу осторожно."
   },
   {
     "id": "top_336",
@@ -5118,7 +5546,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'tkir"
+    "uz": "O'tkir",
+    "exampleTr": "Bıçak çok keskin, parmağını kesme lütfen.",
+    "exampleRu": "Нож очень острый, пожалуйста, не порежь палец."
   },
   {
     "id": "top_337",
@@ -5129,7 +5559,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'r"
+    "uz": "Ko'r",
+    "exampleTr": "Kör bıçakla kabloyu kesmek hem zor hem tehlikeli.",
+    "exampleRu": "Тупым ножом резать кабель и трудно, и опасно."
   },
   {
     "id": "top_338",
@@ -5140,7 +5572,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Net"
+    "uz": "Net",
+    "exampleTr": "Çizimdeki rakamlar net değil, tekrar soracağım.",
+    "exampleRu": "Цифры на чертеже нечеткие, я переспрошу."
   },
   {
     "id": "top_339",
@@ -5151,7 +5585,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yalpi"
+    "uz": "Yalpi",
+    "exampleTr": "Paletin brüt ağırlığı tartıda iki yüz kilo çıktı.",
+    "exampleRu": "Вес брутто паллеты на весах составил двести килограммов."
   },
   {
     "id": "top_340",
@@ -5163,8 +5599,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ish",
-    "exampleTr": "Şantiyede i̇ş kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: работа."
+    "exampleTr": "Bugün atölyede çok acele iş var.",
+    "exampleRu": "Сегодня в цеху есть очень срочная работа."
   },
   {
     "id": "top_341",
@@ -5176,8 +5612,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Xodim",
-    "exampleTr": "Şantiyede i̇şçi kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: рабочий."
+    "exampleTr": "Yeni işçiler sabah saat sekizde geldi.",
+    "exampleRu": "Новые рабочие пришли утром в восемь часов."
   },
   {
     "id": "top_342",
@@ -5189,8 +5625,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Usta",
-    "exampleTr": "Şantiyede usta kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: мастер."
+    "exampleTr": "Ustamız bize doğru kesimi tek tek gösterdi.",
+    "exampleRu": "Наш мастер по очереди показал нам правильный рез."
   },
   {
     "id": "top_343",
@@ -5202,8 +5638,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Muhandis",
-    "exampleTr": "Şantiyede mühendis kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: инженер."
+    "exampleTr": "Mühendis bey az önce çizimleri masaya bıraktı.",
+    "exampleRu": "Господин инженер только что оставил чертежи на столе."
   },
   {
     "id": "top_344",
@@ -5215,8 +5651,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Mudir / Rahbar",
-    "exampleTr": "Şantiyede müdür kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: директор."
+    "exampleTr": "Müdür öğleden sonra üretim hattını gezecekmiş.",
+    "exampleRu": "Директор, говорят, после обеда обойдёт производственную линию."
   },
   {
     "id": "top_345",
@@ -5228,8 +5664,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Fabrika / Zavod",
-    "exampleTr": "Şantiyede fabrika kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: завод."
+    "exampleTr": "Fabrika kapısından her sabah servisle giriyoruz.",
+    "exampleRu": "Через ворота завода мы каждое утро заезжаем на служебном автобусе."
   },
   {
     "id": "top_346",
@@ -5241,8 +5677,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Sex / Ustaxona",
-    "exampleTr": "Şantiyede atölye kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: цех."
+    "exampleTr": "Akşam çıkmadan önce atölyeyi güzelce süpürelim.",
+    "exampleRu": "Перед уходом вечером давайте хорошо подметём цех."
   },
   {
     "id": "top_347",
@@ -5267,8 +5703,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bo'lim",
-    "exampleTr": "Şantiyede bölüm kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: отдел."
+    "exampleTr": "Bu profilleri hemen boya bölümüne göndermemiz gerek.",
+    "exampleRu": "Нам нужно сразу отправить эти профили в участок покраски."
   },
   {
     "id": "top_349",
@@ -5280,8 +5716,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chiziq",
-    "exampleTr": "Şantiyede hat kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: линия."
+    "exampleTr": "İkinci hat arıza yüzünden yarım saat durdu.",
+    "exampleRu": "Вторая линия остановилась на полчаса из-за поломки."
   },
   {
     "id": "top_350",
@@ -5293,8 +5729,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ombor",
-    "exampleTr": "Şantiyede depo kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: склад."
+    "exampleTr": "Arka depoda hâlâ yirmi palet profil duruyor.",
+    "exampleRu": "На заднем складе всё ещё стоит двадцать поддонов профиля."
   },
   {
     "id": "top_351",
@@ -5306,8 +5742,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yuk tashish",
-    "exampleTr": "Şantiyede sevkiyat kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: отгрузка."
+    "exampleTr": "Yarın sabahki sevkiyat için kamyonu şimdiden yükledik.",
+    "exampleRu": "Для завтрашней утренней отгрузки мы уже загрузили грузовик."
   },
   {
     "id": "top_352",
@@ -5319,8 +5755,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ishlab chiqarish",
-    "exampleTr": "Şantiyede üretim kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: производство."
+    "exampleTr": "Bu ay kapı üretimi geçen aydan hızlı gidiyor.",
+    "exampleRu": "В этом месяце производство дверей идёт быстрее, чем в прошлом."
   },
   {
     "id": "top_353",
@@ -5332,8 +5768,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "O'rnatish / Yig'ish",
-    "exampleTr": "Şantiyede montaj kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: монтаж."
+    "exampleTr": "Ekip üçüncü katta pencere montajına hemen başladı.",
+    "exampleRu": "Бригада сразу начала монтаж окон на третьем этаже."
   },
   {
     "id": "top_354",
@@ -5345,8 +5781,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "demontaj qilish",
-    "exampleTr": "Şantiyede demontaj kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: демонтаж."
+    "exampleTr": "Eski çerçevenin demontajı iki saatimizi aldı.",
+    "exampleRu": "Демонтаж старой рамы занял у нас два часа."
   },
   {
     "id": "top_355",
@@ -5358,8 +5794,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qadoqlash",
-    "exampleTr": "Şantiyede paketleme kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: упаковка."
+    "exampleTr": "Camların çizilmemesi için paketlemeyi özenle yapıyoruz.",
+    "exampleRu": "Чтобы стёкла не поцарапались, мы тщательно делаем упаковку."
   },
   {
     "id": "top_356",
@@ -5371,8 +5807,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Sifat",
-    "exampleTr": "Şantiyede kalite kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: качество."
+    "exampleTr": "Bizim fabrikada kalite her zaman ilk sırada gelir.",
+    "exampleRu": "На нашем заводе качество всегда стоит на первом месте."
   },
   {
     "id": "top_357",
@@ -5384,8 +5820,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Nazorat / Tekshiruv",
-    "exampleTr": "Şantiyede kontrol kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: контроль."
+    "exampleTr": "Sevkiyattan önce son kontrolü birlikte yapalım.",
+    "exampleRu": "Давайте вместе сделаем финальную проверку перед отгрузкой."
   },
   {
     "id": "top_358",
@@ -5397,8 +5833,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Xato / Nuqson",
-    "exampleTr": "Şantiyede hata kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: ошибка."
+    "exampleTr": "Ölçü alırken küçük bir hata yapmış olabilirim.",
+    "exampleRu": "Похоже, при снятии замеров я допустил небольшую ошибку."
   },
   {
     "id": "top_359",
@@ -5410,8 +5846,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Nuqson",
-    "exampleTr": "Şantiyede kusur kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: изъян."
+    "exampleTr": "Yüzeydeki kusuru görünce parçayı hemen kenara ayırdık.",
+    "exampleRu": "Увидев изъян на поверхности, мы сразу отложили деталь в сторону."
   },
   {
     "id": "top_360",
@@ -5423,8 +5859,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Isrof",
-    "exampleTr": "Şantiyede fire kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: технологические отходы."
+    "exampleTr": "Kısa kesilen parçalardan bugün çok fazla fire çıktı.",
+    "exampleRu": "Из-за коротких резов сегодня вышло очень много обрезков."
   },
   {
     "id": "top_361",
@@ -5436,8 +5872,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chiqindi",
-    "exampleTr": "Şantiyede hurda kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: металлолом."
+    "exampleTr": "Kullanılmayan alüminyum parçaları hurda kutusuna atın.",
+    "exampleRu": "Ненужные алюминиевые куски выбрасывайте в ящик для металлолома."
   },
   {
     "id": "top_362",
@@ -5449,8 +5885,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Uskuna / Stanok / Mashina",
-    "exampleTr": "Şantiyede makine kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: станок."
+    "exampleTr": "Kesim makinesi sabah açılınca garip bir ses çıkardı.",
+    "exampleRu": "Станок для резки утром при включении издал странный звук."
   },
   {
     "id": "top_363",
@@ -5462,8 +5898,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Asbob / Qurol",
-    "exampleTr": "Şantiyede alet kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: инструмент."
+    "exampleTr": "İşim bitince bütün aletleri çantaya geri koydum.",
+    "exampleRu": "Когда закончил работу, я сложил все инструменты обратно в сумку."
   },
   {
     "id": "top_364",
@@ -5475,8 +5911,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qurilma",
-    "exampleTr": "Şantiyede cihaz kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: прибор."
+    "exampleTr": "Ölçüm cihazının pili öğlene doğru tamamen bitti.",
+    "exampleRu": "Батарейка измерительного прибора ближе к обеду полностью села."
   },
   {
     "id": "top_365",
@@ -5488,8 +5924,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Stanok / Dastgoh",
-    "exampleTr": "Şantiyede tezgah kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: верстак."
+    "exampleTr": "Montaj tezgahının üstünü her akşam temizliyoruz.",
+    "exampleRu": "Мы каждый вечер очищаем поверхность сборочного верстака."
   },
   {
     "id": "top_366",
@@ -5501,8 +5937,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Stol",
-    "exampleTr": "Şantiyede masa kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: стол."
+    "exampleTr": "Çizim kağıtlarını büyük masanın üzerine yaydık.",
+    "exampleRu": "Мы разложили листы чертежей на большом столе."
   },
   {
     "id": "top_367",
@@ -5514,8 +5950,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Profil",
-    "exampleTr": "Şantiyede profil kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: профиль."
+    "exampleTr": "Altı metrelik profilleri dikkatlice rafa yerleştirdik.",
+    "exampleRu": "Мы аккуратно уложили шестиметровые профили на стеллаж."
   },
   {
     "id": "top_368",
@@ -5527,8 +5963,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Alyuminiy",
-    "exampleTr": "Şantiyede alüminyum kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: алюминий."
+    "exampleTr": "Alüminyum doğrama hem hafif hem de sağlam oluyor.",
+    "exampleRu": "Алюминиевые конструкции получаются одновременно лёгкими и прочными."
   },
   {
     "id": "top_369",
@@ -5540,8 +5976,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Po'lat",
-    "exampleTr": "Şantiyede çelik kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: сталь."
+    "exampleTr": "Ağır cephe bağlantılarında mutlaka çelik ankraj kullanıyoruz.",
+    "exampleRu": "В тяжёлых фасадных креплениях мы обязательно используем стальные анкеры."
   },
   {
     "id": "top_370",
@@ -5553,8 +5989,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Temir",
-    "exampleTr": "Şantiyede demir kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: железо."
+    "exampleTr": "Bahçe kapısı için kalın demir direk diktik.",
+    "exampleRu": "Для калитки мы установили толстый железный столб."
   },
   {
     "id": "top_371",
@@ -5566,8 +6002,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Metall",
-    "exampleTr": "Şantiyede metal kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: металл."
+    "exampleTr": "Bu köşe takozu sert metalden dökülmüş.",
+    "exampleRu": "Этот угловой сухарь отлит из твёрдого металла."
   },
   {
     "id": "top_372",
@@ -5579,8 +6015,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Plastmassa",
-    "exampleTr": "Şantiyede plastik kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: пластик."
+    "exampleTr": "Köşeler ezilmesin diye plastik koruyucu taktık.",
+    "exampleRu": "Чтобы углы не помялись, мы надели пластиковую защиту."
   },
   {
     "id": "top_373",
@@ -5592,8 +6028,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Shisha / Oyna",
-    "exampleTr": "Şantiyede cam kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: стекло."
+    "exampleTr": "Büyük camları vantuzla dört kişi kaldırdık.",
+    "exampleRu": "Большие стёкла мы поднимали вчетвером с помощью присосок."
   },
   {
     "id": "top_374",
@@ -5605,8 +6041,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Oyna",
-    "exampleTr": "Şantiyede ayna kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: зеркало."
+    "exampleTr": "Banyo dolabının aynasını duvara düz yapıştırdık.",
+    "exampleRu": "Зеркало для шкафчика в ванной мы ровно приклеили к стене."
   },
   {
     "id": "top_375",
@@ -5618,8 +6054,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kauchuk",
-    "exampleTr": "Şantiyede kauçuk kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: каучук."
+    "exampleTr": "Soğuk havada kauçuk takozlar bile sertleşiyor.",
+    "exampleRu": "В холодную погоду даже резиновые подкладки твердеют."
   },
   {
     "id": "top_376",
@@ -5631,8 +6067,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Silikon",
-    "exampleTr": "Şantiyede silikon kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: силикон."
+    "exampleTr": "Dış cephedeki boşlukları siyah silikonla kapattık.",
+    "exampleRu": "Щели на наружном фасаде мы закрыли чёрным силиконом."
   },
   {
     "id": "top_377",
@@ -5644,8 +6080,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yelim",
-    "exampleTr": "Şantiyede yapıştırıcı kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: клей."
+    "exampleTr": "Köşe birleşimine iki damla hızlı yapıştırıcı sür.",
+    "exampleRu": "Нанеси две капли быстрого клея на угловое соединение."
   },
   {
     "id": "top_378",
@@ -5657,8 +6093,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bo'yoq",
-    "exampleTr": "Şantiyede boya kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: краска."
+    "exampleTr": "Taşırken kanadın boyası biraz çizilmiş, rötuş yapalım.",
+    "exampleRu": "При переноске краска на створке немного поцарапалась, давай подкрасим."
   },
   {
     "id": "top_379",
@@ -5670,8 +6106,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Vint / Samorez",
-    "exampleTr": "Şantiyede vida kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: винт."
+    "exampleTr": "Menteşeyi bağlamak için dört tane uzun vida getir.",
+    "exampleRu": "Принеси четыре длинных самореза, чтобы прикрутить петлю."
   },
   {
     "id": "top_380",
@@ -5683,8 +6119,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bolt",
-    "exampleTr": "Şantiyede civata kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: болт."
+    "exampleTr": "Ankraj civatasını anahtarla sonuna kadar sıktım.",
+    "exampleRu": "Я затянул анкерный болт ключом до упора."
   },
   {
     "id": "top_381",
@@ -5696,8 +6132,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Gayka",
-    "exampleTr": "Şantiyede somun kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: гайка."
+    "exampleTr": "Civatanın ucuna pul koyup somunu öyle tak.",
+    "exampleRu": "Надень шайбу на край болта и затем накрути гайку."
   },
   {
     "id": "top_382",
@@ -5709,8 +6145,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Shayba",
-    "exampleTr": "Şantiyede pul kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: шайба."
+    "exampleTr": "Geniş pullar olmadan bağlantı gevşek kalır.",
+    "exampleRu": "Без широких шайб крепление останется слабым."
   },
   {
     "id": "top_383",
@@ -5722,8 +6158,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Perchin",
-    "exampleTr": "Şantiyede perçin kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: заклепка."
+    "exampleTr": "Kapak profilini perçinle sabitlemek çok daha sağlam.",
+    "exampleRu": "Закрепить крышку профиля заклёпкой намного надёжнее."
   },
   {
     "id": "top_384",
@@ -5735,8 +6171,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Dovel",
-    "exampleTr": "Şantiyede dübel kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: дюбель."
+    "exampleTr": "Beton duvara sekizlik plastik dübel çaktık.",
+    "exampleRu": "Мы забили в бетонную стену пластиковый дюбель-восьмёрку."
   },
   {
     "id": "top_385",
@@ -5748,8 +6184,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tirnoq",
-    "exampleTr": "Şantiyede çivi kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: гвоздь."
+    "exampleTr": "Ahşap sandığın kapağını çiviyle iyice kapattılar.",
+    "exampleRu": "Крышку деревянного ящика они крепко забили гвоздями."
   },
   {
     "id": "top_386",
@@ -5761,8 +6197,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bahor",
-    "exampleTr": "Şantiyede yay kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: пружина."
+    "exampleTr": "Kapı kolunun içindeki küçük yay yerinden çıkmış.",
+    "exampleRu": "Маленькая пружина внутри дверной ручки выскочила со своего места."
   },
   {
     "id": "top_387",
@@ -5774,8 +6210,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Pin",
-    "exampleTr": "Şantiyede pim kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: штифт."
+    "exampleTr": "Üst menteşenin pimini aşağı doğru bastırarak taktık.",
+    "exampleRu": "Штифт верхней петли мы вставили, надавив вниз."
   },
   {
     "id": "top_388",
@@ -5787,8 +6223,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qistirma (prokladka)",
-    "exampleTr": "Şantiyede conta kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: прокладка."
+    "exampleTr": "Ortadaki conta eksik olursa içeri yağmur sızar.",
+    "exampleRu": "Если средней прокладки не будет, внутрь просочится дождь."
   },
   {
     "id": "top_389",
@@ -5800,8 +6236,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Rezina qistirma",
-    "exampleTr": "Şantiyede fitil kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: уплотнитель резиновый."
+    "exampleTr": "Cam fitilini köşelerde kesmeden tek parça geç.",
+    "exampleRu": "Продень стекольный уплотнитель цельным куском, не разрезая на углах."
   },
   {
     "id": "top_390",
@@ -5813,8 +6249,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tutqich (ruchka)",
-    "exampleTr": "Şantiyede kolu kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: ручка (дверная."
+    "exampleTr": "Balkon kapısının kolu zor dönüyor, yağlayalım mı?",
+    "exampleRu": "Ручка балконной двери туго поворачивается, может смажем?"
   },
   {
     "id": "top_391",
@@ -5826,8 +6262,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qulf",
-    "exampleTr": "Şantiyede kilit kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: замок."
+    "exampleTr": "Giriş kapısının kilidi tam oturmuyor, ayar lazım.",
+    "exampleRu": "Замок входной двери садится не до конца, нужна регулировка."
   },
   {
     "id": "top_392",
@@ -5839,8 +6275,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kalit",
-    "exampleTr": "Şantiyede anahtar kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: ключ."
+    "exampleTr": "On yedilik anahtarı gören oldu mu aranızda?",
+    "exampleRu": "Кто-нибудь среди вас видел ключ на семнадцать?"
   },
   {
     "id": "top_393",
@@ -5852,8 +6288,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Oshiq-moshuq (petlya)",
-    "exampleTr": "Şantiyede menteşe kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: петля шарнирная."
+    "exampleTr": "Ağır kanatlar için üçüncü bir menteşe ekledik.",
+    "exampleRu": "Для тяжёлых створок мы добавили третью петлю."
   },
   {
     "id": "top_394",
@@ -5865,8 +6301,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Slayd",
-    "exampleTr": "Şantiyede sürgü kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: задвижка."
+    "exampleTr": "Çift kapının ikinci kanadına üstten sürgü taktık.",
+    "exampleRu": "На вторую створку двойной двери мы поставили верхний шпингалет."
   },
   {
     "id": "top_395",
@@ -5878,8 +6314,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Quti / Rama",
-    "exampleTr": "Şantiyede kasa kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: рама."
+    "exampleTr": "Pencere kasasını boşluğa koyup terazisini aldık.",
+    "exampleRu": "Мы поставили оконную раму в проём и выставили по уровню."
   },
   {
     "id": "top_396",
@@ -5891,8 +6327,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tabaqa (oyna/eshik)",
-    "exampleTr": "Şantiyede kanat kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: створка (окна."
+    "exampleTr": "Bu kanat kasaya sürtüyor, yukarı kaldırmak gerek.",
+    "exampleRu": "Эта створка задевает раму, нужно приподнять её."
   },
   {
     "id": "top_397",
@@ -5904,8 +6340,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Impost / O'rta to'sin",
-    "exampleTr": "Şantiyede kayıt kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: импост."
+    "exampleTr": "Orta kayıt bağlantısını iki vidayla sıktık.",
+    "exampleRu": "Крепление среднего импоста мы затянули двумя винтами."
   },
   {
     "id": "top_398",
@@ -5917,8 +6353,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Shtapik",
-    "exampleTr": "Şantiyede çıta kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: штапик."
+    "exampleTr": "Camı koyduktan sonra üst çıtayı plastik tokmakla çak.",
+    "exampleRu": "После установки стекла забей верхний штапик пластиковой киянкой."
   },
   {
     "id": "top_399",
@@ -5930,8 +6366,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Eshik",
-    "exampleTr": "Şantiyede eşik kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: порог."
+    "exampleTr": "Alçak alüminyum eşik tekerlekli geçişe uygun yapıldı.",
+    "exampleRu": "Низкий алюминиевый порог сделали удобным для проезда на колёсах."
   },
   {
     "id": "top_400",
@@ -5943,8 +6379,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "deraza tokchasi",
-    "exampleTr": "Şantiyede denizlik kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: отлив."
+    "exampleTr": "Dış denizliği hafif eğimli koyduk ki su aksın.",
+    "exampleRu": "Наружный отлив мы положили с лёгким уклоном, чтобы вода стекала."
   },
   {
     "id": "top_401",
@@ -5956,8 +6392,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "tutqich",
-    "exampleTr": "Şantiyede küpeşte kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: перила."
+    "exampleTr": "Merdiven küpeştesini el kesmesin diye pürüzsüz seçtik.",
+    "exampleRu": "Поручень лестницы мы выбрали гладкий, чтобы не резал руки."
   },
   {
     "id": "top_402",
@@ -5969,8 +6405,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Panjara",
-    "exampleTr": "Şantiyede korkuluk kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: ограждение."
+    "exampleTr": "Fransız balkonun cam korkuluğunu öğleden önce bitirdik.",
+    "exampleRu": "Стеклянное ограждение французского балкона мы закончили до обеда."
   },
   {
     "id": "top_403",
@@ -5982,8 +6418,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Fasad",
-    "exampleTr": "Şantiyede cephe kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: фасад здания."
+    "exampleTr": "Güney cephedeki camların montajı cuma günü bitecek.",
+    "exampleRu": "Монтаж стёкол на южном фасаде закончится в пятницу."
   },
   {
     "id": "top_404",
@@ -5995,8 +6431,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Devor",
-    "exampleTr": "Şantiyede duvar kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: стена."
+    "exampleTr": "Bu duvar eğri olduğu için boşluk geniş kaldı.",
+    "exampleRu": "Из-за того что эта стена кривая, зазор остался широким."
   },
   {
     "id": "top_405",
@@ -6008,8 +6444,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Shift",
-    "exampleTr": "Şantiyede tavan kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: потолок."
+    "exampleTr": "Yüksek tavan yüzünden uzun merdiven getirmemiz gerekti.",
+    "exampleRu": "Из-за высокого потолка нам пришлось принести длинную лестницу."
   },
   {
     "id": "top_406",
@@ -6021,8 +6457,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Pol / Zamin",
-    "exampleTr": "Şantiyede zemin kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: пол."
+    "exampleTr": "Zemini bozmamak için kutuların altına karton serdik.",
+    "exampleRu": "Чтобы не испортить пол, мы постелили картон под коробки."
   },
   {
     "id": "top_407",
@@ -6034,8 +6470,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tom",
-    "exampleTr": "Şantiyede çatı kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: крыша."
+    "exampleTr": "Kış bahçesinin cam çatısı yağmurda hiç akıtmıyor.",
+    "exampleRu": "Стеклянная крыша зимнего сада совсем не протекает в дождь."
   },
   {
     "id": "top_408",
@@ -6047,8 +6483,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bino",
-    "exampleTr": "Şantiyede bina kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: здание."
+    "exampleTr": "Karşıdaki yeni binanın tüm doğramalarını biz üretiyoruz.",
+    "exampleRu": "Все оконные конструкции для нового здания напротив изготавливаем мы."
   },
   {
     "id": "top_409",
@@ -6060,8 +6496,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qavat",
-    "exampleTr": "Şantiyede kat kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: этаж."
+    "exampleTr": "Malzemeyi beşinci kata asansörle çıkarmak yasakmış.",
+    "exampleRu": "Поднимать материал на пятый этаж на лифте, оказывается, запрещено."
   },
   {
     "id": "top_410",
@@ -6073,8 +6509,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Xona",
-    "exampleTr": "Şantiyede oda kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: комната."
+    "exampleTr": "Arka odadaki iki pencereyi henüz ölçmedik.",
+    "exampleRu": "Два окна в задней комнате мы ещё не замерили."
   },
   {
     "id": "top_411",
@@ -6086,8 +6522,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Eshik",
-    "exampleTr": "Şantiyede kapı kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: дверь."
+    "exampleTr": "Ana giriş kapısı dışarıya doğru açılacak şekilde planlandı.",
+    "exampleRu": "Главную входную дверь спроектировали так, чтобы она открывалась наружу."
   },
   {
     "id": "top_412",
@@ -6099,8 +6535,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Deraza",
-    "exampleTr": "Şantiyede pencere kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: окно."
+    "exampleTr": "Koridordaki pencereyi havalandırma için biraz aralık bıraktık.",
+    "exampleRu": "Окно в коридоре мы оставили чуть приоткрытым для проветривания."
   },
   {
     "id": "top_413",
@@ -6112,8 +6548,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Balkon",
-    "exampleTr": "Şantiyede balkon kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: балкон."
+    "exampleTr": "Sürme kapı takılınca balkon daha kullanışlı oldu.",
+    "exampleRu": "После установки раздвижной двери балкон стал намного удобнее."
   },
   {
     "id": "top_414",
@@ -6125,8 +6561,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Zina / Narvon",
-    "exampleTr": "Şantiyede merdiven kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: лестница."
+    "exampleTr": "Üst vidaya yetişmek için üç basamaklı merdiven getir.",
+    "exampleRu": "Чтобы достать до верхнего винта, принеси трёхступенчатую стремянку."
   },
   {
     "id": "top_415",
@@ -6138,8 +6574,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Dok",
-    "exampleTr": "Şantiyede i̇skele kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: строительные леса."
+    "exampleTr": "İskeleye çıkmadan önce emniyet kemerini mutlaka bağla.",
+    "exampleRu": "Перед выходом на строительные леса обязательно пристегни страховочный пояс."
   },
   {
     "id": "top_416",
@@ -6151,8 +6587,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kran",
-    "exampleTr": "Şantiyede vinç kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: подъемный кран."
+    "exampleTr": "Büyük cam kasasını vinçle dördüncü kata çektiler.",
+    "exampleRu": "Большой ящик со стеклом подняли краном на четвёртый этаж."
   },
   {
     "id": "top_417",
@@ -6164,8 +6600,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yuklagich (forklift)",
-    "exampleTr": "Şantiyede forklift kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: вилочный погрузчик."
+    "exampleTr": "Ahmet forkliftle ağır paleti kamyonun yanına taşıdı.",
+    "exampleRu": "Ахмет перевёз тяжёлый поддон на погрузчике к грузовику."
   },
   {
     "id": "top_418",
@@ -6177,8 +6613,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Poddon / Palet",
-    "exampleTr": "Şantiyede palet kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: поддон."
+    "exampleTr": "Boş paletleri yükleme kapısının soluna dizin.",
+    "exampleRu": "Сложите пустые поддоны слева от ворот погрузки."
   },
   {
     "id": "top_419",
@@ -6190,8 +6626,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Posilka",
-    "exampleTr": "Şantiyede koli kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: коробка."
+    "exampleTr": "Küçük aksesuar kolilerini raftan tek tek indirdim.",
+    "exampleRu": "Я по одной спустил с полки коробки с мелкой фурнитурой."
   },
   {
     "id": "top_420",
@@ -6203,8 +6639,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ko'krak",
-    "exampleTr": "Şantiyede sandık kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: деревянный ящик."
+    "exampleTr": "İhracat camları kalın tahta sandık içinde gelecek.",
+    "exampleRu": "Экспортные стёкла приедут в толстом деревянном ящике."
   },
   {
     "id": "top_421",
@@ -6216,8 +6652,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Sumka",
-    "exampleTr": "Şantiyede torba kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: мешок."
+    "exampleTr": "Kalan dübelleri yırtılmayan bez torbaya doldurduk.",
+    "exampleRu": "Оставшиеся дюбели мы сложили в прочный тканевый мешок."
   },
   {
     "id": "top_422",
@@ -6229,8 +6665,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tashish sumkasi",
-    "exampleTr": "Şantiyede poşet kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: полиэтиленовый пакет."
+    "exampleTr": "Her pencerenin vidalarını ayrı küçük poşete koyun.",
+    "exampleRu": "Кладите саморезы для каждого окна в отдельный маленький пакетик."
   },
   {
     "id": "top_423",
@@ -6242,8 +6678,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Lenta",
-    "exampleTr": "Şantiyede bant kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: скотч."
+    "exampleTr": "Koruyucu bandı montajdan hemen sonra sökmeyi unutma.",
+    "exampleRu": "Не забудь снять защитную ленту сразу после монтажа."
   },
   {
     "id": "top_424",
@@ -6255,8 +6691,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kabel",
-    "exampleTr": "Şantiyede kablo kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: кабель."
+    "exampleTr": "Yerdeki elektrik kablosuna dikkat et, ayağın takılmasın.",
+    "exampleRu": "Осторожнее с электрическим кабелем на полу, не споткнись."
   },
   {
     "id": "top_425",
@@ -6268,8 +6704,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Shlang",
-    "exampleTr": "Şantiyede hortum kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: шланг."
+    "exampleTr": "Hava hortumunu tabancaya takınca basınç sesi geldi.",
+    "exampleRu": "Когда подключили воздушный шланг к пистолету, послышался звук давления."
   },
   {
     "id": "top_426",
@@ -6281,8 +6717,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Quvur",
-    "exampleTr": "Şantiyede boru kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: труба."
+    "exampleTr": "Yağmur suyunu indirmek için ince alüminyum boru taktık.",
+    "exampleRu": "Для отвода дождевой воды мы поставили тонкую алюминиевую трубу."
   },
   {
     "id": "top_427",
@@ -6294,8 +6730,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "valf",
-    "exampleTr": "Şantiyede vana kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: вентиль."
+    "exampleTr": "Su vanasını kapatmadan tesisatın yanında çalışma.",
+    "exampleRu": "Не работай рядом с трубами, не перекрыв водяной вентиль."
   },
   {
     "id": "top_428",
@@ -6307,8 +6743,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Nasos",
-    "exampleTr": "Şantiyede pompa kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: насос."
+    "exampleTr": "Vantuzun el pompası bozuldu, yenisini almamız şart.",
+    "exampleRu": "Ручной насос присоски сломался, нам обязательно нужно взять новый."
   },
   {
     "id": "top_429",
@@ -6320,8 +6756,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kompressor",
-    "exampleTr": "Şantiyede kompresör kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: компрессор воздушный."
+    "exampleTr": "Sabah atölyeye gelince ilk iş kompresörü çalıştırıyoruz.",
+    "exampleRu": "Приходя утром в цех, первым делом мы запускаем компрессор."
   },
   {
     "id": "top_430",
@@ -6333,8 +6769,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bosim",
-    "exampleTr": "Şantiyede basınç kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: давление."
+    "exampleTr": "Preshane için basınç en az altı bar olmalı.",
+    "exampleRu": "Для прессового участка давление должно быть не меньше шести бар."
   },
   {
     "id": "top_431",
@@ -6346,8 +6782,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Havo",
-    "exampleTr": "Şantiyede hava kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: воздух."
+    "exampleTr": "Bugün hava çok rüzgarlı, cephede dikkatli çalışın.",
+    "exampleRu": "Сегодня очень ветреная погода, работайте на фасаде осторожно."
   },
   {
     "id": "top_432",
@@ -6359,8 +6795,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Gaz",
-    "exampleTr": "Şantiyede gaz kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: газ."
+    "exampleTr": "Isıcamların arasında özel argon gazı bulunuyor.",
+    "exampleRu": "Между стёклами стеклопакета находится специальный газ аргон."
   },
   {
     "id": "top_433",
@@ -6372,8 +6808,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Elektr",
-    "exampleTr": "Şantiyede elektrik kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: электричество."
+    "exampleTr": "Öğlen yarım saatliğine atölyede elektrik kesildi.",
+    "exampleRu": "В обед в цеху на полчаса отключилось электричество."
   },
   {
     "id": "top_434",
@@ -6385,8 +6821,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Sug'urta",
-    "exampleTr": "Şantiyede sigorta kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: предохранитель."
+    "exampleTr": "Kaynak makinesini takınca panodaki sigorta hemen attı.",
+    "exampleRu": "Как только включили сварочный аппарат, на щитке сразу выбило автомат."
   },
   {
     "id": "top_435",
@@ -6398,8 +6834,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Розетка",
-    "exampleTr": "Şantiyede priz kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: розетка."
+    "exampleTr": "Matkabı şarja takmak için boş priz arıyorum.",
+    "exampleRu": "Ищу свободную розетку, чтобы поставить шуруповёрт на зарядку."
   },
   {
     "id": "top_436",
@@ -6411,8 +6847,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kvitansiya",
-    "exampleTr": "Şantiyede fiş kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: штепсель."
+    "exampleTr": "İşin bitince taşlamanın fişini prizden mutlaka çek.",
+    "exampleRu": "Когда закончишь, обязательно вытащи вилку болгарки из розетки."
   },
   {
     "id": "top_437",
@@ -6424,8 +6860,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tugma",
-    "exampleTr": "Şantiyede düğme kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: кнопка."
+    "exampleTr": "Acil durumda şu kırmızı düğmeye hemen basacaksın.",
+    "exampleRu": "В экстренной ситуации сразу нажмёшь на эту красную кнопку."
   },
   {
     "id": "top_438",
@@ -6437,8 +6873,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "O'chirish to'xtatuvchisi",
-    "exampleTr": "Şantiyede şalter kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: рубильник."
+    "exampleTr": "Vardiya sonunda ana şalteri kapatmayı kimse unutmasın.",
+    "exampleRu": "Пусть никто не забудет выключить главный рубильник в конце смены."
   },
   {
     "id": "top_439",
@@ -6450,8 +6886,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Sensor",
-    "exampleTr": "Şantiyede sensör kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: датчик."
+    "exampleTr": "Otomatik kapının sensörü insanı iki metreden görüyor.",
+    "exampleRu": "Датчик автоматической двери срабатывает на человека с двух метров."
   },
   {
     "id": "top_440",
@@ -6463,8 +6899,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Dvigatel / Motor",
-    "exampleTr": "Şantiyede motor kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: электродвигатель."
+    "exampleTr": "Panjur motoru sessiz çalışıyor ama biraz yavaş iniyor.",
+    "exampleRu": "Мотор рольставней работает тихо, но опускается немного медленно."
   },
   {
     "id": "top_441",
@@ -6476,8 +6912,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Moy / Yog'",
-    "exampleTr": "Şantiyede yağ kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: масло."
+    "exampleTr": "Alüminyum keserken testere ince bir yağ püskürtüyor.",
+    "exampleRu": "При резке алюминия пила распыляет тонкую масляную смазку."
   },
   {
     "id": "top_442",
@@ -6489,8 +6925,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yog '",
-    "exampleTr": "Şantiyede gres kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: густая смазка."
+    "exampleTr": "Makinenin dişlilerine ayda bir gres sürüyoruz.",
+    "exampleRu": "Мы раз в месяц наносим густую смазку на шестерни станка."
   },
   {
     "id": "top_443",
@@ -6502,8 +6938,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Benzin",
-    "exampleTr": "Şantiyede benzin kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: бензин."
+    "exampleTr": "Jeneratör için bidonla beş litre benzin aldık.",
+    "exampleRu": "Мы купили в канистре пять литров бензина для генератора."
   },
   {
     "id": "top_444",
@@ -6515,8 +6951,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "dizel yoqilg'isi",
-    "exampleTr": "Şantiyede mazot kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: дизельное топливо."
+    "exampleTr": "Şantiyedeki forkliftin mazotu neredeyse bitmek üzere.",
+    "exampleRu": "Дизельное топливо в погрузчике на стройке почти заканчивается."
   },
   {
     "id": "top_445",
@@ -6528,8 +6964,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yupqaroq",
-    "exampleTr": "Şantiyede tiner kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: растворитель для краски."
+    "exampleTr": "Profildeki yapışkan izini tinerle temizleme, boyayı bozar.",
+    "exampleRu": "Не стирай следы клея с профиля растворителем, испортишь краску."
   },
   {
     "id": "top_446",
@@ -6541,8 +6977,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chang",
-    "exampleTr": "Şantiyede toz kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: пыль."
+    "exampleTr": "Duvar delerken çıkan tozu süpürgeyle hemen çektik.",
+    "exampleRu": "Пыль, летевшую при сверлении стены, мы сразу убрали пылесосом."
   },
   {
     "id": "top_447",
@@ -6554,8 +6990,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qirindi / Payraha",
-    "exampleTr": "Şantiyede talaş kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: металлическая."
+    "exampleTr": "Frezeden sonra profil içindeki alüminyum talaşını üfle.",
+    "exampleRu": "После фрезеровки выдуй алюминиевую стружку изнутри профиля."
   },
   {
     "id": "top_448",
@@ -6567,8 +7003,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Axlat",
-    "exampleTr": "Şantiyede çöp kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: мусор."
+    "exampleTr": "Paketleme bittikten sonra bütün çöpleri dışarı çıkaralım.",
+    "exampleRu": "После окончания упаковки давайте вынесем весь мусор на улицу."
   },
   {
     "id": "top_449",
@@ -6580,8 +7016,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kova",
-    "exampleTr": "Şantiyede kova kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: ведро."
+    "exampleTr": "Vidaları karıştırmadan şu plastik kovaya boşalt.",
+    "exampleRu": "Высыпь саморезы в это пластиковое ведро, не перемешивая."
   },
   {
     "id": "top_450",
@@ -6593,8 +7029,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Mop",
-    "exampleTr": "Şantiyede süpürge kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: метла."
+    "exampleTr": "Küçük süpürgeyle tezgahın altındaki tozları topladım.",
+    "exampleRu": "Маленькой щёткой я собрал пыль из-под верстака."
   },
   {
     "id": "top_451",
@@ -6606,8 +7042,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Mato",
-    "exampleTr": "Şantiyede bez kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: тряпка."
+    "exampleTr": "Temiz bir bez ver de silikonun fazlasını sileyim.",
+    "exampleRu": "Дай чистую тряпку, я вытру излишки силикона."
   },
   {
     "id": "top_452",
@@ -6619,8 +7055,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qo'lqop",
-    "exampleTr": "Şantiyede eldiven kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: перчатки."
+    "exampleTr": "Cam taşırken mutlaka kesilmeye dayanıklı eldiven giy.",
+    "exampleRu": "При переноске стекла обязательно надевай перчатки с защитой от порезов."
   },
   {
     "id": "top_453",
@@ -6632,8 +7068,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ko'zoynak",
-    "exampleTr": "Şantiyede gözlük kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: очки."
+    "exampleTr": "Kesim yaparken koruyucu gözlüğü başının üstünde bırakma.",
+    "exampleRu": "Во время резки не оставляй защитные очки на голове."
   },
   {
     "id": "top_454",
@@ -6645,8 +7081,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kaska",
-    "exampleTr": "Şantiyede kask kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: каска."
+    "exampleTr": "Şantiye alanına kasksız girenleri bekçi içeri almıyor.",
+    "exampleRu": "Охранник не пускает на стройплощадку тех, кто без каски."
   },
   {
     "id": "top_455",
@@ -6658,8 +7094,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Jilet",
-    "exampleTr": "Şantiyede yelek kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: жилет светоотражающий."
+    "exampleTr": "Karanlıkta fark edilmek için sarı yelek giymelisin.",
+    "exampleRu": "Чтобы быть заметным в темноте, ты должен надеть жёлтый жилет."
   },
   {
     "id": "top_456",
@@ -6671,8 +7107,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kombinezonlar",
-    "exampleTr": "Şantiyede tulum kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: рабочий комбинезон."
+    "exampleTr": "Yeni iş tulumları herkesin dolabına bırakılmış.",
+    "exampleRu": "Новые рабочие комбинезоны уже разложили всем по шкафчикам."
   },
   {
     "id": "top_457",
@@ -6684,8 +7120,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Poyabzal",
-    "exampleTr": "Şantiyede ayakkabı kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: обувь."
+    "exampleTr": "Çelik burunlu iş ayakkabısı ayağını ağır yükten korur.",
+    "exampleRu": "Рабочая обувь со стальным носком защитит ногу от тяжёлого груза."
   },
   {
     "id": "top_458",
@@ -6697,8 +7133,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Niqob",
-    "exampleTr": "Şantiyede maske kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: респиратор."
+    "exampleTr": "Boya kabininde çalışırken mutlaka filtreli maske takıyoruz.",
+    "exampleRu": "Работая в покрасочной камере, мы обязательно надеваем маску с фильтром."
   },
   {
     "id": "top_459",
@@ -6710,8 +7146,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Quloqchin",
-    "exampleTr": "Şantiyede kulaklık kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: наушники."
+    "exampleTr": "Çift kafa kesim makinesi gürültülü, kulaklık takalım.",
+    "exampleRu": "Двухголовочный отрезной станок шумный, давайте наденем наушники."
   },
   {
     "id": "top_460",
@@ -6723,8 +7159,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kamar",
-    "exampleTr": "Şantiyede kemer kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: пояс."
+    "exampleTr": "Dış cephe sepetinde emniyet kemerini halata kilitle.",
+    "exampleRu": "В фасадной люльке пристегни страховочный пояс к тросу."
   },
   {
     "id": "top_461",
@@ -6736,8 +7172,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Arqon",
-    "exampleTr": "Şantiyede halat kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: трос."
+    "exampleTr": "Çelik halatta yıpranma varsa onu hemen değiştir.",
+    "exampleRu": "Если на стальном тросе есть износ, сразу его замени."
   },
   {
     "id": "top_462",
@@ -6749,8 +7185,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Zanjir",
-    "exampleTr": "Şantiyede zincir kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: цепь."
+    "exampleTr": "Ağır makineyi yerinden kaldırmak için kalın zincir bağladık.",
+    "exampleRu": "Чтобы поднять тяжёлый станок, мы привязали толстую цепь."
   },
   {
     "id": "top_463",
@@ -6762,8 +7198,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kanca",
-    "exampleTr": "Şantiyede kanca kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: крюк крана."
+    "exampleTr": "Vinç kancası paletin tam ortasından geçmeli.",
+    "exampleRu": "Крюк крана должен проходить ровно через центр поддона."
   },
   {
     "id": "top_464",
@@ -6775,8 +7211,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Sling",
-    "exampleTr": "Şantiyede sapan kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: строп текстильный."
+    "exampleTr": "Profiller çizilmesin diye bez sapan kullanmamız lazım.",
+    "exampleRu": "Чтобы профили не поцарапались, нам нужно использовать текстильный строп."
   },
   {
     "id": "top_465",
@@ -6788,8 +7224,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "O'lcham",
-    "exampleTr": "Projede ölçü bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (размер) по проекту."
+    "exampleTr": "Bana pencerenin net ölçüsünü mesajla gönderir misin?",
+    "exampleRu": "Пришлёшь мне сообщением точный размер окна?"
   },
   {
     "id": "top_466",
@@ -6801,8 +7237,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Hajmi",
-    "exampleTr": "Projede boyut bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (габарит) по проекту."
+    "exampleTr": "Asansöre sığması için bu boyut biraz küçülecek.",
+    "exampleRu": "Чтобы поместилось в лифт, этот габарит немного уменьшат."
   },
   {
     "id": "top_467",
@@ -6814,8 +7250,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Uzunlik",
-    "exampleTr": "Projede uzunluk bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (длина) по проекту."
+    "exampleTr": "Standart profil uzunluğu depomuzda altı buçuk metredir.",
+    "exampleRu": "Стандартная длина профиля на нашем складе — шесть с половиной метров."
   },
   {
     "id": "top_468",
@@ -6827,8 +7263,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kenglik",
-    "exampleTr": "Projede genişlik bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (ширина) по проекту."
+    "exampleTr": "Kapı boşluğunun genişliği planlanandan iki santim dar çıktı.",
+    "exampleRu": "Ширина дверного проёма оказалась на два сантиметра уже запланированной."
   },
   {
     "id": "top_469",
@@ -6840,8 +7276,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Balandlik",
-    "exampleTr": "Projede yükseklik bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (высота) по проекту."
+    "exampleTr": "Tavan yüksekliği üç metre yirmi santim geliyor.",
+    "exampleRu": "Высота потолка составляет три метра двадцать сантиметров."
   },
   {
     "id": "top_470",
@@ -6853,8 +7289,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chuqurlik",
-    "exampleTr": "Projede derinlik bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (глубина) по проекту."
+    "exampleTr": "Bu kasa profilinin montaj derinliği yetmiş beş milim.",
+    "exampleRu": "Монтажная глубина этого профиля рамы — семьдесят пять миллиметров."
   },
   {
     "id": "top_471",
@@ -6866,8 +7302,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qalinlik",
-    "exampleTr": "Projede kalınlık bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (толщина) по проекту."
+    "exampleTr": "Isıcam toplam kalınlığı kırk dört milimetre olacak.",
+    "exampleRu": "Общая толщина стеклопакета будет сорок четыре миллиметра."
   },
   {
     "id": "top_472",
@@ -6879,8 +7315,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Diametri",
-    "exampleTr": "Projede çap bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (диаметр) по проекту."
+    "exampleTr": "Drenaj deliğini altı milimlik matkap çapıyla aç.",
+    "exampleRu": "Просверли дренажное отверстие сверлом диаметром шесть миллиметров."
   },
   {
     "id": "top_473",
@@ -6892,8 +7328,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Radius",
-    "exampleTr": "Projede yarıçap bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (радиус) по проекту."
+    "exampleTr": "Kemerli pencerenin büküm yarıçapı çizimde yazıyor.",
+    "exampleRu": "Радиус гибки арочного окна указан на чертеже."
   },
   {
     "id": "top_474",
@@ -6905,8 +7341,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Burchak",
-    "exampleTr": "Projede açı bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (угол) по проекту."
+    "exampleTr": "Makinenin kesim açısını kırk beşe ayarla.",
+    "exampleRu": "Выстави угол реза на станке на сорок пять."
   },
   {
     "id": "top_475",
@@ -6918,8 +7354,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Daraja",
-    "exampleTr": "Projede derece bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (градус) по проекту."
+    "exampleTr": "Kışın atölye sıcaklığı on beş derecenin altına düşmüyor.",
+    "exampleRu": "Зимой температура в цеху не падает ниже пятнадцати градусов."
   },
   {
     "id": "top_476",
@@ -6931,8 +7367,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Millimetr",
-    "exampleTr": "Projede milimetre bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (миллиметр) по проекту."
+    "exampleTr": "Kesimde iki milimetre bile fark etse kanat kapanmaz.",
+    "exampleRu": "Если при резке будет разница даже в два миллиметра, створка не закроется."
   },
   {
     "id": "top_477",
@@ -6944,8 +7380,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Santimetr",
-    "exampleTr": "Projede santimetre bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (сантиметр) по проекту."
+    "exampleTr": "Kasa ile duvar arasında iki santimetre boşluk bırakıyoruz.",
+    "exampleRu": "Между рамой и стеной мы оставляем зазор в два сантиметра."
   },
   {
     "id": "top_478",
@@ -6957,8 +7393,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Metr",
-    "exampleTr": "Projede metre bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (метр) по проекту."
+    "exampleTr": "Bu cephe için yüz yirmi metre fitil kestik.",
+    "exampleRu": "Для этого фасада мы отрезали сто двадцать метров уплотнителя."
   },
   {
     "id": "top_479",
@@ -6970,8 +7406,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kilogramm",
-    "exampleTr": "Projede kilogram bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (килограмм) по проекту."
+    "exampleTr": "Bu dev sürgülü kanat yaklaşık yüz kırk kilogram geliyor.",
+    "exampleRu": "Эта огромная раздвижная створка весит около ста сорока килограммов."
   },
   {
     "id": "top_480",
@@ -6983,8 +7419,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Gram",
-    "exampleTr": "Projede gram bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (грамм) по проекту."
+    "exampleTr": "İki bileşenli yapıştırıcıya elli gram sertleştirici karıştırdık.",
+    "exampleRu": "В двухкомпонентный клей мы добавили пятьдесят граммов отвердителя."
   },
   {
     "id": "top_481",
@@ -6996,8 +7432,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tonna",
-    "exampleTr": "Projede ton bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (тонна) по проекту."
+    "exampleTr": "Sabah fabrikaya dört ton ham alüminyum profil indi.",
+    "exampleRu": "Утром на завод выгрузили четыре тонны сырого алюминиевого профиля."
   },
   {
     "id": "top_482",
@@ -7009,8 +7445,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Litr",
-    "exampleTr": "Projede litre bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (литр) по проекту."
+    "exampleTr": "Temizlik bölümünde yirmi litre özel sıvı kaldı.",
+    "exampleRu": "На участке очистки осталось двадцать литров специальной жидкости."
   },
   {
     "id": "top_483",
@@ -7022,8 +7458,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kvadrat metr",
-    "exampleTr": "Projede metrekare bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (квадратный метр) по проекту."
+    "exampleTr": "Projede toplam bin iki yüz metrekare cam var.",
+    "exampleRu": "Всего в этом проекте тысяча двести квадратных метров стекла."
   },
   {
     "id": "top_484",
@@ -7035,8 +7471,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Parcha",
-    "exampleTr": "Projede adet bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (штука) по проекту."
+    "exampleTr": "Listede yazana göre seksen adet köşe takozu eksik.",
+    "exampleRu": "Согласно списку, не хватает восьмидесяти штук угловых сухарей."
   },
   {
     "id": "top_485",
@@ -7048,8 +7484,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Birlik",
-    "exampleTr": "Projede tane bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (штука) по проекту."
+    "exampleTr": "Bana masanın üstünden beş tane plastik takoz versene.",
+    "exampleRu": "Подай-ка мне со стола пять штук пластиковых прокладок."
   },
   {
     "id": "top_486",
@@ -7061,8 +7497,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Er-xotin",
-    "exampleTr": "Projede çift bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (пара) по проекту."
+    "exampleTr": "Dolaptan herkese birer çift temiz eldiven dağıttım.",
+    "exampleRu": "Я раздал из шкафа каждому по паре чистых перчаток."
   },
   {
     "id": "top_487",
@@ -7074,8 +7510,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Oʻrnatish",
-    "exampleTr": "Projede takım bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (комплект) по проекту."
+    "exampleTr": "Her pencere için bir takım aksesuar kutuya kondu.",
+    "exampleRu": "В коробку положили по одному комплекту фурнитуры для каждого окна."
   },
   {
     "id": "top_488",
@@ -7087,8 +7523,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Paket",
-    "exampleTr": "Projede paket bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (пачка) по проекту."
+    "exampleTr": "Depodan yeni açılmış bir paket vida getirdim.",
+    "exampleRu": "Я принёс со склада только что открытую пачку саморезов."
   },
   {
     "id": "top_489",
@@ -7100,8 +7536,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Quti",
-    "exampleTr": "Projede kutu bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (коробка) по проекту."
+    "exampleTr": "Siyah perçinler üst raftaki mavi kutuda duruyor.",
+    "exampleRu": "Чёрные заклёпки лежат в синей коробке на верхней полке."
   },
   {
     "id": "top_490",
@@ -7113,8 +7549,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Roll",
-    "exampleTr": "Projede rulo bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (рулон) по проекту."
+    "exampleTr": "İki rulo fitil bir haftada hemen tükendi.",
+    "exampleRu": "Два рулона уплотнителя закончились буквально за одну неделю."
   },
   {
     "id": "top_491",
@@ -7126,8 +7562,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chizma",
-    "exampleTr": "Projede çizim bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (чертеж) по проекту."
+    "exampleTr": "Çizimi okumadan profil kesmeye kesinlikle başlamayın.",
+    "exampleRu": "Ни в коем случае не начинайте резать профиль, не прочитав чертёж."
   },
   {
     "id": "top_492",
@@ -7139,8 +7575,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Reja",
-    "exampleTr": "Projede plan bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (план) по проекту."
+    "exampleTr": "Kat planına göre sağdaki kapı içeri açılıyor.",
+    "exampleRu": "По поэтажному плану правая дверь открывается внутрь."
   },
   {
     "id": "top_493",
@@ -7152,8 +7588,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Loyiha",
-    "exampleTr": "Projede proje bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (проект) по проекту."
+    "exampleTr": "Yeni otel projesi pazartesi günü resmen başlıyor.",
+    "exampleRu": "Новый проект отеля официально начинается в понедельник."
   },
   {
     "id": "top_494",
@@ -7165,8 +7601,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tugun / Tafsilot",
-    "exampleTr": "Projede detay bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (узел) по проекту."
+    "exampleTr": "Köşe birleşim detayını bilgisayarda yakından inceledik.",
+    "exampleRu": "Мы подробно изучили на компьютере узел углового соединения."
   },
   {
     "id": "top_495",
@@ -7178,8 +7614,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kesim / Qirqim",
-    "exampleTr": "Projede kesit bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (сечение) по проекту."
+    "exampleTr": "Profil kesitine bakarak doğru contayı hemen seçebilirsin.",
+    "exampleRu": "Посмотрев на сечение профиля, ты сразу сможешь выбрать нужную прокладку."
   },
   {
     "id": "top_496",
@@ -7191,8 +7627,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tashqi ko'rinish",
-    "exampleTr": "Projede görünüş bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (вид (спереди) по проекту."
+    "exampleTr": "Bu sayfadaki çizim binanın dıştan görünüşünü gösteriyor.",
+    "exampleRu": "Чертёж на этой странице показывает наружный вид здания."
   },
   {
     "id": "top_497",
@@ -7204,8 +7640,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Masshtab",
-    "exampleTr": "Projede ölçek bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (масштаб) по проекту."
+    "exampleTr": "Detay sayfası bire bir ölçekle yazdırılmış.",
+    "exampleRu": "Страница с узлом распечатана в масштабе один к одному."
   },
   {
     "id": "top_498",
@@ -7217,8 +7653,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Jinslar",
-    "exampleTr": "Projede kot bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (высотная отметка) по проекту."
+    "exampleTr": "Bütün pencereleri aynı kotta hizalamak zorundayız.",
+    "exampleRu": "Мы обязаны выровнять все окна по одной высотной отметке."
   },
   {
     "id": "top_499",
@@ -7230,8 +7666,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Aks",
-    "exampleTr": "Projede aks bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (ось здания) по проекту."
+    "exampleTr": "Düşey taşıyıcılar tam bina aksına göre yerleştirildi.",
+    "exampleRu": "Вертикальные стойки установлены строго по оси здания."
   },
   {
     "id": "top_500",
@@ -7243,8 +7679,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Roʻyxat",
-    "exampleTr": "Projede liste bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (список) по проекту."
+    "exampleTr": "Kesim listesini yazıcıdan alıp ustaya teslim ettim.",
+    "exampleRu": "Я забрал лист раскроя из принтера и передал мастеру."
   },
   {
     "id": "top_501",
@@ -7256,8 +7692,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Hisobot",
-    "exampleTr": "Projede rapor bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (отчет) по проекту."
+    "exampleTr": "Günlük üretim raporunu akşam beşte şefe veriyoruz.",
+    "exampleRu": "Ежедневный отчёт о производстве мы сдаём начальнику в пять вечера."
   },
   {
     "id": "top_502",
@@ -7269,8 +7705,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Dalolatnoma (akt)",
-    "exampleTr": "Projede tutanak bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (протокол) по проекту."
+    "exampleTr": "Kırık gelen camlar için hemen tutanak tuttuk.",
+    "exampleRu": "На пришедшие разбитыми стёкла мы сразу составили акт."
   },
   {
     "id": "top_503",
@@ -7282,8 +7718,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Shakl",
-    "exampleTr": "Projede form bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (бланк) по проекту."
+    "exampleTr": "Malzeme çıkış formunu doldurmadan depodan bir şey alma.",
+    "exampleRu": "Не бери ничего со склада, не заполнив бланк выдачи материала."
   },
   {
     "id": "top_504",
@@ -7295,8 +7731,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Sertifikat",
-    "exampleTr": "Projede sertifika bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (сертификат качества) по проекту."
+    "exampleTr": "Müşteri alüminyum profillerin kalite sertifikasını istedi.",
+    "exampleRu": "Заказчик запросил сертификат качества на алюминиевые профили."
   },
   {
     "id": "top_505",
@@ -7308,8 +7744,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yo'l varaqasi",
-    "exampleTr": "Projede i̇rsaliye bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (накладная на груз) по проекту."
+    "exampleTr": "Şoför teslimattan önce irsaliyeyi imzalatmak istiyor.",
+    "exampleRu": "Водитель просит подписать накладную перед разгрузкой."
   },
   {
     "id": "top_506",
@@ -7321,8 +7757,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Hisob-faktura",
-    "exampleTr": "Projede fatura bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (счет-фактура) по проекту."
+    "exampleTr": "Muhasebe gelen malzemenin faturasını henüz onaylamadı.",
+    "exampleRu": "Бухгалтерия ещё не утвердила счёт-фактуру за пришедший материал."
   },
   {
     "id": "top_507",
@@ -7334,8 +7770,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Buyurtma",
-    "exampleTr": "Projede sipariş bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (заказ) по проекту."
+    "exampleTr": "Özel renkli profil siparişi üç haftada geliyor.",
+    "exampleRu": "Заказ на профиль нестандартного цвета приходит за три недели."
   },
   {
     "id": "top_508",
@@ -7347,8 +7783,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Taklif",
-    "exampleTr": "Projede teklif bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (коммерческое предложение) по проекту."
+    "exampleTr": "Müşteriye yeni cam cephe teklifini dün yolladık.",
+    "exampleRu": "Вчера мы отправили клиенту коммерческое предложение по новому стеклянному фасаду."
   },
   {
     "id": "top_509",
@@ -7360,8 +7796,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Shartnoma",
-    "exampleTr": "Projede sözleşme bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (договор) по проекту."
+    "exampleTr": "İki şirket arasında montaj sözleşmesi bugün imzalandı.",
+    "exampleRu": "Договор на монтаж между двумя компаниями подписали сегодня."
   },
   {
     "id": "top_510",
@@ -7373,8 +7809,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Imzo",
-    "exampleTr": "Projede i̇mza bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (подпись) по проекту."
+    "exampleTr": "Şefin imzası olmadan sevkiyat aracı kapıdan çıkamaz.",
+    "exampleRu": "Без подписи начальника машина с отгрузкой не может выехать за ворота."
   },
   {
     "id": "top_511",
@@ -7386,8 +7822,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kosa",
-    "exampleTr": "Projede kaşe bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (печать) по проекту."
+    "exampleTr": "Teslim evrakının altına firma kaşesi basıldı.",
+    "exampleRu": "Внизу документа о сдаче поставили печать фирмы."
   },
   {
     "id": "top_512",
@@ -7399,8 +7835,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tasdiq",
-    "exampleTr": "Projede onay bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (утверждение) по проекту."
+    "exampleTr": "Renk örneğine mimardan yazılı onay bekliyoruz.",
+    "exampleRu": "Мы ждём от архитектора письменного утверждения образца цвета."
   },
   {
     "id": "top_513",
@@ -7412,8 +7848,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Rad etish",
-    "exampleTr": "Projede red bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (отказ) по проекту."
+    "exampleTr": "Çizik yüzünden bu beş parçaya red verdik.",
+    "exampleRu": "Из-за царапин мы забраковали эти пять деталей."
   },
   {
     "id": "top_514",
@@ -7425,8 +7861,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qayta ko'rib chiqish",
-    "exampleTr": "Projede revizyon bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (ревизия) по проекту."
+    "exampleTr": "Mimar son dakikada çizimde yeni revizyon yaptı.",
+    "exampleRu": "Архитектор в последнюю минуту внёс в чертёж новое изменение."
   },
   {
     "id": "top_515",
@@ -7437,7 +7873,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shaxs"
+    "uz": "Shaxs",
+    "exampleTr": "İşten sonra sokakta birçok insan yürüyor.",
+    "exampleRu": "После работы по улице идет много людей."
   },
   {
     "id": "top_516",
@@ -7448,7 +7886,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shaxs"
+    "uz": "Shaxs",
+    "exampleTr": "Bugün montaj ekibinde beş kişi çalışacak.",
+    "exampleRu": "Сегодня в монтажной бригаде будут работать пять человек."
   },
   {
     "id": "top_517",
@@ -7459,7 +7899,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Erkak"
+    "uz": "Erkak",
+    "exampleTr": "Şu uzun boylu erkek yeni vardiya şefimiz.",
+    "exampleRu": "Вон тот высокий мужчина — наш новый начальник смены."
   },
   {
     "id": "top_518",
@@ -7470,7 +7912,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ayol"
+    "uz": "Ayol",
+    "exampleTr": "Ofisteki kadın bize proje dosyasını getirdi.",
+    "exampleRu": "Женщина из офиса принесла нам папку с проектом."
   },
   {
     "id": "top_519",
@@ -7481,7 +7925,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bola"
+    "uz": "Bola",
+    "exampleTr": "Çocuklar okuldan saat üçte eve dönüyor.",
+    "exampleRu": "Дети возвращаются из школы домой в три часа."
   },
   {
     "id": "top_520",
@@ -7492,7 +7938,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Do'st / O'rtoq"
+    "uz": "Do'st / O'rtoq",
+    "exampleTr": "Akşam arkadaşlarla beraber yemek yiyeceğiz.",
+    "exampleRu": "Вечером мы поужинаем вместе с друзьями."
   },
   {
     "id": "top_521",
@@ -7503,7 +7951,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Do'stim"
+    "uz": "Do'stim",
+    "exampleTr": "Zor günde gerçek dost hemen yardıma koşar.",
+    "exampleRu": "В трудный день настоящий друг сразу придет на помощь."
   },
   {
     "id": "top_522",
@@ -7514,7 +7964,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oila"
+    "uz": "Oila",
+    "exampleTr": "Pazar günü bütün aile kahvaltıda buluştu.",
+    "exampleRu": "В воскресенье вся семья собралась за завтраком."
   },
   {
     "id": "top_523",
@@ -7525,7 +7977,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uy"
+    "uz": "Uy",
+    "exampleTr": "Saat yedide işten çıkıp eve gidiyorum.",
+    "exampleRu": "В семь часов я выхожу с работы и еду домой."
   },
   {
     "id": "top_524",
@@ -7536,7 +7990,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Manzil"
+    "uz": "Manzil",
+    "exampleTr": "Şoföre yeni şantiyenin adresini mesaj attım.",
+    "exampleRu": "Я отправил водителю адрес новой стройки в сообщении."
   },
   {
     "id": "top_525",
@@ -7547,7 +8003,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shahar"
+    "uz": "Shahar",
+    "exampleTr": "Bu şehirde sabahları trafik çok yoğun oluyor.",
+    "exampleRu": "В этом городе по утрам движение на дорогах очень плотное."
   },
   {
     "id": "top_526",
@@ -7558,7 +8016,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mamlakat"
+    "uz": "Mamlakat",
+    "exampleTr": "Yaz tatilinde kendi ülkeme dönmek istiyorum.",
+    "exampleRu": "На летние каникулы я хочу вернуться в свою страну."
   },
   {
     "id": "top_527",
@@ -7569,7 +8029,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yo'l"
+    "uz": "Yo'l",
+    "exampleTr": "Yağmur yağınca yol çok kaygan oldu.",
+    "exampleRu": "Когда пошел дождь, дорога стала очень скользкой."
   },
   {
     "id": "top_528",
@@ -7580,7 +8042,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'cha"
+    "uz": "Ko'cha",
+    "exampleTr": "Büyük cadde üstünde yeni bir market açıldı.",
+    "exampleRu": "На большом проспекте открылся новый магазин."
   },
   {
     "id": "top_529",
@@ -7591,7 +8055,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'cha"
+    "uz": "Ko'cha",
+    "exampleTr": "Bizim kaldığımız sokak geceleri çok sessiz.",
+    "exampleRu": "Улица, на которой мы живем, по ночам очень тихая."
   },
   {
     "id": "top_530",
@@ -7602,7 +8068,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mashina"
+    "uz": "Mashina",
+    "exampleTr": "Arkadaşımın arabası bugün tamircide kaldı.",
+    "exampleRu": "Машина моего друга сегодня осталась в ремонте."
   },
   {
     "id": "top_531",
@@ -7613,7 +8081,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Avtobus"
+    "uz": "Avtobus",
+    "exampleTr": "Son otobüsü kaçırmamak için durağa koştuk.",
+    "exampleRu": "Мы побежали к остановке, чтобы не опоздать на последний автобус."
   },
   {
     "id": "top_532",
@@ -7624,7 +8094,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xizmat"
+    "uz": "Xizmat",
+    "exampleTr": "Sabah servisi saat altıda duraktan geçiyor.",
+    "exampleRu": "Утренний служебный автобус проезжает остановку в шесть часов."
   },
   {
     "id": "top_533",
@@ -7635,7 +8107,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Toʻldirilgan"
+    "uz": "Toʻldirilgan",
+    "exampleTr": "Merkeze gitmek için köşeden dolmuşa bindim.",
+    "exampleRu": "Чтобы поехать в центр, я сел на маршрутку на углу."
   },
   {
     "id": "top_534",
@@ -7646,7 +8120,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Taksi"
+    "uz": "Taksi",
+    "exampleTr": "Geç kaldığımız için aceleyle bir taksi çağırdık.",
+    "exampleRu": "Поскольку мы опаздывали, торопливо вызвали такси."
   },
   {
     "id": "top_535",
@@ -7657,7 +8133,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Metro"
+    "uz": "Metro",
+    "exampleTr": "Metroyla gitmek trafikten çok daha hızlı.",
+    "exampleRu": "Ехать на метро намного быстрее, чем по пробкам."
   },
   {
     "id": "top_536",
@@ -7668,7 +8146,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Samolyot"
+    "uz": "Samolyot",
+    "exampleTr": "Uçağım yarın sabah erken saatte kalkacak.",
+    "exampleRu": "Мой самолет вылетает завтра рано утром."
   },
   {
     "id": "top_537",
@@ -7679,7 +8159,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Aeroport"
+    "uz": "Aeroport",
+    "exampleTr": "Misafiri karşılamak için havalimanına gidiyoruz.",
+    "exampleRu": "Мы едем в аэропорт, чтобы встретить гостя."
   },
   {
     "id": "top_538",
@@ -7690,7 +8172,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chipta"
+    "uz": "Chipta",
+    "exampleTr": "Uçak biletini internetten dün akşam aldım.",
+    "exampleRu": "Билет на самолет я купил вчера вечером через интернет."
   },
   {
     "id": "top_539",
@@ -7701,7 +8185,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Pasport"
+    "uz": "Pasport",
+    "exampleTr": "Yola çıkmadan önce pasaportunu çantana koy.",
+    "exampleRu": "Перед выездом положи паспорт в сумку."
   },
   {
     "id": "top_540",
@@ -7712,7 +8198,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Turar joy"
+    "uz": "Turar joy",
+    "exampleTr": "Gelecek hafta ikamet kartımı yenilemem lazım.",
+    "exampleRu": "На следующей неделе мне нужно продлить карточку ВНЖ."
   },
   {
     "id": "top_541",
@@ -7723,7 +8211,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Identifikatsiya"
+    "uz": "Identifikatsiya",
+    "exampleTr": "Güvenlik kapısında herkesten kimlik istiyorlar.",
+    "exampleRu": "На проходной у всех спрашивают удостоверение личности."
   },
   {
     "id": "top_542",
@@ -7734,7 +8224,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Pul"
+    "uz": "Pul",
+    "exampleTr": "Bu ay para biriktirmek biraz zor oldu.",
+    "exampleRu": "В этом месяце копить деньги оказалось немного трудно."
   },
   {
     "id": "top_543",
@@ -7745,7 +8237,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Lira"
+    "uz": "Lira",
+    "exampleTr": "Bu çay ve simit toplam kırk lira tuttu.",
+    "exampleRu": "Этот чай и симит вышли всего на сорок лир."
   },
   {
     "id": "top_544",
@@ -7756,7 +8250,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Dollar"
+    "uz": "Dollar",
+    "exampleTr": "Döviz bürosunda yüz dolar bozdurdum.",
+    "exampleRu": "Я разменял сто долларов в обменном пункте."
   },
   {
     "id": "top_545",
@@ -7767,7 +8263,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "evro"
+    "uz": "evro",
+    "exampleTr": "Yeni makinenin parçası iki yüz euro ediyormuş.",
+    "exampleRu": "Говорят, деталь для нового станка стоит двести евро."
   },
   {
     "id": "top_546",
@@ -7778,7 +8276,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bank"
+    "uz": "Bank",
+    "exampleTr": "Öğle arasında bankaya gidip fatura ödedim.",
+    "exampleRu": "В обеденный перерыв я сходил в банк и оплатил счет."
   },
   {
     "id": "top_547",
@@ -7789,7 +8289,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Karta"
+    "uz": "Karta",
+    "exampleTr": "Markette ödemeyi banka kartıyla yaptım.",
+    "exampleRu": "В магазине я оплатил покупку банковской картой."
   },
   {
     "id": "top_548",
@@ -7800,7 +8302,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Naqd pul"
+    "uz": "Naqd pul",
+    "exampleTr": "Cüzdanımda şu an hiç nakit kalmamış.",
+    "exampleRu": "В моем кошельке сейчас совсем не осталось наличных."
   },
   {
     "id": "top_549",
@@ -7811,7 +8315,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Maosh / Oylik"
+    "uz": "Maosh / Oylik",
+    "exampleTr": "Her ayın beşinde maaşlarımız hesaba yatıyor.",
+    "exampleRu": "Пятого числа каждого месяца нам на счет приходит зарплата."
   },
   {
     "id": "top_550",
@@ -7822,7 +8328,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oldindan"
+    "uz": "Oldindan",
+    "exampleTr": "Muhasebeden cuma günü küçük bir avans istedim.",
+    "exampleRu": "В пятницу я попросил в бухгалтерии небольшой аванс."
   },
   {
     "id": "top_551",
@@ -7833,7 +8341,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Narx"
+    "uz": "Narx",
+    "exampleTr": "Bu dükkanın fiyatları diğerlerinden daha uygun.",
+    "exampleRu": "Цены в этом магазине более выгодные, чем в других."
   },
   {
     "id": "top_552",
@@ -7844,7 +8354,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bill"
+    "uz": "Bill",
+    "exampleTr": "Garson, yemek bitti, hesabı alabilir miyiz?",
+    "exampleRu": "Официант, мы поели, можно получить счет?"
   },
   {
     "id": "top_553",
@@ -7855,7 +8367,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Telefon"
+    "uz": "Telefon",
+    "exampleTr": "Telefonumun şarjı bitti, kimseyi arayamıyorum.",
+    "exampleRu": "Мой телефон разрядился, я никому не могу позвонить."
   },
   {
     "id": "top_554",
@@ -7866,7 +8380,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Raqam"
+    "uz": "Raqam",
+    "exampleTr": "Bana ustabaşının telefon numarasını verir misin?",
+    "exampleRu": "Дашь мне номер телефона старшего мастера?"
   },
   {
     "id": "top_555",
@@ -7877,7 +8393,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xabar"
+    "uz": "Xabar",
+    "exampleTr": "Sabah sana kısa bir mesaj gönderdim, gördün mü?",
+    "exampleRu": "Утром я отправил тебе короткое сообщение, ты видел?"
   },
   {
     "id": "top_556",
@@ -7888,7 +8406,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Internet"
+    "uz": "Internet",
+    "exampleTr": "Odada internet çok yavaş, video açılmıyor.",
+    "exampleRu": "В комнате интернет очень медленный, видео не открывается."
   },
   {
     "id": "top_557",
@@ -7899,7 +8419,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kompyuter"
+    "uz": "Kompyuter",
+    "exampleTr": "Mühendis bilgisayarda yeni kesim listesini hazırlıyor.",
+    "exampleRu": "Инженер готовит на компьютере новый лист раскроя."
   },
   {
     "id": "top_558",
@@ -7910,7 +8432,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Non"
+    "uz": "Non",
+    "exampleTr": "Eve dönerken fırından iki taze ekmek al.",
+    "exampleRu": "По дороге домой купи в пекарне два свежих хлеба."
   },
   {
     "id": "top_559",
@@ -7921,7 +8445,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Suv"
+    "uz": "Suv",
+    "exampleTr": "Sıcak havada çalışırken bol su içmek gerekir.",
+    "exampleRu": "Работая в жаркую погоду, нужно пить много воды."
   },
   {
     "id": "top_560",
@@ -7932,7 +8458,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Choy"
+    "uz": "Choy",
+    "exampleTr": "Mola saatinde hep beraber sıcak çay içtik.",
+    "exampleRu": "Во время перерыва мы все вместе попили горячего чая."
   },
   {
     "id": "top_561",
@@ -7943,7 +8471,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kofe"
+    "uz": "Kofe",
+    "exampleTr": "Sabah uyanınca şekersiz bir kahve içiyorum.",
+    "exampleRu": "Проснувшись утром, я пью кофе без сахара."
   },
   {
     "id": "top_562",
@@ -7954,7 +8484,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shakar"
+    "uz": "Shakar",
+    "exampleTr": "Çayına kaç tane şeker atıyorsun?",
+    "exampleRu": "Сколько кусочков сахара ты кладешь в чай?"
   },
   {
     "id": "top_563",
@@ -7965,7 +8497,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "tuz"
+    "uz": "tuz",
+    "exampleTr": "Çorbanın tuzu biraz az olmuş, uzatır mısın?",
+    "exampleRu": "Суп получился немного недосоленным, передашь соль?"
   },
   {
     "id": "top_564",
@@ -7976,7 +8510,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Go'sht"
+    "uz": "Go'sht",
+    "exampleTr": "Öğle yemeğinde pilavın yanında et vardı.",
+    "exampleRu": "На обед к плову подавали мясо."
   },
   {
     "id": "top_565",
@@ -7987,7 +8523,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tovuq"
+    "uz": "Tovuq",
+    "exampleTr": "Akşam için fırında patatesli tavuk pişirdik.",
+    "exampleRu": "На ужин мы запекли курицу с картошкой в духовке."
   },
   {
     "id": "top_566",
@@ -7998,7 +8536,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Baliq"
+    "uz": "Baliq",
+    "exampleTr": "Pazardan taze balık alıp evde kızarttım.",
+    "exampleRu": "Я купил на рынке свежую рыбу и пожарил ее дома."
   },
   {
     "id": "top_567",
@@ -8009,7 +8549,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Pishloq"
+    "uz": "Pishloq",
+    "exampleTr": "Sabah kahvaltıda beyaz peynir ve zeytin yedik.",
+    "exampleRu": "Утром на завтрак мы ели белый сыр и оливки."
   },
   {
     "id": "top_568",
@@ -8020,7 +8562,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tuxum"
+    "uz": "Tuxum",
+    "exampleTr": "Kahvaltı için üç tane yumurta haşladım.",
+    "exampleRu": "Я сварил три яйца на завтрак."
   },
   {
     "id": "top_569",
@@ -8031,7 +8575,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Meva"
+    "uz": "Meva",
+    "exampleTr": "Yemekten sonra masaya soğuk meyve koydular.",
+    "exampleRu": "После еды на стол поставили прохладные фрукты."
   },
   {
     "id": "top_570",
@@ -8042,7 +8588,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sabzavot"
+    "uz": "Sabzavot",
+    "exampleTr": "Hafta sonu pazardan taze sebze alıyoruz.",
+    "exampleRu": "На выходных мы покупаем свежие овощи на рынке."
   },
   {
     "id": "top_571",
@@ -8053,7 +8601,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sigaret"
+    "uz": "Sigaret",
+    "exampleTr": "Atölyenin içinde sigara içmek yasaktır, dışarı çıkın.",
+    "exampleRu": "Внутри цеха курить сигареты запрещено, выходите на улицу."
   },
   {
     "id": "top_572",
@@ -8064,7 +8614,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Engilroq"
+    "uz": "Engilroq",
+    "exampleTr": "Çakmağım kayboldu, sende fazla var mı?",
+    "exampleRu": "Моя зажигалка потерялась, у тебя есть запасная?"
   },
   {
     "id": "top_573",
@@ -8075,7 +8627,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hojatxona"
+    "uz": "Hojatxona",
+    "exampleTr": "Affedersiniz, burada en yakın tuvalet nerede?",
+    "exampleRu": "Извините, где здесь ближайший туалет?"
   },
   {
     "id": "top_574",
@@ -8086,7 +8640,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Lavabo"
+    "uz": "Lavabo",
+    "exampleTr": "Ellerin yağlanmış, gidip lavaboda yıka.",
+    "exampleRu": "Твои руки в масле, сходи помой их в умывальнике."
   },
   {
     "id": "top_575",
@@ -8097,7 +8653,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sovun"
+    "uz": "Sovun",
+    "exampleTr": "Lavabonun yanında sıvı sabun bitmiş.",
+    "exampleRu": "Возле раковины закончилось жидкое мыло."
   },
   {
     "id": "top_576",
@@ -8108,7 +8666,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sochiq"
+    "uz": "Sochiq",
+    "exampleTr": "Yüzümü yıkadım ama temiz havlu bulamadım.",
+    "exampleRu": "Я умылся, но не смог найти чистое полотенце."
   },
   {
     "id": "top_577",
@@ -8119,7 +8679,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shifoxona"
+    "uz": "Shifoxona",
+    "exampleTr": "Arkadaşımız rahatsızlandı, onu hastaneye götürdük.",
+    "exampleRu": "Наш товарищ заболел, мы отвезли его в больницу."
   },
   {
     "id": "top_578",
@@ -8130,7 +8692,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shifokor / Doxtir"
+    "uz": "Shifokor / Doxtir",
+    "exampleTr": "Doktor bana üç gün dinlenmemi söyledi.",
+    "exampleRu": "Врач сказал мне отдыхать три дня."
   },
   {
     "id": "top_579",
@@ -8141,7 +8705,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Dorixona"
+    "uz": "Dorixona",
+    "exampleTr": "İş dönüşü köşedeki eczaneye uğrayacağım.",
+    "exampleRu": "После работы я загляну в аптеку на углу."
   },
   {
     "id": "top_580",
@@ -8152,7 +8718,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Dori"
+    "uz": "Dori",
+    "exampleTr": "Bu ilacı yemekten sonra günde iki kez al.",
+    "exampleRu": "Принимай это лекарство два раза в день после еды."
   },
   {
     "id": "top_581",
@@ -8163,7 +8731,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Og'riq"
+    "uz": "Og'riq",
+    "exampleTr": "Dünden beri sırtımda hafif bir ağrı var.",
+    "exampleRu": "Со вчерашнего дня у меня легкая боль в спине."
   },
   {
     "id": "top_582",
@@ -8174,7 +8744,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yara / Jarohat"
+    "uz": "Yara / Jarohat",
+    "exampleTr": "Elindeki küçük yara çabuk iyileşir, merak etme.",
+    "exampleRu": "Небольшая ранка на руке быстро заживет, не переживай."
   },
   {
     "id": "top_583",
@@ -8185,7 +8757,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kiyinish"
+    "uz": "Kiyinish",
+    "exampleTr": "Hemşire yarayı temizleyip pansuman yaptı.",
+    "exampleRu": "Медсестра обработала рану и сделала перевязку."
   },
   {
     "id": "top_584",
@@ -8196,7 +8770,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "qullob"
+    "uz": "qullob",
+    "exampleTr": "Parmağımı kağıt kesti, bir yara bandı lazım.",
+    "exampleRu": "Я порезал палец бумагой, нужен пластырь."
   },
   {
     "id": "top_585",
@@ -8207,7 +8783,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shoshilinch / Tez yordam"
+    "uz": "Shoshilinch / Tez yordam",
+    "exampleTr": "Acil bir durum olursa hemen beni ara.",
+    "exampleRu": "Если возникнет срочная ситуация, сразу позвони мне."
   },
   {
     "id": "top_586",
@@ -8218,7 +8796,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Politsiya"
+    "uz": "Politsiya",
+    "exampleTr": "Kavşakta küçük bir kaza oldu, polis geldi.",
+    "exampleRu": "На перекрестке произошла небольшая авария, приехала полиция."
   },
   {
     "id": "top_587",
@@ -8229,7 +8809,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yong'inga qarshi"
+    "uz": "Yong'inga qarshi",
+    "exampleTr": "Dumanı görünce hemen itfaiyeyi aradık.",
+    "exampleRu": "Увидев дым, мы сразу позвонили в пожарную охрану."
   },
   {
     "id": "top_588",
@@ -8240,7 +8822,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Люди и быт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tez yordam mashinasi"
+    "uz": "Tez yordam mashinasi",
+    "exampleTr": "Ambulans beş dakika içinde kapıya ulaştı.",
+    "exampleRu": "Скорая помощь подъехала к воротам через пять минут."
   },
   {
     "id": "top_589",
@@ -8251,7 +8835,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Juda yaxshi"
+    "uz": "Juda yaxshi",
+    "exampleTr": "Ölçüler tam tuttu, işin çok iyi olmuş!",
+    "exampleRu": "Размеры точно сошлись, работа сделана очень хорошо!"
   },
   {
     "id": "top_590",
@@ -8262,7 +8848,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yomon yo'q"
+    "uz": "Yomon yo'q",
+    "exampleTr": "İlk deneme için fena değil, biraz daha düzeltelim.",
+    "exampleRu": "Для первой попытки неплохо, давай еще немного поправим."
   },
   {
     "id": "top_591",
@@ -8273,7 +8861,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Modadan keyin"
+    "uz": "Modadan keyin",
+    "exampleTr": "— Bugün nasıl hissediyorsun? — Şöyle böyle, biraz yorgunum.",
+    "exampleRu": "— Как ты себя сегодня чувствуешь? — Так себе, немного устал."
   },
   {
     "id": "top_592",
@@ -8284,7 +8874,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Juda qoyil"
+    "uz": "Juda qoyil",
+    "exampleTr": "Aferin sana, bütün pencereyi tek başına taktın!",
+    "exampleRu": "Молодец, ты один установил всё окно!"
   },
   {
     "id": "top_593",
@@ -8295,7 +8887,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sekin-asta"
+    "uz": "Sekin-asta",
+    "exampleTr": "Ağır camı yavaş yavaş kaldırın, köşesi çarpmasın.",
+    "exampleRu": "Поднимайте тяжелое стекло потихоньку, чтобы не ударить угол."
   },
   {
     "id": "top_594",
@@ -8306,7 +8900,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tez"
+    "uz": "Tez",
+    "exampleTr": "Yağmur başlıyor, malzemeleri çabuk içeri taşıyalım!",
+    "exampleRu": "Начинается дождь, давайте быстро занесем материалы внутрь!"
   },
   {
     "id": "top_595",
@@ -8317,7 +8913,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hozir"
+    "uz": "Hozir",
+    "exampleTr": "Müşteri bekliyor, bu eksik parçayı hemen şimdi gönderelim.",
+    "exampleRu": "Клиент ждет, давайте отправим эту недостающую деталь прямо сейчас."
   },
   {
     "id": "top_596",
@@ -8328,7 +8926,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bir daqiqa"
+    "uz": "Bir daqiqa",
+    "exampleTr": "Bir dakika bekle, anahtarı alıp geliyorum.",
+    "exampleRu": "Подожди минутку, я возьму ключ и иду."
   },
   {
     "id": "top_597",
@@ -8339,7 +8939,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "bir soniya kuting"
+    "uz": "bir soniya kuting",
+    "exampleTr": "Bir saniye bakar mısın, burada vida eksik.",
+    "exampleRu": "Посмотри секундочку, здесь не хватает винта."
   },
   {
     "id": "top_598",
@@ -8350,7 +8952,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu muhim emas"
+    "uz": "Bu muhim emas",
+    "exampleTr": "— Çayı döktüm, kusura bakma. — Önemli değil, hemen sileriz.",
+    "exampleRu": "— Извини, я пролил чай. — Ничего страшного, сейчас вытрем."
   },
   {
     "id": "top_599",
@@ -8361,7 +8965,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Muammo yo'q / Hammasi joyida"
+    "uz": "Muammo yo'q / Hammasi joyida",
+    "exampleTr": "Makineyi kontrol ettim, artık sorun yok, çalışabilirsin.",
+    "exampleRu": "Я проверил станок, больше проблем нет, можешь работать."
   },
   {
     "id": "top_600",
@@ -8372,7 +8978,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hammasi joyida"
+    "uz": "Hammasi joyida",
+    "exampleTr": "Yarın yarım saat erken gelmem gerekse bile problem değil.",
+    "exampleRu": "Даже если завтра мне нужно будет прийти на полчаса раньше, без проблем."
   },
   {
     "id": "top_601",
@@ -8383,7 +8991,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tezroq tuzalib keting / O'tib ketsin"
+    "uz": "Tezroq tuzalib keting / O'tib ketsin",
+    "exampleTr": "Üşütmüşsün galiba, çok geçmiş olsun, sıcak çay iç.",
+    "exampleRu": "Кажется, ты простудился, скорее выздоравливай, попей горячего чая."
   },
   {
     "id": "top_602",
@@ -8394,7 +9004,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Muborak bo'lsin / Qutlug' bo'lsin"
+    "uz": "Muborak bo'lsin / Qutlug' bo'lsin",
+    "exampleTr": "Yeni araban hayırlı olsun, kazasız belasız kullan!",
+    "exampleRu": "Поздравляю с новой машиной, езди без аварий и бед!"
   },
   {
     "id": "top_603",
@@ -8405,7 +9017,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Umid qilamanki"
+    "uz": "Umid qilamanki",
+    "exampleTr": "Bu büyük projeyi inşallah cuma gününe kadar bitiririz.",
+    "exampleRu": "Надеюсь, мы закончим этот большой проект до пятницы."
   },
   {
     "id": "top_604",
@@ -8416,7 +9030,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Masallah"
+    "uz": "Masallah",
+    "exampleTr": "Maşallah, yeni gelen usta işi çok çabuk kaptı.",
+    "exampleRu": "Отлично, новый мастер очень быстро освоил работу."
   },
   {
     "id": "top_605",
@@ -8427,7 +9043,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "sog 'bo'ling"
+    "uz": "sog 'bo'ling",
+    "exampleTr": "Bana yardım ettiğin için Allah razı olsun, işim bitti.",
+    "exampleRu": "Большое спасибо, что помог мне, моя работа закончилась."
   },
   {
     "id": "top_606",
@@ -8438,7 +9056,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "ko'raylikchi"
+    "uz": "ko'raylikchi",
+    "exampleTr": "Ölçüler doğru mu, şerit metreyle bir bakalım.",
+    "exampleRu": "Давай посмотрим рулеткой, верны ли размеры."
   },
   {
     "id": "top_607",
@@ -8449,7 +9069,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "qani ketdik"
+    "uz": "qani ketdik",
+    "exampleTr": "Saat on iki oldu, haydi yemekhaneye gidelim.",
+    "exampleRu": "Уже двенадцать часов, пойдем в столовую."
   },
   {
     "id": "top_608",
@@ -8460,7 +9082,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "bu yerga kel"
+    "uz": "bu yerga kel",
+    "exampleTr": "Ahmet, gel buraya, şu camı birlikte tutalım.",
+    "exampleRu": "Ахмет, иди сюда, подержим это стекло вместе."
   },
   {
     "id": "top_609",
@@ -8471,7 +9095,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "u erga boring"
+    "uz": "u erga boring",
+    "exampleTr": "Ben burada bekliyorum, sen git oraya ve ışığı yak.",
+    "exampleRu": "Я жду здесь, а ты иди туда и включи свет."
   },
   {
     "id": "top_610",
@@ -8482,7 +9108,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "uni tinch qo'ying"
+    "uz": "uni tinch qo'ying",
+    "exampleTr": "Bırak onu, o eski profil artık kullanılmıyor.",
+    "exampleRu": "Оставь это, тот старый профиль больше не используется."
   },
   {
     "id": "top_611",
@@ -8493,7 +9121,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "teging"
+    "uz": "teging",
+    "exampleTr": "Silikon henüz kurumadı, elinle sakın dokunma!",
+    "exampleRu": "Силикон еще не высох, ни в коем случае не трогай рукой!"
   },
   {
     "id": "top_612",
@@ -8504,7 +9134,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ehtiyot bo'ling"
+    "uz": "Ehtiyot bo'ling",
+    "exampleTr": "Yerde kablo var, geçerken ayağına dikkat et!",
+    "exampleRu": "На полу кабель, будь осторожен, когда проходишь!"
   },
   {
     "id": "top_613",
@@ -8515,7 +9147,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shoshmang"
+    "uz": "Shoshmang",
+    "exampleTr": "Camı takarken acele etme, hata olmasın.",
+    "exampleRu": "Не спеши, когда ставишь стекло, чтобы не было ошибки."
   },
   {
     "id": "top_614",
@@ -8526,7 +9160,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tinchlaning"
+    "uz": "Tinchlaning",
+    "exampleTr": "Sakin ol, her şeyi baştan anlat da çözelim.",
+    "exampleRu": "Успокойся, расскажи всё с начала, и мы решим."
   },
   {
     "id": "top_615",
@@ -8537,7 +9173,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qo'rqmang"
+    "uz": "Qo'rqmang",
+    "exampleTr": "Korkma, bu iskele çok sağlam ve emniyetli.",
+    "exampleRu": "Не бойся, эти леса очень прочные и безопасные."
   },
   {
     "id": "top_616",
@@ -8548,7 +9186,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Davom eting"
+    "uz": "Davom eting",
+    "exampleTr": "Çok güzel kesiyorsun, aynı hızla devam et.",
+    "exampleRu": "Ты отлично режешь, продолжай с той же скоростью."
   },
   {
     "id": "top_617",
@@ -8559,7 +9199,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "bir daqiqa kuting"
+    "uz": "bir daqiqa kuting",
+    "exampleTr": "Dur bir, matkabı açmadan önce çizgiyi kontrol edelim.",
+    "exampleRu": "Погоди, давай проверим линию, прежде чем включать дрель."
   },
   {
     "id": "top_618",
@@ -8570,7 +9212,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tugallandi"
+    "uz": "Tugallandi",
+    "exampleTr": "Son pencerenin montajı da nihayet bitti!",
+    "exampleRu": "Монтаж последнего окна тоже наконец-то закончен!"
   },
   {
     "id": "top_619",
@@ -8581,7 +9225,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "sodir bo'ldi"
+    "uz": "sodir bo'ldi",
+    "exampleTr": "Tamam, oldu, yarın sabah sekizde görüşürüz.",
+    "exampleRu": "Хорошо, договорились, увидимся завтра в восемь утра."
   },
   {
     "id": "top_620",
@@ -8592,7 +9238,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu sodir bo'lmadi"
+    "uz": "Bu sodir bo'lmadi",
+    "exampleTr": "Denedik ama kapak tam kapanmadı, yine olmadı.",
+    "exampleRu": "Мы попробовали, но крышка не закрылась до конца, опять не вышло."
   },
   {
     "id": "top_621",
@@ -8603,7 +9251,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "tushundim"
+    "uz": "tushundim",
+    "exampleTr": "Şimdi ne demek istediğini çok iyi anladım.",
+    "exampleRu": "Теперь я очень хорошо понял, что ты имел в виду."
   },
   {
     "id": "top_622",
@@ -8614,7 +9264,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men tushunmayapman"
+    "uz": "Men tushunmayapman",
+    "exampleTr": "Gürültüden sesini duymadım, kusura bakma, anlamadım.",
+    "exampleRu": "Из-за шума я не расслышал твой голос, извини, не понял."
   },
   {
     "id": "top_623",
@@ -8625,7 +9277,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "bilaman"
+    "uz": "bilaman",
+    "exampleTr": "Bu profilin kodunu ezberden biliyorum.",
+    "exampleRu": "Я знаю артикул этого профиля наизусть."
   },
   {
     "id": "top_624",
@@ -8636,7 +9290,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bilmadim"
+    "uz": "Bilmadim",
+    "exampleTr": "Şefin bugün saat kaçta geleceğini bilmiyorum.",
+    "exampleRu": "Я не знаю, во сколько сегодня придет начальник."
   },
   {
     "id": "top_625",
@@ -8647,7 +9303,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men xohlardimki"
+    "uz": "Men xohlardimki",
+    "exampleTr": "Öğleden sonra yeni bir çift eldiven almak istiyorum.",
+    "exampleRu": "После обеда я хочу взять новую пару перчаток."
   },
   {
     "id": "top_626",
@@ -8658,7 +9316,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men xohlamayman"
+    "uz": "Men xohlamayman",
+    "exampleTr": "Bugün çok yoruldum, fazla mesaiye kalmak istemiyorum.",
+    "exampleRu": "Я сегодня сильно устал, не хочу оставаться на переработку."
   },
   {
     "id": "top_627",
@@ -8669,7 +9329,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Majburiy"
+    "uz": "Majburiy",
+    "exampleTr": "Kapının kapanması için alt tarafa yeni bir conta lazım.",
+    "exampleRu": "Чтобы дверь закрывалась, вниз нужен новый уплотнитель."
   },
   {
     "id": "top_628",
@@ -8680,7 +9342,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hech qanday ehtiyoj yo'q"
+    "uz": "Hech qanday ehtiyoj yo'q",
+    "exampleTr": "Tekrar ölçmeye gerek yok, kağıtta hepsi yazıyor.",
+    "exampleRu": "Перемерять не нужно, на бумаге всё написано."
   },
   {
     "id": "top_629",
@@ -8691,7 +9355,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "ehtiyoj bor"
+    "uz": "ehtiyoj bor",
+    "exampleTr": "Bu camı taşırken iki kişinin tutmasına gerek var.",
+    "exampleRu": "При переноске этого стекла нужно, чтобы его держали двое."
   },
   {
     "id": "top_630",
@@ -8702,7 +9368,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu to'g'ri"
+    "uz": "Bu to'g'ri",
+    "exampleTr": "Evet, söylediğin ölçü listeyle aynı, doğrudur.",
+    "exampleRu": "Да, размер, который ты назвал, совпадает со списком, верно."
   },
   {
     "id": "top_631",
@@ -8713,7 +9381,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu noto'g'ri"
+    "uz": "Bu noto'g'ri",
+    "exampleTr": "Bu hesap yanlıştır, toplam sayı iki kat fazla çıktı.",
+    "exampleRu": "Этот расчет ошибочный, итоговое число вышло в два раза больше."
   },
   {
     "id": "top_632",
@@ -8724,7 +9394,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Siz haqsiz"
+    "uz": "Siz haqsiz",
+    "exampleTr": "Evet, bu konuda tamamen haklısın, önce temizleyelim.",
+    "exampleRu": "Да, в этом вопросе ты полностью прав, давай сначала почистим."
   },
   {
     "id": "top_633",
@@ -8735,7 +9407,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Farqi yo'q / Baribir"
+    "uz": "Farqi yo'q / Baribir",
+    "exampleTr": "— Çay mı içersin kahve mi? — Bana fark etmez.",
+    "exampleRu": "— Ты будешь чай или кофе? — Мне без разницы."
   },
   {
     "id": "top_634",
@@ -8746,7 +9420,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nima bo'ldi?"
+    "uz": "Nima bo'ldi?",
+    "exampleTr": "Neden makine durdu, bir arıza mı var, ne oldu?",
+    "exampleRu": "Почему остановился станок, какая-то поломка, что случилось?"
   },
   {
     "id": "top_635",
@@ -8757,7 +9433,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nima gaplar?"
+    "uz": "Nima gaplar?",
+    "exampleTr": "Beni çağırdın, ne var, acil bir iş mi çıktı?",
+    "exampleRu": "Ты меня звал, что такое, появилось срочное дело?"
   },
   {
     "id": "top_636",
@@ -8768,7 +9446,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ishlar yaxshimi?"
+    "uz": "Ishlar yaxshimi?",
+    "exampleTr": "Günaydın Ali, işler bugün nasıl gidiyor?",
+    "exampleRu": "Доброе утро, Али, как сегодня идут дела?"
   },
   {
     "id": "top_637",
@@ -8779,7 +9459,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hammasi yaxshi"
+    "uz": "Hammasi yaxshi",
+    "exampleTr": "Merak etme, teslimat zamanında yapıldı, her şey yolunda.",
+    "exampleRu": "Не волнуйся, доставка выполнена вовремя, всё в порядке."
   },
   {
     "id": "top_638",
@@ -8790,7 +9472,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'rishguncha"
+    "uz": "Ko'rishguncha",
+    "exampleTr": "Ben çıkıyorum arkadaşlar, yarın sabah görüşmek üzere!",
+    "exampleRu": "Я выхожу, ребята, до встречи завтра утром!"
   },
   {
     "id": "top_639",
@@ -8801,7 +9485,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные и наречия",
     "isSchueco": false,
     "learned": false,
-    "uz": "Aniq"
+    "uz": "Aniq",
+    "exampleTr": "Bir sorun varsa lütfen açıkça söyleyin.",
+    "exampleRu": "Если есть проблема, пожалуйста, скажите открыто."
   },
   {
     "id": "top_640",
@@ -8812,7 +9498,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Og'irligi"
+    "uz": "Og'irligi",
+    "exampleTr": "Bu paketin ağırlığı neredeyse elli kilo geliyor.",
+    "exampleRu": "Вес этой упаковки составляет почти пятьдесят килограммов."
   },
   {
     "id": "top_641",
@@ -8823,7 +9511,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Aql"
+    "uz": "Aql",
+    "exampleTr": "Bu zor işi ancak akılla çözebiliriz, acele etmeyelim.",
+    "exampleRu": "Эту сложную задачу мы можем решить только умом, давайте не спешить."
   },
   {
     "id": "top_642",
@@ -8834,7 +9524,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hudud"
+    "uz": "Hudud",
+    "exampleTr": "Depoda paletleri koymak için geniş bir alan ayırdık.",
+    "exampleRu": "На складе мы выделили большую площадь для размещения паллет."
   },
   {
     "id": "top_643",
@@ -8845,7 +9537,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Maqsad"
+    "uz": "Maqsad",
+    "exampleTr": "Bu toplantıdaki temel amaç iş planını konuşmak.",
+    "exampleRu": "Главная цель этого совещания — обсудить план работы."
   },
   {
     "id": "top_644",
@@ -8856,7 +9550,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Lahza"
+    "uz": "Lahza",
+    "exampleTr": "Her an yağmur yağabilir, camları örtelim.",
+    "exampleRu": "Дождь может пойти в любой момент, давайте накроем стекла."
   },
   {
     "id": "top_645",
@@ -8867,7 +9563,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Avtomobil"
+    "uz": "Avtomobil",
+    "exampleTr": "Fabrika kapısının önünde iki büyük yük aracı bekliyor.",
+    "exampleRu": "Перед воротами завода ждут два больших грузовых автомобиля."
   },
   {
     "id": "top_646",
@@ -8878,7 +9576,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Orqaga"
+    "uz": "Orqaga",
+    "exampleTr": "Kamyonun arka kapağını açıp kutuları indirdik.",
+    "exampleRu": "Мы открыли задний борт грузовика и выгрузили коробки."
   },
   {
     "id": "top_647",
@@ -8889,7 +9589,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Old"
+    "uz": "Old",
+    "exampleTr": "Bina ön cephesindeki montaj yarın başlıyor.",
+    "exampleRu": "Монтаж на переднем фасаде здания начинается завтра."
   },
   {
     "id": "top_648",
@@ -8900,7 +9602,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yuqori"
+    "uz": "Yuqori",
+    "exampleTr": "Anahtarı üst raftaki mavi kutunun içine koydum.",
+    "exampleRu": "Я положил ключ в синюю коробку на верхней полке."
   },
   {
     "id": "top_649",
@@ -8911,7 +9615,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Pastroq"
+    "uz": "Pastroq",
+    "exampleTr": "Pencerenin alt kenarından biraz soğuk hava geliyor.",
+    "exampleRu": "Из-под нижнего края окна немного тянет холодным воздухом."
   },
   {
     "id": "top_650",
@@ -8922,7 +9628,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ichish"
+    "uz": "Ichish",
+    "exampleTr": "Kışın evin iç sıcaklığı yirmi iki derece olmalı.",
+    "exampleRu": "Зимой внутренняя температура дома должна быть двадцать два градуса."
   },
   {
     "id": "top_651",
@@ -8933,7 +9641,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tashqi"
+    "uz": "Tashqi",
+    "exampleTr": "Kapının dış yüzeyi çizilmesin diye filmle kaplı.",
+    "exampleRu": "Внешняя поверхность двери покрыта пленкой, чтобы не поцарапалась."
   },
   {
     "id": "top_652",
@@ -8944,7 +9654,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'g'ri"
+    "uz": "To'g'ri",
+    "exampleTr": "Koridordan yürüyüp sağ kapıdan içeri gir.",
+    "exampleRu": "Пройди по коридору и войди в правую дверь."
   },
   {
     "id": "top_653",
@@ -8955,7 +9667,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chapga"
+    "uz": "Chapga",
+    "exampleTr": "Sol elindeki eldiven yırtılmış, hemen değiştir.",
+    "exampleRu": "Перчатка на левой руке порвалась, сразу замени ее."
   },
   {
     "id": "top_654",
@@ -8966,7 +9680,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'rta"
+    "uz": "O'rta",
+    "exampleTr": "Masanın orta kısmına ağır bir şey koymayın.",
+    "exampleRu": "Не кладите ничего тяжелого на среднюю часть стола."
   },
   {
     "id": "top_655",
@@ -8977,7 +9693,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chet"
+    "uz": "Chet",
+    "exampleTr": "Camın kenarı çok keskin, tutarken dikkat et.",
+    "exampleRu": "Край стекла очень острый, будь осторожен, когда держишь."
   },
   {
     "id": "top_656",
@@ -8988,7 +9706,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Положение в пространстве",
     "isSchueco": false,
     "learned": false,
-    "uz": "Burchak"
+    "uz": "Burchak",
+    "exampleTr": "Alüminyum çerçevenin köşesini doksan derece birleştirdik.",
+    "exampleRu": "Мы соединили угол алюминиевой рамы под девяносто градусов."
   },
   {
     "id": "top_657",
@@ -9025,7 +9745,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ulanish"
+    "uz": "Ulanish",
+    "exampleTr": "İki profil arasındaki köşe bağlantısı çok sağlam oldu.",
+    "exampleRu": "Угловое соединение между двумя профилями получилось очень прочным."
   },
   {
     "id": "top_660",
@@ -9036,7 +9758,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oddiy"
+    "uz": "Oddiy",
+    "exampleTr": "Bu kapı kilidini değiştirmek aslında çok basit.",
+    "exampleRu": "Поменять этот дверной замок на самом деле очень просто."
   },
   {
     "id": "top_661",
@@ -9047,7 +9771,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Zulm"
+    "uz": "Zulm",
+    "exampleTr": "Rüzgar yüzünden camda güçlü bir baskı oluşuyor.",
+    "exampleRu": "Из-за ветра на стекло создается сильное давление."
   },
   {
     "id": "top_662",
@@ -9058,7 +9784,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Muvaffaqiyat"
+    "uz": "Muvaffaqiyat",
+    "exampleTr": "İyi bir ekip çalışması her zaman başarı getirir.",
+    "exampleRu": "Хорошая командная работа всегда приносит успех."
   },
   {
     "id": "top_663",
@@ -9069,7 +9797,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Muvaffaqiyatli"
+    "uz": "Muvaffaqiyatli",
+    "exampleTr": "Geçen haftaki test çok başarılı geçti.",
+    "exampleRu": "Тест на прошлой неделе прошел очень успешно."
   },
   {
     "id": "top_664",
@@ -9080,7 +9810,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hudud"
+    "uz": "Hudud",
+    "exampleTr": "Çalışma bölgesine baretsiz girmek yasak.",
+    "exampleRu": "Входить в рабочую зону без каски запрещено."
   },
   {
     "id": "top_665",
@@ -9104,7 +9836,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Javob bering"
+    "uz": "Javob bering",
+    "exampleTr": "Müşteriye teklif hakkında bugün cevap yazacağız.",
+    "exampleRu": "Мы напишем клиенту ответ по предложению сегодня."
   },
   {
     "id": "top_667",
@@ -9115,7 +9849,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Jiddiy"
+    "uz": "Jiddiy",
+    "exampleTr": "Makineden garip ses geliyor, ciddi bir arıza olabilir.",
+    "exampleRu": "Из станка идет странный звук, может быть серьезная поломка."
   },
   {
     "id": "top_668",
@@ -9126,7 +9862,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Harakat"
+    "uz": "Harakat",
+    "exampleTr": "Bütün gün büyük bir çaba gösterip işi tamamladık.",
+    "exampleRu": "Мы весь день прилагали большие усилия и завершили работу."
   },
   {
     "id": "top_669",
@@ -9137,7 +9875,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Saralash"
+    "uz": "Saralash",
+    "exampleTr": "Depoda beş farklı çeşit vida bulunuyor.",
+    "exampleRu": "На складе имеется пять разных видов винтов."
   },
   {
     "id": "top_670",
@@ -9148,7 +9888,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Atrof-muhit"
+    "uz": "Atrof-muhit",
+    "exampleTr": "İş bitince çevreyi temizleyip çöpleri topladık.",
+    "exampleRu": "После окончания работы мы убрали территорию вокруг и собрали мусор."
   },
   {
     "id": "top_671",
@@ -9159,7 +9901,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yechim"
+    "uz": "Yechim",
+    "exampleTr": "Bu sorun için ustayla pratik bir çözüm bulduk.",
+    "exampleRu": "Для этой проблемы мы нашли с мастером практичное решение."
   },
   {
     "id": "top_672",
@@ -9170,7 +9914,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qiymat"
+    "uz": "Qiymat",
+    "exampleTr": "Ekrandaki ısı değeri normale döndü.",
+    "exampleRu": "Значение температуры на экране вернулось к норме."
   },
   {
     "id": "top_673",
@@ -9181,7 +9927,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qimmatli"
+    "uz": "Qimmatli",
+    "exampleTr": "Senin tecrüben bizim ekibimiz için çok değerli.",
+    "exampleRu": "Твой опыт очень ценен для нашей команды."
   },
   {
     "id": "top_674",
@@ -9192,7 +9940,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qo'llab-quvvatlash"
+    "uz": "Qo'llab-quvvatlash",
+    "exampleTr": "Uzun profili keserken altına bir destek koy.",
+    "exampleRu": "Когда режешь длинный профиль, поставь под него опору."
   },
   {
     "id": "top_675",
@@ -9203,7 +9953,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ehtiyotkorlik bilan"
+    "uz": "Ehtiyotkorlik bilan",
+    "exampleTr": "Cam taşırken lütfen çok dikkatli olun.",
+    "exampleRu": "Пожалуйста, будьте очень осторожны при переноске стекла."
   },
   {
     "id": "top_676",
@@ -9214,7 +9966,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ehtiyotsiz"
+    "uz": "Ehtiyotsiz",
+    "exampleTr": "Dikkatsiz çalışma yüzünden ölçüyü yanlış kestik.",
+    "exampleRu": "Из-за невнимательной работы мы неправильно отрезали размер."
   },
   {
     "id": "top_677",
@@ -9225,7 +9979,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qarshilik"
+    "uz": "Qarshilik",
+    "exampleTr": "Alüminyumun paslanmaya karşı direnci yüksektir.",
+    "exampleRu": "Стойкость алюминия к ржавчине высокая."
   },
   {
     "id": "top_678",
@@ -9236,7 +9992,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tabiat"
+    "uz": "Tabiat",
+    "exampleTr": "Hafta sonu doğada yürüyüş yapmak bana iyi geliyor.",
+    "exampleRu": "Прогулка на природе в выходные идет мне на пользу."
   },
   {
     "id": "top_679",
@@ -9247,7 +10005,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tabiiy"
+    "uz": "Tabiiy",
+    "exampleTr": "Büyük pencereler odaya bol doğal ışık verir.",
+    "exampleRu": "Большие окна дают комнате много естественного света."
   },
   {
     "id": "top_680",
@@ -9258,7 +10018,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Vaziyat"
+    "uz": "Vaziyat",
+    "exampleTr": "Şu anki durum iyi, malzeme öğleden sonra geliyor.",
+    "exampleRu": "Текущая ситуация хорошая, материал приезжает после обеда."
   },
   {
     "id": "top_681",
@@ -9269,7 +10031,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Buyurtma"
+    "uz": "Buyurtma",
+    "exampleTr": "Tezgahın üstünde her zaman temizlik ve düzen olmalı.",
+    "exampleRu": "На верстаке всегда должны быть чистота и порядок."
   },
   {
     "id": "top_682",
@@ -9280,7 +10044,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tashkil etilgan"
+    "uz": "Tashkil etilgan",
+    "exampleTr": "Aletleri her akşam düzenli olarak yerine koyuyoruz.",
+    "exampleRu": "Каждый вечер мы аккуратно раскладываем инструменты по местам."
   },
   {
     "id": "top_683",
@@ -9304,7 +10070,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'siq"
+    "uz": "To'siq",
+    "exampleTr": "Kapı önündeki palet girişe engel oluyor.",
+    "exampleRu": "Паллета перед дверью создает препятствие для входа."
   },
   {
     "id": "top_685",
@@ -9328,7 +10096,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Moslashuvchan"
+    "uz": "Moslashuvchan",
+    "exampleTr": "Bu siyah lastik conta soğukta bile esnek kalıyor.",
+    "exampleRu": "Этот черный резиновый уплотнитель остается эластичным даже на холоде."
   },
   {
     "id": "top_687",
@@ -9339,7 +10109,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Effekt"
+    "uz": "Effekt",
+    "exampleTr": "Güneşin profil rengine hiçbir kötü etkisi olmaz.",
+    "exampleRu": "Солнце не оказывает никакого плохого влияния на цвет профиля."
   },
   {
     "id": "top_688",
@@ -9350,7 +10122,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Fikr"
+    "uz": "Fikr",
+    "exampleTr": "İşi hızlandırmak için aklıma güzel bir fikir geldi.",
+    "exampleRu": "Мне в голову пришла хорошая идея, как ускорить работу."
   },
   {
     "id": "top_689",
@@ -9374,7 +10148,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kerak"
+    "uz": "Kerak",
+    "exampleTr": "Yeni sipariş için ekstra personel gereksinimi doğdu.",
+    "exampleRu": "Для нового заказа возникла потребность в дополнительном персонале."
   },
   {
     "id": "top_691",
@@ -9385,7 +10161,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Vazifa"
+    "uz": "Vazifa",
+    "exampleTr": "Bugünkü görevim bütün camları kontrol etmek.",
+    "exampleRu": "Моя сегодняшняя задача — проверить все стекла."
   },
   {
     "id": "top_692",
@@ -9396,7 +10174,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kuzatish"
+    "uz": "Kuzatish",
+    "exampleTr": "Gün boyu yaptığımız gözlem sonucunda hatayı gördük.",
+    "exampleRu": "В результате наблюдения, которое мы вели весь день, мы увидели ошибку."
   },
   {
     "id": "top_693",
@@ -9407,7 +10187,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kuch"
+    "uz": "Kuch",
+    "exampleTr": "Motorun gücü büyük testereyi rahatça çeviriyor.",
+    "exampleRu": "Мощность двигателя легко вращает большую пилу."
   },
   {
     "id": "top_694",
@@ -9418,7 +10200,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kuchli"
+    "uz": "Kuchli",
+    "exampleTr": "Delik açmak için daha güçlü bir matkap getir.",
+    "exampleRu": "Принеси более мощную дрель, чтобы просверлить отверстие."
   },
   {
     "id": "top_695",
@@ -9429,7 +10213,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Zaif"
+    "uz": "Zaif",
+    "exampleTr": "Bu küçük pil çok güçsüz, makineyi çalıştırmıyor.",
+    "exampleRu": "Эта маленькая батарейка слишком слабая, она не запускает прибор."
   },
   {
     "id": "top_696",
@@ -9440,7 +10226,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ishonch"
+    "uz": "Ishonch",
+    "exampleTr": "Ekip içinde birbirimize olan güven çok önemlidir.",
+    "exampleRu": "Внутри коллектива доверие друг к другу очень важно."
   },
   {
     "id": "top_697",
@@ -9451,7 +10239,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yangiliklar"
+    "uz": "Yangiliklar",
+    "exampleTr": "Müdürden iyi haber geldi, hafta sonu tatil yapıyoruz.",
+    "exampleRu": "От директора пришла хорошая новость: на выходных мы отдыхаем."
   },
   {
     "id": "top_698",
@@ -9462,7 +10252,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Harakat"
+    "uz": "Harakat",
+    "exampleTr": "Kapı kolu rahat hareket etmiyor, içine biraz yağ sür.",
+    "exampleRu": "Дверная ручка не двигается свободно, капни внутрь немного масла."
   },
   {
     "id": "top_699",
@@ -9473,7 +10265,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Maqsad"
+    "uz": "Maqsad",
+    "exampleTr": "Bu haftaki hedefimiz kırk pencereyi hazır etmek.",
+    "exampleRu": "Наша цель на эту неделю — подготовить сорок окон."
   },
   {
     "id": "top_700",
@@ -9484,7 +10278,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tezlik"
+    "uz": "Tezlik",
+    "exampleTr": "Kesim hızını biraz düşürürsen kenar daha temiz çıkar.",
+    "exampleRu": "Если немного снизишь скорость реза, край выйдет чище."
   },
   {
     "id": "top_701",
@@ -9495,7 +10291,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xizmat"
+    "uz": "Xizmat",
+    "exampleTr": "Firmamız müşterilere hızlı montaj hizmeti veriyor.",
+    "exampleRu": "Наша фирма оказывает клиентам услугу быстрого монтажа."
   },
   {
     "id": "top_702",
@@ -9506,7 +10304,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Taraqqiyot"
+    "uz": "Taraqqiyot",
+    "exampleTr": "Bugün cephe montajında büyük bir ilerleme kaydettik.",
+    "exampleRu": "Сегодня мы добились большого прогресса в монтаже фасада."
   },
   {
     "id": "top_703",
@@ -9517,7 +10317,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Aloqa"
+    "uz": "Aloqa",
+    "exampleTr": "Şantiye ile atölye arasında sürekli iletişim kuruyoruz.",
+    "exampleRu": "Мы поддерживаем постоянную связь между стройкой и цехом."
   },
   {
     "id": "top_704",
@@ -9528,7 +10330,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Prinsip"
+    "uz": "Prinsip",
+    "exampleTr": "Kalite ve güvenlik bizim en temel ilkemizdir.",
+    "exampleRu": "Качество и безопасность — наш главный принцип."
   },
   {
     "id": "top_705",
@@ -9539,7 +10343,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Jarayon"
+    "uz": "Jarayon",
+    "exampleTr": "Boya öncesi temizleme işlemi yirmi dakika sürüyor.",
+    "exampleRu": "Процесс очистки перед покраской длится двадцать минут."
   },
   {
     "id": "top_706",
@@ -9550,7 +10356,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Biznes"
+    "uz": "Biznes",
+    "exampleTr": "Bu yeni işletme günde yüzlerce pencere üretiyor.",
+    "exampleRu": "Это новое предприятие производит сотни окон в день."
   },
   {
     "id": "top_707",
@@ -9562,8 +10370,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "sifat nazorati",
-    "exampleTr": "Şantiyede kalite kontrol kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: контроль качества."
+    "exampleTr": "Bitmiş doğramalar doğrudan kalite kontrol masasına geçiyor.",
+    "exampleRu": "Готовые конструкции сразу переходят на стол контроля качества."
   },
   {
     "id": "top_708",
@@ -9574,7 +10382,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Imkoniyat"
+    "uz": "Imkoniyat",
+    "exampleTr": "Deponun kapasitesi doldu, yeni raflar kuracağız.",
+    "exampleRu": "Вместимость склада заполнена, мы установим новые стеллажи."
   },
   {
     "id": "top_709",
@@ -9585,7 +10395,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yo'qotish"
+    "uz": "Yo'qotish",
+    "exampleTr": "Taşıma sırasında iki cam kırıldı, bu büyük bir kayıp.",
+    "exampleRu": "При перевозке разбились два стекла, это большая потеря."
   },
   {
     "id": "top_710",
@@ -9596,7 +10408,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Manba"
+    "uz": "Manba",
+    "exampleTr": "Demir profildeki kaynak yerini taşlama makinesiyle düzelt.",
+    "exampleRu": "Зачисти место сварки на стальном профиле шлифовальной машинкой."
   },
   {
     "id": "top_711",
@@ -9607,7 +10421,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Aniq"
+    "uz": "Aniq",
+    "exampleTr": "Teslimat için kesin bir tarih henüz belli değil.",
+    "exampleRu": "Точная дата доставки пока не определена."
   },
   {
     "id": "top_712",
@@ -9618,7 +10434,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные и наречия",
     "isSchueco": false,
     "learned": false,
-    "uz": "Albatta"
+    "uz": "Albatta",
+    "exampleTr": "Koruyucu gözlük olmadan bu makinede kesinlikle çalışmayın!",
+    "exampleRu": "Ни в коем случае не работайте на этом станке без защитных очков!"
   },
   {
     "id": "top_713",
@@ -9629,7 +10447,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qiymat"
+    "uz": "Qiymat",
+    "exampleTr": "Elindeki iyi aletin kıymetini bil, onu temiz tut.",
+    "exampleRu": "Цени хороший инструмент, который у тебя в руках, держи его в чистоте."
   },
   {
     "id": "top_714",
@@ -9640,7 +10460,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mavzu"
+    "uz": "Mavzu",
+    "exampleTr": "Müdürle bu konuyu öğleden sonra konuşacağız.",
+    "exampleRu": "Мы обсудим этот вопрос с директором после обеда."
   },
   {
     "id": "top_715",
@@ -9651,7 +10473,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Vaziyat"
+    "uz": "Vaziyat",
+    "exampleTr": "Yeni iş için çalışma koşulları çok iyi.",
+    "exampleRu": "Условия труда для новой работы очень хорошие."
   },
   {
     "id": "top_716",
@@ -9662,7 +10486,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qoida"
+    "uz": "Qoida",
+    "exampleTr": "Atölyede güvenlik kurallarına herkes uymalı.",
+    "exampleRu": "В цеху все должны соблюдать правила безопасности."
   },
   {
     "id": "top_717",
@@ -9673,7 +10499,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Maqola"
+    "uz": "Maqola",
+    "exampleTr": "Listedeki üçüncü maddeyi dikkatle okudum.",
+    "exampleRu": "Я внимательно прочитал третий пункт в списке."
   },
   {
     "id": "top_718",
@@ -9685,8 +10513,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Material",
-    "exampleTr": "Şantiyede malzeme kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: материал."
+    "exampleTr": "Gerekli tüm malzemeyi sabah arabaya yükledik.",
+    "exampleRu": "Все необходимые материалы мы утром загрузили в машину."
   },
   {
     "id": "top_719",
@@ -9697,7 +10525,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Masofa"
+    "uz": "Masofa",
+    "exampleTr": "İki pencere arasındaki mesafeyi metreyle ölçtük.",
+    "exampleRu": "Мы измерили рулеткой расстояние между двумя окнами."
   },
   {
     "id": "top_720",
@@ -9708,7 +10538,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "usuli"
+    "uz": "usuli",
+    "exampleTr": "Eski metot yavaş olduğu için yenisini deniyoruz.",
+    "exampleRu": "Поскольку старый метод медленный, мы пробуем новый."
   },
   {
     "id": "top_721",
@@ -9719,7 +10551,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Miqdori"
+    "uz": "Miqdori",
+    "exampleTr": "Depoya gelen profil miktarı listedekiyle aynı mı?",
+    "exampleRu": "Количество профилей, поступивших на склад, совпадает со списком?"
   },
   {
     "id": "top_722",
@@ -9730,7 +10564,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Malaka"
+    "uz": "Malaka",
+    "exampleTr": "Bu camın ısı yalıtım niteliği gerçekten yüksek.",
+    "exampleRu": "Теплоизоляционные свойства этого стекла действительно высокие."
   },
   {
     "id": "top_723",
@@ -9741,7 +10577,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nuqta"
+    "uz": "Nuqta",
+    "exampleTr": "Duvara işaret koyduğumuz noktadan delik açalım.",
+    "exampleRu": "Давай просверлим отверстие в той точке, где мы сделали отметку на стене."
   },
   {
     "id": "top_724",
@@ -9752,7 +10590,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "imkoniyat"
+    "uz": "imkoniyat",
+    "exampleTr": "Burada hem çalışmak hem dil öğrenmek için olanak var.",
+    "exampleRu": "Здесь есть возможность и работать, и учить язык."
   },
   {
     "id": "top_725",
@@ -9763,7 +10603,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tadbir"
+    "uz": "Tadbir",
+    "exampleTr": "Dün akşam sokakta ilginç bir olay gördüm.",
+    "exampleRu": "Вчера вечером я видел на улице интересное происшествие."
   },
   {
     "id": "top_726",
@@ -9774,7 +10616,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Atrof-muhit"
+    "uz": "Atrof-muhit",
+    "exampleTr": "Yeni atölyedeki çalışma ortamı çok temiz ve rahat.",
+    "exampleRu": "Рабочая обстановка в новом цеху очень чистая и комфортная."
   },
   {
     "id": "top_727",
@@ -9786,8 +10630,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Parcha",
-    "exampleTr": "Şantiyede parça kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: деталь."
+    "exampleTr": "Eksik kalan son parçayı şimdi frezede işliyorum.",
+    "exampleRu": "Последнюю недостающую деталь я сейчас обрабатываю на фрезерном станке."
   },
   {
     "id": "top_728",
@@ -9798,7 +10642,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Muammo"
+    "uz": "Muammo",
+    "exampleTr": "Kapı kilidinde küçük bir problem çıktı, hemen bakalım.",
+    "exampleRu": "С дверным замком возникла небольшая проблема, давай сразу посмотрим."
   },
   {
     "id": "top_729",
@@ -9810,8 +10656,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Dastur",
-    "exampleTr": "Şantiyede program kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: программа."
+    "exampleTr": "Operatör bilgisayardan doğru kesim programını seçti.",
+    "exampleRu": "Оператор выбрал на компьютере нужную программу резки."
   },
   {
     "id": "top_730",
@@ -9822,7 +10668,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xavf"
+    "uz": "Xavf",
+    "exampleTr": "Yüksekte kemersiz çalışmak büyük risk taşır.",
+    "exampleRu": "Работать на высоте без страховки несет большой риск."
   },
   {
     "id": "top_731",
@@ -9833,7 +10681,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sabab"
+    "uz": "Sabab",
+    "exampleTr": "Makinenin durma sebebini teknisyen henüz bulamadı.",
+    "exampleRu": "Техник пока не нашел причину остановки станка."
   },
   {
     "id": "top_732",
@@ -9844,7 +10694,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ovoz berish"
+    "uz": "Ovoz berish",
+    "exampleTr": "Müşteri renk seçimi için kataloğa bakıyor.",
+    "exampleRu": "Клиент смотрит каталог для выбора цвета."
   },
   {
     "id": "top_733",
@@ -9855,7 +10707,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Daraja"
+    "uz": "Daraja",
+    "exampleTr": "Bu yıl iş yerindeki üretim seviyesi çok arttı.",
+    "exampleRu": "В этом году уровень производства на предприятии сильно вырос."
   },
   {
     "id": "top_734",
@@ -9866,7 +10720,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Buyurtma"
+    "uz": "Buyurtma",
+    "exampleTr": "Sabah bankada ödeme yapmak için uzun süre sıra bekledim.",
+    "exampleRu": "Утром я долго ждал очередь в банке, чтобы сделать платеж."
   },
   {
     "id": "top_735",
@@ -9877,7 +10733,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tizim"
+    "uz": "Tizim",
+    "exampleTr": "Schüco pencere sistemi soğuğu içeri almıyor.",
+    "exampleRu": "Оконная система Schüco не пропускает холод внутрь."
   },
   {
     "id": "top_736",
@@ -9888,7 +10746,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xulosa"
+    "uz": "Xulosa",
+    "exampleTr": "Ölçüm sonucunu deftere yazıp ustaya ver.",
+    "exampleRu": "Запиши результат замера в тетрадь и отдай мастеру."
   },
   {
     "id": "top_737",
@@ -9899,7 +10759,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Standart"
+    "uz": "Standart",
+    "exampleTr": "Bütün profiller Avrupa standardına göre kesiliyor.",
+    "exampleRu": "Все профили режутся по европейскому стандарту."
   },
   {
     "id": "top_738",
@@ -9910,7 +10772,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Davomiyligi"
+    "uz": "Davomiyligi",
+    "exampleTr": "Teslimat süresi müşteriye iki hafta olarak söylendi.",
+    "exampleRu": "Клиенту назвали срок доставки — две недели."
   },
   {
     "id": "top_739",
@@ -9921,7 +10785,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Davr"
+    "uz": "Davr",
+    "exampleTr": "Montaj süreci planladığımızdan daha hızlı bitti.",
+    "exampleRu": "Процесс монтажа закончился быстрее, чем мы планировали."
   },
   {
     "id": "top_740",
@@ -9932,7 +10798,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Vaziyat"
+    "uz": "Vaziyat",
+    "exampleTr": "Anlaşmanın ilk şartı işin zamanında bitmesidir.",
+    "exampleRu": "Первое условие договора — своевременное завершение работы."
   },
   {
     "id": "top_741",
@@ -9944,8 +10812,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ko'rsatmalar",
-    "exampleTr": "Şantiyede talimat kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: инструкция."
+    "exampleTr": "Montaj talimatını okumadan yeni kilidi takmaya çalışmayın.",
+    "exampleRu": "Не пытайтесь ставить новый замок, не прочитав инструкцию по монтажу."
   },
   {
     "id": "top_742",
@@ -9970,8 +10838,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Dizayn",
-    "exampleTr": "Şantiyede tasarım kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: дизайн."
+    "exampleTr": "Bu yeni cephe tasarımı binaya çok yakıştı.",
+    "exampleRu": "Этот новый дизайн фасада очень подошёл зданию."
   },
   {
     "id": "top_744",
@@ -9983,8 +10851,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Transport",
-    "exampleTr": "Şantiyede taşıma kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: переноска."
+    "exampleTr": "Büyük camların taşıma arabası garajda duruyor.",
+    "exampleRu": "Тележка для транспортировки больших стёкол стоит в гараже."
   },
   {
     "id": "top_745",
@@ -9995,7 +10863,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Texnik"
+    "uz": "Texnik",
+    "exampleTr": "Teknik çizimi anlamazsan bana sorabilirsin.",
+    "exampleRu": "Если не поймешь технический чертеж, можешь спросить у меня."
   },
   {
     "id": "top_746",
@@ -10006,7 +10876,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Texnologiya"
+    "uz": "Texnologiya",
+    "exampleTr": "Modern teknoloji sayesinde kesim işi çok kolaylaştı.",
+    "exampleRu": "Благодаря современной технологии работа по резке стала намного проще."
   },
   {
     "id": "top_747",
@@ -10017,7 +10889,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Asos"
+    "uz": "Asos",
+    "exampleTr": "Güvenli bir bina için sağlam temel gerekir.",
+    "exampleRu": "Для надежного здания нужен прочный фундамент."
   },
   {
     "id": "top_748",
@@ -10028,7 +10902,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Reaktsiya"
+    "uz": "Reaktsiya",
+    "exampleTr": "Müşteri fiyatı duyunca olumlu bir tepki verdi.",
+    "exampleRu": "Когда клиент услышал цену, он дал положительную реакцию."
   },
   {
     "id": "top_749",
@@ -10039,7 +10915,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Afzallik"
+    "uz": "Afzallik",
+    "exampleTr": "Benim tercihim her zaman çift camlı penceredir.",
+    "exampleRu": "Мое предпочтение — всегда окно с двойным стеклопакетом."
   },
   {
     "id": "top_750",
@@ -10050,7 +10928,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Transport"
+    "uz": "Transport",
+    "exampleTr": "Fabrikaya toplu ulaşımla gitmek yarım saat sürüyor.",
+    "exampleRu": "Добираться до фабрики на общественном транспорте занимает полчаса."
   },
   {
     "id": "top_751",
@@ -10062,8 +10942,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "usta",
-    "exampleTr": "Şantiyede usta başı kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: старший мастер."
+    "exampleTr": "Usta başı sabah toplantısında iş dağılımını açıkladı.",
+    "exampleRu": "Старший мастер на утреннем собрании объявил распределение работы."
   },
   {
     "id": "top_752",
@@ -10074,7 +10954,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "ILOVA"
+    "uz": "ILOVA",
+    "exampleTr": "Yeni contanın uygulaması atölyede test edildi.",
+    "exampleRu": "Применение нового уплотнителя проверили на практике в цеху."
   },
   {
     "id": "top_753",
@@ -10085,7 +10967,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mos"
+    "uz": "Mos",
+    "exampleTr": "Bu vida kalın profil için uygun değil, daha uzununu getir.",
+    "exampleRu": "Этот винт не подходит для толстого профиля, принеси подлиннее."
   },
   {
     "id": "top_754",
@@ -10096,7 +10980,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Прилагательные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nomaqbul"
+    "uz": "Nomaqbul",
+    "exampleTr": "Uygunsuz hava yüzünden dışarıdaki montajı yarına bıraktık.",
+    "exampleRu": "Из-за неподходящей погоды мы отложили наружный монтаж на завтра."
   },
   {
     "id": "top_755",
@@ -10107,7 +10993,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mutaxassis"
+    "uz": "Mutaxassis",
+    "exampleTr": "Makine ayarı için fabrikadan bir uzman çağırdık.",
+    "exampleRu": "Мы вызвали с фабрики специалиста для настройки станка."
   },
   {
     "id": "top_756",
@@ -10119,8 +11007,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Mahsulot",
-    "exampleTr": "Şantiyede ürün kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: продукция."
+    "exampleTr": "Paketlenen her ürünün üstüne barkod yapıştırılıyor.",
+    "exampleRu": "На каждое упакованное изделие наклеивается штрихкод."
   },
   {
     "id": "top_757",
@@ -10131,7 +11019,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Avtomobil"
+    "uz": "Avtomobil",
+    "exampleTr": "Akşam geç saatte köye gidecek vasıta zor bulunur.",
+    "exampleRu": "Поздно вечером трудно найти транспортное средство, чтобы поехать в деревню."
   },
   {
     "id": "top_758",
@@ -10142,7 +11032,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Существительные",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hokimiyat"
+    "uz": "Hokimiyat",
+    "exampleTr": "Fiyatı değiştirme yetkisi sadece şube müdüründe var.",
+    "exampleRu": "Полномочия менять цену есть только у директора филиала."
   },
   {
     "id": "top_759",
@@ -10154,8 +11046,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Usul",
-    "exampleTr": "Şantiyede yöntem kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: метод."
+    "exampleTr": "Bu yeni montaj yöntemi işimizi çok hızlandırdı.",
+    "exampleRu": "Этот новый метод сборки очень ускорил нашу работу."
   },
   {
     "id": "top_760",
@@ -10167,8 +11059,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yuklash",
-    "exampleTr": "Şantiyede yük kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: груз."
+    "exampleTr": "Asansör bu ağır yükü tek seferde taşıyamaz.",
+    "exampleRu": "Лифт не сможет поднять этот тяжёлый груз за один раз."
   },
   {
     "id": "top_761",
@@ -10192,7 +11084,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oq"
+    "uz": "Oq",
+    "exampleTr": "Mutfak için temiz görünümüyle beyaz pencere seçtik.",
+    "exampleRu": "Для кухни мы выбрали белое окно из-за его чистого вида."
   },
   {
     "id": "ext_845",
@@ -10203,7 +11097,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qora"
+    "uz": "Qora",
+    "exampleTr": "Siyah alüminyum kapı kolları çok şık duruyor.",
+    "exampleRu": "Черные алюминиевые дверные ручки смотрятся очень стильно."
   },
   {
     "id": "ext_846",
@@ -10214,7 +11110,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kulrang"
+    "uz": "Kulrang",
+    "exampleTr": "Yeni villanın bütün cephe profilleri koyu gri boyanacak.",
+    "exampleRu": "Все фасадные профили новой виллы будут покрашены в темно-серый цвет."
   },
   {
     "id": "ext_847",
@@ -10225,7 +11123,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qizil"
+    "uz": "Qizil",
+    "exampleTr": "Acil durdurma düğmesi kırmızı renkte olur.",
+    "exampleRu": "Кнопка аварийной остановки бывает красного цвета."
   },
   {
     "id": "ext_848",
@@ -10236,7 +11136,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ko'k"
+    "uz": "Ko'k",
+    "exampleTr": "Mavi koruyucu bandı montaj bitmeden sökme.",
+    "exampleRu": "Не снимай синюю защитную пленку до окончания монтажа."
   },
   {
     "id": "ext_849",
@@ -10247,7 +11149,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sariq"
+    "uz": "Sariq",
+    "exampleTr": "Şantiyeye girerken sarı bareti mutlaka takmalısın.",
+    "exampleRu": "При входе на стройплощадку ты обязательно должен надеть желтую каску."
   },
   {
     "id": "ext_850",
@@ -10258,7 +11162,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yashil"
+    "uz": "Yashil",
+    "exampleTr": "Yeşil ışık yanınca arabalar harekete geçti.",
+    "exampleRu": "Когда загорелся зеленый свет, машины тронулись с места."
   },
   {
     "id": "ext_851",
@@ -10269,7 +11175,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Jigarrang"
+    "uz": "Jigarrang",
+    "exampleTr": "Ahşap evin pencereleri kahverengi profille yapılacak.",
+    "exampleRu": "Окна деревянного дома будут сделаны из коричневого профиля."
   },
   {
     "id": "ext_852",
@@ -10280,7 +11188,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Apelsin"
+    "uz": "Apelsin",
+    "exampleTr": "Güvenlik için turuncu yelek giymeyi unutmayın.",
+    "exampleRu": "Не забудьте надеть оранжевый жилет для безопасности."
   },
   {
     "id": "ext_853",
@@ -10291,7 +11201,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Binafsha"
+    "uz": "Binafsha",
+    "exampleTr": "Kızım okul çantası için mor rengi beğendi.",
+    "exampleRu": "Моей дочке понравился фиолетовый цвет для школьного рюкзака."
   },
   {
     "id": "ext_854",
@@ -10302,7 +11214,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kumush"
+    "uz": "Kumush",
+    "exampleTr": "Gümüş renkli alüminyum profil güneşte güzel parlıyor.",
+    "exampleRu": "Серебристый алюминиевый профиль красиво блестит на солнце."
   },
   {
     "id": "ext_855",
@@ -10313,7 +11227,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oltin"
+    "uz": "Oltin",
+    "exampleTr": "Kapının üzerindeki altın renkli harfler hemen dikkat çekiyor.",
+    "exampleRu": "Буквы золотого цвета на двери сразу привлекают внимание."
   },
   {
     "id": "ext_856",
@@ -10324,7 +11240,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shaffof"
+    "uz": "Shaffof",
+    "exampleTr": "Balkon korkuluğunda kalın şeffaf cam kullanıldı.",
+    "exampleRu": "В ограждении балкона использовали толстое прозрачное стекло."
   },
   {
     "id": "ext_857",
@@ -10335,7 +11253,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shaffof"
+    "uz": "Shaffof",
+    "exampleTr": "Banyo penceresine dışarıdan görünmeyen opak cam taktık.",
+    "exampleRu": "В окно ванной комнаты мы поставили непрозрачное матовое стекло."
   },
   {
     "id": "ext_858",
@@ -10346,7 +11266,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цвета и вид",
     "isSchueco": false,
     "learned": false,
-    "uz": "Rangsiz"
+    "uz": "Rangsiz",
+    "exampleTr": "Kenarları kapatmak için renksiz silikon sıktım.",
+    "exampleRu": "Я нанес бесцветный силикон, чтобы заделать края."
   },
   {
     "id": "ext_859",
@@ -10358,8 +11280,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "anodlash",
-    "exampleTr": "Şantiyede eloksal kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: анодированный."
+    "exampleTr": "Gümüş eloksal yüzeyler çiziklere karşı daha hassastır.",
+    "exampleRu": "Поверхности с серебристым анодированием более чувствительны к царапинам."
   },
   {
     "id": "ext_860",
@@ -10371,8 +11293,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "chang qoplamasi",
-    "exampleTr": "Şantiyede toz boya kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: порошковая покраска."
+    "exampleTr": "Fırından çıkan toz boya soğuyunca sertleşiyor.",
+    "exampleRu": "Порошковая краска после печи твердеет, когда остывает."
   },
   {
     "id": "ext_861",
@@ -10384,8 +11306,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "ral kodi",
-    "exampleTr": "Şantiyede ral kodu kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: код цвета по шкале ral."
+    "exampleTr": "Antrasit profilin RAL kodu 7016 olarak yazılmış.",
+    "exampleRu": "Код цвета RAL антрацитового профиля записан как 7016."
   },
   {
     "id": "ext_862",
@@ -10397,8 +11319,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bo'yoq qalinligi",
-    "exampleTr": "Şantiyede boya kalınlığı kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: толщина слоя покраски."
+    "exampleTr": "Yüzeydeki boya kalınlığı en az altmış mikron çıkmalı.",
+    "exampleRu": "Толщина слоя покраски на поверхности должна быть не менее шестидесяти микрон."
   },
   {
     "id": "ext_863",
@@ -10410,8 +11332,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kvartira",
-    "exampleTr": "Projede daire bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (круг) по проекту."
+    "exampleTr": "Üst pencere için tam daire şeklinde profil büktük.",
+    "exampleRu": "Для верхнего окна мы согнули профиль в форме идеального круга."
   },
   {
     "id": "ext_864",
@@ -10423,8 +11345,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kvadrat",
-    "exampleTr": "Projede kare bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (квадрат) по проекту."
+    "exampleTr": "Kare kesitli destek profili köşeye tam oturdu.",
+    "exampleRu": "Опорный профиль квадратного сечения точно встал в угол."
   },
   {
     "id": "ext_865",
@@ -10436,8 +11358,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Uchburchak",
-    "exampleTr": "Projede üçgen bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (треугольник) по проекту."
+    "exampleTr": "Çatı altındaki üçgen boşluğa özel cam kestirdik.",
+    "exampleRu": "В треугольный проём под крышей мы заказали специальное стекло."
   },
   {
     "id": "ext_866",
@@ -10449,8 +11371,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "To'rtburchak",
-    "exampleTr": "Projede dikdörtgen bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (прямоугольник) по проекту."
+    "exampleTr": "Dikdörtgen kanatların çapraz ölçüsü birbirine eşit olmalı.",
+    "exampleRu": "Диагонали прямоугольных створок должны быть равны между собой."
   },
   {
     "id": "ext_867",
@@ -10462,8 +11384,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Xoch",
-    "exampleTr": "Projede çapraz bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (диагональ) по проекту."
+    "exampleTr": "Kareliği anlamak için kasayı çapraz ölçmek gerekir.",
+    "exampleRu": "Чтобы проверить прямоугольность, раму нужно замерить по диагонали."
   },
   {
     "id": "ext_868",
@@ -10475,8 +11397,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Vertikal",
-    "exampleTr": "Projede dikey bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (вертикальный) по проекту."
+    "exampleTr": "Dikey profilleri terazide tutarak duvara sabitledik.",
+    "exampleRu": "Мы закрепили вертикальные профили к стене, удерживая их по уровню."
   },
   {
     "id": "ext_869",
@@ -10488,8 +11410,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Gorizontal",
-    "exampleTr": "Projede yatay bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (горизонтальный) по проекту."
+    "exampleTr": "Yatay kayıtlar rüzgarda ses yapmasın diye sıkı takıldı.",
+    "exampleRu": "Горизонтальные ригели поставили плотно, чтобы не шумели на ветру."
   },
   {
     "id": "ext_870",
@@ -10501,8 +11423,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Parallel",
-    "exampleTr": "Projede paralel bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (параллельный) по проекту."
+    "exampleTr": "İki ray birbirine tam paralel gitmezse kapı takılır.",
+    "exampleRu": "Если две направляющие не идут строго параллельно друг другу, дверь заедает."
   },
   {
     "id": "ext_871",
@@ -10514,8 +11436,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tik",
-    "exampleTr": "Projede dik bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (перпендикулярный) по проекту."
+    "exampleTr": "Duvarla tavan birbirine tam dik birleşmiyor.",
+    "exampleRu": "Стена и потолок сходятся друг с другом не под прямым углом."
   },
   {
     "id": "ext_872",
@@ -10527,8 +11449,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Eksa",
-    "exampleTr": "Projede eksen bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (ось симметрии) по проекту."
+    "exampleTr": "Delikler profilin tam merkez eksenine göre açılacak.",
+    "exampleRu": "Отверстия будут сверлиться строго по центральной оси профиля."
   },
   {
     "id": "ext_873",
@@ -10540,8 +11462,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Markaz",
-    "exampleTr": "Projede merkez bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (центр) по проекту."
+    "exampleTr": "Kolu kanadın tam merkezine denk gelecek şekilde işaretle.",
+    "exampleRu": "Разметь ручку так, чтобы она пришлась ровно по центру створки."
   },
   {
     "id": "ext_874",
@@ -10553,8 +11475,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ovoz balandligi",
-    "exampleTr": "Projede hacim bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (объем) по проекту."
+    "exampleTr": "Bu deponun hacmi beş yüz palet almaya yetmez.",
+    "exampleRu": "Объёма этого склада не хватит, чтобы вместить пятьсот поддонов."
   },
   {
     "id": "ext_875",
@@ -10566,8 +11488,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Intensivlik",
-    "exampleTr": "Projede yoğunluk bilgisini kontrol ettik.",
-    "exampleRu": "Мы проверили параметр (плотность материала) по проекту."
+    "exampleTr": "Yüksek yoğunluklu sünger soğuk havayı daha iyi keser.",
+    "exampleRu": "Уплотнитель высокой плотности лучше отсекает холодный воздух."
   },
   {
     "id": "ext_876",
@@ -10579,8 +11501,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qarshilik",
-    "exampleTr": "Şantiyede mukavemet kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: прочность."
+    "exampleTr": "Büyük cephelerde yüksek mukavemetli profil kullanmak zorundayız.",
+    "exampleRu": "На больших фасадах мы обязаны использовать профиль повышенной прочности."
   },
   {
     "id": "ext_877",
@@ -10592,8 +11514,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "statik hisob",
-    "exampleTr": "Şantiyede statik hesap kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: статический расчет нагрузок."
+    "exampleTr": "Mühendis yüksek katlar için statik hesap yaptı.",
+    "exampleRu": "Инженер выполнил статический расчёт нагрузок для верхних этажей."
   },
   {
     "id": "ext_878",
@@ -10605,8 +11527,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "shamol yuki",
-    "exampleTr": "Şantiyede rüzgar yükü kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: ветровая нагрузка на фасад."
+    "exampleTr": "Deniz kenarındaki binada rüzgar yükü çok yüksek oluyor.",
+    "exampleRu": "В здании на берегу моря ветровая нагрузка бывает очень высокой."
   },
   {
     "id": "ext_879",
@@ -10618,8 +11540,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "qor yuki",
-    "exampleTr": "Şantiyede kar yükü kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: снеговая нагрузка."
+    "exampleTr": "Cam çatı kalın kar yükünü rahatça taşıyacak güçte.",
+    "exampleRu": "Стеклянная крыша достаточно прочная, чтобы легко выдержать толстый слой снега."
   },
   {
     "id": "ext_880",
@@ -10631,8 +11553,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Zilzila",
-    "exampleTr": "Şantiyede deprem kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: землетрясение."
+    "exampleTr": "Esnek bağlantılar bina sallandığında deprem etkisini azaltır.",
+    "exampleRu": "Гибкие соединения уменьшают сейсмическое воздействие при колебаниях здания."
   },
   {
     "id": "ext_881",
@@ -10644,8 +11566,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kengayish",
-    "exampleTr": "Şantiyede genleşme kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: тепловое линейное расширение."
+    "exampleTr": "Güneşte genleşme olacağı için profil ucunda pay bıraktık.",
+    "exampleRu": "Поскольку на солнце будет расширение, мы оставили зазор на краю профиля."
   },
   {
     "id": "ext_882",
@@ -10657,8 +11579,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Termal",
-    "exampleTr": "Şantiyede termal kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: тепловой."
+    "exampleTr": "İç ve dış profil arasında termal bariyer bulunuyor.",
+    "exampleRu": "Между внутренним и наружным профилем расположен терморазрыв."
   },
   {
     "id": "ext_883",
@@ -10670,8 +11592,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Izolyatsiya",
-    "exampleTr": "Şantiyede i̇zolasyon kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: изоляция."
+    "exampleTr": "Kasa çevresine köpük sıkarak ısı izolasyonunu güçlendirdik.",
+    "exampleRu": "Пропенив периметр рамы, мы усилили теплоизоляцию."
   },
   {
     "id": "ext_884",
@@ -10683,8 +11605,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Izolyatsiya",
-    "exampleTr": "Şantiyede yalıtım kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: тепло- и шумоизоляция."
+    "exampleTr": "Üçlü cam sayesinde evin yalıtımı çok iyileşti.",
+    "exampleRu": "Благодаря тройному стеклопакету теплоизоляция дома стала намного лучше."
   },
   {
     "id": "ext_885",
@@ -10696,8 +11618,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "ovoz yalıtımı",
-    "exampleTr": "Şantiyede ses yalıtımı kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: звукоизоляция."
+    "exampleTr": "Caddeye bakan odalarda güçlü ses yalıtımı istendi.",
+    "exampleRu": "Для комнат, выходящих на проспект, потребовалась сильная звукоизоляция."
   },
   {
     "id": "ext_886",
@@ -10709,8 +11631,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Akustik",
-    "exampleTr": "Şantiyede akustik kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: акустика."
+    "exampleTr": "Ofis bölmelerinde özel akustik camlar tercih edildi.",
+    "exampleRu": "В офисных перегородках выбрали специальные акустические стёкла."
   },
   {
     "id": "ext_887",
@@ -10722,8 +11644,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Korroziya",
-    "exampleTr": "Şantiyede korozyon kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: коррозия."
+    "exampleTr": "Nemli yerde sıradan vidalar çabuk korozyon yapar.",
+    "exampleRu": "Во влажном месте обычные саморезы быстро подвергаются коррозии."
   },
   {
     "id": "ext_888",
@@ -10735,8 +11657,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Zanglamaydigan",
-    "exampleTr": "Şantiyede paslanmaz kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: нержавеющий (inox."
+    "exampleTr": "Dış mekan montajında sadece paslanmaz vida kullanacağız.",
+    "exampleRu": "При наружном монтаже мы будем использовать только нержавеющие саморезы."
   },
   {
     "id": "ext_889",
@@ -10748,8 +11670,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "galvanizlangan",
-    "exampleTr": "Şantiyede galvaniz kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: оцинкованный."
+    "exampleTr": "Duvar ankrajları pas tutmasın diye galvaniz kaplı seçildi.",
+    "exampleRu": "Стеновые анкеры выбрали оцинкованными, чтобы они не ржавели."
   },
   {
     "id": "ext_890",
@@ -10761,8 +11683,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "rozetka to'plami",
-    "exampleTr": "Bu işlem için bana lokma takımı lazım.",
-    "exampleRu": "Для этой операции мне нужен (набор торцевых головок)."
+    "exampleTr": "Arabadaki lokma takımını buraya getir, büyük somunlar var.",
+    "exampleRu": "Принеси сюда набор головок из машины, тут большие гайки."
   },
   {
     "id": "ext_891",
@@ -10774,8 +11696,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "kaliti",
-    "exampleTr": "Bu işlem için bana cırcır anahtar lazım.",
-    "exampleRu": "Для этой операции мне нужен (ключ-трещотка)."
+    "exampleTr": "Dar köşede cırcır anahtarla çalışmak çok pratik oluyor.",
+    "exampleRu": "В узком углу работать ключом-трещоткой очень удобно."
   },
   {
     "id": "ext_892",
@@ -10800,8 +11722,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "yulduzcha kalit",
-    "exampleTr": "Bu işlem için bana yıldız anahtar lazım.",
-    "exampleRu": "Для этой операции мне нужен (накидной гаечный ключ)."
+    "exampleTr": "On üç numara yıldız anahtarı bana uzatabilir misin?",
+    "exampleRu": "Можешь подать мне накидной ключ на тринадцать?"
   },
   {
     "id": "ext_894",
@@ -10813,8 +11735,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "tekis tornavida",
-    "exampleTr": "Bu işlem için bana düz tornavida lazım.",
-    "exampleRu": "Для этой операции мне нужен (шлицевая отвертка)."
+    "exampleTr": "Kapağı dikkatlice açmak için ince düz tornavida lazım.",
+    "exampleRu": "Чтобы аккуратно поддеть крышку, нужна тонкая плоская отвёртка."
   },
   {
     "id": "ext_895",
@@ -10826,8 +11748,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Phillips tornavida",
-    "exampleTr": "Bu işlem için bana yıldız tornavida lazım.",
-    "exampleRu": "Для этой операции мне нужен (крестовая отвертка)."
+    "exampleTr": "Priz kapağını yıldız tornavidayla yavaşça söktüm.",
+    "exampleRu": "Я аккуратно открутил крышку розетки крестовой отвёрткой."
   },
   {
     "id": "ext_896",
@@ -10839,8 +11761,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "pense",
-    "exampleTr": "Bu işlem için bana pense lazım.",
-    "exampleRu": "Для этой операции мне нужен (пассатижи)."
+    "exampleTr": "Sıkışan eski pimi penseyle tutup dışarı çektim.",
+    "exampleRu": "Я захватил застрявший старый штифт пассатижами и вытащил наружу."
   },
   {
     "id": "ext_897",
@@ -10852,8 +11774,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "yon chiviq",
-    "exampleTr": "Bu işlem için bana yan keski lazım.",
-    "exampleRu": "Для этой операции мне нужен (бокорезы)."
+    "exampleTr": "Plastik kelepçenin ucunu yan keskiyle temizce kestim.",
+    "exampleRu": "Я аккуратно откусил кончик пластиковой стяжки бокорезами."
   },
   {
     "id": "ext_898",
@@ -10865,8 +11787,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ulash",
-    "exampleTr": "Bu işlem için bana kargaburun lazım.",
-    "exampleRu": "Для этой операции мне нужен (круглогубцы)."
+    "exampleTr": "Dar yuvadaki yayı kargaburun olmadan çıkaramazsın.",
+    "exampleRu": "Пружину из узкого паза без длинногубцев не вытащить."
   },
   {
     "id": "ext_899",
@@ -10878,8 +11800,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "yordamchi pichoq",
-    "exampleTr": "Bu işlem için bana maket bıçağı lazım.",
-    "exampleRu": "Для этой операции мне нужен (строительный нож)."
+    "exampleTr": "Ambalaj naylonunu maket bıçağıyla profile değdirmeden kes.",
+    "exampleRu": "Разрежь упаковочную плёнку строительным ножом, не касаясь профиля."
   },
   {
     "id": "ext_900",
@@ -10891,8 +11813,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qaychi (metall va rezina uchun)",
-    "exampleTr": "Bu işlem için bana makas lazım.",
-    "exampleRu": "Для этой операции мне нужен (ножницы по металлу)."
+    "exampleTr": "Fitili kırk beş derece kesen makas masanın üstünde.",
+    "exampleRu": "Ножницы для резки уплотнителя под 45 градусов лежат на столе."
   },
   {
     "id": "ext_901",
@@ -10904,8 +11826,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Egey",
-    "exampleTr": "Bu işlem için bana eğe lazım.",
-    "exampleRu": "Для этой операции мне нужен (напильник)."
+    "exampleTr": "Yeni kesilen kenardaki çapağı eğeyle biraz düzelt.",
+    "exampleRu": "Сними немного заусенец на свежесрезанной кромке напильником."
   },
   {
     "id": "ext_902",
@@ -10917,8 +11839,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Emeri",
-    "exampleTr": "Bu işlem için bana zımpara lazım.",
-    "exampleRu": "Для этой операции мне нужен (наждачная бумага)."
+    "exampleTr": "Küçük çapağı ince zımparayla hafifçe temizledik.",
+    "exampleRu": "Мелкий заусенец мы слегка зачистили тонкой наждачкой."
   },
   {
     "id": "ext_903",
@@ -10930,8 +11852,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qisqich",
-    "exampleTr": "Bu işlem için bana mengene lazım.",
-    "exampleRu": "Для этой операции мне нужен (слесарные тиски)."
+    "exampleTr": "Delik delmeden önce küçük parçayı mengeneye sıkıca bağla.",
+    "exampleRu": "Перед сверлением крепко зажми мелкую деталь в тисках."
   },
   {
     "id": "ext_904",
@@ -10943,8 +11865,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qiynoq",
-    "exampleTr": "Bu işlem için bana i̇şkence lazım.",
-    "exampleRu": "Для этой операции мне нужен (струбцина монтажная)."
+    "exampleTr": "Yapıştırıcı kuruyana kadar iki profili işkenceyle tuttuk.",
+    "exampleRu": "Пока клей не высох, мы зафиксировали два профиля струбциной."
   },
   {
     "id": "ext_905",
@@ -10956,8 +11878,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "ruh darajasi",
-    "exampleTr": "Bu işlem için bana su terazisi lazım.",
-    "exampleRu": "Для этой операции мне нужен (строительный уровень)."
+    "exampleTr": "Kasa dik mi diye su terazisiyle tekrar baktık.",
+    "exampleRu": "Мы ещё раз проверили строительным уровнем, ровно ли стоит рама."
   },
   {
     "id": "ext_906",
@@ -10969,8 +11891,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "lazer o'lchagich",
-    "exampleTr": "Bu işlem için bana lazer metre lazım.",
-    "exampleRu": "Для этой операции мне нужен (лазерный дальномер)."
+    "exampleTr": "Yüksek duvarları lazer metreyle beş dakikada ölçtüm.",
+    "exampleRu": "Высокие стены я замерил лазерным дальномером за пять минут."
   },
   {
     "id": "ext_907",
@@ -10982,8 +11904,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Gönyeburun",
-    "exampleTr": "Bu işlem için bana gönyeburun lazım.",
-    "exampleRu": "Для этой операции мне нужен (угольник поверочный)."
+    "exampleTr": "Köşe birleşimini gönyeburun ile doksan dereceye getirdik.",
+    "exampleRu": "Мы вывели угловое соединение в девяносто градусов с помощью поверочного угольника."
   },
   {
     "id": "ext_908",
@@ -10995,8 +11917,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bolg'a",
-    "exampleTr": "Bu işlem için bana çekiç lazım.",
-    "exampleRu": "Для этой операции мне нужен (молоток)."
+    "exampleTr": "Çelik dübeli çakmak için ağır çekiç gerekiyor.",
+    "exampleRu": "Чтобы забить стальной дюбель, нужен тяжёлый молоток."
   },
   {
     "id": "ext_909",
@@ -11008,8 +11930,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Balyoz",
-    "exampleTr": "Bu işlem için bana balyoz lazım.",
-    "exampleRu": "Для этой операции мне нужен (кувалда)."
+    "exampleTr": "Eski beton çıkıntıyı ustalar balyozla kırıp temizledi.",
+    "exampleRu": "Старый бетонный выступ мастера сбили кувалдой и расчистили."
   },
   {
     "id": "ext_910",
@@ -11021,8 +11943,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chisel",
-    "exampleTr": "Bu işlem için bana keski lazım.",
-    "exampleRu": "Для этой операции мне нужен (зубило)."
+    "exampleTr": "Sıva artığını duvardan keski yardımıyla söktük.",
+    "exampleRu": "Остатки штукатурки со стены мы сбили с помощью зубила."
   },
   {
     "id": "ext_911",
@@ -11034,8 +11956,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Lehim",
-    "exampleTr": "Bu işlem için bana lehim lazım.",
-    "exampleRu": "Для этой операции мне нужен (припой)."
+    "exampleTr": "Kopan ince kabloyu elektrikçi lehimle hemen birleştirdi.",
+    "exampleRu": "Оборвавшийся тонкий провод электрик сразу соединил пайкой."
   },
   {
     "id": "ext_912",
@@ -11047,8 +11969,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "payvandlash mashinasi",
-    "exampleTr": "Bu işlem için bana kaynak makinesi lazım.",
-    "exampleRu": "Для этой операции мне нужен (сварочный аппарат)."
+    "exampleTr": "Ankraj plakalarını sahada kaynak makinesiyle kaynatıyorlar.",
+    "exampleRu": "Анкерные пластины на объекте приваривают сварочным аппаратом."
   },
   {
     "id": "ext_913",
@@ -11060,8 +11982,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Spiral / burchakli maydalagich",
-    "exampleTr": "Bu işlem için bana spiral lazım.",
-    "exampleRu": "Для этой операции мне нужен (болгарка)."
+    "exampleTr": "Spiralle demiri keserken gözlüğünü mutlaka tak.",
+    "exampleRu": "Когда режешь металл болгаркой, обязательно надевай очки."
   },
   {
     "id": "ext_914",
@@ -11073,8 +11995,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "jigsa",
-    "exampleTr": "Bu işlem için bana dekupaj testere lazım.",
-    "exampleRu": "Для этой операции мне нужен (электролобзик)."
+    "exampleTr": "Ahşap şablonu dekupaj testereyle düzgünce oydum.",
+    "exampleRu": "Я ровно вырезал деревянный шаблон электролобзиком."
   },
   {
     "id": "ext_915",
@@ -11086,8 +12008,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "router biti",
-    "exampleTr": "Bu işlem için bana freze ucu lazım.",
-    "exampleRu": "Для этой операции мне нужен (фреза по алюминию)."
+    "exampleTr": "Kilit yeri açarken freze ucu aniden kırıldı.",
+    "exampleRu": "При фрезеровке отверстия под замок фреза внезапно сломалась."
   },
   {
     "id": "ext_916",
@@ -11099,8 +12021,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "olma ko'rdim",
-    "exampleTr": "Bu işlem için bana testere elması lazım.",
-    "exampleRu": "Для этой операции мне нужен (пильный диск)."
+    "exampleTr": "Körlenen testere elmasını bileme için servise gönderdik.",
+    "exampleRu": "Затупившийся пильный диск мы отправили в сервис на заточку."
   },
   {
     "id": "ext_917",
@@ -11112,8 +12034,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "sovutish suvi",
-    "exampleTr": "Bu işlem için bana soğutma sıvısı lazım.",
-    "exampleRu": "Для этой операции мне нужен (охлаждающая жидкость)."
+    "exampleTr": "Kesim makinesinin soğutma sıvısı azalmış, hemen ekleyelim.",
+    "exampleRu": "Охлаждающей жидкости в отрезном станке стало мало, давай сразу дольём."
   },
   {
     "id": "ext_918",
@@ -11254,7 +12176,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ijara"
+    "uz": "Ijara",
+    "exampleTr": "Her ayın beşinde evin kirasını banka hesabına yatırıyorum.",
+    "exampleRu": "Пятого числа каждого месяца я перевожу арендную плату за квартиру на банковский счет."
   },
   {
     "id": "ext_929",
@@ -11265,7 +12189,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uy egasi"
+    "uz": "Uy egasi",
+    "exampleTr": "Ev sahibi geçen hafta bozuk musluğu tamir ettirdi.",
+    "exampleRu": "На прошлой неделе хозяин квартиры починил сломанный кран."
   },
   {
     "id": "ext_930",
@@ -11276,7 +12202,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ijarachi"
+    "uz": "Ijarachi",
+    "exampleTr": "Üst kata dün yeni bir kiracı taşındı.",
+    "exampleRu": "На верхний этаж вчера переехал новый жилец."
   },
   {
     "id": "ext_931",
@@ -11300,7 +12228,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "elektr to'lovi"
+    "uz": "elektr to'lovi",
+    "exampleTr": "Klima çok çalıştığı için bu ay elektrik faturası yüksek geldi.",
+    "exampleRu": "Из-за того, что кондиционер много работал, в этом месяце пришел большой счет за свет."
   },
   {
     "id": "ext_933",
@@ -11311,7 +12241,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "suv hisobi"
+    "uz": "suv hisobi",
+    "exampleTr": "Su faturasını telefon uygulaması üzerinden kolayca ödedim.",
+    "exampleRu": "Я легко оплатил счет за воду через приложение в телефоне."
   },
   {
     "id": "ext_934",
@@ -11322,7 +12254,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "tabiiy gaz"
+    "uz": "tabiiy gaz",
+    "exampleTr": "Kışın ev sıcak olsun diye doğalgazı açtık.",
+    "exampleRu": "Мы включили отопление, чтобы зимой дома было тепло."
   },
   {
     "id": "ext_935",
@@ -11333,7 +12267,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'lovlar"
+    "uz": "To'lovlar",
+    "exampleTr": "Apartman temizliği ve asansör için aylık aidat ödüyoruz.",
+    "exampleRu": "Мы платим ежемесячный взнос за уборку подъезда и лифт."
   },
   {
     "id": "ext_936",
@@ -11344,7 +12280,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bozor"
+    "uz": "Bozor",
+    "exampleTr": "İşten çıktıktan sonra alışveriş yapmak için çarşıya indim.",
+    "exampleRu": "После работы я пошел в центр, чтобы сделать покупки."
   },
   {
     "id": "ext_937",
@@ -11355,7 +12293,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Umumiy do'kon"
+    "uz": "Umumiy do'kon",
+    "exampleTr": "Ekmek ve süt almak için köşedeki bakkala gidiyorum.",
+    "exampleRu": "Я иду в магазинчик на углу, чтобы купить хлеба и молока."
   },
   {
     "id": "ext_938",
@@ -11366,7 +12306,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sabzavotchi"
+    "uz": "Sabzavotchi",
+    "exampleTr": "Manavdan taze domates, salatalık ve elma aldım.",
+    "exampleRu": "Я купил в овощной лавке свежих помидоров, огурцов и яблок."
   },
   {
     "id": "ext_939",
@@ -11377,7 +12319,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qassob"
+    "uz": "Qassob",
+    "exampleTr": "Hafta sonu mangal için kasaptan iki kilo et aldık.",
+    "exampleRu": "Мы купили в мясной лавке два килограмма мяса для мангала на выходные."
   },
   {
     "id": "ext_940",
@@ -11388,7 +12332,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Pech"
+    "uz": "Pech",
+    "exampleTr": "Sabah işe giderken fırından sıcak simit alırım.",
+    "exampleRu": "Утром по дороге на работу я покупаю в пекарне горячий симит."
   },
   {
     "id": "ext_941",
@@ -11399,7 +12345,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sartarosh"
+    "uz": "Sartarosh",
+    "exampleTr": "Saçımı kestirmek için cumartesi günü berbere gideceğim.",
+    "exampleRu": "В субботу я пойду в парикмахерскую, чтобы подстричься."
   },
   {
     "id": "ext_942",
@@ -11410,7 +12358,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Restoran"
+    "uz": "Restoran",
+    "exampleTr": "Öğlen iş arkadaşlarıyla caddenin karşısındaki lokantaya gittik.",
+    "exampleRu": "В обед мы с коллегами пошли в столовую напротив через дорогу."
   },
   {
     "id": "ext_943",
@@ -11421,7 +12371,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sho'rva"
+    "uz": "Sho'rva",
+    "exampleTr": "Soğuk havada sıcak bir mercimek çorbası içmek iyi gelir.",
+    "exampleRu": "В холодную погоду хорошо поесть горячего чечевичного супа."
   },
   {
     "id": "ext_944",
@@ -11432,7 +12384,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Guruch"
+    "uz": "Guruch",
+    "exampleTr": "Annem akşam yemeğine tereyağlı güzel bir pilav yapmış.",
+    "exampleRu": "Мама приготовила на ужин вкусный рис со сливочным маслом."
   },
   {
     "id": "ext_945",
@@ -11443,7 +12397,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Aylanadigan"
+    "uz": "Aylanadigan",
+    "exampleTr": "Acelem olduğu için ayaküstü bir döner yedim.",
+    "exampleRu": "Так как я спешил, я перекусил на ходу дёнером."
   },
   {
     "id": "ext_946",
@@ -11454,7 +12410,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Go'shtli go'sht"
+    "uz": "Go'shtli go'sht",
+    "exampleTr": "Usta ızgarada çok lezzetli köfte pişiriyor.",
+    "exampleRu": "Повар жарит на гриле очень вкусные турецкие котлеты."
   },
   {
     "id": "ext_947",
@@ -11465,7 +12423,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Salat"
+    "uz": "Salat",
+    "exampleTr": "Etin yanına bol limonlu yeşil salata söyledik.",
+    "exampleRu": "К мясу мы заказали зеленый салат с большим количеством лимона."
   },
   {
     "id": "ext_948",
@@ -11476,7 +12436,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ayran"
+    "uz": "Ayran",
+    "exampleTr": "Sıcak yaz gününde soğuk ayran içmek insanı ferahlatır.",
+    "exampleRu": "В жаркий летний день холодный айран отлично освежает."
   },
   {
     "id": "ext_949",
@@ -11487,7 +12449,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shirin"
+    "uz": "Shirin",
+    "exampleTr": "Yemekten sonra çay yanında biraz tatlı yemek ister misin?",
+    "exampleRu": "Хочешь съесть немного десерта с чаем после еды?"
   },
   {
     "id": "ext_950",
@@ -11498,7 +12462,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Burchak"
+    "uz": "Burchak",
+    "exampleTr": "Bu kırmızı biber çok acı, yemeğe az koy.",
+    "exampleRu": "Этот красный перец очень острый, положи в еду поменьше."
   },
   {
     "id": "ext_951",
@@ -11509,7 +12475,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Minus"
+    "uz": "Minus",
+    "exampleTr": "Limonlu sos biraz ekşi olmuş ama yine de güzel.",
+    "exampleRu": "Лимонный соус получился немного кислым, но все равно вкусно."
   },
   {
     "id": "ext_952",
@@ -11520,7 +12488,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tuzli"
+    "uz": "Tuzli",
+    "exampleTr": "Peynir beklediğimden daha tuzlu çıktı.",
+    "exampleRu": "Сыр оказался более соленым, чем я ожидал."
   },
   {
     "id": "ext_953",
@@ -11531,7 +12501,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yangi"
+    "uz": "Yangi",
+    "exampleTr": "Sabah pazara erken gidersen çok taze meyve bulursun.",
+    "exampleRu": "Если пойдешь на рынок рано утром, найдешь очень свежие фрукты."
   },
   {
     "id": "ext_954",
@@ -11542,7 +12514,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Eskirgan"
+    "uz": "Eskirgan",
+    "exampleTr": "Dünden kalan bayat ekmeği kuşlara verdik.",
+    "exampleRu": "Оставшийся со вчерашнего дня черствый хлеб мы отдали птицам."
   },
   {
     "id": "ext_955",
@@ -11553,7 +12527,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "issiq suv"
+    "uz": "issiq suv",
+    "exampleTr": "Çay demlemek için çaydanlıkta sıcak su kaynattık.",
+    "exampleRu": "Мы вскипятили горячую воду в чайнике, чтобы заварить чай."
   },
   {
     "id": "ext_956",
@@ -11564,7 +12540,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "sovuq suv"
+    "uz": "sovuq suv",
+    "exampleTr": "Koşudan sonra bir bardak soğuk su içtim.",
+    "exampleRu": "После пробежки я выпил стакан холодной воды."
   },
   {
     "id": "ext_957",
@@ -11575,7 +12553,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "choy tanaffusi"
+    "uz": "choy tanaffusi",
+    "exampleTr": "Saat üçte on beş dakikalık çay molası vereceğiz.",
+    "exampleRu": "В три часа мы сделаем пятнадцатиминутный перерыв на чай."
   },
   {
     "id": "ext_958",
@@ -11586,7 +12566,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tushlik"
+    "uz": "Tushlik",
+    "exampleTr": "Fabrikada öğle yemeği saat on ikide başlıyor.",
+    "exampleRu": "Обед на фабрике начинается в двенадцать часов."
   },
   {
     "id": "ext_959",
@@ -11597,7 +12579,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kechki ovqat"
+    "uz": "Kechki ovqat",
+    "exampleTr": "Bugün akşam yemeğini bütün aile birlikte yedik.",
+    "exampleRu": "Сегодня вся семья поужинала вместе."
   },
   {
     "id": "ext_960",
@@ -11608,7 +12592,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Быт и жизнь",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nonushta"
+    "uz": "Nonushta",
+    "exampleTr": "Pazar sabahı uzun bir kahvaltı yapmayı seviyorum.",
+    "exampleRu": "В воскресенье утром я люблю не спеша позавтракать."
   },
   {
     "id": "ext_961",
@@ -11619,7 +12605,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yoqimli ishtaha"
+    "uz": "Yoqimli ishtaha",
+    "exampleTr": "Yemekler hazır, herkese afiyet olsun!",
+    "exampleRu": "Еда готова, всем приятного аппетита!"
   },
   {
     "id": "ext_962",
@@ -11630,7 +12618,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qo'lingiz dard ko'rmasin / Rahmat"
+    "uz": "Qo'lingiz dard ko'rmasin / Rahmat",
+    "exampleTr": "Çay çok güzel olmuş, eline sağlık Mehmet abi.",
+    "exampleRu": "Чай получился очень вкусным, спасибо за труд, брат Мехмет."
   },
   {
     "id": "ext_963",
@@ -11641,7 +12631,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Salomat bo'ling"
+    "uz": "Salomat bo'ling",
+    "exampleTr": "Hapşırınca yanındaki arkadaşım hemen \"Çok yaşa!\" dedi.",
+    "exampleRu": "Когда я чихнул, мой друг рядом сразу сказал: «Будь здоров!»"
   },
   {
     "id": "ext_964",
@@ -11652,7 +12644,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Siz ham ko'rasiz"
+    "uz": "Siz ham ko'rasiz",
+    "exampleTr": "Biri sana \"Çok yaşa\" derse, gülümseyip \"Sen de gör\" diyebilirsin.",
+    "exampleRu": "Если кто-то скажет тебе «Будь здоров», можно улыбнуться и ответить «И ты тоже»."
   },
   {
     "id": "ext_965",
@@ -11663,7 +12657,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bundan bahra oling"
+    "uz": "Bundan bahra oling",
+    "exampleTr": "Yeni telefonun hayırlı olsun, güle güle kullan!",
+    "exampleRu": "Поздравляю с новым телефоном, пользуйся с удовольствием!"
   },
   {
     "id": "ext_966",
@@ -11674,7 +12670,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'zingizni ehtiyot qiling"
+    "uz": "O'zingizni ehtiyot qiling",
+    "exampleTr": "Yarın görüşürüz kardeşim, eve giderken kendine iyi bak.",
+    "exampleRu": "Увидимся завтра, брат, по дороге домой береги себя."
   },
   {
     "id": "ext_967",
@@ -11685,7 +12683,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yaxshi sayohat qiling"
+    "uz": "Yaxshi sayohat qiling",
+    "exampleTr": "Uçağın kalkmak üzere, sana iyi yolculuklar dilerim!",
+    "exampleRu": "Твой самолет скоро вылетает, желаю тебе счастливого пути!"
   },
   {
     "id": "ext_968",
@@ -11696,7 +12696,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tabriklaymiz"
+    "uz": "Tabriklaymiz",
+    "exampleTr": "Sınavı başarıyla geçmişsin, tebrikler!",
+    "exampleRu": "Ты успешно сдал экзамен, поздравляю!"
   },
   {
     "id": "ext_969",
@@ -11707,7 +12709,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tug'ilgan kun muborak bo'lsin"
+    "uz": "Tug'ilgan kun muborak bo'lsin",
+    "exampleTr": "Yeni yılda sağlık ve huzur dilerim, mutlu yıllar!",
+    "exampleRu": "Желаю здоровья и спокойствия в новом году, с Новым годом!"
   },
   {
     "id": "ext_970",
@@ -11718,7 +12722,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Речевые обороты",
     "isSchueco": false,
     "learned": false,
-    "uz": "bayramlar muborak"
+    "uz": "bayramlar muborak",
+    "exampleTr": "Komşularla bayramlaşıp herkese \"İyi bayramlar\" dedik.",
+    "exampleRu": "Мы поздравили соседей и сказали всем: «С праздником!»"
   },
   {
     "id": "fin_971",
@@ -11729,7 +12735,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'ng tomonga buriling"
+    "uz": "O'ng tomonga buriling",
+    "exampleTr": "Bu sokaktan yüz metre ilerle ve ilk köşeden sağa dön.",
+    "exampleRu": "Пройди сто метров по этой улице и на первом углу поверни направо."
   },
   {
     "id": "fin_972",
@@ -11740,7 +12748,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "chapga buriling"
+    "uz": "chapga buriling",
+    "exampleTr": "Camiden sonra sola dön, fabrika hemen karşına çıkacak.",
+    "exampleRu": "После мечети поверни налево, фабрика окажется прямо перед тобой."
   },
   {
     "id": "fin_973",
@@ -11751,7 +12761,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'griga boring"
+    "uz": "To'griga boring",
+    "exampleTr": "Hastaneye gitmek için üç dakika boyunca düz git.",
+    "exampleRu": "Чтобы дойти до больницы, иди прямо три минуты."
   },
   {
     "id": "fin_974",
@@ -11762,7 +12774,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "svetofor"
+    "uz": "svetofor",
+    "exampleTr": "Önümüzdeki trafik ışığında kırmızı yandığı için durduk.",
+    "exampleRu": "Мы остановились, потому что на следующем светофоре загорелся красный."
   },
   {
     "id": "fin_975",
@@ -11773,7 +12787,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Birlashma"
+    "uz": "Birlashma",
+    "exampleTr": "Büyük kavşakta sabahları her zaman yoğun trafik oluyor.",
+    "exampleRu": "На большом перекрестке по утрам всегда плотное движение."
   },
   {
     "id": "fin_976",
@@ -11784,7 +12800,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yoqilg'i quyish shoxobchasi"
+    "uz": "Yoqilg'i quyish shoxobchasi",
+    "exampleTr": "Yakıt azaldı, şantiyeye varmadan önce benzinliğe uğrayalım.",
+    "exampleRu": "Топливо на исходе, давай заедем на заправку до приезда на объект."
   },
   {
     "id": "fin_977",
@@ -11795,7 +12813,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Avtoturargoh"
+    "uz": "Avtoturargoh",
+    "exampleTr": "Alışveriş merkezinin altında çok geniş bir otopark var.",
+    "exampleRu": "Под торговым центром есть очень просторная парковка."
   },
   {
     "id": "fin_978",
@@ -11806,7 +12826,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shina"
+    "uz": "Shina",
+    "exampleTr": "Yolda çiviye bastığımız için aracın ön lastiği patladı.",
+    "exampleRu": "Передняя шина машины лопнула, потому что мы наехали на гвоздь на дороге."
   },
   {
     "id": "fin_979",
@@ -11817,7 +12839,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tormoz"
+    "uz": "Tormoz",
+    "exampleTr": "Öndeki araba aniden durunca şoför hemen frene bastı.",
+    "exampleRu": "Когда машина впереди внезапно остановилась, водитель сразу нажал на тормоз."
   },
   {
     "id": "fin_980",
@@ -11828,7 +12852,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Debriyaj"
+    "uz": "Debriyaj",
+    "exampleTr": "Vites değiştirmeden önce debriyaja sonuna kadar bas.",
+    "exampleRu": "Перед переключением передачи выжми сцепление до конца."
   },
   {
     "id": "fin_981",
@@ -11839,7 +12865,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Jihoz"
+    "uz": "Jihoz",
+    "exampleTr": "Dik yokuş çıkarken arabayı düşük vitese aldım.",
+    "exampleRu": "Поднимаясь на крутой склон, я переключил машину на пониженную передачу."
   },
   {
     "id": "fin_982",
@@ -11850,7 +12878,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bagaj"
+    "uz": "Bagaj",
+    "exampleTr": "Takım çantalarını ve matkabı arabanın bagajına yerleştirdik.",
+    "exampleRu": "Мы уложили ящики с инструментами и дрель в багажник машины."
   },
   {
     "id": "fin_983",
@@ -11861,7 +12891,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Навигация и транспорт",
     "isSchueco": false,
     "learned": false,
-    "uz": "Havfsizlik kamari"
+    "uz": "Havfsizlik kamari",
+    "exampleTr": "Yola çıkmadan önce herkes emniyet kemerini taksın.",
+    "exampleRu": "Перед выездом пусть все пристегнут ремень безопасности."
   },
   {
     "id": "fin_984",
@@ -11872,7 +12904,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ob-havo"
+    "uz": "Ob-havo",
+    "exampleTr": "Yarın yağmur var mı diye telefondan hava durumuna baktım.",
+    "exampleRu": "Я посмотрел в телефоне прогноз погоды, чтобы узнать, будет ли завтра дождь."
   },
   {
     "id": "fin_985",
@@ -11883,7 +12917,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Quyoshli"
+    "uz": "Quyoshli",
+    "exampleTr": "Bugün hava çok güneşli, dışarıda çalışmak keyifli.",
+    "exampleRu": "Сегодня погода очень солнечная, на улице приятно работать."
   },
   {
     "id": "fin_986",
@@ -11894,7 +12930,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bulutli"
+    "uz": "Bulutli",
+    "exampleTr": "Gökyüzü tamamen bulutlu, akşama doğru serinleyecek.",
+    "exampleRu": "Небо полностью облачное, к вечеру станет прохладнее."
   },
   {
     "id": "fin_987",
@@ -11905,7 +12943,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yomg'irli"
+    "uz": "Yomg'irli",
+    "exampleTr": "Yağmurlu günlerde yollar çok kaygan oluyor, dikkatli sür.",
+    "exampleRu": "В дождливые дни дороги бывают очень скользкими, веди аккуратно."
   },
   {
     "id": "fin_988",
@@ -11916,7 +12956,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qorli"
+    "uz": "Qorli",
+    "exampleTr": "Karlı dağ yolunda zincir olmadan ilerlemek tehlikelidir.",
+    "exampleRu": "На заснеженной горной дороге опасно ехать без цепей."
   },
   {
     "id": "fin_989",
@@ -11927,7 +12969,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shamolli"
+    "uz": "Shamolli",
+    "exampleTr": "Bugün hava çok rüzgarlı, cam taşırken dikkat edin.",
+    "exampleRu": "Сегодня очень ветрено, будьте осторожны при переноске стекла."
   },
   {
     "id": "fin_990",
@@ -11938,7 +12982,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bo'ron"
+    "uz": "Bo'ron",
+    "exampleTr": "Gece çıkan fırtına yüzünden bazı ağaç dalları kırıldı.",
+    "exampleRu": "Из-за ночного шторма сломались некоторые ветки деревьев."
   },
   {
     "id": "fin_991",
@@ -11949,7 +12995,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tumanli"
+    "uz": "Tumanli",
+    "exampleTr": "Sabah erken saatlerde otoyol çok sisli olduğu için yavaş gittik.",
+    "exampleRu": "Рано утром на трассе было очень туманно, поэтому мы ехали медленно."
   },
   {
     "id": "fin_992",
@@ -11960,7 +13008,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Muz"
+    "uz": "Muz",
+    "exampleTr": "Kaldırımda gizli buz var, yürürken ayağına dikkat et.",
+    "exampleRu": "На тротуаре незаметный лед, смотри под ноги, когда идешь."
   },
   {
     "id": "fin_993",
@@ -11971,7 +13021,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ayoz"
+    "uz": "Ayoz",
+    "exampleTr": "Gece don olacağı için boruları kontrol ettik.",
+    "exampleRu": "Поскольку ночью будут заморозки, мы проверили трубы."
   },
   {
     "id": "fin_994",
@@ -11982,7 +13034,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Soya"
+    "uz": "Soya",
+    "exampleTr": "Öğle sıcağında biraz dinlenmek için ağacın gölgesine oturduk.",
+    "exampleRu": "В полуденную жару мы сели в тень дерева, чтобы немного отдохнуть."
   },
   {
     "id": "fin_995",
@@ -11993,7 +13047,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shamol"
+    "uz": "Shamol",
+    "exampleTr": "Sert rüzgar açık kalan pencereyi hızlıca çarptı.",
+    "exampleRu": "Сильный ветер с силой захлопнул оставшееся открытым окно."
   },
   {
     "id": "fin_996",
@@ -12004,7 +13060,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yomg'ir"
+    "uz": "Yomg'ir",
+    "exampleTr": "Aniden başlayan yağmur yüzünden şemsiyesiz ıslandım.",
+    "exampleRu": "Из-за внезапно начавшегося дождя я промок без зонта."
   },
   {
     "id": "fin_997",
@@ -12015,7 +13073,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Foyda"
+    "uz": "Foyda",
+    "exampleTr": "Gece boyunca yağan kar bütün şehri beyaza boyadı.",
+    "exampleRu": "Снег, шедший всю ночь, окрасил весь город в белый цвет."
   },
   {
     "id": "fin_998",
@@ -12026,7 +13086,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "Quyosh"
+    "uz": "Quyosh",
+    "exampleTr": "Sabah güneşi doğrudan oturma odasının camından içeri giriyor.",
+    "exampleRu": "Утреннее солнце светит прямо через окно в гостиную."
   },
   {
     "id": "fin_999",
@@ -12037,7 +13099,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Погода и природа",
     "isSchueco": false,
     "learned": false,
-    "uz": "havo harorati"
+    "uz": "havo harorati",
+    "exampleTr": "Bu hafta hava sıcaklığı otuz derecenin üzerine çıkacak.",
+    "exampleRu": "На этой неделе температура воздуха поднимется выше тридцати градусов."
   },
   {
     "id": "fin_1000",
@@ -12048,7 +13112,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "Baxtli"
+    "uz": "Baxtli",
+    "exampleTr": "Uzun süre sonra ailesini görünce çok mutlu oldu.",
+    "exampleRu": "Увидев свою семью после долгого времени, он стал очень счастлив."
   },
   {
     "id": "fin_1001",
@@ -12059,7 +13125,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "Achinarli"
+    "uz": "Achinarli",
+    "exampleTr": "Arkadaşım kötü bir haber aldığı için bugün biraz üzgün.",
+    "exampleRu": "Мой друг сегодня немного грустный, потому что получил плохую новость."
   },
   {
     "id": "fin_1002",
@@ -12070,7 +13138,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "G'azablangan"
+    "uz": "G'azablangan",
+    "exampleTr": "Malzeme geç geldiği için şef oldukça kızgın görünüyor.",
+    "exampleRu": "Начальник выглядит довольно сердитым из-за того, что материал пришел поздно."
   },
   {
     "id": "fin_1003",
@@ -12081,7 +13151,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "hayajonlangan"
+    "uz": "hayajonlangan",
+    "exampleTr": "İlk iş günüm olduğu için sabah çok heyecanlı uyandım.",
+    "exampleRu": "Утром я проснулся очень взволнованным, так как это был мой первый рабочий день."
   },
   {
     "id": "fin_1004",
@@ -12092,7 +13164,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "Charchagan"
+    "uz": "Charchagan",
+    "exampleTr": "Bütün gün ayakta çalıştığım için akşam çok yorgun oluyorum.",
+    "exampleRu": "Поскольку я весь день работаю на ногах, вечером бываю очень уставшим."
   },
   {
     "id": "fin_1005",
@@ -12103,7 +13177,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kasal"
+    "uz": "Kasal",
+    "exampleTr": "Kardeşim grip olup hasta düştüğü için bugün işe gelemedi.",
+    "exampleRu": "Мой брат заболел гриппом, поэтому сегодня не смог прийти на работу."
   },
   {
     "id": "fin_1006",
@@ -12114,7 +13190,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sog'lom"
+    "uz": "Sog'lom",
+    "exampleTr": "Sağlıklı kalmak için her gün yürüyüş yapmak gerekir.",
+    "exampleRu": "Чтобы оставаться здоровым, нужно каждый день ходить пешком."
   },
   {
     "id": "fin_1007",
@@ -12125,7 +13203,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men yaxshiman"
+    "uz": "Men yaxshiman",
+    "exampleTr": "İlacı içtikten sonra baş ağrım geçti, şimdi çok iyiyim.",
+    "exampleRu": "После того как я выпил лекарство, головная боль прошла, сейчас я в полном порядке."
   },
   {
     "id": "fin_1008",
@@ -12136,7 +13216,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Самочувствие и эмоции",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men yomonman"
+    "uz": "Men yomonman",
+    "exampleTr": "Bugün ateşim çıktı, hiç halim yok, gerçekten kötüyüm.",
+    "exampleRu": "Сегодня у меня поднялась температура, совсем нет сил, мне правда плохо."
   },
   {
     "id": "fin_1009",
@@ -12147,7 +13229,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tez orada"
+    "uz": "Tez orada",
+    "exampleTr": "Hazır olun, kamyon birazdan kapının önüne yanaşacak.",
+    "exampleRu": "Будьте готовы, грузовик скоро подъедет к воротам."
   },
   {
     "id": "fin_1010",
@@ -12158,7 +13242,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hozir"
+    "uz": "Hozir",
+    "exampleTr": "Aradığın usta demin buradaydı, yukarı kata çıktı.",
+    "exampleRu": "Мастер, которого ты ищешь, только что был здесь, он поднялся наверх."
   },
   {
     "id": "fin_1011",
@@ -12169,7 +13255,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Числа и время",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'z vaqtida"
+    "uz": "O'z vaqtida",
+    "exampleTr": "Siparişi zamanında teslim edersek müşteri çok memnun kalır.",
+    "exampleRu": "Если мы доставим заказ вовремя, клиент останется очень доволен."
   },
   {
     "id": "fin_1012",
@@ -12180,7 +13268,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uchrashuv"
+    "uz": "Uchrashuv",
+    "exampleTr": "Saat on birde hastane doktoruyla randevum var.",
+    "exampleRu": "В одиннадцать часов у меня запись к врачу в больнице."
   },
   {
     "id": "fin_1013",
@@ -12191,7 +13281,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uchrashuv"
+    "uz": "Uchrashuv",
+    "exampleTr": "Müdürle maaş hakkında kısa bir görüşme yaptık.",
+    "exampleRu": "Мы провели с директором короткую беседу о зарплате."
   },
   {
     "id": "fin_1014",
@@ -12202,7 +13294,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Uchrashuv"
+    "uz": "Uchrashuv",
+    "exampleTr": "Her pazartesi sabahı ekipçe haftalık toplantı yaparız.",
+    "exampleRu": "Каждое утро понедельника мы всей командой проводим еженедельную планерку."
   },
   {
     "id": "fin_1015",
@@ -12213,7 +13307,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mijoz"
+    "uz": "Mijoz",
+    "exampleTr": "Müşteri pencerenin açılış yönünü değiştirmek istedi.",
+    "exampleRu": "Клиент захотел изменить направление открывания окна."
   },
   {
     "id": "fin_1016",
@@ -12224,7 +13320,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yetkazib beruvchi"
+    "uz": "Yetkazib beruvchi",
+    "exampleTr": "Yeni tedarikçi bize daha uygun fiyat teklifi verdi.",
+    "exampleRu": "Новый поставщик дал нам более выгодное ценовое предложение."
   },
   {
     "id": "fin_1017",
@@ -12235,7 +13333,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qattiq"
+    "uz": "Qattiq",
+    "exampleTr": "Bu firma yıllardır kaliteli alüminyum cephe işleri yapıyor.",
+    "exampleRu": "Эта фирма уже много лет занимается качественными работами по алюминиевым фасадам."
   },
   {
     "id": "fin_1018",
@@ -12246,7 +13346,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hamkor"
+    "uz": "Hamkor",
+    "exampleTr": "Şirketin iki ortağı yeni fabrika açmaya karar verdi.",
+    "exampleRu": "Два совладельца компании решили открыть новую фабрику."
   },
   {
     "id": "fin_1019",
@@ -12257,7 +13359,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Mas'uliyatli"
+    "uz": "Mas'uliyatli",
+    "exampleTr": "Depodaki malzemelerin sayımından Ali bey sorumlu.",
+    "exampleRu": "За подсчет материалов на складе отвечает господин Али."
   },
   {
     "id": "fin_1020",
@@ -12268,7 +13372,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ofitser"
+    "uz": "Ofitser",
+    "exampleTr": "Giriş kapısındaki görevli kimlik kartımı kontrol etti.",
+    "exampleRu": "Дежурный на входной двери проверил мое удостоверение."
   },
   {
     "id": "fin_1021",
@@ -12279,7 +13385,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Rasmiy"
+    "uz": "Rasmiy",
+    "exampleTr": "İmza için ofisten yetkili birinin gelmesini bekliyoruz.",
+    "exampleRu": "Мы ждем, когда из офиса придет уполномоченный представитель для подписи."
   },
   {
     "id": "fin_1022",
@@ -12290,7 +13398,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nazorat"
+    "uz": "Nazorat",
+    "exampleTr": "Gelecek hafta bakanlıktan iş güvenliği denetimi gelecek.",
+    "exampleRu": "На следующей неделе придет проверка по охране труда из министерства."
   },
   {
     "id": "fin_1023",
@@ -12301,7 +13411,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Shikoyat"
+    "uz": "Shikoyat",
+    "exampleTr": "Pencereden ses geldiği için müşteri şikayet bildirdi.",
+    "exampleRu": "Клиент подал жалобу из-за того, что из окна слышен шум."
   },
   {
     "id": "fin_1024",
@@ -12312,7 +13424,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qoniqish"
+    "uz": "Qoniqish",
+    "exampleTr": "Bizim için en önemli şey müşteri memnuniyetidir.",
+    "exampleRu": "Самое важное для нас — это удовлетворенность клиента."
   },
   {
     "id": "fin_1025",
@@ -12323,7 +13437,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение и дела",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kafolat"
+    "uz": "Kafolat",
+    "exampleTr": "Schüco profiller beş yıl boyunca garanti kapsamındadır.",
+    "exampleRu": "Профили Schüco находятся на гарантии в течение пяти лет."
   },
   {
     "id": "fin_1026",
@@ -12335,8 +13451,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Jarayonni boshqarish",
-    "exampleTr": "Şantiyede süreç kontrolü kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: контроль производственного процесса."
+    "exampleTr": "Her aşamada süreç kontrolü yaparsak hata çıkmaz.",
+    "exampleRu": "Если на каждом этапе вести контроль процесса, ошибок не будет."
   },
   {
     "id": "fin_1027",
@@ -12348,8 +13464,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "shtrix-kod",
-    "exampleTr": "Şantiyede barkod kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: штрихкод на профиле."
+    "exampleTr": "El terminaliyle profilin üstündeki barkodu okuttum.",
+    "exampleRu": "Я отсканировал ручным терминалом штрихкод на профиле."
   },
   {
     "id": "fin_1028",
@@ -12361,8 +13477,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chipta",
-    "exampleTr": "Şantiyede etiket kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: маркировочная наклейка."
+    "exampleTr": "Her parçaya poz numarasını gösteren etiket yapıştırın.",
+    "exampleRu": "Наклейте на каждую деталь бирку с номером позиции."
   },
   {
     "id": "fin_1029",
@@ -12374,8 +13490,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "yuk tashish maydoni",
-    "exampleTr": "Şantiyede sevkiyat alanı kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: зона отгрузки готовых конструкций."
+    "exampleTr": "Hazır kasaları streçleyip sevkiyat alanına çıkardık.",
+    "exampleRu": "Готовые рамы мы обмотали стрейчем и вывезли в зону отгрузки."
   },
   {
     "id": "fin_1030",
@@ -12387,8 +13503,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "yig'ish joyi",
-    "exampleTr": "Şantiyede montaj sahası kontrolü yapıldı.",
-    "exampleRu": "На объекте проверили: монтажная площадка на объекте."
+    "exampleTr": "Montaj sahasına inen bütün kasalar sırayla dizildi.",
+    "exampleRu": "Все рамы, поступившие на монтажную площадку, расставили по порядку."
   },
   {
     "id": "phr_1",
@@ -12400,8 +13516,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Nima qilishim kerak?",
-    "exampleTr": "Usta, ne yapmam gerekiyor?",
-    "exampleRu": "Мастер, что мне нужно делать?"
+    "exampleTr": "Bu kasaları bağladım, şimdi ne yapmam gerekiyor?",
+    "exampleRu": "Я собрал эти рамы, что мне нужно делать дальше?"
   },
   {
     "id": "phr_2",
@@ -12413,8 +13529,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Buni qayerga qo'yay?",
-    "exampleTr": "Usta, bunu nereye koyayım?",
-    "exampleRu": "Мастер, куда мне это положить / поставить?"
+    "exampleTr": "Kesilen çıtaları topladım, bunu nereye koyayım?",
+    "exampleRu": "Я собрал нарезанные штапики, куда мне это положить?"
   },
   {
     "id": "phr_3",
@@ -12426,8 +13542,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yordam bera olasanmi?",
-    "exampleTr": "Usta, yardım edebilir misin?",
-    "exampleRu": "Мастер, можешь помочь?"
+    "exampleTr": "Bir dakikan varsa şu ağır camda yardım edebilir misin?",
+    "exampleRu": "Если есть минутка, можешь помочь с этим тяжёлым стеклом?"
   },
   {
     "id": "phr_4",
@@ -12439,8 +13555,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qo'lingni ber / ko'tarishga yordamlashvor?",
-    "exampleTr": "Usta, bir el atar mısın?",
-    "exampleRu": "Мастер, помоги перенести (подсоби руками)?"
+    "exampleTr": "Şu uzun kasayı tezgaha alacağız, bir el atar mısın?",
+    "exampleRu": "Нам надо перенести эту длинную раму на верстак, подсобишь?"
   },
   {
     "id": "phr_5",
@@ -12452,8 +13568,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Material tugadi",
-    "exampleTr": "Usta, malzeme bitti",
-    "exampleRu": "Мастер, материал закончился"
+    "exampleTr": "Köşe takozu için malzeme bitti, depodan açalım mı?",
+    "exampleRu": "Материал для угловых сухарей закончился, открыть новую коробку со склада?"
   },
   {
     "id": "phr_6",
@@ -12465,8 +13581,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Yangi detal kerak",
-    "exampleTr": "Usta, yeni parça lazım",
-    "exampleRu": "Мастер, нужна новая деталь / заготовка"
+    "exampleTr": "Bu kısa kaldı, kesimden acil yeni parça lazım.",
+    "exampleRu": "Эта вышла короткой, срочно нужна новая деталь из раскроя."
   },
   {
     "id": "phr_7",
@@ -12478,8 +13594,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bu detal nuqsonli / yaroqsiz",
-    "exampleTr": "Usta, bu parça hatalı",
-    "exampleRu": "Мастер, эта деталь дефектная / бракованная"
+    "exampleTr": "Bakın, köşesi ezilmiş, bu parça hatalı görünüyor.",
+    "exampleRu": "Посмотрите, угол замят, эта деталь выглядит бракованной."
   },
   {
     "id": "phr_8",
@@ -12491,8 +13607,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "O'lchamlarni tekshirdingmi?",
-    "exampleTr": "Usta, ölçüleri kontrol ettin mi?",
-    "exampleRu": "Мастер, ты проверил размеры?"
+    "exampleTr": "Kesime başlamadan önce çizimdeki ölçüleri kontrol ettin mi?",
+    "exampleRu": "Перед тем как начать резку, ты проверил размеры по чертежу?"
   },
   {
     "id": "phr_9",
@@ -12504,8 +13620,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ish tugadimi?",
-    "exampleTr": "Usta, i̇ş bitti mi?",
-    "exampleRu": "Мастер, работа закончена?"
+    "exampleTr": "Beşinci kattaki iş bitti mi, yoksa devam mı?",
+    "exampleRu": "Работа на пятом этаже закончилась или ещё продолжается?"
   },
   {
     "id": "phr_10",
@@ -12517,8 +13633,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Oz qoldi, tugatyapman",
-    "exampleTr": "Usta, az kaldı, bitiriyorum",
-    "exampleRu": "Мастер, немного осталось, заканчиваю"
+    "exampleTr": "Son iki vidayı da sıkayım; az kaldı, bitiriyorum.",
+    "exampleRu": "Сейчас закручу последние два винта; немного осталось, заканчиваю."
   },
   {
     "id": "phr_11",
@@ -12530,8 +13646,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Hozir nima qilamiz?",
-    "exampleTr": "Usta, şimdi ne yapıyoruz?",
-    "exampleRu": "Мастер, что мы делаем сейчас?"
+    "exampleTr": "Çay molası bitti, şimdi ne yapıyoruz arkadaşlar?",
+    "exampleRu": "Перерыв на чай закончился, что мы делаем сейчас, ребята?"
   },
   {
     "id": "phr_12",
@@ -12543,8 +13659,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Buni kim qildi?",
-    "exampleTr": "Usta, bunu kim yaptı?",
-    "exampleRu": "Мастер, кто это сделал?"
+    "exampleTr": "Profil ters kesilmiş, dün gece bunu kim yaptı?",
+    "exampleRu": "Профиль отрезан наоборот, кто это сделал вчера вечером?"
   },
   {
     "id": "phr_13",
@@ -12556,8 +13672,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Usta, qarab yuborasizmi?",
-    "exampleTr": "Usta, usta bakar mısın?",
-    "exampleRu": "Мастер, мастер, посмотри пожалуйста!"
+    "exampleTr": "Şu menteşe boşluk yapıyor, usta bakar mısın?",
+    "exampleRu": "Вот эта петля люфтит, мастер, посмотри, пожалуйста!"
   },
   {
     "id": "phr_14",
@@ -12569,8 +13685,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qaysi asbob kerak?",
-    "exampleTr": "Usta, hangi alet lazım?",
-    "exampleRu": "Мастер, какой инструмент нужен?"
+    "exampleTr": "Yukarı çıkıyorum, montaj için hangi alet lazım?",
+    "exampleRu": "Я поднимаюсь наверх, какой инструмент нужен для монтажа?"
   },
   {
     "id": "phr_15",
@@ -12582,8 +13698,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Menga shurupburagichni ber",
-    "exampleTr": "Usta, bana şarjlı matkabı ver",
-    "exampleRu": "Мастер, передай мне шуруповерт"
+    "exampleTr": "Elim dolu, çabuk bana şarjlı matkabı ver.",
+    "exampleRu": "У меня руки заняты, быстро передай мне шуруповёрт."
   },
   {
     "id": "phr_16",
@@ -12595,8 +13711,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ehtiyot bo'l, juda issiq!",
-    "exampleTr": "Usta, dikkatli ol, çok sıcak",
-    "exampleRu": "Мастер, будь осторожен, очень горячо!"
+    "exampleTr": "Fırından yeni çıktı; dikkatli ol, çok sıcak!",
+    "exampleRu": "Только что вышло из печи; будь осторожен, очень горячо!"
   },
   {
     "id": "phr_17",
@@ -12608,8 +13724,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ehtiyot bo'l, qirrasi o'tkir!",
-    "exampleTr": "Usta, dikkatli ol, keskin kenar",
-    "exampleRu": "Мастер, осторожно, острая кромка!"
+    "exampleTr": "Eldivensiz tutma; dikkatli ol, keskin kenar elini keser.",
+    "exampleRu": "Не берись без перчаток; осторожно, острая кромка порежет руку."
   },
   {
     "id": "phr_18",
@@ -12621,8 +13737,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Stanokni to'xtat!",
-    "exampleTr": "Usta, makineyi durdur!",
-    "exampleRu": "Мастер, останови станок!"
+    "exampleTr": "Profil kaydı, kırmızı düğmeye basıp makineyi durdur!",
+    "exampleRu": "Профиль съехал, нажми на красную кнопку и останови станок!"
   },
   {
     "id": "phr_19",
@@ -12634,8 +13750,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Pnevmatik shlangni uzat",
-    "exampleTr": "Usta, hava hortumunu uzat",
-    "exampleRu": "Мастер, протяни пневматический шланг"
+    "exampleTr": "Pres burada yetişmiyor, hava hortumunu uzat lütfen.",
+    "exampleRu": "Пресс сюда не достаёт, протяни, пожалуйста, пневматический шланг."
   },
   {
     "id": "phr_20",
@@ -12647,8 +13763,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ertaga smenadan tashqari ish bormi?",
-    "exampleTr": "Usta, yarın mesai var mı?",
-    "exampleRu": "Мастер, завтра будут сверхурочные?"
+    "exampleTr": "Sevkiyat yetişmezse cumartesi veya yarın mesai var mı?",
+    "exampleRu": "Если отгрузка не успеет, завтра или в субботу будут сверхурочные?"
   },
   {
     "id": "phr_21",
@@ -12660,8 +13776,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Ish vaqti tugadi / tarqalish vaqti bo'ldi",
-    "exampleTr": "Usta, paydos vakti geldi",
-    "exampleRu": "Мастер, время окончания смены (конец работы)!"
+    "exampleTr": "Saat altı oldu, tezgahı toplayın, paydos vakti geldi.",
+    "exampleRu": "Уже шесть часов, убирайте верстак, пришло время конца смены."
   },
   {
     "id": "phr_22",
@@ -12673,8 +13789,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Tushlik tanaffusi soat nechada?",
-    "exampleTr": "Usta, yemek molası kaçta?",
-    "exampleRu": "Мастер, во сколько обеденный перерыв?"
+    "exampleTr": "Bu fabrikada öğlen yemek molası kaçta başlıyor?",
+    "exampleRu": "Во сколько на этом заводе начинается обеденный перерыв?"
   },
   {
     "id": "phr_23",
@@ -12686,8 +13802,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chekish tanaffusiga chiqyapman",
-    "exampleTr": "Usta, sigara molasına çıkıyorum",
-    "exampleRu": "Мастер, я выхожу на перекур"
+    "exampleTr": "On dakikalığına bahçeye sigara molasına çıkıyorum, arayan olursa söyle.",
+    "exampleRu": "Я выхожу во двор на перекур на десять минут, скажи, если кто спросит."
   },
   {
     "id": "phr_24",
@@ -12699,8 +13815,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Hozir kelaman",
-    "exampleTr": "Usta, hemen geliyorum",
-    "exampleRu": "Мастер, я сейчас вернусь (одна минута)"
+    "exampleTr": "Depodan yeni eldiven alıp hemen geliyorum.",
+    "exampleRu": "Возьму на складе новые перчатки и сразу вернусь."
   },
   {
     "id": "phr_25",
@@ -12712,8 +13828,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Buni to'g'rilashim kerak",
-    "exampleTr": "Usta, bunu düzeltmem lazım",
-    "exampleRu": "Мастер, мне нужно это исправить / переделать"
+    "exampleTr": "Kilit biraz sert basıyor, teslimden önce bunu düzeltmem lazım.",
+    "exampleRu": "Замок нажимается туговато, перед сдачей мне нужно это исправить."
   },
   {
     "id": "phr_26",
@@ -12725,8 +13841,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Chizmaga muvofiq qilingan",
-    "exampleTr": "Usta, çizime göre uygun",
-    "exampleRu": "Мастер, сделано строго по чертежу"
+    "exampleTr": "Tüm delikleri ölçtüm, parçalar çizime göre uygun.",
+    "exampleRu": "Я замерил все отверстия, детали соответствуют чертежу."
   },
   {
     "id": "phr_27",
@@ -12738,8 +13854,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Usta tasdiqladi / qabul qildi",
-    "exampleTr": "Usta, usta onay verdi",
-    "exampleRu": "Мастер, мастер одобрил / принял работу"
+    "exampleTr": "İlk numuneyi inceledik, usta onay verdi, devam edebiliriz.",
+    "exampleRu": "Мы осмотрели первый образец, мастер дал добро, можем продолжать."
   },
   {
     "id": "phr_28",
@@ -12751,8 +13867,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Kran kelyapti, chetga chiqinglar!",
-    "exampleTr": "Usta, vinç geliyor, kenara çekilin",
-    "exampleRu": "Мастер, кран идет, отойдите в сторону!"
+    "exampleTr": "Üstten ağır palet geçiyor; vinç geliyor, kenara çekilin!",
+    "exampleRu": "Сверху несут тяжёлый поддон; кран идёт, отойдите в сторону!"
   },
   {
     "id": "phr_29",
@@ -12764,8 +13880,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Oynani ehtiyotkorlik bilan ushla",
-    "exampleTr": "Usta, camı dikkatli tut",
-    "exampleRu": "Мастер, держи стекло осторожно!"
+    "exampleTr": "Köşesi taşa vurmasın, şu büyük camı dikkatli tut.",
+    "exampleRu": "Чтобы угол не ударился о камень, держи это большое стекло осторожно."
   },
   {
     "id": "phr_30",
@@ -12777,8 +13893,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Bu profilning uzunligi qancha?",
-    "exampleTr": "Usta, bu profilin boyu kaç?",
-    "exampleRu": "Мастер, какая длина у этого профиля?"
+    "exampleTr": "Kalan parçayı kullanacağız da, bu profilin boyu kaç?",
+    "exampleRu": "Мы хотим пустить в дело остаток — какая длина у этого профиля?"
   },
   {
     "id": "phr_31",
@@ -12790,8 +13906,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Burchakni necha gradusda kesamiz?",
-    "exampleTr": "Usta, açıyı kaç derece kesiyoruz?",
-    "exampleRu": "Мастер, под каким углом режем?"
+    "exampleTr": "Yeni siparişe geçtik, sağ köşenin açısını kaç derece kesiyoruz?",
+    "exampleRu": "Перешли к новому заказу — под каким углом режем правый угол?"
   },
   {
     "id": "phr_32",
@@ -12803,8 +13919,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Qirq besh gradusda kes",
-    "exampleTr": "Usta, kırk beş derece kes",
-    "exampleRu": "Мастер, режь под 45 градусов"
+    "exampleTr": "Kanat profilini her iki uçtan kırk beş derece kes.",
+    "exampleRu": "Режь профиль створки с обоих концов под сорок пять градусов."
   },
   {
     "id": "phr_33",
@@ -12816,8 +13932,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "To'qson gradus to'g'ri burchak (goniya)",
-    "exampleTr": "Usta, doksan derece gönye",
-    "exampleRu": "Мастер, прямой угол (90 градусов по угольнику)"
+    "exampleTr": "Orta kayıt birleşiminde tam doksan derece gönye yakalamalıyız.",
+    "exampleRu": "На стыке среднего импоста нам нужно поймать ровно девяносто градусов по угольнику."
   },
   {
     "id": "phr_34",
@@ -12829,8 +13945,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Boltlarni yaxshilab qotir",
-    "exampleTr": "Usta, civataları iyi sık",
-    "exampleRu": "Мастер, затяни болты как следует"
+    "exampleTr": "Braket hiç oynamasın, anahtarla bütün civataları iyi sık.",
+    "exampleRu": "Чтобы кронштейн вообще не шатался, затяни ключом все болты как следует."
   },
   {
     "id": "phr_35",
@@ -12842,8 +13958,8 @@ window.DICTIONARY_DATABASE = [
     "isSchueco": true,
     "learned": false,
     "uz": "Silikonni tekis qilib tort",
-    "exampleTr": "Usta, silikonu düzgün çek",
-    "exampleRu": "Мастер, наноси силикон ровным швом"
+    "exampleTr": "Su sızdırmaması için dış derze silikonu düzgün çek.",
+    "exampleRu": "Чтобы вода не просачивалась, наноси силикон на наружный шов ровно."
   },
   {
     "id": "phr_36",
@@ -12854,7 +13970,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qalaysiz? Men yaxshiman, yaxshimisiz?"
+    "uz": "Qalaysiz? Men yaxshiman, yaxshimisiz?",
+    "exampleTr": "Günaydın Kemal Bey, nasılsınız? İyiyim, siz nasılsınız, işler yolunda mı?",
+    "exampleRu": "Доброе утро, господин Кемаль, как вы? Я хорошо, а вы как, дела идут хорошо?"
   },
   {
     "id": "phr_37",
@@ -12865,7 +13983,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ismingiz nima? Mening ismim Timur"
+    "uz": "Ismingiz nima? Mening ismim Timur",
+    "exampleTr": "Hoş geldiniz, adınız ne? — Merhaba, benim adım Timur, yeni montaj ekibindenim.",
+    "exampleRu": "Добро пожаловать, как вас зовут? — Здравствуйте, меня зовут Тимур, я из новой монтажной бригады."
   },
   {
     "id": "phr_38",
@@ -12876,7 +13996,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tanishganimdan xursandman"
+    "uz": "Tanishganimdan xursandman",
+    "exampleTr": "Yeni iş yerinize hoş geldiniz, sizinle tanıştığımıza memnun oldum.",
+    "exampleRu": "Добро пожаловать на ваше новое место работы, очень приятно с вами познакомиться."
   },
   {
     "id": "phr_39",
@@ -12887,7 +14009,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men ham tanishganimdan xursandman"
+    "uz": "Men ham tanishganimdan xursandman",
+    "exampleTr": "Teşekkür ederim Ali Bey, ben de çok memnun oldum, iyi çalışmalar.",
+    "exampleRu": "Спасибо, господин Али, мне тоже очень приятно, хорошей работы."
   },
   {
     "id": "phr_40",
@@ -12898,7 +14022,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men turkchani ozgina bilaman"
+    "uz": "Men turkchani ozgina bilaman",
+    "exampleTr": "Kusura bakmayın, Türkçe az biliyorum ama her gün yeni kelimeler öğreniyorum.",
+    "exampleRu": "Извините, я немного знаю турецкий язык, но каждый день учу новые слова."
   },
   {
     "id": "phr_41",
@@ -12909,7 +14035,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Biroz sekinroq gapira olasizmi?"
+    "uz": "Biroz sekinroq gapira olasizmi?",
+    "exampleTr": "Pardon, söylediğinizi tam yakalayamadım, biraz daha yavaş konuşur musunuz?",
+    "exampleRu": "Извините, я не совсем уловил то, что вы сказали, не могли бы вы говорить помедленнее?"
   },
   {
     "id": "phr_42",
@@ -12920,7 +14048,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yana ayta olasizmi?"
+    "uz": "Yana ayta olasizmi?",
+    "exampleTr": "Burada gürültü çok fazla, ölçüyü tekrar söyler misiniz?",
+    "exampleRu": "Здесь очень много шума, повторите размер еще раз, пожалуйста?"
   },
   {
     "id": "phr_43",
@@ -12931,7 +14061,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men buni tushunmayapman, tushuntira olasizmi?"
+    "uz": "Men buni tushunmayapman, tushuntira olasizmi?",
+    "exampleTr": "Özür dilerim şefim, bunu anlamadım, açıklar mısınız lütfen?",
+    "exampleRu": "Извините, шеф, я этого не понял, поясните, пожалуйста?"
   },
   {
     "id": "phr_44",
@@ -12942,7 +14074,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Buning turkcha nomi nima?"
+    "uz": "Buning turkcha nomi nima?",
+    "exampleTr": "Elimdeki şu parçayı gösterip ustaya \"Bunun Türkçe adı ne?\" diye sordum.",
+    "exampleRu": "Показав деталь в руке, я спросил у мастера: «Как это называется по-турецки?»"
   },
   {
     "id": "phr_45",
@@ -12953,7 +14087,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Nimani nazarda tutdingiz?"
+    "uz": "Nimani nazarda tutdingiz?",
+    "exampleTr": "Tam anlayamadım, bu değişiklikle ne demek istiyorsunuz?",
+    "exampleRu": "Не совсем понял, что вы имеете в виду под этим изменением?"
   },
   {
     "id": "phr_46",
@@ -12964,7 +14100,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Siz qaraysizmi?"
+    "uz": "Siz qaraysizmi?",
+    "exampleTr": "Affedersiniz, bir dakika buraya bakar mısınız, yardım lazım.",
+    "exampleRu": "Извините, подойдите, пожалуйста, сюда на минутку, нужна помощь."
   },
   {
     "id": "phr_47",
@@ -12975,7 +14113,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hisobni keltiring, iltimos"
+    "uz": "Hisobni keltiring, iltimos",
+    "exampleTr": "Garson bey, yemek bitti, çayımız da geldiyse hesap lütfen.",
+    "exampleRu": "Официант, мы закончили есть, если чай тоже принесли — счет, пожалуйста."
   },
   {
     "id": "phr_48",
@@ -12986,7 +14126,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Siz kredit kartalar qabul qilasizmi?"
+    "uz": "Siz kredit kartalar qabul qilasizmi?",
+    "exampleTr": "Kasaya gelince sordum: Burada kredi kartı geçiyor mu yoksa sadece nakit mi?",
+    "exampleRu": "Подойдя к кассе, я спросил: здесь принимается оплата картой или только наличные?"
   },
   {
     "id": "phr_49",
@@ -12997,7 +14139,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men pul bilan to'layman"
+    "uz": "Men pul bilan to'layman",
+    "exampleTr": "Kartım yanımda değil, o yüzden alışverişi nakit ödeyeceğim.",
+    "exampleRu": "Моей карты нет с собой, поэтому я заплачу за покупки наличными."
   },
   {
     "id": "phr_50",
@@ -13008,7 +14152,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kvitansiya olsam bo'ladimi?"
+    "uz": "Kvitansiya olsam bo'ladimi?",
+    "exampleTr": "Şirkete göstermek için ödemeden sonra fiş alabilir miyim?",
+    "exampleRu": "Можно чек после оплаты, чтобы показать в компании?"
   },
   {
     "id": "phr_51",
@@ -13019,7 +14165,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Sizga sumka kerakmi? Yo'q, men xohlamayman"
+    "uz": "Sizga sumka kerakmi? Yo'q, men xohlamayman",
+    "exampleTr": "Kasiyer \"Poşet ister misiniz?\" deyince çantamı gösterip \"Yok, istemiyorum\" dedim.",
+    "exampleRu": "Когда кассир спросил: «Пакет нужен?», я показал на свою сумку и сказал: «Нет, не надо»."
   },
   {
     "id": "phr_52",
@@ -13030,7 +14178,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu qanchaga tushdi?"
+    "uz": "Bu qanchaga tushdi?",
+    "exampleTr": "Aldığımız vidalar ve silikon toplam ne kadar tuttu?",
+    "exampleRu": "Сколько всего вышло по сумме за купленные винты и силикон?"
   },
   {
     "id": "phr_53",
@@ -13041,7 +14191,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chegirma bera olasizmi?"
+    "uz": "Chegirma bera olasizmi?",
+    "exampleTr": "Bu ceketi çok beğendim, nakit alırsam biraz indirim yapabilir misiniz?",
+    "exampleRu": "Мне очень понравилась эта куртка, если я куплю за наличные, сделаете небольшую скидку?"
   },
   {
     "id": "phr_54",
@@ -13052,7 +14204,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Oxirgi marta nima bo'ladi?"
+    "uz": "Oxirgi marta nima bo'ladi?",
+    "exampleTr": "Fiyatı biraz yüksek geldi, peki pazarlıksız en son kaç olur?",
+    "exampleRu": "Цена показалась немного высокой, так какая будет окончательная цена без торга?"
   },
   {
     "id": "phr_55",
@@ -13063,7 +14217,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Suv olsam bo'ladimi?"
+    "uz": "Suv olsam bo'ladimi?",
+    "exampleTr": "Çok susadım, zahmet olmazsa bir su alabilir miyim?",
+    "exampleRu": "Я очень хочу пить, если не затруднит, можно воды?"
   },
   {
     "id": "phr_56",
@@ -13074,7 +14230,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Ikkita choy ichsak bo'ladimi?"
+    "uz": "Ikkita choy ichsak bo'ladimi?",
+    "exampleTr": "Kantine oturduk, arkadaşla beraber \"İki çay alabilir miyiz?\" diye seslendik.",
+    "exampleRu": "Мы сели в столовой и позвали с другом: «Можно нам два чая?»"
   },
   {
     "id": "phr_57",
@@ -13085,7 +14243,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hojatxona qayerda ekan?"
+    "uz": "Hojatxona qayerda ekan?",
+    "exampleTr": "İyi günler, ellerimi yıkayacağım da lavabo nerede acaba?",
+    "exampleRu": "Добрый день, я хотел бы помыть руки, подскажите, где находится туалет?"
   },
   {
     "id": "phr_58",
@@ -13096,7 +14256,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Qanday qilib u erga borishim mumkin?"
+    "uz": "Qanday qilib u erga borishim mumkin?",
+    "exampleTr": "Adres haritada görünmüyor, yürüyerek oraya nasıl gidebilirim?",
+    "exampleRu": "Адрес не виден на карте, как мне дойти туда пешком?"
   },
   {
     "id": "phr_59",
@@ -13107,7 +14269,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Avtobus bekati qayerda?"
+    "uz": "Avtobus bekati qayerda?",
+    "exampleTr": "Affedersiniz, şehir merkezine giden otobüs durağı nerede?",
+    "exampleRu": "Извините, где автобусная остановка в сторону центра города?"
   },
   {
     "id": "phr_60",
@@ -13118,7 +14282,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Metrodan qanchalik uzoqda?"
+    "uz": "Metrodan qanchalik uzoqda?",
+    "exampleTr": "Yeni tutacağımız daire metroya ne kadar uzaklıkta?",
+    "exampleRu": "Как далеко от станции метро находится квартира, которую мы собираемся снять?"
   },
   {
     "id": "phr_61",
@@ -13129,7 +14295,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "To'g'ri boring, o'ngga buriling"
+    "uz": "To'g'ri boring, o'ngga buriling",
+    "exampleTr": "Eczane çok yakın: buradan düz gidin, marketten sağa dönün.",
+    "exampleRu": "Аптека совсем рядом: отсюда идите прямо, у маркета поверните направо."
   },
   {
     "id": "phr_62",
@@ -13140,7 +14308,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Chiroqlardan chapga buriling"
+    "uz": "Chiroqlardan chapga buriling",
+    "exampleTr": "Sanayi sitesine girmek için ikinci ışıklardan sola dönün.",
+    "exampleRu": "Чтобы заехать в промзону, на втором светофоре поверните налево."
   },
   {
     "id": "phr_63",
@@ -13151,7 +14321,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "menga yordam kerak"
+    "uz": "menga yordam kerak",
+    "exampleTr": "Bu camı tek başıma kaldıramıyorum, gerçekten yardıma ihtiyacım var.",
+    "exampleRu": "Я не могу поднять это стекло один, мне действительно нужна помощь."
   },
   {
     "id": "phr_64",
@@ -13162,7 +14334,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Menga yordam bera olasizmi?"
+    "uz": "Menga yordam bera olasizmi?",
+    "exampleTr": "Profilin öbür ucunu tutmak için bana yardım edebilir misiniz?",
+    "exampleRu": "Вы не могли бы мне помочь подержать другой конец профиля?"
   },
   {
     "id": "phr_65",
@@ -13173,7 +14347,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "O'zingizni ehtiyot qiling"
+    "uz": "O'zingizni ehtiyot qiling",
+    "exampleTr": "Hafta sonu iyi dinlenin, pazartesiye kadar kendinize iyi bakın!",
+    "exampleRu": "Хорошо отдохните на выходных, берегите себя до понедельника!"
   },
   {
     "id": "phr_66",
@@ -13184,7 +14360,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Omad, omad"
+    "uz": "Omad, omad",
+    "exampleTr": "Sabah dükkana girerken fırıncıya \"Hayırlı işler, kolay gelsin!\" dedim.",
+    "exampleRu": "Утром, заходя в булочную, я сказал пекарю: «Удачной работы и легкого дня!»"
   },
   {
     "id": "phr_67",
@@ -13195,7 +14373,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tez orada ko'rishguncha, xayr"
+    "uz": "Tez orada ko'rishguncha, xayr",
+    "exampleTr": "Mesai bitti, artık eve gidiyorum; görüşmek üzere, hoşça kalın.",
+    "exampleRu": "Рабочий день закончился, я уже иду домой; до скорой встречи, всего доброго!"
   },
   {
     "id": "phr_68",
@@ -13206,7 +14386,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xayrli kech, ertaga ko'rishguncha"
+    "uz": "Xayrli kech, ertaga ko'rishguncha",
+    "exampleTr": "Çıkış kapısında arkadaşlara el sallayıp \"İyi akşamlar, yarın görüşürüz\" dedik.",
+    "exampleRu": "У выходной двери мы помахали ребятам и сказали: «Добрый вечер, увидимся завтра!»"
   },
   {
     "id": "phr_69",
@@ -13217,7 +14399,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yaxshi dam oling"
+    "uz": "Yaxshi dam oling",
+    "exampleTr": "Bugün çok çalıştın Hasan, eve gidince iyi istirahatler.",
+    "exampleRu": "Ты сегодня много работал, Хасан, хорошего отдыха дома."
   },
   {
     "id": "phr_70",
@@ -13228,7 +14412,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "rahmat"
+    "uz": "rahmat",
+    "exampleTr": "Pencere tertemiz monte edilmiş, ustam eline koluna sağlık!",
+    "exampleRu": "Окно смонтировано идеально чисто, мастер, огромное спасибо за отличную работу!"
   },
   {
     "id": "phr_71",
@@ -13239,7 +14425,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Yaxshi ishtaha asal va shakar"
+    "uz": "Yaxshi ishtaha asal va shakar",
+    "exampleTr": "Yemeği beğendiysen çok sevindim, afiyet bal şeker olsun!",
+    "exampleRu": "Я очень рад, что тебе понравилась еда, приятного аппетита, на здоровье!"
   },
   {
     "id": "phr_72",
@@ -13250,7 +14438,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Katta rahmat, rahmat"
+    "uz": "Katta rahmat, rahmat",
+    "exampleTr": "Ağır kutuyu taşımama yardım ettiğiniz için çok teşekkür ederim, sağ olun.",
+    "exampleRu": "Большое спасибо за то, что помогли перенести тяжелую коробку, будьте здоровы!"
   },
   {
     "id": "phr_73",
@@ -13261,7 +14451,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xush kelibsiz, har doim"
+    "uz": "Xush kelibsiz, har doim",
+    "exampleTr": "Teşekkür edince komşum güldü ve \"Bir şey değil, her zaman!\" dedi.",
+    "exampleRu": "Когда я поблагодарил, мой сосед улыбнулся и сказал: «Не за что, всегда рад помочь!»"
   },
   {
     "id": "phr_74",
@@ -13272,7 +14464,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Kechirasiz, sizni bezovta qildim"
+    "uz": "Kechirasiz, sizni bezovta qildim",
+    "exampleTr": "Geç saatte aradığım için kusura bakmayın, rahatsız ettim.",
+    "exampleRu": "Извините, что побеспокоил своим звонком в столь поздний час."
   },
   {
     "id": "phr_75",
@@ -13283,7 +14477,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Hechqisi yo‘q, buning hech qanday ahamiyati yo‘q"
+    "uz": "Hechqisi yo‘q, buning hech qanday ahamiyati yo‘q",
+    "exampleTr": "Özür dilediğimde müdür \"Sorun yok, hiç önemli değil, işimize bakalım\" dedi.",
+    "exampleRu": "Когда я извинился, директор сказал: «Все в порядке, абсолютно не важно, давайте займемся делом»."
   },
   {
     "id": "phr_76",
@@ -13294,7 +14490,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Xavotir olma, hal qilamiz"
+    "uz": "Xavotir olma, hal qilamiz",
+    "exampleTr": "İş biraz uzadı ama merak etme, hallederiz, yetiştiririz.",
+    "exampleRu": "Работа немного затянулась, но не волнуйся, мы со всем разберемся и успеем."
   },
   {
     "id": "phr_77",
@@ -13305,7 +14503,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu menga mos keladi, muammo yo'q"
+    "uz": "Bu menga mos keladi, muammo yo'q",
+    "exampleTr": "Cumartesi sabahı saat dokuzda buluşmak bana uyar, sıkıntı yok.",
+    "exampleRu": "Встретиться в субботу утром в девять часов мне подходит, никаких проблем!"
   },
   {
     "id": "phr_78",
@@ -13316,7 +14516,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu muhim emas, nima xohlasangiz"
+    "uz": "Bu muhim emas, nima xohlasangiz",
+    "exampleTr": "Öğlen döner ya da köfte yiyelim mi? — Fark etmez, nasıl istersen.",
+    "exampleRu": "Поедим в обед дёнер или котлеты? — Без разницы, как захочешь."
   },
   {
     "id": "phr_79",
@@ -13327,7 +14529,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Siz haqsiz, men roziman"
+    "uz": "Siz haqsiz, men roziman",
+    "exampleTr": "Evet ustam, haklısınız, katılıyorum, bunu hemen değiştirelim.",
+    "exampleRu": "Да, мастер, вы совершенно правы, согласен, давайте сразу это заменим."
   },
   {
     "id": "phr_80",
@@ -13338,7 +14542,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Bu, albatta"
+    "uz": "Bu, albatta",
+    "exampleTr": "Kaliteli malzeme kullanmak işi hızlandırır, değil mi? — Kesinlikle öyle!",
+    "exampleRu": "Использование качественного материала ускоряет работу, не так ли? — Безусловно, так и есть!"
   },
   {
     "id": "phr_81",
@@ -13349,7 +14555,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Albatta, mamnuniyat bilan"
+    "uz": "Albatta, mamnuniyat bilan",
+    "exampleTr": "Bana adresinizi gönderir misiniz? — Tabii ki, memnuniyetle şimdi yazıyorum.",
+    "exampleRu": "Пришлете мне ваш адрес? — Конечно, с большим удовольствием, сейчас пишу."
   },
   {
     "id": "phr_82",
@@ -13360,7 +14568,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Biz soat nechada uchrashamiz?"
+    "uz": "Biz soat nechada uchrashamiz?",
+    "exampleTr": "Yarın şantiye önünde saat kaçta buluşuyoruz, servis kaçta kalkıyor?",
+    "exampleRu": "Во сколько часов мы встречаемся завтра перед объектом, во сколько выезжает развозка?"
   },
   {
     "id": "phr_83",
@@ -13371,7 +14581,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Trafik juda og'ir edi, men kechikdim"
+    "uz": "Trafik juda og'ir edi, men kechikdim",
+    "exampleTr": "Özür dilerim şef, köprüde trafik çok yoğundu, geç kaldım.",
+    "exampleRu": "Извини, шеф, на мосту были сильные пробки, я опоздал."
   },
   {
     "id": "phr_84",
@@ -13382,7 +14594,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Men darhol ketaman"
+    "uz": "Men darhol ketaman",
+    "exampleTr": "Çantamı aldım, kapıyı kilitledim, şimdi hemen yola çıkıyorum.",
+    "exampleRu": "Я взял сумку, запер дверь, сейчас уже выхожу в путь."
   },
   {
     "id": "phr_85",
@@ -13393,7 +14607,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "juma muborak"
+    "uz": "juma muborak",
+    "exampleTr": "Cuma sabahı telefonda bütün arkadaşlara mesaj atıp \"Hayırlı cumalar\" dedim.",
+    "exampleRu": "В пятницу утром я отправил сообщение всем друзьям в телефоне и пожелал: «Благословенной пятницы!»"
   },
   {
     "id": "phr_86",
@@ -13404,7 +14620,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "bayramlar muborak"
+    "uz": "bayramlar muborak",
+    "exampleTr": "Ailenizle birlikte huzurlu ve güzel günler dilerim, hayırlı bayramlar!",
+    "exampleRu": "Желаю спокойных и прекрасных дней вместе с вашей семьей, с праздником!"
   },
   {
     "id": "phr_87",
@@ -13415,7 +14633,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Tezroq tuzalib keting, tezroq tuzalib keting"
+    "uz": "Tezroq tuzalib keting, tezroq tuzalib keting",
+    "exampleTr": "Hastanede yattığını duydum, çok geçmiş olsun, acil şifalar dilerim.",
+    "exampleRu": "Я слышал, что ты лежишь в больнице, выздоравливай скорее, желаю скорейшего исцеления!"
   },
   {
     "id": "phr_88",
@@ -13426,7 +14646,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "hamdardlik bildiraman"
+    "uz": "hamdardlik bildiraman",
+    "exampleTr": "Acı haberinizi yeni aldım, çok üzüldüm, başınız sağ olsun.",
+    "exampleRu": "Только что узнал вашу печальную новость, очень огорчен, мои соболезнования."
   },
   {
     "id": "phr_89",
@@ -13437,7 +14659,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "sog 'bo'ling"
+    "uz": "sog 'bo'ling",
+    "exampleTr": "Güneşin altında çalışan işçileri görünce \"Allah kolaylık versin\" dedim.",
+    "exampleRu": "Увидев рабочих, трудящихся под солнцем, я сказал: «Пусть Аллах облегчит труд!»"
   },
   {
     "id": "phr_90",
@@ -13448,6 +14672,8 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Разговорные фразы",
     "isSchueco": false,
     "learned": false,
-    "uz": "Omad tilaymiz, undan zavqlaning"
+    "uz": "Omad tilaymiz, undan zavqlaning",
+    "exampleTr": "Yeni arabanız hayırlı olsun, güle güle kullanın!",
+    "exampleRu": "Поздравляю с вашей новой машиной, пользуйтесь на радость!"
   }
 ];
