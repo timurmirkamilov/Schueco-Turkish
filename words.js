@@ -8,7 +8,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Bo'shliq juda katta / oraliq ko'p"
+    "uz": "Bo'shliq juda katta / oraliq ko'p",
+    "exampleTr": "Kanat ile kasa arasında boşluk çok fazla.",
+    "exampleRu": "Между створкой и рамой зазор слишком большой."
   },
   {
     "id": "sch_2",
@@ -19,7 +21,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Burchak to'g'ri kelmayapti (mos emas)"
+    "uz": "Burchak to'g'ri kelmayapti (mos emas)",
+    "exampleTr": "Preslemeden sonra bu köşe uyuşmuyor.",
+    "exampleRu": "После опрессовки этот угол не сходится."
   },
   {
     "id": "sch_3",
@@ -30,7 +34,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Rezina qistirmasini (fitil) tekshir"
+    "uz": "Rezina qistirmasini (fitil) tekshir",
+    "exampleTr": "Camı takmadan önce fitili kontrol et.",
+    "exampleRu": "Перед установкой стекла проверь уплотнитель."
   },
   {
     "id": "sch_4",
@@ -41,7 +47,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Nuqsonli / Yaroqsiz / Brak"
+    "uz": "Nuqsonli / Yaroqsiz / Brak",
+    "exampleTr": "Kusurlu profili kenara ayır, kullanma.",
+    "exampleRu": "Отложи бракованный профиль в сторону, не используй."
   },
   {
     "id": "sch_5",
@@ -52,7 +60,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Burchagi to'g'ri emas (qiyshiq, goniyada emas)"
+    "uz": "Burchagi to'g'ri emas (qiyshiq, goniyada emas)",
+    "exampleTr": "Kasa gönyesinde değil, çapraz ölçüyü tekrar al.",
+    "exampleRu": "Рама не под прямым углом, перемерь диагонали."
   },
   {
     "id": "sch_6",
@@ -63,7 +73,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Chizilgan joyi bor / tirnalgan"
+    "uz": "Chizilgan joyi bor / tirnalgan",
+    "exampleTr": "Kapak profilinde derin bir çizik var.",
+    "exampleRu": "На декоративной крышке есть глубокая царапина."
   },
   {
     "id": "sch_7",
@@ -74,7 +86,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Bo'yoqda nuqson bor"
+    "uz": "Bo'yoqda nuqson bor",
+    "exampleTr": "Bu profillerde boya hatası var, geri göndereceğiz.",
+    "exampleRu": "На этих профилях дефект покраски, отправим обратно."
   },
   {
     "id": "sch_8",
@@ -85,7 +99,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Rezina qistirma ezilgan / qisilgan"
+    "uz": "Rezina qistirma ezilgan / qisilgan",
+    "exampleTr": "Köşedeki conta ezilmiş, yenisiyle değiştir.",
+    "exampleRu": "Уплотнитель в углу примят, замени на новый."
   },
   {
     "id": "sch_9",
@@ -96,7 +112,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Qirindi va g'adir-budurlarni tozalang"
+    "uz": "Qirindi va g'adir-budurlarni tozalang",
+    "exampleTr": "Kesimden sonra bütün çapakları temizle.",
+    "exampleRu": "После резки зачисти все заусенцы."
   },
   {
     "id": "sch_10",
@@ -107,7 +125,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Vint / samorez bo'sh (mahkam emas)"
+    "uz": "Vint / samorez bo'sh (mahkam emas)",
+    "exampleTr": "Menteşe vidalaması gevşek, tork anahtarıyla sık.",
+    "exampleRu": "Винты петли ослаблены, затяни динамометрическим ключом."
   },
   {
     "id": "sch_11",
@@ -118,7 +138,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Suv o'tkazmaslik sinovi"
+    "uz": "Suv o'tkazmaslik sinovi",
+    "exampleTr": "Yarın şantiyede su sızdırmazlık testi yapacağız.",
+    "exampleRu": "Завтра на стройплощадке мы проведем тест на водонепроницаемость."
   },
   {
     "id": "sch_12",
@@ -129,7 +151,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Havo o'tkazuvchanligi"
+    "uz": "Havo o'tkazuvchanligi",
+    "exampleTr": "Contalar tam oturursa hava sızdırmazlığı mükemmel olur.",
+    "exampleRu": "Если уплотнители сядут плотно, воздухопроницаемость будет идеальной."
   },
   {
     "id": "sch_13",
@@ -140,7 +164,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Sirt deformatsiyasi"
+    "uz": "Sirt deformatsiyasi",
+    "exampleTr": "Darbe yüzünden profilde yüzey deformasyonu oluşmuş.",
+    "exampleRu": "Из-за удара на профиле образовалась деформация поверхности."
   },
   {
     "id": "sch_14",
@@ -151,7 +177,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "O'lcham to'g'ri kelmayapti"
+    "uz": "O'lcham to'g'ri kelmayapti",
+    "exampleTr": "Bu orta kayıt buraya kısa geldi, ölçü uymuyor.",
+    "exampleRu": "Этот импост сюда коротковат, размер не подходит."
   },
   {
     "id": "sch_15",
@@ -162,7 +190,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Diagonal farqi (qiyshayish)"
+    "uz": "Diagonal farqi (qiyshayish)",
+    "exampleTr": "Çerçevede üç milimetre çapraz ölçü farkı var.",
+    "exampleRu": "В раме есть разница диагоналей в три миллиметра."
   },
   {
     "id": "sch_16",
@@ -173,7 +203,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Kanal to'silib qolgan"
+    "uz": "Kanal to'silib qolgan",
+    "exampleTr": "Talaş yüzünden su tahliye kanalı tıkanmış.",
+    "exampleRu": "Из-за стружки водоотводящий канал засорился."
   },
   {
     "id": "sch_17",
@@ -184,7 +216,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Контроль качества",
     "isSchueco": true,
     "learned": false,
-    "uz": "Silikon toshib chiqqan"
+    "uz": "Silikon toshib chiqqan",
+    "exampleTr": "Köşede silikon taşmış, hemen bezle sil.",
+    "exampleRu": "В углу вылез силикон, сразу вытри тряпкой."
   },
   {
     "id": "sch_18",
@@ -195,7 +229,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "issiqlik to'sig'i"
+    "uz": "issiqlik to'sig'i",
+    "exampleTr": "Alüminyum profilde ısı bariyeri soğuğu keser.",
+    "exampleRu": "В алюминиевом профиле термомост отсекает холод."
   },
   {
     "id": "sch_19",
@@ -206,7 +242,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Burchak ulovchi (suhar / burchak fiksatori)"
+    "uz": "Burchak ulovchi (suhar / burchak fiksatori)",
+    "exampleTr": "Köşe takozuna çift komponentli tutkal sürdük.",
+    "exampleRu": "Мы нанесли двухкомпонентный клей на угловой сухарь."
   },
   {
     "id": "sch_20",
@@ -217,7 +255,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Suv chiqarish (drenaj) kanali"
+    "uz": "Suv chiqarish (drenaj) kanali",
+    "exampleTr": "Alt kasada tahliye kanalı açmayı unutma.",
+    "exampleRu": "Не забудь пробить дренажный канал в нижней раме."
   },
   {
     "id": "sch_21",
@@ -228,7 +268,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Oyna shtapigi (qisqich profil)"
+    "uz": "Oyna shtapigi (qisqich profil)",
+    "exampleTr": "Cam çıtasını plastik tokmak ile yerine oturt.",
+    "exampleRu": "Защелкни штапик на место пластиковой киянкой."
   },
   {
     "id": "sch_22",
@@ -239,7 +281,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Shtapik oxirigacha tushmadi / qotmadi"
+    "uz": "Shtapik oxirigacha tushmadi / qotmadi",
+    "exampleTr": "Sol taraftaki cam çıtası tam oturmadı.",
+    "exampleRu": "Штапик с левой стороны не защелкнулся до конца."
   },
   {
     "id": "sch_23",
@@ -250,7 +294,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Tabaqa profili (stvorka)"
+    "uz": "Tabaqa profili (stvorka)",
+    "exampleTr": "Kanat profilini kırk beş derece açıyla kestik.",
+    "exampleRu": "Мы нарезали профиль створки под углом 45 градусов."
   },
   {
     "id": "sch_24",
@@ -261,7 +307,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Rama profili (deraza qutisi)"
+    "uz": "Rama profili (deraza qutisi)",
+    "exampleTr": "Önce kasa profilini teraziye alıp sabitleyin.",
+    "exampleRu": "Сначала выставьте профиль рамы по уровню и закрепите."
   },
   {
     "id": "sch_25",
@@ -272,7 +320,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "O'rta profil (impost)"
+    "uz": "O'rta profil (impost)",
+    "exampleTr": "Orta kayıt bağlantısını kertme makinesinde işledik.",
+    "exampleRu": "Соединение импоста мы обработали на торцефрезерном станке."
   },
   {
     "id": "sch_26",
@@ -283,7 +333,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "ispanyolet mexanizmi"
+    "uz": "ispanyolet mexanizmi",
+    "exampleTr": "İspanyolet mekanizması kolu çevirince kilitlenir.",
+    "exampleRu": "Механизм эспаньолета запирается при повороте ручки."
   },
   {
     "id": "sch_27",
@@ -294,7 +346,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Yashirin oshiq-moshuq (petlya AvanTec)"
+    "uz": "Yashirin oshiq-moshuq (petlya AvanTec)",
+    "exampleTr": "Bu projede Schüco gizli menteşe kullanıyoruz.",
+    "exampleRu": "В этом проекте мы используем скрытые петли Schüco."
   },
   {
     "id": "sch_28",
@@ -305,7 +359,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Fasad profili (oynavand fasad)"
+    "uz": "Fasad profili (oynavand fasad)",
+    "exampleTr": "Cephe profillerini hiyap ile üçüncü kata çıkardık.",
+    "exampleRu": "Фасадные профили мы подняли манипулятором на третий этаж."
   },
   {
     "id": "sch_29",
@@ -316,7 +372,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Bosuvchi qisqich lenta (prizhimnoy)"
+    "uz": "Bosuvchi qisqich lenta (prizhimnoy)",
+    "exampleTr": "Baskı çıtası vidalarını eşit torkla sıkın.",
+    "exampleRu": "Затягивайте винты прижимной планки с одинаковым усилием."
   },
   {
     "id": "sch_30",
@@ -327,7 +385,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Dekorativ qopqoq (kapot profili)"
+    "uz": "Dekorativ qopqoq (kapot profili)",
+    "exampleTr": "En son baskı çıtasının üstüne kapak profili takılır.",
+    "exampleRu": "В самом конце поверх прижимной планки защелкивается крышка капота."
   },
   {
     "id": "sch_31",
@@ -351,7 +411,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Gorizontal rigel profili"
+    "uz": "Gorizontal rigel profili",
+    "exampleTr": "Yatay profilleri iki dikme arasına bağladık.",
+    "exampleRu": "Горизонтальные ригели мы закрепили между двумя стойками."
   },
   {
     "id": "sch_33",
@@ -362,7 +424,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "EPDM rezina qistirma"
+    "uz": "EPDM rezina qistirma",
+    "exampleTr": "Dış cephede güneş ve soğuğa dayanıklı EPDM fitil kullanılır.",
+    "exampleRu": "На внешнем фасаде используется стойкий к солнцу и морозу уплотнитель EPDM."
   },
   {
     "id": "sch_34",
@@ -373,7 +437,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Vulkanizatsiyalangan burchak qistirmasi"
+    "uz": "Vulkanizatsiyalangan burchak qistirmasi",
+    "exampleTr": "Köşe vulkanize conta su sızmasını tamamen önler.",
+    "exampleRu": "Вулканизированный угловой уплотнитель полностью предотвращает протечки."
   },
   {
     "id": "sch_35",
@@ -384,7 +450,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Qulf qarshiligi (javob plankasi)"
+    "uz": "Qulf qarshiligi (javob plankasi)",
+    "exampleTr": "Kilit karşılığını kasa profiline doğru ölçüde bağla.",
+    "exampleRu": "Закрепи ответную планку замка на раме точно по размеру."
   },
   {
     "id": "sch_36",
@@ -395,7 +463,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Deraza tutqichi (ruchka)"
+    "uz": "Deraza tutqichi (ruchka)",
+    "exampleTr": "Pencere kolunu çizilmemesi için en son takıyoruz.",
+    "exampleRu": "Оконную ручку устанавливаем в самом конце, чтобы не поцарапалась."
   },
   {
     "id": "sch_37",
@@ -406,7 +476,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Surilma tizim (Schüco ASE)"
+    "uz": "Surilma tizim (Schüco ASE)",
+    "exampleTr": "Sürme sistem raylarını montajdan önce temizleyin.",
+    "exampleRu": "Очистите направляющие раздвижной системы перед монтажом."
   },
   {
     "id": "sch_38",
@@ -417,7 +489,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Surilma tabaqa roligi (g'ildirak)"
+    "uz": "Surilma tabaqa roligi (g'ildirak)",
+    "exampleTr": "Ağır kanat için rulman tekerlek ayarı yaptık.",
+    "exampleRu": "Мы отрегулировали ролики для тяжелой раздвижной створки."
   },
   {
     "id": "sch_39",
@@ -428,7 +502,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Burchak presslash shtifti"
+    "uz": "Burchak presslash shtifti",
+    "exampleTr": "Köşe presleme pimi takozun deliğine tam girmeli.",
+    "exampleRu": "Штифт углового обжима должен точно войти в отверстие сухаря."
   },
   {
     "id": "sch_40",
@@ -439,7 +515,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Профили и фурнитура",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ikki komponentli yelim (burchaklar uchun)"
+    "uz": "Ikki komponentli yelim (burchaklar uchun)",
+    "exampleTr": "Köşe birleşiminde çift komponentli tutkal kullanmak şart.",
+    "exampleRu": "В угловом соединении обязательно использовать двухкомпонентный клей."
   },
   {
     "id": "sch_41",
@@ -450,7 +528,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ikki boshli arralash uskunasi"
+    "uz": "Ikki boshli arralash uskunasi",
+    "exampleTr": "Çift kafa kesim makinesinde ölçüyü bilgisayardan giriyoruz.",
+    "exampleRu": "На двухголовой пиле мы вводим размер через компьютер."
   },
   {
     "id": "sch_42",
@@ -461,7 +541,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Burchak presslash uskunasi (krimper)"
+    "uz": "Burchak presslash uskunasi (krimper)",
+    "exampleTr": "Köşe presi bıçaklarını bu profil serisine göre ayarla.",
+    "exampleRu": "Настрой ножи углообжимного пресса под эту серию профиля."
   },
   {
     "id": "sch_43",
@@ -472,7 +554,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Nusxa ko'chirish frezeri (kopir freza)"
+    "uz": "Nusxa ko'chirish frezeri (kopir freza)",
+    "exampleTr": "Kilit ve kol deliklerini kopya frezede açtık.",
+    "exampleRu": "Отверстия под замок и ручку мы отфрезеровали на копировальном станке."
   },
   {
     "id": "sch_44",
@@ -483,7 +567,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Torsovka frezeri (impost uchun)"
+    "uz": "Torsovka frezeri (impost uchun)",
+    "exampleTr": "Orta kayıt uçlarını kertme makinesinde temizledik.",
+    "exampleRu": "Торцы импоста мы обработали на торцефрезерном станке."
   },
   {
     "id": "sch_45",
@@ -494,7 +580,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Shtapik kesish arrasi"
+    "uz": "Shtapik kesish arrasi",
+    "exampleTr": "Cam çıtalarını çıta kesme testeresinde hızlıca kestik.",
+    "exampleRu": "Штапики мы быстро нарезали на штапикорезе."
   },
   {
     "id": "sch_46",
@@ -505,7 +593,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Dinamometrik kalit"
+    "uz": "Dinamometrik kalit",
+    "exampleTr": "Baskı çıtasını tork anahtarı ile sıkmak gerekiyor.",
+    "exampleRu": "Прижимную планку необходимо затягивать динамометрическим ключом."
   },
   {
     "id": "sch_47",
@@ -516,7 +606,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Olti qirrali kalitlar to'plami (alyan)"
+    "uz": "Olti qirrali kalitlar to'plami (alyan)",
+    "exampleTr": "Menteşe ayarı için dört numara alyan anahtar lazım.",
+    "exampleRu": "Для регулировки петли нужен шестигранник четвертого номера."
   },
   {
     "id": "sch_48",
@@ -527,7 +619,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Akkumulyatorli shurupburagich (shurupovyort)"
+    "uz": "Akkumulyatorli shurupburagich (shurupovyort)",
+    "exampleTr": "Şarjlı matkabın bataryası bitti, şarja tak.",
+    "exampleRu": "Аккумулятор шуруповерта сел, поставь на зарядку."
   },
   {
     "id": "sch_49",
@@ -538,7 +632,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Shtangensirkul"
+    "uz": "Shtangensirkul",
+    "exampleTr": "Kertme derinliğini kumpas ile milimetrik ölçtüm.",
+    "exampleRu": "Глубину выреза я до миллиметра измерил штангенциркулем."
   },
   {
     "id": "sch_50",
@@ -549,7 +645,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ruletka"
+    "uz": "Ruletka",
+    "exampleTr": "Şerit metreyi getir, kasa boyunu tekrar ölçelim.",
+    "exampleRu": "Принеси рулетку, давай еще раз измерим длину рамы."
   },
   {
     "id": "sch_51",
@@ -560,7 +658,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Pnevmatik puflagich to'pponcha"
+    "uz": "Pnevmatik puflagich to'pponcha",
+    "exampleTr": "Profilin içindeki talaşları hava tabancası ile üfle.",
+    "exampleRu": "Выдуй стружку внутри профиля пневматическим пистолетом."
   },
   {
     "id": "sch_52",
@@ -571,7 +671,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Plastik / rezina bolg'acha (kiyanka)"
+    "uz": "Plastik / rezina bolg'acha (kiyanka)",
+    "exampleTr": "Alüminyuma çekiçle vurma, plastik tokmak kullan.",
+    "exampleRu": "Не бей по алюминию молотком, используй пластиковую киянку."
   },
   {
     "id": "sch_53",
@@ -582,7 +684,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Parma (sverlo)"
+    "uz": "Parma (sverlo)",
+    "exampleTr": "Matkap ucu körelmiş, yenisiyle değiştirelim.",
+    "exampleRu": "Сверло затупилось, давай заменим на новое."
   },
   {
     "id": "sch_54",
@@ -593,7 +697,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Rezba ochish (metchik bilan)"
+    "uz": "Rezba ochish (metchik bilan)",
+    "exampleTr": "Vida deliği için önce kılavuz çekme işlemi yaptık.",
+    "exampleRu": "Для винтового отверстия мы сначала нарезали резьбу метчиком."
   },
   {
     "id": "sch_55",
@@ -604,7 +710,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ikkita shisha / ikki oynali oynalar"
+    "uz": "Ikkita shisha / ikki oynali oynalar",
+    "exampleTr": "Bu pencerede yirmi dört milimetre çift cam var.",
+    "exampleRu": "В этом окне установлен стеклопакет 24 миллиметра."
   },
   {
     "id": "sch_56",
@@ -615,7 +723,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Toblangan (qattiq) oyna"
+    "uz": "Toblangan (qattiq) oyna",
+    "exampleTr": "Güvenlik için cephede temperli cam kullanıyoruz.",
+    "exampleRu": "Для безопасности на фасаде мы используем закаленное стекло."
   },
   {
     "id": "sch_57",
@@ -626,7 +736,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Laminatlangan oyna (tripleks)"
+    "uz": "Laminatlangan oyna (tripleks)",
+    "exampleTr": "Korkuluk ve çatıda lamine cam tercih edilir.",
+    "exampleRu": "Для ограждений и крыши выбирают ламинированное стекло (триплекс)."
   },
   {
     "id": "sch_58",
@@ -637,7 +749,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Oyna osti tagligi (podkladka)"
+    "uz": "Oyna osti tagligi (podkladka)",
+    "exampleTr": "Camın ağırlığını taşımak için köşelere cam takozu koy.",
+    "exampleRu": "Положи рихтовочные подкладки по углам, чтобы держать вес стеклопакета."
   },
   {
     "id": "sch_59",
@@ -648,7 +762,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Vakuumli oyna ushlagich (so'rg'ich)"
+    "uz": "Vakuumli oyna ushlagich (so'rg'ich)",
+    "exampleTr": "Büyük camı vantuz olmadan sakın kaldırmayın.",
+    "exampleRu": "Ни в коем случае не поднимайте большое стекло без вакуумных присосок."
   },
   {
     "id": "sch_60",
@@ -659,7 +775,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Strukturaviy germetik silikon"
+    "uz": "Strukturaviy germetik silikon",
+    "exampleTr": "Strüktürel cephede özel yapısal silikon çekiyoruz.",
+    "exampleRu": "На структурном фасаде мы наносим специальный структурный силикон."
   },
   {
     "id": "sch_61",
@@ -670,7 +788,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Neytral oyna silikoni"
+    "uz": "Neytral oyna silikoni",
+    "exampleTr": "Dış birleşim yerlerine nötr silikon uyguladık.",
+    "exampleRu": "На внешние стыки мы нанесли нейтральный силикон."
   },
   {
     "id": "sch_62",
@@ -681,7 +801,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Butil lenta (bug' izolyatsiyasi)"
+    "uz": "Butil lenta (bug' izolyatsiyasi)",
+    "exampleTr": "Baskı çıtasının altına su yalıtımı için butil bant yapıştır.",
+    "exampleRu": "Наклей бутиловую ленту под прижимную планку для гидроизоляции."
   },
   {
     "id": "sch_63",
@@ -692,7 +814,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Стеклопакеты и монтаж",
     "isSchueco": true,
     "learned": false,
-    "uz": "Shtapiklarni o'rnatish"
+    "uz": "Shtapiklarni o'rnatish",
+    "exampleTr": "Cam çıtası montajı bittikten sonra koruyucu bantları kontrol et.",
+    "exampleRu": "После завершения монтажа штапика проверь защитную пленку."
   },
   {
     "id": "sch_64",
@@ -703,7 +827,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "Tekshirishga / nazoratga tayyor"
+    "uz": "Tekshirishga / nazoratga tayyor",
+    "exampleTr": "Usta, birinci katın bütün pozları kontrole hazır.",
+    "exampleRu": "Мастер, все позиции первого этажа готовы к проверке."
   },
   {
     "id": "sch_65",
@@ -714,7 +840,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "Dalolatnomani (aktni) imzolang"
+    "uz": "Dalolatnomani (aktni) imzolang",
+    "exampleTr": "Kontrol bittiyse lütfen teslim tutanağını imzalayın.",
+    "exampleRu": "Если проверка окончена, подпишите, пожалуйста, акт приемки."
   },
   {
     "id": "sch_66",
@@ -725,7 +853,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "Buni darhol to'g'rilaymiz"
+    "uz": "Buni darhol to'g'rilaymiz",
+    "exampleTr": "Merak etmeyin, bu küçük hatayı hemen düzelteceğiz.",
+    "exampleRu": "Не беспокойтесь, мы сейчас же исправим этот мелкий недочет."
   },
   {
     "id": "sch_67",
@@ -736,7 +866,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ruxsat etilgan me'yorda (dopusk ichida)"
+    "uz": "Ruxsat etilgan me'yorda (dopusk ichida)",
+    "exampleTr": "İki milimetrelik fark standart tolerans dahilinde.",
+    "exampleRu": "Разница в два миллиметра находится в пределах допуска."
   },
   {
     "id": "sch_68",
@@ -747,7 +879,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "Texnik chizmaga qarang"
+    "uz": "Texnik chizmaga qarang",
+    "exampleTr": "Biniş payı için lütfen teknik çizime bakın.",
+    "exampleRu": "По величине нахлеста посмотрите, пожалуйста, в технический чертеж."
   },
   {
     "id": "sch_69",
@@ -758,7 +892,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "O'rnatish yo'riqnomasiga muvofiq"
+    "uz": "O'rnatish yo'riqnomasiga muvofiq",
+    "exampleTr": "Bütün bağlantılar Schüco montaj talimatına uygun yapıldı.",
+    "exampleRu": "Все соединения выполнены строго по инструкции монтажа Schüco."
   },
   {
     "id": "sch_70",
@@ -769,7 +905,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "O'lchamlarni qayta o'lchab oldik"
+    "uz": "O'lchamlarni qayta o'lchab oldik",
+    "exampleTr": "Hata olmaması için şantiyede ölçüleri tekrar aldık.",
+    "exampleRu": "Чтобы не было ошибки, мы повторно сняли размеры на стройплощадке."
   },
   {
     "id": "sch_71",
@@ -780,7 +918,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "Tasdiq berildimi? / Qabul qilindimi?"
+    "uz": "Tasdiq berildimi? / Qabul qilindimi?",
+    "exampleTr": "İş veren tarafından bu revizyon için onay verildi mi?",
+    "exampleRu": "Получено ли согласование от заказчика по этой ревизии?"
   },
   {
     "id": "sch_72",
@@ -791,7 +931,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "Chizmaga o'zgartirish (reviziya) kiritildi"
+    "uz": "Chizmaga o'zgartirish (reviziya) kiritildi",
+    "exampleTr": "Mimari projede dün akşam yeni revizyon yapıldı.",
+    "exampleRu": "В архитектурный проект вчера вечером внесли изменения (ревизию)."
   },
   {
     "id": "sch_73",
@@ -802,7 +944,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Общение с инспектором",
     "isSchueco": true,
     "learned": false,
-    "uz": "Katalogdagi detal tuguniga qarang"
+    "uz": "Katalogdagi detal tuguniga qarang",
+    "exampleTr": "Çörten birleşimi için katalog detayına bakın.",
+    "exampleRu": "По узлу примыкания водостока посмотрите деталь в каталоге."
   },
   {
     "id": "sch_74",
@@ -813,7 +957,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "Mehnatni muhofaza qilish qoidalari"
+    "uz": "Mehnatni muhofaza qilish qoidalari",
+    "exampleTr": "Şantiyede herkes iş güvenliği kurallarına uymalı.",
+    "exampleRu": "На стройплощадке каждый обязан соблюдать правила охраны труда."
   },
   {
     "id": "sch_75",
@@ -824,7 +970,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "Himoya ko'zoynagini taq"
+    "uz": "Himoya ko'zoynagini taq",
+    "exampleTr": "Kesim ve taşlama yaparken mutlaka koruyucu gözlük tak.",
+    "exampleRu": "Во время резки и шлифовки обязательно надевай защитные очки."
   },
   {
     "id": "sch_76",
@@ -835,7 +983,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "Kesilishdan himoyalovchi qo'lqop kiy"
+    "uz": "Kesilishdan himoyalovchi qo'lqop kiy",
+    "exampleTr": "Cam ve sac taşırken kesilmez eldiven giy.",
+    "exampleRu": "При переноске стекла и листового металла надевай перчатки от порезов."
   },
   {
     "id": "sch_77",
@@ -846,7 +996,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "Kaskani kiy"
+    "uz": "Kaskani kiy",
+    "exampleTr": "Vinç ve hiyap çalışırken baretini mutlaka tak.",
+    "exampleRu": "Когда работает кран и манипулятор, обязательно надевай каску."
   },
   {
     "id": "sch_78",
@@ -857,7 +1009,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "Uchi po'lat maxsus poyabzal"
+    "uz": "Uchi po'lat maxsus poyabzal",
+    "exampleTr": "Atölyede çelik burunlu ayakkabı giymek zorunludur.",
+    "exampleRu": "В цеху обязательно носить спецобувь со стальным подноском."
   },
   {
     "id": "sch_79",
@@ -868,7 +1022,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "Quloqchin taq (shovqinga qarshi)"
+    "uz": "Quloqchin taq (shovqinga qarshi)",
+    "exampleTr": "Kesim makinesi çok gürültülü, kulaklık tak.",
+    "exampleRu": "Пила работает очень шумно, надень защитные наушники."
   },
   {
     "id": "sch_80",
@@ -879,7 +1035,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "Favqulodda to'xtatish tugmasi (E-Stop)"
+    "uz": "Favqulodda to'xtatish tugmasi (E-Stop)",
+    "exampleTr": "Tehlike anında hemen kırmızı acil durdurma butonuna bas.",
+    "exampleRu": "В случае опасности немедленно жми на красную кнопку аварийного останова."
   },
   {
     "id": "sch_81",
@@ -890,7 +1048,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "Diqqat: kran ishlayapti"
+    "uz": "Diqqat: kran ishlayapti",
+    "exampleTr": "Dikkat vinç çalışıyor, yükün altında durmayın!",
+    "exampleRu": "Внимание, работает кран, не стойте под грузом!"
   },
   {
     "id": "sch_82",
@@ -901,7 +1061,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Охрана труда (İSG)",
     "isSchueco": true,
     "learned": false,
-    "uz": "birinchi yordam to'plami"
+    "uz": "birinchi yordam to'plami",
+    "exampleTr": "İlk yardım çantası ustabaşının odasında duruyor.",
+    "exampleRu": "Аптечка первой помощи находится в кабинете бригадира."
   },
   {
     "id": "sch_83",
@@ -4998,9 +5160,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Работа / Дело",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Ish"
+    "uz": "Ish",
+    "exampleTr": "Şantiyede i̇ş kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: работа."
   },
   {
     "id": "top_341",
@@ -5009,9 +5173,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Рабочий / Работник",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Xodim"
+    "uz": "Xodim",
+    "exampleTr": "Şantiyede i̇şçi kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: рабочий."
   },
   {
     "id": "top_342",
@@ -5020,9 +5186,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Мастер / Бригадир",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Usta"
+    "uz": "Usta",
+    "exampleTr": "Şantiyede usta kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: мастер."
   },
   {
     "id": "top_343",
@@ -5031,9 +5199,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Инженер",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Muhandis"
+    "uz": "Muhandis",
+    "exampleTr": "Şantiyede mühendis kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: инженер."
   },
   {
     "id": "top_344",
@@ -5042,9 +5212,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Директор / Начальник",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Mudir / Rahbar"
+    "uz": "Mudir / Rahbar",
+    "exampleTr": "Şantiyede müdür kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: директор."
   },
   {
     "id": "top_345",
@@ -5053,9 +5225,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Завод / Фабрика",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Fabrika / Zavod"
+    "uz": "Fabrika / Zavod",
+    "exampleTr": "Şantiyede fabrika kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: завод."
   },
   {
     "id": "top_346",
@@ -5064,9 +5238,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Цех / Мастерская",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Sex / Ustaxona"
+    "uz": "Sex / Ustaxona",
+    "exampleTr": "Şantiyede atölye kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: цех."
   },
   {
     "id": "top_347",
@@ -5088,9 +5264,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Отдел / Участок цеха",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Bo'lim"
+    "uz": "Bo'lim",
+    "exampleTr": "Şantiyede bölüm kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: отдел."
   },
   {
     "id": "top_349",
@@ -5099,9 +5277,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Линия (производственная)",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Chiziq"
+    "uz": "Chiziq",
+    "exampleTr": "Şantiyede hat kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: линия."
   },
   {
     "id": "top_350",
@@ -5110,9 +5290,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Склад",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Ombor"
+    "uz": "Ombor",
+    "exampleTr": "Şantiyede depo kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: склад."
   },
   {
     "id": "top_351",
@@ -5121,9 +5303,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Отгрузка / Отправка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Yuk tashish"
+    "uz": "Yuk tashish",
+    "exampleTr": "Şantiyede sevkiyat kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: отгрузка."
   },
   {
     "id": "top_352",
@@ -5132,9 +5316,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Производство / Изготовление",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Ishlab chiqarish"
+    "uz": "Ishlab chiqarish",
+    "exampleTr": "Şantiyede üretim kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: производство."
   },
   {
     "id": "top_353",
@@ -5143,9 +5329,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Монтаж / Сборка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "O'rnatish / Yig'ish"
+    "uz": "O'rnatish / Yig'ish",
+    "exampleTr": "Şantiyede montaj kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: монтаж."
   },
   {
     "id": "top_354",
@@ -5154,9 +5342,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Демонтаж / Разборка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "demontaj qilish"
+    "uz": "demontaj qilish",
+    "exampleTr": "Şantiyede demontaj kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: демонтаж."
   },
   {
     "id": "top_355",
@@ -5165,9 +5355,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Упаковка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qadoqlash"
+    "uz": "Qadoqlash",
+    "exampleTr": "Şantiyede paketleme kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: упаковка."
   },
   {
     "id": "top_356",
@@ -5176,9 +5368,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Качество",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Sifat"
+    "uz": "Sifat",
+    "exampleTr": "Şantiyede kalite kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: качество."
   },
   {
     "id": "top_357",
@@ -5187,9 +5381,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Контроль / Проверка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Nazorat / Tekshiruv"
+    "uz": "Nazorat / Tekshiruv",
+    "exampleTr": "Şantiyede kontrol kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: контроль."
   },
   {
     "id": "top_358",
@@ -5198,9 +5394,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ошибка / Дефект",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Xato / Nuqson"
+    "uz": "Xato / Nuqson",
+    "exampleTr": "Şantiyede hata kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: ошибка."
   },
   {
     "id": "top_359",
@@ -5209,9 +5407,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Изъян / Брак",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Nuqson"
+    "uz": "Nuqson",
+    "exampleTr": "Şantiyede kusur kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: изъян."
   },
   {
     "id": "top_360",
@@ -5220,9 +5420,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Технологические отходы / Обрезки",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Isrof"
+    "uz": "Isrof",
+    "exampleTr": "Şantiyede fire kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: технологические отходы."
   },
   {
     "id": "top_361",
@@ -5231,9 +5433,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Металлолом / Утиль",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Chiqindi"
+    "uz": "Chiqindi",
+    "exampleTr": "Şantiyede hurda kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: металлолом."
   },
   {
     "id": "top_362",
@@ -5242,9 +5446,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Станок / Машина",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Uskuna / Stanok / Mashina"
+    "uz": "Uskuna / Stanok / Mashina",
+    "exampleTr": "Şantiyede makine kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: станок."
   },
   {
     "id": "top_363",
@@ -5253,9 +5459,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Инструмент",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Asbob / Qurol"
+    "uz": "Asbob / Qurol",
+    "exampleTr": "Şantiyede alet kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: инструмент."
   },
   {
     "id": "top_364",
@@ -5264,9 +5472,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Прибор / Устройство",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qurilma"
+    "uz": "Qurilma",
+    "exampleTr": "Şantiyede cihaz kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: прибор."
   },
   {
     "id": "top_365",
@@ -5275,9 +5485,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Верстак / Станок",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Stanok / Dastgoh"
+    "uz": "Stanok / Dastgoh",
+    "exampleTr": "Şantiyede tezgah kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: верстак."
   },
   {
     "id": "top_366",
@@ -5286,9 +5498,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Стол",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Stol"
+    "uz": "Stol",
+    "exampleTr": "Şantiyede masa kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: стол."
   },
   {
     "id": "top_367",
@@ -5297,9 +5511,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Профиль",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Profil"
+    "uz": "Profil",
+    "exampleTr": "Şantiyede profil kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: профиль."
   },
   {
     "id": "top_368",
@@ -5308,9 +5524,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Алюминий",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Alyuminiy"
+    "uz": "Alyuminiy",
+    "exampleTr": "Şantiyede alüminyum kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: алюминий."
   },
   {
     "id": "top_369",
@@ -5319,9 +5537,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Сталь",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Po'lat"
+    "uz": "Po'lat",
+    "exampleTr": "Şantiyede çelik kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: сталь."
   },
   {
     "id": "top_370",
@@ -5330,9 +5550,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Железо",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Temir"
+    "uz": "Temir",
+    "exampleTr": "Şantiyede demir kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: железо."
   },
   {
     "id": "top_371",
@@ -5341,9 +5563,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Металл",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Metall"
+    "uz": "Metall",
+    "exampleTr": "Şantiyede metal kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: металл."
   },
   {
     "id": "top_372",
@@ -5352,9 +5576,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Пластик / Пластмасса",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Plastmassa"
+    "uz": "Plastmassa",
+    "exampleTr": "Şantiyede plastik kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: пластик."
   },
   {
     "id": "top_373",
@@ -5363,9 +5589,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Стекло",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Shisha / Oyna"
+    "uz": "Shisha / Oyna",
+    "exampleTr": "Şantiyede cam kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: стекло."
   },
   {
     "id": "top_374",
@@ -5374,9 +5602,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Зеркало",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Oyna"
+    "uz": "Oyna",
+    "exampleTr": "Şantiyede ayna kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: зеркало."
   },
   {
     "id": "top_375",
@@ -5385,9 +5615,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Каучук / Резина",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kauchuk"
+    "uz": "Kauchuk",
+    "exampleTr": "Şantiyede kauçuk kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: каучук."
   },
   {
     "id": "top_376",
@@ -5396,9 +5628,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Силикон",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Silikon"
+    "uz": "Silikon",
+    "exampleTr": "Şantiyede silikon kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: силикон."
   },
   {
     "id": "top_377",
@@ -5407,9 +5641,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Клей",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Yelim"
+    "uz": "Yelim",
+    "exampleTr": "Şantiyede yapıştırıcı kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: клей."
   },
   {
     "id": "top_378",
@@ -5418,9 +5654,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Краска",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Bo'yoq"
+    "uz": "Bo'yoq",
+    "exampleTr": "Şantiyede boya kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: краска."
   },
   {
     "id": "top_379",
@@ -5429,9 +5667,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Винт / Шуруп / Саморез",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Vint / Samorez"
+    "uz": "Vint / Samorez",
+    "exampleTr": "Şantiyede vida kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: винт."
   },
   {
     "id": "top_380",
@@ -5440,9 +5680,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Болт",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Bolt"
+    "uz": "Bolt",
+    "exampleTr": "Şantiyede civata kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: болт."
   },
   {
     "id": "top_381",
@@ -5451,9 +5693,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Гайка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Gayka"
+    "uz": "Gayka",
+    "exampleTr": "Şantiyede somun kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: гайка."
   },
   {
     "id": "top_382",
@@ -5462,9 +5706,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Шайба",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Shayba"
+    "uz": "Shayba",
+    "exampleTr": "Şantiyede pul kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: шайба."
   },
   {
     "id": "top_383",
@@ -5473,9 +5719,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Заклепка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Perchin"
+    "uz": "Perchin",
+    "exampleTr": "Şantiyede perçin kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: заклепка."
   },
   {
     "id": "top_384",
@@ -5484,9 +5732,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Дюбель",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Dovel"
+    "uz": "Dovel",
+    "exampleTr": "Şantiyede dübel kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: дюбель."
   },
   {
     "id": "top_385",
@@ -5495,9 +5745,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Гвоздь",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tirnoq"
+    "uz": "Tirnoq",
+    "exampleTr": "Şantiyede çivi kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: гвоздь."
   },
   {
     "id": "top_386",
@@ -5506,9 +5758,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Пружина",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Bahor"
+    "uz": "Bahor",
+    "exampleTr": "Şantiyede yay kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: пружина."
   },
   {
     "id": "top_387",
@@ -5517,9 +5771,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Штифт / Палец",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Pin"
+    "uz": "Pin",
+    "exampleTr": "Şantiyede pim kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: штифт."
   },
   {
     "id": "top_388",
@@ -5528,9 +5784,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Прокладка / Уплотнение",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qistirma (prokladka)"
+    "uz": "Qistirma (prokladka)",
+    "exampleTr": "Şantiyede conta kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: прокладка."
   },
   {
     "id": "top_389",
@@ -5539,9 +5797,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Уплотнитель резиновый",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Rezina qistirma"
+    "uz": "Rezina qistirma",
+    "exampleTr": "Şantiyede fitil kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: уплотнитель резиновый."
   },
   {
     "id": "top_390",
@@ -5550,9 +5810,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ручка (дверная/оконная)",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tutqich (ruchka)"
+    "uz": "Tutqich (ruchka)",
+    "exampleTr": "Şantiyede kolu kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: ручка (дверная."
   },
   {
     "id": "top_391",
@@ -5561,9 +5823,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Замок",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qulf"
+    "uz": "Qulf",
+    "exampleTr": "Şantiyede kilit kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: замок."
   },
   {
     "id": "top_392",
@@ -5572,9 +5836,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ключ",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kalit"
+    "uz": "Kalit",
+    "exampleTr": "Şantiyede anahtar kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: ключ."
   },
   {
     "id": "top_393",
@@ -5583,9 +5849,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Петля шарнирная",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Oshiq-moshuq (petlya)"
+    "uz": "Oshiq-moshuq (petlya)",
+    "exampleTr": "Şantiyede menteşe kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: петля шарнирная."
   },
   {
     "id": "top_394",
@@ -5594,9 +5862,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Задвижка / Шпингалет",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Slayd"
+    "uz": "Slayd",
+    "exampleTr": "Şantiyede sürgü kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: задвижка."
   },
   {
     "id": "top_395",
@@ -5605,9 +5875,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Рама / Коробка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Quti / Rama"
+    "uz": "Quti / Rama",
+    "exampleTr": "Şantiyede kasa kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: рама."
   },
   {
     "id": "top_396",
@@ -5616,9 +5888,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Створка (окна/двери)",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tabaqa (oyna/eshik)"
+    "uz": "Tabaqa (oyna/eshik)",
+    "exampleTr": "Şantiyede kanat kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: створка (окна."
   },
   {
     "id": "top_397",
@@ -5627,9 +5901,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Импост / Перемычка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Impost / O'rta to'sin"
+    "uz": "Impost / O'rta to'sin",
+    "exampleTr": "Şantiyede kayıt kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: импост."
   },
   {
     "id": "top_398",
@@ -5638,9 +5914,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Штапик / Рейка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Shtapik"
+    "uz": "Shtapik",
+    "exampleTr": "Şantiyede çıta kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: штапик."
   },
   {
     "id": "top_399",
@@ -5649,9 +5927,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Порог",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Eshik"
+    "uz": "Eshik",
+    "exampleTr": "Şantiyede eşik kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: порог."
   },
   {
     "id": "top_400",
@@ -5660,9 +5940,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Отлив / Подоконник",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "deraza tokchasi"
+    "uz": "deraza tokchasi",
+    "exampleTr": "Şantiyede denizlik kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: отлив."
   },
   {
     "id": "top_401",
@@ -5671,9 +5953,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Перила / Поручень",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "tutqich"
+    "uz": "tutqich",
+    "exampleTr": "Şantiyede küpeşte kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: перила."
   },
   {
     "id": "top_402",
@@ -5682,9 +5966,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ограждение",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Panjara"
+    "uz": "Panjara",
+    "exampleTr": "Şantiyede korkuluk kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: ограждение."
   },
   {
     "id": "top_403",
@@ -5693,9 +5979,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Фасад здания",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Fasad"
+    "uz": "Fasad",
+    "exampleTr": "Şantiyede cephe kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: фасад здания."
   },
   {
     "id": "top_404",
@@ -5704,9 +5992,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Стена",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Devor"
+    "uz": "Devor",
+    "exampleTr": "Şantiyede duvar kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: стена."
   },
   {
     "id": "top_405",
@@ -5715,9 +6005,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Потолок",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Shift"
+    "uz": "Shift",
+    "exampleTr": "Şantiyede tavan kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: потолок."
   },
   {
     "id": "top_406",
@@ -5726,9 +6018,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Пол / Основание",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Pol / Zamin"
+    "uz": "Pol / Zamin",
+    "exampleTr": "Şantiyede zemin kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: пол."
   },
   {
     "id": "top_407",
@@ -5737,9 +6031,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Крыша / Кровля",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tom"
+    "uz": "Tom",
+    "exampleTr": "Şantiyede çatı kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: крыша."
   },
   {
     "id": "top_408",
@@ -5748,9 +6044,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Здание / Корпус",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Bino"
+    "uz": "Bino",
+    "exampleTr": "Şantiyede bina kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: здание."
   },
   {
     "id": "top_409",
@@ -5759,9 +6057,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Этаж",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qavat"
+    "uz": "Qavat",
+    "exampleTr": "Şantiyede kat kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: этаж."
   },
   {
     "id": "top_410",
@@ -5770,9 +6070,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Комната / Помещение",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Xona"
+    "uz": "Xona",
+    "exampleTr": "Şantiyede oda kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: комната."
   },
   {
     "id": "top_411",
@@ -5781,9 +6083,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Дверь",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Eshik"
+    "uz": "Eshik",
+    "exampleTr": "Şantiyede kapı kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: дверь."
   },
   {
     "id": "top_412",
@@ -5792,9 +6096,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Окно",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Deraza"
+    "uz": "Deraza",
+    "exampleTr": "Şantiyede pencere kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: окно."
   },
   {
     "id": "top_413",
@@ -5803,9 +6109,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Балкон",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Balkon"
+    "uz": "Balkon",
+    "exampleTr": "Şantiyede balkon kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: балкон."
   },
   {
     "id": "top_414",
@@ -5814,9 +6122,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Лестница / Стремянка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Zina / Narvon"
+    "uz": "Zina / Narvon",
+    "exampleTr": "Şantiyede merdiven kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: лестница."
   },
   {
     "id": "top_415",
@@ -5825,9 +6135,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Строительные леса",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Dok"
+    "uz": "Dok",
+    "exampleTr": "Şantiyede i̇skele kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: строительные леса."
   },
   {
     "id": "top_416",
@@ -5836,9 +6148,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Подъемный кран",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kran"
+    "uz": "Kran",
+    "exampleTr": "Şantiyede vinç kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: подъемный кран."
   },
   {
     "id": "top_417",
@@ -5847,9 +6161,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Вилочный погрузчик",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Yuklagich (forklift)"
+    "uz": "Yuklagich (forklift)",
+    "exampleTr": "Şantiyede forklift kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: вилочный погрузчик."
   },
   {
     "id": "top_418",
@@ -5858,9 +6174,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Поддон / Паллета",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Poddon / Palet"
+    "uz": "Poddon / Palet",
+    "exampleTr": "Şantiyede palet kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: поддон."
   },
   {
     "id": "top_419",
@@ -5869,9 +6187,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Коробка / Упаковка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Posilka"
+    "uz": "Posilka",
+    "exampleTr": "Şantiyede koli kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: коробка."
   },
   {
     "id": "top_420",
@@ -5880,9 +6200,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Деревянный ящик",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Ko'krak"
+    "uz": "Ko'krak",
+    "exampleTr": "Şantiyede sandık kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: деревянный ящик."
   },
   {
     "id": "top_421",
@@ -5891,9 +6213,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Мешок / Пакет",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Sumka"
+    "uz": "Sumka",
+    "exampleTr": "Şantiyede torba kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: мешок."
   },
   {
     "id": "top_422",
@@ -5902,9 +6226,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Полиэтиленовый пакет",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tashish sumkasi"
+    "uz": "Tashish sumkasi",
+    "exampleTr": "Şantiyede poşet kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: полиэтиленовый пакет."
   },
   {
     "id": "top_423",
@@ -5913,9 +6239,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Скотч / Лента / Конвейер",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Lenta"
+    "uz": "Lenta",
+    "exampleTr": "Şantiyede bant kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: скотч."
   },
   {
     "id": "top_424",
@@ -5924,9 +6252,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Кабель / Провод",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kabel"
+    "uz": "Kabel",
+    "exampleTr": "Şantiyede kablo kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: кабель."
   },
   {
     "id": "top_425",
@@ -5935,9 +6265,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Шланг (пневматический)",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Shlang"
+    "uz": "Shlang",
+    "exampleTr": "Şantiyede hortum kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: шланг."
   },
   {
     "id": "top_426",
@@ -5946,9 +6278,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Труба",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Quvur"
+    "uz": "Quvur",
+    "exampleTr": "Şantiyede boru kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: труба."
   },
   {
     "id": "top_427",
@@ -5957,9 +6291,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Вентиль / Кран",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "valf"
+    "uz": "valf",
+    "exampleTr": "Şantiyede vana kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: вентиль."
   },
   {
     "id": "top_428",
@@ -5968,9 +6304,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Насос",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Nasos"
+    "uz": "Nasos",
+    "exampleTr": "Şantiyede pompa kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: насос."
   },
   {
     "id": "top_429",
@@ -5979,9 +6317,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Компрессор воздушный",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kompressor"
+    "uz": "Kompressor",
+    "exampleTr": "Şantiyede kompresör kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: компрессор воздушный."
   },
   {
     "id": "top_430",
@@ -5990,9 +6330,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Давление (бар)",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Bosim"
+    "uz": "Bosim",
+    "exampleTr": "Şantiyede basınç kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: давление."
   },
   {
     "id": "top_431",
@@ -6001,9 +6343,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Воздух",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Havo"
+    "uz": "Havo",
+    "exampleTr": "Şantiyede hava kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: воздух."
   },
   {
     "id": "top_432",
@@ -6012,9 +6356,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Газ",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Gaz"
+    "uz": "Gaz",
+    "exampleTr": "Şantiyede gaz kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: газ."
   },
   {
     "id": "top_433",
@@ -6023,9 +6369,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Электричество",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Elektr"
+    "uz": "Elektr",
+    "exampleTr": "Şantiyede elektrik kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: электричество."
   },
   {
     "id": "top_434",
@@ -6034,9 +6382,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Предохранитель / Страховка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Sug'urta"
+    "uz": "Sug'urta",
+    "exampleTr": "Şantiyede sigorta kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: предохранитель."
   },
   {
     "id": "top_435",
@@ -6045,9 +6395,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Розетка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Розетка"
+    "uz": "Розетка",
+    "exampleTr": "Şantiyede priz kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: розетка."
   },
   {
     "id": "top_436",
@@ -6056,9 +6408,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Штепсель / Чек",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kvitansiya"
+    "uz": "Kvitansiya",
+    "exampleTr": "Şantiyede fiş kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: штепсель."
   },
   {
     "id": "top_437",
@@ -6067,9 +6421,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Кнопка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tugma"
+    "uz": "Tugma",
+    "exampleTr": "Şantiyede düğme kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: кнопка."
   },
   {
     "id": "top_438",
@@ -6078,9 +6434,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Рубильник / Выключатель",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "O'chirish to'xtatuvchisi"
+    "uz": "O'chirish to'xtatuvchisi",
+    "exampleTr": "Şantiyede şalter kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: рубильник."
   },
   {
     "id": "top_439",
@@ -6089,9 +6447,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Датчик",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Sensor"
+    "uz": "Sensor",
+    "exampleTr": "Şantiyede sensör kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: датчик."
   },
   {
     "id": "top_440",
@@ -6100,9 +6460,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Электродвигатель / Мотор",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Dvigatel / Motor"
+    "uz": "Dvigatel / Motor",
+    "exampleTr": "Şantiyede motor kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: электродвигатель."
   },
   {
     "id": "top_441",
@@ -6111,9 +6473,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Масло / Смазка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Moy / Yog'"
+    "uz": "Moy / Yog'",
+    "exampleTr": "Şantiyede yağ kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: масло."
   },
   {
     "id": "top_442",
@@ -6122,9 +6486,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Густая смазка (литол)",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Yog '"
+    "uz": "Yog '",
+    "exampleTr": "Şantiyede gres kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: густая смазка."
   },
   {
     "id": "top_443",
@@ -6133,9 +6499,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Бензин",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Benzin"
+    "uz": "Benzin",
+    "exampleTr": "Şantiyede benzin kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: бензин."
   },
   {
     "id": "top_444",
@@ -6144,9 +6512,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Дизельное топливо",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "dizel yoqilg'isi"
+    "uz": "dizel yoqilg'isi",
+    "exampleTr": "Şantiyede mazot kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: дизельное топливо."
   },
   {
     "id": "top_445",
@@ -6155,9 +6525,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Растворитель для краски",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Yupqaroq"
+    "uz": "Yupqaroq",
+    "exampleTr": "Şantiyede tiner kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: растворитель для краски."
   },
   {
     "id": "top_446",
@@ -6166,9 +6538,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Пыль / Стружка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Chang"
+    "uz": "Chang",
+    "exampleTr": "Şantiyede toz kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: пыль."
   },
   {
     "id": "top_447",
@@ -6177,9 +6551,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Металлическая / древесная стружка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qirindi / Payraha"
+    "uz": "Qirindi / Payraha",
+    "exampleTr": "Şantiyede talaş kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: металлическая."
   },
   {
     "id": "top_448",
@@ -6188,9 +6564,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Мусор",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Axlat"
+    "uz": "Axlat",
+    "exampleTr": "Şantiyede çöp kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: мусор."
   },
   {
     "id": "top_449",
@@ -6199,9 +6577,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ведро",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kova"
+    "uz": "Kova",
+    "exampleTr": "Şantiyede kova kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: ведро."
   },
   {
     "id": "top_450",
@@ -6210,9 +6590,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Метла / Щетка",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Mop"
+    "uz": "Mop",
+    "exampleTr": "Şantiyede süpürge kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: метла."
   },
   {
     "id": "top_451",
@@ -6221,9 +6603,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Тряпка / Ветошь",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Mato"
+    "uz": "Mato",
+    "exampleTr": "Şantiyede bez kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: тряпка."
   },
   {
     "id": "top_452",
@@ -6232,9 +6616,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Перчатки",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qo'lqop"
+    "uz": "Qo'lqop",
+    "exampleTr": "Şantiyede eldiven kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: перчатки."
   },
   {
     "id": "top_453",
@@ -6243,9 +6629,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Очки",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Ko'zoynak"
+    "uz": "Ko'zoynak",
+    "exampleTr": "Şantiyede gözlük kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: очки."
   },
   {
     "id": "top_454",
@@ -6254,9 +6642,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Каска / Шлем",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kaska"
+    "uz": "Kaska",
+    "exampleTr": "Şantiyede kask kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: каска."
   },
   {
     "id": "top_455",
@@ -6265,9 +6655,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Жилет светоотражающий",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Jilet"
+    "uz": "Jilet",
+    "exampleTr": "Şantiyede yelek kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: жилет светоотражающий."
   },
   {
     "id": "top_456",
@@ -6276,9 +6668,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Рабочий комбинезон",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kombinezonlar"
+    "uz": "Kombinezonlar",
+    "exampleTr": "Şantiyede tulum kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: рабочий комбинезон."
   },
   {
     "id": "top_457",
@@ -6287,9 +6681,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Обувь",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Poyabzal"
+    "uz": "Poyabzal",
+    "exampleTr": "Şantiyede ayakkabı kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: обувь."
   },
   {
     "id": "top_458",
@@ -6298,9 +6694,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Респиратор / Маска",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Niqob"
+    "uz": "Niqob",
+    "exampleTr": "Şantiyede maske kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: респиратор."
   },
   {
     "id": "top_459",
@@ -6309,9 +6707,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Наушники",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Quloqchin"
+    "uz": "Quloqchin",
+    "exampleTr": "Şantiyede kulaklık kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: наушники."
   },
   {
     "id": "top_460",
@@ -6320,9 +6720,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Пояс / Ремень безопасности",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kamar"
+    "uz": "Kamar",
+    "exampleTr": "Şantiyede kemer kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: пояс."
   },
   {
     "id": "top_461",
@@ -6331,9 +6733,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Трос / Канат",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Arqon"
+    "uz": "Arqon",
+    "exampleTr": "Şantiyede halat kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: трос."
   },
   {
     "id": "top_462",
@@ -6342,9 +6746,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Цепь",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Zanjir"
+    "uz": "Zanjir",
+    "exampleTr": "Şantiyede zincir kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: цепь."
   },
   {
     "id": "top_463",
@@ -6353,9 +6759,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Крюк крана",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kanca"
+    "uz": "Kanca",
+    "exampleTr": "Şantiyede kanca kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: крюк крана."
   },
   {
     "id": "top_464",
@@ -6364,9 +6772,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Строп текстильный / цепной",
     "category": "top_nouns",
     "categoryLabel": "Производство и завод",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Sling"
+    "uz": "Sling",
+    "exampleTr": "Şantiyede sapan kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: строп текстильный."
   },
   {
     "id": "top_465",
@@ -6375,9 +6785,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Размер / Измерение",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "O'lcham"
+    "uz": "O'lcham",
+    "exampleTr": "Projede ölçü bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (размер) по проекту."
   },
   {
     "id": "top_466",
@@ -6386,9 +6798,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Габарит / Размерность",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Hajmi"
+    "uz": "Hajmi",
+    "exampleTr": "Projede boyut bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (габарит) по проекту."
   },
   {
     "id": "top_467",
@@ -6397,9 +6811,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Длина",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Uzunlik"
+    "uz": "Uzunlik",
+    "exampleTr": "Projede uzunluk bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (длина) по проекту."
   },
   {
     "id": "top_468",
@@ -6408,9 +6824,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ширина",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kenglik"
+    "uz": "Kenglik",
+    "exampleTr": "Projede genişlik bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (ширина) по проекту."
   },
   {
     "id": "top_469",
@@ -6419,9 +6837,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Высота",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Balandlik"
+    "uz": "Balandlik",
+    "exampleTr": "Projede yükseklik bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (высота) по проекту."
   },
   {
     "id": "top_470",
@@ -6430,9 +6850,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Глубина",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Chuqurlik"
+    "uz": "Chuqurlik",
+    "exampleTr": "Projede derinlik bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (глубина) по проекту."
   },
   {
     "id": "top_471",
@@ -6441,9 +6863,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Толщина",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qalinlik"
+    "uz": "Qalinlik",
+    "exampleTr": "Projede kalınlık bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (толщина) по проекту."
   },
   {
     "id": "top_472",
@@ -6452,9 +6876,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Диаметр",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Diametri"
+    "uz": "Diametri",
+    "exampleTr": "Projede çap bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (диаметр) по проекту."
   },
   {
     "id": "top_473",
@@ -6463,9 +6889,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Радиус",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Radius"
+    "uz": "Radius",
+    "exampleTr": "Projede yarıçap bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (радиус) по проекту."
   },
   {
     "id": "top_474",
@@ -6474,9 +6902,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Угол (в градусах)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Burchak"
+    "uz": "Burchak",
+    "exampleTr": "Projede açı bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (угол) по проекту."
   },
   {
     "id": "top_475",
@@ -6485,9 +6915,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Градус (°)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Daraja"
+    "uz": "Daraja",
+    "exampleTr": "Projede derece bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (градус) по проекту."
   },
   {
     "id": "top_476",
@@ -6496,9 +6928,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Миллиметр (мм)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Millimetr"
+    "uz": "Millimetr",
+    "exampleTr": "Projede milimetre bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (миллиметр) по проекту."
   },
   {
     "id": "top_477",
@@ -6507,9 +6941,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Сантиметр (см)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Santimetr"
+    "uz": "Santimetr",
+    "exampleTr": "Projede santimetre bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (сантиметр) по проекту."
   },
   {
     "id": "top_478",
@@ -6518,9 +6954,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Метр (м)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Metr"
+    "uz": "Metr",
+    "exampleTr": "Projede metre bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (метр) по проекту."
   },
   {
     "id": "top_479",
@@ -6529,9 +6967,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Килограмм (кг)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kilogramm"
+    "uz": "Kilogramm",
+    "exampleTr": "Projede kilogram bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (килограмм) по проекту."
   },
   {
     "id": "top_480",
@@ -6540,9 +6980,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Грамм (г)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Gram"
+    "uz": "Gram",
+    "exampleTr": "Projede gram bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (грамм) по проекту."
   },
   {
     "id": "top_481",
@@ -6551,9 +6993,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Тонна (т)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tonna"
+    "uz": "Tonna",
+    "exampleTr": "Projede ton bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (тонна) по проекту."
   },
   {
     "id": "top_482",
@@ -6562,9 +7006,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Литр (л)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Litr"
+    "uz": "Litr",
+    "exampleTr": "Projede litre bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (литр) по проекту."
   },
   {
     "id": "top_483",
@@ -6573,9 +7019,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Квадратный метр (м²)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kvadrat metr"
+    "uz": "Kvadrat metr",
+    "exampleTr": "Projede metrekare bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (квадратный метр) по проекту."
   },
   {
     "id": "top_484",
@@ -6584,9 +7032,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Штука (кол-во)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Parcha"
+    "uz": "Parcha",
+    "exampleTr": "Projede adet bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (штука) по проекту."
   },
   {
     "id": "top_485",
@@ -6595,9 +7045,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Штука",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Birlik"
+    "uz": "Birlik",
+    "exampleTr": "Projede tane bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (штука) по проекту."
   },
   {
     "id": "top_486",
@@ -6606,9 +7058,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Пара",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Er-xotin"
+    "uz": "Er-xotin",
+    "exampleTr": "Projede çift bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (пара) по проекту."
   },
   {
     "id": "top_487",
@@ -6617,9 +7071,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Комплект / Набор",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Oʻrnatish"
+    "uz": "Oʻrnatish",
+    "exampleTr": "Projede takım bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (комплект) по проекту."
   },
   {
     "id": "top_488",
@@ -6628,9 +7084,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Пачка / Пакет",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Paket"
+    "uz": "Paket",
+    "exampleTr": "Projede paket bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (пачка) по проекту."
   },
   {
     "id": "top_489",
@@ -6639,9 +7097,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Коробка",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Quti"
+    "uz": "Quti",
+    "exampleTr": "Projede kutu bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (коробка) по проекту."
   },
   {
     "id": "top_490",
@@ -6650,9 +7110,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Рулон",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Roll"
+    "uz": "Roll",
+    "exampleTr": "Projede rulo bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (рулон) по проекту."
   },
   {
     "id": "top_491",
@@ -6661,9 +7123,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Чертеж / Рисунок",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Chizma"
+    "uz": "Chizma",
+    "exampleTr": "Projede çizim bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (чертеж) по проекту."
   },
   {
     "id": "top_492",
@@ -6672,9 +7136,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "План / Схема",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Reja"
+    "uz": "Reja",
+    "exampleTr": "Projede plan bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (план) по проекту."
   },
   {
     "id": "top_493",
@@ -6683,9 +7149,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Проект",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Loyiha"
+    "uz": "Loyiha",
+    "exampleTr": "Projede proje bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (проект) по проекту."
   },
   {
     "id": "top_494",
@@ -6694,9 +7162,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Узел / Деталь на чертеже",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tugun / Tafsilot"
+    "uz": "Tugun / Tafsilot",
+    "exampleTr": "Projede detay bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (узел) по проекту."
   },
   {
     "id": "top_495",
@@ -6705,9 +7175,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Сечение / Разрез профиля",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kesim / Qirqim"
+    "uz": "Kesim / Qirqim",
+    "exampleTr": "Projede kesit bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (сечение) по проекту."
   },
   {
     "id": "top_496",
@@ -6716,9 +7188,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Вид (спереди/сбоку)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tashqi ko'rinish"
+    "uz": "Tashqi ko'rinish",
+    "exampleTr": "Projede görünüş bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (вид (спереди) по проекту."
   },
   {
     "id": "top_497",
@@ -6727,9 +7201,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Масштаб",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Masshtab"
+    "uz": "Masshtab",
+    "exampleTr": "Projede ölçek bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (масштаб) по проекту."
   },
   {
     "id": "top_498",
@@ -6738,9 +7214,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Высотная отметка (уровень)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Jinslar"
+    "uz": "Jinslar",
+    "exampleTr": "Projede kot bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (высотная отметка) по проекту."
   },
   {
     "id": "top_499",
@@ -6749,9 +7227,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ось здания",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Aks"
+    "uz": "Aks",
+    "exampleTr": "Projede aks bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (ось здания) по проекту."
   },
   {
     "id": "top_500",
@@ -6760,9 +7240,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Список / Ведомость",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Roʻyxat"
+    "uz": "Roʻyxat",
+    "exampleTr": "Projede liste bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (список) по проекту."
   },
   {
     "id": "top_501",
@@ -6771,9 +7253,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Отчет / Акт",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Hisobot"
+    "uz": "Hisobot",
+    "exampleTr": "Projede rapor bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (отчет) по проекту."
   },
   {
     "id": "top_502",
@@ -6782,9 +7266,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Протокол / Акт проверки",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Dalolatnoma (akt)"
+    "uz": "Dalolatnoma (akt)",
+    "exampleTr": "Projede tutanak bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (протокол) по проекту."
   },
   {
     "id": "top_503",
@@ -6793,9 +7279,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Бланк / Форма",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Shakl"
+    "uz": "Shakl",
+    "exampleTr": "Projede form bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (бланк) по проекту."
   },
   {
     "id": "top_504",
@@ -6804,9 +7292,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Сертификат качества",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Sertifikat"
+    "uz": "Sertifikat",
+    "exampleTr": "Projede sertifika bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (сертификат качества) по проекту."
   },
   {
     "id": "top_505",
@@ -6815,9 +7305,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Накладная на груз",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Yo'l varaqasi"
+    "uz": "Yo'l varaqasi",
+    "exampleTr": "Projede i̇rsaliye bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (накладная на груз) по проекту."
   },
   {
     "id": "top_506",
@@ -6826,9 +7318,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Счет-фактура / Инвойс",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Hisob-faktura"
+    "uz": "Hisob-faktura",
+    "exampleTr": "Projede fatura bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (счет-фактура) по проекту."
   },
   {
     "id": "top_507",
@@ -6837,9 +7331,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Заказ",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Buyurtma"
+    "uz": "Buyurtma",
+    "exampleTr": "Projede sipariş bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (заказ) по проекту."
   },
   {
     "id": "top_508",
@@ -6848,9 +7344,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Коммерческое предложение",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Taklif"
+    "uz": "Taklif",
+    "exampleTr": "Projede teklif bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (коммерческое предложение) по проекту."
   },
   {
     "id": "top_509",
@@ -6859,9 +7357,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Договор / Контракт",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Shartnoma"
+    "uz": "Shartnoma",
+    "exampleTr": "Projede sözleşme bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (договор) по проекту."
   },
   {
     "id": "top_510",
@@ -6870,9 +7370,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Подпись",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Imzo"
+    "uz": "Imzo",
+    "exampleTr": "Projede i̇mza bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (подпись) по проекту."
   },
   {
     "id": "top_511",
@@ -6881,9 +7383,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Печать / Штамп",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kosa"
+    "uz": "Kosa",
+    "exampleTr": "Projede kaşe bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (печать) по проекту."
   },
   {
     "id": "top_512",
@@ -6892,9 +7396,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Утверждение / Согласование",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tasdiq"
+    "uz": "Tasdiq",
+    "exampleTr": "Projede onay bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (утверждение) по проекту."
   },
   {
     "id": "top_513",
@@ -6903,9 +7409,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Отказ / Отклонение (брак)",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Rad etish"
+    "uz": "Rad etish",
+    "exampleTr": "Projede red bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (отказ) по проекту."
   },
   {
     "id": "top_514",
@@ -6914,9 +7422,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ревизия / Изменение чертежа",
     "category": "top_nouns",
     "categoryLabel": "Измерения и чертежи",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qayta ko'rib chiqish"
+    "uz": "Qayta ko'rib chiqish",
+    "exampleTr": "Projede revizyon bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (ревизия) по проекту."
   },
   {
     "id": "top_515",
@@ -9049,9 +9559,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Контроль качества (ОТК)",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "sifat nazorati"
+    "uz": "sifat nazorati",
+    "exampleTr": "Şantiyede kalite kontrol kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: контроль качества."
   },
   {
     "id": "top_708",
@@ -9170,9 +9682,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Материал / Сырье",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Material"
+    "uz": "Material",
+    "exampleTr": "Şantiyede malzeme kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: материал."
   },
   {
     "id": "top_719",
@@ -9269,9 +9783,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Деталь / Кусок / Часть",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Parcha"
+    "uz": "Parcha",
+    "exampleTr": "Şantiyede parça kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: деталь."
   },
   {
     "id": "top_728",
@@ -9291,9 +9807,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Программа (станка ЧПУ)",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Dastur"
+    "uz": "Dastur",
+    "exampleTr": "Şantiyede program kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: программа."
   },
   {
     "id": "top_730",
@@ -9423,9 +9941,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Инструкция / Указание",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Ko'rsatmalar"
+    "uz": "Ko'rsatmalar",
+    "exampleTr": "Şantiyede talimat kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: инструкция."
   },
   {
     "id": "top_742",
@@ -9447,9 +9967,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Дизайн / Проектирование",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Dizayn"
+    "uz": "Dizayn",
+    "exampleTr": "Şantiyede tasarım kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: дизайн."
   },
   {
     "id": "top_744",
@@ -9458,9 +9980,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Переноска / Транспортировка",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Transport"
+    "uz": "Transport",
+    "exampleTr": "Şantiyede taşıma kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: переноска."
   },
   {
     "id": "top_745",
@@ -9535,9 +10059,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Старший мастер / Бригадир цеха",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "usta"
+    "uz": "usta",
+    "exampleTr": "Şantiyede usta başı kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: старший мастер."
   },
   {
     "id": "top_752",
@@ -9590,9 +10116,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Продукция / Изделие",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Mahsulot"
+    "uz": "Mahsulot",
+    "exampleTr": "Şantiyede ürün kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: продукция."
   },
   {
     "id": "top_757",
@@ -9623,9 +10151,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Метод / Технология сборки",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Usul"
+    "uz": "Usul",
+    "exampleTr": "Şantiyede yöntem kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: метод."
   },
   {
     "id": "top_760",
@@ -9634,9 +10164,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Груз / Нагрузка",
     "category": "top_nouns",
     "categoryLabel": "Производство",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Yuklash"
+    "uz": "Yuklash",
+    "exampleTr": "Şantiyede yük kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: груз."
   },
   {
     "id": "top_761",
@@ -9823,9 +10355,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Анодированный (покрытие)",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "anodlash"
+    "uz": "anodlash",
+    "exampleTr": "Şantiyede eloksal kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: анодированный."
   },
   {
     "id": "ext_860",
@@ -9834,9 +10368,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Порошковая покраска",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "chang qoplamasi"
+    "uz": "chang qoplamasi",
+    "exampleTr": "Şantiyede toz boya kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: порошковая покраска."
   },
   {
     "id": "ext_861",
@@ -9845,9 +10381,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Код цвета по шкале RAL",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "ral kodi"
+    "uz": "ral kodi",
+    "exampleTr": "Şantiyede ral kodu kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: код цвета по шкале ral."
   },
   {
     "id": "ext_862",
@@ -9856,9 +10394,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Толщина слоя покраски (микрон)",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Bo'yoq qalinligi"
+    "uz": "Bo'yoq qalinligi",
+    "exampleTr": "Şantiyede boya kalınlığı kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: толщина слоя покраски."
   },
   {
     "id": "ext_863",
@@ -9867,9 +10407,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Круг / Окружность",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kvartira"
+    "uz": "Kvartira",
+    "exampleTr": "Projede daire bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (круг) по проекту."
   },
   {
     "id": "ext_864",
@@ -9878,9 +10420,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Квадрат",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kvadrat"
+    "uz": "Kvadrat",
+    "exampleTr": "Projede kare bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (квадрат) по проекту."
   },
   {
     "id": "ext_865",
@@ -9889,9 +10433,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Треугольник",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Uchburchak"
+    "uz": "Uchburchak",
+    "exampleTr": "Projede üçgen bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (треугольник) по проекту."
   },
   {
     "id": "ext_866",
@@ -9900,9 +10446,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Прямоугольник",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "To'rtburchak"
+    "uz": "To'rtburchak",
+    "exampleTr": "Projede dikdörtgen bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (прямоугольник) по проекту."
   },
   {
     "id": "ext_867",
@@ -9911,9 +10459,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Диагональ / Крест-накрест",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Xoch"
+    "uz": "Xoch",
+    "exampleTr": "Projede çapraz bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (диагональ) по проекту."
   },
   {
     "id": "ext_868",
@@ -9922,9 +10472,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Вертикальный / Вертикаль",
     "category": "top_adj",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Vertikal"
+    "uz": "Vertikal",
+    "exampleTr": "Projede dikey bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (вертикальный) по проекту."
   },
   {
     "id": "ext_869",
@@ -9933,9 +10485,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Горизонтальный / Горизонталь",
     "category": "top_adj",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Gorizontal"
+    "uz": "Gorizontal",
+    "exampleTr": "Projede yatay bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (горизонтальный) по проекту."
   },
   {
     "id": "ext_870",
@@ -9944,9 +10498,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Параллельный",
     "category": "top_adj",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Parallel"
+    "uz": "Parallel",
+    "exampleTr": "Projede paralel bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (параллельный) по проекту."
   },
   {
     "id": "ext_871",
@@ -9955,9 +10511,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Перпендикулярный / Прямой",
     "category": "top_adj",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Tik"
+    "uz": "Tik",
+    "exampleTr": "Projede dik bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (перпендикулярный) по проекту."
   },
   {
     "id": "ext_872",
@@ -9966,9 +10524,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ось симметрии",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Eksa"
+    "uz": "Eksa",
+    "exampleTr": "Projede eksen bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (ось симметрии) по проекту."
   },
   {
     "id": "ext_873",
@@ -9977,9 +10537,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Центр / Середина",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Markaz"
+    "uz": "Markaz",
+    "exampleTr": "Projede merkez bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (центр) по проекту."
   },
   {
     "id": "ext_874",
@@ -9988,9 +10550,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Объем",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Ovoz balandligi"
+    "uz": "Ovoz balandligi",
+    "exampleTr": "Projede hacim bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (объем) по проекту."
   },
   {
     "id": "ext_875",
@@ -9999,9 +10563,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Плотность материала",
     "category": "top_nouns",
     "categoryLabel": "Геометрия и замеры",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Intensivlik"
+    "uz": "Intensivlik",
+    "exampleTr": "Projede yoğunluk bilgisini kontrol ettik.",
+    "exampleRu": "Мы проверили параметр (плотность материала) по проекту."
   },
   {
     "id": "ext_876",
@@ -10010,9 +10576,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Прочность / Сопротивление материалов",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Qarshilik"
+    "uz": "Qarshilik",
+    "exampleTr": "Şantiyede mukavemet kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: прочность."
   },
   {
     "id": "ext_877",
@@ -10021,9 +10589,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Статический расчет нагрузок",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "statik hisob"
+    "uz": "statik hisob",
+    "exampleTr": "Şantiyede statik hesap kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: статический расчет нагрузок."
   },
   {
     "id": "ext_878",
@@ -10032,9 +10602,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Ветровая нагрузка на фасад",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "shamol yuki"
+    "uz": "shamol yuki",
+    "exampleTr": "Şantiyede rüzgar yükü kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: ветровая нагрузка на фасад."
   },
   {
     "id": "ext_879",
@@ -10043,9 +10615,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Снеговая нагрузка",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "qor yuki"
+    "uz": "qor yuki",
+    "exampleTr": "Şantiyede kar yükü kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: снеговая нагрузка."
   },
   {
     "id": "ext_880",
@@ -10054,9 +10628,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Землетрясение / Сейсмика",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Zilzila"
+    "uz": "Zilzila",
+    "exampleTr": "Şantiyede deprem kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: землетрясение."
   },
   {
     "id": "ext_881",
@@ -10065,9 +10641,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Тепловое линейное расширение",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Kengayish"
+    "uz": "Kengayish",
+    "exampleTr": "Şantiyede genleşme kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: тепловое линейное расширение."
   },
   {
     "id": "ext_882",
@@ -10076,9 +10654,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Тепловой / Термический",
     "category": "top_adj",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Termal"
+    "uz": "Termal",
+    "exampleTr": "Şantiyede termal kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: тепловой."
   },
   {
     "id": "ext_883",
@@ -10087,9 +10667,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Изоляция / Утепление",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Izolyatsiya"
+    "uz": "Izolyatsiya",
+    "exampleTr": "Şantiyede i̇zolasyon kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: изоляция."
   },
   {
     "id": "ext_884",
@@ -10098,9 +10680,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Тепло- и шумоизоляция",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Izolyatsiya"
+    "uz": "Izolyatsiya",
+    "exampleTr": "Şantiyede yalıtım kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: тепло- и шумоизоляция."
   },
   {
     "id": "ext_885",
@@ -10109,9 +10693,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Звукоизоляция (дБ)",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "ovoz yalıtımı"
+    "uz": "ovoz yalıtımı",
+    "exampleTr": "Şantiyede ses yalıtımı kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: звукоизоляция."
   },
   {
     "id": "ext_886",
@@ -10120,9 +10706,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Акустика / Акустический",
     "category": "top_adj",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Akustik"
+    "uz": "Akustik",
+    "exampleTr": "Şantiyede akustik kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: акустика."
   },
   {
     "id": "ext_887",
@@ -10131,9 +10719,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Коррозия / Ржавление",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Korroziya"
+    "uz": "Korroziya",
+    "exampleTr": "Şantiyede korozyon kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: коррозия."
   },
   {
     "id": "ext_888",
@@ -10142,9 +10732,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Нержавеющий (INOX / A2)",
     "category": "top_adj",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Zanglamaydigan"
+    "uz": "Zanglamaydigan",
+    "exampleTr": "Şantiyede paslanmaz kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: нержавеющий (inox."
   },
   {
     "id": "ext_889",
@@ -10153,9 +10745,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Оцинкованный",
     "category": "top_adj",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "galvanizlangan"
+    "uz": "galvanizlangan",
+    "exampleTr": "Şantiyede galvaniz kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: оцинкованный."
   },
   {
     "id": "ext_890",
@@ -10166,7 +10760,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "rozetka to'plami"
+    "uz": "rozetka to'plami",
+    "exampleTr": "Bu işlem için bana lokma takımı lazım.",
+    "exampleRu": "Для этой операции мне нужен (набор торцевых головок)."
   },
   {
     "id": "ext_891",
@@ -10177,7 +10773,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "kaliti"
+    "uz": "kaliti",
+    "exampleTr": "Bu işlem için bana cırcır anahtar lazım.",
+    "exampleRu": "Для этой операции мне нужен (ключ-трещотка)."
   },
   {
     "id": "ext_892",
@@ -10188,7 +10786,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "ochiq og'iz kaliti"
+    "uz": "ochiq og'iz kaliti",
+    "exampleTr": "Usta, açık ağız anahtar",
+    "exampleRu": "Мастер, рожковый гаечный ключ"
   },
   {
     "id": "ext_893",
@@ -10199,7 +10799,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "yulduzcha kalit"
+    "uz": "yulduzcha kalit",
+    "exampleTr": "Bu işlem için bana yıldız anahtar lazım.",
+    "exampleRu": "Для этой операции мне нужен (накидной гаечный ключ)."
   },
   {
     "id": "ext_894",
@@ -10210,7 +10812,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "tekis tornavida"
+    "uz": "tekis tornavida",
+    "exampleTr": "Bu işlem için bana düz tornavida lazım.",
+    "exampleRu": "Для этой операции мне нужен (шлицевая отвертка)."
   },
   {
     "id": "ext_895",
@@ -10221,7 +10825,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Phillips tornavida"
+    "uz": "Phillips tornavida",
+    "exampleTr": "Bu işlem için bana yıldız tornavida lazım.",
+    "exampleRu": "Для этой операции мне нужен (крестовая отвертка)."
   },
   {
     "id": "ext_896",
@@ -10232,7 +10838,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "pense"
+    "uz": "pense",
+    "exampleTr": "Bu işlem için bana pense lazım.",
+    "exampleRu": "Для этой операции мне нужен (пассатижи)."
   },
   {
     "id": "ext_897",
@@ -10243,7 +10851,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "yon chiviq"
+    "uz": "yon chiviq",
+    "exampleTr": "Bu işlem için bana yan keski lazım.",
+    "exampleRu": "Для этой операции мне нужен (бокорезы)."
   },
   {
     "id": "ext_898",
@@ -10254,7 +10864,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ulash"
+    "uz": "Ulash",
+    "exampleTr": "Bu işlem için bana kargaburun lazım.",
+    "exampleRu": "Для этой операции мне нужен (круглогубцы)."
   },
   {
     "id": "ext_899",
@@ -10265,7 +10877,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "yordamchi pichoq"
+    "uz": "yordamchi pichoq",
+    "exampleTr": "Bu işlem için bana maket bıçağı lazım.",
+    "exampleRu": "Для этой операции мне нужен (строительный нож)."
   },
   {
     "id": "ext_900",
@@ -10276,7 +10890,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Qaychi (metall va rezina uchun)"
+    "uz": "Qaychi (metall va rezina uchun)",
+    "exampleTr": "Bu işlem için bana makas lazım.",
+    "exampleRu": "Для этой операции мне нужен (ножницы по металлу)."
   },
   {
     "id": "ext_901",
@@ -10287,7 +10903,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Egey"
+    "uz": "Egey",
+    "exampleTr": "Bu işlem için bana eğe lazım.",
+    "exampleRu": "Для этой операции мне нужен (напильник)."
   },
   {
     "id": "ext_902",
@@ -10298,7 +10916,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Emeri"
+    "uz": "Emeri",
+    "exampleTr": "Bu işlem için bana zımpara lazım.",
+    "exampleRu": "Для этой операции мне нужен (наждачная бумага)."
   },
   {
     "id": "ext_903",
@@ -10309,7 +10929,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Qisqich"
+    "uz": "Qisqich",
+    "exampleTr": "Bu işlem için bana mengene lazım.",
+    "exampleRu": "Для этой операции мне нужен (слесарные тиски)."
   },
   {
     "id": "ext_904",
@@ -10320,7 +10942,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Qiynoq"
+    "uz": "Qiynoq",
+    "exampleTr": "Bu işlem için bana i̇şkence lazım.",
+    "exampleRu": "Для этой операции мне нужен (струбцина монтажная)."
   },
   {
     "id": "ext_905",
@@ -10331,7 +10955,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "ruh darajasi"
+    "uz": "ruh darajasi",
+    "exampleTr": "Bu işlem için bana su terazisi lazım.",
+    "exampleRu": "Для этой операции мне нужен (строительный уровень)."
   },
   {
     "id": "ext_906",
@@ -10342,7 +10968,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "lazer o'lchagich"
+    "uz": "lazer o'lchagich",
+    "exampleTr": "Bu işlem için bana lazer metre lazım.",
+    "exampleRu": "Для этой операции мне нужен (лазерный дальномер)."
   },
   {
     "id": "ext_907",
@@ -10353,7 +10981,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Gönyeburun"
+    "uz": "Gönyeburun",
+    "exampleTr": "Bu işlem için bana gönyeburun lazım.",
+    "exampleRu": "Для этой операции мне нужен (угольник поверочный)."
   },
   {
     "id": "ext_908",
@@ -10364,7 +10994,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Bolg'a"
+    "uz": "Bolg'a",
+    "exampleTr": "Bu işlem için bana çekiç lazım.",
+    "exampleRu": "Для этой операции мне нужен (молоток)."
   },
   {
     "id": "ext_909",
@@ -10375,7 +11007,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Balyoz"
+    "uz": "Balyoz",
+    "exampleTr": "Bu işlem için bana balyoz lazım.",
+    "exampleRu": "Для этой операции мне нужен (кувалда)."
   },
   {
     "id": "ext_910",
@@ -10386,7 +11020,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Chisel"
+    "uz": "Chisel",
+    "exampleTr": "Bu işlem için bana keski lazım.",
+    "exampleRu": "Для этой операции мне нужен (зубило)."
   },
   {
     "id": "ext_911",
@@ -10397,7 +11033,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Lehim"
+    "uz": "Lehim",
+    "exampleTr": "Bu işlem için bana lehim lazım.",
+    "exampleRu": "Для этой операции мне нужен (припой)."
   },
   {
     "id": "ext_912",
@@ -10408,7 +11046,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "payvandlash mashinasi"
+    "uz": "payvandlash mashinasi",
+    "exampleTr": "Bu işlem için bana kaynak makinesi lazım.",
+    "exampleRu": "Для этой операции мне нужен (сварочный аппарат)."
   },
   {
     "id": "ext_913",
@@ -10419,7 +11059,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "Spiral / burchakli maydalagich"
+    "uz": "Spiral / burchakli maydalagich",
+    "exampleTr": "Bu işlem için bana spiral lazım.",
+    "exampleRu": "Для этой операции мне нужен (болгарка)."
   },
   {
     "id": "ext_914",
@@ -10430,7 +11072,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "jigsa"
+    "uz": "jigsa",
+    "exampleTr": "Bu işlem için bana dekupaj testere lazım.",
+    "exampleRu": "Для этой операции мне нужен (электролобзик)."
   },
   {
     "id": "ext_915",
@@ -10441,7 +11085,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "router biti"
+    "uz": "router biti",
+    "exampleTr": "Bu işlem için bana freze ucu lazım.",
+    "exampleRu": "Для этой операции мне нужен (фреза по алюминию)."
   },
   {
     "id": "ext_916",
@@ -10452,7 +11098,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "olma ko'rdim"
+    "uz": "olma ko'rdim",
+    "exampleTr": "Bu işlem için bana testere elması lazım.",
+    "exampleRu": "Для этой операции мне нужен (пильный диск)."
   },
   {
     "id": "ext_917",
@@ -10463,7 +11111,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Станки и инструмент",
     "isSchueco": true,
     "learned": false,
-    "uz": "sovutish suvi"
+    "uz": "sovutish suvi",
+    "exampleTr": "Bu işlem için bana soğutma sıvısı lazım.",
+    "exampleRu": "Для этой операции мне нужен (охлаждающая жидкость)."
   },
   {
     "id": "ext_918",
@@ -11682,9 +12332,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Контроль производственного процесса",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Jarayonni boshqarish"
+    "uz": "Jarayonni boshqarish",
+    "exampleTr": "Şantiyede süreç kontrolü kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: контроль производственного процесса."
   },
   {
     "id": "fin_1027",
@@ -11693,9 +12345,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Штрихкод на профиле",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "shtrix-kod"
+    "uz": "shtrix-kod",
+    "exampleTr": "Şantiyede barkod kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: штрихкод на профиле."
   },
   {
     "id": "fin_1028",
@@ -11704,9 +12358,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Маркировочная наклейка",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "Chipta"
+    "uz": "Chipta",
+    "exampleTr": "Şantiyede etiket kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: маркировочная наклейка."
   },
   {
     "id": "fin_1029",
@@ -11715,9 +12371,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Зона отгрузки готовых конструкций",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "yuk tashish maydoni"
+    "uz": "yuk tashish maydoni",
+    "exampleTr": "Şantiyede sevkiyat alanı kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: зона отгрузки готовых конструкций."
   },
   {
     "id": "fin_1030",
@@ -11726,9 +12384,11 @@ window.DICTIONARY_DATABASE = [
     "ru": "Монтажная площадка на объекте",
     "category": "top_nouns",
     "categoryLabel": "Производство Schüco",
-    "isSchueco": false,
+    "isSchueco": true,
     "learned": false,
-    "uz": "yig'ish joyi"
+    "uz": "yig'ish joyi",
+    "exampleTr": "Şantiyede montaj sahası kontrolü yapıldı.",
+    "exampleRu": "На объекте проверили: монтажная площадка на объекте."
   },
   {
     "id": "phr_1",
@@ -11739,7 +12399,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Nima qilishim kerak?"
+    "uz": "Nima qilishim kerak?",
+    "exampleTr": "Usta, ne yapmam gerekiyor?",
+    "exampleRu": "Мастер, что мне нужно делать?"
   },
   {
     "id": "phr_2",
@@ -11750,7 +12412,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Buni qayerga qo'yay?"
+    "uz": "Buni qayerga qo'yay?",
+    "exampleTr": "Usta, bunu nereye koyayım?",
+    "exampleRu": "Мастер, куда мне это положить / поставить?"
   },
   {
     "id": "phr_3",
@@ -11761,7 +12425,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Yordam bera olasanmi?"
+    "uz": "Yordam bera olasanmi?",
+    "exampleTr": "Usta, yardım edebilir misin?",
+    "exampleRu": "Мастер, можешь помочь?"
   },
   {
     "id": "phr_4",
@@ -11772,7 +12438,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Qo'lingni ber / ko'tarishga yordamlashvor?"
+    "uz": "Qo'lingni ber / ko'tarishga yordamlashvor?",
+    "exampleTr": "Usta, bir el atar mısın?",
+    "exampleRu": "Мастер, помоги перенести (подсоби руками)?"
   },
   {
     "id": "phr_5",
@@ -11783,7 +12451,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Material tugadi"
+    "uz": "Material tugadi",
+    "exampleTr": "Usta, malzeme bitti",
+    "exampleRu": "Мастер, материал закончился"
   },
   {
     "id": "phr_6",
@@ -11794,7 +12464,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Yangi detal kerak"
+    "uz": "Yangi detal kerak",
+    "exampleTr": "Usta, yeni parça lazım",
+    "exampleRu": "Мастер, нужна новая деталь / заготовка"
   },
   {
     "id": "phr_7",
@@ -11805,7 +12477,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Bu detal nuqsonli / yaroqsiz"
+    "uz": "Bu detal nuqsonli / yaroqsiz",
+    "exampleTr": "Usta, bu parça hatalı",
+    "exampleRu": "Мастер, эта деталь дефектная / бракованная"
   },
   {
     "id": "phr_8",
@@ -11816,7 +12490,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "O'lchamlarni tekshirdingmi?"
+    "uz": "O'lchamlarni tekshirdingmi?",
+    "exampleTr": "Usta, ölçüleri kontrol ettin mi?",
+    "exampleRu": "Мастер, ты проверил размеры?"
   },
   {
     "id": "phr_9",
@@ -11827,7 +12503,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ish tugadimi?"
+    "uz": "Ish tugadimi?",
+    "exampleTr": "Usta, i̇ş bitti mi?",
+    "exampleRu": "Мастер, работа закончена?"
   },
   {
     "id": "phr_10",
@@ -11838,7 +12516,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Oz qoldi, tugatyapman"
+    "uz": "Oz qoldi, tugatyapman",
+    "exampleTr": "Usta, az kaldı, bitiriyorum",
+    "exampleRu": "Мастер, немного осталось, заканчиваю"
   },
   {
     "id": "phr_11",
@@ -11849,7 +12529,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Hozir nima qilamiz?"
+    "uz": "Hozir nima qilamiz?",
+    "exampleTr": "Usta, şimdi ne yapıyoruz?",
+    "exampleRu": "Мастер, что мы делаем сейчас?"
   },
   {
     "id": "phr_12",
@@ -11860,7 +12542,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Buni kim qildi?"
+    "uz": "Buni kim qildi?",
+    "exampleTr": "Usta, bunu kim yaptı?",
+    "exampleRu": "Мастер, кто это сделал?"
   },
   {
     "id": "phr_13",
@@ -11871,7 +12555,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Usta, qarab yuborasizmi?"
+    "uz": "Usta, qarab yuborasizmi?",
+    "exampleTr": "Usta, usta bakar mısın?",
+    "exampleRu": "Мастер, мастер, посмотри пожалуйста!"
   },
   {
     "id": "phr_14",
@@ -11882,7 +12568,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Qaysi asbob kerak?"
+    "uz": "Qaysi asbob kerak?",
+    "exampleTr": "Usta, hangi alet lazım?",
+    "exampleRu": "Мастер, какой инструмент нужен?"
   },
   {
     "id": "phr_15",
@@ -11893,7 +12581,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Menga shurupburagichni ber"
+    "uz": "Menga shurupburagichni ber",
+    "exampleTr": "Usta, bana şarjlı matkabı ver",
+    "exampleRu": "Мастер, передай мне шуруповерт"
   },
   {
     "id": "phr_16",
@@ -11904,7 +12594,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ehtiyot bo'l, juda issiq!"
+    "uz": "Ehtiyot bo'l, juda issiq!",
+    "exampleTr": "Usta, dikkatli ol, çok sıcak",
+    "exampleRu": "Мастер, будь осторожен, очень горячо!"
   },
   {
     "id": "phr_17",
@@ -11915,7 +12607,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ehtiyot bo'l, qirrasi o'tkir!"
+    "uz": "Ehtiyot bo'l, qirrasi o'tkir!",
+    "exampleTr": "Usta, dikkatli ol, keskin kenar",
+    "exampleRu": "Мастер, осторожно, острая кромка!"
   },
   {
     "id": "phr_18",
@@ -11926,7 +12620,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Stanokni to'xtat!"
+    "uz": "Stanokni to'xtat!",
+    "exampleTr": "Usta, makineyi durdur!",
+    "exampleRu": "Мастер, останови станок!"
   },
   {
     "id": "phr_19",
@@ -11937,7 +12633,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Pnevmatik shlangni uzat"
+    "uz": "Pnevmatik shlangni uzat",
+    "exampleTr": "Usta, hava hortumunu uzat",
+    "exampleRu": "Мастер, протяни пневматический шланг"
   },
   {
     "id": "phr_20",
@@ -11948,7 +12646,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ertaga smenadan tashqari ish bormi?"
+    "uz": "Ertaga smenadan tashqari ish bormi?",
+    "exampleTr": "Usta, yarın mesai var mı?",
+    "exampleRu": "Мастер, завтра будут сверхурочные?"
   },
   {
     "id": "phr_21",
@@ -11959,7 +12659,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Ish vaqti tugadi / tarqalish vaqti bo'ldi"
+    "uz": "Ish vaqti tugadi / tarqalish vaqti bo'ldi",
+    "exampleTr": "Usta, paydos vakti geldi",
+    "exampleRu": "Мастер, время окончания смены (конец работы)!"
   },
   {
     "id": "phr_22",
@@ -11970,7 +12672,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Tushlik tanaffusi soat nechada?"
+    "uz": "Tushlik tanaffusi soat nechada?",
+    "exampleTr": "Usta, yemek molası kaçta?",
+    "exampleRu": "Мастер, во сколько обеденный перерыв?"
   },
   {
     "id": "phr_23",
@@ -11981,7 +12685,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Chekish tanaffusiga chiqyapman"
+    "uz": "Chekish tanaffusiga chiqyapman",
+    "exampleTr": "Usta, sigara molasına çıkıyorum",
+    "exampleRu": "Мастер, я выхожу на перекур"
   },
   {
     "id": "phr_24",
@@ -11992,7 +12698,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Hozir kelaman"
+    "uz": "Hozir kelaman",
+    "exampleTr": "Usta, hemen geliyorum",
+    "exampleRu": "Мастер, я сейчас вернусь (одна минута)"
   },
   {
     "id": "phr_25",
@@ -12003,7 +12711,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Buni to'g'rilashim kerak"
+    "uz": "Buni to'g'rilashim kerak",
+    "exampleTr": "Usta, bunu düzeltmem lazım",
+    "exampleRu": "Мастер, мне нужно это исправить / переделать"
   },
   {
     "id": "phr_26",
@@ -12014,7 +12724,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Chizmaga muvofiq qilingan"
+    "uz": "Chizmaga muvofiq qilingan",
+    "exampleTr": "Usta, çizime göre uygun",
+    "exampleRu": "Мастер, сделано строго по чертежу"
   },
   {
     "id": "phr_27",
@@ -12025,7 +12737,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Usta tasdiqladi / qabul qildi"
+    "uz": "Usta tasdiqladi / qabul qildi",
+    "exampleTr": "Usta, usta onay verdi",
+    "exampleRu": "Мастер, мастер одобрил / принял работу"
   },
   {
     "id": "phr_28",
@@ -12036,7 +12750,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Kran kelyapti, chetga chiqinglar!"
+    "uz": "Kran kelyapti, chetga chiqinglar!",
+    "exampleTr": "Usta, vinç geliyor, kenara çekilin",
+    "exampleRu": "Мастер, кран идет, отойдите в сторону!"
   },
   {
     "id": "phr_29",
@@ -12047,7 +12763,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Oynani ehtiyotkorlik bilan ushla"
+    "uz": "Oynani ehtiyotkorlik bilan ushla",
+    "exampleTr": "Usta, camı dikkatli tut",
+    "exampleRu": "Мастер, держи стекло осторожно!"
   },
   {
     "id": "phr_30",
@@ -12058,7 +12776,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Bu profilning uzunligi qancha?"
+    "uz": "Bu profilning uzunligi qancha?",
+    "exampleTr": "Usta, bu profilin boyu kaç?",
+    "exampleRu": "Мастер, какая длина у этого профиля?"
   },
   {
     "id": "phr_31",
@@ -12069,7 +12789,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Burchakni necha gradusda kesamiz?"
+    "uz": "Burchakni necha gradusda kesamiz?",
+    "exampleTr": "Usta, açıyı kaç derece kesiyoruz?",
+    "exampleRu": "Мастер, под каким углом режем?"
   },
   {
     "id": "phr_32",
@@ -12080,7 +12802,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Qirq besh gradusda kes"
+    "uz": "Qirq besh gradusda kes",
+    "exampleTr": "Usta, kırk beş derece kes",
+    "exampleRu": "Мастер, режь под 45 градусов"
   },
   {
     "id": "phr_33",
@@ -12091,7 +12815,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "To'qson gradus to'g'ri burchak (goniya)"
+    "uz": "To'qson gradus to'g'ri burchak (goniya)",
+    "exampleTr": "Usta, doksan derece gönye",
+    "exampleRu": "Мастер, прямой угол (90 градусов по угольнику)"
   },
   {
     "id": "phr_34",
@@ -12102,7 +12828,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Boltlarni yaxshilab qotir"
+    "uz": "Boltlarni yaxshilab qotir",
+    "exampleTr": "Usta, civataları iyi sık",
+    "exampleRu": "Мастер, затяни болты как следует"
   },
   {
     "id": "phr_35",
@@ -12113,7 +12841,9 @@ window.DICTIONARY_DATABASE = [
     "categoryLabel": "Цеховые фразы",
     "isSchueco": true,
     "learned": false,
-    "uz": "Silikonni tekis qilib tort"
+    "uz": "Silikonni tekis qilib tort",
+    "exampleTr": "Usta, silikonu düzgün çek",
+    "exampleRu": "Мастер, наноси силикон ровным швом"
   },
   {
     "id": "phr_36",
