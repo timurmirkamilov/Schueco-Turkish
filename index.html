@@ -1176,6 +1176,13 @@
     let russianVoice = null;
     const globalAudio = new Audio();
     globalAudio.referrerPolicy = 'no-referrer';
+    globalAudio.volume = 0.85;
+
+    let internalPauseTimestamp = 0;
+    function safePauseGlobalAudio() {
+      internalPauseTimestamp = Date.now();
+      try { globalAudio.pause(); } catch (e) {}
+    }
 
     // Фоновое аудио-удержание для iOS/Android (чтобы ОС не выгружала таймеры и звук при выключенном экране)
     const bgAudioKeepAlive = new Audio('data:audio/wav;base64,UklGRkQDAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YSADAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA==');
@@ -1185,6 +1192,45 @@
     let webAudioKeepAliveCtx = null;
     let webAudioKeepAliveNode = null;
 
+    function pauseAutoplayOnCallInterruption() {
+      if (!isAutoplayActive) return;
+      isAutoplayActive = false;
+      clearTimeout(autoplayTimeout);
+      try { globalAudio.volume = 0; } catch (e) {}
+      safePauseGlobalAudio();
+      try { bgAudioKeepAlive.pause(); } catch (e) {}
+      stopWebAudioKeepAlive();
+      if ('speechSynthesis' in window) {
+        try { window.speechSynthesis.cancel(); } catch (e) {}
+      }
+      if ('mediaSession' in navigator) {
+        try { navigator.mediaSession.playbackState = 'paused'; } catch (e) {}
+      }
+      if (typeof renderQuizCard === 'function' && quizMode === 'flashcards') {
+        renderQuizCard();
+      }
+      if (typeof showToast === 'function') {
+        showToast('Автоплеер поставлен на паузу (звонок)', '⏸️');
+      }
+    }
+
+    bgAudioKeepAlive.addEventListener('pause', () => {
+      if (isAutoplayActive) {
+        pauseAutoplayOnCallInterruption();
+      }
+    });
+
+    globalAudio.addEventListener('pause', () => {
+      if (
+        isAutoplayActive &&
+        !globalAudio.ended &&
+        globalAudio.currentTime > 0 &&
+        (Date.now() - internalPauseTimestamp > 300)
+      ) {
+        pauseAutoplayOnCallInterruption();
+      }
+    });
+
     function startWebAudioKeepAlive() {
       try {
         const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -1192,7 +1238,16 @@
           webAudioKeepAliveCtx = new AudioContext();
         }
         if (webAudioKeepAliveCtx) {
-          if (webAudioKeepAliveCtx.state === 'suspended') {
+          webAudioKeepAliveCtx.onstatechange = () => {
+            if (
+              isAutoplayActive &&
+              webAudioKeepAliveCtx &&
+              (webAudioKeepAliveCtx.state === 'suspended' || webAudioKeepAliveCtx.state === 'interrupted')
+            ) {
+              pauseAutoplayOnCallInterruption();
+            }
+          };
+          if (webAudioKeepAliveCtx.state === 'suspended' || webAudioKeepAliveCtx.state === 'interrupted') {
             webAudioKeepAliveCtx.resume();
           }
           if (!webAudioKeepAliveNode) {
@@ -1296,34 +1351,28 @@
 
         let i = 0;
         function tryPlay() {
+          if (isAutoplayActive && (bgAudioKeepAlive.paused || (webAudioKeepAliveCtx && webAudioKeepAliveCtx.state !== 'running'))) {
+            pauseAutoplayOnCallInterruption();
+            return;
+          }
+
           if (i >= urls.length) {
-            if (isAutoplayActive) {
-              try { bgAudioKeepAlive.play(); } catch(e){}
-            }
             if (typeof resetBtn === 'function') resetBtn();
             return;
           }
 
           const src = urls[i++];
-          globalAudio.pause();
+          safePauseGlobalAudio();
           globalAudio.currentTime = 0;
           globalAudio.src = src;
+          globalAudio.volume = 0.85;
           globalAudio.playbackRate = isSlow ? 0.75 : 1.0;
 
           globalAudio.onended = () => {
-            if (isAutoplayActive) {
-              try { bgAudioKeepAlive.play(); } catch(e){}
-              if (webAudioKeepAliveCtx && webAudioKeepAliveCtx.state === 'suspended') {
-                try { webAudioKeepAliveCtx.resume(); } catch(e){}
-              }
-            }
             if (typeof resetBtn === 'function') resetBtn();
           };
 
           globalAudio.onerror = () => {
-            if (isAutoplayActive) {
-              try { bgAudioKeepAlive.play(); } catch(e){}
-            }
             tryPlay();
           };
 
@@ -1332,6 +1381,10 @@
             p.then(() => {
               triggerHaptic('light');
             }).catch(err => {
+              if (isAutoplayActive && bgAudioKeepAlive.paused) {
+                pauseAutoplayOnCallInterruption();
+                return;
+              }
               tryPlay();
             });
           }
@@ -1366,7 +1419,7 @@
       }
 
       try {
-        globalAudio.pause();
+        safePauseGlobalAudio();
       } catch (e) {}
 
       // Если включено автовоспроизведение или приложение скрыто/экран выключен —
@@ -2249,10 +2302,11 @@ if (tab === 'learn') {
                renderQuizCard();
            }
        } else {
-           stopWebAudioKeepAlive();
-           try { bgAudioKeepAlive.pause(); } catch(e){}
-           try { globalAudio.pause(); } catch(e){}
+           isAutoplayActive = false;
            clearTimeout(autoplayTimeout);
+           safePauseGlobalAudio();
+           try { bgAudioKeepAlive.pause(); } catch(e){}
+           stopWebAudioKeepAlive();
            if ('speechSynthesis' in window) window.speechSynthesis.cancel();
            if ('mediaSession' in navigator) {
                navigator.mediaSession.playbackState = 'paused';
@@ -2264,7 +2318,7 @@ if (tab === 'learn') {
     function skipToNextCard() {
         if (isAutoplayActive) {
             clearTimeout(autoplayTimeout);
-            try { globalAudio.pause(); } catch(e){}
+            safePauseGlobalAudio();
             if ('speechSynthesis' in window) window.speechSynthesis.cancel();
         }
         if (currentQuizItem) {
@@ -2283,7 +2337,7 @@ if (tab === 'learn') {
         if (quizHistory.length === 0) return;
         if (isAutoplayActive) {
             clearTimeout(autoplayTimeout);
-            try { globalAudio.pause(); } catch(e){}
+            safePauseGlobalAudio();
             if ('speechSynthesis' in window) window.speechSynthesis.cancel();
         }
         
@@ -2297,7 +2351,7 @@ if (tab === 'learn') {
 
     function skipQuizItemAutoplay() {
        clearTimeout(autoplayTimeout);
-       try { globalAudio.pause(); } catch(e){}
+       safePauseGlobalAudio();
        
        let unlearned = phrases.filter(p => !p.learned);
        if (unlearned.length === 0) {
@@ -2588,7 +2642,7 @@ if (tab === 'learn') {
     function processAnswer(quality) {
        if (isAutoplayActive) { 
            clearTimeout(autoplayTimeout); 
-           try { globalAudio.pause(); } catch(e){}
+           safePauseGlobalAudio();
            if ('speechSynthesis' in window) window.speechSynthesis.cancel(); 
        }
        let item = currentQuizItem;
@@ -4379,7 +4433,7 @@ if (tab === 'learn') {
 
     skipQuizItemAutoplay = function() {
        clearTimeout(autoplayTimeout);
-       try { globalAudio.pause(); } catch(e){}
+       safePauseGlobalAudio();
        const catPool = getCategoryQuizPool();
        let unlearned = catPool.filter(p => !p.learned);
        if (unlearned.length === 0) {
